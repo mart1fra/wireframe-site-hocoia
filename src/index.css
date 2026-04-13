@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Typographies ── */
+  --font-display: "Sora", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  /* ── Palette wireframe (niveaux de gris) ── */
+  --color-gray-900: #1a1a1a;
+  --color-gray-700: #4a4a4a;
+  --color-gray-500: #8a8a8a;
+  --color-gray-300: #d1d1d1;
+  --color-gray-100: #f3f3f3;
+  --color-gray-50: #fafafa;
+  --color-white: #ffffff;
+  --color-accent: #555555;
+
+  /* ── Border radius ── */
+  --radius-card: 12px;
+  --radius-btn: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  background-color: var(--color-gray-50);
+  color: var(--color-gray-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
