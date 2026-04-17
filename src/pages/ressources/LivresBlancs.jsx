@@ -1,4 +1,12 @@
-import PlaceholderPage from "../../components/PlaceholderPage";
+import ResourcePage from "../../components/ResourcePage";
+import { ressourcesByType } from "../../data/arborescence";
+
 export default function LivresBlancs() {
-  return <PlaceholderPage title="Livres blancs" section="Ressources" />;
+  return (
+    <ResourcePage
+      title="Livres blancs"
+      type="Livre blanc"
+      cards={ressourcesByType.livresBlancs}
+    />
+  );
 }

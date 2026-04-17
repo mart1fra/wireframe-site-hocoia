@@ -1,4 +1,12 @@
-import PlaceholderPage from "../../components/PlaceholderPage";
+import ResourcePage from "../../components/ResourcePage";
+import { ressourcesByType } from "../../data/arborescence";
+
 export default function Articles() {
-  return <PlaceholderPage title="Articles" section="Ressources" />;
+  return (
+    <ResourcePage
+      title="Articles"
+      type="Article"
+      cards={ressourcesByType.articles}
+    />
+  );
 }

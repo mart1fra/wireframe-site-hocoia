@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { navConfig, megaMenus } from "../../data/arborescence";
+import { navBar, megaMenus } from "../../data/arborescence";
 
-// ─── Animation du panneau ─────────────────────────────────────────────────
+// ─── Variants animation panneau ───────────────────────────────────────────
 
 const panelV = {
   hidden:  { opacity: 0, y: -8 },
@@ -11,22 +11,116 @@ const panelV = {
   exit:    { opacity: 0, y: -4, transition: { duration: 0.12, ease: "easeIn"  } },
 };
 
-// ─── Détermine la variante de nav selon la route ──────────────────────────
+// ─── Mega-menu "Vous êtes" ─────────────────────────────────────────────────
 
-function useNavVariant() {
-  const { pathname } = useLocation();
-  if (pathname.startsWith("/patient"))   return "patient";
-  if (pathname.startsWith("/pro-sante")) return "prosante";
-  return "default";
+function VousEtesMegaMenu({ data, onClose }) {
+  const [activeId, setActiveId] = useState(data.defaultProfile);
+
+  const activeProfile = data.profiles.find((p) => p.id === activeId);
+  const contentKey    = activeProfile.contentKey;
+  const content       = data.profileContent[contentKey];
+
+  // Résout les ancres relatives (#section) en URLs complètes (page + ancre)
+  const resolveHref = (href) =>
+    href.startsWith("#") ? activeProfile.href + href : href;
+
+  return (
+    <div className="flex" style={{ minWidth: 620 }}>
+
+      {/* ── Colonne gauche : liste des profils ── */}
+      <div className="w-52 border-r border-gray-100 p-4 shrink-0">
+        <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-3">
+          {data.leftTitle}
+        </p>
+        <ul className="space-y-0.5">
+          {data.profiles.map((profile) => (
+            <li key={profile.id}>
+              <Link
+                to={profile.href}
+                onClick={onClose}
+                onMouseEnter={() => setActiveId(profile.id)}
+                className={`flex items-center gap-2.5 px-2.5 py-2 rounded-lg transition-colors duration-150 w-full ${
+                  activeId === profile.id
+                    ? "bg-gray-100"
+                    : "hover:bg-gray-50"
+                }`}
+              >
+                <span className="w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 flex-shrink-0" />
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-gray-900 leading-tight">
+                    {profile.label}
+                  </p>
+                  <p className="text-xs text-gray-500 leading-tight mt-0.5">
+                    {profile.subtext}
+                  </p>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* ── Zone droite : contenu dynamique ── */}
+      <div className="flex-1 p-5">
+        <motion.div
+          key={contentKey + activeId}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.15 }}
+        >
+          {/* Colonnes */}
+          <div className="flex gap-8">
+            {content.columns.map((col) => (
+              <div key={col.id} className="flex-1 min-w-0">
+                <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-3">
+                  {col.title}
+                </p>
+                <ul className="space-y-3">
+                  {col.items.map((item) => (
+                    <li key={item.id}>
+                      <Link
+                        to={resolveHref(item.href)}
+                        onClick={onClose}
+                        className="group"
+                      >
+                        <p className="text-sm font-medium text-gray-900 group-hover:text-gray-700 transition-colors leading-tight">
+                          {item.label}
+                        </p>
+                        <p className="text-xs text-gray-500 leading-tight mt-0.5">
+                          {item.subtext}
+                        </p>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          {/* Footer CTA */}
+          <div className="mt-5 pt-4 border-t border-gray-100 flex items-center justify-between gap-6">
+            <p className="text-sm text-gray-600">{content.footer.text}</p>
+            <Link
+              to={resolveHref(content.footer.anchor)}
+              onClick={onClose}
+              className="px-4 py-1.5 text-sm font-medium text-gray-900 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors duration-150 whitespace-nowrap shrink-0"
+            >
+              {content.footer.btnLabel}
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
 }
 
-// ─── Panneau colonnes (mega-menu Vous êtes / Nos solutions) ───────────────
+// ─── Panneau colonnes standard (Nos solutions) ────────────────────────────
 
 function ColumnsPanel({ data, onClose }) {
   return (
     <div className="flex p-5 gap-8">
       {data.columns.map((col) => (
-        <div key={col.id} className="min-w-[140px]">
+        <div key={col.id} className="min-w-[160px]">
           <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-3">
             {col.title}
           </p>
@@ -49,23 +143,30 @@ function ColumnsPanel({ data, onClose }) {
   );
 }
 
-// ─── Panneau liste simple (Ressources / À propos) ─────────────────────────
+// ─── Panneau liste simple (Nos solutions / Ressources / À propos) ────────
 
 function SimplePanel({ data, onClose }) {
   return (
-    <ul className="py-2 min-w-[180px]">
-      {data.items.map((item) => (
-        <li key={item.id}>
-          <Link
-            to={item.href}
-            onClick={onClose}
-            className="block px-5 py-2 text-sm font-medium text-gray-900 hover:text-gray-700 hover:translate-x-[2px] transition-all duration-150"
-          >
-            {item.label}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div className="py-3 px-5 min-w-[200px]">
+      {data.title && (
+        <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-3">
+          {data.title}
+        </p>
+      )}
+      <ul className="space-y-0.5">
+        {data.items.map((item) => (
+          <li key={item.id}>
+            <Link
+              to={item.href}
+              onClick={onClose}
+              className="block py-1.5 text-sm font-medium text-gray-900 hover:text-gray-700 hover:translate-x-[2px] transition-all duration-150"
+            >
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
@@ -85,17 +186,22 @@ function DropdownPanel({ menuKey, isOpen, onClose }) {
           exit="exit"
           className="absolute top-full left-0 z-50 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden"
         >
-          {data.type === "columns"
-            ? <ColumnsPanel data={data} onClose={onClose} />
-            : <SimplePanel  data={data} onClose={onClose} />
-          }
+          {data.type === "profil-switcher" && (
+            <VousEtesMegaMenu data={data} onClose={onClose} />
+          )}
+          {data.type === "columns" && (
+            <ColumnsPanel data={data} onClose={onClose} />
+          )}
+          {data.type === "simple" && (
+            <SimplePanel data={data} onClose={onClose} />
+          )}
         </motion.div>
       )}
     </AnimatePresence>
   );
 }
 
-// ─── Item de navigation (avec ou sans dropdown) ───────────────────────────
+// ─── Item de navigation ───────────────────────────────────────────────────
 
 function NavItem({ item }) {
   const [open, setOpen] = useState(false);
@@ -152,8 +258,6 @@ function NavItem({ item }) {
 // ─── Navbar ───────────────────────────────────────────────────────────────
 
 export default function Navbar() {
-  const variant = useNavVariant();
-  const config  = navConfig[variant];
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -182,18 +286,25 @@ export default function Navbar() {
 
         {/* Nav centrale */}
         <ul className="flex items-center gap-0.5">
-          {config.center.map((item) => (
+          {navBar.center.map((item) => (
             <NavItem key={item.id} item={item} />
           ))}
         </ul>
 
         {/* Actions droite */}
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-4 shrink-0">
           <Link
-            to={config.cta.href}
+            to={navBar.cta.href}
             className="px-5 py-2 text-sm font-medium text-gray-900 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors duration-150"
           >
-            {config.cta.label}
+            {navBar.cta.label}
+          </Link>
+
+          <Link
+            to={navBar.login.href}
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors duration-150"
+          >
+            {navBar.login.label}
           </Link>
 
           <div className="flex items-center gap-1 text-xs text-gray-500">

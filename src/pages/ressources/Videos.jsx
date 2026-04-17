@@ -1,4 +1,12 @@
-import PlaceholderPage from "../../components/PlaceholderPage";
+import ResourcePage from "../../components/ResourcePage";
+import { ressourcesByType } from "../../data/arborescence";
+
 export default function Videos() {
-  return <PlaceholderPage title="Vidéos" section="Ressources" />;
+  return (
+    <ResourcePage
+      title="Vidéos"
+      type="Vidéo"
+      cards={ressourcesByType.videos}
+    />
+  );
 }

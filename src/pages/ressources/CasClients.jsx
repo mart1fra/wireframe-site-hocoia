@@ -1,4 +1,12 @@
-import PlaceholderPage from "../../components/PlaceholderPage";
+import ResourcePage from "../../components/ResourcePage";
+import { ressourcesByType } from "../../data/arborescence";
+
 export default function CasClients() {
-  return <PlaceholderPage title="Cas clients" section="Ressources" />;
+  return (
+    <ResourcePage
+      title="Cas clients"
+      type="Cas client"
+      cards={ressourcesByType.casClients}
+    />
+  );
 }

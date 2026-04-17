@@ -1,0 +1,257 @@
+// ─── Hero ─────────────────────────────────────────────────────────────────
+
+export const hero = {
+  eyebrow: "Entreprises · Assureurs · Collectivités · Hôpitaux",
+  h1: "Offrez à vos équipes une prévention santé sans friction.",
+  subtitle:
+    "Hocoia déploie des bus médicaux équipés directement dans vos locaux ou près de vos sites. Programme clé en main, résultats mesurables, conformité RGPD.",
+  checks: [
+    "Zéro organisation côté RH — on gère tout",
+    "Reporting anonymisé livré sous 72h",
+    "ROI moyen constaté : ×3 en 12 mois",
+    "Déploiement en moins de 3 semaines",
+  ],
+  ctaOutline: "Voir un cas client →",
+  ctaGhost: "Télécharger le dossier",
+  form: {
+    title: "Parlons de votre projet",
+    subtitle: "Un expert vous répond sous 24h.",
+    cta: "Demander un rendez-vous →",
+    note: "Sans engagement · Réponse sous 24h · RGPD",
+    roleOptions: [
+      "Entreprise / DRH",
+      "Assureur / Mutuelle",
+      "Collectivité / Territoire",
+      "Hôpital / Clinique",
+    ],
+    sizeOptions: ["50–200 salariés", "200–1 000 salariés", "1 000+ salariés"],
+    needOptions: ["Journée santé", "Programme annuel", "Démo produit"],
+  },
+};
+
+// ─── Logos ────────────────────────────────────────────────────────────────
+
+export const logos = {
+  label: "Ils font confiance à Hocoia",
+  items: [
+    "Veolia",
+    "MGEN",
+    "Région Grand Est",
+    "AP-HP",
+    "Harmonie Mutuelle",
+    "CD 67",
+    "Schneider Electric",
+  ],
+};
+
+// ─── Use case entreprise ──────────────────────────────────────────────────
+
+export const useCase = {
+  eyebrow: "Pour les entreprises",
+  h2: "Réduisez l'absentéisme, valorisez votre marque employeur",
+  intro:
+    "Vos collaborateurs font face à des délais de 3 à 6 mois chez les spécialistes. Hocoia contourne ces délais en venant directement à eux, sur leur lieu de travail. Résultat : une participation bien plus élevée, des bilans réalisés, un impact mesurable.",
+  features: [
+    {
+      id: "f1",
+      title: "Bus déployé sur site",
+      description:
+        "Notre bus s'installe sur votre parking. Vos collaborateurs consultent sur leur temps de travail.",
+    },
+    {
+      id: "f2",
+      title: "Dashboard & reporting",
+      description:
+        "Données anonymisées, tableaux de bord RH, bilan livré sous 72h.",
+    },
+    {
+      id: "f3",
+      title: "Conformité totale RGPD",
+      description:
+        "Hébergement HDS, données anonymisées, aucun accès employeur aux résultats individuels.",
+    },
+    {
+      id: "f4",
+      title: "Déploiement en 3 semaines",
+      description:
+        "De la signature au premier bus sur site en moins de 21 jours.",
+    },
+  ],
+  ctaPrimary: "Parler à un expert",
+  ctaOutline: "Voir le cas Veolia →",
+  casClients: [
+    {
+      id: "cc1",
+      tag: "Industrie · 2 400 salariés",
+      title:
+        "Comment Veolia Alsace a réduit son absentéisme de 18 % en 12 mois",
+      description:
+        "Un programme de prévention cardiovasculaire et dermatologique déployé sur 3 sites en 4 semaines.",
+      metrics: [
+        { value: "–18 %", label: "Absentéisme" },
+        { value: "680",   label: "Bilans réalisés" },
+        { value: "94 %",  label: "Satisfaction" },
+      ],
+      ctaLabel: "Lire le cas complet →",
+      active: true,
+      quote: {
+        text: "On pensait que l'organisation serait complexe. Hocoia a géré tout de A à Z. Nos managers n'ont rien eu à faire.",
+        author: "Directrice RH, Veolia Alsace",
+      },
+    },
+    {
+      id: "cc2",
+      tag: "À venir · Prochain cas client",
+      title: "Cas client à venir",
+      description:
+        "Nous documentons en ce moment plusieurs déploiements entreprise. Revenez dans quelques semaines.",
+      metrics: [
+        { value: "—", label: "En cours" },
+        { value: "—", label: "En cours" },
+        { value: "—", label: "En cours" },
+      ],
+      ctaLabel: "Disponible prochainement",
+      active: false,
+      quote: null,
+    },
+  ],
+};
+
+// ─── Chiffres clés ────────────────────────────────────────────────────────
+
+export const stats = [
+  { value: "–18 %",  label: "Absentéisme moyen",     source: "Données internes 2024" },
+  { value: "×3",     label: "ROI moyen constaté",     source: "Étude interne 24 mois" },
+  { value: "92 %",   label: "Satisfaction salariés",  source: "Post-bilan 2024" },
+  { value: "3 sem.", label: "Délai de déploiement",   source: "Médiane contrats 2024" },
+  { value: "80+",    label: "Structures partenaires", source: "Portefeuille actif" },
+];
+
+// ─── Processus ────────────────────────────────────────────────────────────
+
+export const processus = {
+  eyebrow: "Notre méthode",
+  h2: "De la prise de contact au premier bilan en 3 semaines",
+  steps: [
+    {
+      id: "s1",
+      number: "01",
+      day: "Jour 1",
+      title: "Échange de cadrage",
+      description:
+        "Un expert Hocoia analyse vos besoins, vos effectifs et vos contraintes logistiques.",
+    },
+    {
+      id: "s2",
+      number: "02",
+      day: "J+3",
+      title: "Proposition sur-mesure",
+      description:
+        "Programme adapté, devis détaillé, planning indicatif sur-mesure pour votre structure.",
+    },
+    {
+      id: "s3",
+      number: "03",
+      day: "J+7",
+      title: "Signature & logistique",
+      description:
+        "Contrat signé, communication interne préparée, logistique bus planifiée avec votre équipe.",
+    },
+    {
+      id: "s4",
+      number: "04",
+      day: "J+21",
+      title: "Premier bus sur site",
+      description:
+        "Lancement du programme, prise en charge totale par Hocoia, premiers bilans réalisés.",
+    },
+  ],
+};
+
+// ─── Ressources ───────────────────────────────────────────────────────────
+
+export const ressources = {
+  eyebrow: "Ressources",
+  h2: "Préparez votre décision",
+  cards: [
+    {
+      id: "r1",
+      type: "Livre blanc",
+      title: "Prévention en entreprise : quel ROI attendre en 12 mois ?",
+      meta: "PDF · 24 pages",
+    },
+    {
+      id: "r2",
+      type: "Cas client",
+      title: "Veolia Alsace : –18 % d'absentéisme avec Hocoia",
+      meta: "Étude de cas · 8 pages",
+    },
+    {
+      id: "r3",
+      type: "Guide",
+      title:
+        "Comment convaincre votre COMEX d'investir dans la prévention santé",
+      meta: "PDF · 12 pages",
+    },
+    {
+      id: "r4",
+      type: "Podcast",
+      title: "Santé au travail : les nouvelles obligations DRH 2025",
+      meta: "28 min",
+    },
+    {
+      id: "r5",
+      type: "Webinaire",
+      title: "Déployer un programme santé salarié : retour à 3 voix",
+      meta: "Replay · 45 min",
+    },
+    {
+      id: "r6",
+      type: "Étude",
+      title: "Déserts médicaux & entreprises : nouvelles solutions 2025",
+      meta: "Rapport · 18 pages",
+    },
+  ],
+};
+
+// ─── FAQ ──────────────────────────────────────────────────────────────────
+
+export const faq = {
+  eyebrow: "Questions fréquentes",
+  h2: "Ce que se demandent les DRH avant de démarrer",
+  items: [
+    {
+      id: "q1",
+      question: "Quelle charge de travail pour nos équipes RH ?",
+      answer:
+        "Quasi nulle. Hocoia gère l'intégralité de l'organisation : logistique, communication interne, prise de RDV, bilan.",
+    },
+    {
+      id: "q2",
+      question: "Comment sont protégées les données de santé ?",
+      answer:
+        "Hébergement certifié HDS, conformité RGPD totale, données anonymisées. Aucun résultat individuel transmis à l'employeur.",
+    },
+    {
+      id: "q3",
+      question: "Quel est le coût minimum ?",
+      answer:
+        "Programmes disponibles à partir de 50 salariés. Devis personnalisé sous 48h.",
+    },
+    {
+      id: "q4",
+      question: "Peut-on cibler certaines spécialités ?",
+      answer:
+        "Oui, 12 spécialités disponibles : cardio, dermato, mammographie, bilan sanguin, etc.",
+    },
+  ],
+};
+
+// ─── CTA final ────────────────────────────────────────────────────────────
+
+export const ctaFinal = {
+  h2: "Prêt à déployer Hocoia dans votre structure ?",
+  subtitle: "Un expert vous rappelle sous 24h. Sans engagement.",
+  ctaPrimary: "Demander un rendez-vous",
+  ctaSecondary: "Télécharger le dossier complet",
+};
