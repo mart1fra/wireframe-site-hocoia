@@ -1,9 +1,9 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  h1: "Hocoia, au plus proche de votre santé",
+  h1: "Une équipe médicale qui vient jusqu'à vous, où que vous soyez.",
   subtitle:
-    "Nos cabinets médicaux mobile et connecté, se déplacent au cœur de votre commune, de votre entreprise ou de votre territoire. Dépistage, prévention, consultations, la santé pour vous et qui vient à vous.",
+    "En France, 6 millions de personnes vivent dans un désert médical. Hocoia déploie des bus médicaux équipés directement dans vos communes et vos entreprises : dépistage, consultations, prévention. Sans que vous ayez à vous déplacer.",
   ctaPrimary: "Voir le bus près de moi",
   ctaOutline: "Prendre RDV",
   b2bLink: {
@@ -16,17 +16,17 @@ export const hero = {
 // ─── Logos ────────────────────────────────────────────────────────────────
 
 export const logos = {
-  label: "Ils font confiance à Hocoia",
-  items: ["Veolia", "MGEN", "Région Grand Est", "AP-HP", "Harmonie Mutuelle", "CD 67"],
+  label: "Ils nous font confiance",
+  items: ["Renault", "MGEN", "Pfizer", "Groupama", "ASNR", "CPAM", "CH Verdun"],
 };
 
 // ─── Identité ─────────────────────────────────────────────────────────────
 
 export const identite = {
   eyebrow: "Qui sommes-nous",
-  h2: "Hocoia, la santé en tout lieu",
+  h2: "Un cabinet médical qui se déplace — pas vous",
   description:
-    "Start-up française fondée par un médecin et des ingénieurs, Hocoia déploie des cabinets médicaux mobiles équipés au plus près des patients et des organisations. Dépistage, prévention, consultations de spécialité, nos équipes de professionnels de santé interviennent là où la santé manque, partout en France.",
+    "Fondée par un médecin et des ingénieurs, Hocoia opère une flotte de bus médicaux équipés d'appareils de diagnostic de pointe. Nos professionnels de santé se rendent là où les patients se trouvent : en bas de chez eux, dans leur entreprise, sur leur lieu de travail.",
   points: [
     {
       id: "i1",
@@ -79,9 +79,7 @@ export const specialites = {
 export const stats = [
   { value: "4 800", label: "Patients accompagnés" },
   { value: "80+",   label: "Communes desservies" },
-  { value: "–18%",  label: "Absentéisme moyen constaté" },
   { value: "12",    label: "Spécialités disponibles" },
-  { value: "< 48h", label: "Délai moyen de RDV" },
 ];
 
 // ─── Use cases B2B ────────────────────────────────────────────────────────

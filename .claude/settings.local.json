@@ -3,7 +3,8 @@
     "allow": [
       "Bash(cd \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\" && npm install)",
       "Bash(cd \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\" && npm run build 2>&1)",
-      "Bash(cd \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\" && npm run dev)"
+      "Bash(cd \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\" && npm run dev)",
+      "Bash(npm run *)"
     ]
   }
 }

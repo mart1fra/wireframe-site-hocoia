@@ -1,15 +1,14 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Entreprises · Assureurs · Collectivités · Hôpitaux",
+  eyebrow: "Entreprises",
   h1: "Offrez à vos équipes une prévention santé sans friction.",
   subtitle:
-    "Hocoia déploie des bus médicaux équipés directement dans vos locaux ou près de vos sites. Programme clé en main, résultats mesurables, conformité RGPD.",
+    "Hocoia déploie des bus médicaux équipés directement dans vos locaux ou près de vos sites. Programme clé en main, résultats mesurables, pilotage simple.",
   checks: [
-    "Zéro organisation côté RH — on gère tout",
-    "Reporting anonymisé livré sous 72h",
-    "ROI moyen constaté : ×3 en 12 mois",
-    "Déploiement en moins de 3 semaines",
+    "Zéro organisation côté RH, on gère tout",
+    "Reporting anonymisé livré sous 72h en moyenne",
+    "Conforme RGPD, données hébergées en France",
   ],
   ctaOutline: "Voir un cas client →",
   ctaGhost: "Télécharger le dossier",
@@ -32,7 +31,7 @@ export const hero = {
 // ─── Logos ────────────────────────────────────────────────────────────────
 
 export const logos = {
-  label: "Ils font confiance à Hocoia",
+  label: "+100 entreprises comme la vôtre nous font confiance",
   items: [
     "Veolia",
     "MGEN",
@@ -127,11 +126,41 @@ export const stats = [
   { value: "80+",    label: "Structures partenaires", source: "Portefeuille actif" },
 ];
 
+// ─── Avis clients entreprise ──────────────────────────────────────────────
+
+export const avisClients = {
+  eyebrow: "Témoignages",
+  h2: "Entrepreneurs, DRH, Gestionnaires de paie : voici ce qu'ils préfèrent chez Hocoia",
+  cards: [
+    {
+      id: "ac1",
+      stars: "★★★★★",
+      quote: "Pour nos équipes dispersées sur 4 sites, Hocoia a organisé des journées santé en moins d'un mois. Le reporting anonymisé nous donne enfin des données actionnables.",
+      author: "Claire M.",
+      role: "DRH, ETI industrielle · 1 200 salariés",
+    },
+    {
+      id: "ac2",
+      stars: "★★★★★",
+      quote: "On a lancé le programme dans la foulée du COMEX. Moins de 4 semaines pour le déploiement, zéro charge côté RH. Je recommande à tout DAF qui veut un ROI mesurable.",
+      author: "Julien R.",
+      role: "Directeur financier, PME · 450 salariés",
+    },
+    {
+      id: "ac3",
+      stars: "★★★★☆",
+      quote: "La gestion de paie santé était un casse-tête. Avec Hocoia, tout est centralisé, la paperasse est gérée en amont. Nos salariés sont ravis.",
+      author: "Sophie T.",
+      role: "Gestionnaire de paie, Groupe services · 800 salariés",
+    },
+  ],
+};
+
 // ─── Processus ────────────────────────────────────────────────────────────
 
 export const processus = {
   eyebrow: "Notre méthode",
-  h2: "De la prise de contact au premier bilan en 3 semaines",
+  h2: "De la prise de contact au premier bilan en 4 semaines",
   steps: [
     {
       id: "s1",
@@ -144,7 +173,7 @@ export const processus = {
     {
       id: "s2",
       number: "02",
-      day: "J+3",
+      day: "J+5",
       title: "Proposition sur-mesure",
       description:
         "Programme adapté, devis détaillé, planning indicatif sur-mesure pour votre structure.",
@@ -152,7 +181,7 @@ export const processus = {
     {
       id: "s3",
       number: "03",
-      day: "J+7",
+      day: "J+10",
       title: "Signature & logistique",
       description:
         "Contrat signé, communication interne préparée, logistique bus planifiée avec votre équipe.",
@@ -160,7 +189,7 @@ export const processus = {
     {
       id: "s4",
       number: "04",
-      day: "J+21",
+      day: "J+28",
       title: "Premier bus sur site",
       description:
         "Lancement du programme, prise en charge totale par Hocoia, premiers bilans réalisés.",

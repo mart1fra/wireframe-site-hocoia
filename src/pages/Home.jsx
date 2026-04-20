@@ -260,7 +260,7 @@ function StatsSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
-            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-gray-200"
+            className="grid grid-cols-1 sm:grid-cols-3 divide-x divide-gray-200"
           >
             {stats.map((stat) => (
               <motion.div
@@ -499,8 +499,8 @@ export default function Home() {
       <HeroSection />
       <LogosSection />
       <IdentiteSection />
-      <SpecialitesSection />
       <StatsSection />
+      <SpecialitesSection />
       <UseCasesSection />
       <B2bZoneSection />
       <TemoignagesSection />

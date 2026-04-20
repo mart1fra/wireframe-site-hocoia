@@ -172,36 +172,30 @@ export const faq = {
   items: [
     {
       id: "q1",
-      question: "Est-ce que c'est gratuit ?",
-      answer:
-        "Oui. Les dépistages sont pris en charge. Munissez-vous de votre carte vitale et de votre mutuelle.",
-    },
-    {
-      id: "q2",
       question: "Dois-je prendre rendez-vous ?",
       answer:
         "C'est recommandé pour garantir votre créneau, mais certaines journées acceptent les venues sans rendez-vous selon la disponibilité.",
     },
     {
-      id: "q3",
+      id: "q2",
       question: "Combien de temps dure la consultation ?",
       answer:
-        "Entre 15 et 30 minutes selon la spécialité. Vous pouvez combiner plusieurs dépistages lors d'un même passage.",
+        "Entre 15 et 30 minutes selon la spécialité.",
     },
     {
-      id: "q4",
+      id: "q3",
       question: "Qui sont les professionnels à bord ?",
       answer:
         "Des médecins, infirmiers et spécialistes diplômés, tous inscrits à l'Ordre. Ils exercent en prestation pour Hocoia.",
     },
     {
-      id: "q5",
+      id: "q4",
       question: "Comment je reçois mes résultats ?",
       answer:
         "Par email sécurisé sous 48 à 72h. Le compte-rendu peut aussi être transmis à votre médecin traitant.",
     },
     {
-      id: "q6",
+      id: "q5",
       question: "Le bus passe-t-il régulièrement dans ma ville ?",
       answer:
         "Les passages sont planifiés en fonction des demandes et des partenariats locaux. Activez l'alerte pour être prévenu du prochain passage.",

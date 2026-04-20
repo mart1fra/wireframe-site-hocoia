@@ -6,6 +6,7 @@ import {
   hero,
   logos,
   useCase,
+  avisClients,
   stats,
   processus,
   ressources,
@@ -276,6 +277,46 @@ function UseCaseSection() {
   );
 }
 
+// ─── 3b. AVIS CLIENTS ENTREPRISE ──────────────────────────────────────────
+
+function AvisClientsSection() {
+  return (
+    <section className="bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 py-24">
+        <FadeIn className="mb-12">
+          <Eyebrow>{avisClients.eyebrow}</Eyebrow>
+          <SectionH2>{avisClients.h2}</SectionH2>
+        </FadeIn>
+
+        <motion.div
+          className="grid grid-cols-3 gap-6"
+          variants={listV}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          {avisClients.cards.map((card) => (
+            <motion.div
+              key={card.id}
+              variants={itemV}
+              className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col"
+            >
+              <p className="text-amber-400 text-sm mb-4">{card.stars}</p>
+              <p className="text-gray-700 text-sm leading-relaxed italic flex-1 mb-6">
+                "{card.quote}"
+              </p>
+              <div>
+                <p className="text-sm font-semibold text-gray-900">{card.author}</p>
+                <p className="text-xs text-gray-400 mt-0.5">{card.role}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
 // ─── 4. CHIFFRES CLÉS ─────────────────────────────────────────────────────
 
 function StatsSection() {
@@ -456,6 +497,7 @@ export default function Entreprises() {
       <HeroSection />
       <LogosSection />
       <UseCaseSection />
+      <AvisClientsSection />
       <StatsSection />
       <ProcessSection />
       <RessourcesSection />

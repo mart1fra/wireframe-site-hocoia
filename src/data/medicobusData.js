@@ -107,8 +107,7 @@ export const definition = {
     },
   ],
   photos: [
-    { placeholder: "Photo MédicoBus Hocoia — extérieur", height: "h-44" },
-    { placeholder: "Photo intérieur — équipements à bord", height: "h-28" },
+    { placeholder: "MédicoBus 3D — vue extérieure et intérieure interactive", height: "h-[300px]" },
   ],
   contraintes: {
     titre: "Contraintes logistiques à prévoir",

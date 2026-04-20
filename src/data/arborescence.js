@@ -92,10 +92,9 @@ export const megaMenus = {
             id: "en-un-coup",
             title: "EN UN COUP D'ŒIL",
             items: [
-              { id: "calendrier",        label: "Voir le calendrier",  subtext: "Prochains passages par ville",  href: "/patient#calendrier" },
-              { id: "comment-ca-marche", label: "Comment ça se passe", subtext: "Le déroulé d'une visite",      href: "/patient#comment-ca-marche" },
-              { id: "temoignages",       label: "Avis patients",       subtext: "Témoignages et retours",       href: "/patient#temoignages" },
-              { id: "faq-patient",       label: "FAQ",                 subtext: "Vos questions fréquentes",     href: "/patient#faq" },
+              { id: "calendrier",        label: "Voir le calendrier",  subtext: "Prochains passages par ville", href: "/patient#calendrier" },
+              { id: "comment-ca-marche", label: "Comment ça se passe", subtext: "Le déroulé d'une visite",     href: "/patient#comment-ca-marche" },
+              { id: "faq-patient",       label: "FAQ",                 subtext: "Vos questions fréquentes",    href: "/patient#faq" },
             ],
           },
         ],
@@ -112,20 +111,17 @@ export const megaMenus = {
             id: "solutions-b2b",
             title: "NOS SOLUTIONS",
             items: [
-              { id: "offre",    label: "Notre offre",          subtext: "Bus déployé, dashboard, RGPD",          href: "#use-case" },
-              { id: "methode",  label: "Notre méthode",        subtext: "De la prise de contact au déploiement", href: "#processus" },
-              { id: "cas",      label: "Cas clients",          subtext: "Retours d'expérience entreprises",      href: "#cas-clients" },
-              { id: "chiffres", label: "Chiffres clés",        subtext: "Impact mesuré en 12 mois",              href: "#chiffres" },
+              { id: "offre",   label: "Notre offre",    subtext: "Bus déployé, dashboard, RGPD",          href: "#use-case" },
+              { id: "methode", label: "Notre méthode",  subtext: "De la prise de contact au déploiement", href: "#processus" },
+              { id: "cas",     label: "Cas clients",    subtext: "Retours d'expérience entreprises",      href: "#cas-clients" },
             ],
           },
           {
             id: "preuves",
-            title: "RESSOURCES & PREUVES",
+            title: "RESSOURCES",
             items: [
-              { id: "livres",  label: "Livres blancs & guides",  subtext: "Préparez votre décision",   href: "#ressources" },
-              { id: "roi",     label: "ROI de la prévention",    subtext: "Étude d'impact chiffrée",   href: "#ressources" },
-              { id: "faq-b2b", label: "FAQ",                     subtext: "Questions des décideurs",   href: "#faq" },
-              { id: "contact", label: "Demander un rendez-vous", subtext: "Un expert sous 24h",        href: "#contact" },
+              { id: "livres",  label: "Livres blancs & guides", subtext: "Préparez votre décision", href: "#ressources" },
+              { id: "faq-b2b", label: "FAQ",                    subtext: "Questions des décideurs", href: "#faq" },
             ],
           },
         ],
@@ -170,7 +166,6 @@ export const megaMenus = {
   // ── "Nos solutions" : liste simple ────────────────────────────────────
   "nos-solutions": {
     type: "simple",
-    title: "NOS PRODUITS",
     items: [
       { id: "medicobus",    label: "MédicoBus",       href: "/produits/medicobus" },
       { id: "mammobus",     label: "MammoBus",        href: "/produits/mammobus" },
@@ -211,32 +206,10 @@ export const navigation = [
     label: "Solutions",
     type: "conversion",
     children: [
-      {
-        id: "entreprises",
-        label: "Entreprises & Assureurs",
-        children: [
-          { id: "depistage-entreprise",       label: "Dépistage en entreprise" },
-          { id: "prevention-collaborateurs",  label: "Prévention santé collaborateurs" },
-          { id: "programmes-assurantiels",    label: "Programmes assurantiels" },
-        ],
-      },
-      {
-        id: "acteurs-publics",
-        label: "Acteurs publics & territoires",
-        children: [
-          { id: "depistage-territorial",      label: "Dépistage territorial" },
-          { id: "prevention-populationnelle", label: "Prévention populationnelle" },
-          { id: "achat-bus",                  label: "Achat de bus" },
-        ],
-      },
-      {
-        id: "etablissements-sante",
-        label: "Établissements de santé",
-        children: [
-          { id: "partenariats-hospitaliers", label: "Partenariats hospitaliers" },
-          { id: "externalisation-depistage", label: "Externalisation dépistage" },
-        ],
-      },
+      { id: "medicobus",    label: "MédicoBus" },
+      { id: "mammobus",     label: "MammoBus" },
+      { id: "dermatobus",   label: "DermatoBus" },
+      { id: "centre-sante", label: "Centre de santé" },
     ],
   },
   {
@@ -269,9 +242,10 @@ export const pagesSecondaires = [
     id: "presse",
     label: "Presse",
     children: [
-      { id: "kit-media",      label: "Kit média" },
-      { id: "communiques",    label: "Communiqués" },
-      { id: "contact-presse", label: "Contact" },
+      { id: "kit-media",           label: "Kit média" },
+      { id: "communiques",         label: "Communiqués" },
+      { id: "ils-parlent-de-nous", label: "Ils parlent de nous" },
+      { id: "contact-presse",      label: "Contact" },
     ],
   },
   {
@@ -279,7 +253,7 @@ export const pagesSecondaires = [
     label: "FAQ",
     children: [
       { id: "faq-organisations",   label: "Organisations" },
-      { id: "faq-professionnels",  label: "Professionnels" },
+      { id: "faq-pro-medical",     label: "Pro médical" },
       { id: "faq-patients-global", label: "Patients" },
     ],
   },

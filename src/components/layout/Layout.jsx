@@ -1,6 +1,7 @@
 import GeoBanner from "./GeoBanner";
 import Navbar from "./Navbar";
 import Breadcrumb from "./Breadcrumb";
+import Partners from "./Partners";
 import Footer from "./Footer";
 
 export default function Layout({ children }) {
@@ -12,6 +13,7 @@ export default function Layout({ children }) {
         <Breadcrumb />
       </div>
       <main className="flex-1">{children}</main>
+      <Partners />
       <Footer />
     </div>
   );
