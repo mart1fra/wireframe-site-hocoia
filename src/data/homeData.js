@@ -87,10 +87,9 @@ export const stats = [
 export const useCases = {
   label: "Vous êtes",
   tabs: [
-    { id: "entreprise",   label: "Entreprise",         eyebrow: "Use case — Entreprise" },
-    { id: "assureur",     label: "Assureur / Mutuelle", eyebrow: "Use case — Assureur" },
-    { id: "collectivite", label: "Collectivité",        eyebrow: "Use case — Collectivité" },
-    { id: "hopital",      label: "Hôpital / Clinique",  eyebrow: "Use case — Établissement" },
+    { id: "entreprise",   label: "Entreprises & assureurs",          eyebrow: "Use case — Entreprises & assureurs" },
+    { id: "collectivite", label: "Secteur public & institutions",    eyebrow: "Use case — Secteur public & institutions" },
+    { id: "hopital",      label: "Acteurs de santé & médico-social", eyebrow: "Use case — Acteurs de santé & médico-social" },
     { id: "pro-sante",    label: "Pro de santé",        eyebrow: "Use case — Pro de santé" },
   ],
   sharedContent: {

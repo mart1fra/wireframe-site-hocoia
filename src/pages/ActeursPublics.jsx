@@ -4,7 +4,7 @@ export default function ActeursPublics() {
       <section id="contact" className="bg-gray-900 py-24 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">
-            Collectivités · Territoires · Acteurs publics
+            Secteur public & institutions
           </p>
           <h1 className="font-display font-bold text-4xl text-white leading-tight mb-5">
             Hocoia pour les acteurs publics

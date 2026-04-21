@@ -25,10 +25,10 @@ function VousEtesMegaMenu({ data, onClose }) {
     href.startsWith("#") ? activeProfile.href + href : href;
 
   return (
-    <div className="flex" style={{ minWidth: 620 }}>
+    <div className="flex" style={{ minWidth: 980 }}>
 
       {/* ── Colonne gauche : liste des profils ── */}
-      <div className="w-52 border-r border-gray-100 p-4 shrink-0">
+      <div className="w-[400px] border-r border-gray-100 p-4 shrink-0">
         <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-3">
           {data.leftTitle}
         </p>
@@ -176,6 +176,8 @@ function DropdownPanel({ menuKey, isOpen, onClose }) {
   const data = megaMenus[menuKey];
   if (!data) return null;
 
+  const centered = data.type === "profil-switcher";
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -184,7 +186,11 @@ function DropdownPanel({ menuKey, isOpen, onClose }) {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className="absolute top-full left-0 z-50 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden"
+          className={`z-50 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden ${
+            centered
+              ? "fixed top-16 left-1/2 -translate-x-1/2"
+              : "absolute top-full left-0"
+          }`}
         >
           {data.type === "profil-switcher" && (
             <VousEtesMegaMenu data={data} onClose={onClose} />

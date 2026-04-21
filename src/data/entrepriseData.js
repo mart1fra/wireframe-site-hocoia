@@ -1,7 +1,7 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Entreprises",
+  eyebrow: "Entreprises & assureurs",
   h1: "Offrez à vos équipes une prévention santé sans friction.",
   subtitle:
     "Hocoia déploie des bus médicaux équipés directement dans vos locaux ou près de vos sites. Programme clé en main, résultats mesurables, pilotage simple.",

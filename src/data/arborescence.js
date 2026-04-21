@@ -38,8 +38,8 @@ export const megaMenus = {
       },
       {
         id: "entreprise",
-        label: "Entreprise",
-        subtext: "Solutions RH santé",
+        label: "Entreprises & assureurs",
+        subtext: "Solutions RH & assurance santé",
         icon: "🏢",
         iconBg: "#ede9fe",
         href: "/entreprises",
@@ -47,8 +47,8 @@ export const megaMenus = {
       },
       {
         id: "collectivite",
-        label: "Collectivité",
-        subtext: "Santé de proximité",
+        label: "Secteur public & institutions",
+        subtext: "Santé de proximité pour vos territoires",
         icon: "🏛️",
         iconBg: "#dbeafe",
         href: "/acteurs-publics",
@@ -56,8 +56,8 @@ export const megaMenus = {
       },
       {
         id: "etablissement",
-        label: "Établissement",
-        subtext: "Dépistage externalisé",
+        label: "Acteurs de santé & médico-social",
+        subtext: "Dépistage externalisé & partenariats",
         icon: "🏥",
         iconBg: "#ffedd5",
         href: "/etablissements-sante",
