@@ -168,8 +168,8 @@ export const megaMenus = {
     type: "simple",
     items: [
       { id: "medicobus",    label: "MédicoBus",       href: "/produits/medicobus" },
-      { id: "mammobus",     label: "MammoBus",        href: "/produits/mammobus" },
-      { id: "dermatobus",   label: "DermatoBus",      href: "/produits/dermatobus" },
+      { id: "mammobus",     label: "MammoBus",        href: "/mammobus" },
+      { id: "dermatobus",   label: "DermatoBus",      href: "/dermatobus" },
       { id: "centre-sante", label: "Centre de santé", href: "/produits/centre-sante" },
     ],
   },

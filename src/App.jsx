@@ -15,12 +15,15 @@ import CancerSein         from "./pages/solutions/CancerSein";
 import SanteFemme         from "./pages/solutions/SanteFemme";
 
 import MedicoBus          from "./pages/produits/MedicoBus";
-import MammoBus           from "./pages/produits/MammoBus";
-import DermatoBus         from "./pages/produits/DermatoBus";
+import MammoBusPlaceholder  from "./pages/produits/MammoBus";
+import MammoBus            from "./pages/MammoBus";
+import DermatoBusPlaceholder from "./pages/produits/DermatoBus";
+import DermatoBus          from "./pages/DermatoBus";
 import CentreSante        from "./pages/produits/CentreSante";
 
 import Articles           from "./pages/ressources/Articles";
 import CasClients         from "./pages/ressources/CasClients";
+import CasClientPertuis   from "./pages/CasClientPertuis";
 import LivresBlancs       from "./pages/ressources/LivresBlancs";
 import Videos             from "./pages/ressources/Videos";
 import Podcast            from "./pages/ressources/Podcast";
@@ -56,13 +59,16 @@ export default function App() {
 
       {/* Solutions — Produits */}
       <Route path="/produits/medicobus"    element={<Wrap><MedicoBus /></Wrap>} />
-      <Route path="/produits/mammobus"     element={<Wrap><MammoBus /></Wrap>} />
-      <Route path="/produits/dermatobus"   element={<Wrap><DermatoBus /></Wrap>} />
+      <Route path="/mammobus"              element={<Wrap><MammoBus /></Wrap>} />
+      <Route path="/produits/mammobus"     element={<Wrap><MammoBusPlaceholder /></Wrap>} />
+      <Route path="/dermatobus"             element={<Wrap><DermatoBus /></Wrap>} />
+      <Route path="/produits/dermatobus"   element={<Wrap><DermatoBusPlaceholder /></Wrap>} />
       <Route path="/produits/centre-sante" element={<Wrap><CentreSante /></Wrap>} />
 
       {/* Ressources */}
       <Route path="/ressources/articles"      element={<Wrap><Articles /></Wrap>} />
       <Route path="/ressources/cas-clients"   element={<Wrap><CasClients /></Wrap>} />
+      <Route path="/ressources/cas-clients/pertuis-mutuelle-avignon" element={<Wrap><CasClientPertuis /></Wrap>} />
       <Route path="/ressources/livres-blancs" element={<Wrap><LivresBlancs /></Wrap>} />
       <Route path="/ressources/videos"        element={<Wrap><Videos /></Wrap>} />
       <Route path="/ressources/podcast"       element={<Wrap><Podcast /></Wrap>} />

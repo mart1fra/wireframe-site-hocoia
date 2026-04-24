@@ -19,13 +19,16 @@ export const breadcrumbsMap = {
 
   // Solutions — produits
   "/produits/medicobus":    [{ label: "Nos solutions", href: null }, { label: "MédicoBus" }],
+  "/mammobus":              [{ label: "Nos solutions", href: null }, { label: "MammoBus" }],
   "/produits/mammobus":     [{ label: "Nos solutions", href: null }, { label: "MammoBus" }],
+  "/dermatobus":            [{ label: "Nos solutions", href: null }, { label: "DermatoBus" }],
   "/produits/dermatobus":   [{ label: "Nos solutions", href: null }, { label: "DermatoBus" }],
   "/produits/centre-sante": [{ label: "Nos solutions", href: null }, { label: "Centre de santé mobile" }],
 
   // Ressources
   "/ressources/articles":      [{ label: "Ressources", href: null }, { label: "Articles" }],
   "/ressources/cas-clients":   [{ label: "Ressources", href: null }, { label: "Cas clients" }],
+  "/ressources/cas-clients/pertuis-mutuelle-avignon": [{ label: "Ressources", href: null }, { label: "Cas clients", href: "/ressources/cas-clients" }, { label: "Mutuelle Générale d'Avignon — Pertuis" }],
   "/ressources/livres-blancs": [{ label: "Ressources", href: null }, { label: "Livres blancs" }],
   "/ressources/videos":        [{ label: "Ressources", href: null }, { label: "Vidéos" }],
   "/ressources/podcast":       [{ label: "Ressources", href: null }, { label: "Podcast" }],
