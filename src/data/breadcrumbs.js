@@ -6,6 +6,7 @@ export const breadcrumbsMap = {
   // Profils
   "/entreprises":          [{ label: "Vous êtes", href: null }, { label: "Entreprises & assureurs" }],
   "/acteurs-publics":      [{ label: "Vous êtes", href: null }, { label: "Secteur public & institutions" }],
+  "/collectivites":        [{ label: "Vous êtes", href: null }, { label: "Secteur public & institutions" }],
   "/etablissements-sante": [{ label: "Vous êtes", href: null }, { label: "Acteurs de santé & médico-social" }],
   "/patient":              [{ label: "Vous êtes", href: null }, { label: "Patient" }],
   "/pro-sante":            [{ label: "Vous êtes", href: null }, { label: "Professionnel de santé" }],
@@ -32,6 +33,9 @@ export const breadcrumbsMap = {
   "/ressources/livres-blancs": [{ label: "Ressources", href: null }, { label: "Livres blancs" }],
   "/ressources/videos":        [{ label: "Ressources", href: null }, { label: "Vidéos" }],
   "/ressources/podcast":       [{ label: "Ressources", href: null }, { label: "Podcast" }],
+
+  // Connexion
+  "/se-connecter": [{ label: "Se connecter" }],
 
   // À propos
   "/a-propos/vision":      [{ label: "À propos", href: null }, { label: "Notre vision" }],

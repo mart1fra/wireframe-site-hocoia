@@ -77,6 +77,57 @@ export const stats = [
   { value: "95%",    label: "taux de survie si détecté au stade 1",             source: "INCa 2024" },
 ];
 
+// ─── Concept (composant ConceptSection) ──────────────────────────────────────
+
+export const concept = {
+  eyebrow: "Le concept",
+  title: "Qu'est-ce que le DermatoBus Hocoia ?",
+  paragraphs: [
+    {
+      id: "c1",
+      segments: [
+        { text: "Le DermatoBus est une unité mobile dédiée au " },
+        { text: "dépistage complet du cancer de la peau", bold: true },
+        { text: ". Il se déploie dans les communes et territoires qui n'ont plus accès à un dermatologue, zones rurales, déserts médicaux, départements sous-dotés." },
+      ],
+    },
+    {
+      id: "c2",
+      segments: [
+        { text: "À la différence d'un simple examen, le DermatoBus réalise une " },
+        { text: "cartographie du corps entier", bold: true },
+        { text: " avec dermoscopie de toutes les lésions, permettant un suivi comparatif d'une année sur l'autre, au cœur de la valeur médicale du dispositif." },
+      ],
+    },
+  ],
+  features: [
+    { id: "f1", titre: "Corps entier, aucune lésion oubliée", description: "Cartographie systématique, pas seulement les grains de beauté signalés par le patient." },
+    { id: "f2", titre: "IA de pré-analyse optionnelle", description: "Évaluation du risque mélanome en amont du médecin, réduit la charge des dermatologues, améliore la priorisation." },
+    { id: "f3", titre: "Triage par médecin généraliste", description: "Un MG formé filtre les cas, seuls ceux qui nécessitent un avis spécialisé remontent au dermatologue. Libère le temps médical rare." },
+    { id: "f4", titre: "Télé-expertise CHU", description: "Revue finale par un onco-dermatologue du CHU de Caen. Qualité universitaire, depuis n'importe quel territoire." },
+  ],
+  videoLabel: "Vidéo — Le DermatoBus en action · 3:00",
+  comparison: {
+    titre: "DERMATOBUS VS PROTOCOLE CLASSIQUE",
+    classique: {
+      label: "Protocole classique",
+      items: [
+        "Seuls les grains de beauté signalés par le patient sont examinés",
+        "Tous les cas envoyés directement au dermatologue, surcharge",
+        "Aucun suivi comparatif d'une année sur l'autre",
+      ],
+    },
+    hocoia: {
+      label: "DermatoBus Hocoia",
+      items: [
+        "Cartographie corps entier, toutes les lésions documentées",
+        "Triage MG + IA, dermatologue consulté uniquement si nécessaire",
+        "Suivi lésion par lésion d'une année sur l'autre",
+      ],
+    },
+  },
+};
+
 // ─── Définition ───────────────────────────────────────────────────────────────
 
 export const definition = {

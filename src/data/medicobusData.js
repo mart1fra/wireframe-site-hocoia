@@ -75,6 +75,57 @@ export const stats = [
   { value: "3",     label: "Thématiques de dépistage",            source: "Cardio · Dermato · Femme" },
 ];
 
+// ─── Concept (composant ConceptSection) ──────────────────────────────────
+
+export const concept = {
+  eyebrow: "Le concept",
+  title: "Qu'est-ce qu'un MédicoBus Hocoia ?",
+  paragraphs: [
+    {
+      id: "c1",
+      segments: [
+        { text: "Le MédicoBus est un " },
+        { text: "cabinet médical mobile et connecté de moins de 3,5 tonnes", bold: true },
+        { text: ". Conçu pour apporter des soins de prévention là où les déserts médicaux s'étendent, il combine équipements médicaux de pointe et technologies numériques." },
+      ],
+    },
+    {
+      id: "c2",
+      segments: [
+        { text: "Chaque déploiement repose sur la présence physique d'un soignant qualifié à bord, renforcée par la disponibilité d'un médecin en " },
+        { text: "téléconsultation assistée", bold: true },
+        { text: ". Le MédicoBus n'est pas un simple bus — c'est un protocole de soin complet." },
+      ],
+    },
+  ],
+  features: [
+    { id: "f1", titre: "Cabinet mobile < 3,5T", description: "Parking, place de marché, site entreprise — partout accessible." },
+    { id: "f2", titre: "10+ dispositifs médicaux connectés", description: "ECG, dermatoscope, échographe, spiromètre, mini-labo biologie…" },
+    { id: "f3", titre: "Soignant présent + médecin téléconsultant", description: "Accompagnement humain complet : accueil, anamnèse, constantes, suivi." },
+    { id: "f4", titre: "Logiciel de coordination unique", description: "Agenda, prise de RDV, dossier patient, reporting — tout intégré." },
+  ],
+  videoLabel: "Vidéo — Le MédicoBus en action · 2:30",
+  comparison: {
+    titre: "MÉDICOBUS VS CABINET FIXE CLASSIQUE",
+    classique: {
+      label: "Cabinet fixe classique",
+      items: [
+        "Patient doit se déplacer, souvent à 30–50 km",
+        "Délai de rendez-vous : plusieurs semaines",
+        "Aucune présence dans les zones rurales sous-dotées",
+      ],
+    },
+    hocoia: {
+      label: "MédicoBus Hocoia",
+      items: [
+        "Le cabinet se déplace directement dans votre commune",
+        "Créneaux disponibles en 2–5 jours",
+        "Déployé partout, y compris en désert médical",
+      ],
+    },
+  },
+};
+
 // ─── Définition ───────────────────────────────────────────────────────────
 
 export const definition = {

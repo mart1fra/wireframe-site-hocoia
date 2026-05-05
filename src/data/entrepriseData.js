@@ -43,77 +43,128 @@ export const logos = {
   ],
 };
 
-// ─── Use case entreprise ──────────────────────────────────────────────────
+// ─── Use cases (onglets Entreprises / Assureurs) ──────────────────────────
 
-export const useCase = {
-  eyebrow: "Pour les entreprises",
-  h2: "Réduisez l'absentéisme, valorisez votre marque employeur",
-  intro:
-    "Vos collaborateurs font face à des délais de 3 à 6 mois chez les spécialistes. Hocoia contourne ces délais en venant directement à eux, sur leur lieu de travail. Résultat : une participation bien plus élevée, des bilans réalisés, un impact mesurable.",
-  features: [
-    {
-      id: "f1",
-      title: "Bus déployé sur site",
-      description:
-        "Notre bus s'installe sur votre parking. Vos collaborateurs consultent sur leur temps de travail.",
-    },
-    {
-      id: "f2",
-      title: "Dashboard & reporting",
-      description:
-        "Données anonymisées, tableaux de bord RH, bilan livré sous 72h.",
-    },
-    {
-      id: "f3",
-      title: "Conformité totale RGPD",
-      description:
-        "Hébergement HDS, données anonymisées, aucun accès employeur aux résultats individuels.",
-    },
-    {
-      id: "f4",
-      title: "Déploiement en 3 semaines",
-      description:
-        "De la signature au premier bus sur site en moins de 21 jours.",
-    },
+export const useCases = {
+  tabs: [
+    { id: "entreprises", label: "Entreprises",          sublabel: "Solutions RH santé" },
+    { id: "assureurs",   label: "Assureurs & mutuelles", sublabel: "Programmes de prévention adhérents" },
   ],
-  ctaPrimary: "Parler à un expert",
-  ctaOutline: "Voir le cas Veolia →",
-  casClients: [
-    {
-      id: "cc1",
-      tag: "Industrie · 2 400 salariés",
-      title:
-        "Comment Veolia Alsace a réduit son absentéisme de 18 % en 12 mois",
-      description:
-        "Un programme de prévention cardiovasculaire et dermatologique déployé sur 3 sites en 4 semaines.",
-      metrics: [
-        { value: "–18 %", label: "Absentéisme" },
-        { value: "680",   label: "Bilans réalisés" },
-        { value: "94 %",  label: "Satisfaction" },
+  content: {
+    entreprises: {
+      eyebrow: "Pour les entreprises",
+      title: "Réduisez l'absentéisme, valorisez votre marque employeur",
+      paragraphs: [
+        "Vos collaborateurs font face à des délais de 3 à 6 mois chez les spécialistes. Hocoia contourne ces délais en venant directement à eux, sur leur lieu de travail. Résultat : une participation bien plus élevée, des bilans réalisés, un impact mesurable.",
       ],
-      ctaLabel: "Lire le cas complet →",
-      active: true,
-      quote: {
-        text: "On pensait que l'organisation serait complexe. Hocoia a géré tout de A à Z. Nos managers n'ont rien eu à faire.",
-        author: "Directrice RH, Veolia Alsace",
+      features: [
+        {
+          id: "f1",
+          title: "Bus déployé sur site",
+          description: "Notre bus s'installe sur votre parking. Vos collaborateurs consultent sur leur temps de travail.",
+        },
+        {
+          id: "f2",
+          title: "Dashboard & reporting",
+          description: "Données anonymisées, tableaux de bord RH, bilan livré sous 72h.",
+        },
+        {
+          id: "f3",
+          title: "Conformité totale RGPD",
+          description: "Hébergement HDS, données anonymisées, aucun accès employeur aux résultats individuels.",
+        },
+        {
+          id: "f4",
+          title: "Déploiement en 3 semaines",
+          description: "De la signature au premier bus sur site en moins de 21 jours.",
+        },
+      ],
+      ctaButtons: [
+        { label: "Parler à un expert",     primary: true },
+        { label: "Voir le cas Veolia →",   primary: false },
+      ],
+      caseCard: {
+        tag: "Industrie · 2 400 salariés",
+        title: "Comment Veolia Alsace a réduit son absentéisme de 18 % en 12 mois",
+        description: "Un programme de prévention cardiovasculaire et dermatologique déployé sur 3 sites en 4 semaines.",
+        metrics: [
+          { value: "–18 %", label: "Absentéisme" },
+          { value: "680",   label: "Bilans réalisés" },
+          { value: "94 %",  label: "Satisfaction" },
+        ],
+        ctaLabel: "Lire le cas complet →",
+        quote: {
+          text: "On pensait que l'organisation serait complexe. Hocoia a géré tout de A à Z. Nos managers n'ont rien eu à faire.",
+          author: "Directrice RH, Veolia Alsace",
+        },
       },
     },
-    {
-      id: "cc2",
-      tag: "À venir · Prochain cas client",
-      title: "Cas client à venir",
-      description:
-        "Nous documentons en ce moment plusieurs déploiements entreprise. Revenez dans quelques semaines.",
-      metrics: [
-        { value: "—", label: "En cours" },
-        { value: "—", label: "En cours" },
-        { value: "—", label: "En cours" },
+    assureurs: {
+      eyebrow: "Pour les assureurs & mutuelles",
+      title: "Faites de la prévention un service concret pour vos adhérents",
+      paragraphs: [
+        "Vos adhérents vivent souvent loin des spécialistes. Hocoia vous permet d'organiser des campagnes de dépistage directement dans leurs communes : la mutuelle invite ses adhérents, Hocoia déploie le bus, le dépistage est gratuit pour le patient.",
+        "C'est une démarche de prévention proactive qui renforce la relation avec vos adhérents et alimente votre stratégie de santé populationnelle, avec des données anonymisées exploitables.",
       ],
-      ctaLabel: "Disponible prochainement",
-      active: false,
-      quote: null,
+      features: [
+        {
+          id: "fa1",
+          title: "Tour des communes ou journée fixe",
+          description: "Hocoia adapte le format : campagne sur plusieurs communes d'une région, ou journée concentrée sur un site partenaire.",
+        },
+        {
+          id: "fa2",
+          title: "Vos adhérents identifiés en priorité",
+          description: "La mutuelle invite ses adhérents éligibles. Les créneaux leur sont réservés en priorité, le bus reste ouvert au public si capacité.",
+        },
+        {
+          id: "fa3",
+          title: "Données anonymisées pour vos études",
+          description: "Taux de participation, résultats agrégés, satisfaction. Données utilisables pour vos rapports et votre politique santé.",
+        },
+        {
+          id: "fa4",
+          title: "Modèle économique flexible",
+          description: "Forfait par journée, par adhérent dépisté, ou modèle mixte. Sponsoring possible avec d'autres partenaires institutionnels.",
+        },
+      ],
+      ctaButtons: [
+        { label: "Parler à un expert mutuelle",                    primary: true },
+        { label: "Voir le cas Mutuelle Générale d'Avignon →",     primary: false },
+      ],
+      caseCard: {
+        tag: "Mutuelle · Vaucluse",
+        title: "Mutuelle Générale d'Avignon : 72 patientes dépistées à Pertuis",
+        description: "La Mutuelle Générale d'Avignon a organisé 3 jours de dépistage dermatologique au CCAS de Pertuis avec le MédicoBus Hocoia. Créneaux remplis, satisfaction maximale, programme étendu sur l'année.",
+        metrics: [
+          { value: "72",   label: "patientes dépistées" },
+          { value: "100%", label: "créneaux remplis" },
+          { value: "12",   label: "mois reconduits" },
+        ],
+        ctaLabel: "Lire le cas complet →",
+        quote: {
+          text: "Ça apporte une sécurité aux gens de pouvoir ne pas attendre d'être malade pour consulter.",
+          author: "Christophe Antonelli, Conseiller mutualiste",
+        },
+      },
     },
+  },
+};
+
+// ─── Vidéo témoignage ─────────────────────────────────────────────────────
+
+export const videoTestimonial = {
+  eyebrow: "Témoignage vidéo",
+  title: "Comment Veolia a déployé une journée santé pour 200 collaborateurs",
+  paragraphs: [
+    "Veolia Alsace a organisé une journée de dépistage cardio et dermato sur son site industriel. En une journée, 200 collaborateurs dépistés, zéro mobilisation côté RH, et un reporting anonymisé qui alimente leur politique santé interne.",
+    "Sophie M., DRH, revient sur les coulisses du déploiement, le format choisi et l'impact mesuré dans les semaines suivantes.",
   ],
+  quote:
+    "Pour nos équipes dispersées sur 4 sites, Hocoia a organisé des journées santé en moins d'un mois. Le reporting nous donne enfin des données actionnables.",
+  quoteAuthor: "Sophie M., DRH ETI industrielle",
+  videoLabel: "Cas Veolia Alsace · 3:45",
+  videoMeta: "Tournage avril 2025 — Site industriel, Alsace",
 };
 
 // ─── Chiffres clés ────────────────────────────────────────────────────────

@@ -4,6 +4,7 @@ import Layout from "./components/layout/Layout";
 import Home               from "./pages/Home";
 import Entreprises        from "./pages/Entreprises";
 import ActeursPublics     from "./pages/ActeursPublics";
+import Collectivites      from "./pages/Collectivites";
 import EtablissementsSante from "./pages/EtablissementsSante";
 import Patient            from "./pages/Patient";
 import ProSante           from "./pages/ProSante";
@@ -28,6 +29,7 @@ import LivresBlancs       from "./pages/ressources/LivresBlancs";
 import Videos             from "./pages/ressources/Videos";
 import Podcast            from "./pages/ressources/Podcast";
 
+import SeConnecter        from "./pages/SeConnecter";
 import Vision             from "./pages/a-propos/Vision";
 import Technologie        from "./pages/a-propos/Technologie";
 import Equipe             from "./pages/a-propos/Equipe";
@@ -44,6 +46,7 @@ export default function App() {
       <Route path="/"                    element={<Wrap><Home /></Wrap>} />
       <Route path="/entreprises"         element={<Wrap><Entreprises /></Wrap>} />
       <Route path="/acteurs-publics"     element={<Wrap><ActeursPublics /></Wrap>} />
+      <Route path="/collectivites"        element={<Wrap><Collectivites /></Wrap>} />
       <Route path="/etablissements-sante" element={<Wrap><EtablissementsSante /></Wrap>} />
 
       {/* Parcours */}
@@ -72,6 +75,9 @@ export default function App() {
       <Route path="/ressources/livres-blancs" element={<Wrap><LivresBlancs /></Wrap>} />
       <Route path="/ressources/videos"        element={<Wrap><Videos /></Wrap>} />
       <Route path="/ressources/podcast"       element={<Wrap><Podcast /></Wrap>} />
+
+      {/* Connexion */}
+      <Route path="/se-connecter" element={<Wrap><SeConnecter /></Wrap>} />
 
       {/* À propos */}
       <Route path="/a-propos/vision"       element={<Wrap><Vision /></Wrap>} />

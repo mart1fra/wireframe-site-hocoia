@@ -1,11 +1,13 @@
-import { Fragment } from "react";
-import { motion } from "framer-motion";
+import { Fragment, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import FadeIn      from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
+import VideoTestimonial from "../components/sections/VideoTestimonial";
 import {
   hero,
   logos,
-  useCase,
+  useCases,
+  videoTestimonial,
   avisClients,
   stats,
   processus,
@@ -183,101 +185,136 @@ function LogosSection() {
   );
 }
 
-// ─── 3. USE CASE ──────────────────────────────────────────────────────────
+// ─── 3. USE CASES (onglets) ───────────────────────────────────────────────
 
-function UseCaseSection() {
+function UseCasesSection() {
+  const [activeTab, setActiveTab] = useState(useCases.tabs[0].id);
+  const content = useCases.content[activeTab];
+
   return (
     <section id="use-case" className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-24 grid grid-cols-2 gap-16 items-start">
+      <div className="max-w-7xl mx-auto px-6 py-20">
 
-        {/* Gauche : features */}
-        <div>
-          <FadeIn>
-            <Eyebrow>{useCase.eyebrow}</Eyebrow>
-            <SectionH2>{useCase.h2}</SectionH2>
-            <p className="text-gray-600 mt-4 mb-10 leading-relaxed">{useCase.intro}</p>
-          </FadeIn>
+        {/* Onglets pilules */}
+        <FadeIn className="flex flex-wrap gap-3 mb-12">
+          {useCases.tabs.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex flex-col items-start px-6 py-3.5 rounded-xl transition-colors duration-150 cursor-pointer text-left ${
+                activeTab === tab.id
+                  ? "bg-gray-900"
+                  : "bg-white border border-gray-200 hover:bg-gray-50"
+              }`}
+            >
+              <span className={`text-sm font-semibold leading-tight ${activeTab === tab.id ? "text-white" : "text-gray-900"}`}>
+                {tab.label}
+              </span>
+              <span className={`text-xs mt-0.5 ${activeTab === tab.id ? "text-white/60" : "text-gray-500"}`}>
+                {tab.sublabel}
+              </span>
+            </button>
+          ))}
+        </FadeIn>
 
-          <motion.ul
-            className="space-y-6 mb-10"
-            variants={listV}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
+        {/* Contenu crossfade */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="grid grid-cols-[3fr_2fr] gap-14 items-start"
           >
-            {useCase.features.map((f) => (
-              <motion.li key={f.id} variants={itemV} className="flex items-start gap-4">
-                <span className="w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 shrink-0 mt-0.5" />
-                <div>
-                  <p className="text-sm font-semibold text-gray-900 leading-tight">{f.title}</p>
-                  <p className="text-sm text-gray-500 mt-1 leading-relaxed">{f.description}</p>
-                </div>
-              </motion.li>
-            ))}
-          </motion.ul>
+            {/* Gauche */}
+            <div>
+              <Eyebrow>{content.eyebrow}</Eyebrow>
+              <SectionH2>{content.title}</SectionH2>
 
-          <FadeIn delay={0.2} className="flex items-center gap-3 flex-wrap">
-            <button className="px-6 py-2.5 text-sm font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-150 cursor-pointer">
-              {useCase.ctaPrimary}
-            </button>
-            <button className="px-6 py-2.5 text-sm font-medium text-gray-900 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors duration-150 cursor-pointer">
-              {useCase.ctaOutline}
-            </button>
-          </FadeIn>
-        </div>
+              <div className="mt-4 mb-8 space-y-3">
+                {content.paragraphs.map((p, i) => (
+                  <p key={i} className="text-gray-600 leading-relaxed">{p}</p>
+                ))}
+              </div>
 
-        {/* Droite : cas clients */}
-        <div id="cas-clients" className="contents">
-        <FadeIn delay={0.1} className="bg-gray-50 rounded-2xl p-6 space-y-5">
-          {useCase.casClients.map((card) => (
-            <div key={card.id} className="bg-white border border-gray-200 rounded-xl p-6">
-              <span className={`inline-block text-xs font-medium px-3 py-1 rounded-full mb-4 ${card.active ? "bg-gray-100 text-gray-600" : "bg-gray-50 text-gray-400"}`}>
-                {card.tag}
+              <motion.ul
+                className="space-y-6 mb-10"
+                variants={listV}
+                initial="hidden"
+                animate="visible"
+              >
+                {content.features.map((f) => (
+                  <motion.li key={f.id} variants={itemV} className="flex items-start gap-4">
+                    <span className="w-8 h-8 rounded-lg bg-gray-100 border border-gray-200 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-sm font-semibold text-gray-900 leading-tight">{f.title}</p>
+                      <p className="text-sm text-gray-500 mt-1 leading-relaxed">{f.description}</p>
+                    </div>
+                  </motion.li>
+                ))}
+              </motion.ul>
+
+              <div className="flex items-center gap-3 flex-wrap">
+                {content.ctaButtons.map((btn) => (
+                  <button
+                    key={btn.label}
+                    className={`px-6 py-2.5 text-sm font-medium rounded-full transition-colors duration-150 cursor-pointer ${
+                      btn.primary
+                        ? "text-white bg-gray-900 hover:bg-gray-800"
+                        : "text-gray-900 border border-gray-300 hover:bg-gray-50"
+                    }`}
+                  >
+                    {btn.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Droite — carte cas client */}
+            <div className="bg-white border border-gray-200 rounded-xl p-6">
+              <span className="inline-block text-[10px] font-semibold uppercase tracking-widest text-gray-600 bg-gray-100 px-3 py-1 rounded-full mb-4">
+                {content.caseCard.tag}
               </span>
 
-              <h3 className={`font-display font-semibold text-sm leading-snug mb-2 ${card.active ? "text-gray-900" : "text-gray-400"}`}>
-                {card.title}
+              <h3 className="font-display font-bold text-base text-gray-900 leading-snug mb-3">
+                {content.caseCard.title}
               </h3>
-              <p className={`text-xs leading-relaxed mb-5 ${card.active ? "text-gray-500" : "text-gray-300"}`}>
-                {card.description}
+              <p className="text-xs text-gray-600 leading-relaxed mb-5">
+                {content.caseCard.description}
               </p>
 
-              {/* Métriques */}
               <div className="flex gap-6 mb-5">
-                {card.metrics.map((m) => (
+                {content.caseCard.metrics.map((m) => (
                   <div key={m.label}>
-                    <p className={`text-2xl font-bold font-display leading-none ${card.active ? "text-gray-900" : "text-gray-300"}`}>
-                      {m.value}
-                    </p>
+                    <p className="font-display font-bold text-2xl text-gray-900 leading-none">{m.value}</p>
                     <p className="text-xs text-gray-500 mt-1">{m.label}</p>
                   </div>
                 ))}
               </div>
 
-              {/* CTA lien */}
-              <span className={`text-sm font-medium ${card.active ? "text-gray-700 cursor-pointer hover:text-gray-900" : "text-gray-300 pointer-events-none"}`}>
-                {card.ctaLabel}
-              </span>
+              <div className="pl-4 border-l-[3px] border-gray-300 mb-5">
+                <p className="text-sm italic text-gray-700 leading-relaxed">
+                  "{content.caseCard.quote.text}"
+                </p>
+                <p className="text-xs text-gray-500 mt-1.5">
+                  — {content.caseCard.quote.author}
+                </p>
+              </div>
 
-              {/* Citation */}
-              {card.quote && (
-                <div className="mt-5 pl-4 border-l-2 border-gray-200">
-                  <p className="text-sm italic text-gray-600 leading-relaxed">
-                    "{card.quote.text}"
-                  </p>
-                  <p className="text-xs text-gray-500 mt-1.5">— {card.quote.author}</p>
-                </div>
-              )}
+              <span className="text-sm font-semibold text-gray-700 cursor-pointer hover:text-gray-900 transition-colors">
+                {content.caseCard.ctaLabel}
+              </span>
             </div>
-          ))}
-        </FadeIn>
-        </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </section>
   );
 }
 
-// ─── 3b. AVIS CLIENTS ENTREPRISE ──────────────────────────────────────────
+// ─── 3c. AVIS CLIENTS ENTREPRISE ──────────────────────────────────────────
 
 function AvisClientsSection() {
   return (
@@ -343,6 +380,12 @@ function StatsSection() {
       </div>
     </section>
   );
+}
+
+// ─── 4b. VIDÉO TÉMOIGNAGE ─────────────────────────────────────────────────
+
+function VideoTestimonialSection() {
+  return <VideoTestimonial {...videoTestimonial} />;
 }
 
 // ─── 5. PROCESSUS ─────────────────────────────────────────────────────────
@@ -496,9 +539,10 @@ export default function Entreprises() {
     <>
       <HeroSection />
       <LogosSection />
-      <UseCaseSection />
+      <UseCasesSection />
       <AvisClientsSection />
       <StatsSection />
+      <VideoTestimonialSection />
       <ProcessSection />
       <RessourcesSection />
       <FaqSection />

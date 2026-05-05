@@ -3,12 +3,13 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
+import ConceptSection from "../components/sections/ConceptSection";
 import {
   piloteBanner,
   hero,
   logos,
   stats,
-  definition,
+  concept,
   protocole,
   piloteNormandie,
   couverture,
@@ -266,89 +267,6 @@ function StatsSection() {
             </motion.div>
           ))}
         </motion.div>
-      </div>
-    </section>
-  );
-}
-
-// ─── Section 4 — Définition ───────────────────────────────────────────────────
-
-function DefinitionSection() {
-  return (
-    <section className="bg-white py-24 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
-        {/* Gauche */}
-        <FadeIn>
-          <Eyebrow>{definition.eyebrow}</Eyebrow>
-          <SectionH2>{definition.h2}</SectionH2>
-
-          {definition.paras.map((para) => (
-            <p key={para.id} className="text-gray-600 text-base leading-relaxed mb-4">
-              {renderSegments(para.segments)}
-            </p>
-          ))}
-
-          <div className="mt-8 space-y-5">
-            {definition.differenciateurs.map((diff) => (
-              <div key={diff.id} className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-gray-100 border border-gray-200 rounded-lg shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-gray-900 text-sm mb-1">{diff.titre}</p>
-                  <p className="text-gray-500 text-sm leading-relaxed">{diff.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </FadeIn>
-
-        {/* Droite */}
-        <FadeIn delay={0.15}>
-          <div className="bg-gray-50 rounded-xl p-6 space-y-5">
-            {/* Image placeholder */}
-            <div className="h-[300px] bg-gray-100 border-2 border-dashed border-gray-200 rounded-xl flex items-center justify-center px-6">
-              <p className="text-gray-400 text-xs text-center">{definition.imagePlaceholder}</p>
-            </div>
-
-            {/* Tableau comparatif */}
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-4">
-                {definition.comparison.titre}
-              </p>
-
-              {/* Protocole classique */}
-              <p className="text-xs font-semibold text-gray-700 mb-2">
-                {definition.comparison.classique.label}
-              </p>
-              <div className="space-y-1.5 mb-4">
-                {definition.comparison.classique.items.map((item) => (
-                  <div
-                    key={item}
-                    className="bg-gray-50 border border-gray-200 rounded-md px-3 py-2 flex items-start gap-2"
-                  >
-                    <span className="text-gray-400 text-xs shrink-0 mt-0.5">✗</span>
-                    <span className="text-gray-600 text-xs">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              {/* DermatoBus Hocoia */}
-              <p className="text-xs font-semibold text-gray-900 mb-2">
-                {definition.comparison.hocoia.label}
-              </p>
-              <div className="space-y-1.5">
-                {definition.comparison.hocoia.items.map((item) => (
-                  <div
-                    key={item}
-                    className="bg-white border border-gray-200 rounded-md px-3 py-2 flex items-start gap-2"
-                  >
-                    <span className="text-gray-900 text-xs font-bold shrink-0 mt-0.5">✓</span>
-                    <span className="text-gray-700 text-xs font-semibold">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </FadeIn>
       </div>
     </section>
   );
@@ -752,7 +670,7 @@ export default function DermatoBus() {
       <HeroSection />
       <LogosSection />
       <StatsSection />
-      <DefinitionSection />
+      <ConceptSection {...concept} />
       <ProtocoleSection />
       <PiloteNormandieSection />
       <CouvertureSection />

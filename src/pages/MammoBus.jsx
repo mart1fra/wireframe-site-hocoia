@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
+import ConceptSection from "../components/sections/ConceptSection";
 import {
   hero,
   logos,
   stats,
-  definition,
+  concept,
   protocole,
   pourQui,
   temoignages,
@@ -251,67 +252,6 @@ function StatsSection() {
             </motion.div>
           ))}
         </motion.div>
-      </div>
-    </section>
-  );
-}
-
-// ─── Section 4 — Définition ───────────────────────────────────────────────────
-
-function DefinitionSection() {
-  return (
-    <section className="bg-white py-24 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
-        {/* Gauche */}
-        <FadeIn>
-          <Eyebrow>{definition.eyebrow}</Eyebrow>
-          <SectionH2>{definition.h2}</SectionH2>
-
-          {definition.paras.map((para) => (
-            <p key={para.id} className="text-gray-600 text-base leading-relaxed mb-4">
-              {renderSegments(para.segments)}
-            </p>
-          ))}
-
-          <div className="mt-8 space-y-5">
-            {definition.features.map((feat) => (
-              <div key={feat.id} className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-gray-100 border border-gray-200 rounded-lg shrink-0 mt-0.5" />
-                <div>
-                  <p className="font-semibold text-gray-900 text-sm mb-1">{feat.titre}</p>
-                  <p className="text-gray-500 text-sm leading-relaxed">{feat.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </FadeIn>
-
-        {/* Droite */}
-        <FadeIn delay={0.15}>
-          <div className="bg-gray-50 rounded-xl p-6 space-y-5">
-            {/* Placeholder image */}
-            <div className="h-[300px] bg-gray-100 border-2 border-dashed border-gray-200 rounded-xl flex items-center justify-center px-6">
-              <p className="text-gray-400 text-xs text-center">
-                {definition.imagePlaceholder}
-              </p>
-            </div>
-
-            {/* Specs techniques */}
-            <div className="bg-white border border-gray-200 rounded-lg p-5">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-500 mb-4">
-                {definition.specs.titre}
-              </p>
-              <div className="space-y-2">
-                {definition.specs.items.map((spec) => (
-                  <div key={spec.label} className="flex justify-between items-center">
-                    <span className="text-gray-600 text-xs">{spec.label}</span>
-                    <span className="font-bold text-gray-900 text-xs">{spec.value}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </FadeIn>
       </div>
     </section>
   );
@@ -708,7 +648,7 @@ export default function MammoBus() {
       <HeroSection />
       <LogosSection />
       <StatsSection />
-      <DefinitionSection />
+      <ConceptSection {...concept} />
       <ProtocoleSection />
       <PourQuiSection />
       <TemoignagesSection />

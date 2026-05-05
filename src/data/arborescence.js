@@ -13,7 +13,7 @@ export const navBar = {
     { id: "a-propos",      label: "À propos",      dropdown: "a-propos" },
   ],
   cta:   { label: "Nous contacter", href: "/contact" },
-  login: { label: "Se connecter",   href: "#" },
+  login: { label: "Se connecter",   href: "/se-connecter" },
 };
 
 // ─── Mega-menus ────────────────────────────────────────────────────────────
@@ -170,7 +170,6 @@ export const megaMenus = {
       { id: "medicobus",    label: "MédicoBus",       href: "/produits/medicobus" },
       { id: "mammobus",     label: "MammoBus",        href: "/mammobus" },
       { id: "dermatobus",   label: "DermatoBus",      href: "/dermatobus" },
-      { id: "centre-sante", label: "Centre de santé", href: "/produits/centre-sante" },
     ],
   },
 
@@ -209,7 +208,6 @@ export const navigation = [
       { id: "medicobus",    label: "MédicoBus" },
       { id: "mammobus",     label: "MammoBus" },
       { id: "dermatobus",   label: "DermatoBus" },
-      { id: "centre-sante", label: "Centre de santé" },
     ],
   },
   {

@@ -76,6 +76,59 @@ export const stats = [
   { value: "50%",  label: "seulement des femmes +50 ans se font dépister",                       source: "INCa" },
 ];
 
+// ─── Concept (composant ConceptSection) ──────────────────────────────────────
+
+export const concept = {
+  eyebrow: "Le concept",
+  title: "Qu'est-ce que le MammoBus Hocoia ?",
+  paragraphs: [
+    {
+      id: "c1",
+      segments: [
+        { text: "Le MammoBus est une " },
+        { text: "unité mobile compacte de mammographie", bold: true },
+        { text: " — unique en France à moins de 3,5 tonnes. Il permet de réaliser des dépistages du cancer du sein directement dans les communes, sans plateau technique lourd ni déplacement pour les patientes." },
+      ],
+    },
+    {
+      id: "c2",
+      segments: [
+        { text: "Il fonctionne en " },
+        { text: "dépistage organisé", bold: true },
+        { text: " (programme national) et en " },
+        { text: "dépistage individuel", bold: true },
+        { text: ", avec un écosystème numérique complet pour le diagnostic et le suivi." },
+      ],
+    },
+  ],
+  features: [
+    { id: "f1", titre: "Mammographie + échographie mammaire", description: "Palpation mammaire et mammographie à bord. Échographie en complément selon indication." },
+    { id: "f2", titre: "PACS centralisé + hébergement HDS", description: "Hébergement certifié HDS et ISO 27001, box de transfert, PACS centralisé — lecture sur tous les écrans." },
+    { id: "f3", titre: "Connectivité haut débit agréée", description: "SAT + LTE avec IP statique. Connexion avec tout cabinet de radiologie ou centre hospitalier." },
+    { id: "f4", titre: "HocoApp — coordination complète", description: "Prise de RDV, pré-questionnaire médical, coordination des professionnels de santé, bilan anonymisé." },
+  ],
+  videoLabel: "Vidéo — Le MammoBus en action · 2:45",
+  comparison: {
+    titre: "MAMMOBUS VS DÉPISTAGE EN CENTRE FIXE",
+    classique: {
+      label: "Centre de radiologie fixe",
+      items: [
+        "La patiente doit se déplacer, parfois à 40+ km",
+        "Délai de rendez-vous : 4 à 8 semaines",
+        "Aucune présence dans les communes rurales",
+      ],
+    },
+    hocoia: {
+      label: "MammoBus Hocoia",
+      items: [
+        "Le MammoBus se déplace dans votre commune",
+        "Créneaux disponibles en 2–7 jours",
+        "24 femmes dépistées par jour, partout en France",
+      ],
+    },
+  },
+};
+
 // ─── Définition ───────────────────────────────────────────────────────────────
 
 export const definition = {

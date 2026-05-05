@@ -3,11 +3,12 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../../components/ui/FadeIn";
 import AccordionItem from "../../components/ui/AccordionItem";
+import ConceptSection from "../../components/sections/ConceptSection";
 import {
   hero,
   logos,
   stats,
-  definition,
+  concept,
   thematiques,
   parcours,
   temoignages,
@@ -182,38 +183,6 @@ function StatsSection() {
             </motion.div>
           ))}
         </motion.div>
-      </div>
-    </section>
-  );
-}
-
-// ─── Section 4 — Définition ───────────────────────────────────────────────
-
-function DefinitionSection() {
-  return (
-    <section className="bg-white py-24 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
-        {/* Gauche */}
-        <FadeIn>
-          <Eyebrow>{definition.eyebrow}</Eyebrow>
-          <SectionH2>{definition.h2}</SectionH2>
-          {definition.paragraphs.map((p, i) => (
-            <p key={i} className="text-gray-600 text-base leading-relaxed mb-4">
-              {p}
-            </p>
-          ))}
-        </FadeIn>
-
-        {/* Droite */}
-        <FadeIn delay={0.15}>
-          <div className="bg-gray-50 rounded-xl p-6 space-y-4">
-            {definition.photos.map((photo, i) => (
-              <div key={i} className={`${photo.height} bg-gray-100 border border-dashed border-gray-200 rounded-xl flex items-center justify-center`}>
-                <p className="text-gray-400 text-xs text-center px-4">{photo.placeholder}</p>
-              </div>
-            ))}
-          </div>
-        </FadeIn>
       </div>
     </section>
   );
@@ -595,7 +564,7 @@ export default function MedicoBus() {
       <HeroSection />
       <LogosSection />
       <StatsSection />
-      <DefinitionSection />
+      <ConceptSection {...concept} />
       <ThematiquesSection />
       <ParcoursSection />
       <TemoignagesSection />
