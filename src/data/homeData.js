@@ -3,7 +3,7 @@
 export const hero = {
   h1: "Réinventons le futur de la santé, ensemble.",
   subtitle:
-    "Hocoia construit une santé plus proche, plus humaine, accessible à tous, où que vous viviez. Nous la construisons avec des soignants engagés, et faisons de la prévention le cœur de notre mission.",
+    "Hocoia rapproche la santé de chacun, où qu'il vive. Avec nos bus médicaux et nos soignants engagés, nous apportons prévention et dépistage directement dans votre territoire.",
   ctaPrimary: "Voir le bus près de moi",
   ctaOutline: "Prendre RDV",
   b2bLink: {
@@ -23,12 +23,13 @@ export const logos = {
 // ─── Identité ─────────────────────────────────────────────────────────────
 
 export const identite = {
-  eyebrow: "Notre vision",
-  h2: "Rendre la santé accessible à tous et en tout lieu",
-  description:
-    "Nous croyons en un avenir où chaque individu peut accéder à des soins médicaux de qualité, peu importe où il se trouve.",
+  eyebrow: "Nos solutions",
+  //h2: "Rendre la santé accessible à tous et en tout lieu",
+  //description:
+    //"Nous croyons en un avenir où chaque individu peut accéder à des soins médicaux de qualité, peu importe où il se trouve.",
+    //"L'innovation, la technologie et l’humain sont nos outils pour rendre cette vision possible. Fondée par un médecin et des ingénieurs, Hocoia opère une flotte de bus médicaux équipés d'appareils de diagnostic de pointe. Nos professionnels de santé se rendent là où les patients se trouvent : en bas de chez eux, dans leur entreprise, sur leur lieu de travail.",
   description2:  
-    "L'innovation, la technologie et l’humain sont nos outils pour rendre cette vision possible. Fondée par un médecin et des ingénieurs, Hocoia opère une flotte de bus médicaux équipés d'appareils de diagnostic de pointe. Nos professionnels de santé se rendent là où les patients se trouvent : en bas de chez eux, dans leur entreprise, sur leur lieu de travail.",
+    "Hocoia opère une flotte de bus médicaux équipés d'appareils de diagnostic de pointe. Nos professionnels de santé vont à la rencontre des patients : dans les communes, sur les lieux de travail, au pied des immeubles. Du dépistage cardiovasculaire au cancer du sein, nos solutions couvrent les besoins de prévention essentiels.",
   points: [
     {
       id: "i1",
