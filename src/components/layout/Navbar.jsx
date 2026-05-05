@@ -166,6 +166,17 @@ function SimplePanel({ data, onClose }) {
           </li>
         ))}
       </ul>
+      {data.footer && (
+        <div className="mt-3 pt-3 border-t border-gray-200">
+          <Link
+            to={data.footer.href}
+            onClick={onClose}
+            className="block py-1 text-sm font-medium text-gray-700 hover:text-gray-900 transition-colors duration-150"
+          >
+            {data.footer.label}
+          </Link>
+        </div>
+      )}
     </div>
   );
 }

@@ -455,6 +455,14 @@ export const faq = {
   ],
 };
 
+// ─── Bus sur mesure ───────────────────────────────────────────────────────────
+
+export const customBus = {
+  title: "Un DermatoBus adapté à votre territoire",
+  paragraph:
+    "Votre projet de dépistage cutané a des spécificités ? Hocoia conçoit le DermatoBus en lien avec votre service de dermatologie ou votre CHU référent — protocole, équipements, télé-expertise, intégration au parcours de soins existant.",
+};
+
 // ─── CTA Final ────────────────────────────────────────────────────────────────
 
 export const ctaFinal = {

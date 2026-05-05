@@ -523,6 +523,14 @@ export const faq = {
   ],
 };
 
+// ─── Bus sur mesure ───────────────────────────────────────────────────────
+
+export const customBus = {
+  title: "Un MédicoBus conçu pour vos besoins spécifiques",
+  paragraph:
+    "Vos besoins ne rentrent pas dans nos configurations standards ? Hocoia conçoit le MédicoBus adapté à votre territoire, votre population, ou votre spécialité — équipements, aménagement intérieur, protocole et intégration HocoApp inclus.",
+};
+
 // ─── CTA Final ────────────────────────────────────────────────────────────
 
 export const ctaFinal = {

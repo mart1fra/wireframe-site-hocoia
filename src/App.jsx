@@ -30,6 +30,8 @@ import Videos             from "./pages/ressources/Videos";
 import Podcast            from "./pages/ressources/Podcast";
 
 import SeConnecter        from "./pages/SeConnecter";
+import Faq               from "./pages/Faq";
+import NosSolutions      from "./pages/NosSolutions";
 import Vision             from "./pages/a-propos/Vision";
 import Technologie        from "./pages/a-propos/Technologie";
 import Equipe             from "./pages/a-propos/Equipe";
@@ -76,8 +78,12 @@ export default function App() {
       <Route path="/ressources/videos"        element={<Wrap><Videos /></Wrap>} />
       <Route path="/ressources/podcast"       element={<Wrap><Podcast /></Wrap>} />
 
-      {/* Connexion */}
+      {/* Nos solutions (hub) */}
+      <Route path="/nos-solutions" element={<Wrap><NosSolutions /></Wrap>} />
+
+      {/* Connexion & FAQ */}
       <Route path="/se-connecter" element={<Wrap><SeConnecter /></Wrap>} />
+      <Route path="/faq"          element={<Wrap><Faq /></Wrap>} />
 
       {/* À propos */}
       <Route path="/a-propos/vision"       element={<Wrap><Vision /></Wrap>} />

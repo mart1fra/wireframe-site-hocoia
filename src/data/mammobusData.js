@@ -494,6 +494,14 @@ export const faq = {
   ],
 };
 
+// ─── Bus sur mesure ───────────────────────────────────────────────────────────
+
+export const customBus = {
+  title: "Un MammoBus pensé pour votre organisation",
+  paragraph:
+    "Votre programme de dépistage du cancer du sein nécessite une configuration spécifique ? Hocoia adapte le MammoBus à votre cahier des charges — équipements complémentaires, protocole, intégration à votre PACS ou DPI, communication patient personnalisée.",
+};
+
 // ─── CTA Final ────────────────────────────────────────────────────────────────
 
 export const ctaFinal = {

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import ConceptSection from "../components/sections/ConceptSection";
+import CustomBusBlock from "../components/sections/CustomBusBlock";
 import {
   hero,
   logos,
@@ -14,6 +15,7 @@ import {
   temoignages,
   couverture,
   solutions,
+  customBus,
   seo,
   faq,
   ctaFinal,
@@ -499,6 +501,8 @@ function SolutionsSection() {
             </motion.div>
           ))}
         </motion.div>
+
+        <CustomBusBlock {...customBus} />
       </div>
     </section>
   );

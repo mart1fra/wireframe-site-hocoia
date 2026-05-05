@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import ConceptSection from "../components/sections/ConceptSection";
+import CustomBusBlock from "../components/sections/CustomBusBlock";
 import {
   piloteBanner,
   hero,
@@ -14,6 +15,7 @@ import {
   piloteNormandie,
   couverture,
   solutions,
+  customBus,
   seo,
   faq,
   ctaFinal,
@@ -523,6 +525,8 @@ function SolutionsSection() {
             </motion.div>
           ))}
         </motion.div>
+
+        <CustomBusBlock {...customBus} />
       </div>
     </section>
   );

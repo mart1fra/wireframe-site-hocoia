@@ -4,7 +4,12 @@
       "Bash(cd \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\" && npm install)",
       "Bash(cd \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\" && npm run build 2>&1)",
       "Bash(cd \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\" && npm run dev)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vite *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)"
     ]
   }
 }

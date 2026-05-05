@@ -1,9 +1,9 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  h1: "Une équipe médicale qui vient jusqu'à vous, où que vous soyez.",
+  h1: "Réinventons le futur de la santé, ensemble.",
   subtitle:
-    "En France, 6 millions de personnes vivent dans un désert médical. Hocoia déploie des bus médicaux équipés directement dans vos communes et vos entreprises : dépistage, consultations, prévention. Sans que vous ayez à vous déplacer.",
+    "Hocoia construit une santé plus proche, plus humaine, accessible à tous, où que vous viviez. Nous la construisons avec des soignants engagés, et faisons de la prévention le cœur de notre mission.",
   ctaPrimary: "Voir le bus près de moi",
   ctaOutline: "Prendre RDV",
   b2bLink: {
@@ -23,10 +23,12 @@ export const logos = {
 // ─── Identité ─────────────────────────────────────────────────────────────
 
 export const identite = {
-  eyebrow: "Qui sommes-nous",
-  h2: "Un cabinet médical qui se déplace — pas vous",
+  eyebrow: "Notre vision",
+  h2: "Rendre la santé accessible à tous et en tout lieu",
   description:
-    "Fondée par un médecin et des ingénieurs, Hocoia opère une flotte de bus médicaux équipés d'appareils de diagnostic de pointe. Nos professionnels de santé se rendent là où les patients se trouvent : en bas de chez eux, dans leur entreprise, sur leur lieu de travail.",
+    "Nous croyons en un avenir où chaque individu peut accéder à des soins médicaux de qualité, peu importe où il se trouve.",
+  description2:  
+    "L'innovation, la technologie et l’humain sont nos outils pour rendre cette vision possible. Fondée par un médecin et des ingénieurs, Hocoia opère une flotte de bus médicaux équipés d'appareils de diagnostic de pointe. Nos professionnels de santé se rendent là où les patients se trouvent : en bas de chez eux, dans leur entreprise, sur leur lieu de travail.",
   points: [
     {
       id: "i1",
@@ -76,11 +78,14 @@ export const specialites = {
 
 // ─── Stats ────────────────────────────────────────────────────────────────
 
-export const stats = [
-  { value: "4 800", label: "Patients accompagnés" },
-  { value: "80+",   label: "Communes desservies" },
-  { value: "12",    label: "Spécialités disponibles" },
-];
+export const stats = {
+  eyebrow: "Notre impact en France",
+  items: [
+    { value: "4 800", label: "Patients accompagnés" },
+    { value: "80+",   label: "Communes desservies" },
+    { value: "12",    label: "Spécialités disponibles" },
+  ],
+};
 
 // ─── Use cases B2B ────────────────────────────────────────────────────────
 
@@ -157,9 +162,9 @@ export const temoignages = {
 // ─── CTA final ────────────────────────────────────────────────────────────
 
 export const ctaFinal = {
-  h2: "Le bus passe bientôt près de chez vous.",
+  h2: "Une santé accessible à tous, en tout lieu.",
   subtitle:
-    "Prenez rendez-vous — ou, si vous êtes une organisation, parlons de votre programme santé.",
+    "Nous croyons en un avenir où chaque individu accède à des soins de qualité, où qu'il vive. L'innovation, la technologie et l'humain sont nos outils pour rendre cette vision possible.",
   ctaPrimary: "Voir le calendrier des passages",
   ctaOutline: "Parler à un expert BtoB",
 };

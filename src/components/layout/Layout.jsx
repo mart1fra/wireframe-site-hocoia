@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Breadcrumb from "./Breadcrumb";
 import Partners from "./Partners";
 import Footer from "./Footer";
+import FaqBubble from "./FaqBubble";
 
 export default function Layout({ children }) {
   return (
@@ -15,6 +16,7 @@ export default function Layout({ children }) {
       <main className="flex-1">{children}</main>
       <Partners />
       <Footer />
+      <FaqBubble />
     </div>
   );
 }

@@ -141,6 +141,9 @@ function IdentiteSection() {
           <p className="text-gray-600 text-base leading-relaxed max-w-2xl mx-auto mb-14">
             {identite.description}
           </p>
+          <p className="text-gray-600 text-base leading-relaxed max-w-2xl mx-auto mb-14">
+            {identite.description2}
+          </p>
         </FadeIn>
 
         <motion.div
@@ -176,6 +179,9 @@ function SpecialitesSection() {
           <SectionH2>{specialites.h2}</SectionH2>
           <p className="text-gray-500 text-base leading-relaxed">
             {specialites.description}
+          </p>
+          <p className="text-gray-500 text-base leading-relaxed">
+            {specialites.description2}
           </p>
         </FadeIn>
 
@@ -254,6 +260,11 @@ function StatsSection() {
   return (
     <section className="bg-gray-50 py-20 px-6">
       <div className="max-w-5xl mx-auto">
+        <FadeIn className="text-center mb-10">
+          <span className="text-xs font-semibold uppercase tracking-widest text-gray-400">
+            {stats.eyebrow}
+          </span>
+        </FadeIn>
         <FadeIn>
           <motion.div
             variants={listV}
@@ -262,7 +273,7 @@ function StatsSection() {
             viewport={{ once: true, margin: "-60px" }}
             className="grid grid-cols-1 sm:grid-cols-3 divide-x divide-gray-200"
           >
-            {stats.map((stat) => (
+            {stats.items.map((stat) => (
               <motion.div
                 key={stat.label}
                 variants={itemV}

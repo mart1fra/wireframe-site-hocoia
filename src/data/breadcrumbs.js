@@ -34,8 +34,12 @@ export const breadcrumbsMap = {
   "/ressources/videos":        [{ label: "Ressources", href: null }, { label: "Vidéos" }],
   "/ressources/podcast":       [{ label: "Ressources", href: null }, { label: "Podcast" }],
 
-  // Connexion
+  // Hub solutions
+  "/nos-solutions": [{ label: "Nos solutions" }],
+
+  // Connexion & FAQ
   "/se-connecter": [{ label: "Se connecter" }],
+  "/faq":          [{ label: "FAQ" }],
 
   // À propos
   "/a-propos/vision":      [{ label: "À propos", href: null }, { label: "Notre vision" }],

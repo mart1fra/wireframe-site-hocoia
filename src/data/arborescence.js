@@ -171,6 +171,7 @@ export const megaMenus = {
       { id: "mammobus",     label: "MammoBus",        href: "/mammobus" },
       { id: "dermatobus",   label: "DermatoBus",      href: "/dermatobus" },
     ],
+    footer: { label: "Voir toutes nos solutions →", href: "/nos-solutions" },
   },
 
   // ── "Ressources" : liste simple ───────────────────────────────────────
