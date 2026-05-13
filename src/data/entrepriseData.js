@@ -66,7 +66,7 @@ export const useCases = {
         {
           id: "f2",
           title: "Dashboard & reporting",
-          description: "Données anonymisées, tableaux de bord RH, bilan livré sous 72h.",
+          description: "Données anonymisées, tableaux de bord RH, résultats transmis par mail ou courrier dans les semaines suivantes.",
         },
         {
           id: "f3",
@@ -81,21 +81,21 @@ export const useCases = {
       ],
       ctaButtons: [
         { label: "Parler à un expert",     primary: true },
-        { label: "Voir le cas Veolia →",   primary: false },
+        { label: "Voir le cas Boardriders →", primary: false },
       ],
       caseCard: {
-        tag: "Industrie · 2 400 salariés",
-        title: "Comment Veolia Alsace a réduit son absentéisme de 18 % en 12 mois",
-        description: "Un programme de prévention cardiovasculaire et dermatologique déployé sur 3 sites en 4 semaines.",
+        tag: "Sport & outdoor · Industrie",
+        title: "Comment Boardriders a déployé un programme de prévention pour ses collaborateurs",
+        description: "Boardriders a organisé des journées de dépistage directement sur site avec le MédicoBus Hocoia. Organisation clé en main, zéro charge RH, résultats anonymisés.",
         metrics: [
-          { value: "–18 %", label: "Absentéisme" },
-          { value: "680",   label: "Bilans réalisés" },
-          { value: "94 %",  label: "Satisfaction" },
+          { value: "+3 000", label: "personnes dépistées (parc clients)" },
+          { value: "4,8/5",  label: "satisfaction patients" },
+          { value: "2 mois", label: "délai de déploiement" },
         ],
         ctaLabel: "Lire le cas complet →",
         quote: {
           text: "On pensait que l'organisation serait complexe. Hocoia a géré tout de A à Z. Nos managers n'ont rien eu à faire.",
-          author: "Directrice RH, Veolia Alsace",
+          author: "Client Hocoia, entreprise industrielle",
         },
       },
     },
@@ -155,16 +155,16 @@ export const useCases = {
 
 export const videoTestimonial = {
   eyebrow: "Témoignage vidéo",
-  title: "Comment Veolia a déployé une journée santé pour 200 collaborateurs",
+  title: "Comment Boardriders a déployé une journée santé pour ses collaborateurs",
   paragraphs: [
-    "Veolia Alsace a organisé une journée de dépistage cardio et dermato sur son site industriel. En une journée, 200 collaborateurs dépistés, zéro mobilisation côté RH, et un reporting anonymisé qui alimente leur politique santé interne.",
-    "Sophie M., DRH, revient sur les coulisses du déploiement, le format choisi et l'impact mesuré dans les semaines suivantes.",
+    "Boardriders a organisé une journée de dépistage directement sur son site avec le MédicoBus Hocoia. Zéro mobilisation côté RH, et un reporting anonymisé qui alimente leur politique santé interne.",
+    "Découvrez comment s'est déroulé le déploiement, le format choisi et les retours des collaborateurs.",
   ],
   quote:
-    "Pour nos équipes dispersées sur 4 sites, Hocoia a organisé des journées santé en moins d'un mois. Le reporting nous donne enfin des données actionnables.",
-  quoteAuthor: "Sophie M., DRH ETI industrielle",
-  videoLabel: "Cas Veolia Alsace · 3:45",
-  videoMeta: "Tournage avril 2025 — Site industriel, Alsace",
+    "Ce type d'offre répond à un vrai besoin.",
+  quoteAuthor: "Client Hocoia",
+  videoLabel: "Cas Boardriders · Retour d'expérience",
+  videoMeta: "Tournage sur site — Entreprise Boardriders",
 };
 
 // ─── Chiffres clés ────────────────────────────────────────────────────────
@@ -193,7 +193,7 @@ export const avisClients = {
     {
       id: "ac2",
       stars: "★★★★★",
-      quote: "On a lancé le programme dans la foulée du COMEX. Moins de 4 semaines pour le déploiement, zéro charge côté RH. Je recommande à tout DAF qui veut un ROI mesurable.",
+      quote: "On a lancé le programme dans la foulée du COMEX. L'organisation a été prise en charge de A à Z par Hocoia, zéro charge côté RH. Je recommande à tout DAF qui veut un impact mesurable.",
       author: "Julien R.",
       role: "Directeur financier, PME · 450 salariés",
     },

@@ -43,7 +43,7 @@ export const categories = [
       {
         question: "Quels sont les fondateurs de Hocoia ?",
         answer:
-          "Hocoia a été fondée par un médecin et des ingénieurs autour de la conviction que la technologie peut transformer concrètement l'accès aux soins, sans jamais déshumaniser la relation soignant-patient.",
+          "Hocoia a été fondée par un médecin et des ingénieurs autour de la conviction que la technologie peut transformer concrètement la santé et la prévention, sans jamais déshumaniser la relation soignant-patient.",
       },
     ],
   },
@@ -77,7 +77,20 @@ export const categories = [
       {
         question: "Comment je reçois mes résultats ?",
         answer:
-          "Par email sécurisé sous 48 à 72h. Le compte-rendu peut aussi être transmis à votre médecin traitant si vous le souhaitez.",
+          "Par email sécurisé sous 48 à 72h. Le compte-rendu peut aussi être transmis à votre médecin traitant si vous le souhaitez. Vous pouvez également les consulter à tout moment dans votre espace patient.",
+        link: { label: "Consulter mes résultats sur HocoApp →", href: "/se-connecter" },
+      },
+      {
+        question: "Je ne reçois pas mes résultats, que faire ?",
+        answer:
+          "Vérifiez d'abord vos courriers indésirables (spams). Le délai habituel est de 48 à 72h après votre passage. Si vous n'avez toujours rien reçu, connectez-vous directement à votre espace patient pour accéder à vos résultats en ligne.",
+        link: { label: "Accéder à mes résultats sur HocoApp →", href: "/se-connecter" },
+      },
+      {
+        question: "J'ai perdu mon mot de passe, comment le réinitialiser ?",
+        answer:
+          "Rendez-vous sur votre espace patient et cliquez sur « Mot de passe oublié ». Un lien de réinitialisation vous sera envoyé par email en quelques minutes. Si vous ne recevez rien, vérifiez vos spams ou contactez notre support.",
+        link: { label: "Accéder à mon espace patient →", href: "/se-connecter" },
       },
       {
         question: "Le bus passe-t-il régulièrement dans ma ville ?",

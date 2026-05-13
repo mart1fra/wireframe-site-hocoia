@@ -17,7 +17,7 @@ export const hero = {
     "Le bus vient dans votre établissement, zéro déplacement patient",
     "Soignants Hocoia à bord, aucune mobilisation de vos équipes",
     "Résultats transmis à votre équipe médicale via HocoApp",
-    "Compatible parcours de soins existant, pas de rupture",
+    "Compatible avec votre parcours patient existant, pas de rupture",
     "Déploiement en 2 mois, sans infrastructure supplémentaire",
   ],
   ctaPrimary: "Demander une présentation",
@@ -99,7 +99,7 @@ export const useCases = {
           id: "f2",
           title: "Résultats intégrés à votre système",
           description:
-            "Les comptes-rendus sont transmis via HocoApp à vos équipes et au médecin traitant du patient. Aucune rupture dans le parcours de soins.",
+            "Les comptes-rendus sont transmis via HocoApp à vos équipes et au médecin traitant du patient. Aucune rupture dans le parcours patient.",
         },
         {
           id: "f3",
@@ -136,7 +136,7 @@ export const useCases = {
       eyebrow: "Pour les cliniques privées",
       h2: "Différenciez votre offre avec la prévention embarquée",
       paragraphs: [
-        "Les cliniques privées cherchent à se différencier par la qualité de leur offre de soins. Proposer un programme de dépistage embarqué constitue un atout concurrentiel fort, sans mobiliser vos plateaux techniques.",
+        "Les cliniques privées cherchent à se différencier par la qualité de leur offre de prévention. Proposer un programme de dépistage embarqué constitue un atout concurrentiel fort, sans mobiliser vos plateaux techniques.",
         "Hocoia déploie le MammoBus ou le MédicoBus dans votre cour ou parking, pour compléter votre offre sans mobiliser vos équipes.",
       ],
       features: [
@@ -148,7 +148,7 @@ export const useCases = {
         },
         {
           id: "f2",
-          title: "Intégration dans votre offre de soins",
+          title: "Intégration dans votre programme de prévention",
           description:
             "Hocoia s'adapte à votre parcours patient existant : prescription interne, résultats transmis à votre équipe, communication aux patients de votre établissement.",
         },
@@ -174,7 +174,7 @@ export const useCases = {
           "En intégrant le MammoBus Hocoia dans son calendrier annuel, une clinique spécialisée a pu proposer un programme de dépistage à ses patientes sans mobiliser ses équipes de radiologie.",
         metrics: [
           { value: "0 ETP",  label: "Équipes mobilisées" },
-          { value: "100%",   label: "Résultats transmis en 72h" },
+          { value: "100%",   label: "Résultats transmis dans les semaines suivantes" },
           { value: "2 mois", label: "Déploiement" },
         ],
         quote: {
@@ -201,7 +201,7 @@ export const useCases = {
           id: "f2",
           title: "Aucun transport médicalisé à organiser",
           description:
-            "Économies immédiates sur les frais de transport médicalisé, sans pénaliser l'accès aux soins de vos résidents.",
+            "Économies immédiates sur les frais de transport médicalisé, sans pénaliser la santé de vos résidents.",
         },
         {
           id: "f3",
@@ -386,7 +386,7 @@ export const processus = {
       number: "05",
       title: "Jour J + rapport",
       description:
-        "Le bus arrive. Les soignants prennent en charge. Rapport + comptes-rendus transmis sous 72h.",
+        "Le bus arrive. Les soignants prennent en charge. Rapport de participation transmis à votre équipe, comptes-rendus médicaux envoyés aux patients par mail ou courrier dans les semaines suivantes.",
       delay: "J+60",
     },
   ],

@@ -61,7 +61,7 @@ export const logos = {
     "CC Pays de Phalsbourg",
     "Sarrebourg Moselle Sud",
     "Angerville",
-    "AP-HP",
+    "Bessancourt",
   ],
 };
 
@@ -132,7 +132,7 @@ export const definition = {
   eyebrow: "Le concept",
   h2: "Qu'est-ce qu'un MédicoBus Hocoia ?",
   paragraphs: [
-    "Le MédicoBus est un cabinet médical mobile et connecté de moins de 3,5 tonnes. Conçu pour apporter des soins de prévention là où les déserts médicaux s'étendent, il combine équipements médicaux de pointe et technologies numériques.",
+    "Le MédicoBus est un cabinet médical mobile et connecté de moins de 3,5 tonnes. Conçu pour apporter la prévention là où les déserts médicaux s'étendent, il combine équipements médicaux de pointe et technologies numériques.",
     "Chaque déploiement repose sur la présence physique d'un soignant qualifié à bord, renforcée par la disponibilité d'un médecin en téléconsultation assistée. Le MédicoBus n'est pas un simple bus — c'est un protocole de soin complet.",
   ],
   features: [
@@ -200,7 +200,7 @@ export const thematiques = {
         "Diagnostic en asynchrone par un cardiologue en téléexpertise",
         "Si besoin, prise de RDV complémentaire",
       ],
-      badge: "→ Diagnostic asynchrone — résultats sous 7-14 jours",
+      badge: "→ Diagnostic asynchrone — résultats dans les semaines suivantes par mail ou courrier",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Hypertension · Diabète · Dyslipidémies · Arythmies · Risque AVC · Obésité cardiovasculaire",
     },
@@ -222,7 +222,7 @@ export const thematiques = {
         "Photographies des lésions suspectes",
         "Diagnostic asynchrone par dermatologue",
       ],
-      badge: "→ Diagnostic asynchrone — résultats sous 7-14 jours",
+      badge: "→ Diagnostic asynchrone — résultats dans les semaines suivantes par mail ou courrier",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Mélanomes · Carcinomes · Kératoses · Lésions suspectes · Grains de beauté atypiques",
     },
@@ -242,9 +242,9 @@ export const thematiques = {
         "Entretien avec sage-femme",
         "Examen clinique",
         "Frottis et palpation",
-        "Diagnostic par gynécologue en téléexpertise",
+        "Diagnostic synchrone par la sage-femme, ordonnance possible si besoin",
       ],
-      badge: "→ Diagnostic asynchrone — résultats sous 7-14 jours",
+      badge: "→ Diagnostic synchrone — résultats immédiats",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Cancer col utérus · Cancer sein · IST · Troubles menstruels · Suivi contraception",
     },
@@ -260,7 +260,7 @@ export const parcours = {
     { id: "s1", number: "01", titre: "Prise de RDV",       description: "Réservation en ligne ou directement sur place selon disponibilité." },
     { id: "s2", number: "02", titre: "Accueil à bord",      description: "Accueil par un soignant qualifié, recueil des informations médicales." },
     { id: "s3", number: "03", titre: "Consultation",        description: "Examens réalisés sur place avec les équipements embarqués." },
-    { id: "s4", number: "04", titre: "Résultats & suivi",   description: "Compte-rendu envoyé sous 7-14 jours avec recommandations." },
+    { id: "s4", number: "04", titre: "Résultats & suivi",   description: "Résultats envoyés par mail ou courrier dans les semaines suivantes. Pour le check-up santé, résultats remis directement à l'issue de la consultation." },
   ],
 };
 
@@ -404,10 +404,10 @@ export const solutions = {
       description:
         "Innovation unique en France : mammographie mobile dans une unité légère. Dépistage du cancer du sein partout.",
       items: [
-        "Mammographie mobile légère",
-        "Sage-femme + gynécologue",
-        "Palpation mammaire · Frottis",
-        "Public : femmes 18–75 ans",
+        "Mammographie + échographie embarquées",
+        "MERM + sage-femme ou radiologue",
+        "Palpation mammaire · 24 femmes/jour",
+        "Public : femmes 40–75 ans",
       ],
       cta: "Découvrir le MammoBus →",
       ctaDisabled: false,

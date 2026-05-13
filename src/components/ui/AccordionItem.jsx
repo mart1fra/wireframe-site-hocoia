@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function AccordionItem({ question, answer }) {
+export default function AccordionItem({ question, answer, link }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -30,9 +30,19 @@ export default function AccordionItem({ question, answer }) {
         style={{ overflow: "hidden" }}
         className="bg-white"
       >
-        <p className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">
-          {answer}
-        </p>
+        <div className="px-6 pb-5">
+          <p className="text-sm text-gray-600 leading-relaxed">
+            {answer}
+          </p>
+          {link && (
+            <a
+              href={link.href}
+              className="inline-block mt-3 text-xs font-medium text-gray-900 underline underline-offset-2 hover:text-gray-600 transition-colors cursor-pointer"
+            >
+              {link.label}
+            </a>
+          )}
+        </div>
       </motion.div>
     </div>
   );

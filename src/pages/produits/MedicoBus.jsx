@@ -87,58 +87,46 @@ function HeroSection() {
             ))}
           </ul>
 
-          <div className="flex flex-col sm:flex-row gap-3">
-            <button type="button" className="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors cursor-pointer">
+          <div className="flex flex-col sm:flex-row gap-3 mb-5">
+            <a
+              href="#demander-presentation"
+              className="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors text-center"
+            >
               {hero.ctaPrimary}
-            </button>
+            </a>
             <button type="button" className="border border-white/30 text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors cursor-pointer">
               {hero.ctaOutline}
             </button>
           </div>
+
+          <p className="text-gray-500 text-xs">
+            Vous êtes patient·e ?{" "}
+            <a href="/prendre-rdv" className="text-gray-400 underline hover:text-white transition-colors">
+              → Trouver un dépistage près de chez vous
+            </a>
+          </p>
         </motion.div>
       </div>
 
-      {/* Droite — fond gray-50 */}
+      {/* Droite — bloc média */}
       <motion.div
         initial={{ opacity: 0, x: 16 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.15 }}
-        className="bg-gray-50 px-7 py-12 flex flex-col gap-5 justify-center"
+        className="relative bg-[#0d0d0d] flex items-center justify-center min-h-[360px] lg:min-h-full overflow-hidden"
       >
-        {/* Formulaire B2B */}
-        <div className="bg-white border border-gray-200 rounded-xl p-6">
-          <h2 className="font-display font-bold text-base text-gray-900 mb-1">
-            {hero.form.title}
-          </h2>
-          <p className="text-gray-500 text-xs mb-5">{hero.form.subtitle}</p>
-
-          <div className="space-y-3">
-            <select disabled className="w-full bg-gray-50 border border-gray-200 text-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed appearance-none">
-              {hero.form.vousEtesOptions.map((o) => <option key={o}>{o}</option>)}
-            </select>
-            <div className="grid grid-cols-2 gap-3">
-              <input disabled placeholder={hero.form.prenomPlaceholder} className="bg-gray-50 border border-gray-200 text-gray-400 placeholder-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed" />
-              <input disabled placeholder={hero.form.nomPlaceholder} className="bg-gray-50 border border-gray-200 text-gray-400 placeholder-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed" />
-            </div>
-            <input disabled placeholder={hero.form.emailPlaceholder} className="w-full bg-gray-50 border border-gray-200 text-gray-400 placeholder-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed" />
-            <input disabled placeholder={hero.form.communePlaceholder} className="w-full bg-gray-50 border border-gray-200 text-gray-400 placeholder-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed" />
-            <select disabled className="w-full bg-gray-50 border border-gray-200 text-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed appearance-none">
-              {hero.form.specialiteOptions.map((o) => <option key={o}>{o}</option>)}
-            </select>
-            <button disabled type="button" className="w-full bg-gray-900 text-white py-3 rounded-full font-semibold text-sm cursor-not-allowed">
-              {hero.form.cta}
-            </button>
-            <p className="text-gray-400 text-xs text-center">{hero.form.note}</p>
+        <div className="relative z-10 flex flex-col items-center gap-4 px-8 text-center">
+          <div className="w-16 h-16 rounded-full bg-white/10 border border-white/20 flex items-center justify-center mb-2">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M6 4l12 6-12 6V4z" fill="white" fillOpacity="0.8" />
+            </svg>
           </div>
+          <p className="text-gray-600 text-xs leading-relaxed max-w-[220px]">
+            [ Photo ou vidéo de présentation — MédicoBus en déploiement ]
+          </p>
         </div>
-
-        {/* Carte patient */}
-        <div className="bg-gray-100 border border-gray-200 rounded-xl p-5">
-          <p className="font-semibold text-gray-900 text-sm mb-2">{hero.patientCard.titre}</p>
-          <p className="text-gray-600 text-xs leading-relaxed mb-4">{hero.patientCard.texte}</p>
-          <button type="button" className="w-full border border-gray-300 text-gray-700 text-sm font-semibold py-2.5 rounded-full hover:bg-gray-200 transition-colors cursor-pointer">
-            {hero.patientCard.cta}
-          </button>
+        <div className="absolute bottom-4 right-4 bg-black/60 text-gray-500 text-[10px] px-2 py-1 rounded">
+          2:30
         </div>
       </motion.div>
     </section>
@@ -562,6 +550,63 @@ function CtaFinalSection() {
 
 // ─── Page ─────────────────────────────────────────────────────────────────
 
+// ─── Section — Demander une présentation ──────────────────────────────────────
+
+function DemandePresentationSection() {
+  return (
+    <section id="demander-presentation" className="bg-white py-24 px-6">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <FadeIn>
+          <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-4">
+            Demander une présentation
+          </p>
+          <h2 className="font-display font-bold text-3xl sm:text-4xl text-gray-900 leading-tight mb-5">
+            Parlons de votre projet médical mobile
+          </h2>
+          <p className="text-gray-600 text-base leading-relaxed mb-8">
+            Un expert Hocoia vous présente le MédicoBus, répond à vos questions et vous aide à dimensionner votre projet sur votre territoire.
+          </p>
+          <ul className="space-y-3">
+            {["Réponse sous 24h", "Sans engagement", "Confidentiel — RGPD"].map((b) => (
+              <li key={b} className="flex items-center gap-3 text-gray-700 text-sm">
+                <span className="text-gray-400 shrink-0">✓</span>
+                {b}
+              </li>
+            ))}
+          </ul>
+        </FadeIn>
+
+        <FadeIn delay={0.1}>
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+            <h3 className="font-display font-bold text-base text-gray-900 mb-1">
+              {hero.form.title}
+            </h3>
+            <p className="text-gray-500 text-xs mb-5">{hero.form.subtitle}</p>
+            <div className="space-y-3">
+              <select disabled className="w-full bg-white border border-gray-200 text-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed appearance-none">
+                {hero.form.vousEtesOptions.map((o) => <option key={o}>{o}</option>)}
+              </select>
+              <div className="grid grid-cols-2 gap-3">
+                <input disabled placeholder={hero.form.prenomPlaceholder} className="bg-white border border-gray-200 text-gray-400 placeholder-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed" />
+                <input disabled placeholder={hero.form.nomPlaceholder} className="bg-white border border-gray-200 text-gray-400 placeholder-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed" />
+              </div>
+              <input disabled placeholder={hero.form.emailPlaceholder} className="w-full bg-white border border-gray-200 text-gray-400 placeholder-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed" />
+              <input disabled placeholder={hero.form.communePlaceholder} className="w-full bg-white border border-gray-200 text-gray-400 placeholder-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed" />
+              <select disabled className="w-full bg-white border border-gray-200 text-gray-400 rounded-lg px-3 py-2.5 text-sm cursor-not-allowed appearance-none">
+                {hero.form.specialiteOptions.map((o) => <option key={o}>{o}</option>)}
+              </select>
+              <button disabled type="button" className="w-full bg-gray-900 text-white py-3 rounded-full font-semibold text-sm cursor-not-allowed">
+                {hero.form.cta}
+              </button>
+              <p className="text-gray-400 text-xs text-center">{hero.form.note}</p>
+            </div>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  );
+}
+
 export default function MedicoBus() {
   return (
     <>
@@ -572,6 +617,7 @@ export default function MedicoBus() {
       <ThematiquesSection />
       <ParcoursSection />
       <TemoignagesSection />
+      <DemandePresentationSection />
       <SolutionsSection />
       <SeoSection />
       <FaqSection />

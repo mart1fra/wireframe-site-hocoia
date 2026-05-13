@@ -98,7 +98,7 @@ export const journeeDepistage = {
     },
     specialiste: {
       paragraphs: [
-        "Vous intervenez en téléexpertise depuis votre cabinet ou en présentiel sur le bus selon la spécialité. Cardio, dermato, gynéco : vos compétences élargissent l'accès aux soins dans les territoires sous-dotés.",
+        "Vous intervenez en téléexpertise depuis votre cabinet ou en présentiel sur le bus selon la spécialité. Cardio, dermato, gynéco : vos compétences apportent la prévention dans les territoires sous-dotés.",
         "HocoVisio vous donne accès en temps réel aux dispositifs embarqués (ECG, dermatoscope, échographe) avec la qualité d'un cabinet spécialisé. Vous décidez en direct ou en asynchrone.",
       ],
       timeline: [

@@ -366,6 +366,57 @@ export const solutions = {
   ],
 };
 
+// ─── Témoignages ──────────────────────────────────────────────────────────────
+
+export const temoignages = {
+  eyebrow: "Ils témoignent",
+  h2: "Ce que disent nos partenaires et patients",
+  top: [
+    {
+      id: "t1",
+      contexte: "Collectivité · Val de Fensch",
+      quote:
+        "Il n'y avait plus de dermatologue dans notre zone. Hocoia a organisé 3 jours de dépistage. Nous sommes très satisfaits.",
+      author: "Jean-Pierre Cerbai",
+      role: "Chargé de la santé, Val de Fensch",
+    },
+    {
+      id: "t2",
+      contexte: "Institutionnel · Ministère des AE",
+      quote:
+        "L'organisation est remarquable. Tous les créneaux se sont rapidement remplis. Un examen complet en temps très court.",
+      author: "Claire Doucerain",
+      role: "Responsable DSE, Ministère des AE",
+    },
+    {
+      id: "t3",
+      contexte: "Coordinatrice CLS",
+      quote:
+        "Un bilan extrêmement positif, toutes les patientes ont exprimé leur satisfaction. Ce dispositif répond à un vrai besoin que nos structures ne peuvent pas couvrir seules.",
+      author: "Anne Haller",
+      role: "Coordinatrice Contrat Local de Santé",
+    },
+  ],
+  bottom: [
+    {
+      id: "t4",
+      contexte: "Mutuelle · Vendée",
+      quote:
+        "Ce type d'offre répond à un vrai besoin. La prévention est un élément important — Hocoia nous conforte dans cette conviction.",
+      author: "Didier Brouard",
+      role: "Élu MGEN Vendée",
+    },
+    {
+      id: "t5",
+      contexte: "Patiente · Val de Fensch",
+      quote:
+        "Une expérience à poursuivre et à pérenniser. On a beaucoup de mal à avoir des RDV dermato — merci à vous !",
+      author: "Mme Nuvolara",
+      role: "Patiente, Val de Fensch",
+    },
+  ],
+};
+
 // ─── SEO ──────────────────────────────────────────────────────────────────────
 
 export const seo = {
@@ -438,7 +489,7 @@ export const faq = {
       id: "faq3",
       question: "Comment est financé le DermatoBus, le patient paie-t-il ?",
       answer:
-        "Non. Le dépistage est gratuit pour le patient. Le modèle est hybride : sponsoring institutionnel (mutuelles, laboratoires) + forfait par patient payé par la collectivité (département, CPTS). Hocoia a fait le choix de ne jamais mettre le coût à la charge du patient pour éviter toute forme de privatisation de l'accès aux soins.",
+        "Non. Le dépistage est gratuit pour le patient. Le modèle est hybride : sponsoring institutionnel (mutuelles, laboratoires) + forfait par patient payé par la collectivité (département, CPTS). Hocoia a fait le choix de ne jamais mettre le coût à la charge du patient pour éviter toute forme de privatisation de la prévention.",
     },
     {
       id: "faq4",
@@ -460,7 +511,7 @@ export const faq = {
 export const customBus = {
   title: "Un DermatoBus adapté à votre territoire",
   paragraph:
-    "Votre projet de dépistage cutané a des spécificités ? Hocoia conçoit le DermatoBus en lien avec votre service de dermatologie ou votre CHU référent — protocole, équipements, télé-expertise, intégration au parcours de soins existant.",
+    "Votre projet de dépistage cutané a des spécificités ? Hocoia conçoit le DermatoBus en lien avec votre service de dermatologie ou votre CHU référent — protocole, équipements, télé-expertise, intégration à votre dispositif de prévention existant.",
 };
 
 // ─── CTA Final ────────────────────────────────────────────────────────────────

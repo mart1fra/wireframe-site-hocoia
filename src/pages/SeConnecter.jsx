@@ -14,7 +14,7 @@ const itemV = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.35, ease: "easeOut" } },
 };
 
-// ─── Carte espace (structure unifiée pour les 3) ──────────────────────────
+// ─── Carte espace ─────────────────────────────────────────────────────────
 
 function EspaceCard({ espace }) {
   return (
@@ -35,32 +35,18 @@ function EspaceCard({ espace }) {
         {espace.h3}
       </h3>
 
-      {/* Paragraphe — flex-1 pour pousser les boutons en bas */}
-      <p className="text-xs text-gray-500 leading-relaxed flex-1 mb-5">
+      {/* Description */}
+      <p className="text-xs text-gray-500 leading-relaxed mb-5 flex-1">
         {espace.paragraph}
       </p>
 
-      {/* Boutons */}
-      <div className="flex flex-col gap-2">
-        {espace.buttons.map((btn) => (
-          <button
-            key={btn.label}
-            type="button"
-            className={`w-full py-2 text-sm font-medium rounded-full transition-colors duration-150 cursor-pointer ${
-              btn.primary
-                ? "bg-gray-900 text-white hover:bg-gray-800"
-                : "border border-gray-300 text-gray-900 hover:bg-gray-50"
-            }`}
-          >
-            {btn.label}
-          </button>
-        ))}
-      </div>
-
-      {/* Lien bas */}
-      <p className="text-xs text-gray-500 mt-4 text-center cursor-pointer hover:text-gray-700 transition-colors">
-        {espace.lienBas}
-      </p>
+      {/* CTA */}
+      <button
+        type="button"
+        className="w-full py-2 bg-gray-900 text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-colors duration-150 cursor-pointer"
+      >
+        Accéder à mon espace
+      </button>
     </motion.div>
   );
 }
@@ -87,12 +73,22 @@ export default function SeConnecter() {
           variants={listV}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-3 gap-5"
+          className="grid grid-cols-3 gap-5 mb-6"
         >
           {espaces.map((espace) => (
             <EspaceCard key={espace.id} espace={espace} />
           ))}
         </motion.div>
+
+        {/* Bouton HocoApp — largeur de la grille */}
+        <FadeIn>
+          <button
+            type="button"
+            className="w-full py-3 border border-gray-300 text-gray-700 text-sm font-medium rounded-full hover:bg-gray-50 transition-colors duration-150 cursor-pointer"
+          >
+            Accéder à HocoApp →
+          </button>
+        </FadeIn>
 
         {/* Ligne d'aide compacte */}
         <FadeIn className="text-center mt-6">

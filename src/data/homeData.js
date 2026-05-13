@@ -55,14 +55,13 @@ export const specialites = {
   eyebrow: "Le bus de santé",
   h2: "Choisissez votre spécialité",
   description:
-    "Nos bus médicaux itinérant propose 12 spécialités en plein cœur de votre commune. Choisissez la vôtre et réservez un créneau près de chez vous, sans attente, sans déplacement lointain.",
+    "Nos bus médicaux se déplacent au cœur de votre commune pour vous proposer dépistage et prévention. Choisissez votre thématique et réservez un créneau près de chez vous, sans attente, sans déplacement lointain.",
   chips: [
     { id: "checkup",       label: "Check-up" },
     { id: "cardio",        label: "Cardio" },
     { id: "dermato",       label: "Dermato" },
     { id: "cancer-sein",   label: "Cancer sein" },
     { id: "sante-femme",   label: "Santé femme" },
-    { id: "bilan-sanguin", label: "Bilan sanguin" },
   ],
   cta: "Voir le calendrier des passages",
   mapPlaceholder: "Carte interactive — prochains passages bus",
@@ -103,9 +102,9 @@ export const useCases = {
     description:
       "Hocoia déploie un bus médical équipé directement dans vos locaux ou sur votre territoire. Vos collaborateurs bénéficient d'un bilan complet sans déplacement, sans organisation de votre côté.",
     metrics: [
-      { value: "–18%", label: "Absentéisme" },
-      { value: "92%",  label: "Satisfaction salariés" },
-      { value: "3×",   label: "ROI moyen 12 mois" },
+      { value: "+3 000", label: "Personnes dépistées" },
+      { value: "4,8/5",  label: "Satisfaction patients" },
+      { value: "5–10 %", label: "Cas urgents orientés" },
     ],
     ctaPrimary: "Voir le cas client →",
     ctaOutline: "Demander une démo",
@@ -165,7 +164,7 @@ export const temoignages = {
 export const ctaFinal = {
   h2: "Une santé accessible à tous, en tout lieu.",
   subtitle:
-    "Nous croyons en un avenir où chaque individu accède à des soins de qualité, où qu'il vive. L'innovation, la technologie et l'humain sont nos outils pour rendre cette vision possible.",
+    "Nous croyons en un avenir où chaque individu accède à la prévention et à la santé, où qu'il vive. L'innovation, la technologie et l'humain sont nos outils pour rendre cette vision possible.",
   ctaPrimary: "Voir le calendrier des passages",
   ctaOutline: "Parler à un expert BtoB",
 };

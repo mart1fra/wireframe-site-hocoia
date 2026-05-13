@@ -3,7 +3,7 @@
 export const hero = {
   eyebrow: "Collectivités · CPTS · Institutions",
   h1: [
-    "Renforcez l'accès aux soins dans ",
+    "Renforcez la prévention santé dans ",
     { italic: "votre territoire" },
     " sans charge opérationnelle.",
   ],
@@ -121,7 +121,7 @@ export const useCases = {
       ctaOutline: "Voir nos cas clients →",
       caseStudy: {
         tag: "Élu · Angerville",
-        h4: "Comment Angerville a renforcé l'accès aux soins de ses habitants",
+        h4: "Comment Angerville a renforcé la prévention santé de ses habitants",
         description:
           "La commune d'Angerville souffrait d'un sous-équipement médical chronique. Un partenariat avec Hocoia a permis de déployer des journées de prévention régulières, désengorgeant les cabinets alentour pour les pathologies bénignes.",
         metrics: [
@@ -467,7 +467,7 @@ export const faq = {
 // ─── CTA final ─────────────────────────────────────────────────────────────
 
 export const ctaFinal = {
-  h2: "Renforcez l'accès aux soins dans votre territoire.",
+  h2: "Renforcez la prévention santé dans votre territoire.",
   subtitle:
     "Un expert Hocoia spécialisé secteur public vous rappelle sous 24h. Sans engagement, sans appel d'offres préalable.",
   ctaPrimary: "Parler à un expert territorial",

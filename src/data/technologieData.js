@@ -79,7 +79,7 @@ export const promesse = {
         id: "patients",
         titre: "Pour les patients",
         texte:
-          "Un accès à des soins de qualité sans se déplacer loin. Un suivi numérique simple, accessible depuis n'importe quel appareil. Résultats reçus rapidement, transmis à leur médecin traitant.",
+          "Un accès à la prévention et au dépistage sans se déplacer loin. Un suivi numérique simple, accessible depuis n'importe quel appareil. Résultats reçus rapidement, transmis à leur médecin traitant.",
       },
       {
         id: "organisations",

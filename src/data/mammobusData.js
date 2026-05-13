@@ -61,8 +61,8 @@ export const logos = {
     "CC Sarrebourg Moselle Sud",
     "Région Grand Est",
     "MGEN",
-    "CPAM",
-    "Ligue contre le cancer",
+    "CH de Saverne",
+    "ARS Grand Est",
   ],
 };
 

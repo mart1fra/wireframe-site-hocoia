@@ -159,7 +159,7 @@ function FaqContent({ filteredCats, setActiveSectionId }) {
           >
             {cat.items.map((item) => (
               <motion.div key={item.question} variants={itemV}>
-                <AccordionItem question={item.question} answer={item.answer} />
+                <AccordionItem question={item.question} answer={item.answer} link={item.link} />
               </motion.div>
             ))}
           </motion.div>

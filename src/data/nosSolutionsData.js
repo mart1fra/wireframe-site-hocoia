@@ -113,7 +113,7 @@ export const comparison = {
     },
     {
       criterion: "Capacité par jour",
-      values: ["30–40 patients", "24 femmes", "20–30 patients"],
+      values: ["16–24 patients selon la thématique", "24 femmes", "20–30 patients"],
     },
     {
       criterion: "Délai de déploiement",
@@ -121,7 +121,7 @@ export const comparison = {
     },
     {
       criterion: "Public principal",
-      values: ["Tous publics", "Femmes 50–74", "Tous publics"],
+      values: ["Tous publics", "Femmes 40–75 ans", "Tous publics"],
     },
   ],
 };

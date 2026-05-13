@@ -196,7 +196,7 @@ export const avantages = {
       id: "a5",
       title: "Un impact concret",
       description:
-        "Intervenez là où les patients n'ont pas accès aux soins. Chaque mission compte.",
+        "Intervenez là où la prévention fait défaut. Chaque mission compte.",
     },
     {
       id: "a6",
