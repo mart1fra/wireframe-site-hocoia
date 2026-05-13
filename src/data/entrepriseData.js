@@ -48,7 +48,7 @@ export const logos = {
 export const useCases = {
   tabs: [
     { id: "entreprises", label: "Entreprises",          sublabel: "Solutions RH santé" },
-    { id: "assureurs",   label: "Assureurs & mutuelles", sublabel: "Programmes de prévention adhérents" },
+    { id: "assureurs",   label: "Assureurs", sublabel: "Programmes de prévention adhérents" },
   ],
   content: {
     entreprises: {
