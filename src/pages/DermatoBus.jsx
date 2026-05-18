@@ -5,6 +5,7 @@ import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import ConceptSection from "../components/sections/ConceptSection";
 import CustomBusBlock from "../components/sections/CustomBusBlock";
+import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
   piloteBanner,
   hero,
@@ -16,6 +17,7 @@ import {
   couverture,
   solutions,
   temoignages,
+  modeles,
   customBus,
   seo,
   faq,
@@ -738,6 +740,7 @@ export default function DermatoBus() {
       <LogosSection />
       <StatsSection />
       <ConceptSection {...concept} />
+      <ModelesEngagementSection data={modeles} />
       <ProtocoleSection />
       <PiloteNormandieSection />
       <CouvertureSection />

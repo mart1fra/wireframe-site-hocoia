@@ -329,6 +329,79 @@ export const faq = {
 
 // ─── CTA final ────────────────────────────────────────────────────────────
 
+// ─── Modèles d'engagement ─────────────────────────────────────────────────
+
+export const modeles = {
+  eyebrow: "Nos modèles d'engagement",
+  h2: "Un bus médical aux couleurs de votre structure",
+  subtitle:
+    "Configurez un bus médical selon les spécialités de votre secteur et déployez vos programmes de prévention quand vous le souhaitez. Ou commencez par une prestation clé en main.",
+  acquisition: {
+    tag: "Sur mesure",
+    title: "Un bus médical aux couleurs de votre structure",
+    description:
+      "Acquérez un bus médical entièrement configuré selon les spécialités de votre secteur d'activité. Vos couleurs, votre logo, votre programme de prévention — déployé quand vous le décidez, là où vous en avez besoin.",
+    points: [
+      "Spécialités choisies selon vos besoins RH et secteur",
+      "Branding complet — couleurs et logo de votre structure",
+      "Formation et accompagnement des équipes embarquées",
+      "Maintenance et support opérationnel Hocoia inclus",
+    ],
+    cta: "Découvrir les configurations →",
+  },
+  prestation: {
+    tag: "Clé en main",
+    title: "Ou commencez par une prestation Hocoia",
+    description:
+      "Hocoia déploie l'un de ses bus médicaux sur vos sites pour une journée ou une campagne. Aucun investissement, organisation entièrement prise en charge.",
+    specialites: ["Dermatologie", "Cardiologie", "Mammographie", "Bilan sanguin", "Gynécologie", "Ophtalmologie"],
+    cta: "Organiser un dépistage →",
+  },
+};
+
+// ─── Parcours patient ─────────────────────────────────────────────────────
+
+export const parcoursPatient = {
+  eyebrow: "Parcours patient",
+  h2: "De l'inscription au suivi de soins",
+  subtitle:
+    "Pour vos collaborateurs, l'expérience est fluide et confidentielle de bout en bout. Pour vous, une vision globale sans jamais accéder aux données individuelles.",
+  steps: [
+    {
+      id: "s1",
+      number: "01",
+      title: "Inscription & prise de RDV",
+      description:
+        "Le collaborateur reçoit un code d'invitation unique et prend son RDV sur HocoApp en quelques clics selon les créneaux disponibles sur site.",
+      badge: "Via HocoApp ou QR code",
+    },
+    {
+      id: "s2",
+      number: "02",
+      title: "Dépistage dans le bus",
+      description:
+        "Examen complet en 20 à 30 minutes par un professionnel de santé Hocoia directement sur site. Matériel médical certifié, premiers résultats immédiats pour certains examens.",
+      badge: null,
+    },
+    {
+      id: "s3",
+      number: "03",
+      title: "Résultats confidentiels",
+      description:
+        "Le collaborateur reçoit ses résultats sur HocoApp sous 48–72h. Ils sont également transmis à son médecin traitant. L'employeur ne reçoit que des données agrégées anonymisées.",
+      badge: "Résultats dans HocoApp",
+    },
+    {
+      id: "s4",
+      number: "04",
+      title: "Orientation & suivi de soins",
+      description:
+        "En cas d'anomalie, Hocoia coordonne l'orientation vers le médecin traitant ou un spécialiste. Le dépistage s'intègre ainsi au parcours de soins du collaborateur, sans intervention de l'employeur.",
+      badge: "Suivi coordonné dans HocoApp",
+    },
+  ],
+};
+
 export const ctaFinal = {
   h2: "Prêt à déployer Hocoia dans votre structure ?",
   subtitle: "Un expert vous rappelle sous 24h. Sans engagement.",

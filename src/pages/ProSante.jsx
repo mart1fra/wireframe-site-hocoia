@@ -2,6 +2,7 @@ import { useState, Fragment } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
+import HocoAppSection from "../components/sections/HocoAppSection";
 import {
   hero,
   stats,
@@ -12,6 +13,7 @@ import {
   faq,
   ctaFinal,
 } from "../data/proSanteData";
+import { hocoAppByAudience } from "../data/hocoAppData";
 
 // ─── Animation variants ───────────────────────────────────────────────────
 
@@ -222,15 +224,18 @@ function ProfilsSection() {
               <p className="text-sm font-semibold text-gray-900 leading-snug">
                 {p.label}
               </p>
-              <span
-                className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                  p.badgeStyle === "dark"
-                    ? "bg-gray-900 text-white"
-                    : "bg-gray-200 text-gray-700"
-                }`}
+              <button
+                type="button"
+                className="bg-gray-900 text-white rounded-full px-4 py-1.5 text-xs font-semibold hover:bg-gray-800 transition-colors cursor-pointer"
               >
-                {p.badge}
-              </span>
+                {profils.ctaLabel}
+              </button>
+              <a
+                href={p.roleHref}
+                className="text-xs text-gray-500 hover:text-gray-900 underline-offset-4 hover:underline transition-colors"
+              >
+                {profils.roleLinkLabel}
+              </a>
             </motion.div>
           ))}
         </motion.div>
@@ -289,6 +294,9 @@ function ProcessusSection() {
         <FadeIn className="mb-14">
           <Eyebrow>{processus.eyebrow}</Eyebrow>
           <SectionH2>{processus.h2}</SectionH2>
+          {processus.subtitle && (
+            <p className="text-gray-500 text-base max-w-2xl">{processus.subtitle}</p>
+          )}
         </FadeIn>
 
         <motion.div
@@ -443,6 +451,7 @@ export default function ProSante() {
       <ProfilsSection />
       <AvantagesSection />
       <ProcessusSection />
+      <HocoAppSection data={hocoAppByAudience.proSante} variant="white" />
       <TemoignagesSection />
       <FaqSection />
       <CtaFinalSection />

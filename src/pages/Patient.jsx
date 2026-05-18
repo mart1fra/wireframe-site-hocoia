@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
+import HocoAppSection from "../components/sections/HocoAppSection";
 import { hero, etapes, specialites, temoignages, faq, ctaFinal } from "../data/patientData";
+import { hocoAppByAudience } from "../data/hocoAppData";
 
 // ─── Animation variants ───────────────────────────────────────────────────
 
@@ -358,6 +360,7 @@ export default function Patient() {
       <HeroSection />
       <EtapesSection />
       <SpecialitesSection />
+      <HocoAppSection data={hocoAppByAudience.patient} variant="white" />
       <TemoignagesSection />
       <FaqSection />
       <CtaFinalSection />

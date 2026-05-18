@@ -3,6 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import FadeIn      from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import VideoTestimonial from "../components/sections/VideoTestimonial";
+import HocoAppSection from "../components/sections/HocoAppSection";
+import ParcoursPatientSection from "../components/sections/ParcoursPatientSection";
+import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
   hero,
   logos,
@@ -13,8 +16,11 @@ import {
   processus,
   ressources,
   faq,
+  modeles,
+  parcoursPatient,
   ctaFinal,
 } from "../data/entrepriseData";
+import { hocoAppByAudience } from "../data/hocoAppData";
 
 // ─── Variants réutilisables ───────────────────────────────────────────────
 
@@ -294,13 +300,16 @@ function UseCasesSection() {
                 ))}
               </div>
 
-              <div className="pl-4 border-l-[3px] border-gray-300 mb-5">
-                <p className="text-sm italic text-gray-700 leading-relaxed">
+              <div className="border border-gray-200 rounded-xl p-4 mb-5">
+                <p className="text-sm italic text-gray-700 leading-relaxed mb-4">
                   "{content.caseCard.quote.text}"
                 </p>
-                <p className="text-xs text-gray-500 mt-1.5">
-                  — {content.caseCard.quote.author}
-                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-gray-100 border border-gray-200 shrink-0" />
+                  <p className="text-xs text-gray-600 leading-snug font-medium">
+                    {content.caseCard.quote.author}
+                  </p>
+                </div>
               </div>
 
               <span className="text-sm font-semibold text-gray-700 cursor-pointer hover:text-gray-900 transition-colors">
@@ -532,18 +541,58 @@ function CtaFinalSection() {
   );
 }
 
+// ─── CTA mid-page ─────────────────────────────────────────────────────────
+
+function CtaMidPage() {
+  return (
+    <section className="bg-gray-100 border-y border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between gap-8">
+        <div className="flex items-center gap-4">
+          <div className="w-10 h-10 bg-gray-200 border border-gray-300 rounded-xl shrink-0" />
+          <div>
+            <p className="font-semibold text-gray-900 text-sm">Vous savez déjà ce qu'il vous faut ?</p>
+            <p className="text-xs text-gray-500 mt-0.5">Acquisition ou prestation de service — on s'adapte à votre organisation.</p>
+          </div>
+        </div>
+        <a href="#modeles">
+          <button className="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150 cursor-pointer whitespace-nowrap shrink-0">
+            Voir les formules →
+          </button>
+        </a>
+      </div>
+    </section>
+  );
+}
+
 // ─── Export ───────────────────────────────────────────────────────────────
 
 export default function Entreprises() {
   return (
     <>
+      {/* 1. Ce que c'est + ce que ça permet */}
       <HeroSection />
       <LogosSection />
       <UseCasesSection />
+
+      {/* 2. Comment ça se passe — parcours patient */}
+      <ParcoursPatientSection data={parcoursPatient} variant="white" />
+
+      {/* 3. Grâce à quoi et comment ça marche */}
+      <HocoAppSection data={hocoAppByAudience.entreprises} variant="gray" compact />
+      <CtaMidPage />
+
+      {/* 4. Réassurance — avis et témoignages */}
       <AvisClientsSection />
       <StatsSection />
       <VideoTestimonialSection />
+
+      {/* 5. La solution adaptée pour votre problématique */}
+      <ModelesEngagementSection data={modeles} id="modeles" />
+
+      {/* 6. Prise de contact et mise en place */}
       <ProcessSection />
+
+      {/* 7. Ressources et FAQ */}
       <RessourcesSection />
       <FaqSection />
       <CtaFinalSection />

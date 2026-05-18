@@ -464,6 +464,79 @@ export const faq = {
   ],
 };
 
+// ─── Modèles d'engagement ─────────────────────────────────────────────────
+
+export const modeles = {
+  eyebrow: "Nos modèles d'engagement",
+  h2: "Un bus médical configuré pour votre territoire",
+  subtitle:
+    "Dotez votre territoire d'un bus médical en propre pour un service de santé mobile pérenne. Ou lancez-vous avec une prestation ponctuelle clé en main.",
+  acquisition: {
+    tag: "Sur mesure",
+    title: "Un bus médical configuré pour votre territoire",
+    description:
+      "Acquérez un bus médical équipé pour les spécialités dont vos habitants ont besoin, aux couleurs de votre collectivité. Déployable commune par commune, éligible aux financements publics.",
+    points: [
+      "Spécialités configurées selon les besoins de santé du territoire",
+      "Propriété de la collectivité ou de l'intercommunalité",
+      "Éligible aux financements publics et subventions d'investissement",
+      "Opérable avec vos propres soignants ou via Hocoia",
+    ],
+    cta: "Découvrir les configurations →",
+  },
+  prestation: {
+    tag: "Clé en main",
+    title: "Ou commencez par une prestation Hocoia",
+    description:
+      "Hocoia déploie un bus sur votre territoire pour une campagne ponctuelle. Organisation complète, compatible financements ARS et CPAM.",
+    specialites: ["Dermatologie", "Cardiologie", "Mammographie", "Bilan sanguin", "Gynécologie", "Ophtalmologie"],
+    cta: "Organiser une campagne →",
+  },
+};
+
+// ─── Parcours patient ─────────────────────────────────────────────────────
+
+export const parcoursPatient = {
+  eyebrow: "Parcours patient",
+  h2: "Du premier contact au suivi territorial",
+  subtitle:
+    "Pour vos habitants, un accès aux soins sans contrainte. Pour votre territoire, des données de santé publique pour piloter votre politique de prévention.",
+  steps: [
+    {
+      id: "s1",
+      number: "01",
+      title: "Découverte & inscription",
+      description:
+        "L'habitant voit l'annonce (flyer, affiche mairie, réseaux locaux), prend RDV via HocoApp ou QR code sans création de compte complexe.",
+      badge: "RDV via HocoApp ou QR code",
+    },
+    {
+      id: "s2",
+      number: "02",
+      title: "Dépistage au plus près",
+      description:
+        "Le bus se déplace dans la commune, sur la place du marché ou devant la mairie. Examen en 20 à 30 minutes, sans rendez-vous médical classique.",
+      badge: null,
+    },
+    {
+      id: "s3",
+      number: "03",
+      title: "Résultats & compte rendu",
+      description:
+        "L'habitant reçoit ses résultats sur HocoApp sous 48–72h. Un compte rendu est transmis à son médecin traitant pour assurer la continuité du suivi.",
+      badge: "Résultats dans HocoApp",
+    },
+    {
+      id: "s4",
+      number: "04",
+      title: "Suivi & parcours de soins",
+      description:
+        "En cas de dépistage positif, Hocoia coordonne l'orientation vers les acteurs de soins locaux. Le dépistage s'intègre au parcours de soins du patient. La collectivité reçoit des indicateurs agrégés pour piloter ses futures actions.",
+      badge: "Orientation via HocoApp",
+    },
+  ],
+};
+
 // ─── CTA final ─────────────────────────────────────────────────────────────
 
 export const ctaFinal = {

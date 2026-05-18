@@ -5,6 +5,7 @@ import FadeIn from "../../components/ui/FadeIn";
 import AccordionItem from "../../components/ui/AccordionItem";
 import ConceptSection from "../../components/sections/ConceptSection";
 import CustomBusBlock from "../../components/sections/CustomBusBlock";
+import ModelesEngagementSection from "../../components/sections/ModelesEngagementSection";
 import {
   hero,
   logos,
@@ -14,6 +15,7 @@ import {
   parcours,
   temoignages,
   solutions,
+  modeles,
   customBus,
   seo,
   faq,
@@ -614,6 +616,7 @@ export default function MedicoBus() {
       <LogosSection />
       <StatsSection />
       <ConceptSection {...concept} />
+      <ModelesEngagementSection data={modeles} />
       <ThematiquesSection />
       <ParcoursSection />
       <TemoignagesSection />

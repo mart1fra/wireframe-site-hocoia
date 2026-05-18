@@ -38,7 +38,7 @@ export const megaMenus = {
       },
       {
         id: "entreprise",
-        label: "Entreprises & assureurs",
+        label: "Entreprises & mutuelles",
         subtext: "Solutions RH & assurance santé",
         icon: "🏢",
         iconBg: "#ede9fe",
@@ -47,7 +47,7 @@ export const megaMenus = {
       },
       {
         id: "collectivite",
-        label: "Secteur public & institutions",
+        label: "Collectivités & institutions",
         subtext: "Santé de proximité pour vos territoires",
         icon: "🏛️",
         iconBg: "#dbeafe",
@@ -56,7 +56,7 @@ export const megaMenus = {
       },
       {
         id: "etablissement",
-        label: "Acteurs de santé & médico-social",
+        label: "Établissements de santé & médico-social",
         subtext: "Dépistage externalisé & partenariats",
         icon: "🏥",
         iconBg: "#ffedd5",

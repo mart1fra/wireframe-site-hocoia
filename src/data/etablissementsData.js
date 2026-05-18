@@ -237,45 +237,6 @@ export const useCases = {
   },
 };
 
-// ─── Prévention sans déplacer ──────────────────────────────────────────────
-
-export const prevention = {
-  eyebrow: "Notre proposition de valeur",
-  h2: "Vos patients restent chez eux. La prévention vient à eux.",
-  intro:
-    "Le premier frein au dépistage en établissement médicosocial, c'est le déplacement : coûteux, compliqué, parfois impossible pour des personnes fragiles. Hocoia supprime ce frein.",
-  cards: [
-    {
-      id: "pv1",
-      title: "Le bus vient à vous",
-      description:
-        "Le MammoBus, MédicoBus ou DermatoBus se déploie dans votre parking, votre cour ou votre entrée. Aucun transport patient à organiser.",
-      detail: "Stationnement 9,96m · sol stable",
-    },
-    {
-      id: "pv2",
-      title: "Soignants inclus",
-      description:
-        "MERM, sage-femme, infirmière, médecin : Hocoia mobilise tous les professionnels nécessaires. Vos équipes ne sont pas sollicitées.",
-      detail: "Réseau 120+ prestataires",
-    },
-    {
-      id: "pv3",
-      title: "Résultats à votre équipe",
-      description:
-        "Comptes-rendus transmis via HocoApp directement à votre équipe médicale et au médecin traitant. Intégration fluide dans le dossier patient.",
-      detail: "HDS certifié · RGPD",
-    },
-    {
-      id: "pv4",
-      title: "Rapport pour votre direction",
-      description:
-        "Bilan de participation, taux de détection, satisfaction : un rapport anonymisé livré après chaque déploiement, utilisable dans votre rapport d'activité.",
-      detail: "Données agrégées uniquement",
-    },
-  ],
-};
-
 // ─── Solutions ─────────────────────────────────────────────────────────────
 
 export const solutions = {
@@ -476,6 +437,79 @@ export const faq = {
       question: "Peut-on organiser plusieurs journées par an dans notre établissement ?",
       answer:
         "Oui, c'est même recommandé, notamment pour le dépistage dermatologique où le suivi annuel est au cœur de la valeur médicale. Hocoia propose des programmes annuels multi-journées avec un prix dégressif. Idéal pour les EHPAD qui veulent un suivi régulier de leurs résidents.",
+    },
+  ],
+};
+
+// ─── Modèles d'engagement ─────────────────────────────────────────────────
+
+export const modeles = {
+  eyebrow: "Nos modèles d'engagement",
+  h2: "Un bus médical configuré pour vos spécialités médicales",
+  subtitle:
+    "Acquérez un bus Hocoia équipé pour les spécialités de votre établissement et étendez votre activité hors les murs de façon pérenne. Ou testez le dispositif avec une prestation ponctuelle.",
+  acquisition: {
+    tag: "Sur mesure",
+    title: "Un bus médical configuré pour vos spécialités médicales",
+    description:
+      "Acquérez un bus médical entièrement équipé pour les spécialités de votre établissement. Formation de vos équipes soignantes, intégration à votre SIH, maintenance assurée par Hocoia.",
+    points: [
+      "Bus configuré selon vos spécialités et protocoles médicaux",
+      "Formation de vos équipes soignantes incluse",
+      "Intégration possible à votre SIH",
+      "Maintenance et support opérationnel Hocoia",
+    ],
+    cta: "Découvrir les configurations →",
+  },
+  prestation: {
+    tag: "Clé en main",
+    title: "Ou testez le dispositif avec une prestation Hocoia",
+    description:
+      "Hocoia intervient avec son propre bus et ses soignants pour un dépistage ponctuel dans votre établissement ou en dehors de vos murs.",
+    specialites: ["Dermatologie", "Cardiologie", "Mammographie", "Bilan sanguin", "Gynécologie", "Ophtalmologie"],
+    cta: "Organiser un dépistage →",
+  },
+};
+
+// ─── Parcours patient ─────────────────────────────────────────────────────
+
+export const parcoursPatient = {
+  eyebrow: "Parcours patient",
+  h2: "Du dépistage mobile à l'intégration dans le parcours de soins",
+  subtitle:
+    "Le bus Hocoia prolonge l'activité de votre établissement hors les murs. Les résultats s'intègrent directement dans votre circuit patient existant.",
+  steps: [
+    {
+      id: "s1",
+      number: "01",
+      title: "Orientation & inscription",
+      description:
+        "Le patient est orienté par l'établissement ou identifié dans la patientèle. La prise de RDV se fait via HocoApp, intégrée au circuit d'orientation de votre établissement.",
+      badge: "Orientation via HocoApp",
+    },
+    {
+      id: "s2",
+      number: "02",
+      title: "Dépistage mobile",
+      description:
+        "Examen réalisé par les équipes Hocoia ou vos propres soignants dans le bus équipé. Protocoles médicaux validés par les comités scientifiques, premiers résultats immédiats pour certains examens.",
+      badge: null,
+    },
+    {
+      id: "s3",
+      number: "03",
+      title: "Intégration au dossier patient",
+      description:
+        "Les résultats sont transmis à l'équipe médicale référente et intégrés dans le DPI de l'établissement si souhaité. Le dépistage devient une étape documentée du parcours de soins.",
+      badge: "Synchronisation DPI via HocoApp",
+    },
+    {
+      id: "s4",
+      number: "04",
+      title: "Coordination spécialisée",
+      description:
+        "En cas de dépistage positif, le patient est orienté directement vers les spécialistes de votre établissement dans le parcours de soins existant, sans rupture de continuité.",
+      badge: "Suivi coordonné dans HocoApp",
     },
   ],
 };

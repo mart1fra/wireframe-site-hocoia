@@ -3,18 +3,23 @@ import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import VideoTestimonial from "../components/sections/VideoTestimonial";
+import HocoAppSection from "../components/sections/HocoAppSection";
+import ParcoursPatientSection from "../components/sections/ParcoursPatientSection";
+import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
   hero,
   stats,
   useCases,
-  prevention,
   solutions,
   processus,
   temoignages,
   videoTestimonial,
   faq,
+  modeles,
+  parcoursPatient,
   ctaFinal,
 } from "../data/etablissementsData";
+import { hocoAppByAudience } from "../data/hocoAppData";
 
 // ─── Variants ─────────────────────────────────────────────────────────────
 
@@ -316,11 +321,16 @@ function UseCasesSection() {
               ))}
             </div>
 
-            <div className="pl-4 border-l-[3px] border-gray-300">
-              <p className="text-sm italic text-gray-700 leading-relaxed">
+            <div className="border border-gray-200 rounded-xl p-4">
+              <p className="text-sm italic text-gray-700 leading-relaxed mb-4">
                 "{content.caseStudy.quote.text}"
               </p>
-              <p className="text-xs text-gray-500 mt-2">— {content.caseStudy.quote.author}</p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-gray-100 border border-gray-200 shrink-0" />
+                <p className="text-xs text-gray-600 leading-snug font-medium">
+                  {content.caseStudy.quote.author}
+                </p>
+              </div>
             </div>
           </div>
         </motion.div>
@@ -329,45 +339,7 @@ function UseCasesSection() {
   );
 }
 
-// ─── 4. PRÉVENTION SANS DÉPLACER ──────────────────────────────────────────
-
-function PreventionSection() {
-  return (
-    <section className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 py-24">
-
-        <FadeIn className="text-center mb-16 max-w-2xl mx-auto">
-          <Eyebrow>{prevention.eyebrow}</Eyebrow>
-          <SectionH2>{prevention.h2}</SectionH2>
-          <p className="text-gray-600 mt-4 leading-relaxed">{prevention.intro}</p>
-        </FadeIn>
-
-        <motion.div
-          className="grid grid-cols-4 gap-6"
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          {prevention.cards.map((card) => (
-            <motion.div
-              key={card.id}
-              variants={itemV}
-              className="bg-white border border-gray-200 rounded-xl p-6 text-center"
-            >
-              <div className="w-10 h-10 bg-gray-100 border border-gray-200 rounded-lg mx-auto mb-4" />
-              <h3 className="font-display font-bold text-gray-900 text-sm mb-2">{card.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed mb-3">{card.description}</p>
-              <p className="text-xs italic text-gray-400">{card.detail}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
-  );
-}
-
-// ─── 5. SOLUTIONS ─────────────────────────────────────────────────────────
+// ─── 4. SOLUTIONS ─────────────────────────────────────────────────────────
 
 function SolutionsSection() {
   return (
@@ -636,19 +608,58 @@ function CtaFinalSection() {
   );
 }
 
+// ─── CTA mid-page ─────────────────────────────────────────────────────────
+
+function CtaMidPage() {
+  return (
+    <section className="bg-gray-100 border-y border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between gap-8">
+        <div className="flex items-center gap-4">
+          <div className="w-10 h-10 bg-gray-200 border border-gray-300 rounded-xl shrink-0" />
+          <div>
+            <p className="font-semibold text-gray-900 text-sm">Vous savez déjà ce qu'il vous faut ?</p>
+            <p className="text-xs text-gray-500 mt-0.5">MammoBus, DermatoBus, MedicoBus ou centre de santé mobile sur mesure.</p>
+          </div>
+        </div>
+        <a href="#modeles">
+          <button className="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150 cursor-pointer whitespace-nowrap shrink-0">
+            Voir les formules →
+          </button>
+        </a>
+      </div>
+    </section>
+  );
+}
+
 // ─── Export ───────────────────────────────────────────────────────────────
 
 export default function EtablissementsSante() {
   return (
     <>
+      {/* 1. Ce que c'est + ce que ça permet */}
       <HeroSection />
       <StatsSection />
       <UseCasesSection />
-      <PreventionSection />
-      <SolutionsSection />
-      <ProcessSection />
+
+      {/* 2. Comment ça se passe — parcours patient */}
+      <ParcoursPatientSection data={parcoursPatient} variant="white" />
+
+      {/* 3. Grâce à quoi et comment ça marche */}
+      <HocoAppSection data={hocoAppByAudience.etablissementsSante} variant="white" compact />
+      <CtaMidPage />
+
+      {/* 4. Réassurance — avis et témoignages */}
       <TemoignagesSection />
       <VideoTestimonialSection />
+
+      {/* 5. La solution adaptée pour votre problématique */}
+      <ModelesEngagementSection data={modeles} id="modeles" />
+      <SolutionsSection />
+
+      {/* 6. Prise de contact et mise en place */}
+      <ProcessSection />
+
+      {/* 7. Ressources et FAQ */}
       <FaqSection />
       <CtaFinalSection />
     </>

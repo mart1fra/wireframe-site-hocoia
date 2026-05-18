@@ -204,6 +204,36 @@ function SpecialitesSection() {
                 </button>
               ))}
             </div>
+
+            <AnimatePresence mode="wait">
+              {(() => {
+                const activeSpe = specialites.chips.find((c) => c.id === activeChip);
+                return activeSpe ? (
+                  <motion.div
+                    key={activeChip}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -8 }}
+                    transition={{ duration: 0.25, ease: "easeOut" }}
+                    className="mb-8"
+                  >
+                    <h3 className="font-semibold text-gray-900 text-base mb-2">
+                      {activeSpe.title}
+                    </h3>
+                    <p className="text-gray-500 text-sm leading-relaxed mb-3 max-w-md">
+                      {activeSpe.description}
+                    </p>
+                    <Link
+                      to={activeSpe.href}
+                      className="text-sm font-semibold text-gray-900 underline underline-offset-2 hover:text-gray-700 transition-colors"
+                    >
+                      {activeSpe.linkLabel}
+                    </Link>
+                  </motion.div>
+                ) : null;
+              })()}
+            </AnimatePresence>
+
             <button
               type="button"
               className="text-sm font-semibold text-gray-700 underline underline-offset-2 hover:text-gray-900 transition-colors cursor-pointer"

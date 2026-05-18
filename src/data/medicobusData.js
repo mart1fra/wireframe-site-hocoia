@@ -523,6 +523,36 @@ export const faq = {
   ],
 };
 
+// ─── Modèles d'engagement (acquisition / prestation) ─────────────────────
+
+export const modeles = {
+  eyebrow: "Acquérir votre propre MédicoBus",
+  h2: "Un MédicoBus conçu pour votre territoire",
+  subtitle:
+    "Dotez-vous d'un cabinet médical mobile en propre pour un service de santé itinérant pérenne. Ou commencez rapidement avec une prestation Hocoia.",
+  acquisition: {
+    tag: "Acquisition / Location longue durée",
+    title: "Votre MédicoBus, configuré pour vos besoins",
+    description:
+      "Hocoia conçoit et fabrique votre MédicoBus sur mesure — spécialités, équipements médicaux, identité visuelle. Opérable avec vos propres soignants ou via Hocoia.",
+    points: [
+      "10+ dispositifs médicaux configurables selon vos spécialités",
+      "Identité visuelle personnalisée (collectivité, mutuelle, groupe)",
+      "Éligible aux financements publics, DETR et fonds régionaux",
+      "Formation de vos équipes et accompagnement au déploiement",
+    ],
+    cta: "Demander une étude de faisabilité →",
+  },
+  prestation: {
+    tag: "Prestation de service",
+    title: "Ou commencez par une prestation Hocoia",
+    description:
+      "Hocoia déploie un MédicoBus sur votre territoire avec ses propres équipes médicales. Clé en main, sans investissement initial.",
+    specialites: ["Cardiologie", "Médecine générale", "Dermatologie", "Gynécologie", "Ophtalmologie", "Diabétologie"],
+    cta: "Organiser une campagne →",
+  },
+};
+
 // ─── Bus sur mesure ───────────────────────────────────────────────────────
 
 export const customBus = {

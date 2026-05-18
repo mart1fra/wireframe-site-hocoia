@@ -211,6 +211,36 @@ export const whyItems = [
   },
 ];
 
+// ─── Modèles d'engagement (acquisition / prestation) ──────────────────────
+
+export const modelesEngagement = {
+  eyebrow: "Acquérir ou déployer un bus médical",
+  h2: "Votre bus médical sur mesure",
+  subtitle:
+    "Dotez-vous d'un bus médical en propre pour un service de santé mobile pérenne. Ou lancez-vous rapidement avec une prestation clé en main Hocoia.",
+  acquisition: {
+    tag: "Acquisition / Location longue durée",
+    title: "Un bus médical conçu selon vos spécifications",
+    description:
+      "Hocoia conçoit et fabrique votre bus médical sur mesure — spécialités, équipements, identité visuelle. Vous en devenez propriétaire ou locataire longue durée, opérable en autonomie ou avec les équipes Hocoia.",
+    points: [
+      "Spécialités et équipements configurés selon votre cahier des charges",
+      "Acquisition en pleine propriété ou location longue durée (LLD)",
+      "Éligible aux financements publics, subventions et plans d'investissement",
+      "Accompagnement déploiement, formation des équipes et maintenance",
+    ],
+    cta: "Demander une étude de faisabilité →",
+  },
+  prestation: {
+    tag: "Prestation de service",
+    title: "Ou déléguez avec une prestation Hocoia",
+    description:
+      "Hocoia déploie son bus sur votre territoire pour une campagne ponctuelle. Équipes médicales, organisation, données — tout est inclus, sans investissement initial.",
+    specialites: ["Cardiologie", "Dermatologie", "Mammographie", "Médecine générale", "Gynécologie", "Ophtalmologie"],
+    cta: "Organiser une campagne →",
+  },
+};
+
 // ─── CTA final ─────────────────────────────────────────────────────────────
 
 export const cta = {

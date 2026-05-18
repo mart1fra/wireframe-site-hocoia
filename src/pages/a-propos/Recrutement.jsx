@@ -516,149 +516,238 @@ function ProcessusSection() {
 // ─── Section 8 — Offres actuelles ────────────────────────────────────────────
 
 function OffresSection() {
+  const [categorie, setCategorie] = useState("all");
+  const [specialite, setSpecialite] = useState("all");
+  const [region, setRegion] = useState("all");
+
+  function matchesFilters(offre) {
+    if (specialite !== "all" && offre.specialiteId !== specialite) return false;
+    if (region !== "all") {
+      if (region === "national" || region === "remote") {
+        if (!offre.regions.includes(region)) return false;
+      } else {
+        if (
+          !offre.regions.includes(region) &&
+          !offre.regions.includes("national") &&
+          !offre.regions.includes("remote")
+        ) return false;
+      }
+    }
+    return true;
+  }
+
+  const showSoignants = categorie === "all" || categorie === "soignant";
+  const showInternes  = categorie === "all" || categorie === "tech" || categorie === "mktg";
+
+  const filteredSoignants = showSoignants
+    ? offres.soignants.items.filter(matchesFilters)
+    : [];
+
+  const filteredInternes = showInternes
+    ? offres.internes.items.filter((offre) => {
+        if (!matchesFilters(offre)) return false;
+        if (categorie === "tech") return offre.specialiteId === "tech";
+        if (categorie === "mktg") return offre.specialiteId === "marketing" || offre.specialiteId === "operations";
+        return true;
+      })
+    : [];
+
+  const totalCount = filteredSoignants.length + filteredInternes.length;
+  const hasActiveFilters = categorie !== "all" || specialite !== "all" || region !== "all";
+
+  function resetFilters() {
+    setCategorie("all");
+    setSpecialite("all");
+    setRegion("all");
+  }
+
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Header + filtres */}
-        <FadeIn className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
+        {/* Titre */}
+        <FadeIn className="mb-6">
           <h2 className="font-display font-bold text-3xl text-gray-900">{offres.h2}</h2>
+        </FadeIn>
+
+        {/* Filtres */}
+        <FadeIn className="mb-10 flex flex-col gap-4">
+          {/* Pilules de catégorie */}
           <div className="flex flex-wrap gap-2">
-            {offres.filtres.map((f, i) => (
+            {offres.filtres.map((f) => (
               <button
                 key={f.id}
                 type="button"
+                onClick={() => setCategorie(f.id)}
                 className={`text-xs font-semibold px-4 py-2 rounded-full transition-colors cursor-pointer ${
-                  i === 0
+                  categorie === f.id
                     ? "bg-gray-900 text-white"
                     : "bg-white border border-gray-200 text-gray-600 hover:border-gray-400"
                 }`}
               >
-                {f.label}
-                {f.count ? ` (${f.count})` : ""}
+                {f.label}{f.count ? ` (${f.count})` : ""}
               </button>
             ))}
           </div>
+
+          {/* Selects spécialité + région */}
+          <div className="flex flex-col sm:flex-row gap-3 items-center">
+            <select
+              value={specialite}
+              onChange={(e) => setSpecialite(e.target.value)}
+              className="flex-1 w-full bg-white border border-gray-200 rounded-full text-sm text-gray-700 px-4 py-2.5 hover:border-gray-400 focus:border-gray-500 focus:outline-none cursor-pointer"
+            >
+              {offres.specialites.map((s) => (
+                <option key={s.id} value={s.id}>{s.label}</option>
+              ))}
+            </select>
+            <select
+              value={region}
+              onChange={(e) => setRegion(e.target.value)}
+              className="flex-1 w-full bg-white border border-gray-200 rounded-full text-sm text-gray-700 px-4 py-2.5 hover:border-gray-400 focus:border-gray-500 focus:outline-none cursor-pointer"
+            >
+              {offres.regions.map((r) => (
+                <option key={r.id} value={r.id}>{r.label}</option>
+              ))}
+            </select>
+            {hasActiveFilters && (
+              <button
+                type="button"
+                onClick={resetFilters}
+                className="text-xs text-gray-500 hover:text-gray-900 underline-offset-4 hover:underline transition-colors cursor-pointer shrink-0"
+              >
+                Réinitialiser
+              </button>
+            )}
+          </div>
+
+          {/* Compteur */}
+          <p className="text-gray-500 text-sm">
+            {totalCount} offre{totalCount > 1 ? "s" : ""} correspond{totalCount > 1 ? "ent" : ""} à vos filtres
+          </p>
         </FadeIn>
 
-        {/* Sous-section soignants */}
-        <div className="mb-10">
-          <div className="flex items-center gap-4 mb-5">
-            <span className="bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
-              {offres.soignants.label}
-            </span>
-            <div className="flex-1 border-t border-gray-200" />
+        {/* État vide */}
+        {totalCount === 0 && (
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-10 text-center">
+            <p className="font-semibold text-gray-900 text-base mb-3">
+              Aucune offre ne correspond à vos critères pour le moment.
+            </p>
+            <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-lg mx-auto">
+              Envoyez-nous une candidature spontanée, on lit tout — vous serez prévenu·e dès qu'une offre s'ouvre dans votre zone.
+            </p>
+            <button
+              type="button"
+              onClick={resetFilters}
+              className="bg-gray-900 text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors cursor-pointer"
+            >
+              Réinitialiser les filtres
+            </button>
           </div>
-          <motion.div
-            variants={listV}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
-            className="flex flex-col gap-3"
-          >
-            {offres.soignants.items.map((offre) => (
-              <motion.div
-                key={offre.id}
-                variants={itemV}
-                className="bg-white border border-gray-200 rounded-xl px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
-              >
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-semibold text-gray-900 text-sm">
-                    {offre.titre}
-                  </span>
-                  <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full">
-                    {offre.tag}
-                  </span>
-                  <span className="text-gray-500 text-xs">{offre.lieu}</span>
-                  <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full">
-                    {offre.type}
-                  </span>
-                  {offre.nouveau && (
-                    <span className="bg-gray-900 text-white text-xs px-2.5 py-0.5 rounded-full font-semibold">
-                      Nouveau
-                    </span>
-                  )}
-                </div>
-                <div className="flex items-center gap-4 shrink-0">
-                  <span className="text-gray-400 text-xs">{offre.date}</span>
-                  <button
-                    type="button"
-                    className="border border-gray-300 text-gray-700 text-xs font-semibold px-4 py-2 rounded-full hover:border-gray-500 transition-colors cursor-pointer"
-                  >
-                    Postuler
-                  </button>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
+        )}
 
-        {/* Sous-section internes */}
-        <div>
-          <div className="flex items-center gap-4 mb-5">
-            <span className="bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
-              {offres.internes.label}
-            </span>
-            <div className="flex-1 border-t border-gray-200" />
-          </div>
-          <motion.div
-            variants={listV}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
-            className="flex flex-col gap-3"
-          >
-            {offres.internes.items.map((offre) => (
-              <motion.div
-                key={offre.id}
-                variants={itemV}
-                className="bg-white border border-gray-200 rounded-xl px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
-              >
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="font-semibold text-gray-900 text-sm">
-                    {offre.titre}
-                  </span>
-                  <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full">
-                    {offre.tag}
-                  </span>
-                  <span className="text-gray-500 text-xs">{offre.lieu}</span>
-                  <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full">
-                    {offre.type}
-                  </span>
-                  {offre.statut === "nouveau" && (
-                    <span className="bg-gray-900 text-white text-xs px-2.5 py-0.5 rounded-full font-semibold">
-                      Nouveau
-                    </span>
-                  )}
-                  {offre.statut === "a-venir" && (
-                    <span className="bg-gray-100 text-gray-500 text-xs px-2.5 py-0.5 rounded-full">
-                      À venir
-                    </span>
-                  )}
-                </div>
-                <div className="flex items-center gap-4 shrink-0">
-                  {offre.date && (
+        {/* Sous-section soignants */}
+        {showSoignants && filteredSoignants.length > 0 && (
+          <div className="mb-10">
+            <div className="flex items-center gap-4 mb-5">
+              <span className="bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
+                {offres.soignants.label}
+              </span>
+              <div className="flex-1 border-t border-gray-200" />
+            </div>
+            <motion.div
+              variants={listV}
+              initial="hidden"
+              animate="visible"
+              className="flex flex-col gap-3"
+            >
+              {filteredSoignants.map((offre) => (
+                <motion.div
+                  key={offre.id}
+                  variants={itemV}
+                  className="bg-white border border-gray-200 rounded-xl px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="font-semibold text-gray-900 text-sm">{offre.titre}</span>
+                    <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full">{offre.tag}</span>
+                    <span className="text-gray-500 text-xs">{offre.lieu}</span>
+                    <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full">{offre.type}</span>
+                    {offre.nouveau && (
+                      <span className="bg-gray-900 text-white text-xs px-2.5 py-0.5 rounded-full font-semibold">Nouveau</span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-4 shrink-0">
                     <span className="text-gray-400 text-xs">{offre.date}</span>
-                  )}
-                  {offre.statut === "nouveau" ? (
                     <button
                       type="button"
                       className="border border-gray-300 text-gray-700 text-xs font-semibold px-4 py-2 rounded-full hover:border-gray-500 transition-colors cursor-pointer"
                     >
                       Postuler
                     </button>
-                  ) : (
-                    <button
-                      type="button"
-                      className="border border-gray-300 text-gray-600 text-xs font-semibold px-4 py-2 rounded-full hover:border-gray-500 transition-colors cursor-pointer"
-                    >
-                      Me prévenir
-                    </button>
-                  )}
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        )}
+
+        {/* Sous-section internes */}
+        {showInternes && filteredInternes.length > 0 && (
+          <div>
+            <div className="flex items-center gap-4 mb-5">
+              <span className="bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
+                {offres.internes.label}
+              </span>
+              <div className="flex-1 border-t border-gray-200" />
+            </div>
+            <motion.div
+              variants={listV}
+              initial="hidden"
+              animate="visible"
+              className="flex flex-col gap-3"
+            >
+              {filteredInternes.map((offre) => (
+                <motion.div
+                  key={offre.id}
+                  variants={itemV}
+                  className="bg-white border border-gray-200 rounded-xl px-5 py-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3"
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="font-semibold text-gray-900 text-sm">{offre.titre}</span>
+                    <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full">{offre.tag}</span>
+                    <span className="text-gray-500 text-xs">{offre.lieu}</span>
+                    <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full">{offre.type}</span>
+                    {offre.statut === "nouveau" && (
+                      <span className="bg-gray-900 text-white text-xs px-2.5 py-0.5 rounded-full font-semibold">Nouveau</span>
+                    )}
+                    {offre.statut === "a-venir" && (
+                      <span className="bg-gray-100 text-gray-500 text-xs px-2.5 py-0.5 rounded-full">À venir</span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-4 shrink-0">
+                    {offre.date && (
+                      <span className="text-gray-400 text-xs">{offre.date}</span>
+                    )}
+                    {offre.statut === "nouveau" ? (
+                      <button
+                        type="button"
+                        className="border border-gray-300 text-gray-700 text-xs font-semibold px-4 py-2 rounded-full hover:border-gray-500 transition-colors cursor-pointer"
+                      >
+                        Postuler
+                      </button>
+                    ) : (
+                      <button
+                        type="button"
+                        className="border border-gray-300 text-gray-600 text-xs font-semibold px-4 py-2 rounded-full hover:border-gray-500 transition-colors cursor-pointer"
+                      >
+                        Me prévenir
+                      </button>
+                    )}
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        )}
       </div>
     </section>
   );

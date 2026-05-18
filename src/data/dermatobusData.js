@@ -506,6 +506,36 @@ export const faq = {
   ],
 };
 
+// ─── Modèles d'engagement (acquisition / prestation) ─────────────────────────
+
+export const modeles = {
+  eyebrow: "Acquérir votre propre DermatoBus",
+  h2: "Un DermatoBus conçu pour votre programme",
+  subtitle:
+    "Dotez-vous d'une unité mobile de dépistage dermatologique en propre. Ou rejoignez le programme pilote Hocoia en Normandie.",
+  acquisition: {
+    tag: "Acquisition / Location longue durée",
+    title: "Votre DermatoBus, configuré pour vos patients",
+    description:
+      "Hocoia conçoit et fabrique votre DermatoBus sur mesure — dermatoscope IA, cartographie corps entier, identité visuelle. Protocole validé scientifiquement par le CHU de Caen.",
+    points: [
+      "Dermatoscope numérique + IA mélanome certifiée CE",
+      "Protocole Hocoia validé par le CHU de Caen",
+      "Identité visuelle aux couleurs de votre organisation",
+      "Télé-expertise par les onco-dermatologues partenaires incluse",
+    ],
+    cta: "Nous contacter pour un devis →",
+  },
+  prestation: {
+    tag: "Programme pilote 2026",
+    title: "Participez au programme pilote Normandie",
+    description:
+      "Le DermatoBus est en phase pilote en Normandie à partir de l'automne 2026. Rejoignez le programme pour être parmi les premiers territoires déployés.",
+    specialites: ["Dépistage mélanome", "Cartographie corps entier", "IA dermatoscope", "Télé-expertise CHU"],
+    cta: "Rejoindre le programme pilote →",
+  },
+};
+
 // ─── Bus sur mesure ───────────────────────────────────────────────────────────
 
 export const customBus = {

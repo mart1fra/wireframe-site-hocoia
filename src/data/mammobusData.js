@@ -494,6 +494,36 @@ export const faq = {
   ],
 };
 
+// ─── Modèles d'engagement (acquisition / prestation) ─────────────────────────
+
+export const modeles = {
+  eyebrow: "Acquérir votre propre MammoBus",
+  h2: "Un MammoBus conçu pour votre organisation",
+  subtitle:
+    "Dotez-vous d'une unité mobile de mammographie en propre pour un programme de dépistage pérenne. Ou faites appel à Hocoia pour une campagne clé en main.",
+  acquisition: {
+    tag: "Acquisition / Location longue durée",
+    title: "Votre MammoBus, configuré pour vos patientes",
+    description:
+      "Hocoia conçoit et fabrique votre unité mobile de dépistage sur mesure. Mammographe numérique, échographe, intégration PACS et identité visuelle — selon votre cahier des charges.",
+    points: [
+      "Mammographe numérique et échographe certifiés CE",
+      "Aux couleurs de votre organisation (mutuelle, hôpital, collectivité)",
+      "Éligible aux financements publics et fonds santé des mutuelles",
+      "Opérable avec vos MERM ou via les équipes Hocoia",
+    ],
+    cta: "Demander un devis →",
+  },
+  prestation: {
+    tag: "Prestation de service",
+    title: "Ou lancez d'abord avec nos équipes",
+    description:
+      "Hocoia déploie son MammoBus sur votre territoire avec ses propres MERM et radiologues. Idéal pour tester avant d'investir.",
+    specialites: ["Mammographie numérique", "Échographie sein", "Télé-radiologie", "Bilan gynécologique", "Suivi post-dépistage"],
+    cta: "Organiser une campagne →",
+  },
+};
+
 // ─── Bus sur mesure ───────────────────────────────────────────────────────────
 
 export const customBus = {

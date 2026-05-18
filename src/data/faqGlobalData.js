@@ -12,9 +12,9 @@ export const header = {
 export const audiences = [
   { id: "all",           label: "Toutes les questions" },
   { id: "patients",      label: "Patients" },
-  { id: "entreprises",   label: "Entreprises & Assureurs" },
-  { id: "secteur-public",label: "Secteur public & institutions" },
-  { id: "etablissements",label: "Acteurs de santé & médico-social" },
+  { id: "entreprises",   label: "Entreprises & mutuelles" },
+  { id: "secteur-public",label: "Collectivités & institutions" },
+  { id: "etablissements",label: "Établissements de santé & médico-social" },
   { id: "pro-sante",     label: "Professionnels de santé" },
   { id: "bus",           label: "Sur les bus" },
 ];

@@ -8,12 +8,12 @@ export const hero = {
     after: " Votre expertise, là où elle manque.",
   },
   subtitle:
-    "Rejoignez le réseau Hocoia et intervenez en prestation à bord de nos bus médicaux équipés, partout en France. Liberté, impact, rémunération attractive.",
+    "Rejoignez le réseau Hocoia et intervenez à bord de nos bus médicaux équipés, partout en France. Liberté, impact, rémunération attractive.",
   checks: [
-    "Statut prestataire — aucune contrainte salariale",
+    "Prestataire ou CDD — selon le poste et vos disponibilités",
     "Matériel et logistique 100% fournis par Hocoia",
-    "Rémunération à l'acte, paiement sous 30 jours",
-    "Zones d'intervention choisies par vous",
+    "Rémunération à l'acte (prestation) ou salaire (CDD)",
+    "Zones d'intervention adaptées à vos disponibilités",
   ],
   ctaPrimary: "Je candidate maintenant",
   ctaOutline: "Voir les missions disponibles",
@@ -148,14 +148,15 @@ export const missionsData = {
 export const profils = {
   eyebrow: "Recrutement",
   h2: "Quels professionnels cherchons-nous ?",
-  subtitle:
-    "Nous recrutons en prestation dans toutes nos spécialités, partout en France.",
+  subtitle: "Nous recrutons en prestation ou en CDD selon les postes, partout en France.",
+  ctaLabel: "Postuler",
+  roleLinkLabel: "Découvrir le poste →",
   items: [
-    { id: "p1", label: "Médecins généralistes",      badge: "Forte demande",   badgeStyle: "dark" },
-    { id: "p2", label: "Cardiologues",                badge: "Forte demande",   badgeStyle: "dark" },
-    { id: "p3", label: "Dermatologues",               badge: "En recrutement",  badgeStyle: "light" },
-    { id: "p4", label: "Gynécologues & Sages-femmes", badge: "Forte demande",   badgeStyle: "dark" },
-    { id: "p5", label: "Manipulateurs radio",         badge: "En recrutement",  badgeStyle: "light" },
+    { id: "p1", label: "Médecins généralistes",      roleHref: "/recrutement/medecin-generaliste" },
+    { id: "p2", label: "Cardiologues",                roleHref: "/recrutement/cardiologue" },
+    { id: "p3", label: "Dermatologues",               roleHref: "/recrutement/dermatologue" },
+    { id: "p4", label: "Gynécologues & Sages-femmes", roleHref: "/recrutement/gynecologue-sage-femme" },
+    { id: "p5", label: "Manipulateurs radio",         roleHref: "/recrutement/manipulateur-radio" },
   ],
   autresLabel:
     "Autres spécialités : Infirmiers(ères) · Pneumologues · Ophtalmologues · Dentistes · Nutritionnistes →",
@@ -211,35 +212,36 @@ export const avantages = {
 
 export const processus = {
   eyebrow: "Comment ça marche",
-  h2: "Votre première mission en moins de 2 semaines",
+  h2: "De la candidature au terrain — notre processus en 4 étapes",
+  subtitle: "Les délais varient selon le poste recherché et les missions disponibles dans votre zone. On vous tient au courant à chaque étape.",
   steps: [
     {
       id: "s1",
       number: "01",
-      day: "Aujourd'hui",
+      day: "Étape 1",
       title: "Vous déposez votre candidature",
       description: "Formulaire en ligne, 3 minutes.",
     },
     {
       id: "s2",
       number: "02",
-      day: "J+2",
+      day: "Étape 2",
       title: "Entretien téléphonique",
       description: "30 min avec un responsable recrutement.",
     },
     {
       id: "s3",
       number: "03",
-      day: "J+5",
+      day: "Étape 3",
       title: "Validation & onboarding",
       description: "1h de prise en main des outils et protocoles.",
     },
     {
       id: "s4",
       number: "04",
-      day: "J+10 à J+14",
+      day: "Étape 4",
       title: "Première mission",
-      description: "Vous êtes sur le terrain.",
+      description: "Selon les besoins terrain et votre disponibilité.",
     },
   ],
 };
@@ -293,15 +295,15 @@ export const faq = {
     },
     {
       id: "q2",
-      question: "Quel statut juridique dois-je avoir ?",
+      question: "Quel statut puis-je avoir avec Hocoia ?",
       answer:
-        "Vous intervenez en tant que prestataire (micro-entreprise, SASU, etc.). Hocoia ne propose pas de contrat salarié.",
+        "Selon le poste, vous pouvez intervenir en tant que prestataire (micro-entreprise, SASU, etc.) ou en CDD. Précisez vos préférences dans le formulaire — on en discute pendant l'entretien.",
     },
     {
       id: "q3",
       question: "Comment est fixée la rémunération ?",
       answer:
-        "Rémunération à l'acte, définie à l'avance pour chaque mission. Paiement garanti sous 30 jours.",
+        "En prestation, rémunération à l'acte, définie à l'avance pour chaque mission, paiement garanti sous 30 jours. En CDD, salaire selon la grille interne et la spécialité.",
     },
     {
       id: "q4",

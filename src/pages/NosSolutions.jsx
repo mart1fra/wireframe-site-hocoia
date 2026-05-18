@@ -2,11 +2,13 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
+import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
   hero,
   intro,
   solutions,
   solutionsSection,
+  modelesEngagement,
   comparison,
   useCasesSection,
   useCases,
@@ -365,6 +367,7 @@ export default function NosSolutions() {
     <>
       <HeroSection />
       <IntroSection />
+      <ModelesEngagementSection data={modelesEngagement} />
       <SolutionsSection />
       <ComparisonSection />
       <UseCasesSection />
