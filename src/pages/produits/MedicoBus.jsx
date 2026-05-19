@@ -211,6 +211,9 @@ function ThematiquesSection() {
               {tab.label}
             </button>
           ))}
+          <span className="px-5 py-2.5 rounded-full text-sm font-semibold border border-dashed border-gray-300 text-gray-400">
+            + Sur mesure
+          </span>
         </FadeIn>
 
         <AnimatePresence mode="wait">
@@ -421,7 +424,6 @@ function SolutionsSection() {
           ))}
         </motion.div>
 
-        <CustomBusBlock {...customBus} />
       </div>
     </section>
   );

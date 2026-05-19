@@ -659,7 +659,6 @@ export default function ActeursPublics() {
       <HeroSection />
       <StatsSection />
       <UseCasesSection />
-      <ZeroChargeSection />
 
       {/* 2. Comment ça se passe — parcours patient */}
       <ParcoursPatientSection data={parcoursPatient} variant="white" />
@@ -674,6 +673,7 @@ export default function ActeursPublics() {
 
       {/* 5. La solution adaptée pour votre problématique */}
       <ModelesEngagementSection data={modeles} id="modeles" />
+      <ZeroChargeSection />
       <FinancementsSection />
 
       {/* 6. Prise de contact et mise en place */}

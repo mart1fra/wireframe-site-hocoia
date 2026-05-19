@@ -10,7 +10,6 @@ import {
   hero,
   stats,
   useCases,
-  solutions,
   processus,
   temoignages,
   videoTestimonial,
@@ -339,126 +338,6 @@ function UseCasesSection() {
   );
 }
 
-// ─── 4. SOLUTIONS ─────────────────────────────────────────────────────────
-
-function SolutionsSection() {
-  return (
-    <section id="solutions" className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-24">
-
-        <FadeIn className="mb-12">
-          <Eyebrow>{solutions.eyebrow}</Eyebrow>
-          <SectionH2>{solutions.h2}</SectionH2>
-          <p className="text-gray-500 mt-3 max-w-xl leading-relaxed">{solutions.subtitle}</p>
-        </FadeIn>
-
-        {/* 3 bus cards */}
-        <motion.div
-          className="grid grid-cols-3 gap-6 mb-8"
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          {solutions.buses.map((bus) => (
-            <motion.div
-              key={bus.id}
-              variants={itemV}
-              className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col"
-            >
-              <span className="inline-block self-start text-xs font-medium text-gray-700 bg-gray-100 px-3 py-1 rounded-full mb-4">
-                {bus.badge}
-              </span>
-              <div className="w-10 h-10 bg-gray-100 border border-gray-200 rounded-lg mb-4 shrink-0" />
-              <h3 className="font-display font-bold text-gray-900 text-sm mb-2">{bus.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed flex-1 mb-4">{bus.description}</p>
-              <div className="flex flex-wrap gap-2 mb-5">
-                {bus.targets.map((t) => (
-                  <span key={t} className="text-[11px] text-gray-600 bg-gray-50 border border-gray-200 rounded-md px-2 py-1">
-                    {t}
-                  </span>
-                ))}
-              </div>
-              <button className="self-start text-sm font-medium text-gray-700 border border-gray-300 px-4 py-2 rounded-full hover:bg-gray-50 transition-colors duration-150 cursor-pointer">
-                {bus.cta}
-              </button>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Bloc sur mesure */}
-        <FadeIn>
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-8">
-
-            {/* Header */}
-            <div className="flex items-center justify-between mb-8">
-              <div className="flex items-center gap-4">
-                <div className="w-11 h-11 bg-gray-100 border border-gray-200 rounded-full shrink-0" />
-                <div>
-                  <p className="font-display font-bold text-gray-900">{solutions.surMesure.title}</p>
-                  <p className="text-xs text-gray-500 mt-0.5">{solutions.surMesure.subtitle}</p>
-                </div>
-              </div>
-              <span className="text-[10px] font-medium uppercase tracking-wide text-white bg-gray-900 px-3 py-1.5 rounded-full shrink-0">
-                {solutions.surMesure.badge}
-              </span>
-            </div>
-
-            {/* Body 2 colonnes */}
-            <div className="grid grid-cols-2 gap-12">
-
-              {/* Gauche */}
-              <div>
-                <p className="text-sm text-gray-600 leading-relaxed mb-6">
-                  {solutions.surMesure.description}
-                </p>
-                <div className="grid grid-cols-2 gap-4">
-                  {solutions.surMesure.specialties.map((sp) => (
-                    <div key={sp.id} className="flex items-start gap-3">
-                      <span className="w-6 h-6 bg-gray-100 border border-gray-200 rounded shrink-0 mt-0.5" />
-                      <div>
-                        <p className="text-sm font-semibold text-gray-900 leading-tight">{sp.title}</p>
-                        <p className="text-xs text-gray-500 mt-0.5">{sp.description}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Droite */}
-              <div>
-                <h4 className="font-display font-bold text-gray-900 text-sm mb-5">
-                  {solutions.surMesure.engagement.title}
-                </h4>
-                <ul className="space-y-4 mb-7">
-                  {solutions.surMesure.engagement.promises.map((p, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <span className="text-gray-400 mt-0.5 shrink-0 text-sm">→</span>
-                      <p className="text-sm text-gray-700 leading-relaxed">
-                        <strong className="text-gray-900 font-semibold">{p.bold}</strong>
-                        {p.rest}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex flex-col gap-3 items-start">
-                  <button className="px-6 py-2.5 text-sm font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-150 cursor-pointer">
-                    {solutions.surMesure.ctaPrimary}
-                  </button>
-                  <button className="px-6 py-2.5 text-sm font-medium text-gray-700 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors duration-150 cursor-pointer">
-                    {solutions.surMesure.ctaOutline}
-                  </button>
-                </div>
-                <p className="text-xs text-gray-500 mt-4">{solutions.surMesure.note}</p>
-              </div>
-            </div>
-          </div>
-        </FadeIn>
-      </div>
-    </section>
-  );
-}
-
 // ─── 6. PROCESSUS ─────────────────────────────────────────────────────────
 
 function ProcessSection() {
@@ -654,7 +533,6 @@ export default function EtablissementsSante() {
 
       {/* 5. La solution adaptée pour votre problématique */}
       <ModelesEngagementSection data={modeles} id="modeles" />
-      <SolutionsSection />
 
       {/* 6. Prise de contact et mise en place */}
       <ProcessSection />

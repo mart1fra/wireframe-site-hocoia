@@ -498,7 +498,7 @@ export const modeles = {
 
 export const parcoursPatient = {
   eyebrow: "Parcours patient",
-  h2: "Du premier contact au suivi territorial",
+  h2: "De l'inscription au suivi de soins",
   subtitle:
     "Pour vos habitants, un accès aux soins sans contrainte. Pour votre territoire, des données de santé publique pour piloter votre politique de prévention.",
   steps: [

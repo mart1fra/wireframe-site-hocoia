@@ -475,7 +475,7 @@ export const modeles = {
 
 export const parcoursPatient = {
   eyebrow: "Parcours patient",
-  h2: "Du dépistage mobile à l'intégration dans le parcours de soins",
+  h2: "De l'inscription au suivi de soins",
   subtitle:
     "Le bus Hocoia prolonge l'activité de votre établissement hors les murs. Les résultats s'intègrent directement dans votre circuit patient existant.",
   steps: [
