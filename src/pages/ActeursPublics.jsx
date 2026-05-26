@@ -4,6 +4,7 @@ import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import VideoTestimonial from "../components/sections/VideoTestimonial";
 import HocoAppSection from "../components/sections/HocoAppSection";
+import SeoSection from "../components/sections/SeoSection";
 import ParcoursPatientSection from "../components/sections/ParcoursPatientSection";
 import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
@@ -20,6 +21,7 @@ import {
   modeles,
   parcoursPatient,
   ctaFinal,
+  seoContent,
 } from "../data/secteurPublicData";
 import { hocoAppByAudience } from "../data/hocoAppData";
 
@@ -197,7 +199,7 @@ function StatsSection() {
     <section id="chiffres" className="bg-gray-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
-          className="grid grid-cols-5 divide-x divide-gray-200"
+          className="grid grid-cols-4 divide-x divide-gray-200"
           variants={listV}
           initial="hidden"
           whileInView="visible"
@@ -683,6 +685,7 @@ export default function ActeursPublics() {
       <RessourcesSection />
       <FaqSection />
       <CtaFinalSection />
+      <SeoSection data={seoContent} />
     </>
   );
 }

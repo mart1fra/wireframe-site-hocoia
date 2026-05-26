@@ -6,6 +6,7 @@ import AccordionItem from "../../components/ui/AccordionItem";
 import ConceptSection from "../../components/sections/ConceptSection";
 import CustomBusBlock from "../../components/sections/CustomBusBlock";
 import ModelesEngagementSection from "../../components/sections/ModelesEngagementSection";
+import AchatOuLocationBlock from "../../components/sections/AchatOuLocationBlock";
 import {
   hero,
   logos,
@@ -182,6 +183,12 @@ function StatsSection() {
 
 // ─── Section 5 — Équipements & Protocoles ─────────────────────────────────
 
+const specialiteLinks = {
+  cardio:  "/solutions/prevention-cardio",
+  dermato: "/solutions/cancer-peau",
+  femme:   "/solutions/sante-femme",
+};
+
 function ThematiquesSection() {
   const [activeTab, setActiveTab] = useState(thematiques.tabs[0].id);
   const content = thematiques.content[activeTab];
@@ -270,6 +277,13 @@ function ThematiquesSection() {
                 </p>
                 <p className="text-sm text-gray-600">{content.affections}</p>
               </div>
+
+              <Link
+                to={specialiteLinks[activeTab]}
+                className="inline-block mt-4 text-xs font-semibold text-gray-700 hover:text-gray-900 transition-colors underline underline-offset-2"
+              >
+                En savoir plus sur cette spécialité →
+              </Link>
             </div>
           </motion.div>
         </AnimatePresence>
@@ -618,7 +632,7 @@ export default function MedicoBus() {
       <LogosSection />
       <StatsSection />
       <ConceptSection {...concept} />
-      <ModelesEngagementSection data={modeles} />
+      <AchatOuLocationBlock modele="MédicoBus" />
       <ThematiquesSection />
       <ParcoursSection />
       <TemoignagesSection />

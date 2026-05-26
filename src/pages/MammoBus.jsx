@@ -6,6 +6,7 @@ import AccordionItem from "../components/ui/AccordionItem";
 import ConceptSection from "../components/sections/ConceptSection";
 import CustomBusBlock from "../components/sections/CustomBusBlock";
 import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
+import AchatOuLocationBlock from "../components/sections/AchatOuLocationBlock";
 import {
   hero,
   logos,
@@ -660,7 +661,7 @@ export default function MammoBus() {
       <LogosSection />
       <StatsSection />
       <ConceptSection {...concept} />
-      <ModelesEngagementSection data={modeles} />
+      <AchatOuLocationBlock modele="MammoBus" />
       <ProtocoleSection />
       <PourQuiSection />
       <CouvertureSection />

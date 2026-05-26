@@ -234,12 +234,12 @@ function SpecialitesSection() {
               })()}
             </AnimatePresence>
 
-            <button
-              type="button"
-              className="text-sm font-semibold text-gray-700 underline underline-offset-2 hover:text-gray-900 transition-colors cursor-pointer"
+            <Link
+              to="/calendrier"
+              className="text-sm font-semibold text-gray-700 underline underline-offset-2 hover:text-gray-900 transition-colors"
             >
               {specialites.cta}
-            </button>
+            </Link>
           </FadeIn>
 
           {/* Right — map placeholder + mini card */}
@@ -513,12 +513,12 @@ function CtaFinalSection() {
             {ctaFinal.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <button
-              type="button"
-              className="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors cursor-pointer"
+            <Link
+              to="/calendrier"
+              className="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors"
             >
               {ctaFinal.ctaPrimary}
-            </button>
+            </Link>
             <button
               type="button"
               className="border border-gray-600 text-gray-300 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-800 transition-colors cursor-pointer"

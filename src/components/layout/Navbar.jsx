@@ -154,17 +154,21 @@ function SimplePanel({ data, onClose }) {
         </p>
       )}
       <ul className="space-y-0.5">
-        {data.items.map((item) => (
-          <li key={item.id}>
-            <Link
-              to={item.href}
-              onClick={onClose}
-              className="block py-1.5 text-sm font-medium text-gray-900 hover:text-gray-700 hover:translate-x-[2px] transition-all duration-150"
-            >
-              {item.label}
-            </Link>
-          </li>
-        ))}
+        {data.items.map((item) =>
+          item.type === "separator" ? (
+            <li key={item.id} className="my-2 border-t border-gray-200" />
+          ) : (
+            <li key={item.id}>
+              <Link
+                to={item.href}
+                onClick={onClose}
+                className="block py-1.5 text-sm font-medium text-gray-900 hover:text-gray-700 hover:translate-x-[2px] transition-all duration-150"
+              >
+                {item.label}
+              </Link>
+            </li>
+          )
+        )}
       </ul>
       {data.footer && (
         <div className="mt-3 pt-3 border-t border-gray-200">

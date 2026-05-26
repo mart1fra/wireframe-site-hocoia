@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import HocoAppSection from "../components/sections/HocoAppSection";
-import { hero, etapes, specialites, temoignages, faq, ctaFinal } from "../data/patientData";
+import SeoSection from "../components/sections/SeoSection";
+import { hero, etapes, specialites, temoignages, faq, ctaFinal, seoContent } from "../data/patientData";
 import { hocoAppByAudience } from "../data/hocoAppData";
 
 // ─── Animation variants ───────────────────────────────────────────────────
@@ -67,12 +69,12 @@ function HeroSection() {
               </svg>
               <span className="text-sm text-gray-400">{hero.searchPlaceholder}</span>
             </div>
-            <button
-              type="button"
-              className="bg-gray-900 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors cursor-pointer shrink-0"
+            <Link
+              to="/calendrier"
+              className="bg-gray-900 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors shrink-0"
             >
               {hero.searchCta}
-            </button>
+            </Link>
           </div>
         </motion.div>
 
@@ -119,14 +121,18 @@ function HeroSection() {
           ))}
         </motion.div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.45 }}
-          className="text-sm text-gray-600 underline underline-offset-2 cursor-pointer hover:text-gray-900 transition-colors"
         >
-          {hero.lienCalendrier}
-        </motion.p>
+          <Link
+            to="/calendrier"
+            className="text-sm text-gray-600 underline underline-offset-2 hover:text-gray-900 transition-colors"
+          >
+            {hero.lienCalendrier}
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
@@ -225,18 +231,18 @@ function SpecialitesSection() {
               <p className="text-gray-500 text-xs leading-relaxed flex-1">{sp.description}</p>
               <div className="flex items-center justify-between pt-2 border-t border-gray-100">
                 <span className="text-xs text-gray-400">{sp.duree}</span>
-                <span className="text-xs text-gray-600 cursor-pointer hover:text-gray-900 transition-colors">
+                <Link to={sp.href} className="text-xs text-gray-600 hover:text-gray-900 transition-colors">
                   En savoir plus →
-                </span>
+                </Link>
               </div>
             </motion.div>
           ))}
         </motion.div>
 
         <FadeIn className="text-center">
-          <span className="text-sm text-gray-600 cursor-pointer hover:text-gray-900 transition-colors underline underline-offset-2">
+          <Link to="/nos-solutions" className="text-sm text-gray-600 hover:text-gray-900 transition-colors underline underline-offset-2">
             {specialites.lienToutes}
-          </span>
+          </Link>
         </FadeIn>
       </div>
     </section>
@@ -333,12 +339,12 @@ function CtaFinalSection() {
             {ctaFinal.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <button
-              type="button"
-              className="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors cursor-pointer"
+            <Link
+              to="/calendrier"
+              className="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors"
             >
               {ctaFinal.ctaPrimary}
-            </button>
+            </Link>
             <button
               type="button"
               className="border border-white/30 text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors cursor-pointer"
@@ -364,6 +370,7 @@ export default function Patient() {
       <TemoignagesSection />
       <FaqSection />
       <CtaFinalSection />
+      <SeoSection data={seoContent} />
     </>
   );
 }

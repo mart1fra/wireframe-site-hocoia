@@ -4,6 +4,7 @@ import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import VideoTestimonial from "../components/sections/VideoTestimonial";
 import HocoAppSection from "../components/sections/HocoAppSection";
+import SeoSection from "../components/sections/SeoSection";
 import ParcoursPatientSection from "../components/sections/ParcoursPatientSection";
 import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
@@ -17,6 +18,8 @@ import {
   modeles,
   parcoursPatient,
   ctaFinal,
+  achatSurMesure,
+  seoContent,
 } from "../data/etablissementsData";
 import { hocoAppByAudience } from "../data/hocoAppData";
 
@@ -199,7 +202,7 @@ function StatsSection() {
     <section id="chiffres" className="bg-gray-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
-          className="grid grid-cols-5 divide-x divide-gray-200"
+          className="grid grid-cols-4 divide-x divide-gray-200"
           variants={listV}
           initial="hidden"
           whileInView="visible"
@@ -333,6 +336,72 @@ function UseCasesSection() {
             </div>
           </div>
         </motion.div>
+      </div>
+    </section>
+  );
+}
+
+// ─── 4. ACHAT SUR MESURE ──────────────────────────────────────────────────
+
+function AchatSurMesureSection() {
+  return (
+    <section id="achat-sur-mesure" className="bg-gray-900">
+      <div className="max-w-7xl mx-auto px-6 py-24">
+
+        <FadeIn className="mb-12 max-w-2xl">
+          <Eyebrow>{achatSurMesure.eyebrow}</Eyebrow>
+          <h2 className="font-display font-bold text-3xl leading-tight text-white">
+            {achatSurMesure.h2}
+          </h2>
+          <p className="text-gray-400 mt-4 text-lg leading-relaxed">
+            {achatSurMesure.subtitle}
+          </p>
+        </FadeIn>
+
+        <motion.div
+          className="grid grid-cols-2 gap-x-10 gap-y-10 mb-12"
+          variants={listV}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+        >
+          {achatSurMesure.points.map((point, i) => (
+            <motion.div key={i} variants={itemV} className="flex items-start gap-4">
+              <span className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 shrink-0 mt-0.5" />
+              <div>
+                <p className="text-sm font-semibold text-white leading-tight mb-1">{point.title}</p>
+                <p className="text-sm text-gray-400 leading-relaxed">{point.description}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <FadeIn className="border-t border-white/10 pt-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div>
+            <p className="text-[10px] uppercase tracking-widest font-medium text-gray-500 mb-3">
+              {achatSurMesure.modes.label}
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {achatSurMesure.modes.items.map((mode) => (
+                <span
+                  key={mode}
+                  className="text-xs font-medium text-gray-200 bg-white/10 border border-white/20 rounded-full px-3 py-1.5"
+                >
+                  {mode}
+                </span>
+              ))}
+            </div>
+          </div>
+          <div className="flex items-center gap-3 flex-wrap">
+            <button className="px-6 py-3 text-sm font-semibold text-gray-900 bg-white rounded-full hover:bg-gray-100 transition-colors duration-150 cursor-pointer">
+              {achatSurMesure.ctaPrimary}
+            </button>
+            <button className="px-6 py-3 text-sm font-medium text-white border border-white/30 rounded-full hover:bg-white/10 transition-colors duration-150 cursor-pointer">
+              {achatSurMesure.ctaOutline}
+            </button>
+          </div>
+        </FadeIn>
+
       </div>
     </section>
   );
@@ -519,6 +588,7 @@ export default function EtablissementsSante() {
       <HeroSection />
       <StatsSection />
       <UseCasesSection />
+      <AchatSurMesureSection />
 
       {/* 2. Comment ça se passe — parcours patient */}
       <ParcoursPatientSection data={parcoursPatient} variant="white" />
@@ -540,6 +610,7 @@ export default function EtablissementsSante() {
       {/* 7. Ressources et FAQ */}
       <FaqSection />
       <CtaFinalSection />
+      <SeoSection data={seoContent} />
     </>
   );
 }

@@ -19,7 +19,7 @@ export const hero = {
     "Zéro gestion RH, professionnels de santé fournis",
     "Compatible CLS, ARS, fonds régionaux de santé",
     "Données anonymisées pour le pilotage territorial",
-    "Déploiement en 2 mois, de la signature au premier patient",
+    "2 mois : Délai MOYEN de déploiement Hocoia sur votre territoire",
   ],
   ctaPrimary: "Parler à un expert territorial",
   ctaOutline: "Télécharger le dossier ↓",
@@ -48,12 +48,13 @@ export const hero = {
   trust: {
     label: "ILS NOUS FONT CONFIANCE",
     items: [
-      "CC Pays de Phalsbourg",
-      "Val de Fensch",
-      "CC Sarrebourg Moselle Sud",
-      "Angerville",
-      "Ministère des AE",
-      "CHU de Caen",
+      "CPTS du Grand Agenais",
+      "Mairie de Montvalezan",
+      "Sarreguemines Confluences",
+      "Mairie de Saint-Hilaire-Peyroux",
+      "Mairie d'Oberhergheim",
+      "Mairie de Decize",
+      "Pays de Valençay en Berry",
     ],
   },
 };
@@ -64,8 +65,7 @@ export const stats = [
   { id: "s1", value: "20M",     label: "Français vivent en désert médical",                source: "DREES 2023" },
   { id: "s2", value: "<5",      label: "Dermatologues dans l'Orne ou l'Eure",              source: "DREES 2023" },
   { id: "s3", value: "18 mois", label: "Délai moyen RDV spécialiste en zone rurale",       source: "CNOM 2023" },
-  { id: "s4", value: "2 mois",  label: "Délai de déploiement Hocoia sur votre territoire", source: "Hocoia" },
-  { id: "s5", value: "0€",      label: "Coût pour le patient, 100% pris en charge",        source: "Hocoia" },
+  { id: "s4", value: "2 mois",  label: "Délai MOYEN de déploiement Hocoia sur votre territoire", source: "Hocoia" },
 ];
 
 // ─── Use cases par type d'organisation ────────────────────────────────────
@@ -433,33 +433,39 @@ export const faq = {
   items: [
     {
       id: "q1",
-      question: "Faut-il passer par un appel d'offres pour travailler avec Hocoia ?",
+      question: "Quels publics peuvent être concernés par les campagnes de prévention ?",
       answer:
-        "Pour les collectivités, cela dépend du montant annuel et de votre seuil de mise en concurrence. Hocoia peut vous accompagner dans la qualification juridique du partenariat et, le cas échéant, dans la rédaction du cahier des charges pour un appel d'offres. Un simple bon de commande ou une convention suffit dans de nombreux cas.",
+        "Les journées de prévention peuvent être organisées pour différents publics : habitants, agents territoriaux, étudiants, publics prioritaires, seniors, populations éloignées des structures médicales.",
     },
     {
       id: "q2",
-      question: "Qui paie pour le déploiement, la collectivité ou les patients ?",
+      question: "Les campagnes de prévention peuvent-elles être organisées dans des zones rurales ou éloignées ?",
       answer:
-        "Les patients ne paient rien. Le financement est porté par la collectivité, la mutuelle, ou un modèle hybride (sponsoring + forfait). Hocoia vous accompagne dans l'identification des financements disponibles : CLS, ARS, DETR, fonds régionaux, sponsors institutionnels.",
+        "Les dispositifs mobiles Hocoia sont conçus pour intervenir aussi bien en centre-ville que dans les territoires ruraux, les quartiers prioritaires ou les zones ayant un accès limité aux infrastructures de santé. Les collectivités et institutions peuvent choisir les secteurs, communes ou quartiers concernés afin d'adapter les actions de prévention aux besoins du territoire.",
     },
     {
       id: "q3",
-      question: "La collectivité doit-elle recruter des professionnels de santé ?",
+      question: "Comment sont gérées les inscriptions aux journées de prévention ?",
       answer:
-        "Non. Hocoia fournit l'intégralité des professionnels de santé : médecins, infirmières, sages-femmes, MERM selon la spécialité. Aucun recrutement, aucun planning médical de votre côté. Vous validez le calendrier, on gère le reste.",
+        "Les collectivités gardent une maîtrise complète des inscriptions et des publics ciblés. Hocoia vous accompagne sur la gestion opérationnelle avec la création de lien de prise de rendez-vous et support téléphonique pour inscription, et la communication autour des événements.",
     },
     {
       id: "q4",
-      question: "Comment les données de santé des patients sont-elles protégées ?",
+      question: "Les dispositifs mobiles peuvent-ils être utilisés lors d'événements publics ?",
       answer:
-        "Toutes les données sont hébergées en France chez un hébergeur certifié HDS (Hébergeur de Données de Santé) et ISO 27001. Les collectivités reçoivent uniquement des données agrégées anonymisées. Aucune donnée individuelle de patient n'est transmise à la collectivité. Conformité RGPD totale.",
+        "Oui. Les solutions Hocoia peuvent être intégrées à des forums santé, villages prévention, événements institutionnels, campagnes de santé publique ou actions locales de sensibilisation.",
     },
     {
       id: "q5",
-      question: "Peut-on déployer le bus plusieurs fois par an sur le même territoire ?",
+      question: "Est-il possible de mettre en place un programme de prévention récurrent ?",
       answer:
-        "Oui, c'est même recommandé. Hocoia propose des programmes annuels multi-journées, avec un suivi des patients d'une année sur l'autre (notamment pour le dépistage dermatologique). Un programme annuel est plus efficace médicalement et simplifie le financement via un contrat pluriannuel.",
+        "Oui. Hocoia accompagne les collectivités dans la mise en place de programmes de prévention réguliers afin d'inscrire les actions de santé publique dans la durée.",
+    },
+    {
+      id: "q6",
+      question: "Peut-on créer un bus de prévention entièrement personnalisé ?",
+      answer:
+        "Oui. Hocoia propose la conception de bus de prévention santé sur mesure avec des aménagements adaptés aux objectifs de santé publique, aux équipements médicaux souhaités et aux contraintes du territoire.",
     },
   ],
 };
@@ -533,6 +539,34 @@ export const parcoursPatient = {
       description:
         "En cas de dépistage positif, Hocoia coordonne l'orientation vers les acteurs de soins locaux. Le dépistage s'intègre au parcours de soins du patient. La collectivité reçoit des indicateurs agrégés pour piloter ses futures actions.",
       badge: "Orientation via HocoApp",
+    },
+  ],
+};
+
+// ─── SEO ───────────────────────────────────────────────────────────────────
+
+export const seoContent = {
+  h2: "Prévention santé mobile pour les collectivités et institutions",
+  intro: [
+    "Hocoia accompagne les collectivités, institutions et acteurs publics dans la mise en place de solutions mobiles de prévention santé et de dépistage partout en France.",
+    "Grâce à nos dispositifs clé en main, nous organisons des journées de prévention directement au plus près des citoyens, des agents et des publics ciblés afin de faciliter l'accès au dépistage et renforcer les actions de santé publique.",
+  ],
+  blocs: [
+    {
+      h3: "Des journées de prévention santé 100 % clé en main",
+      paragraphs: [
+        "Hocoia prend en charge l'ensemble de l'organisation des campagnes de prévention santé mobile : gestion logistique, installation du dispositif, coordination des professionnels de santé, gestion des inscriptions, accompagnement des participants, communication et sensibilisation.",
+        "Les collectivités et institutions gardent une maîtrise complète des inscriptions et du ciblage des publics selon les secteurs souhaités.",
+        "Nos dispositifs mobiles permettent d'organiser des journées de prévention régulières autour de plusieurs thématiques : prévention des maladies cardiovasculaires, dépistage du cancer de la peau, santé de la femme, dépistage du cancer du sein, check-up santé.",
+      ],
+    },
+    {
+      h3: "Des bus santé sur mesure",
+      paragraphs: [
+        "Hocoia propose également la conception et l'aménagement de bus de prévention santé entièrement personnalisés afin de répondre aux besoins spécifiques des collectivités et institutions.",
+        "Chaque bus peut être conçu sur mesure selon les objectifs de santé publique, les parcours de dépistage, les équipements médicaux et les usages terrain souhaités.",
+        "Cette solution permet de disposer d'un dispositif mobile de prévention totalement adapté aux besoins des territoires et des populations accompagnées.",
+      ],
     },
   ],
 };

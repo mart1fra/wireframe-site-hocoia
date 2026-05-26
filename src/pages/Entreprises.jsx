@@ -4,6 +4,7 @@ import FadeIn      from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import VideoTestimonial from "../components/sections/VideoTestimonial";
 import HocoAppSection from "../components/sections/HocoAppSection";
+import SeoSection from "../components/sections/SeoSection";
 import ParcoursPatientSection from "../components/sections/ParcoursPatientSection";
 import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
@@ -19,6 +20,7 @@ import {
   modeles,
   parcoursPatient,
   ctaFinal,
+  seoContent,
 } from "../data/entrepriseData";
 import { hocoAppByAudience } from "../data/hocoAppData";
 
@@ -596,6 +598,7 @@ export default function Entreprises() {
       <RessourcesSection />
       <FaqSection />
       <CtaFinalSection />
+      <SeoSection data={seoContent} />
     </>
   );
 }

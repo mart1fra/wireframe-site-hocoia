@@ -3,29 +3,29 @@
 export const hero = {
   eyebrow: "Hôpitaux · Cliniques · EHPAD",
   h1: [
-    "Apportez la prévention et le dépistage ",
-    { italic: "directement à vos patients." },
+    "Acquérez votre bus médical et faites de la prévention ",
+    { italic: "une activité pérenne." },
   ],
   subtitle:
-    "Hocoia déploie des unités médicales mobiles au sein de vos établissements, pour que vos résidents, patients et personnels bénéficient d'un dépistage de qualité sans avoir à se déplacer.",
+    "Hocoia conçoit et vous livre un bus médical sur mesure, équipé pour les spécialités de votre établissement. Achat direct ou partenariat hospitalier long terme : la prévention devient une activité durable, intégrée à votre parcours patient.",
   pills: [
     { id: "p1", label: "Hôpitaux publics / CHU", active: true },
     { id: "p2", label: "Cliniques privées", active: false },
     { id: "p3", label: "EHPAD", active: false },
   ],
   checks: [
-    "Le bus vient dans votre établissement, zéro déplacement patient",
-    "Soignants Hocoia à bord, aucune mobilisation de vos équipes",
-    "Résultats transmis à votre équipe médicale via HocoApp",
-    "Compatible avec votre parcours patient existant, pas de rupture",
-    "Déploiement en 2 mois, sans infrastructure supplémentaire",
+    "Bus médical sur mesure pour vos spécialités et vos protocoles",
+    "Formation de vos équipes soignantes incluse à la livraison",
+    "Intégration HocoApp + interface possible avec votre SIH/DPI",
+    "Maintenance et support opérationnel assurés par Hocoia",
+    "Achat direct, partenariat hospitalier ou leasing selon votre profil",
   ],
-  ctaPrimary: "Demander une présentation",
-  ctaOutline: "Voir les solutions ↓",
+  ctaPrimary: "Étudier mon projet d'acquisition",
+  ctaOutline: "Voir les configurations ↓",
   form: {
-    title: "Demander une présentation",
+    title: "Étudier mon projet d'acquisition",
     subtitle:
-      "Un expert Hocoia spécialisé établissements de santé vous rappelle sous 24h.",
+      "Un expert Hocoia étudie votre projet d'acquisition et vous rappelle sous 24h. Étude de faisabilité offerte.",
     typeOptions: [
       "Hôpital public / CHU",
       "Clinique privée",
@@ -48,16 +48,17 @@ export const hero = {
       "Plusieurs spécialités",
       "À définir ensemble",
     ],
-    cta: "Demander une présentation →",
+    cta: "Lancer l'étude de faisabilité →",
     note: "Sans engagement · Réponse <24h · Confidentiel",
   },
   partners: {
     label: "EN PARTENARIAT AVEC",
     items: [
-      "CHU de Caen",
-      "Ministère des Affaires Étrangères",
-      "Mutuelles MGEN",
-      "Réseaux de soins régionaux",
+      "CH Verdun",
+      "Ramsay Santé",
+      "Fondation ILDYS",
+      "CH de Sully-sur-Loire",
+      "Centre Hospitalier Sainte-Catherine Saverne",
     ],
   },
 };
@@ -68,7 +69,6 @@ export const stats = [
   { id: "s1", value: "1/8",    label: "femmes développera un cancer du sein, dont beaucoup de résidentes EHPAD non dépistées", source: "INCa" },
   { id: "s2", value: "70%",    label: "des résidents EHPAD n'ont pas accès aux spécialistes sans transport médicalisé",          source: "DREES" },
   { id: "s3", value: "95%",    label: "taux de survie cancer détecté au stade 1, la détection précoce sauve des vies",           source: "INCa" },
-  { id: "s4", value: "0€",     label: "Coût pour le patient, pris en charge par l'établissement ou la mutuelle",                 source: "" },
   { id: "s5", value: "2 mois", label: "Délai de déploiement du premier bus dans votre établissement",                            source: "Hocoia" },
 ];
 
@@ -514,6 +514,39 @@ export const parcoursPatient = {
   ],
 };
 
+// ─── Achat sur mesure ─────────────────────────────────────────────────────
+
+export const achatSurMesure = {
+  eyebrow: "Acquisition · Sur mesure",
+  h2: "Un bus médical conçu pour votre établissement",
+  subtitle:
+    "Acquérez votre propre bus médical, entièrement configuré pour les spécialités et les protocoles de votre établissement. Hocoia vous accompagne de la conception à la livraison, et au-delà.",
+  points: [
+    {
+      title: "Conception sur mesure",
+      description: "Équipements médicaux, aménagement intérieur et protocoles définis avec vos équipes selon vos spécialités.",
+    },
+    {
+      title: "Formation de vos soignants",
+      description: "Vos équipes sont formées à la prise en main du bus et à l'utilisation de HocoApp avant la mise en service.",
+    },
+    {
+      title: "Intégration à votre SIH",
+      description: "Interface possible avec votre dossier patient informatisé pour une continuité du parcours de soins.",
+    },
+    {
+      title: "Maintenance & support",
+      description: "Hocoia assure la maintenance technique, les mises à jour logicielles et le support opérationnel dans la durée.",
+    },
+  ],
+  modes: {
+    label: "Modes de financement",
+    items: ["Achat direct", "Partenariat hospitalier long terme", "Leasing"],
+  },
+  ctaPrimary: "Étudier mon projet d'acquisition →",
+  ctaOutline: "Télécharger la brochure acquisition",
+};
+
 // ─── CTA final ─────────────────────────────────────────────────────────────
 
 export const ctaFinal = {
@@ -523,4 +556,40 @@ export const ctaFinal = {
   ctaPrimary: "Demander une présentation",
   ctaSecondary: "Télécharger la brochure",
   ctaTertiary: "Voir nos solutions →",
+};
+
+// ─── SEO ───────────────────────────────────────────────────────────────────
+
+export const seoContent = {
+  h2: "Achat de bus santé sur mesure pour établissements de santé et médico-social",
+  intro: [
+    "Hocoia accompagne les établissements de santé, structures médico-sociales, centres hospitaliers, cliniques et acteurs de la prévention dans l'achat de bus santé entièrement sur mesure. Ces dispositifs mobiles permettent de développer une offre de soins, de dépistage et de prévention directement au plus près des patients et des populations.",
+    "Conçus comme de véritables espaces médicaux mobiles, nos bus santé s'adaptent à chaque spécialité et à chaque besoin terrain : prévention santé, dépistage mobile, consultations avancées ou actions médico-sociales.",
+  ],
+  blocs: [
+    {
+      h3: "Un bus santé 100 % personnalisé selon votre spécialité",
+      paragraphs: [
+        "Chaque projet de bus santé est conçu sur mesure afin de répondre aux exigences des professionnels de santé et des établissements médico-sociaux.",
+        "Hocoia propose la conception de bus adaptés à différents usages : prévention des maladies cardiovasculaires, dépistage du cancer du sein, dépistage du cancer de la peau, santé de la femme, check-up santé, actions de santé publique, accompagnement médico-social.",
+        "L'aménagement intérieur, les équipements médicaux, l'ergonomie des parcours patients et la configuration du véhicule sont entièrement personnalisés selon vos objectifs.",
+      ],
+    },
+    {
+      h3: "Une solution d'acquisition complète et clé en main",
+      paragraphs: [
+        "Hocoia accompagne les établissements de santé de la conception jusqu'à la livraison du bus santé : définition du besoin, design et conception sur mesure, aménagement médical, intégration des équipements, conformité et optimisation des usages terrain.",
+        "L'objectif est de proposer un outil opérationnel, prêt à l'emploi et totalement adapté aux réalités du terrain.",
+      ],
+    },
+    {
+      h3: "Déployer des journées de prévention avec votre bus santé",
+      paragraphs: [
+        "Au-delà de l'acquisition, le bus santé peut devenir un véritable outil de déploiement de journées de prévention mobile.",
+        "Les établissements peuvent ainsi organiser des campagnes régulières de prévention et de dépistage directement sur les territoires : interventions en zones rurales ou urbaines, actions de santé publique ciblées, campagnes de dépistage organisées, programmes de prévention récurrents, accès aux soins facilité pour les publics éloignés.",
+        "Hocoia peut également accompagner les structures dans l'exploitation opérationnelle de ces dispositifs afin de maximiser leur impact sur le terrain.",
+        "Grâce à cette approche, le bus santé devient un levier stratégique pour développer une offre de prévention mobile, accessible et durable.",
+      ],
+    },
+  ],
 };

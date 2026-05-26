@@ -82,17 +82,17 @@ export const megaMenus = {
             id: "specialites",
             title: "NOS SPÉCIALITÉS",
             items: [
-              { id: "checkup",  label: "Check-up santé",  subtext: "Bilan global de prévention", href: "/patient#specialites" },
-              { id: "sein",     label: "Cancer du sein",  subtext: "Mammographie mobile",        href: "/patient#specialites" },
-              { id: "cardio",   label: "Cardiologie",     subtext: "ECG & bilan cardio",         href: "/patient#specialites" },
-              { id: "dermato",  label: "Dermatologie",    subtext: "Dépistage cutané",           href: "/patient#specialites" },
+              { id: "checkup",  label: "Check-up santé",  subtext: "Bilan global de prévention", href: "/solutions/checkup" },
+              { id: "sein",     label: "Cancer du sein",  subtext: "Mammographie mobile",        href: "/solutions/cancer-sein" },
+              { id: "cardio",   label: "Cardiologie",     subtext: "ECG & bilan cardio",         href: "/solutions/prevention-cardio" },
+              { id: "dermato",  label: "Dermatologie",    subtext: "Dépistage cutané",           href: "/solutions/cancer-peau" },
             ],
           },
           {
             id: "en-un-coup",
             title: "EN UN COUP D'ŒIL",
             items: [
-              { id: "calendrier",        label: "Voir le calendrier",  subtext: "Prochains passages par ville", href: "/patient#calendrier" },
+              { id: "calendrier",        label: "Voir le calendrier",  subtext: "Prochains passages par ville", href: "/calendrier" },
               { id: "comment-ca-marche", label: "Comment ça se passe", subtext: "Le déroulé d'une visite",     href: "/patient#comment-ca-marche" },
               { id: "faq-patient",       label: "FAQ",                 subtext: "Vos questions fréquentes",    href: "/patient#faq" },
             ],
@@ -101,7 +101,7 @@ export const megaMenus = {
         footer: {
           text: "Le bus passe près de chez vous →",
           btnLabel: "Voir les prochains passages",
-          anchor: "#calendrier",
+          anchor: "/calendrier",
         },
       },
 
@@ -167,9 +167,11 @@ export const megaMenus = {
   "nos-solutions": {
     type: "simple",
     items: [
-      { id: "medicobus",    label: "MédicoBus",       href: "/produits/medicobus" },
-      { id: "mammobus",     label: "MammoBus",        href: "/mammobus" },
-      { id: "dermatobus",   label: "DermatoBus",      href: "/dermatobus" },
+      { id: "medicobus",       label: "MédicoBus",       href: "/produits/medicobus" },
+      { id: "mammobus",        label: "MammoBus",        href: "/mammobus" },
+      { id: "dermatobus",      label: "DermatoBus",      href: "/dermatobus" },
+      { id: "sep-acquerir",    type: "separator" },
+      { id: "acquerir-un-bus", label: "Acquérir un bus", href: "/acquerir-un-bus" },
     ],
     footer: { label: "Voir toutes nos solutions →", href: "/nos-solutions" },
   },

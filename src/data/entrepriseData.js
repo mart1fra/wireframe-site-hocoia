@@ -7,7 +7,7 @@ export const hero = {
     "Hocoia déploie des bus médicaux équipés directement dans vos locaux ou près de vos sites. Programme clé en main, résultats mesurables, pilotage simple.",
   checks: [
     "Zéro organisation côté RH, on gère tout",
-    "Reporting anonymisé livré sous 72h en moyenne",
+    "Reporting anonymisé",
     "Conforme RGPD, données hébergées en France",
   ],
   ctaOutline: "Voir un cas client →",
@@ -33,13 +33,19 @@ export const hero = {
 export const logos = {
   label: "+100 entreprises comme la vôtre nous font confiance",
   items: [
-    "Veolia",
+    "Boardriders",
+    "Renault",
     "MGEN",
-    "Région Grand Est",
-    "AP-HP",
-    "Harmonie Mutuelle",
-    "CD 67",
-    "Schneider Electric",
+    "Groupama",
+    "IPSEN",
+    "IFF",
+    "HEC",
+    "MACIF",
+    "OPCO des entreprises",
+    "SEMECO",
+    "ETC",
+    "Mutuelle Générale d'Avignon",
+    "Alfi",
   ],
 };
 
@@ -75,8 +81,8 @@ export const useCases = {
         },
         {
           id: "f4",
-          title: "Déploiement en 3 semaines",
-          description: "De la signature au premier bus sur site en moins de 21 jours.",
+          title: "1er déploiement en 2 mois",
+          description: "De la signature au premier bus sur site en moins de 40 jours.",
         },
       ],
       ctaButtons: [
@@ -186,9 +192,9 @@ export const avisClients = {
     {
       id: "ac1",
       stars: "★★★★★",
-      quote: "Pour nos équipes dispersées sur 4 sites, Hocoia a organisé des journées santé en moins d'un mois. Le reporting anonymisé nous donne enfin des données actionnables.",
-      author: "Claire M.",
-      role: "DRH, ETI industrielle · 1 200 salariés",
+      quote: "[Citation à venir]",
+      author: "Hélène Lauzeral",
+      role: "[Fonction], Boardriders",
     },
     {
       id: "ac2",
@@ -302,27 +308,33 @@ export const faq = {
   items: [
     {
       id: "q1",
-      question: "Quelle charge de travail pour nos équipes RH ?",
+      question: "Hocoia gère-t-il l'organisation des journées de prévention ?",
       answer:
-        "Quasi nulle. Hocoia gère l'intégralité de l'organisation : logistique, communication interne, prise de RDV, bilan.",
+        "Oui, les solutions Hocoia sont 100 % clé en main. Nous prenons en charge la logistique, la coordination, l'installation du dispositif mobile, la gestion des inscriptions et l'accompagnement des participants.",
     },
     {
       id: "q2",
-      question: "Comment sont protégées les données de santé ?",
+      question: "Peut-on organiser plusieurs journées de prévention dans l'année ?",
       answer:
-        "Hébergement certifié HDS, conformité RGPD totale, données anonymisées. Aucun résultat individuel transmis à l'employeur.",
+        "Oui. Les entreprises, mutuelles et collectivités peuvent mettre en place des campagnes de prévention régulières afin d'inscrire la santé et le dépistage dans une démarche durable.",
     },
     {
       id: "q3",
-      question: "Quel est le coût minimum ?",
+      question: "Proposez-vous des webinaires santé ?",
       answer:
-        "Programmes disponibles à partir de 50 salariés. Devis personnalisé sous 48h.",
+        "Oui. Hocoia peut organiser des webinaires animés par des professionnels de santé afin de sensibiliser les participants avant les journées de prévention et renforcer l'engagement autour des actions de dépistage.",
     },
     {
       id: "q4",
-      question: "Peut-on cibler certaines spécialités ?",
+      question: "Peut-on acheter un bus de prévention sur mesure ?",
       answer:
-        "Oui, 12 spécialités disponibles : cardio, dermato, mammographie, bilan sanguin, etc.",
+        "Oui. Hocoia propose également la conception et l'aménagement de bus de prévention santé personnalisés afin de répondre aux besoins spécifiques des entreprises, mutuelles, collectivités et institutions, et hôpitaux.",
+    },
+    {
+      id: "q5",
+      question: "Dans quelles régions intervenez-vous ?",
+      answer:
+        "Hocoia déploie ses solutions mobiles de prévention santé partout en France selon les besoins des entreprises, mutuelles et acteurs publics.",
     },
   ],
 };
@@ -373,7 +385,7 @@ export const parcoursPatient = {
       title: "Inscription & prise de RDV",
       description:
         "Le collaborateur reçoit un code d'invitation unique et prend son RDV sur HocoApp en quelques clics selon les créneaux disponibles sur site.",
-      badge: "Via HocoApp ou QR code",
+      badge: "Via QR code ou par téléphone",
     },
     {
       id: "s2",
@@ -388,7 +400,7 @@ export const parcoursPatient = {
       number: "03",
       title: "Résultats confidentiels",
       description:
-        "Le collaborateur reçoit ses résultats sur HocoApp sous 48–72h. Ils sont également transmis à son médecin traitant. L'employeur ne reçoit que des données agrégées anonymisées.",
+        "Le collaborateur reçoit ses résultats sur HocoApp sous une semaine en moyenne. Ils sont également transmis à son médecin traitant. L'employeur ne reçoit que des données agrégées anonymisées. Résultats dans HocoApp et par mail.",
       badge: "Résultats dans HocoApp",
     },
     {
@@ -398,6 +410,31 @@ export const parcoursPatient = {
       description:
         "En cas d'anomalie, Hocoia coordonne l'orientation vers le médecin traitant ou un spécialiste. Le dépistage s'intègre ainsi au parcours de soins du collaborateur, sans intervention de l'employeur.",
       badge: "Suivi coordonné dans HocoApp",
+    },
+  ],
+};
+
+export const seoContent = {
+  h2: "Prévention santé mobile pour les entreprises et les mutuelles",
+  intro:
+    "Hocoia accompagne les entreprises et les mutuelles dans le déploiement de solutions de prévention santé innovantes grâce à des dispositifs mobiles de dépistage et de sensibilisation. Nos campagnes de prévention permettent de faciliter l'accès au dépistage, d'améliorer la santé des collaborateurs et des adhérents, et de renforcer les démarches de qualité de vie au travail (QVT) et de santé publique.",
+  blocs: [
+    {
+      h3: "Entreprises : améliorez la santé et le bien-être de vos collaborateurs",
+      paragraphs: [
+        "Hocoia propose aux entreprises des solutions de prévention santé clé en main directement sur site grâce au MédicoBus. Nos campagnes de dépistage en entreprise couvrent plusieurs thématiques : prévention des maladies cardiovasculaires, dépistage du cancer de la peau, santé de la femme, dépistage du cancer du sein, check-up santé.",
+        "Ces actions de prévention permettent de renforcer la QVT, sensibiliser les salariés aux enjeux de santé, améliorer le bien-être au travail et valoriser la marque employeur.",
+        "Chaque intervention peut être accompagnée d'un webinaire santé animé par un professionnel de santé afin de renforcer la sensibilisation et l'engagement des collaborateurs.",
+      ],
+    },
+    {
+      h3: "Mutuelles : développez vos actions de prévention santé",
+      paragraphs: [
+        "Hocoia accompagne les mutuelles et organismes complémentaires santé dans la mise en place de campagnes de prévention innovantes et accessibles.",
+        "Grâce au MédicoBus et au MammoBus, les mutuelles peuvent proposer des actions de dépistage mobile directement auprès de leurs adhérents, entreprises partenaires ou collectivités.",
+        "Nos solutions de prévention santé permettent : d'améliorer l'accès au dépistage, de promouvoir la prévention santé, de renforcer la relation adhérent, et de valoriser l'engagement des mutuelles en santé publique.",
+        "Hocoia développe des dispositifs mobiles de prévention partout en France pour rendre la prévention plus accessible, humaine et efficace.",
+      ],
     },
   ],
 };

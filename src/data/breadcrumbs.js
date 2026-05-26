@@ -34,6 +34,9 @@ export const breadcrumbsMap = {
   "/ressources/videos":        [{ label: "Ressources", href: null }, { label: "Vidéos" }],
   "/ressources/podcast":       [{ label: "Ressources", href: null }, { label: "Podcast" }],
 
+  // Calendrier
+  "/calendrier": [{ label: "Calendrier des passages" }],
+
   // Hub solutions
   "/nos-solutions": [{ label: "Nos solutions" }],
 

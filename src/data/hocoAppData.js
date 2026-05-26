@@ -3,11 +3,10 @@ export const hocoAppByAudience = {
     eyebrow: "Plateforme digitale",
     h2: "HocoApp — votre santé dans la poche",
     subtitle:
-      "Prenez RDV, accédez à vos documents médicaux et téléconsultez en quelques clics. Tout au même endroit, sécurisé.",
+      "Prenez RDV, accédez à vos documents médicaux en quelques clics. Tout au même endroit, sécurisé.",
     features: [
       { id: "f1", title: "Prise de RDV simplifiée", description: "Choisissez votre créneau dans le bus le plus proche en 3 clics." },
       { id: "f2", title: "Vos documents centralisés", description: "Comptes-rendus, ordonnances et résultats accessibles à tout moment." },
-      { id: "f3", title: "Téléconsultation intégrée", description: "Connectez-vous à HocoVisio pour parler à un médecin sans bouger de chez vous." },
       { id: "f4", title: "100% sécurisé", description: "Données cryptées, hébergement de santé certifié HDS." },
     ],
     ctaPrimary: "Découvrir HocoApp",
@@ -33,7 +32,7 @@ export const hocoAppByAudience = {
     eyebrow: "Plateforme digitale",
     h2: "HocoApp — orchestrez la santé de vos collaborateurs",
     subtitle:
-      "Un outil simple pour organiser les bilans collectifs et donner à chaque salarié un accès direct à sa santé.",
+      "Un outil intuitif pour centralisez l'organisation des bilans de santé collectifs, simplifiez le suivi des collaborateurs et offrez à chaque salarié un accès sécurisé à ses informations médicales. Une solution fluide pour piloter la prévention, améliorer le suivi patient et optimiser la gestion santé en entreprise.",
     features: [
       { id: "f1", title: "Inscription des collaborateurs", description: "Codes d'invitation personnalisés, inscription autonome en 2 minutes." },
       { id: "f2", title: "Reporting collectif anonymisé", description: "Suivez les indicateurs de prévention sans accès aux données médicales individuelles." },
@@ -63,7 +62,7 @@ export const hocoAppByAudience = {
     eyebrow: "Plateforme digitale",
     h2: "HocoApp — pilotez vos dispositifs de prévention",
     subtitle:
-      "Une vision consolidée des actions de santé publique menées sur vos territoires, des indicateurs aux retours terrain.",
+      "Un outil intuitif pour centraliser l'organisation des journées de prévention, simplifier la coordination des dispositifs mobiles et offrir à chaque habitant un accès sécurisé à ses informations médicales. Une solution fluide pour piloter la santé publique, suivre les actions sur le territoire et optimiser la prévention au plus près des citoyens.",
     features: [
       { id: "f1", title: "Pilotage multi-dispositifs", description: "Suivez l'ensemble des actions de dépistage et de prévention depuis un seul endroit." },
       { id: "f2", title: "Indicateurs de santé publique", description: "Taux de participation, dépistages positifs, parcours de soins déclenchés." },

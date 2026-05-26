@@ -15,6 +15,7 @@ import Checkup            from "./pages/solutions/Checkup";
 import CancerSein         from "./pages/solutions/CancerSein";
 import SanteFemme         from "./pages/solutions/SanteFemme";
 
+import AcquerirUnBus      from "./pages/AcquerirUnBus";
 import MedicoBus          from "./pages/produits/MedicoBus";
 import MammoBusPlaceholder  from "./pages/produits/MammoBus";
 import MammoBus            from "./pages/MammoBus";
@@ -29,6 +30,7 @@ import LivresBlancs       from "./pages/ressources/LivresBlancs";
 import Videos             from "./pages/ressources/Videos";
 import Podcast            from "./pages/ressources/Podcast";
 
+import Calendrier         from "./pages/Calendrier";
 import SeConnecter        from "./pages/SeConnecter";
 import Faq               from "./pages/Faq";
 import NosSolutions      from "./pages/NosSolutions";
@@ -63,6 +65,7 @@ export default function App() {
       <Route path="/solutions/sante-femme"        element={<Wrap><SanteFemme /></Wrap>} />
 
       {/* Solutions — Produits */}
+      <Route path="/acquerir-un-bus"       element={<Wrap><AcquerirUnBus /></Wrap>} />
       <Route path="/produits/medicobus"    element={<Wrap><MedicoBus /></Wrap>} />
       <Route path="/mammobus"              element={<Wrap><MammoBus /></Wrap>} />
       <Route path="/produits/mammobus"     element={<Wrap><MammoBusPlaceholder /></Wrap>} />
@@ -80,6 +83,9 @@ export default function App() {
 
       {/* Nos solutions (hub) */}
       <Route path="/nos-solutions" element={<Wrap><NosSolutions /></Wrap>} />
+
+      {/* Calendrier */}
+      <Route path="/calendrier" element={<Wrap><Calendrier /></Wrap>} />
 
       {/* Connexion & FAQ */}
       <Route path="/se-connecter" element={<Wrap><SeConnecter /></Wrap>} />

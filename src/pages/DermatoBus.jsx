@@ -6,6 +6,7 @@ import AccordionItem from "../components/ui/AccordionItem";
 import ConceptSection from "../components/sections/ConceptSection";
 import CustomBusBlock from "../components/sections/CustomBusBlock";
 import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
+import AchatOuLocationBlock from "../components/sections/AchatOuLocationBlock";
 import {
   piloteBanner,
   hero,
@@ -740,7 +741,7 @@ export default function DermatoBus() {
       <LogosSection />
       <StatsSection />
       <ConceptSection {...concept} />
-      <ModelesEngagementSection data={modeles} />
+      <AchatOuLocationBlock modele="DermatoBus" />
       <ProtocoleSection />
       <PiloteNormandieSection />
       <CouvertureSection />
