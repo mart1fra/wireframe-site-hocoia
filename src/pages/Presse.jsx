@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import FadeIn from "../components/ui/FadeIn";
 import {
@@ -58,7 +59,7 @@ function HeroSection() {
           <p className="text-gray-500 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
             {hero.subtitle}
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
             <a
               href={hero.ctaPrimary.href}
               className="bg-gray-900 text-white text-sm font-semibold px-7 py-3.5 rounded-full hover:bg-gray-800 transition-colors"
@@ -72,6 +73,12 @@ function HeroSection() {
               {hero.ctaOutline.label}
             </a>
           </div>
+          <Link
+            to="/a-propos/vision"
+            className="text-sm text-gray-500 hover:text-gray-900 underline underline-offset-4 transition-colors"
+          >
+            Notre vision & mission →
+          </Link>
         </motion.div>
       </div>
     </section>
@@ -156,64 +163,80 @@ function ChiffresContexteSection() {
   );
 }
 
-// ─── Section D — Ils parlent de nous ──────────────────────────────────────
+// ─── Section D — Ils parlent de nous (slider) ─────────────────────────────
+
+const ARTICLES_VISIBLE = 4;
 
 function IlsParlentDeNousSection() {
+  const [offset, setOffset] = useState(0);
+  const max = ilsParlentDeNous.items.length - ARTICLES_VISIBLE;
+
   return (
-    <section id="ils-parlent-de-nous" className="bg-gray-50 py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <FadeIn className="text-center mb-12">
-          <Eyebrow>{ilsParlentDeNous.eyebrow}</Eyebrow>
-          <SectionH2>{ilsParlentDeNous.h2}</SectionH2>
-          <p className="text-gray-500 text-base max-w-xl mx-auto">
-            {ilsParlentDeNous.subtitle}
-          </p>
+    <section id="ils-parlent-de-nous" className="bg-gray-50 py-16 px-6">
+      <div className="max-w-5xl mx-auto">
+
+        <FadeIn className="flex items-end justify-between mb-8">
+          <div>
+            <Eyebrow>{ilsParlentDeNous.eyebrow}</Eyebrow>
+            <SectionH2>{ilsParlentDeNous.h2}</SectionH2>
+          </div>
+          {max > 0 && (
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                type="button"
+                onClick={() => setOffset((o) => Math.max(0, o - 1))}
+                disabled={offset === 0}
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-600 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                ←
+              </button>
+              <button
+                type="button"
+                onClick={() => setOffset((o) => Math.min(max, o + 1))}
+                disabled={offset === max}
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-600 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                →
+              </button>
+            </div>
+          )}
         </FadeIn>
 
-        <motion.div
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
-        >
-          {ilsParlentDeNous.items.map((article) => (
+        <div className="overflow-hidden">
+          <AnimatePresence mode="wait">
             <motion.div
-              key={article.id}
-              variants={itemV}
-              className="bg-white border border-gray-200 rounded-2xl p-6 hover:border-gray-400 transition-colors flex flex-col"
+              key={offset}
+              initial={{ opacity: 0, x: 12 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -12 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="flex flex-col gap-2"
             >
-              {/* Média + type */}
-              <div className="flex items-center justify-between mb-1">
-                <span className="font-semibold text-gray-900 text-sm">{article.media}</span>
-                <span className="bg-gray-100 text-gray-600 text-xs px-2.5 py-0.5 rounded-full shrink-0 ml-2">
-                  {article.type}
-                </span>
-              </div>
-
-              {/* Titre */}
-              <p className="font-display font-semibold text-base text-gray-900 leading-snug my-3 line-clamp-3 flex-1">
-                {article.titre}
-              </p>
-
-              {/* Excerpt */}
-              <p className="text-gray-500 text-sm leading-relaxed mb-4 line-clamp-3">
-                {article.excerpt}
-              </p>
-
-              {/* Pied de carte */}
-              <div className="flex items-center justify-between mt-auto pt-4 border-t border-gray-100">
-                <span className="text-gray-400 text-xs">{article.date}</span>
-                <a
-                  href={article.url}
-                  className="text-sm font-semibold text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors"
+              {ilsParlentDeNous.items.slice(offset, offset + ARTICLES_VISIBLE).map((article) => (
+                <div
+                  key={article.id}
+                  className="bg-white border border-gray-200 rounded-xl px-5 py-3.5 flex items-center gap-4 hover:border-gray-400 transition-colors"
                 >
-                  Lire l'article →
-                </a>
-              </div>
+                  <span className="font-semibold text-gray-900 text-sm shrink-0 w-36 truncate">
+                    {article.media}
+                  </span>
+                  <span className="bg-gray-100 text-gray-500 text-xs px-2.5 py-0.5 rounded-full shrink-0">
+                    {article.type}
+                  </span>
+                  <p className="text-gray-700 text-sm flex-1 truncate">{article.titre}</p>
+                  <span className="text-gray-400 text-xs shrink-0">{article.date}</span>
+                  <a
+                    href={article.url}
+                    className="text-xs font-semibold text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors shrink-0"
+                  >
+                    Lire →
+                  </a>
+                </div>
+              ))}
             </motion.div>
-          ))}
-        </motion.div>
+          </AnimatePresence>
+        </div>
+
       </div>
     </section>
   );
@@ -269,12 +292,12 @@ function CommuniquesSection() {
 
 function KitMediaSection() {
   return (
-    <section id="kit-media" className="bg-gray-50 py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <FadeIn className="text-center mb-12">
+    <section id="kit-media" className="bg-white py-24 px-6">
+      <div className="max-w-5xl mx-auto">
+        <FadeIn className="mb-12">
           <Eyebrow>{kitMedia.eyebrow}</Eyebrow>
           <SectionH2>{kitMedia.h2}</SectionH2>
-          <p className="text-gray-500 text-base max-w-xl mx-auto">{kitMedia.subtitle}</p>
+          <p className="text-gray-500 text-base max-w-xl">{kitMedia.subtitle}</p>
         </FadeIn>
 
         <motion.div
@@ -282,38 +305,36 @@ function KitMediaSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
+          className="flex flex-col gap-3 mb-6"
         >
-          {kitMedia.items.map((item) => (
+          {kitMedia.kits.map((kit) => (
             <motion.div
-              key={item.id}
+              key={kit.id}
               variants={itemV}
-              className="bg-white border border-gray-200 rounded-xl p-5 flex items-start gap-4 hover:border-gray-400 transition-colors"
+              className="bg-gray-50 border border-gray-200 rounded-xl px-5 py-4 flex items-center justify-between gap-4 hover:border-gray-400 transition-colors"
             >
-              <div className="w-12 h-12 bg-gray-100 border border-gray-200 rounded-lg shrink-0 flex items-center justify-center text-xl">
-                {item.emoji}
-              </div>
               <div className="flex-1 min-w-0">
-                <p className="font-semibold text-gray-900 text-sm">{item.titre}</p>
-                <p className="text-gray-500 text-sm leading-relaxed mt-1 mb-3">
-                  {item.description}
-                </p>
-                <div className="flex items-center gap-3">
-                  <a
-                    href={item.fileUrl}
-                    className="text-sm font-semibold text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors"
-                  >
-                    Télécharger →
-                  </a>
-                  <span className="text-gray-400 text-xs">{item.fileSize}</span>
+                <div className="flex items-center gap-2 mb-1">
+                  <p className="font-semibold text-gray-900 text-sm">{kit.event}</p>
+                  {kit.date && <span className="text-gray-400 text-xs">{kit.date}</span>}
                 </div>
+                <p className="text-gray-500 text-xs leading-relaxed">{kit.description}</p>
+              </div>
+              <div className="flex items-center gap-3 shrink-0">
+                <span className="text-gray-400 text-xs hidden sm:block">{kit.fileSize}</span>
+                <a
+                  href={kit.fileUrl}
+                  className="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-gray-700 transition-colors whitespace-nowrap"
+                >
+                  Télécharger
+                </a>
               </div>
             </motion.div>
           ))}
         </motion.div>
 
         <FadeIn>
-          <div className="bg-gray-100 border border-gray-200 rounded-xl p-4">
+          <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
             <p className="text-gray-600 text-xs italic">{kitMedia.rappel}</p>
           </div>
         </FadeIn>

@@ -118,16 +118,50 @@ export const communiques = {
 // ─── Kit média ────────────────────────────────────────────────────────────
 
 export const kitMedia = {
-  eyebrow: "Ressources visuelles",
-  h2: "Kit média à télécharger",
-  subtitle: "Tous les éléments dont vous avez besoin pour parler d'Hocoia : logos, photos, charte graphique.",
-  items: [
-    { id: "k1", emoji: "📦", titre: "Logo Hocoia — pack complet",  description: "Versions couleur, noir, blanc, monochrome. Formats PNG, SVG, EPS.",               fileUrl: "#", fileSize: "ZIP · 4,2 Mo" },
-    { id: "k2", emoji: "🎨", titre: "Charte graphique",            description: "Le guide complet : palette, typographies, règles d'usage.",                        fileUrl: "#", fileSize: "PDF · 12 Mo" },
-    { id: "k3", emoji: "📷", titre: "Photos des fondateurs",       description: "Portraits haute définition de l'équipe dirigeante.",                               fileUrl: "#", fileSize: "ZIP · 28 Mo" },
-    { id: "k4", emoji: "🚌", titre: "Photos des bus médicaux",     description: "Médicobus, MammoBus, DermatoBus. Vues extérieures et intérieures.",                fileUrl: "#", fileSize: "ZIP · 65 Mo" },
-    { id: "k5", emoji: "🎬", titre: "B-roll vidéo",                description: "Séquences libres de droits pour vos reportages.",                                  fileUrl: "#", fileSize: "ZIP · 380 Mo" },
-    { id: "k6", emoji: "📄", titre: "Fiche d'identité PDF",        description: "Version imprimable de notre fiche d'identité.",                                    fileUrl: "#", fileSize: "PDF · 180 Ko" },
+  eyebrow: "Kit média",
+  h2: "Kits médias à télécharger",
+  subtitle: "Un kit complet par événement — communiqué officiel, photos, logo HD et éléments de langage.",
+  kits: [
+    {
+      id: "k1",
+      event: "MammoBus",
+      date: null,
+      description: "Photos extérieur & intérieur, fiche produit, logo HD, B-roll, communiqué de lancement.",
+      fileUrl: "#",
+      fileSize: "ZIP · 65 Mo",
+    },
+    {
+      id: "k2",
+      event: "MédicoBus",
+      date: null,
+      description: "Photos du bus, fiche produit, éléments de langage, logo HD.",
+      fileUrl: "#",
+      fileSize: "ZIP · 48 Mo",
+    },
+    {
+      id: "k3",
+      event: "DermatoBus",
+      date: null,
+      description: "Photos extérieur & intérieur, fiche produit, logo HD, communiqué.",
+      fileUrl: "#",
+      fileSize: "ZIP · 52 Mo",
+    },
+    {
+      id: "k4",
+      event: "Prestation",
+      date: null,
+      description: "Kit pour les partenaires prestataires : éléments de langage, charte co-branding, visuels terrain.",
+      fileUrl: "#",
+      fileSize: "ZIP · 18 Mo",
+    },
+    {
+      id: "k5",
+      event: "Achat",
+      date: null,
+      description: "Kit pour les partenaires acquéreurs : brochure d'acquisition, photos, fiche technique, logo HD.",
+      fileUrl: "#",
+      fileSize: "ZIP · 24 Mo",
+    },
   ],
   rappel: "L'utilisation de la marque Hocoia doit respecter notre charte graphique. Merci de ne pas modifier les logos.",
 };

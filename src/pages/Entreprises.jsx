@@ -1,23 +1,18 @@
 import { Fragment, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import FadeIn      from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
-import VideoTestimonial from "../components/sections/VideoTestimonial";
-import HocoAppSection from "../components/sections/HocoAppSection";
 import SeoSection from "../components/sections/SeoSection";
-import ParcoursPatientSection from "../components/sections/ParcoursPatientSection";
-import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
   hero,
   logos,
   useCases,
-  videoTestimonial,
   avisClients,
   stats,
   processus,
   ressources,
   faq,
-  modeles,
   parcoursPatient,
   ctaFinal,
   seoContent,
@@ -393,53 +388,157 @@ function StatsSection() {
   );
 }
 
-// ─── 4b. VIDÉO TÉMOIGNAGE ─────────────────────────────────────────────────
+// ─── 5. COMMENT ÇA MARCHE (bloc unifié) ───────────────────────────────────
 
-function VideoTestimonialSection() {
-  return <VideoTestimonial {...videoTestimonial} />;
-}
+const HOW_TABS = [
+  { id: "methode",  label: "Notre méthode",    sublabel: "De la signature au 1er bilan" },
+  { id: "parcours", label: "Parcours patient",  sublabel: "Ce que vivent vos collaborateurs" },
+  { id: "hocoapp",  label: "HocoApp",           sublabel: "Votre tableau de bord" },
+];
 
-// ─── 5. PROCESSUS ─────────────────────────────────────────────────────────
-
-function ProcessSection() {
+function StepsGrid({ steps, type }) {
   return (
-    <section id="processus" className="bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-24">
-        <FadeIn className="text-center mb-16">
-          <Eyebrow>{processus.eyebrow}</Eyebrow>
-          <SectionH2>{processus.h2}</SectionH2>
-        </FadeIn>
-
-        <motion.div
-          className="flex items-start"
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          {processus.steps.map((step, index) => (
-            <Fragment key={step.id}>
-              <motion.div variants={itemV} className="flex-1 min-w-0">
-                {/* Numéro */}
-                <p className="font-display font-bold text-7xl text-gray-100 leading-none mb-3 select-none">
+    <motion.div
+      className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+      variants={listV}
+      initial="hidden"
+      animate="visible"
+    >
+      {steps.map((step, index) => (
+        <motion.div key={step.id} variants={itemV} className="relative">
+          {/* Connecteur desktop */}
+          {index < steps.length - 1 && (
+            <div className="hidden lg:block absolute top-5 left-10 right-0 h-px bg-gray-200 z-0" />
+          )}
+          <div className="relative z-10">
+            {type === "methode" ? (
+              <>
+                <p className="font-display font-bold text-6xl text-gray-100 leading-none mb-2 select-none">
                   {step.number}
                 </p>
-                {/* Jour */}
-                <p className="text-[11px] uppercase tracking-widest text-gray-400 font-medium mb-2">
+                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-medium mb-2">
                   {step.day}
                 </p>
-                <p className="text-sm font-semibold text-gray-900 mb-2">{step.title}</p>
-                <p className="text-sm text-gray-500 leading-relaxed pr-4">{step.description}</p>
-              </motion.div>
-
-              {index < processus.steps.length - 1 && (
-                <div className="shrink-0 px-3 pt-10 text-gray-300 text-xl font-light select-none">
-                  →
-                </div>
-              )}
-            </Fragment>
-          ))}
+              </>
+            ) : (
+              <div className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center mb-4 shrink-0">
+                <span className="text-white text-[11px] font-bold">{step.number}</span>
+              </div>
+            )}
+            <p className="text-sm font-semibold text-gray-900 mb-2 leading-snug pr-4">
+              {step.title}
+            </p>
+            <p className="text-sm text-gray-500 leading-relaxed pr-4">
+              {step.description}
+            </p>
+            {step.badge && (
+              <span className="inline-block mt-3 text-[10px] font-medium uppercase tracking-wide text-gray-600 bg-gray-100 border border-gray-200 px-2.5 py-1 rounded-md">
+                {step.badge}
+              </span>
+            )}
+          </div>
         </motion.div>
+      ))}
+    </motion.div>
+  );
+}
+
+function HocoAppGrid() {
+  const data = hocoAppByAudience.entreprises;
+  return (
+    <motion.div
+      className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 items-start"
+      initial={{ opacity: 0, y: 12 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      <div>
+        <p className="text-gray-600 text-base leading-relaxed mb-8 max-w-lg">{data.subtitle}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {data.features.map((f) => (
+            <div key={f.id} className="flex items-start gap-3">
+              <div className="w-9 h-9 bg-gray-100 border border-gray-200 rounded-lg shrink-0 mt-0.5" />
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-1">{f.title}</p>
+                <p className="text-sm text-gray-500 leading-relaxed">{f.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="w-full aspect-[4/3] bg-gray-100 border border-gray-200 rounded-2xl flex items-center justify-center">
+        <p className="text-gray-400 text-sm text-center px-6">{data.mockupLabel}</p>
+      </div>
+    </motion.div>
+  );
+}
+
+function HowItWorksSection() {
+  const [active, setActive] = useState("methode");
+
+  return (
+    <section id="methode" className="bg-white py-24 px-6">
+      <div className="max-w-7xl mx-auto">
+
+        <FadeIn className="mb-10">
+          <Eyebrow>Comment ça marche</Eyebrow>
+          <SectionH2>De la signature au bilan, tout est pris en charge</SectionH2>
+        </FadeIn>
+
+        {/* Pilules */}
+        <FadeIn className="flex flex-wrap gap-2 mb-12">
+          {HOW_TABS.map((tab) => (
+            <button
+              key={tab.id}
+              type="button"
+              onClick={() => setActive(tab.id)}
+              className={`flex flex-col items-start px-5 py-3 rounded-xl transition-colors duration-150 cursor-pointer text-left ${
+                active === tab.id
+                  ? "bg-gray-900"
+                  : "bg-gray-50 border border-gray-200 hover:bg-gray-100"
+              }`}
+            >
+              <span className={`text-sm font-semibold leading-tight ${active === tab.id ? "text-white" : "text-gray-900"}`}>
+                {tab.label}
+              </span>
+              <span className={`text-xs mt-0.5 ${active === tab.id ? "text-white/60" : "text-gray-500"}`}>
+                {tab.sublabel}
+              </span>
+            </button>
+          ))}
+        </FadeIn>
+
+        {/* Contenu — même conteneur, contenu crossfade */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={active}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+          >
+            {active === "methode"  && <StepsGrid steps={processus.steps}    type="methode" />}
+            {active === "parcours" && <StepsGrid steps={parcoursPatient.steps} type="parcours" />}
+            {active === "hocoapp"  && <HocoAppGrid />}
+          </motion.div>
+        </AnimatePresence>
+
+        {/* CTAs */}
+        <FadeIn className="flex flex-wrap gap-3 mt-14">
+          <a
+            href="#contact"
+            className="bg-gray-900 text-white text-sm font-semibold px-7 py-3.5 rounded-full hover:bg-gray-800 transition-colors"
+          >
+            Prendre rendez-vous
+          </a>
+          <Link
+            to="/acquerir-un-bus"
+            className="border border-gray-300 text-gray-700 text-sm font-semibold px-7 py-3.5 rounded-full hover:bg-gray-50 transition-colors"
+          >
+            Acquérir un bus →
+          </Link>
+        </FadeIn>
+
       </div>
     </section>
   );
@@ -449,38 +548,34 @@ function ProcessSection() {
 
 function RessourcesSection() {
   return (
-    <section id="ressources" className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 py-24">
-        <FadeIn className="mb-12">
-          <Eyebrow>{ressources.eyebrow}</Eyebrow>
-          <SectionH2>{ressources.h2}</SectionH2>
+    <section id="ressources" className="bg-gray-50 border-y border-gray-200 py-10 px-6">
+      <div className="max-w-7xl mx-auto">
+        <FadeIn className="flex items-center justify-between mb-6">
+          <div>
+            <Eyebrow>{ressources.eyebrow}</Eyebrow>
+            <SectionH2>{ressources.h2}</SectionH2>
+          </div>
         </FadeIn>
 
         <motion.div
-          className="grid grid-cols-3 gap-5"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-3"
           variants={listV}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ once: true, margin: "-40px" }}
         >
           {ressources.cards.map((card) => (
             <motion.div
               key={card.id}
               variants={itemV}
-              className="bg-white border border-gray-200 rounded-xl p-6 cursor-pointer hover:border-gray-300 transition-colors duration-150"
+              className="bg-white border border-gray-200 rounded-xl px-4 py-3.5 flex items-center gap-4 cursor-pointer hover:border-gray-300 transition-colors duration-150"
             >
-              {/* Placeholder image */}
-              <div className="w-full h-32 bg-gray-100 border border-gray-200 rounded-lg mb-5" />
-
-              <span className="inline-block text-xs font-medium text-gray-600 bg-gray-100 px-2.5 py-1 rounded-full mb-3">
-                {card.type}
-              </span>
-
-              <h3 className="font-display font-semibold text-gray-900 text-sm leading-snug mb-3">
-                {card.title}
-              </h3>
-
-              <p className="text-xs text-gray-400">{card.meta}</p>
+              <div className="w-9 h-9 bg-gray-100 border border-gray-200 rounded-lg shrink-0" />
+              <div className="min-w-0">
+                <span className="text-[10px] font-medium text-gray-500 uppercase tracking-wide">{card.type}</span>
+                <p className="text-sm font-semibold text-gray-900 leading-snug truncate">{card.title}</p>
+                <p className="text-xs text-gray-400 mt-0.5">{card.meta}</p>
+              </div>
             </motion.div>
           ))}
         </motion.div>
@@ -531,12 +626,18 @@ function CtaFinalSection() {
         </FadeIn>
 
         <FadeIn delay={0.15} className="flex flex-col gap-3 items-start">
-          <button className="px-8 py-3.5 text-sm font-medium text-gray-900 bg-white rounded-full hover:bg-gray-100 transition-colors duration-150 cursor-pointer">
+          <a
+            href="#contact"
+            className="px-8 py-3.5 text-sm font-medium text-gray-900 bg-white rounded-full hover:bg-gray-100 transition-colors duration-150"
+          >
             {ctaFinal.ctaPrimary}
-          </button>
-          <button className="px-8 py-3.5 text-sm font-medium text-gray-500 border border-gray-700 rounded-full hover:bg-gray-800 transition-colors duration-150 cursor-pointer">
-            {ctaFinal.ctaSecondary}
-          </button>
+          </a>
+          <Link
+            to="/acquerir-un-bus"
+            className="px-8 py-3.5 text-sm font-medium text-gray-500 border border-gray-700 rounded-full hover:bg-gray-800 transition-colors duration-150"
+          >
+            Acquérir un bus →
+          </Link>
         </FadeIn>
       </div>
     </section>
@@ -554,22 +655,12 @@ export default function Entreprises() {
       <LogosSection />
       <UseCasesSection />
 
-      {/* 2. Comment ça se passe — parcours patient */}
-      <ParcoursPatientSection data={parcoursPatient} variant="white" />
+      {/* 2. Comment ça marche — méthode / parcours / HocoApp */}
+      <HowItWorksSection />
 
-      {/* 3. Grâce à quoi et comment ça marche */}
-      <HocoAppSection data={hocoAppByAudience.entreprises} variant="gray" compact />
-
-      {/* 4. Réassurance — avis et témoignages */}
+      {/* 5. Réassurance — avis */}
       <AvisClientsSection />
       <StatsSection />
-      <VideoTestimonialSection />
-
-      {/* 5. La solution adaptée pour votre problématique */}
-      <ModelesEngagementSection data={modeles} id="modeles" />
-
-      {/* 6. Prise de contact et mise en place */}
-      <ProcessSection />
 
       {/* 7. Ressources et FAQ */}
       <RessourcesSection />

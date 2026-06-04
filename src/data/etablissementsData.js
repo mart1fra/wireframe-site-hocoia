@@ -518,33 +518,46 @@ export const parcoursPatient = {
 
 export const achatSurMesure = {
   eyebrow: "Acquisition · Sur mesure",
-  h2: "Un bus médical conçu pour votre établissement",
+  h2: "Dotez votre établissement d'un bus médical",
   subtitle:
-    "Acquérez votre propre bus médical, entièrement configuré pour les spécialités et les protocoles de votre établissement. Hocoia vous accompagne de la conception à la livraison, et au-delà.",
-  points: [
-    {
-      title: "Conception sur mesure",
-      description: "Équipements médicaux, aménagement intérieur et protocoles définis avec vos équipes selon vos spécialités.",
+    "Acquérez votre propre bus médical pour intégrer la prévention à votre offre de soins. Conçu sur mesure pour vos spécialités ou disponible en catalogue — à l'achat ou en leasing.",
+  surmesure: {
+    tag: "Sur mesure",
+    title: "Un bus conçu pour votre établissement",
+    points: [
+      {
+        title: "Conception sur mesure",
+        description: "Équipements médicaux, aménagement intérieur et protocoles définis avec vos équipes selon vos spécialités.",
+      },
+      {
+        title: "Formation de vos soignants",
+        description: "Vos équipes sont formées à la prise en main du bus et à l'utilisation de HocoApp avant la mise en service.",
+      },
+      {
+        title: "Intégration à votre SIH",
+        description: "Interface possible avec votre dossier patient informatisé pour une continuité du parcours de soins.",
+      },
+      {
+        title: "Maintenance & support",
+        description: "Hocoia assure la maintenance technique, les mises à jour logicielles et le support opérationnel dans la durée.",
+      },
+    ],
+    modes: {
+      label: "Modes de financement",
+      items: ["Achat direct", "Partenariat hospitalier long terme", "Leasing"],
     },
-    {
-      title: "Formation de vos soignants",
-      description: "Vos équipes sont formées à la prise en main du bus et à l'utilisation de HocoApp avant la mise en service.",
-    },
-    {
-      title: "Intégration à votre SIH",
-      description: "Interface possible avec votre dossier patient informatisé pour une continuité du parcours de soins.",
-    },
-    {
-      title: "Maintenance & support",
-      description: "Hocoia assure la maintenance technique, les mises à jour logicielles et le support opérationnel dans la durée.",
-    },
-  ],
-  modes: {
-    label: "Modes de financement",
-    items: ["Achat direct", "Partenariat hospitalier long terme", "Leasing"],
+    ctaPrimary: "Étudier mon projet d'acquisition →",
+    ctaOutline: "Télécharger la brochure",
   },
-  ctaPrimary: "Étudier mon projet d'acquisition →",
-  ctaOutline: "Télécharger la brochure acquisition",
+  catalogue: {
+    tag: "Catalogue · Achat ou leasing",
+    title: "Ou choisissez un bus Hocoia existant",
+    description:
+      "Nos bus catalogue sont déjà équipés de nos spécialités phares, disponibles à l'achat ou en leasing. Opérationnel rapidement, sans délai de conception.",
+    specialites: ["MédicoBus", "MammoBus", "DermatoBus"],
+    cta: "Voir les bus disponibles →",
+    ctaHref: "/acquerir-un-bus",
+  },
 };
 
 // ─── CTA final ─────────────────────────────────────────────────────────────

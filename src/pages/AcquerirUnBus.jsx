@@ -7,6 +7,7 @@ import SeoSection from "../components/sections/SeoSection";
 import {
   hero,
   pourquoi,
+  casClientVerdun,
   processus,
   configurations,
   financement,
@@ -161,31 +162,83 @@ function PourquoiSection() {
     <section className="bg-white">
       <div className="max-w-7xl mx-auto px-6 py-24">
 
-        <FadeIn className="mb-10 max-w-2xl">
-          <Eyebrow>{pourquoi.eyebrow}</Eyebrow>
-          <SectionH2>{pourquoi.h2}</SectionH2>
-          <div className="mt-4 space-y-3">
-            {pourquoi.paragraphs.map((p, i) => (
-              <p key={i} className="text-gray-600 leading-relaxed">{p}</p>
-            ))}
-          </div>
-        </FadeIn>
+        <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-14 items-start">
 
-        <motion.div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          {pourquoi.benefices.map((b) => (
-            <motion.div key={b.id} variants={itemV} className="flex flex-col gap-3">
-              <span className="w-9 h-9 rounded-lg bg-gray-100 border border-gray-200 shrink-0" />
-              <p className="text-sm font-semibold text-gray-900 leading-tight">{b.title}</p>
-              <p className="text-sm text-gray-500 leading-relaxed">{b.description}</p>
+          {/* Gauche — contenu existant */}
+          <div>
+            <FadeIn className="mb-10">
+              <Eyebrow>{pourquoi.eyebrow}</Eyebrow>
+              <SectionH2>{pourquoi.h2}</SectionH2>
+              <div className="mt-4 space-y-3">
+                {pourquoi.paragraphs.map((p, i) => (
+                  <p key={i} className="text-gray-600 leading-relaxed">{p}</p>
+                ))}
+              </div>
+            </FadeIn>
+
+            <motion.div
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+              variants={listV}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-60px" }}
+            >
+              {pourquoi.benefices.map((b) => (
+                <motion.div key={b.id} variants={itemV} className="flex flex-col gap-3">
+                  <span className="w-9 h-9 rounded-lg bg-gray-100 border border-gray-200 shrink-0" />
+                  <p className="text-sm font-semibold text-gray-900 leading-tight">{b.title}</p>
+                  <p className="text-sm text-gray-500 leading-relaxed">{b.description}</p>
+                </motion.div>
+              ))}
             </motion.div>
-          ))}
-        </motion.div>
+          </div>
+
+          {/* Droite — cas client Verdun */}
+          <FadeIn delay={0.15}>
+            <div className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden sticky top-8">
+              {/* Placeholder image bus */}
+              <div className="w-full bg-gray-200 border-b border-gray-200 flex items-center justify-center" style={{ height: 180 }}>
+                <p className="text-gray-400 text-xs text-center px-4">Photo — PneumoBus Grand Verdun</p>
+              </div>
+
+              <div className="p-6">
+                <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full bg-gray-900 text-white mb-3">
+                  {casClientVerdun.badge}
+                </span>
+                <p className="font-display font-bold text-lg text-gray-900 leading-snug mb-3">
+                  {casClientVerdun.titre}
+                </p>
+                <p className="text-gray-500 text-sm leading-relaxed mb-5">
+                  {casClientVerdun.description}
+                </p>
+
+                {/* Faits clés */}
+                <div className="space-y-2 mb-5">
+                  {casClientVerdun.faits.map((f) => (
+                    <div key={f.label} className="flex items-baseline justify-between gap-2">
+                      <span className="text-xs text-gray-400 shrink-0">{f.label}</span>
+                      <span className="text-xs font-semibold text-gray-900 text-right">{f.value}</span>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Citation */}
+                <blockquote className="border-l-2 border-gray-300 pl-4 mb-5">
+                  <p className="text-gray-600 text-xs italic leading-relaxed mb-2">"{casClientVerdun.quote}"</p>
+                  <p className="text-gray-400 text-xs">{casClientVerdun.author}</p>
+                </blockquote>
+
+                <Link
+                  to={casClientVerdun.ctaHref}
+                  className="text-sm font-semibold text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors"
+                >
+                  {casClientVerdun.ctaLabel}
+                </Link>
+              </div>
+            </div>
+          </FadeIn>
+
+        </div>
 
       </div>
     </section>

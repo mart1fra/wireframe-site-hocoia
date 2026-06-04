@@ -48,6 +48,39 @@ export const hero = {
   },
 };
 
+// ─── Rôle & missions ──────────────────────────────────────────────────────
+
+export const roleMission = {
+  eyebrow: "Votre rôle",
+  h2: "Soigner là où les soins manquent.",
+  subtitle:
+    "En rejoignant Hocoia, vous mettez votre expertise au service des territoires les plus fragiles. Voici concrètement ce que vous faites à nos côtés.",
+  items: [
+    {
+      id: "r1",
+      num: "01",
+      title: "Vous menez des journées de dépistage",
+      description:
+        "Organisées par Hocoia dans des communes rurales, des entreprises ou des quartiers prioritaires. Bus équipé, patients attendus, protocoles préparés — vous arrivez, vous soignez.",
+    },
+    {
+      id: "r2",
+      num: "02",
+      title: "Vous assurez des consultations spécialisées",
+      description:
+        "Des patients sans accès à votre spécialité dans leur bassin de vie viennent vous consulter directement sur place. Votre expertise arrive chez eux, pas l'inverse.",
+    },
+    {
+      id: "r3",
+      num: "03",
+      title: "Vous participez au suivi de patients fragiles",
+      description:
+        "Sur certaines missions récurrentes, vous contribuez au suivi de patients chroniques ou en ALD, en lien direct avec leur médecin traitant via HocoApp.",
+    },
+  ],
+  note: "Chaque mission est définie en amont avec votre coordinateur Hocoia. Vous savez exactement à quoi vous attendre avant d'arriver.",
+};
+
 // ─── Stats ────────────────────────────────────────────────────────────────
 
 export const stats = [

@@ -5,7 +5,7 @@ import AccordionItem from "../components/ui/AccordionItem";
 import HocoAppSection from "../components/sections/HocoAppSection";
 import {
   hero,
-  stats,
+  roleMission,
   profils,
   avantages,
   processus,
@@ -164,32 +164,50 @@ function HeroSection() {
   );
 }
 
-// ─── Section 2 — Stats ────────────────────────────────────────────────────
+// ─── Section 2 — Rôle & missions ──────────────────────────────────────────
 
-function StatsSection() {
+function RoleMissionSection() {
   return (
-    <section className="bg-gray-900 border-t border-gray-800 py-16 px-6">
-      <div className="max-w-5xl mx-auto">
+    <section className="bg-white py-20 px-6">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-14 items-start">
+
+        {/* Gauche — titre */}
+        <FadeIn>
+          <Eyebrow>{roleMission.eyebrow}</Eyebrow>
+          <SectionH2>{roleMission.h2}</SectionH2>
+          <p className="text-gray-500 text-base leading-relaxed mb-6">
+            {roleMission.subtitle}
+          </p>
+          <p className="text-gray-400 text-sm italic leading-relaxed border-l-2 border-gray-200 pl-4">
+            {roleMission.note}
+          </p>
+        </FadeIn>
+
+        {/* Droite — 3 activités */}
         <motion.div
           variants={listV}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-gray-800"
+          className="flex flex-col gap-5"
         >
-          {stats.map((stat) => (
+          {roleMission.items.map((item) => (
             <motion.div
-              key={stat.label}
+              key={item.id}
               variants={itemV}
-              className="flex flex-col items-center text-center px-4 py-4"
+              className="flex gap-5 bg-gray-50 border border-gray-200 rounded-xl p-6"
             >
-              <span className="font-display font-bold text-3xl text-white mb-1">
-                {stat.value}
-              </span>
-              <span className="text-xs text-gray-400 leading-snug">{stat.label}</span>
+              <p className="font-display font-bold text-3xl text-gray-200 leading-none shrink-0 w-10">
+                {item.num}
+              </p>
+              <div>
+                <p className="font-semibold text-gray-900 text-sm mb-1">{item.title}</p>
+                <p className="text-gray-500 text-sm leading-relaxed">{item.description}</p>
+              </div>
             </motion.div>
           ))}
         </motion.div>
+
       </div>
     </section>
   );
@@ -447,7 +465,7 @@ export default function ProSante() {
   return (
     <>
       <HeroSection />
-      <StatsSection />
+      <RoleMissionSection />
       <ProfilsSection />
       <AvantagesSection />
       <ProcessusSection />

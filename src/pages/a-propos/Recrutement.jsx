@@ -4,14 +4,12 @@ import FadeIn from "../../components/ui/FadeIn";
 import {
   hero,
   chiffres,
-  temoignages,
   journeeDepistage,
   pourquoiRejoindre,
   equipeInterne,
   processusRecrutement,
   offres,
   candidatureSpontanee,
-  ctaFinal,
 } from "../../data/recrutementData";
 
 // ─── Animation variants ───────────────────────────────────────────────────────
@@ -224,33 +222,6 @@ function TemoignageVideoCard({ card }) {
   );
 }
 
-// ─── Section 3 — Témoignages soignants ───────────────────────────────────────
-
-function TemoignagesSection() {
-  return (
-    <section className="bg-gray-50 py-20 px-6">
-      <div className="max-w-7xl mx-auto">
-        <FadeIn className="mb-12">
-          <Eyebrow>{temoignages.eyebrow}</Eyebrow>
-          <SectionH2>{temoignages.h2}</SectionH2>
-          <p className="text-gray-500 text-base max-w-2xl">{temoignages.subtitle}</p>
-        </FadeIn>
-        <motion.div
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-6"
-        >
-          {temoignages.cards.map((card) => (
-            <TemoignageVideoCard key={card.id} card={card} />
-          ))}
-        </motion.div>
-      </div>
-    </section>
-  );
-}
-
 // ─── Composant carte vidéo simple ────────────────────────────────────────────
 
 function VideoCard({ card }) {
@@ -408,7 +379,12 @@ function PourquoiRejoindreSection() {
 
 // ─── Section 6 — Équipe interne ───────────────────────────────────────────────
 
+const MEMBRES_VISIBLE = 4;
+
 function EquipeInterneSection() {
+  const [offset, setOffset] = useState(0);
+  const max = equipeInterne.membres.length - MEMBRES_VISIBLE;
+
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
@@ -439,29 +415,56 @@ function EquipeInterneSection() {
           </FadeIn>
         </div>
 
-        {/* Grille membres */}
-        <motion.div
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-6"
-        >
-          {equipeInterne.membres.map((m) => (
+        {/* Carrousel membres */}
+        <FadeIn className="flex items-center justify-end gap-2 mb-4">
+          {max > 0 && (
+            <>
+              <button
+                type="button"
+                onClick={() => setOffset((o) => Math.max(0, o - 1))}
+                disabled={offset === 0}
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-600 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                ←
+              </button>
+              <button
+                type="button"
+                onClick={() => setOffset((o) => Math.min(max, o + 1))}
+                disabled={offset === max}
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-gray-200 text-gray-600 hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+              >
+                →
+              </button>
+            </>
+          )}
+        </FadeIn>
+
+        <div className="overflow-hidden mb-6">
+          <AnimatePresence mode="wait">
             <motion.div
-              key={m.id}
-              variants={itemV}
-              className="bg-white border border-gray-200 rounded-xl p-5 flex flex-col gap-3"
+              key={offset}
+              initial={{ opacity: 0, x: 16 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -16 }}
+              transition={{ duration: 0.22, ease: "easeOut" }}
+              className="grid grid-cols-4 gap-5"
             >
-              <AvatarPlaceholder size={60} rounded="rounded-full" />
-              <div>
-                <p className="font-semibold text-gray-900 text-sm">{m.nom}</p>
-                <p className="text-gray-500 text-xs">{m.role}</p>
-              </div>
-              <p className="text-gray-600 text-xs italic leading-relaxed">"{m.citation}"</p>
+              {equipeInterne.membres.slice(offset, offset + MEMBRES_VISIBLE).map((m) => (
+                <div
+                  key={m.id}
+                  className="bg-white border border-gray-200 rounded-xl p-5 flex flex-col gap-3"
+                >
+                  <AvatarPlaceholder size={60} rounded="rounded-full" />
+                  <div>
+                    <p className="font-semibold text-gray-900 text-sm">{m.nom}</p>
+                    <p className="text-gray-500 text-xs">{m.role}</p>
+                  </div>
+                  <p className="text-gray-600 text-xs italic leading-relaxed">"{m.citation}"</p>
+                </div>
+              ))}
             </motion.div>
-          ))}
-        </motion.div>
+          </AnimatePresence>
+        </div>
 
         <p className="text-gray-400 text-xs italic">{equipeInterne.note}</p>
       </div>
@@ -843,37 +846,6 @@ function CandidatureSpontaneeSection() {
   );
 }
 
-// ─── Section 10 — CTA Final ───────────────────────────────────────────────────
-
-function CtaFinalSection() {
-  return (
-    <section className="bg-gray-900 border-t border-gray-800 py-20 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        <FadeIn>
-          <h2 className="font-display font-bold text-3xl sm:text-4xl text-white leading-tight mb-4">
-            {ctaFinal.h2}
-          </h2>
-          <p className="text-gray-400 text-base leading-relaxed">{ctaFinal.subtitle}</p>
-        </FadeIn>
-        <FadeIn delay={0.1} className="flex flex-col gap-3 lg:items-end">
-          <button
-            type="button"
-            className="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors cursor-pointer w-full lg:w-auto"
-          >
-            {ctaFinal.ctaPrimary}
-          </button>
-          <button
-            type="button"
-            className="border border-white/30 text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors cursor-pointer w-full lg:w-auto"
-          >
-            {ctaFinal.ctaOutline}
-          </button>
-        </FadeIn>
-      </div>
-    </section>
-  );
-}
-
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function Recrutement() {
@@ -881,14 +853,12 @@ export default function Recrutement() {
     <>
       <HeroSection />
       <ChiffresSection />
-      <TemoignagesSection />
       <JourneeDepistageSection />
       <PourquoiRejoindreSection />
       <EquipeInterneSection />
       <ProcessusSection />
       <OffresSection />
       <CandidatureSpontaneeSection />
-      <CtaFinalSection />
     </>
   );
 }

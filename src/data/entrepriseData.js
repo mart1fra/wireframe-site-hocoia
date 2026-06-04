@@ -1,7 +1,7 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Entreprises & assureurs",
+  eyebrow: "Entreprises & mutuelles",
   h1: "Offrez à vos équipes une prévention santé sans friction.",
   subtitle:
     "Hocoia déploie des bus médicaux équipés directement dans vos locaux ou près de vos sites. Programme clé en main, résultats mesurables, pilotage simple.",
@@ -19,7 +19,7 @@ export const hero = {
     note: "Sans engagement · RGPD",
     roleOptions: [
       "Entreprise / DRH",
-      "Assureur / Mutuelle",
+      "Mutuelle / Organisme de santé",
       "Collectivité / Territoire",
       "Hôpital / Clinique",
     ],
@@ -49,12 +49,12 @@ export const logos = {
   ],
 };
 
-// ─── Use cases (onglets Entreprises / Assureurs) ──────────────────────────
+// ─── Use cases (onglets Entreprises / Mutuelles) ─────────────────────────
 
 export const useCases = {
   tabs: [
-    { id: "entreprises", label: "Entreprises",          sublabel: "Solutions RH santé" },
-    { id: "assureurs",   label: "Assureurs", sublabel: "Programmes de prévention adhérents" },
+    { id: "entreprises", label: "Entreprises", sublabel: "Solutions RH santé" },
+    { id: "assureurs",   label: "Mutuelles",   sublabel: "Programmes de prévention adhérents" },
   ],
   content: {
     entreprises: {
@@ -106,7 +106,7 @@ export const useCases = {
       },
     },
     assureurs: {
-      eyebrow: "Pour les assureurs & mutuelles",
+      eyebrow: "Pour les mutuelles",
       title: "Faites de la prévention un service concret pour vos adhérents",
       paragraphs: [
         "Vos adhérents vivent souvent loin des spécialistes. Hocoia vous permet d'organiser des campagnes de dépistage directement dans leurs communes : la mutuelle invite ses adhérents, Hocoia déploie le bus, le dépistage est gratuit pour le patient.",

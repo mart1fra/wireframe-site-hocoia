@@ -79,6 +79,25 @@ export const pourquoi = {
   ],
 };
 
+// ─── Cas client Verdun ────────────────────────────────────────────────────
+
+export const casClientVerdun = {
+  badge: "Cas client",
+  titre: "Pneumobus livré à Verdun",
+  description:
+    "La Communauté de communes du Grand Verdun a acquis un PneumoBus Hocoia pour renforcer le dépistage des maladies respiratoires dans ses communes rurales. Un projet conçu sur 6 mois, livré clé en main.",
+  faits: [
+    { label: "Territoire", value: "Grand Verdun — Meuse (55)" },
+    { label: "Spécialité", value: "Pneumologie · Spirométrie" },
+    { label: "Financement", value: "DETR + fonds régionaux" },
+    { label: "Déploiement", value: "6 mois de la commande à la 1ʳᵉ mission" },
+  ],
+  quote: "On avait besoin d'un outil qui soit vraiment le nôtre, à nos couleurs, qu'on puisse déployer selon notre agenda. Hocoia nous a accompagnés de A à Z.",
+  author: "Directrice de la santé publique, CC du Grand Verdun",
+  ctaLabel: "Lire le cas client →",
+  ctaHref: "/ressources/cas-clients",
+};
+
 // ─── Processus d'acquisition ──────────────────────────────────────────────
 
 export const processus = {

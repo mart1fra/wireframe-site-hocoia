@@ -19,7 +19,6 @@ export const hero = {
     "Zéro gestion RH, professionnels de santé fournis",
     "Compatible CLS, ARS, fonds régionaux de santé",
     "Données anonymisées pour le pilotage territorial",
-    "2 mois : Délai MOYEN de déploiement Hocoia sur votre territoire",
   ],
   ctaPrimary: "Parler à un expert territorial",
   ctaOutline: "Télécharger le dossier ↓",
@@ -43,7 +42,7 @@ export const hero = {
       "Je ne sais pas encore",
     ],
     cta: "Demander un échange →",
-    note: "Sans engagement · Réponse <24h · Confidentiel",
+    note: "Sans engagement · Confidentiel",
   },
   trust: {
     label: "ILS NOUS FONT CONFIANCE",
@@ -569,6 +568,56 @@ export const seoContent = {
       ],
     },
   ],
+};
+
+// ─── Achat sur mesure ─────────────────────────────────────────────────────
+
+export const achatSurMesure = {
+  eyebrow: "Acquisition · Sur mesure",
+  h2: "Dotez votre territoire d'un bus médical",
+  subtitle:
+    "Acquérez votre propre bus de prévention santé pour répondre durablement aux besoins de santé de vos habitants. Configuré sur mesure ou livré clé en main — à l'achat ou en location.",
+  surmesure: {
+    tag: "Sur mesure",
+    title: "Un bus conçu pour votre territoire",
+    points: [
+      {
+        title: "Spécialités configurées pour votre territoire",
+        description:
+          "Dermato, cardio, mammographie, médecine générale : le bus est équipé selon les déserts médicaux identifiés et les priorités de santé publique locales.",
+      },
+      {
+        title: "Propriété de la collectivité",
+        description:
+          "Le bus devient un équipement communal ou intercommunal, déployable commune par commune selon votre programme de santé.",
+      },
+      {
+        title: "Opérable en autonomie ou via Hocoia",
+        description:
+          "Votre bus peut être opéré avec vos propres soignants, via une CPTS partenaire, ou via le réseau Hocoia selon votre organisation.",
+      },
+      {
+        title: "Éligible aux financements publics",
+        description:
+          "Subventions d'investissement, DETR, fonds régionaux, ARS : Hocoia vous accompagne dans le montage financier pour réduire le reste à charge.",
+      },
+    ],
+    modes: {
+      label: "Dispositifs de financement",
+      items: ["Subvention DETR", "Fonds régionaux", "ARS / PRAPS", "CLS", "Mécénat institutionnel"],
+    },
+    ctaPrimary: "Étudier mon projet d'acquisition →",
+    ctaOutline: "Télécharger la brochure",
+  },
+  catalogue: {
+    tag: "Catalogue · Achat ou location",
+    title: "Ou choisissez un bus Hocoia existant",
+    description:
+      "Pas besoin de partir de zéro. Nos bus catalogue sont déjà équipés de nos spécialités phares, disponibles à l'achat ou en location.",
+    specialites: ["MédicoBus", "MammoBus", "DermatoBus", "CardioExpress"],
+    cta: "Voir les bus disponibles →",
+    ctaHref: "/acquerir-un-bus",
+  },
 };
 
 // ─── CTA final ─────────────────────────────────────────────────────────────

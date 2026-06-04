@@ -49,9 +49,9 @@ export const hocoAppByAudience = {
   },
   collectivites: {
     eyebrow: "Plateforme digitale",
-    h2: "HocoApp — orchestrez la santé de vos collaborateurs",
+    h2: "HocoApp — pilotez la prévention dans votre territoire",
     subtitle:
-      "Un outil intuitif pour centralisez l'organisation des bilans de santé collectifs, simplifiez le suivi des collaborateurs et offrez à chaque salarié un accès sécurisé à ses informations médicales. Une solution fluide pour piloter la prévention, améliorer le suivi patient et optimiser la gestion santé en entreprise.",
+      "Planifiez les déploiements commune par commune, invitez vos habitants en quelques clics et suivez les indicateurs de fréquentation depuis votre tableau de bord territorial. HocoApp centralise tout le suivi de vos actions de santé publique.",
     features: [
       { id: "f1", title: "Planning des passages bus", description: "Visualisez et organisez les déploiements sur votre territoire commune par commune." },
       { id: "f2", title: "Accès habitants simplifié", description: "Prise de RDV via flyer + code d'invitation, sans création de compte complexe." },
@@ -66,9 +66,9 @@ export const hocoAppByAudience = {
   },
   acteursPublics: {
     eyebrow: "Plateforme digitale",
-    h2: "HocoApp — orchestrez la santé de vos collaborateurs",
+    h2: "HocoApp — pilotez vos actions de santé publique",
     subtitle:
-      "Un outil intuitif pour centralisez l'organisation des bilans de santé collectifs, simplifiez le suivi des collaborateurs et offrez à chaque salarié un accès sécurisé à ses informations médicales. Une solution fluide pour piloter la prévention, améliorer le suivi patient et optimiser la gestion santé en entreprise.",
+      "Suivez l'ensemble de vos programmes de prévention, partagez les indicateurs avec vos partenaires institutionnels et exportez les données pour vos rapports ARS. HocoApp s'adapte aux exigences du secteur public.",
     features: [
       { id: "f1", title: "Pilotage multi-dispositifs", description: "Suivez l'ensemble des actions de dépistage et de prévention depuis un seul endroit." },
       { id: "f2", title: "Indicateurs de santé publique", description: "Taux de participation, dépistages positifs, parcours de soins déclenchés." },

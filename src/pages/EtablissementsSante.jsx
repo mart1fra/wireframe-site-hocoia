@@ -1,24 +1,19 @@
 import { Fragment, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
-import VideoTestimonial from "../components/sections/VideoTestimonial";
-import HocoAppSection from "../components/sections/HocoAppSection";
 import SeoSection from "../components/sections/SeoSection";
-import ParcoursPatientSection from "../components/sections/ParcoursPatientSection";
-import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
   hero,
   stats,
   useCases,
   processus,
   temoignages,
-  videoTestimonial,
   faq,
-  modeles,
   parcoursPatient,
-  ctaFinal,
   achatSurMesure,
+  ctaFinal,
   seoContent,
 } from "../data/etablissementsData";
 import { hocoAppByAudience } from "../data/hocoAppData";
@@ -50,6 +45,92 @@ function SectionH2({ children, light = false }) {
     <h2 className={`font-display font-bold text-3xl leading-tight ${light ? "text-white" : "text-gray-900"}`}>
       {children}
     </h2>
+  );
+}
+
+// ─── Tabs "Comment ça marche" ──────────────────────────────────────────────
+
+const HOW_TABS = [
+  { id: "methode",  label: "Notre méthode",   sublabel: "De la prise de contact au déploiement" },
+  { id: "parcours", label: "Parcours patient", sublabel: "Ce que vivent vos patients" },
+  { id: "hocoapp",  label: "HocoApp",          sublabel: "Coordination & dossiers" },
+];
+
+function StepsGrid({ type }) {
+  const steps = type === "methode" ? processus.steps : parcoursPatient.steps;
+
+  if (type === "methode") {
+    return (
+      <div className="flex items-start">
+        {steps.map((step, index) => (
+          <Fragment key={step.id}>
+            <div className="flex-1 min-w-0 flex flex-col">
+              <p className="font-display font-bold text-4xl text-gray-200 leading-none mb-3 select-none">
+                {step.number}
+              </p>
+              <span className="inline-block self-start px-3 py-1 text-xs font-medium text-gray-700 bg-gray-100 rounded-full mb-3">
+                {step.delay}
+              </span>
+              <p className="text-sm font-semibold text-gray-900 mb-2 pr-3">{step.title}</p>
+              <p className="text-sm text-gray-500 leading-relaxed pr-3">{step.description}</p>
+            </div>
+            {index < steps.length - 1 && (
+              <div className="shrink-0 px-1 pt-12 text-gray-300 text-xl font-light select-none">›</div>
+            )}
+          </Fragment>
+        ))}
+      </div>
+    );
+  }
+
+  return (
+    <div className="grid grid-cols-2 gap-6">
+      {steps.map((step) => (
+        <div key={step.id} className="flex items-start gap-4">
+          <div className="w-8 h-8 rounded-full bg-gray-900 flex items-center justify-center shrink-0 mt-0.5">
+            <span className="text-white text-xs font-bold">{step.number}</span>
+          </div>
+          <div>
+            <div className="flex items-center gap-2 mb-1 flex-wrap">
+              <p className="text-sm font-semibold text-gray-900">{step.title}</p>
+              {step.badge && (
+                <span className="text-[10px] font-medium text-gray-600 bg-gray-100 px-2 py-0.5 rounded-full">
+                  {step.badge}
+                </span>
+              )}
+            </div>
+            <p className="text-sm text-gray-500 leading-relaxed">{step.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function HocoAppGrid() {
+  const data = hocoAppByAudience.etablissementsSante;
+  return (
+    <div className="grid grid-cols-[1fr_1fr] gap-12 items-start">
+      <div>
+        <Eyebrow>{data.eyebrow}</Eyebrow>
+        <h3 className="font-display font-bold text-2xl text-gray-900 leading-tight mb-3">{data.h2}</h3>
+        <p className="text-gray-500 text-sm leading-relaxed mb-8">{data.subtitle}</p>
+        <div className="grid grid-cols-2 gap-5">
+          {data.features.map((f) => (
+            <div key={f.id} className="flex items-start gap-3">
+              <span className="w-5 h-5 rounded bg-gray-200 shrink-0 mt-0.5" />
+              <div>
+                <p className="text-sm font-semibold text-gray-900 mb-1">{f.title}</p>
+                <p className="text-xs text-gray-500 leading-relaxed">{f.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="bg-gray-100 rounded-xl flex items-end p-4 min-h-[280px]">
+        <span className="text-xs text-gray-400">{data.mockupLabel}</span>
+      </div>
+    </div>
   );
 }
 
@@ -86,22 +167,6 @@ function HeroSection() {
             {hero.subtitle}
           </motion.p>
 
-          {/* Pills */}
-          <motion.div variants={itemV} className="flex items-center gap-2 flex-wrap mb-8">
-            {hero.pills.map((pill) => (
-              <button
-                key={pill.id}
-                className={`px-4 py-2 text-xs font-medium rounded-full transition-colors duration-150 cursor-pointer ${
-                  pill.active
-                    ? "bg-white text-gray-900"
-                    : "bg-white/10 text-white border border-white/20"
-                }`}
-              >
-                {pill.label}
-              </button>
-            ))}
-          </motion.div>
-
           {/* Checks */}
           <motion.ul variants={itemV} className="space-y-3 mb-10">
             {hero.checks.map((c, i) => (
@@ -122,16 +187,14 @@ function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Colonne droite */}
+        {/* Colonne droite — formulaire */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, ease: "easeOut", delay: 0.2 }}
           className="bg-gray-50 rounded-2xl overflow-hidden"
         >
-          <div className="p-6 space-y-4">
-
-            {/* Carte formulaire */}
+          <div className="p-6">
             <div className="bg-white border border-gray-200 rounded-xl p-6">
               <h3 className="font-display font-bold text-xl text-gray-900 mb-1">
                 {hero.form.title}
@@ -177,18 +240,38 @@ function HeroSection() {
 
               <p className="text-[11px] text-gray-400 text-center mt-4">{hero.form.note}</p>
             </div>
-
-            {/* Carte partenaires */}
-            <div className="bg-gray-100 border border-gray-200 rounded-xl p-5">
-              <p className="text-[10px] uppercase tracking-widest font-medium text-gray-500 mb-3">
-                {hero.partners.label}
-              </p>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                {hero.partners.items.join(" · ")}
-              </p>
-            </div>
-
           </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+// ─── 1b. PARTENAIRES ──────────────────────────────────────────────────────
+
+function PartnersSection() {
+  return (
+    <section className="bg-gray-50 border-b border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 py-10">
+        <FadeIn className="text-center mb-6">
+          <p className="text-xs text-gray-500 font-medium">{hero.partners.label}</p>
+        </FadeIn>
+        <motion.div
+          className="flex flex-wrap items-center justify-center gap-3"
+          variants={listV}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-40px" }}
+        >
+          {hero.partners.items.map((name) => (
+            <motion.span
+              key={name}
+              variants={itemV}
+              className="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded-full"
+            >
+              {name}
+            </motion.span>
+          ))}
         </motion.div>
       </div>
     </section>
@@ -235,7 +318,6 @@ function UseCasesSection() {
     <section id="use-case" className="bg-white">
       <div className="max-w-7xl mx-auto px-6 py-24">
 
-        {/* Tabs */}
         <FadeIn className="flex items-start gap-3 mb-12 flex-wrap">
           {useCases.tabs.map((tab) => (
             <button
@@ -255,7 +337,6 @@ function UseCasesSection() {
           ))}
         </FadeIn>
 
-        {/* Contenu de l'onglet actif */}
         <motion.div
           key={activeTab}
           initial={{ opacity: 0, y: 12 }}
@@ -263,7 +344,6 @@ function UseCasesSection() {
           transition={{ duration: 0.3, ease: "easeOut" }}
           className="grid grid-cols-[3fr_2fr] gap-16 items-start"
         >
-          {/* Gauche : features */}
           <div>
             <Eyebrow>{content.eyebrow}</Eyebrow>
             <SectionH2>{content.h2}</SectionH2>
@@ -302,7 +382,6 @@ function UseCasesSection() {
             </div>
           </div>
 
-          {/* Droite : carte cas / partenariat */}
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
             <span className="inline-block text-[10px] font-medium uppercase tracking-wide text-gray-600 bg-gray-100 px-3 py-1 rounded-full mb-4">
               {content.caseStudy.tag}
@@ -341,123 +420,179 @@ function UseCasesSection() {
   );
 }
 
-// ─── 4. ACHAT SUR MESURE ──────────────────────────────────────────────────
+// ─── 5b. ACHAT SUR MESURE ─────────────────────────────────────────────────
 
 function AchatSurMesureSection() {
+  const { surmesure, catalogue } = achatSurMesure;
   return (
-    <section id="achat-sur-mesure" className="bg-gray-900">
+    <section id="achat-sur-mesure" className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-24">
 
         <FadeIn className="mb-12 max-w-2xl">
           <Eyebrow>{achatSurMesure.eyebrow}</Eyebrow>
-          <h2 className="font-display font-bold text-3xl leading-tight text-white">
+          <h2 className="font-display font-bold text-3xl leading-tight text-gray-900">
             {achatSurMesure.h2}
           </h2>
-          <p className="text-gray-400 mt-4 text-lg leading-relaxed">
+          <p className="text-gray-600 mt-4 text-lg leading-relaxed">
             {achatSurMesure.subtitle}
           </p>
         </FadeIn>
 
-        <motion.div
-          className="grid grid-cols-2 gap-x-10 gap-y-10 mb-12"
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          {achatSurMesure.points.map((point, i) => (
-            <motion.div key={i} variants={itemV} className="flex items-start gap-4">
-              <span className="w-8 h-8 rounded-lg bg-white/10 border border-white/20 shrink-0 mt-0.5" />
-              <div>
-                <p className="text-sm font-semibold text-white leading-tight mb-1">{point.title}</p>
-                <p className="text-sm text-gray-400 leading-relaxed">{point.description}</p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
+        <div className="grid grid-cols-[3fr_2fr] gap-8 items-start">
 
-        <FadeIn className="border-t border-white/10 pt-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-          <div>
-            <p className="text-[10px] uppercase tracking-widest font-medium text-gray-500 mb-3">
-              {achatSurMesure.modes.label}
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {achatSurMesure.modes.items.map((mode) => (
-                <span
-                  key={mode}
-                  className="text-xs font-medium text-gray-200 bg-white/10 border border-white/20 rounded-full px-3 py-1.5"
-                >
-                  {mode}
+          {/* Colonne gauche — sur mesure */}
+          <div className="bg-white border border-gray-200 rounded-2xl p-8">
+            <span className="inline-block text-[10px] font-medium uppercase tracking-wide text-gray-600 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full mb-6">
+              {surmesure.tag}
+            </span>
+            <h3 className="font-display font-bold text-xl text-gray-900 mb-8">{surmesure.title}</h3>
+
+            <motion.div
+              className="grid grid-cols-2 gap-x-8 gap-y-8 mb-10"
+              variants={listV}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-60px" }}
+            >
+              {surmesure.points.map((point, i) => (
+                <motion.div key={i} variants={itemV} className="flex items-start gap-3">
+                  <span className="w-7 h-7 rounded-lg bg-gray-100 border border-gray-200 shrink-0 mt-0.5" />
+                  <div>
+                    <p className="text-sm font-semibold text-gray-900 leading-tight mb-1">{point.title}</p>
+                    <p className="text-sm text-gray-500 leading-relaxed">{point.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            <div className="border-t border-gray-200 pt-6">
+              <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-3">
+                {surmesure.modes.label}
+              </p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {surmesure.modes.items.map((mode) => (
+                  <span key={mode} className="text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded-full px-3 py-1.5">
+                    {mode}
+                  </span>
+                ))}
+              </div>
+              <div className="flex items-center gap-3 flex-wrap">
+                <button className="px-5 py-2.5 text-sm font-semibold text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-150 cursor-pointer">
+                  {surmesure.ctaPrimary}
+                </button>
+                <button className="px-5 py-2.5 text-sm font-medium text-gray-900 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors duration-150 cursor-pointer">
+                  {surmesure.ctaOutline}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Colonne droite — catalogue */}
+          <FadeIn delay={0.15} className="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col">
+            <span className="inline-block text-[10px] font-medium uppercase tracking-wide text-gray-600 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full mb-6 self-start">
+              {catalogue.tag}
+            </span>
+            <h3 className="font-display font-bold text-xl text-gray-900 mb-3">{catalogue.title}</h3>
+            <p className="text-sm text-gray-500 leading-relaxed mb-8">{catalogue.description}</p>
+
+            <div className="flex flex-wrap gap-2 mb-8">
+              {catalogue.specialites.map((s) => (
+                <span key={s} className="text-sm font-medium text-gray-700 bg-gray-100 border border-gray-200 rounded-full px-4 py-2">
+                  {s}
                 </span>
               ))}
             </div>
-          </div>
-          <div className="flex items-center gap-3 flex-wrap">
-            <button className="px-6 py-3 text-sm font-semibold text-gray-900 bg-white rounded-full hover:bg-gray-100 transition-colors duration-150 cursor-pointer">
-              {achatSurMesure.ctaPrimary}
-            </button>
-            <button className="px-6 py-3 text-sm font-medium text-white border border-white/30 rounded-full hover:bg-white/10 transition-colors duration-150 cursor-pointer">
-              {achatSurMesure.ctaOutline}
-            </button>
-          </div>
-        </FadeIn>
 
+            <div className="mt-auto">
+              <Link
+                to={catalogue.ctaHref}
+                className="inline-block px-5 py-2.5 text-sm font-semibold text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-150"
+              >
+                {catalogue.cta}
+              </Link>
+            </div>
+          </FadeIn>
+
+        </div>
       </div>
     </section>
   );
 }
 
-// ─── 6. PROCESSUS ─────────────────────────────────────────────────────────
+// ─── 5. COMMENT ÇA MARCHE ─────────────────────────────────────────────────
 
-function ProcessSection() {
+function HowItWorksSection() {
+  const [activeTab, setActiveTab] = useState("methode");
+
   return (
-    <section id="processus" className="bg-gray-50">
+    <section id="processus" className="bg-white">
       <div className="max-w-7xl mx-auto px-6 py-24">
 
-        <FadeIn className="mb-16">
-          <Eyebrow>{processus.eyebrow}</Eyebrow>
-          <SectionH2>{processus.h2}</SectionH2>
-          <p className="text-gray-500 mt-3 max-w-lg leading-relaxed">{processus.subtitle}</p>
+        <FadeIn className="mb-10">
+          <Eyebrow>Comment ça marche</Eyebrow>
+          <SectionH2>Du premier contact au dépistage de vos patients</SectionH2>
         </FadeIn>
 
-        <motion.div
-          className="flex items-start"
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          {processus.steps.map((step, index) => (
-            <Fragment key={step.id}>
-              <motion.div variants={itemV} className="flex-1 min-w-0 flex flex-col">
-                <div className="w-7 h-7 rounded-full bg-gray-900 flex items-center justify-center mb-4 shrink-0">
-                  <span className="text-white text-[10px] font-bold leading-none">{step.number}</span>
-                </div>
-                <p className="text-sm font-semibold text-gray-900 mb-2 pr-3">{step.title}</p>
-                <p className="text-sm text-gray-500 leading-relaxed mb-4 pr-3 flex-1">{step.description}</p>
-                <span className="inline-block self-start px-3 py-1 text-xs font-medium text-gray-700 bg-gray-100 rounded-full">
-                  {step.delay}
-                </span>
-              </motion.div>
-
-              {index < processus.steps.length - 1 && (
-                <div className="shrink-0 px-2 pt-3 text-gray-300 text-xl font-light select-none">
-                  ›
-                </div>
-              )}
-            </Fragment>
+        {/* Pill tabs */}
+        <div className="flex items-start gap-3 mb-10">
+          {HOW_TABS.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`flex flex-col text-left px-5 py-3 rounded-full transition-colors duration-200 cursor-pointer ${
+                activeTab === tab.id
+                  ? "bg-gray-900 text-white"
+                  : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+              }`}
+            >
+              <span className="text-sm font-semibold leading-tight">{tab.label}</span>
+              <span className="text-xs mt-0.5 text-gray-400">{tab.sublabel}</span>
+            </button>
           ))}
-        </motion.div>
+        </div>
+
+        {/* Contenu avec crossfade */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+          >
+            {activeTab === "hocoapp" ? (
+              <HocoAppGrid />
+            ) : (
+              <StepsGrid type={activeTab} />
+            )}
+          </motion.div>
+        </AnimatePresence>
+
+        {/* CTAs */}
+        <div className="flex items-center gap-3 flex-wrap mt-12 pt-8 border-t border-gray-100">
+          <a
+            href="#contact"
+            className="px-6 py-2.5 text-sm font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-150"
+          >
+            Demander une présentation
+          </a>
+          <Link
+            to="/acquerir-un-bus"
+            className="px-6 py-2.5 text-sm font-medium text-gray-900 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors duration-150"
+          >
+            Acquérir un bus →
+          </Link>
+        </div>
       </div>
     </section>
   );
 }
 
-// ─── 7. TÉMOIGNAGES ───────────────────────────────────────────────────────
+// ─── 6. TÉMOIGNAGES ───────────────────────────────────────────────────────
 
 function TemoignagesSection() {
   return (
-    <section className="bg-white">
+    <section className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-24">
 
         <FadeIn className="mb-12">
@@ -476,13 +611,13 @@ function TemoignagesSection() {
             <motion.div
               key={card.id}
               variants={itemV}
-              className="bg-gray-50 border border-gray-200 rounded-xl p-6 flex flex-col"
+              className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col"
             >
-              <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-3">{card.context}</p>
-              <p className="text-sm italic text-gray-700 leading-relaxed flex-1 mb-5">"{card.quote}"</p>
+              <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-4">{card.context}</p>
+              <p className="text-gray-700 text-sm leading-relaxed italic flex-1 mb-6">"{card.quote}"</p>
               <div>
-                <p className="text-sm font-bold text-gray-900">{card.name}</p>
-                <p className="text-xs text-gray-500 mt-0.5">{card.role}</p>
+                <p className="text-sm font-semibold text-gray-900">{card.name}</p>
+                <p className="text-xs text-gray-400 mt-0.5">{card.role}</p>
               </div>
             </motion.div>
           ))}
@@ -492,17 +627,11 @@ function TemoignagesSection() {
   );
 }
 
-// ─── 7b. VIDÉO TÉMOIGNAGE ─────────────────────────────────────────────────
-
-function VideoTestimonialSection() {
-  return <VideoTestimonial {...videoTestimonial} />;
-}
-
-// ─── 8. FAQ ───────────────────────────────────────────────────────────────
+// ─── 7. FAQ ───────────────────────────────────────────────────────────────
 
 function FaqSection() {
   return (
-    <section id="faq" className="bg-gray-50">
+    <section id="faq" className="bg-white">
       <div className="max-w-7xl mx-auto px-6 py-24">
 
         <FadeIn className="mb-12">
@@ -528,7 +657,7 @@ function FaqSection() {
   );
 }
 
-// ─── 9. CTA FINAL ─────────────────────────────────────────────────────────
+// ─── 8. CTA FINAL ─────────────────────────────────────────────────────────
 
 function CtaFinalSection() {
   return (
@@ -564,27 +693,20 @@ export default function EtablissementsSante() {
     <>
       {/* 1. Ce que c'est + ce que ça permet */}
       <HeroSection />
+      <PartnersSection />
       <StatsSection />
       <UseCasesSection />
+
+      {/* 2. Comment ça marche — méthode + parcours + HocoApp */}
+      <HowItWorksSection />
+
+      {/* 3. Acquisition sur mesure */}
       <AchatSurMesureSection />
 
-      {/* 2. Comment ça se passe — parcours patient */}
-      <ParcoursPatientSection data={parcoursPatient} variant="white" />
-
-      {/* 3. Grâce à quoi et comment ça marche */}
-      <HocoAppSection data={hocoAppByAudience.etablissementsSante} variant="white" compact />
-
-      {/* 4. Réassurance — avis et témoignages */}
+      {/* 4. Réassurance — témoignages */}
       <TemoignagesSection />
-      <VideoTestimonialSection />
 
-      {/* 5. La solution adaptée pour votre problématique */}
-      <ModelesEngagementSection data={modeles} id="modeles" />
-
-      {/* 6. Prise de contact et mise en place */}
-      <ProcessSection />
-
-      {/* 7. Ressources et FAQ */}
+      {/* 5. FAQ et CTA */}
       <FaqSection />
       <CtaFinalSection />
       <SeoSection data={seoContent} />
