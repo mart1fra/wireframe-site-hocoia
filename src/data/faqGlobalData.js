@@ -119,7 +119,7 @@ export const categories = [
       {
         question: "Quel est le coût minimum ?",
         answer:
-          "Programmes disponibles à partir de 50 salariés. Devis personnalisé sous 48h.",
+          "Programmes disponibles à partir de 50 salariés. Devis personnalisé sur demande.",
       },
       {
         question: "Peut-on cibler certaines spécialités ?",
@@ -354,7 +354,7 @@ export const categories = [
       {
         question: "Quels sont les coûts moyens d'un déploiement ?",
         answer:
-          "Variables selon la durée, la spécialité, le nombre de patients. Devis personnalisé sous 48h après cadrage.",
+          "Variables selon la durée, la spécialité, le nombre de patients. Devis personnalisé après cadrage.",
       },
     ],
   },
@@ -364,7 +364,7 @@ export const categories = [
 
 export const ctaFinal = {
   h2: "Vous ne trouvez pas votre réponse ?",
-  subtitle: "Notre équipe est là pour répondre à toutes vos questions, sous 24h.",
+  subtitle: "Notre équipe est là pour répondre à toutes vos questions.",
   ctaPrimary: "Nous contacter",
   ctaSecondary: "Demander un rappel",
 };

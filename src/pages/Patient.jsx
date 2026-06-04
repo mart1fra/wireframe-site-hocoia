@@ -125,12 +125,19 @@ function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.45 }}
+          className="flex flex-wrap justify-center gap-3"
         >
           <Link
             to="/calendrier"
-            className="text-sm text-gray-600 underline underline-offset-2 hover:text-gray-900 transition-colors"
+            className="border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-gray-100 transition-colors"
           >
             {hero.lienCalendrier}
+          </Link>
+          <Link
+            to="/se-connecter"
+            className="border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-gray-100 transition-colors"
+          >
+            Voir mes résultats →
           </Link>
         </motion.div>
       </div>
@@ -193,6 +200,8 @@ function EtapesSection() {
               <div className="bg-gray-50 rounded-lg px-4 py-3">
                 <p className="text-xs text-gray-500 leading-relaxed">{step.info}</p>
               </div>
+
+
             </motion.div>
           ))}
         </motion.div>

@@ -30,7 +30,7 @@ export const hero = {
   ctaOutline: "Voir le protocole ↓",
   form: {
     title: "Intéressé par le DermatoBus ?",
-    subtitle: "Collectivité, mutuelle, établissement — réponse sous 24h.",
+    subtitle: "Collectivité, mutuelle, établissement — sans engagement.",
     vousEtesOptions: [
       "Vous êtes",
       "Collectivité/Département",
@@ -549,7 +549,7 @@ export const customBus = {
 export const ctaFinal = {
   h2: "Déployez le DermatoBus dans votre territoire.",
   subtitle:
-    "Rejoignez le pilote Normandie ou préparez votre déploiement, un expert Hocoia vous répond sous 24h.",
+    "Rejoignez le pilote Normandie ou préparez votre déploiement avec un expert Hocoia.",
   ctaPrimary: "Rejoindre le pilote",
   ctaOutline: "Demander une présentation",
   ctaGhost: "Télécharger la brochure",

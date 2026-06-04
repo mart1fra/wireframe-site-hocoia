@@ -64,3 +64,55 @@ Lis ces fichiers AVANT de coder quoi que ce soit :
 - Props destructurées
 - Tailwind pour le styling (pas de CSS externe sauf tokens globaux)
 - Framer Motion : utiliser `motion.div`, `AnimatePresence`, `variants`
+
+## Adaptation mobile
+
+### Approche
+Mobile-first sur la home et les landings d'audience. Les sections clés (hero, sélecteur de profil) sont repensées verticalement, pas juste rétrécies.
+
+### Breakpoints
+- Mobile portrait : `max-width: 479px`
+- Mobile landscape : `480px – 767px`
+- Tablet : `768px – 991px`
+- Desktop : `min-width: 992px`
+
+Référence design mobile : **375px** de large (iPhone standard).
+
+### Grille mobile
+- 4 colonnes
+- Gutter 16px
+- Marges latérales 20px (16px min, 24px max)
+
+### Règles UI mobile
+- Touch targets : minimum 44×44px pour tout élément cliquable
+- Espacement vertical : 24px entre sections, 16px entre blocs internes
+- CTA primaire : full-width, padding 16px vertical / 18px horizontal, font-weight 600
+- Hero H1 : max 32px, line-height 1.1, max 4 lignes
+- Sous-texte hero : 16–18px, max 3 lignes
+- Image hero : sous le texte, jamais à côté (sauf icône ≤ 80px)
+- Navigation : burger menu, jamais plus de 4 items en nav horizontale
+- Sticky CTA en bas d'écran sur les landings de conversion (à valider en review)
+
+### Hiérarchie typographique mobile
+- H1 : 28–32px
+- H2 : 22–24px
+- H3 : 18–20px
+- Body : 16px
+- Line-height titres : 1.1–1.2 / Line-height body : 1.5
+
+### Sélecteur de profil — version mobile
+Toujours proposer les 3 variantes avant de coder :
+1. Stack vertical de 3 cards plein écran (image + titre + CTA) — option par défaut
+2. Carrousel swipable avec indicateurs de pagination
+3. Tabs avec contenu qui change en dessous
+
+### Performance mobile
+- Images en WebP avec fallback, `srcset` + `sizes` systématiques
+- Lazy loading partout sauf hero
+- Police en `font-display: swap`
+- Pas de JS bloquant au render
+
+### Méthode
+- CSS mobile-first : utiliser `min-width` pour monter en taille, jamais `max-width`
+- Toujours montrer un rendu 375px ET 1440px avant commit
+- Vérifier les touch targets et le contraste WCAG AA sur chaque section

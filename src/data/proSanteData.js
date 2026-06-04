@@ -19,7 +19,7 @@ export const hero = {
   ctaOutline: "Voir les missions disponibles",
   form: {
     title: "Déposer ma candidature",
-    subtitle: "Un responsable recrutement vous contacte sous 48h.",
+    subtitle: "Un responsable recrutement étudiera votre candidature.",
     fields: {
       prenom: "Prénom",
       nom: "Nom",
@@ -44,7 +44,7 @@ export const hero = {
       "Temps plein",
     ],
     cta: "Envoyer ma candidature →",
-    note: "Réponse sous 48h · Confidentiel · Sans engagement",
+    note: "Confidentiel · Sans engagement",
   },
 };
 

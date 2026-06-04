@@ -7,12 +7,18 @@ const aPropos = navigation.find((n) => n.id === "a-propos");
 const presse = pagesSecondaires.find((n) => n.id === "presse");
 const faq = pagesSecondaires.find((n) => n.id === "faq");
 
-function FooterColumn({ title, children }) {
+function FooterColumn({ title, href, children }) {
   return (
     <div>
-      <h3 className="font-display font-semibold text-sm text-white mb-4 tracking-wide">
-        {title}
-      </h3>
+      {href ? (
+        <Link to={href} className="font-display font-semibold text-sm text-white mb-4 tracking-wide block hover:text-gray-300 transition-colors">
+          {title}
+        </Link>
+      ) : (
+        <h3 className="font-display font-semibold text-sm text-white mb-4 tracking-wide">
+          {title}
+        </h3>
+      )}
       {children}
     </div>
   );
@@ -84,11 +90,14 @@ export default function Footer() {
                 basePath={`/${aPropos.id}`}
               />
             </FooterColumn>
-            <FooterColumn title="Presse">
-              <FooterLinks
-                items={presse.children}
-                basePath={`/${presse.id}`}
-              />
+            <FooterColumn title="Presse" href="/presse">
+              <ul className="space-y-2.5">
+                {presse.children.map((item) => (
+                  <li key={item.id}>
+                    <span className="text-sm text-gray-600">{item.label}</span>
+                  </li>
+                ))}
+              </ul>
             </FooterColumn>
           </div>
         </div>

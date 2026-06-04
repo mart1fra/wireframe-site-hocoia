@@ -543,28 +543,6 @@ function CtaFinalSection() {
   );
 }
 
-// ─── CTA mid-page ─────────────────────────────────────────────────────────
-
-function CtaMidPage() {
-  return (
-    <section className="bg-gray-100 border-y border-gray-200">
-      <div className="max-w-7xl mx-auto px-6 py-8 flex items-center justify-between gap-8">
-        <div className="flex items-center gap-4">
-          <div className="w-10 h-10 bg-gray-200 border border-gray-300 rounded-xl shrink-0" />
-          <div>
-            <p className="font-semibold text-gray-900 text-sm">Vous savez déjà ce qu'il vous faut ?</p>
-            <p className="text-xs text-gray-500 mt-0.5">Acquisition ou prestation de service — on s'adapte à votre organisation.</p>
-          </div>
-        </div>
-        <a href="#modeles">
-          <button className="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150 cursor-pointer whitespace-nowrap shrink-0">
-            Voir les formules →
-          </button>
-        </a>
-      </div>
-    </section>
-  );
-}
 
 // ─── Export ───────────────────────────────────────────────────────────────
 
@@ -581,7 +559,6 @@ export default function Entreprises() {
 
       {/* 3. Grâce à quoi et comment ça marche */}
       <HocoAppSection data={hocoAppByAudience.entreprises} variant="gray" compact />
-      <CtaMidPage />
 
       {/* 4. Réassurance — avis et témoignages */}
       <AvisClientsSection />

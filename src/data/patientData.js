@@ -80,6 +80,7 @@ export const etapes = {
         "Compte-rendu médical transmis à votre médecin traitant si vous le souhaitez",
         "En cas d'anomalie détectée, orientation immédiate vers un spécialiste",
       ],
+      cta: { label: "Voir mes résultats", href: "/se-connecter" },
       info: "Vos données sont protégées : hébergement certifié HDS, conformité RGPD.",
     },
   ],
@@ -218,7 +219,7 @@ export const faq = {
 export const ctaFinal = {
   h2: "Le bus passe bientôt près de chez vous.",
   subtitle:
-    "Prenez rendez-vous — ou, si vous êtes une organisation, parlons de votre programme santé.",
+    "Recherchez les prochains passages près de chez vous et réservez votre créneau en quelques clics.",
   ctaPrimary: "Voir le calendrier des passages",
   ctaOutline: "Parler à un expert",
 };

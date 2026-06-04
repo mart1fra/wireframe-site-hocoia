@@ -25,7 +25,7 @@ export const hero = {
   form: {
     title: "Étudier mon projet d'acquisition",
     subtitle:
-      "Un expert Hocoia étudie votre projet d'acquisition et vous rappelle sous 24h. Étude de faisabilité offerte.",
+      "Un expert Hocoia étudie votre projet d'acquisition. Étude de faisabilité offerte.",
     typeOptions: [
       "Hôpital public / CHU",
       "Clinique privée",
@@ -275,7 +275,7 @@ export const solutions = {
   ],
   surMesure: {
     title: "Un bus médical conçu pour votre établissement",
-    subtitle: "Sur mesure · Devis sous 48h · Sans engagement",
+    subtitle: "Sur mesure · Sans engagement",
     badge: "Sur mesure",
     description:
       "Votre établissement a des besoins spécifiques que nos modèles standards ne couvrent pas ? Hocoia conçoit l'unité mobile adaptée : équipements, aménagement intérieur, protocole et intégration HocoApp inclus.",
@@ -291,14 +291,14 @@ export const solutions = {
       title: "Notre engagement",
       promises: [
         { bold: "Étude de faisabilité offerte",    rest: " avec un expert Hocoia, sans engagement de votre part." },
-        { bold: "Devis ferme sous 48h",             rest: " après le cadrage initial, équipements et protocole inclus." },
+        { bold: "Devis ferme",                        rest: " après le cadrage initial, équipements et protocole inclus." },
         { bold: "Conception complète du bus,",      rest: " équipements médicaux et intégration HocoApp." },
         { bold: "Accompagnement du déploiement",    rest: " jusqu'à la première journée patient sur site." },
       ],
     },
     ctaPrimary: "Discuter mon projet sur mesure →",
     ctaOutline: "Voir la LP achat bus",
-    note: "Réponse sous 48h · Confidentiel",
+    note: "Confidentiel",
   },
 };
 
@@ -552,7 +552,7 @@ export const achatSurMesure = {
 export const ctaFinal = {
   h2: "Apportez la prévention directement à vos patients.",
   subtitle:
-    "Un expert Hocoia spécialisé établissements de santé vous rappelle sous 24h.",
+    "Un expert Hocoia spécialisé établissements de santé étudiera votre projet.",
   ctaPrimary: "Demander une présentation",
   ctaSecondary: "Télécharger la brochure",
   ctaTertiary: "Voir nos solutions →",

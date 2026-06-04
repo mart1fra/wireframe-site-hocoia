@@ -38,6 +38,7 @@ import Vision             from "./pages/a-propos/Vision";
 import Technologie        from "./pages/a-propos/Technologie";
 import Equipe             from "./pages/a-propos/Equipe";
 import Recrutement        from "./pages/a-propos/Recrutement";
+import Presse             from "./pages/Presse";
 
 function Wrap({ children }) {
   return <Layout>{children}</Layout>;
@@ -96,6 +97,9 @@ export default function App() {
       <Route path="/a-propos/technologie"  element={<Wrap><Technologie /></Wrap>} />
       <Route path="/a-propos/equipe"       element={<Wrap><Equipe /></Wrap>} />
       <Route path="/a-propos/recrutement"  element={<Wrap><Recrutement /></Wrap>} />
+
+      {/* Presse */}
+      <Route path="/presse" element={<Wrap><Presse /></Wrap>} />
     </Routes>
   );
 }

@@ -20,7 +20,7 @@ export const hero = {
   form: {
     title: "Étudier mon projet d'acquisition",
     subtitle:
-      "Un expert Hocoia étudie votre projet et vous rappelle sous 24h. Étude de faisabilité offerte.",
+      "Un expert Hocoia étudie votre projet. Étude de faisabilité offerte.",
     typeOptions: [
       "Établissement de santé / CHU",
       "Clinique privée",
@@ -287,7 +287,7 @@ export const faq = {
 export const ctaFinal = {
   h2: "Votre bus médical, conçu pour vous.",
   subtitle:
-    "Un expert Hocoia étudie votre projet d'acquisition et vous rappelle sous 24h. Étude de faisabilité offerte.",
+    "Un expert Hocoia étudie votre projet d'acquisition. Étude de faisabilité offerte.",
   ctaPrimary: "Étudier mon projet d'acquisition",
   ctaSecondary: "Télécharger la brochure acquisition",
 };

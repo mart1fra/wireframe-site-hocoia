@@ -18,6 +18,19 @@
   /* ── Border radius ── */
   --radius-card: 12px;
   --radius-btn: 24px;
+
+  /*
+   * ── Breakpoints (CLAUDE.md) ────────────────────────────────────────────
+   *
+   *  xs   = 480px  → mobile landscape  (480–767px)   — nouveau
+   *  sm   = 640px  → Tailwind default, conservé (flex-row, tailles typo)
+   *  md   = 768px  → tablet            (768–991px)   — Tailwind default ✓
+   *  lg   = 992px  → desktop           (992px+)      — override (défaut : 1024px)
+   *
+   *  Note : 1rem = 16px  →  480/16 = 30rem  |  992/16 = 62rem
+   */
+  --breakpoint-xs: 30rem;   /* 480px */
+  --breakpoint-lg: 62rem;   /* 992px — desktop CLAUDE.md (Tailwind défaut : 64rem/1024px) */
 }
 
 * {

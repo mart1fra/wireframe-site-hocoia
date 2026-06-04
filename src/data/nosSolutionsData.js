@@ -246,7 +246,7 @@ export const modelesEngagement = {
 export const cta = {
   h2: "Vous avez un projet de santé mobile ?",
   subtitle:
-    "Un expert Hocoia analyse vos besoins et vous oriente vers la solution adaptée. Sous 24h, sans engagement.",
+    "Un expert Hocoia analyse vos besoins et vous oriente vers la solution adaptée. Sans engagement.",
   ctaPrimary: "Demander un échange",
   ctaSecondary: "Voir nos cas clients →",
 };

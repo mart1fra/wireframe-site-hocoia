@@ -25,7 +25,7 @@ export const hero = {
   ctaOutline: "Télécharger le dossier ↓",
   form: {
     title: "Parler à un expert territorial",
-    subtitle: "Un expert Hocoia spécialisé secteur public vous rappelle sous 24h.",
+    subtitle: "Un expert Hocoia spécialisé secteur public étudiera votre projet.",
     roleOptions: [
       "Collectivité / Commune / CC",
       "Département / Région",
@@ -576,7 +576,7 @@ export const seoContent = {
 export const ctaFinal = {
   h2: "Renforcez la prévention santé dans votre territoire.",
   subtitle:
-    "Un expert Hocoia spécialisé secteur public vous rappelle sous 24h. Sans engagement, sans appel d'offres préalable.",
+    "Un expert Hocoia spécialisé secteur public étudiera votre projet. Sans engagement, sans appel d'offres préalable.",
   ctaPrimary: "Parler à un expert territorial",
   ctaSecondary: "Télécharger le dossier",
   ctaTertiary: "Voir nos cas clients",

@@ -150,7 +150,7 @@ export const megaMenus = {
             items: [
               { id: "temoignages", label: "Témoignages prestataires", subtext: "Ce que disent nos médecins",       href: "#temoignages" },
               { id: "faq-pro",     label: "FAQ candidats",            subtext: "Statut, rémunération, conditions", href: "#faq" },
-              { id: "candidature", label: "Déposer ma candidature",   subtext: "Réponse sous 48h",                 href: "#candidature" },
+              { id: "candidature", label: "Déposer ma candidature",   subtext: "Candidature en ligne",             href: "#candidature" },
             ],
           },
         ],

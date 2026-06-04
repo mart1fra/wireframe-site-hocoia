@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import FadeIn from "../ui/FadeIn";
 
 const listV = {
@@ -31,18 +32,30 @@ export default function HocoAppSection({ data, variant = "gray", compact = false
             </p>
           </FadeIn>
           <FadeIn delay={0.1} className="flex flex-wrap gap-3 shrink-0">
-            <button
-              type="button"
-              className="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150 cursor-pointer"
-            >
-              {data.ctaPrimary}
-            </button>
-            <button
-              type="button"
-              className="border border-gray-300 text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors duration-150 cursor-pointer"
-            >
-              {data.ctaOutline}
-            </button>
+            {data.ctaPrimaryHref ? (
+              <Link
+                to={data.ctaPrimaryHref}
+                className="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150"
+              >
+                {data.ctaPrimary}
+              </Link>
+            ) : (
+              <button type="button" className="bg-gray-900 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150 cursor-pointer">
+                {data.ctaPrimary}
+              </button>
+            )}
+            {data.ctaOutlineHref ? (
+              <Link
+                to={data.ctaOutlineHref}
+                className="border border-gray-300 text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors duration-150"
+              >
+                {data.ctaOutline}
+              </Link>
+            ) : (
+              <button type="button" className="border border-gray-300 text-gray-700 px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors duration-150 cursor-pointer">
+                {data.ctaOutline}
+              </button>
+            )}
           </FadeIn>
         </div>
       </section>
@@ -88,18 +101,30 @@ export default function HocoAppSection({ data, variant = "gray", compact = false
           </motion.div>
 
           <motion.div variants={itemV} className="flex flex-wrap gap-3">
-            <button
-              type="button"
-              className="bg-gray-900 text-white px-7 py-3.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150 cursor-pointer"
-            >
-              {data.ctaPrimary}
-            </button>
-            <button
-              type="button"
-              className="border border-gray-300 text-gray-700 px-7 py-3.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors duration-150 cursor-pointer"
-            >
-              {data.ctaOutline}
-            </button>
+            {data.ctaPrimaryHref ? (
+              <Link
+                to={data.ctaPrimaryHref}
+                className="bg-gray-900 text-white px-7 py-3.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150"
+              >
+                {data.ctaPrimary}
+              </Link>
+            ) : (
+              <button type="button" className="bg-gray-900 text-white px-7 py-3.5 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors duration-150 cursor-pointer">
+                {data.ctaPrimary}
+              </button>
+            )}
+            {data.ctaOutlineHref ? (
+              <Link
+                to={data.ctaOutlineHref}
+                className="border border-gray-300 text-gray-700 px-7 py-3.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors duration-150"
+              >
+                {data.ctaOutline}
+              </Link>
+            ) : (
+              <button type="button" className="border border-gray-300 text-gray-700 px-7 py-3.5 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors duration-150 cursor-pointer">
+                {data.ctaOutline}
+              </button>
+            )}
           </motion.div>
         </motion.div>
 

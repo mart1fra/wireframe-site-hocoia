@@ -14,9 +14,9 @@ export const hero = {
   ctaGhost: "Télécharger le dossier",
   form: {
     title: "Parlons de votre projet",
-    subtitle: "Un expert vous répond sous 24h.",
+    subtitle: "Un expert étudiera votre projet.",
     cta: "Demander un rendez-vous →",
-    note: "Sans engagement · Réponse sous 24h · RGPD",
+    note: "Sans engagement · RGPD",
     roleOptions: [
       "Entreprise / DRH",
       "Assureur / Mutuelle",
@@ -441,7 +441,7 @@ export const seoContent = {
 
 export const ctaFinal = {
   h2: "Prêt à déployer Hocoia dans votre structure ?",
-  subtitle: "Un expert vous rappelle sous 24h. Sans engagement.",
+  subtitle: "Un expert étudiera votre projet. Sans engagement.",
   ctaPrimary: "Demander un rendez-vous",
   ctaSecondary: "Télécharger le dossier complet",
 };

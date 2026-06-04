@@ -14,7 +14,7 @@ const SHARED_OPTIONS = [
 
 const SHARED_COMMITMENTS = [
   { bold: "Étude de faisabilité offerte",    rest: " avec un expert Hocoia, sans engagement de votre part." },
-  { bold: "Devis ferme sous 48h",            rest: " après le cadrage initial, équipements et protocole inclus." },
+  { bold: "Devis ferme",                      rest: " après le cadrage initial, équipements et protocole inclus." },
   { bold: "Conception complète du bus,",     rest: " équipements médicaux et intégration HocoApp." },
   { bold: "Accompagnement du déploiement",   rest: " jusqu'à la première journée patient sur site." },
 ];
@@ -24,7 +24,7 @@ const SHARED_BUTTONS = [
   { label: "Nous contacter",                   primary: false },
 ];
 
-const SHARED_NOTE = "Réponse sous 48h · Confidentiel";
+const SHARED_NOTE = "Confidentiel";
 
 // ─── Composant ────────────────────────────────────────────────────────────
 
@@ -49,7 +49,7 @@ export default function CustomBusBlock({
                 {title}
               </h3>
               <p className="text-xs text-gray-500 mt-0.5">
-                Sur mesure · Devis sous 48h · Sans engagement
+                Sur mesure · Sans engagement
               </p>
             </div>
           </div>

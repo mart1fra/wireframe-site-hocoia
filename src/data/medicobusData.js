@@ -19,7 +19,7 @@ export const hero = {
   ctaOutline: "Voir les spécialités ↓",
   form: {
     title: "Demander une présentation",
-    subtitle: "Collectivité, entreprise, hôpital — réponse sous 24h.",
+    subtitle: "Collectivité, entreprise, hôpital — sans engagement.",
     vousEtesOptions: [
       "Vous êtes",
       "Collectivité / Territoire",
@@ -518,7 +518,7 @@ export const faq = {
       id: "q6",
       question: "Comment déployer un MédicoBus dans ma commune ?",
       answer:
-        "Contactez-nous via le formulaire en haut de page. Un expert vous rappelle sous 24h. Le déploiement se fait en moins de 3 semaines après validation.",
+        "Contactez-nous via le formulaire en haut de page. Le déploiement se fait en moins de 3 semaines après validation.",
     },
   ],
 };
@@ -566,7 +566,7 @@ export const customBus = {
 export const ctaFinal = {
   h2: "Déployez un MédicoBus dans votre territoire.",
   subtitle:
-    "Un expert vous présente la solution adaptée sous 24h. Ou prenez rendez-vous si vous êtes un patient.",
+    "Un expert vous présente la solution adaptée. Ou prenez rendez-vous si vous êtes un patient.",
   ctaPrimary: "Demander une présentation",
   ctaOutline: "Prendre RDV patient →",
   ctaGhost: "Télécharger la brochure",

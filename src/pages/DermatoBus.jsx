@@ -696,7 +696,7 @@ function DemandePresentationSection() {
             Un expert Hocoia vous présente le DermatoBus, répond à vos questions et vous aide à dimensionner votre projet pilote.
           </p>
           <ul className="space-y-3">
-            {["Réponse sous 24h", "Sans engagement", "Confidentiel — RGPD"].map((b) => (
+            {["Sans engagement", "Confidentiel — RGPD"].map((b) => (
               <li key={b} className="flex items-center gap-3 text-gray-700 text-sm">
                 <span className="text-gray-400 shrink-0">✓</span>
                 {b}

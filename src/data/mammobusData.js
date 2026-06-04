@@ -536,7 +536,7 @@ export const customBus = {
 
 export const ctaFinal = {
   h2: "Organisez un dépistage ou acquérez votre MammoBus.",
-  subtitle: "Un expert Hocoia vous répond sous 24h — sans engagement.",
+  subtitle: "Un expert Hocoia étudiera votre projet — sans engagement.",
   ctaPrimary: "Organiser un dépistage",
   ctaOutline: "Acquérir un bus →",
   ctaGhost: "Télécharger la brochure",
