@@ -39,6 +39,7 @@ import Technologie        from "./pages/a-propos/Technologie";
 import Equipe             from "./pages/a-propos/Equipe";
 import Recrutement        from "./pages/a-propos/Recrutement";
 import Presse             from "./pages/Presse";
+import Contact            from "./pages/Contact";
 
 function Wrap({ children }) {
   return <Layout>{children}</Layout>;
@@ -100,6 +101,9 @@ export default function App() {
 
       {/* Presse */}
       <Route path="/presse" element={<Wrap><Presse /></Wrap>} />
+
+      {/* Contact */}
+      <Route path="/contact" element={<Wrap><Contact /></Wrap>} />
     </Routes>
   );
 }
