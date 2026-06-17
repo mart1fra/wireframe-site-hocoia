@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit contenu wireframe Hocoia — Juin 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black: #1a1a1a; --gray-7: #4a4a4a; --gray-5: #6b6b6b;
+      --gray-3: #d4d4d4; --gray-1: #f4f4f4; --white: #ffffff;
+      --accent: #00666F; --orange: #F18500;
+      --green-bg: #dcf5ec; --green-fg: #14532d;
+      --yellow-bg: #fef9ec; --yellow-fg: #78350f;
+      --red-bg: #fef2f2; --red-fg: #991b1b;
+    }
+    html { font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--black); background: var(--white); line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    body { max-width: 880px; margin: 0 auto; padding: 48px 40px 100px; }
+
+    /* Print bar */
+    .print-bar { position: sticky; top: 0; z-index: 100; background: var(--white); border-bottom: 1px solid var(--gray-3); padding: 10px 0; display: flex; align-items: center; justify-content: space-between; margin-bottom: 52px; }
+    .print-bar span { font-size: 12px; color: var(--gray-5); }
+    .btn-print { background: var(--black); color: var(--white); border: none; border-radius: 99px; padding: 9px 20px; font-size: 13px; font-weight: 600; font-family: 'DM Sans', sans-serif; cursor: pointer; }
+    .btn-print:hover { background: #333; }
+
+    /* Cover */
+    .cover { padding-bottom: 44px; margin-bottom: 52px; border-bottom: 2px solid var(--black); }
+    .eyebrow-cover { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); margin-bottom: 14px; }
+    h1 { font-family: 'Sora', sans-serif; font-size: 34px; font-weight: 800; line-height: 1.1; margin-bottom: 16px; }
+    .cover-sub { font-size: 15px; color: var(--gray-5); max-width: 560px; line-height: 1.7; margin-bottom: 20px; }
+    .cover-meta { display: flex; gap: 28px; flex-wrap: wrap; }
+    .meta-item { font-size: 13px; color: var(--gray-5); }
+    .meta-item strong { color: var(--black); font-weight: 600; }
+
+    /* Intro box */
+    .intro-box { background: var(--gray-1); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 20px 24px; margin-bottom: 56px; }
+    .intro-box p { font-size: 14px; color: var(--gray-7); line-height: 1.75; }
+    .intro-box p + p { margin-top: 10px; }
+    .intro-box strong { color: var(--black); }
+
+    /* Sections */
+    section { margin-bottom: 60px; }
+    h2 { font-family: 'Sora', sans-serif; font-size: 19px; font-weight: 700; color: var(--black); padding-bottom: 10px; border-bottom: 1px solid var(--gray-3); margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+    .num { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: var(--black); color: var(--white); font-size: 12px; font-weight: 700; flex-shrink: 0; }
+    h3 { font-family: 'Sora', sans-serif; font-size: 15px; font-weight: 700; color: var(--black); margin: 32px 0 10px; }
+    p { font-size: 14px; color: var(--gray-7); line-height: 1.75; margin-bottom: 10px; }
+    ul { padding-left: 18px; margin-bottom: 14px; }
+    li { font-size: 14px; color: var(--gray-7); line-height: 1.7; margin-bottom: 5px; }
+    li strong { color: var(--black); font-weight: 600; }
+    code { font-family: 'Courier New', monospace; font-size: 12px; background: var(--gray-1); padding: 1px 6px; border-radius: 4px; color: #b91c1c; }
+
+    /* Page cards */
+    .page-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 8px; }
+    .page-card { border: 1px solid var(--gray-3); border-radius: 12px; padding: 18px 20px; }
+    .page-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+    .page-name { font-family: 'Sora', sans-serif; font-weight: 700; font-size: 14px; color: var(--black); }
+    .page-route { font-size: 11px; color: var(--gray-5); font-family: 'Courier New', monospace; }
+    .pill { display: inline-block; font-size: 11px; font-weight: 600; padding: 2px 9px; border-radius: 99px; white-space: nowrap; }
+    .pill-ok   { background: var(--green-bg); color: var(--green-fg); }
+    .pill-warn { background: var(--yellow-bg); color: var(--yellow-fg); }
+    .pill-miss { background: var(--red-bg); color: var(--red-fg); }
+    .page-ok   { list-style: none; padding: 0; }
+    .page-ok li { font-size: 13px; color: var(--gray-7); line-height: 1.6; padding: 3px 0; padding-left: 16px; position: relative; }
+    .page-ok li::before { content: '✓'; position: absolute; left: 0; color: #16a34a; font-size: 11px; top: 4px; }
+    .page-miss { list-style: none; padding: 0; }
+    .page-miss li { font-size: 13px; color: var(--gray-7); line-height: 1.6; padding: 3px 0; padding-left: 16px; position: relative; }
+    .page-miss li::before { content: '→'; position: absolute; left: 0; color: var(--orange); font-size: 11px; top: 4px; }
+    .section-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--gray-5); margin-bottom: 6px; margin-top: 12px; }
+
+    /* Alert */
+    .alert { border-radius: 8px; padding: 14px 18px; margin-bottom: 14px; font-size: 13px; line-height: 1.65; }
+    .alert-green  { background: var(--green-bg); border-left: 3px solid #16a34a; color: var(--green-fg); }
+    .alert-yellow { background: var(--yellow-bg); border-left: 3px solid var(--orange); color: var(--yellow-fg); }
+    .alert-red    { background: var(--red-bg); border-left: 3px solid #dc2626; color: var(--red-fg); }
+    .alert strong { font-weight: 700; }
+
+    /* Score */
+    .score-row { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 20px; }
+    .score-item { display: flex; flex-direction: column; align-items: center; background: var(--gray-1); border-radius: 10px; padding: 14px 20px; min-width: 100px; }
+    .score-val { font-family: 'Sora', sans-serif; font-size: 28px; font-weight: 800; color: var(--black); line-height: 1; }
+    .score-lbl { font-size: 11px; color: var(--gray-5); margin-top: 4px; text-align: center; }
+
+    /* Checklist */
+    .check-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 20px; }
+    .check-table th { text-align: left; padding: 7px 12px; font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--gray-5); border-bottom: 1px solid var(--gray-3); }
+    .check-table td { padding: 9px 12px; border-bottom: 1px solid var(--gray-1); vertical-align: top; }
+    .check-table tr:last-child td { border-bottom: none; }
+    .check-table td:first-child { font-weight: 600; color: var(--black); width: 200px; }
+
+    /* Priority items */
+    .prio { border-radius: 10px; padding: 16px 20px; margin-bottom: 12px; }
+    .prio-1 { border-left: 4px solid #dc2626; background: var(--red-bg); }
+    .prio-2 { border-left: 4px solid var(--orange); background: var(--yellow-bg); }
+    .prio-3 { border-left: 4px solid #2563eb; background: #eff6ff; }
+    .prio h4 { font-family: 'Sora', sans-serif; font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+    .prio-1 h4 { color: #991b1b; }
+    .prio-2 h4 { color: #78350f; }
+    .prio-3 h4 { color: #1e40af; }
+    .prio p { font-size: 13px; margin: 0; color: var(--gray-7); }
+
+    /* Doc footer */
+    .doc-footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--gray-3); display: flex; justify-content: space-between; }
+    .doc-footer p { font-size: 12px; color: var(--gray-5); margin: 0; }
+
+    @media print {
+      .print-bar { display: none !important; }
+      body { padding: 20px; font-size: 13px; }
+      h1 { font-size: 26px; }
+      h2 { font-size: 16px; }
+      .page-grid { grid-template-columns: 1fr 1fr; }
+      section { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="print-bar">
+    <span>Audit contenu wireframe Hocoia · Juin 2026</span>
+    <button class="btn-print" onclick="window.print()">Imprimer / Enregistrer en PDF</button>
+  </div>
+
+  <!-- Cover -->
+  <div class="cover">
+    <p class="eyebrow-cover">Wireframe interactif — Document de travail interne</p>
+    <h1>Audit contenu &amp; compréhension</h1>
+    <p class="cover-sub">Ce document évalue si l'information présente dans le wireframe est complète, compréhensible et suffisante pour valider les parcours utilisateurs avant développement sur Webflow.</p>
+    <div class="cover-meta">
+      <div class="meta-item"><strong>Date</strong> · 08 juin 2026</div>
+      <div class="meta-item"><strong>Profils évalués</strong> · Patient · Décideur BtoB · Professionnel de santé</div>
+      <div class="meta-item"><strong>Pages auditées</strong> · 28 pages</div>
+    </div>
+  </div>
+
+  <!-- Intro -->
+  <div class="intro-box">
+    <p><strong>Cadre de l'audit :</strong> ce wireframe est un outil de projection pour valider l'architecture de l'information avant le développement Webflow. On ne s'intéresse pas aux liens fonctionnels, au responsive ou aux formulaires — uniquement à la question : <strong>est-ce qu'on comprend ce que propose Hocoia, et est-ce que les bonnes informations sont au bon endroit pour chaque profil ?</strong></p>
+    <p>Chaque page est évaluée selon trois critères : <strong>ce qui est clair</strong>, <strong>ce qui manque</strong>, et <strong>ce qui reste trop vague</strong> pour être utile en développement.</p>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">1</span>Home — Page d'accueil</h2>
+
+    <p>La Home est la page la plus stratégique : elle doit orienter trois profils très différents dès les premières secondes.</p>
+
+    <div class="alert alert-yellow">
+      <strong>Problème principal :</strong> la Home ne propose pas d'orientation par profil explicite. L'arborescence prévoit un sélecteur "Vous êtes…" dès l'entrée. Sans lui, un élu ou un médecin qui arrive sur la Home ne sait pas immédiatement que le site lui parle aussi. La section B2B (Use Cases) existe mais arrive trop bas dans le scroll.
+    </div>
+
+    <div class="check-table" style="margin-top:16px;">
+      <table class="check-table">
+        <thead><tr><th>Élément</th><th>Présent ?</th><th>Remarque</th></tr></thead>
+        <tbody>
+          <tr><td>Qu'est-ce qu'Hocoia ?</td><td><span class="pill pill-ok">Oui</span></td><td>Section Identité bien rédigée, valeurs claires</td></tr>
+          <tr><td>Pour qui ?</td><td><span class="pill pill-warn">Partiel</span></td><td>Le H1 est générique. On découvre les profils seulement en scrollant</td></tr>
+          <tr><td>Ce que ça fait concrètement</td><td><span class="pill pill-ok">Oui</span></td><td>Section Spécialités avec chips : check-up, cardio, dermato, sein</td></tr>
+          <tr><td>Preuves / réassurance</td><td><span class="pill pill-ok">Oui</span></td><td>Stats, témoignages, logos partenaires</td></tr>
+          <tr><td>Entrée patient claire</td><td><span class="pill pill-warn">Partiel</span></td><td>La barre de recherche + "Voir le calendrier" oriente le patient, mais c'est discret</td></tr>
+          <tr><td>Entrée BtoB claire</td><td><span class="pill pill-warn">Partiel</span></td><td>Section Use Cases avec onglets (Entreprises / Collectivités / Mutuelles) — mais accessible qu'après scroll</td></tr>
+          <tr><td>Entrée Pro Santé</td><td><span class="pill pill-miss">Absent</span></td><td>Aucune section ni accroche pour les soignants sur la Home</td></tr>
+          <tr><td>Différenciation concurrentielle</td><td><span class="pill pill-warn">Partiel</span></td><td>Les stats sont là mais on n'explique pas en quoi Hocoia est différent d'une autre solution de prévention</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Ce qu'il faut ajouter :</strong> une section courte de sélection de profil ("Je suis…") avec 3 entrées claires — Organisations, Soignants, Patients — idéalement juste après le hero. Sans ça, le médecin et l'élu qui arrivent sur la Home ne se sentent pas concernés.</p>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">2</span>Parcours patient (B2C)</h2>
+
+    <h3>Page /patient</h3>
+    <div class="alert alert-green">
+      <strong>Point fort :</strong> la page Patient est l'une des plus complètes. Le déroulement en 3 étapes est clair, les spécialités sont expliquées, la FAQ répond aux vraies questions.
+    </div>
+
+    <table class="check-table">
+      <thead><tr><th>Élément</th><th>Présent ?</th><th>Remarque</th></tr></thead>
+      <tbody>
+        <tr><td>Trouver un bus près de chez moi</td><td><span class="pill pill-ok">Oui</span></td><td>Barre de recherche + résultats fictifs + lien vers le Calendrier</td></tr>
+        <tr><td>Comment ça se passe à bord</td><td><span class="pill pill-ok">Oui</span></td><td>Section "Comment ça marche" en 3 étapes détaillées</td></tr>
+        <tr><td>Quelles spécialités disponibles</td><td><span class="pill pill-ok">Oui</span></td><td>5 spécialités avec durée et lien vers page dédiée</td></tr>
+        <tr><td>Est-ce remboursé ?</td><td><span class="pill pill-miss">Absent</span></td><td>Information cruciale pour le patient. La FAQ ne mentionne pas le remboursement Sécu / mutuelle</td></tr>
+        <tr><td>Dois-je avoir une ordonnance ?</td><td><span class="pill pill-warn">Flou</span></td><td>Mentionné de façon vague dans les étapes mais pas de réponse directe et claire</td></tr>
+        <tr><td>Que se passe-t-il après la visite ?</td><td><span class="pill pill-warn">Partiel</span></td><td>Délai "résultats sous 48h" présent, mais on ne dit pas comment on les reçoit ni qui les interprète</td></tr>
+        <tr><td>Et si je vis loin d'une ville desservie ?</td><td><span class="pill pill-miss">Absent</span></td><td>Question fréquente des zones rurales. La FAQ ne l'aborde pas</td></tr>
+        <tr><td>Témoignages patients</td><td><span class="pill pill-ok">Oui</span></td><td>3 témoignages avec lieu et prénom — crédibles et chaleureux</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Page /calendrier</h3>
+    <p>Page fonctionnelle et claire. Les filtres (région, spécialité, bus, période) sont bien pensés. Les résultats affichent date, lieu, horaires et places restantes.</p>
+    <p><strong>Ce qui manque :</strong> quand un créneau est complet, il n'y a pas d'alternative proposée (alerte de passage, demande d'extension de la tournée). Le patient se retrouve dans une impasse.</p>
+
+    <h3>Pages expertises (/solutions/…)</h3>
+    <p>Les 5 pages (Cardio, Dermato, Sein, Check-up, Santé femme) ont une structure cohérente via le composant ExpertisePage : pourquoi dépister, ce qu'Hocoia fait, protocole, bénéfices, FAQ. Contenu sérieux et pédagogique.</p>
+    <p><strong>Manque sur toutes :</strong> un lien vers le calendrier des passages correspondant à cette spécialité. Un patient qui lit la page Cardio devrait pouvoir trouver directement les prochains créneaux de cardio près de chez lui.</p>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">3</span>Parcours décideur BtoB</h2>
+
+    <h3>Page /entreprises</h3>
+    <div class="alert alert-green">
+      <strong>Point fort :</strong> page très complète. Use cases avec cas client, "Comment ça marche" en 3 onglets (méthode / parcours collaborateur / HocoApp), ressources, FAQ, CTA. Un DRH comprend rapidement ce qu'Hocoia apporte.
+    </div>
+
+    <table class="check-table">
+      <thead><tr><th>Élément</th><th>Présent ?</th><th>Remarque</th></tr></thead>
+      <tbody>
+        <tr><td>Le problème qu'on résout</td><td><span class="pill pill-ok">Oui</span></td><td>Absentéisme, prévention santé au travail — bien posé</td></tr>
+        <tr><td>Ce qu'Hocoia fait concrètement</td><td><span class="pill pill-ok">Oui</span></td><td>Dépistage sur site, résultats anonymisés, bilan collectif</td></tr>
+        <tr><td>Combien ça coûte</td><td><span class="pill pill-miss">Absent</span></td><td>Aucune fourchette de prix ni mention de modèle tarifaire. Un DRH a besoin de ça avant de remplir un formulaire</td></tr>
+        <tr><td>Quelle est la taille minimale d'entreprise ?</td><td><span class="pill pill-miss">Absent</span></td><td>On ne sait pas si ça s'adresse à 50 salariés ou 5 000</td></tr>
+        <tr><td>Délai de mise en place</td><td><span class="pill pill-ok">Oui</span></td><td>Processus en 4 étapes avec délais indiqués</td></tr>
+        <tr><td>Preuves d'impact (ROI)</td><td><span class="pill pill-ok">Oui</span></td><td>Stats + cas client + témoignages DRH</td></tr>
+        <tr><td>Qu'est-ce que HocoApp apporte au DRH</td><td><span class="pill pill-ok">Oui</span></td><td>Dashboard, anonymisation, rapports — bien expliqué</td></tr>
+        <tr><td>Conformité RGPD des données santé</td><td><span class="pill pill-miss">Absent</span></td><td>Question bloquante pour beaucoup de DRH. Non abordée</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Page /acteurs-publics</h3>
+    <p>Très complète : aucune charge pour la collectivité, options de financement public, achat sur mesure, témoignages d'élus. Le contenu est bien adapté au décideur territorial.</p>
+    <p><strong>Ce qui manque :</strong> une réponse claire à "est-ce que c'est compatible avec le RGPD et les règles de la commande publique ?". Question fréquente des acheteurs publics.</p>
+
+    <h3>Page /collectivites</h3>
+    <div class="alert alert-yellow">
+      <strong>Attention :</strong> cette page affiche exactement le même contenu que /acteurs-publics. Si le wireframe doit distinguer les deux profils (commune vs. intercommunalité/région vs. acteur public large), le contenu est à différencier. Si /collectivites est un alias volontaire de /acteurs-publics, c'est à documenter.
+    </div>
+
+    <h3>Page /etablissements-sante</h3>
+    <p>Contenu adapté aux hôpitaux et cliniques : externalisation du dépistage, coordination avec les médecins de l'établissement, HocoApp pour les dossiers. Bien structuré.</p>
+    <p><strong>Ce qui manque :</strong> la question de l'accréditation et de la responsabilité médicale (qui est médecin responsable à bord ?) n'est pas abordée — question clé pour un directeur médical.</p>
+
+    <h3>Pages /ressources/…</h3>
+    <div class="alert alert-yellow">
+      <strong>Contenu insuffisant pour valider :</strong> les pages Articles, Livres blancs, Vidéos, Podcast et Cas clients sont des grilles de cartes sans description de contenu. On voit des titres fictifs mais pas ce que contiendrait réellement chaque ressource. Pour décider si cette section est utile, il faudrait au moins 2–3 exemples de vrais titres et résumés par type.
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">4</span>Parcours professionnel de santé</h2>
+
+    <h3>Page /pro-sante</h3>
+
+    <table class="check-table">
+      <thead><tr><th>Élément</th><th>Présent ?</th><th>Remarque</th></tr></thead>
+      <tbody>
+        <tr><td>En quoi consiste une mission</td><td><span class="pill pill-ok">Oui</span></td><td>Section "Rôle & missions" claire avec 3 types d'activités</td></tr>
+        <tr><td>Quels profils sont recherchés</td><td><span class="pill pill-ok">Oui</span></td><td>5 spécialités avec bouton "Postuler" par profil</td></tr>
+        <tr><td>Quelle est la rémunération</td><td><span class="pill pill-miss">Absent</span></td><td>Information clé pour attirer des soignants. Complètement absent. Au minimum "rémunération compétitive" ou une fourchette indicative</td></tr>
+        <tr><td>Comment s'organiser (temps partiel, ponctuel ?)</td><td><span class="pill pill-warn">Flou</span></td><td>La section processus mentionne "disponibilités" mais pas si c'est compatible avec une activité libérale déjà existante</td></tr>
+        <tr><td>Quelle assurance professionnelle ?</td><td><span class="pill pill-miss">Absent</span></td><td>Question bloquante pour tout médecin libéral. Qui est responsable en cas d'incident à bord ?</td></tr>
+        <tr><td>Quel matériel à bord</td><td><span class="pill pill-warn">Partiel</span></td><td>Mentionné vaguement dans les avantages, mais pas de liste ou description précise</td></tr>
+        <tr><td>Témoignages de soignants</td><td><span class="pill pill-ok">Oui</span></td><td>3 témoignages avec spécialité et initiales — ton authentique</td></tr>
+        <tr><td>Combien de missions par mois ?</td><td><span class="pill pill-miss">Absent</span></td><td>On ne sait pas si c'est 1 jour/mois ou 4 jours/semaine</td></tr>
+      </tbody>
+    </table>
+
+    <div class="alert alert-red">
+      <strong>Lacune critique :</strong> la rémunération est absente. Un médecin ne postulera pas à quelque chose sans au moins une indication. Même "rémunération définie selon la spécialité et la disponibilité" serait mieux que rien. C'est le premier frein à la conversion sur cette page.
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">5</span>Pages produits et solutions</h2>
+
+    <div class="page-grid">
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">MédicoBus</span>
+          <span class="pill pill-ok">Très complet</span>
+        </div>
+        <span class="page-route">/produits/medicobus</span>
+        <div class="section-label" style="margin-top:12px;">Points forts</div>
+        <ul class="page-ok">
+          <li>Concept expliqué clairement</li>
+          <li>Spécialités disponibles listées</li>
+          <li>Modèles d'engagement (achat/location)</li>
+          <li>Bus personnalisable décrit</li>
+        </ul>
+        <div class="section-label">Manque</div>
+        <ul class="page-miss">
+          <li>Aucune photo ou image de référence (placeholder vide)</li>
+          <li>Capacité d'accueil (patients/jour) non mentionnée</li>
+        </ul>
+      </div>
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">MammoBus / DermatoBus</span>
+          <span class="pill pill-ok">Complet</span>
+        </div>
+        <span class="page-route">/mammobus · /dermatobus</span>
+        <div class="section-label" style="margin-top:12px;">Points forts</div>
+        <ul class="page-ok">
+          <li>Spécialisation claire</li>
+          <li>Protocole de dépistage expliqué</li>
+        </ul>
+        <div class="section-label">Manque</div>
+        <ul class="page-miss">
+          <li>Différence avec le MédicoBus non expliquée</li>
+          <li>Quand choisir l'un plutôt que l'autre ?</li>
+        </ul>
+      </div>
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">Acquérir un bus</span>
+          <span class="pill pill-ok">Complet</span>
+        </div>
+        <span class="page-route">/acquerir-un-bus</span>
+        <div class="section-label" style="margin-top:12px;">Points forts</div>
+        <ul class="page-ok">
+          <li>Processus d'acquisition en étapes claires</li>
+          <li>Cas client Verdun très concret</li>
+          <li>Options de financement listées</li>
+        </ul>
+        <div class="section-label">Manque</div>
+        <ul class="page-miss">
+          <li>Fourchette de prix d'un bus (même indicative)</li>
+          <li>Délai de livraison/personnalisation</li>
+        </ul>
+      </div>
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">Nos Solutions</span>
+          <span class="pill pill-ok">Complet</span>
+        </div>
+        <span class="page-route">/nos-solutions</span>
+        <div class="section-label" style="margin-top:12px;">Points forts</div>
+        <ul class="page-ok">
+          <li>Tableau comparatif MédicoBus / MammoBus / DermatoBus</li>
+          <li>Cas d'usage par profil</li>
+          <li>Modèles d'engagement (achat, location, partenariat)</li>
+        </ul>
+        <div class="section-label">Manque</div>
+        <ul class="page-miss">
+          <li>Lien vers CentreSante non expliqué dans le hub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">6</span>Pages institutionnelles et transversales</h2>
+
+    <div class="page-grid">
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">Vision</span>
+          <span class="pill pill-ok">Complet</span>
+        </div>
+        <span class="page-route">/a-propos/vision</span>
+        <div class="section-label" style="margin-top:12px;">Points forts</div>
+        <ul class="page-ok">
+          <li>4 valeurs rédigées avec conviction</li>
+          <li>Ton aligné avec la plateforme de marque</li>
+          <li>Références presse présentes</li>
+        </ul>
+        <div class="section-label">Manque</div>
+        <ul class="page-miss">
+          <li>L'histoire de la fondation d'Hocoia (pourquoi et par qui ?)</li>
+          <li>Date de création, stade de développement</li>
+        </ul>
+      </div>
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">FAQ globale</span>
+          <span class="pill pill-ok">Complète</span>
+        </div>
+        <span class="page-route">/faq</span>
+        <div class="section-label" style="margin-top:12px;">Points forts</div>
+        <ul class="page-ok">
+          <li>Filtres par profil (patient / orga / soignant)</li>
+          <li>Sidebar de navigation par catégorie</li>
+          <li>Questions réalistes et bien rédigées</li>
+        </ul>
+        <div class="section-label">Manque</div>
+        <ul class="page-miss">
+          <li>Remboursement / prise en charge côté patient</li>
+          <li>RGPD / données santé côté BtoB</li>
+        </ul>
+      </div>
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">Presse</span>
+          <span class="pill pill-ok">Complète</span>
+        </div>
+        <span class="page-route">/presse</span>
+        <div class="section-label" style="margin-top:12px;">Points forts</div>
+        <ul class="page-ok">
+          <li>Kit média, communiqués, contact presse</li>
+          <li>Fiche identité et chiffres de contexte</li>
+        </ul>
+        <div class="section-label">Manque</div>
+        <ul class="page-miss">
+          <li>Logo téléchargeable (placeholder présent mais vide)</li>
+        </ul>
+      </div>
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">Contact</span>
+          <span class="pill pill-ok">Complète</span>
+        </div>
+        <span class="page-route">/contact</span>
+        <div class="section-label" style="margin-top:12px;">Points forts</div>
+        <ul class="page-ok">
+          <li>Formulaire avec motifs distincts (RDV, alerte, déploiement, soignant)</li>
+          <li>Messages de confirmation adaptés au motif</li>
+          <li>Section BtoB avec 3 entrées claires</li>
+        </ul>
+        <div class="section-label">Manque</div>
+        <ul class="page-miss">
+          <li>Numéro de téléphone ou email direct visible (sans remplir le formulaire)</li>
+          <li>Délai de réponse affiché</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-grid" style="margin-top:16px;">
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">Se connecter</span>
+          <span class="pill pill-ok">Complet</span>
+        </div>
+        <span class="page-route">/se-connecter</span>
+        <p style="font-size:13px; color: var(--gray-5); margin-top:10px;">Sélecteur d'espace (patient / pro / organisation). Clair et suffisant pour le wireframe.</p>
+      </div>
+
+      <div class="page-card">
+        <div class="page-card-header">
+          <span class="page-name">Ressources</span>
+          <span class="pill pill-warn">À compléter</span>
+        </div>
+        <span class="page-route">/ressources/…</span>
+        <div class="section-label" style="margin-top:12px;">Manque</div>
+        <ul class="page-miss">
+          <li>Aucun titre réel d'article / livre blanc / vidéo</li>
+          <li>Impossible de valider si la catégorisation est la bonne</li>
+          <li>Mettre au moins 3 exemples de vrais titres par catégorie</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">7</span>Ce qui est globalement clair — et ce qui ne l'est pas</h2>
+
+    <h3>Ce qu'on comprend bien dans le wireframe</h3>
+    <ul>
+      <li><strong>Ce qu'est Hocoia :</strong> des bus médicaux connectés qui se déplacent partout en France pour faire des dépistages. Le concept est immédiatement saisi.</li>
+      <li><strong>Le parcours patient :</strong> chercher un bus → réserver → venir → recevoir les résultats. Les 3 étapes sont bien expliquées.</li>
+      <li><strong>La proposition BtoB pour les entreprises :</strong> dépistage clé en main sur site, sans mobilisation interne, résultats anonymisés. Clair.</li>
+      <li><strong>La logique d'achat / location / partenariat :</strong> le tableau comparatif de /nos-solutions est un vrai atout pédagogique.</li>
+      <li><strong>HocoApp :</strong> l'application de suivi est expliquée pour chaque profil (patient, entreprise, collectivité, soignant). Bien fait.</li>
+    </ul>
+
+    <h3>Ce qui reste flou ou incomplet</h3>
+    <ul>
+      <li><strong>La question du remboursement patient</strong> n'est jamais tranchée. C'est la première question d'un patient. On doit y répondre clairement.</li>
+      <li><strong>La rémunération des soignants</strong> est absente. Aucun médecin ne postulera sans au moins une indication.</li>
+      <li><strong>Le RGPD et la conformité des données de santé</strong> ne sont abordés ni pour les entreprises, ni pour les collectivités, ni pour les établissements de santé. C'est un frein fort pour tous les décideurs BtoB.</li>
+      <li><strong>Qui est Hocoia ?</strong> L'histoire de la fondation, les fondateurs, le stade de développement — absents. Un élu ou un DRH veut savoir à qui il confie des données de santé de ses administrés.</li>
+      <li><strong>Les pages Ressources</strong> n'ont aucun contenu réel. On ne peut pas valider leur utilité sans au moins quelques exemples concrets.</li>
+      <li><strong>La différence entre MédicoBus, MammoBus et DermatoBus</strong> n'est pas expliquée dans un endroit unique. Un visiteur qui découvre les produits doit naviguer entre plusieurs pages pour comprendre.</li>
+    </ul>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">8</span>Priorités avant développement Webflow</h2>
+
+    <p style="margin-bottom:20px;">Ce sont les points à régler dans le wireframe <em>avant</em> de passer en développement, car ils impactent directement la structure de l'information et le contenu à rédiger.</p>
+
+    <div class="prio prio-1">
+      <h4>Ajouter la réponse sur le remboursement patient</h4>
+      <p>Sur /patient et dans la FAQ : est-ce remboursé par la Sécu ? par la mutuelle ? gratuit dans certains cas ? C'est la question n°1 avant toute prise de RDV.</p>
+    </div>
+
+    <div class="prio prio-1">
+      <h4>Ajouter une indication sur la rémunération des soignants</h4>
+      <p>Sur /pro-sante : même une phrase générique suffit pour lever le frein principal à la candidature.</p>
+    </div>
+
+    <div class="prio prio-1">
+      <h4>Ajouter un sélecteur de profil sur la Home</h4>
+      <p>Une section courte "Vous êtes…" avec 3 entrées (Organisations / Soignants / Patients). Sans elle, les profils non-patients ne se sentent pas concernés dès l'arrivée.</p>
+    </div>
+
+    <div class="prio prio-1">
+      <h4>Aborder le RGPD et la conformité données santé</h4>
+      <p>Sur les pages Entreprises, Acteurs publics et Établissements : ajouter un élément de réassurance (section ou FAQ) sur la protection des données de santé. Bloquant pour les décideurs.</p>
+    </div>
+
+    <div class="prio prio-2">
+      <h4>Ajouter du vrai contenu dans les Ressources</h4>
+      <p>Au moins 2–3 titres et résumés réels par catégorie (article, livre blanc, vidéo). Sans ça, impossible de valider la structure et la catégorisation de cette section.</p>
+    </div>
+
+    <div class="prio prio-2">
+      <h4>Clarifier qui est Hocoia (page Vision ou À propos)</h4>
+      <p>Date de création, fondateurs, stade de développement (startup ? ETI ? combien de bus ?). Les décideurs BtoB et institutionnels ont besoin de cette réassurance.</p>
+    </div>
+
+    <div class="prio prio-2">
+      <h4>Différencier le contenu de /collectivites vs /acteurs-publics</h4>
+      <p>Si ce sont deux cibles distinctes (communes ≠ institutions nationales), le contenu doit l'être aussi. Sinon, supprimer la route /collectivites et la rediriger.</p>
+    </div>
+
+    <div class="prio prio-3">
+      <h4>Ajouter un lien "Voir les créneaux" depuis chaque page expertise</h4>
+      <p>Un patient qui lit la page Cardiologie devrait pouvoir accéder directement aux créneaux cardio disponibles dans sa région, pas au calendrier général.</p>
+    </div>
+
+    <div class="prio prio-3">
+      <h4>Expliquer que faire quand un créneau est complet</h4>
+      <p>Sur /calendrier : proposer une alerte de passage ou une demande de création de créneau plutôt qu'une impasse.</p>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════ -->
+  <section>
+    <h2><span class="num">9</span>Audit des CTAs</h2>
+
+    <p>Inventaire de tous les boutons et liens d'action du wireframe. Pour chaque CTA : texte, destination, validité, pertinence dans le parcours. Les CTAs sans destination fonctionnelle sont normaux pour un wireframe — l'audit porte sur la logique et le contenu, pas sur la technique.</p>
+
+    <!-- ── Home ── -->
+    <h3>Home <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>CTA primaire hero (RDV / bus)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui — premier écran</td><td>Oui</td></tr>
+        <tr><td>CTA outline hero (Découvrir)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Passable</td></tr>
+        <tr><td>Lien B2B "Vous êtes une organisation ?"</td><td>Link → /entreprises</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Voir le calendrier" (spécialités)</td><td>Link → /calendrier</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA use cases B2B (x2)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui — après les onglets</td><td>Oui</td></tr>
+        <tr><td>CTA final "Voir le calendrier"</td><td>Link → /calendrier</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final outline (démo B2B)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Patient ── -->
+    <h3>Patient <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/patient</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>"Rechercher" (barre hero)</td><td>Link → /calendrier</td><td><span class="pill pill-ok">Existe</span></td><td>Oui — premier écran</td><td>Oui</td></tr>
+        <tr><td>"Prendre RDV" (dans résultats × n)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui — bon timing</td><td>Oui</td></tr>
+        <tr><td>"En savoir plus" (dans résultats × n)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Passable</td><td><span class="pill pill-warn">Vague</span></td></tr>
+        <tr><td>"Voir le calendrier complet →"</td><td>Link → /calendrier</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Voir mes résultats →"</td><td>Link → /se-connecter</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>Liens spécialités (× 5)</td><td>Link → /solutions/…</td><td><span class="pill pill-ok">Existent</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final "Prendre rendez-vous"</td><td>Link → /calendrier</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final outline (alerte)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Entreprises ── -->
+    <h3>Entreprises <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/entreprises</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>CTA outline hero (Voir une démo)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA ghost hero (Télécharger plaquette)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Prendre rendez-vous" (use cases)</td><td>a → #contact</td><td><span class="pill pill-ok">Ancre interne</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Lire l'étude de cas →" (use cases)</td><td>span sans href</td><td><span class="pill pill-miss">Mort</span></td><td>Oui — bon moment</td><td>Oui</td></tr>
+        <tr><td>"Acquérir un bus →" (comment ça marche)</td><td>Link → /acquerir-un-bus</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final "Demander une présentation"</td><td>a → #contact</td><td><span class="pill pill-ok">Ancre interne</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final "Acquérir un bus →"</td><td>Link → /acquerir-un-bus</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Collectivités ── -->
+    <h3>Collectivités &amp; institutions <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/collectivites</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>CTA primaire hero</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA outline hero</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Parler à un expert territorial"</td><td>a → #contact</td><td><span class="pill pill-ok">Ancre interne</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Acquérir un bus →"</td><td>Link → /acquerir-un-bus</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTAs final (× 3)</td><td>buttons sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── ProSante ── -->
+    <h3>Professionnel de santé <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/pro-sante</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>CTA primaire hero "Déposer ma candidature"</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui — premier écran</td><td>Oui</td></tr>
+        <tr><td>CTA outline hero "Voir les profils"</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Postuler" (cartes profils × 5)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui — bon moment</td><td>Oui</td></tr>
+        <tr><td>"Voir la fiche de poste"</td><td>a → href fictif</td><td><span class="pill pill-miss">Inexistant</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final "Déposer ma candidature"</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final outline</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Pages Expertises ── -->
+    <h3>Pages expertises (× 5) <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/solutions/…</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>CTA orga hero (ex. "Organiser une campagne")</td><td>Link → /collectivites ou /entreprises</td><td><span class="pill pill-ok">Existent</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA patient hero (ex. "Trouver un bus")</td><td>Link → /calendrier ou /patient</td><td><span class="pill pill-ok">Existent</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"En savoir plus" (cartes Pour qui)</td><td>Link → /solutions/… ou /collectivites</td><td><span class="pill pill-ok">Existent</span></td><td>Passable</td><td><span class="pill pill-warn">Vague</span></td></tr>
+        <tr><td>Liens maillage autres expertises</td><td>Link → /solutions/…</td><td><span class="pill pill-ok">Existent</span></td><td>Oui — fin de page</td><td>Oui</td></tr>
+        <tr><td>Liens maillage bus liés</td><td>Link → /produits/… ou /mammobus</td><td><span class="pill pill-ok">Existent</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final patient</td><td>Link → /calendrier</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA final orga</td><td>Link → /collectivites ou /entreprises</td><td><span class="pill pill-ok">Existent</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Produits bus ── -->
+    <h3>Pages produits bus (MédicoBus, MammoBus, DermatoBus)</h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>"Demander une présentation"</td><td>a → #demander-presentation</td><td><span class="pill pill-ok">Ancre interne</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"→ Trouver un dépistage près de chez vous"</td><td>a → /prendre-rdv</td><td><span class="pill pill-miss">Route morte</span></td><td>Oui — 2e CTA hero</td><td>Oui</td></tr>
+        <tr><td>CTA outline hero</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"En savoir plus sur cette spécialité →" (MédicoBus)</td><td>Link → /solutions/…</td><td><span class="pill pill-ok">Existent</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTAs final (× 3)</td><td>buttons sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Calendrier ── -->
+    <h3>Calendrier <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/calendrier</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>"Prendre RDV ↗" (× n résultats)</td><td>a → app.hocoia.com (externe)</td><td><span class="pill pill-warn">Externe / hors wireframe</span></td><td>Oui — action principale</td><td>Oui</td></tr>
+        <tr><td>"Voir tous les passages" (état vide)</td><td>button → resetFilters()</td><td><span class="pill pill-ok">Action locale</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Revenir au guide patient" (état vide)</td><td>Link → /patient</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Découvrir nos offres B2B" (section finale)</td><td>Link → /entreprises</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Collectivités &amp; institutions" (section finale)</td><td>Link → /collectivites</td><td><span class="pill pill-ok">Existe</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Contact ── -->
+    <h3>Contact <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/contact</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>"Envoyer ma demande →"</td><td>submit → affiche #success-msg</td><td><span class="pill pill-ok">Action locale</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Prendre RDV →" (carte BtoB secteur public)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Prendre RDV →" (carte BtoB entreprises)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Nous écrire →" (carte BtoB acquérir un bus)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Recrutement ── -->
+    <h3>Recrutement <span style="font-weight:400;color:var(--gray-5);font-family:'DM Sans',sans-serif;font-size:13px;">/a-propos/recrutement</span></h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th><th>Bien placé ?</th><th>Texte clair ?</th></tr></thead>
+      <tbody>
+        <tr><td>CTA primaire hero "Voir les offres"</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>CTA outline hero</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+        <tr><td>"Parcourir les offres" (équipe interne)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui — devrait scroller vers OffresSection</td><td>Oui</td></tr>
+        <tr><td>"Postuler" (offres soignants × n)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui — bon timing</td><td>Oui</td></tr>
+        <tr><td>"Me prévenir" (offres à venir × n)</td><td>button sans href</td><td><span class="pill pill-warn">Sans destination</span></td><td>Oui</td><td>Oui</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ── Footer ── -->
+    <h3>Footer (présent sur toutes les pages)</h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Destination</th><th>Destination existe ?</th></tr></thead>
+      <tbody>
+        <tr><td>Liens colonnes Solutions (× n)</td><td>Link → /solutions/…</td><td><span class="pill pill-ok">Existent</span></td></tr>
+        <tr><td>Liens colonnes Ressources (× n)</td><td>Link → /ressources/…</td><td><span class="pill pill-ok">Existent</span></td></tr>
+        <tr><td>Liens À propos (× 4)</td><td>Link → /a-propos/…</td><td><span class="pill pill-ok">Existent</span></td></tr>
+        <tr><td>"FAQ Organisations"</td><td>Link → /faq/organisations</td><td><span class="pill pill-miss">Route morte</span></td></tr>
+        <tr><td>"FAQ Professionnels"</td><td>Link → /faq/professionnels</td><td><span class="pill pill-miss">Route morte</span></td></tr>
+        <tr><td>"FAQ Patients"</td><td>Link → /faq/patients</td><td><span class="pill pill-miss">Route morte</span></td></tr>
+        <tr><td>"Mentions légales"</td><td>Link → /mentions-legales</td><td><span class="pill pill-miss">Route morte</span></td></tr>
+        <tr><td>"Audit wireframe ↗"</td><td>a → /audit-wireframe.html</td><td><span class="pill pill-ok">Existe</span></td></tr>
+      </tbody>
+    </table>
+
+
+    <!-- ════ SYNTHÈSE ════ -->
+    <h3 style="margin-top:40px;padding-top:24px;border-top:2px solid var(--black);">Synthèse</h3>
+
+    <h3>Routes mortes ou destinations inexistantes</h3>
+    <div class="alert alert-red">
+      <strong>4 routes mortes identifiées</strong> — elles afficheront une page blanche ou une 404 si cliquées.
+    </div>
+    <table class="check-table">
+      <thead><tr><th>CTA</th><th>Fichier(s)</th><th>Destination actuelle</th><th>Correction suggérée</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"→ Trouver un dépistage près de chez vous"</td>
+          <td>MedicoBus.jsx · MammoBus.jsx · DermatoBus.jsx</td>
+          <td><code>/prendre-rdv</code> (n'existe pas)</td>
+          <td>Remplacer par <code>/patient</code> ou <code>/calendrier</code></td>
+        </tr>
+        <tr>
+          <td>"FAQ Organisations / Professionnels / Patients"</td>
+          <td>Footer.jsx (généré depuis arborescence)</td>
+          <td><code>/faq/organisations</code> etc. (n'existent pas)</td>
+          <td>Pointer vers <code>/faq</code> uniquement, ou créer les ancres <code>/faq#organisations</code></td>
+        </tr>
+        <tr>
+          <td>"Mentions légales"</td>
+          <td>Footer.jsx</td>
+          <td><code>/mentions-legales</code> (n'existe pas)</td>
+          <td>Créer une page ou supprimer le lien</td>
+        </tr>
+        <tr>
+          <td>"Voir la fiche de poste"</td>
+          <td>ProSante.jsx (cartes profils)</td>
+          <td>href fictif</td>
+          <td>Pointer vers <code>/a-propos/recrutement</code></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>CTAs au texte vague ou peu incitatif</h3>
+    <table class="check-table">
+      <thead><tr><th>Texte</th><th>Fichier / Composant</th><th>Problème</th><th>Alternative suggérée</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>"En savoir plus" (× n)</td>
+          <td>ExpertisePage.jsx — section "Pour qui"</td>
+          <td>Générique, on ne sait pas ce qu'on va découvrir</td>
+          <td>"Voir les solutions collectivités →" ou "Organiser une campagne →"</td>
+        </tr>
+        <tr>
+          <td>"Accéder à mon espace" (× 3)</td>
+          <td>SeConnecter.jsx — EspaceCard</td>
+          <td>Même texte pour 3 portails différents (patient, pro, org)</td>
+          <td>"Espace patient →", "Espace soignant →", "Espace organisation →"</td>
+        </tr>
+        <tr>
+          <td>"En savoir plus" (résultats patient)</td>
+          <td>Patient.jsx — résultats hero</td>
+          <td>Vague — on ne sait pas si c'est pour le bus, la spécialité ou le lieu</td>
+          <td>"Voir ce passage →" ou "Détails →"</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>CTAs mal placés ou manquants à un moment clé</h3>
+    <table class="check-table">
+      <thead><tr><th>Situation</th><th>Page / Composant</th><th>Problème</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Créneau complet sur le calendrier</td>
+          <td>Calendrier.jsx — état vide uniquement</td>
+          <td>Si tous les créneaux sont pris pour une date/lieu, aucune alternative proposée (alerte SMS, demande de passage). L'utilisateur est dans une impasse.</td>
+        </tr>
+        <tr>
+          <td>Après lecture d'une expertise (Cardio, Sein, etc.)</td>
+          <td>ExpertisePage.jsx — fin de page</td>
+          <td>Le CTA patient "Trouver un bus" mène au calendrier général. Pas de filtre pré-sélectionné sur la spécialité. Un patient intéressé par le cardio doit re-filtrer manuellement.</td>
+        </tr>
+        <tr>
+          <td>Après lecture de la page Recrutement</td>
+          <td>Recrutement.jsx — OffresSection</td>
+          <td>"Parcourir les offres" dans EquipeInterneSection ne scroller pas vers la section Offres — il est simplement un button sans action. Un utilisateur motivé est stoppé.</td>
+        </tr>
+        <tr>
+          <td>Pages ressources (Articles, Livres blancs, Vidéos, Podcast)</td>
+          <td>ResourcePage.jsx</td>
+          <td>Aucun CTA primaire au niveau page. Après avoir consulté un article ou un livre blanc, aucune incitation à l'étape suivante (contacter, demander une démo, prendre RDV).</td>
+        </tr>
+        <tr>
+          <td>Page Presse — kit média</td>
+          <td>Presse.jsx — KitMediaSection</td>
+          <td>Le lien "Télécharger" pointe vers des URLs fictives (fileUrl dans les données). Attendu pour un wireframe, mais à noter.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Pages qui manquent de CTA alors qu'elles devraient en avoir un</h3>
+    <ul>
+      <li><strong>/ressources/articles, /livres-blancs, /videos, /podcast</strong> — pas de CTA de conversion en bas de page. Un visiteur qui télécharge un livre blanc devrait être invité à contacter Hocoia ou à prendre RDV.</li>
+      <li><strong>/a-propos/equipe</strong> — page placeholder. Devrait au moins avoir un lien vers /a-propos/recrutement pour les candidats spontanés.</li>
+      <li><strong>/faq</strong> — le CTA final est "buttons sans href". Une FAQ dont on a lu les réponses devrait mener directement vers /contact ou /calendrier.</li>
+      <li><strong>/se-connecter</strong> — les boutons "Accéder à mon espace" ne vont nulle part. Acceptable pour un wireframe mais à noter pour Webflow : ces 3 boutons doivent pointer vers les URLs d'authentification réelles.</li>
+    </ul>
+
+    <h3>CTAs redondants ou à consolider</h3>
+    <ul>
+      <li><strong>"Prendre RDV" apparaît 3 fois sur /patient</strong> (barre hero, liste résultats × n, CTA final). La répétition est cohérente avec le parcours mais le bouton dans les résultats devrait avoir une action distincte des deux autres.</li>
+      <li><strong>"Acquérir un bus →" est présent sur /entreprises, /collectivites et /etablissements-sante</strong> dans leurs CTAs finaux. Ce cross-link est utile mais les 3 pages ont un CTA final quasi-identique — différencier l'accroche selon la cible.</li>
+      <li><strong>Les cartes BtoB de /contact</strong> ont des CTAs "Prendre RDV →" qui répètent le formulaire juste au-dessus. Envisager de les faire scroller vers le formulaire avec le bon motif pré-sélectionné.</li>
+    </ul>
+  </section>
+
+
+  <div class="doc-footer">
+    <p>Audit contenu wireframe Hocoia · Juin 2026 · Document interne</p>
+    <p>Généré via Claude Code</p>
+  </div>
+
+</body>
+</html>

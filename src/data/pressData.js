@@ -31,11 +31,12 @@ export const ficheIdentite = {
 
 export const chiffresContexte = {
   eyebrow: "Le contexte",
-  h2: "L'enjeu de l'accès aux soins en France",
+  h2: "Hocoia en chiffres",
   items: [
-    { value: "30,2%", label: "de la population française vit dans un désert médical",          source: "Rapport sénatorial 2022" },
-    { value: "1,6 M", label: "de Français renoncent chaque année à des soins médicaux",        source: "Rapport sénatorial 2022" },
-    { value: "3%",    label: "des dépenses de santé françaises sont consacrés à la prévention", source: "ARS 2022" },
+    { value: "1er",       label: "Réseau national",  sublabel: "bus médicaux"    },
+    { value: "2022",      label: "Année de",         sublabel: "fondation"       },
+    { value: "🇫🇷 + intl", label: "Déploiement",      sublabel: "en cours"        },
+    { value: "12+",       label: "Mentions",         sublabel: "presse & médias" },
   ],
 };
 

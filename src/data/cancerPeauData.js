@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Organisez une campagne de dépistage pour vos administrés. Hocoia gère communication, logistique, médical et bilan.",
       casType: "Cas type : 72 patients dépistés en 3 jours au CCAS de Pertuis.",
-      href: "/acteurs-publics",
+      href: "/collectivites",
       cta: "Solutions collectivités →",
     },
     {

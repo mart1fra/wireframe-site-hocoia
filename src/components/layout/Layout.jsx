@@ -5,7 +5,7 @@ import Partners from "./Partners";
 import Footer from "./Footer";
 import FaqBubble from "./FaqBubble";
 
-export default function Layout({ children }) {
+export default function Layout({ children, hidePartners = false }) {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="sticky top-0 z-50">
@@ -14,7 +14,7 @@ export default function Layout({ children }) {
         <Breadcrumb />
       </div>
       <main className="flex-1">{children}</main>
-      <Partners />
+      {!hidePartners && <Partners />}
       <Footer />
       <FaqBubble />
     </div>

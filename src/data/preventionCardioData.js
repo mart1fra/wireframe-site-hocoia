@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Organisez une campagne de prévention cardiovasculaire pour vos administrés, en particulier les plus de 50 ans éloignés des centres de santé.",
       casType: "Cas type : 150 bilans réalisés en 2 jours sur la place du marché.",
-      href: "/acteurs-publics",
+      href: "/collectivites",
       cta: "Solutions collectivités →",
     },
     {

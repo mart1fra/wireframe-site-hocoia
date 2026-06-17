@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Organisez une campagne de suivi gynécologique pour vos administrées. Priorité aux communes sans gynécologue, aux publics précaires.",
       casType: "Cas type : campagne santé femme dans une CC de Moselle, 80 consultations en 3 jours.",
-      href: "/acteurs-publics",
+      href: "/collectivites",
       cta: "Solutions collectivités →",
     },
     {

@@ -13,7 +13,11 @@
       "Bash(node -e ' *)",
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174/)",
       "Bash(sel)",
-      "Bash(git *)"
+      "Bash(git *)",
+      "WebFetch(domain:alan.com)",
+      "WebFetch(domain:hocoia.com)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\\\\src\\\\data\" -Filter \"*.js\")",
+      "Bash(Select-Object Name)"
     ]
   }
 }

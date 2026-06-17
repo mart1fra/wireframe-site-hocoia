@@ -2,13 +2,11 @@ import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
-import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import {
   hero,
   intro,
   solutions,
   solutionsSection,
-  modelesEngagement,
   comparison,
   useCasesSection,
   useCases,
@@ -188,7 +186,7 @@ function SolutionsSection() {
         </FadeIn>
 
         <motion.div
-          className="grid grid-cols-3 gap-6"
+          className="grid grid-cols-3 gap-6 mb-5"
           variants={listV}
           initial="hidden"
           whileInView="visible"
@@ -198,6 +196,32 @@ function SolutionsSection() {
             <SolutionCard key={sol.id} sol={sol} />
           ))}
         </motion.div>
+
+        {/* Bus sur mesure */}
+        <FadeIn>
+          <div className="bg-white border border-gray-200 rounded-xl px-7 py-6 flex flex-col lg:flex-row lg:items-center gap-6">
+            <div className="w-10 h-10 bg-gray-100 border border-gray-200 rounded-lg shrink-0" />
+            <div className="flex-1">
+              <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-3 py-1 rounded-full bg-gray-100 text-gray-600 mb-2">
+                Sur mesure
+              </span>
+              <p className="font-semibold text-gray-900 text-sm mb-1">
+                Votre bus entièrement personnalisé
+              </p>
+              <p className="text-sm text-gray-500 leading-relaxed">
+                Spécialités, équipements, design extérieur et identité visuelle — Hocoia conçoit des unités mobiles clé en main adaptées à votre territoire, votre entreprise ou vos besoins spécifiques.
+              </p>
+            </div>
+            <div className="shrink-0">
+              <Link
+                to="/acquerir-un-bus"
+                className="border border-gray-300 text-gray-700 px-6 py-3 rounded-full text-sm font-medium hover:bg-gray-50 transition-colors duration-150 whitespace-nowrap"
+              >
+                En savoir plus →
+              </Link>
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
@@ -367,7 +391,6 @@ export default function NosSolutions() {
     <>
       <HeroSection />
       <IntroSection />
-      <ModelesEngagementSection data={modelesEngagement} />
       <SolutionsSection />
       <ComparisonSection />
       <UseCasesSection />

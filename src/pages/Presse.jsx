@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 import FadeIn from "../components/ui/FadeIn";
 import {
   hero,
-  ficheIdentite,
   chiffresContexte,
   ilsParlentDeNous,
-  communiques,
   kitMedia,
   contactPresse,
 } from "../data/pressData";
@@ -85,47 +83,6 @@ function HeroSection() {
   );
 }
 
-// ─── Section B — Fiche d'identité ─────────────────────────────────────────
-
-function FicheIdentiteSection() {
-  return (
-    <section className="bg-gray-50 py-24 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-
-        {/* Colonne gauche */}
-        <FadeIn>
-          <Eyebrow>{ficheIdentite.eyebrow}</Eyebrow>
-          <SectionH2>{ficheIdentite.h2}</SectionH2>
-          <p className="text-gray-600 text-base leading-relaxed max-w-lg">
-            {ficheIdentite.pitch}
-          </p>
-        </FadeIn>
-
-        {/* Colonne droite — fiche tech */}
-        <FadeIn delay={0.1}>
-          <div className="space-y-2">
-            {ficheIdentite.faits.map((fait) => (
-              <div
-                key={fait.label}
-                className="bg-white border border-gray-200 rounded-xl px-5 py-4 flex items-baseline justify-between gap-4"
-              >
-                <span className="text-xs text-gray-500 uppercase tracking-wider shrink-0">
-                  {fait.label}
-                </span>
-                <span className="text-gray-900 font-semibold text-sm text-right">
-                  {fait.value}
-                </span>
-              </div>
-            ))}
-          </div>
-          <p className="text-gray-400 text-xs italic mt-3">{ficheIdentite.copyHint}</p>
-        </FadeIn>
-
-      </div>
-    </section>
-  );
-}
-
 // ─── Section C — Chiffres & Contexte ──────────────────────────────────────
 
 function ChiffresContexteSection() {
@@ -142,19 +99,19 @@ function ChiffresContexteSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-5"
         >
           {chiffresContexte.items.map((item) => (
             <motion.div
               key={item.value}
               variants={itemV}
-              className="bg-gray-50 border border-gray-200 rounded-2xl p-8 text-center"
+              className="bg-gray-50 border border-gray-200 rounded-2xl p-7 text-center"
             >
               <p className="font-display font-bold text-5xl text-gray-900 leading-none mb-3">
                 {item.value}
               </p>
-              <p className="text-gray-600 text-base leading-snug mb-3">{item.label}</p>
-              <p className="text-gray-400 text-xs italic">{item.source}</p>
+              <p className="text-gray-600 text-sm leading-snug">{item.label}</p>
+              <p className="text-gray-600 text-sm leading-snug">{item.sublabel}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -165,7 +122,7 @@ function ChiffresContexteSection() {
 
 // ─── Section D — Ils parlent de nous (slider) ─────────────────────────────
 
-const ARTICLES_VISIBLE = 4;
+const ARTICLES_VISIBLE = 3;
 
 function IlsParlentDeNousSection() {
   const [offset, setOffset] = useState(0);
@@ -173,7 +130,7 @@ function IlsParlentDeNousSection() {
 
   return (
     <section id="ils-parlent-de-nous" className="bg-gray-50 py-16 px-6">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
 
         <FadeIn className="flex items-end justify-between mb-8">
           <div>
@@ -206,28 +163,28 @@ function IlsParlentDeNousSection() {
           <AnimatePresence mode="wait">
             <motion.div
               key={offset}
-              initial={{ opacity: 0, x: 12 }}
+              initial={{ opacity: 0, x: 16 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -12 }}
+              exit={{ opacity: 0, x: -16 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="flex flex-col gap-2"
+              className="grid grid-cols-1 sm:grid-cols-3 gap-5"
             >
               {ilsParlentDeNous.items.slice(offset, offset + ARTICLES_VISIBLE).map((article) => (
                 <div
                   key={article.id}
-                  className="bg-white border border-gray-200 rounded-xl px-5 py-3.5 flex items-center gap-4 hover:border-gray-400 transition-colors"
+                  className="bg-white border border-gray-200 rounded-xl p-5 flex flex-col gap-3 hover:border-gray-300 transition-colors"
                 >
-                  <span className="font-semibold text-gray-900 text-sm shrink-0 w-36 truncate">
-                    {article.media}
-                  </span>
-                  <span className="bg-gray-100 text-gray-500 text-xs px-2.5 py-0.5 rounded-full shrink-0">
-                    {article.type}
-                  </span>
-                  <p className="text-gray-700 text-sm flex-1 truncate">{article.titre}</p>
-                  <span className="text-gray-400 text-xs shrink-0">{article.date}</span>
+                  <div className="flex items-center justify-between">
+                    <span className="bg-gray-100 text-gray-500 text-xs px-2.5 py-0.5 rounded-full">
+                      {article.type}
+                    </span>
+                    <span className="text-gray-400 text-xs">{article.date}</span>
+                  </div>
+                  <p className="font-semibold text-gray-900 text-sm">{article.media}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed flex-1">{article.titre}</p>
                   <a
                     href={article.url}
-                    className="text-xs font-semibold text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors shrink-0"
+                    className="text-xs font-semibold text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors self-start"
                   >
                     Lire →
                   </a>
@@ -237,52 +194,6 @@ function IlsParlentDeNousSection() {
           </AnimatePresence>
         </div>
 
-      </div>
-    </section>
-  );
-}
-
-// ─── Section E — Communiqués ───────────────────────────────────────────────
-
-function CommuniquesSection() {
-  return (
-    <section id="communiques" className="bg-white py-24 px-6">
-      <div className="max-w-5xl mx-auto">
-        <FadeIn className="mb-12">
-          <Eyebrow>{communiques.eyebrow}</Eyebrow>
-          <SectionH2>{communiques.h2}</SectionH2>
-          <p className="text-gray-500 text-base">{communiques.subtitle}</p>
-        </FadeIn>
-
-        <motion.div
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="flex flex-col gap-3"
-        >
-          {communiques.items.map((cp) => (
-            <motion.div
-              key={cp.id}
-              variants={itemV}
-              className="bg-gray-50 border border-gray-200 rounded-xl px-5 py-4 flex items-center justify-between gap-4 hover:border-gray-400 transition-colors"
-            >
-              <div className="flex-1 min-w-0">
-                <p className="font-semibold text-gray-900 text-sm leading-snug">{cp.titre}</p>
-                <p className="text-gray-400 text-xs mt-1">{cp.date}</p>
-              </div>
-              <div className="flex items-center gap-3 shrink-0">
-                <span className="text-gray-400 text-xs hidden sm:block">{cp.fileSize}</span>
-                <a
-                  href={cp.fileUrl}
-                  className="border border-gray-300 text-gray-700 text-xs font-semibold px-4 py-2 rounded-full hover:border-gray-500 transition-colors whitespace-nowrap"
-                >
-                  Télécharger
-                </a>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
@@ -345,52 +256,100 @@ function KitMediaSection() {
 
 // ─── Section G — Contact presse ────────────────────────────────────────────
 
+function PresseForm() {
+  const [submitted, setSubmitted] = useState(false);
+  const [form, setForm] = useState({ nom: "", media: "", email: "", message: "" });
+
+  function update(field) {
+    return (e) => setForm((prev) => ({ ...prev, [field]: e.target.value }));
+  }
+
+  const fieldCls = "w-full border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 placeholder:text-gray-400 focus:outline-none focus:border-gray-900 transition-colors bg-gray-50 focus:bg-white";
+
+  return (
+    <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+      <AnimatePresence mode="wait">
+        {!submitted ? (
+          <motion.form
+            key="form"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { duration: 0.15 } }}
+            onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+            className="space-y-3"
+          >
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <input type="text"  placeholder="Nom"                  value={form.nom}     onChange={update("nom")}     className={fieldCls} />
+              <input type="text"  placeholder="Entreprise"             value={form.media}   onChange={update("media")}   className={fieldCls} />
+            </div>
+            <input type="email" placeholder="Email professionnel"    value={form.email}   onChange={update("email")}   className={fieldCls} />
+            <textarea
+              placeholder="Votre demande (interview, information, partenariat…)"
+              rows={4}
+              value={form.message}
+              onChange={update("message")}
+              className={`${fieldCls} resize-none`}
+            />
+            <button
+              type="submit"
+              className="w-full bg-gray-900 text-white font-semibold text-sm py-3.5 rounded-full hover:bg-gray-700 transition-colors cursor-pointer"
+            >
+              Envoyer ma demande →
+            </button>
+            <p className="text-[11px] text-gray-400 text-center pt-1">
+              Données traitées conformément au RGPD — réponse sous 24h ouvrées.
+            </p>
+          </motion.form>
+        ) : (
+          <motion.div
+            key="success"
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, ease: [0.34, 1.56, 0.64, 1] }}
+            className="flex flex-col items-center justify-center py-10 text-center"
+          >
+            <div className="w-14 h-14 rounded-full bg-gray-100 flex items-center justify-center mb-5">
+              <svg className="w-7 h-7 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <p className="font-display font-bold text-gray-900 text-lg mb-2">Message envoyé !</p>
+            <p className="text-gray-500 text-sm max-w-xs">Notre équipe presse vous répond sous 24h ouvrées.</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 function ContactPresseSection() {
   return (
     <section id="contact-presse" className="bg-white py-24 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 
         {/* Colonne gauche */}
         <FadeIn>
           <Eyebrow>{contactPresse.eyebrow}</Eyebrow>
           <SectionH2>{contactPresse.h2}</SectionH2>
-          <p className="text-gray-500 text-base leading-relaxed max-w-md">
+          <p className="text-gray-500 text-base leading-relaxed mb-8">
             {contactPresse.subtitle}
           </p>
+          <div className="space-y-3">
+            <p className="text-gray-700 text-sm flex items-center gap-2">
+              <span>✉️</span> {contactPresse.contact.email}
+            </p>
+            <p className="text-gray-700 text-sm flex items-center gap-2">
+              <span>📞</span> {contactPresse.contact.telephone}
+            </p>
+            <p className="text-gray-700 text-sm flex items-center gap-2">
+              <span>📍</span> {contactPresse.contact.adresse}
+            </p>
+          </div>
         </FadeIn>
 
-        {/* Colonne droite — carte de contact */}
+        {/* Colonne droite — formulaire */}
         <FadeIn delay={0.1}>
-          <div className="bg-gray-900 text-white rounded-2xl p-8">
-            <p className="font-semibold text-base mb-6">{contactPresse.contact.nom}</p>
-
-            <div className="space-y-3 mb-8">
-              <p className="text-gray-300 text-sm flex items-center gap-2">
-                <span>✉️</span> {contactPresse.contact.email}
-              </p>
-              <p className="text-gray-300 text-sm flex items-center gap-2">
-                <span>📞</span> {contactPresse.contact.telephone}
-              </p>
-              <p className="text-gray-300 text-sm flex items-center gap-2">
-                <span>📍</span> {contactPresse.contact.adresse}
-              </p>
-            </div>
-
-            <div className="flex flex-wrap gap-3">
-              <a
-                href={contactPresse.ctaPrimary.href}
-                className="bg-white text-gray-900 px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors"
-              >
-                {contactPresse.ctaPrimary.label}
-              </a>
-              <a
-                href={contactPresse.ctaOutline.href}
-                className="border border-gray-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-gray-800 transition-colors"
-              >
-                {contactPresse.ctaOutline.label}
-              </a>
-            </div>
-          </div>
+          <PresseForm />
         </FadeIn>
 
       </div>
@@ -404,10 +363,8 @@ export default function Presse() {
   return (
     <>
       <HeroSection />
-      <FicheIdentiteSection />
       <ChiffresContexteSection />
       <IlsParlentDeNousSection />
-      <CommuniquesSection />
       <KitMediaSection />
       <ContactPresseSection />
     </>

@@ -5,7 +5,6 @@
 export const breadcrumbsMap = {
   // Profils
   "/entreprises":          [{ label: "Vous êtes", href: null }, { label: "Entreprises & mutuelles" }],
-  "/acteurs-publics":      [{ label: "Vous êtes", href: null }, { label: "Collectivités & institutions" }],
   "/collectivites":        [{ label: "Vous êtes", href: null }, { label: "Collectivités & institutions" }],
   "/etablissements-sante": [{ label: "Vous êtes", href: null }, { label: "Établissements de santé & médico-social" }],
   "/patient":              [{ label: "Vous êtes", href: null }, { label: "Patient" }],

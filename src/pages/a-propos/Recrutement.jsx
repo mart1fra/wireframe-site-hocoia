@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../../components/ui/FadeIn";
 import {
   hero,
-  chiffres,
   journeeDepistage,
   pourquoiRejoindre,
   equipeInterne,
@@ -149,101 +148,6 @@ function HeroSection() {
   );
 }
 
-// ─── Section 2 — Chiffres ────────────────────────────────────────────────────
-
-function ChiffresSection() {
-  return (
-    <section className="bg-white py-16 px-6 border-b border-gray-200">
-      <div className="max-w-5xl mx-auto">
-        <motion.div
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 divide-x divide-gray-200"
-        >
-          {chiffres.map((stat) => (
-            <motion.div
-              key={stat.label}
-              variants={itemV}
-              className="flex flex-col items-center text-center px-4 py-4"
-            >
-              <span className="font-display font-bold text-3xl text-gray-900 mb-1">
-                {stat.value}
-              </span>
-              <span className="text-xs text-gray-500 leading-snug">{stat.label}</span>
-            </motion.div>
-          ))}
-        </motion.div>
-      </div>
-    </section>
-  );
-}
-
-// ─── Composant carte témoignage vidéo ────────────────────────────────────────
-
-function TemoignageVideoCard({ card }) {
-  return (
-    <motion.div
-      variants={itemV}
-      className="bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col"
-    >
-      {/* Placeholder vidéo */}
-      <div className="relative bg-gray-100 border-b border-gray-200 flex items-center justify-center"
-           style={{ height: 180 }}
-      >
-        <PlayButton dark />
-        <span className="absolute bottom-3 left-3 text-gray-500 text-xs">
-          Voir le témoignage · {card.videoDuration}
-        </span>
-        <div className="absolute bottom-3 right-3 w-[60px] h-[60px] bg-gray-200 rounded-lg border border-gray-300" />
-      </div>
-      {/* Corps */}
-      <div className="p-5 flex flex-col flex-1">
-        <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-1">
-          {card.context}
-        </p>
-        <p className="font-semibold text-gray-900 text-sm mb-2">{card.nom}</p>
-        <p className="text-gray-700 text-sm italic leading-relaxed flex-1 mb-4">
-          "{card.quote}"
-        </p>
-        <div className="flex flex-wrap gap-2">
-          {card.chips.map((chip) => (
-            <span
-              key={chip}
-              className="bg-gray-100 text-gray-600 text-xs px-3 py-1 rounded-full"
-            >
-              {chip}
-            </span>
-          ))}
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
-// ─── Composant carte vidéo simple ────────────────────────────────────────────
-
-function VideoCard({ card }) {
-  return (
-    <div className="bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col">
-      <div
-        className="relative bg-gray-100 border-b border-gray-200 flex items-center justify-center"
-        style={{ height: 160 }}
-      >
-        <PlayButton dark />
-        <span className="absolute bottom-3 left-3 text-gray-500 text-xs">
-          {card.videoLabel}
-        </span>
-      </div>
-      <div className="p-5">
-        <p className="font-semibold text-gray-900 text-sm mb-2">{card.titre}</p>
-        <p className="text-gray-500 text-sm leading-relaxed">{card.description}</p>
-      </div>
-    </div>
-  );
-}
-
 // ─── Section 4 — Journée de dépistage ────────────────────────────────────────
 
 function JourneeDepistageSection() {
@@ -251,7 +155,7 @@ function JourneeDepistageSection() {
   const profil = journeeDepistage.profils[activePilule];
 
   return (
-    <section className="bg-white py-20 px-6">
+    <section className="bg-white py-14 px-6">
       <div className="max-w-7xl mx-auto">
         <FadeIn className="mb-8">
           <Eyebrow>{journeeDepistage.eyebrow}</Eyebrow>
@@ -319,21 +223,6 @@ function JourneeDepistageSection() {
             </div>
           </motion.div>
         </AnimatePresence>
-
-        {/* Cartes vidéo */}
-        <motion.div
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-6"
-        >
-          {journeeDepistage.videoCards.map((card) => (
-            <motion.div key={card.id} variants={itemV}>
-              <VideoCard card={card} />
-            </motion.div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
@@ -852,7 +741,6 @@ export default function Recrutement() {
   return (
     <>
       <HeroSection />
-      <ChiffresSection />
       <JourneeDepistageSection />
       <PourquoiRejoindreSection />
       <EquipeInterneSection />

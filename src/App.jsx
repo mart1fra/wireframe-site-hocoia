@@ -4,7 +4,6 @@ import Layout from "./components/layout/Layout";
 import Home               from "./pages/Home";
 import Entreprises        from "./pages/Entreprises";
 import ActeursPublics     from "./pages/ActeursPublics";
-import Collectivites      from "./pages/Collectivites";
 import EtablissementsSante from "./pages/EtablissementsSante";
 import Patient            from "./pages/Patient";
 import ProSante           from "./pages/ProSante";
@@ -40,6 +39,7 @@ import Equipe             from "./pages/a-propos/Equipe";
 import Recrutement        from "./pages/a-propos/Recrutement";
 import Presse             from "./pages/Presse";
 import Contact            from "./pages/Contact";
+import PlanDuSite         from "./pages/PlanDuSite";
 
 function Wrap({ children }) {
   return <Layout>{children}</Layout>;
@@ -51,8 +51,7 @@ export default function App() {
       {/* Home + B2B */}
       <Route path="/"                    element={<Wrap><Home /></Wrap>} />
       <Route path="/entreprises"         element={<Wrap><Entreprises /></Wrap>} />
-      <Route path="/acteurs-publics"     element={<Wrap><ActeursPublics /></Wrap>} />
-      <Route path="/collectivites"        element={<Wrap><Collectivites /></Wrap>} />
+      <Route path="/collectivites"        element={<Wrap><ActeursPublics /></Wrap>} />
       <Route path="/etablissements-sante" element={<Wrap><EtablissementsSante /></Wrap>} />
 
       {/* Parcours */}
@@ -104,6 +103,9 @@ export default function App() {
 
       {/* Contact */}
       <Route path="/contact" element={<Wrap><Contact /></Wrap>} />
+
+      {/* Plan du site */}
+      <Route path="/plan-du-site" element={<Layout hidePartners><PlanDuSite /></Layout>} />
     </Routes>
   );
 }

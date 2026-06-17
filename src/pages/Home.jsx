@@ -76,18 +76,18 @@ function HeroSection() {
 
           {/* CTAs : pleine largeur mobile, auto desktop */}
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center mb-8">
-            <button
-              type="button"
-              className="w-full sm:w-auto bg-gray-900 text-white px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors duration-150 cursor-pointer"
+            <Link
+              to="/calendrier"
+              className="w-full sm:w-auto bg-gray-900 text-white px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors duration-150 text-center"
             >
               {hero.ctaPrimary}
-            </button>
-            <button
-              type="button"
-              className="w-full sm:w-auto border border-gray-300 text-gray-700 px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors duration-150 cursor-pointer"
+            </Link>
+            <Link
+              to="/calendrier"
+              className="w-full sm:w-auto border border-gray-300 text-gray-700 px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors duration-150 text-center"
             >
               {hero.ctaOutline}
-            </button>
+            </Link>
           </div>
 
           <p className="text-sm text-gray-400">

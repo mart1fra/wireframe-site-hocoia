@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Rapprochez le dépistage des femmes éloignées des centres de radiologie. Hocoia gère la campagne de A à Z.",
       casType: "Cas type : 200 femmes dépistées en 5 jours dans une CC rurale de Moselle.",
-      href: "/acteurs-publics",
+      href: "/collectivites",
       cta: "Solutions collectivités →",
     },
     {

@@ -51,7 +51,7 @@ export const megaMenus = {
         subtext: "Santé de proximité pour vos territoires",
         icon: "🏛️",
         iconBg: "#dbeafe",
-        href: "/acteurs-publics",
+        href: "/collectivites",
         contentKey: "b2b",
       },
       {
@@ -163,40 +163,72 @@ export const megaMenus = {
     },
   },
 
-  // ── "Nos solutions" : liste simple ────────────────────────────────────
+  // ── "Nos solutions" : cartes bus ──────────────────────────────────────
   "nos-solutions": {
-    type: "simple",
-    items: [
-      { id: "medicobus",       label: "MédicoBus",       href: "/produits/medicobus" },
-      { id: "mammobus",        label: "MammoBus",        href: "/mammobus" },
-      { id: "dermatobus",      label: "DermatoBus",      href: "/dermatobus" },
-      { id: "sep-acquerir",    type: "separator" },
-      { id: "acquerir-un-bus", label: "Acquérir un bus", href: "/acquerir-un-bus" },
+    type: "bus-cards",
+    cards: [
+      {
+        id:      "medicobus",
+        label:   "MédicoBus",
+        subtext: "Check-up, cardio, dermato & plus",
+        href:    "/produits/medicobus",
+        color:   "#007E94",
+        image:   null,
+      },
+      {
+        id:      "mammobus",
+        label:   "MammoBus",
+        subtext: "Mammographie mobile",
+        href:    "/mammobus",
+        color:   "#F18500",
+        image:   null,
+      },
+      {
+        id:      "dermatobus",
+        label:   "DermatoBus",
+        subtext: "Dépistage cutané",
+        href:    "/dermatobus",
+        color:   "#1DADB5",
+        image:   null,
+      },
     ],
+    cta:    { label: "Acquérir un bus",          href: "/acquerir-un-bus" },
     footer: { label: "Voir toutes nos solutions →", href: "/nos-solutions" },
   },
 
-  // ── "Ressources" : liste simple ───────────────────────────────────────
+  // ── "Ressources" ──────────────────────────────────────────────────────
   ressources: {
-    type: "simple",
+    type: "rich-list",
     items: [
-      { id: "articles",      label: "Articles",      href: "/ressources/articles" },
-      { id: "cas-clients",   label: "Cas clients",   href: "/ressources/cas-clients" },
-      { id: "livres-blancs", label: "Livres blancs", href: "/ressources/livres-blancs" },
-      { id: "videos",        label: "Vidéos",        href: "/ressources/videos" },
-      { id: "podcast",       label: "Podcast",       href: "/ressources/podcast" },
+      { id: "articles",      label: "Articles",            href: "/ressources/articles" },
+      { id: "cas-clients",   label: "Cas clients",         href: "/ressources/cas-clients" },
+      { id: "livres-blancs", label: "Livres blancs",       href: "/ressources/livres-blancs" },
+      { id: "videos",        label: "Vidéos & webinaires", href: "/ressources/videos" },
+      { id: "podcast",       label: "Podcast",             href: "/ressources/podcast" },
     ],
+    featured: {
+      label: "Dernier livre blanc",
+      title: "ROI de la prévention santé en entreprise",
+      href: "/ressources/livres-blancs",
+      cta: "Télécharger →",
+    },
   },
 
-  // ── "À propos" : liste simple ─────────────────────────────────────────
+  // ── "À propos" ────────────────────────────────────────────────────────
   "a-propos": {
-    type: "simple",
+    type: "rich-list",
     items: [
       { id: "vision",      label: "Vision & Mission", href: "/a-propos/vision" },
       { id: "technologie", label: "Technologie",      href: "/a-propos/technologie" },
       { id: "equipe",      label: "Équipe",           href: "/a-propos/equipe" },
       { id: "recrutement", label: "Recrutement",      href: "/a-propos/recrutement" },
     ],
+    featured: {
+      label: "On recrute",
+      title: "Radiologue pour nos tournées MammoBus",
+      href: "/a-propos/recrutement",
+      cta: "Voir le poste →",
+    },
   },
 };
 

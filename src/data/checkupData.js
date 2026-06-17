@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Proposez un bilan de santé gratuit à vos administrés. Idéal pour les zones sans médecin généraliste, les séniors, les populations précaires.",
       casType: "Cas type : journée santé sur la place du marché, 80 bilans en une journée.",
-      href: "/acteurs-publics",
+      href: "/collectivites",
       cta: "Solutions collectivités →",
     },
     {

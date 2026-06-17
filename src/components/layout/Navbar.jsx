@@ -167,13 +167,179 @@ function SimplePanel({ data, onClose }) {
   );
 }
 
+// ─── Panneau liste enrichie — Ressources & À propos (desktop) ────────────
+
+function RichListPanel({ data, onClose }) {
+  // Layout A — liste simple à gauche + bloc featured à droite
+  if (data.items && data.featured) {
+    return (
+      <div className="p-5 flex gap-5" style={{ minWidth: 420 }}>
+        {/* Liste */}
+        <div className="flex-1 space-y-0.5">
+          {data.items.map((item) => (
+            <Link
+              key={item.id}
+              to={item.href}
+              onClick={onClose}
+              className="block px-2.5 py-1.5 rounded-lg text-sm font-medium text-gray-900 hover:bg-gray-50 hover:text-gray-700 transition-colors duration-150"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Featured */}
+        <Link
+          to={data.featured.href}
+          onClick={onClose}
+          className="group w-44 shrink-0 bg-gray-50 border border-gray-200 rounded-xl p-4 flex flex-col hover:bg-gray-100 transition-colors duration-150"
+        >
+          <div className="w-full h-20 bg-gray-200 border border-gray-300 rounded-lg mb-3" />
+          <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-1">
+            {data.featured.label}
+          </p>
+          <p className="text-sm font-semibold text-gray-900 leading-snug flex-1">
+            {data.featured.title}
+          </p>
+          <span className="text-xs font-semibold text-gray-500 group-hover:text-gray-900 transition-colors mt-3">
+            {data.featured.cta}
+          </span>
+        </Link>
+      </div>
+    );
+  }
+
+  // Layout B — sections en 2 colonnes (À propos)
+  const sections = data.sections ?? [{ label: null, items: data.items ?? [] }];
+  return (
+    <div className="p-5" style={{ minWidth: 440 }}>
+      <div className="grid grid-cols-2 gap-x-6">
+        {sections.map((section, si) => (
+          <div key={si}>
+            {section.label && (
+              <p className="text-[10px] uppercase tracking-widest font-semibold text-gray-400 mb-2 px-2.5">
+                {section.label}
+              </p>
+            )}
+            <div className="space-y-0.5">
+              {section.items.map((item) => (
+                <Link
+                  key={item.id}
+                  to={item.href}
+                  onClick={onClose}
+                  className="flex items-start gap-2.5 px-2.5 py-2 rounded-lg hover:bg-gray-50 transition-colors duration-150 group"
+                >
+                  <span className="w-7 h-7 bg-gray-100 border border-gray-200 rounded-md shrink-0 mt-0.5" />
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <p className="text-sm font-medium text-gray-900 group-hover:text-gray-700 leading-tight transition-colors">
+                        {item.label}
+                      </p>
+                      {item.badge && (
+                        <span className="text-[10px] font-semibold bg-gray-900 text-white px-2 py-0.5 rounded-full leading-none">
+                          {item.badge}
+                        </span>
+                      )}
+                    </div>
+                    {item.subtext && (
+                      <p className="text-xs text-gray-500 mt-0.5 leading-snug">{item.subtext}</p>
+                    )}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ─── Panneau cartes bus (desktop) ────────────────────────────────────────
+
+function BusCardsPanel({ data, onClose }) {
+  return (
+    <div className="p-5" style={{ minWidth: 480 }}>
+      <div className="flex flex-col gap-2 mb-4">
+        {data.cards.map((card) => (
+          <Link
+            key={card.id}
+            to={card.href}
+            onClick={onClose}
+            className="group flex items-center gap-4 rounded-xl border border-gray-100 overflow-hidden hover:border-gray-200 hover:shadow-sm transition-all duration-200"
+          >
+            {/* Image paysage */}
+            <div className="relative w-[120px] h-[72px] bg-gray-100 shrink-0 flex items-center justify-center">
+              {card.image ? (
+                <img
+                  src={card.image}
+                  alt={card.label}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <svg
+                  viewBox="0 0 80 44"
+                  className="w-16 h-9 text-gray-400"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <rect x="4" y="6" width="72" height="28" rx="7" opacity="0.25" />
+                  <rect x="4" y="6" width="72" height="28" rx="7" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.5" />
+                  <circle cx="18" cy="38" r="5" opacity="0.4" />
+                  <circle cx="62" cy="38" r="5" opacity="0.4" />
+                  <rect x="9"  y="11" width="18" height="10" rx="2" opacity="0.3" />
+                  <rect x="31" y="11" width="18" height="10" rx="2" opacity="0.3" />
+                  <rect x="54" y="11" width="14" height="10" rx="2" opacity="0.3" />
+                </svg>
+              )}
+            </div>
+
+            {/* Texte */}
+            <div className="flex-1 min-w-0 py-3">
+              <p className="font-semibold text-gray-900 text-sm leading-tight group-hover:text-gray-700 transition-colors">
+                {card.label}
+              </p>
+              <p className="text-xs text-gray-500 mt-0.5">{card.subtext}</p>
+            </div>
+
+            <span className="text-gray-300 group-hover:text-gray-500 transition-colors text-sm pr-4 shrink-0">→</span>
+          </Link>
+        ))}
+      </div>
+
+      {/* Bloc Acquérir un bus */}
+      <Link
+        to={data.cta.href}
+        onClick={onClose}
+        className="group flex items-center gap-4 bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-xl px-4 py-3.5 mb-3 transition-colors duration-150"
+      >
+        <div className="w-9 h-9 bg-gray-200 border border-gray-300 rounded-lg shrink-0" />
+        <div className="flex-1 min-w-0">
+          <p className="font-semibold text-gray-900 text-sm leading-tight">{data.cta.label}</p>
+          <p className="text-xs text-gray-500 mt-0.5">Opérateurs, mutuelles, collectivités — unité clé en main</p>
+        </div>
+        <span className="text-gray-400 group-hover:text-gray-600 text-sm transition-colors shrink-0">→</span>
+      </Link>
+
+      {/* Lien bas de panneau */}
+      <div className="pt-2 border-t border-gray-100">
+        <Link
+          to={data.footer.href}
+          onClick={onClose}
+          className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-150"
+        >
+          {data.footer.label}
+        </Link>
+      </div>
+    </div>
+  );
+}
+
 // ─── Wrapper panneau desktop ──────────────────────────────────────────────
 
 function DropdownPanel({ menuKey, isOpen, onClose }) {
   const data = megaMenus[menuKey];
   if (!data) return null;
-
-  const centered = data.type === "profil-switcher";
 
   return (
     <AnimatePresence>
@@ -183,15 +349,17 @@ function DropdownPanel({ menuKey, isOpen, onClose }) {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className={`z-50 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden ${
-            centered
-              ? "fixed top-16 left-1/2 -translate-x-1/2"
-              : "absolute top-full left-0"
+          className={`absolute top-full z-50 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden ${
+            data.type === "profil-switcher"
+              ? "left-1/2 -translate-x-[35%]"
+              : "left-1/2 -translate-x-1/2"
           }`}
         >
           {data.type === "profil-switcher" && <VousEtesMegaMenu data={data} onClose={onClose} />}
           {data.type === "columns"          && <ColumnsPanel     data={data} onClose={onClose} />}
           {data.type === "simple"           && <SimplePanel      data={data} onClose={onClose} />}
+          {data.type === "bus-cards"        && <BusCardsPanel    data={data} onClose={onClose} />}
+          {data.type === "rich-list"        && <RichListPanel    data={data} onClose={onClose} />}
         </motion.div>
       )}
     </AnimatePresence>
@@ -255,6 +423,18 @@ function getMobileLinks(menuData) {
   }
   if (menuData.type === "simple") {
     const base = [...menuData.items];
+    if (menuData.footer) base.push({ id: "__footer__", label: menuData.footer.label, href: menuData.footer.href });
+    return base;
+  }
+  if (menuData.type === "rich-list") {
+    const items = menuData.sections
+      ? menuData.sections.flatMap((s) => s.items)
+      : menuData.items ?? [];
+    return items.map((item) => ({ id: item.id, label: item.label, href: item.href }));
+  }
+  if (menuData.type === "bus-cards") {
+    const base = menuData.cards.map((c) => ({ id: c.id, label: c.label, href: c.href }));
+    if (menuData.cta)    base.push({ id: "__cta__",    label: menuData.cta.label,    href: menuData.cta.href });
     if (menuData.footer) base.push({ id: "__footer__", label: menuData.footer.label, href: menuData.footer.href });
     return base;
   }

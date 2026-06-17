@@ -126,6 +126,24 @@ export default function Footer() {
                 Mentions légales
               </Link>
             </li>
+            <li>
+              <Link
+                to="/plan-du-site"
+                className="text-xs text-gray-600 hover:text-gray-400 transition-colors duration-150"
+              >
+                Plan du site
+              </Link>
+            </li>
+            <li>
+              <a
+                href="/audit-wireframe.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-gray-600 hover:text-gray-400 transition-colors duration-150"
+              >
+                Audit wireframe ↗
+              </a>
+            </li>
           </ul>
         </div>
       </div>
