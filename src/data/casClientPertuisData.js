@@ -236,7 +236,7 @@ export const articlesLies = {
   ],
   maillageLiens: [
     { label: "Le MédicoBus en détail", href: "/produits/medicobus" },
-    { label: "Nos solutions pour les mutuelles", href: "/entreprises" },
+    { label: "Nos solutions pour les mutuelles", href: "/entreprises-et-mutuelles" },
     { label: "Nos cas clients en collectivité", href: "/ressources/cas-clients" },
     { label: "La télédermatologie Hocoia", href: "/ressources/articles" },
   ],

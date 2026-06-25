@@ -431,7 +431,7 @@ function CtaSection() {
               Prendre rendez-vous
             </Link>
             <Link
-              to="/recrutement"
+              to="/a-propos/recrutement"
               className="inline-flex items-center justify-center gap-2 border border-gray-300 text-gray-700 text-sm font-semibold px-7 py-4 rounded-full hover:bg-gray-100 transition-colors duration-200"
             >
               Rejoindre l'équipe

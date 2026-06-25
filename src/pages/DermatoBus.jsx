@@ -146,7 +146,7 @@ function HeroSection() {
 
           <p className="text-gray-500 text-xs">
             Vous êtes patient·e ?{" "}
-            <a href="/prendre-rdv" className="text-gray-400 underline hover:text-white transition-colors">
+            <a href="/calendrier" className="text-gray-400 underline hover:text-white transition-colors">
               → Trouver un dépistage près de chez vous
             </a>
           </p>

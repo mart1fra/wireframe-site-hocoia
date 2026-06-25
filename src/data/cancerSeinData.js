@@ -158,7 +158,7 @@ export const pourQui = {
       description:
         "Proposez un bilan mammaire à vos collaboratrices sur site, ou à vos adhérentes dans le cadre d'un programme de prévention.",
       casType: "Cas type : journée santé femmes dans un site industriel de 1 200 salariés.",
-      href: "/entreprises",
+      href: "/entreprises-et-mutuelles",
       cta: "Solutions entreprise →",
     },
     {
@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Rapprochez le dépistage des femmes éloignées des centres de radiologie. Hocoia gère la campagne de A à Z.",
       casType: "Cas type : 200 femmes dépistées en 5 jours dans une CC rurale de Moselle.",
-      href: "/collectivites",
+      href: "/collectivites-et-institutions",
       cta: "Solutions collectivités →",
     },
     {
@@ -176,7 +176,7 @@ export const pourQui = {
       description:
         "Externalisez le dépistage hors les murs et augmentez le volume de patientes sans saturer vos plateaux techniques.",
       casType: "Cas type : partenariat CH régional pour couvrir les communes périphériques.",
-      href: "/etablissements-sante",
+      href: "/etablissements-de-sante-et-essms",
       cta: "Partenariats hospitaliers →",
     },
   ],

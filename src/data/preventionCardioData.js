@@ -158,7 +158,7 @@ export const pourQui = {
       description:
         "Le risque cardiovasculaire est la 1ère cause d'absentéisme de longue durée. Proposez un bilan cardio à vos collaborateurs — investissement santé mesurable.",
       casType: "Cas type : bilan cardio pour 200 salariés en 3 jours sur site.",
-      href: "/entreprises",
+      href: "/entreprises-et-mutuelles",
       cta: "Solutions entreprise →",
     },
     {
@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Organisez une campagne de prévention cardiovasculaire pour vos administrés, en particulier les plus de 50 ans éloignés des centres de santé.",
       casType: "Cas type : 150 bilans réalisés en 2 jours sur la place du marché.",
-      href: "/collectivites",
+      href: "/collectivites-et-institutions",
       cta: "Solutions collectivités →",
     },
     {
@@ -176,7 +176,7 @@ export const pourQui = {
       description:
         "Externalisez le dépistage cardiovasculaire hors les murs. Réduisez la pression sur vos services de cardiologie en filtrant les cas non urgents.",
       casType: "Cas type : partenariat CPTS pour couvrir les zones sans cardiologue.",
-      href: "/etablissements-sante",
+      href: "/etablissements-de-sante-et-essms",
       cta: "Partenariats hospitaliers →",
     },
   ],

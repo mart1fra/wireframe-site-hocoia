@@ -469,13 +469,13 @@ export default function Calendrier() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
-                to="/entreprises"
+                to="/entreprises-et-mutuelles"
                 className="bg-white text-gray-900 px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors"
               >
                 Découvrir nos offres B2B
               </Link>
               <Link
-                to="/collectivites"
+                to="/collectivites-et-institutions"
                 className="border border-white/30 text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors"
               >
                 Collectivités & institutions

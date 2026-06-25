@@ -42,7 +42,7 @@ export const megaMenus = {
         subtext: "Solutions RH & expérience adhérent",
         icon: "🏢",
         iconBg: "#ede9fe",
-        href: "/entreprises",
+        href: "/entreprises-et-mutuelles",
         contentKey: "b2b",
       },
       {
@@ -51,7 +51,7 @@ export const megaMenus = {
         subtext: "Santé de proximité pour vos territoires",
         icon: "🏛️",
         iconBg: "#dbeafe",
-        href: "/collectivites",
+        href: "/collectivites-et-institutions",
         contentKey: "b2b",
       },
       {
@@ -60,7 +60,7 @@ export const megaMenus = {
         subtext: "Actions hors les murs",
         icon: "🏥",
         iconBg: "#ffedd5",
-        href: "/etablissements-sante",
+        href: "/etablissements-de-sante-et-essms",
         contentKey: "b2b",
       },
       {
@@ -69,7 +69,7 @@ export const megaMenus = {
         subtext: "Rejoindre l'équipe",
         icon: "🩺",
         iconBg: "#dcfce7",
-        href: "/pro-sante",
+        href: "/professionnels-de-sante",
         contentKey: "pro-sante",
       },
     ],

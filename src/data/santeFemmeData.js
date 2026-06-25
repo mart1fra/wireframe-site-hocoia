@@ -158,7 +158,7 @@ export const pourQui = {
       description:
         "La santé gynécologique est un angle mort de la prévention en entreprise. Proposez une journée santé femme à vos collaboratrices sur site.",
       casType: "Cas type : journée santé femmes dans un site industriel — 60 consultations en 2 jours.",
-      href: "/entreprises",
+      href: "/entreprises-et-mutuelles",
       cta: "Solutions entreprise →",
     },
     {
@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Organisez une campagne de suivi gynécologique pour vos administrées. Priorité aux communes sans gynécologue, aux publics précaires.",
       casType: "Cas type : campagne santé femme dans une CC de Moselle, 80 consultations en 3 jours.",
-      href: "/collectivites",
+      href: "/collectivites-et-institutions",
       cta: "Solutions collectivités →",
     },
     {
@@ -176,7 +176,7 @@ export const pourQui = {
       description:
         "Externalisez les consultations gynécologiques de prévention hors les murs. Libérez vos gynécologues pour les cas complexes.",
       casType: "Cas type : partenariat maternité pour le suivi de grossesse précoce en territoires ruraux.",
-      href: "/etablissements-sante",
+      href: "/etablissements-de-sante-et-essms",
       cta: "Partenariats hospitaliers →",
     },
   ],

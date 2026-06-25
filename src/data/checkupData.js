@@ -158,7 +158,7 @@ export const pourQui = {
       description:
         "Le check-up santé est le programme de prévention le plus demandé par les entreprises. Mesurez l'état de santé de vos équipes, réduisez l'absentéisme.",
       casType: "Cas type : 300 collaborateurs bilancés en 3 jours sur site.",
-      href: "/entreprises",
+      href: "/entreprises-et-mutuelles",
       cta: "Solutions entreprise →",
     },
     {
@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Proposez un bilan de santé gratuit à vos administrés. Idéal pour les zones sans médecin généraliste, les séniors, les populations précaires.",
       casType: "Cas type : journée santé sur la place du marché, 80 bilans en une journée.",
-      href: "/collectivites",
+      href: "/collectivites-et-institutions",
       cta: "Solutions collectivités →",
     },
     {
@@ -176,7 +176,7 @@ export const pourQui = {
       description:
         "Déchargez votre service de médecine générale en externalisant le dépistage primaire. Le MédicoBus filtre les cas et oriente vers les bons services.",
       casType: "Cas type : partenariat EHPAD pour les résidents sans suivi régulier.",
-      href: "/etablissements-sante",
+      href: "/etablissements-de-sante-et-essms",
       cta: "Partenariats hospitaliers →",
     },
   ],

@@ -51,13 +51,13 @@ export default function App() {
     <Routes>
       {/* Home + B2B */}
       <Route path="/"                    element={<Wrap><Home /></Wrap>} />
-      <Route path="/entreprises"         element={<Wrap><Entreprises /></Wrap>} />
-      <Route path="/collectivites"        element={<Wrap><ActeursPublics /></Wrap>} />
-      <Route path="/etablissements-sante" element={<Wrap><EtablissementsSante /></Wrap>} />
+      <Route path="/entreprises-et-mutuelles"      element={<Wrap><Entreprises /></Wrap>} />
+      <Route path="/collectivites-et-institutions" element={<Wrap><ActeursPublics /></Wrap>} />
+      <Route path="/etablissements-de-sante-et-essms" element={<Wrap><EtablissementsSante /></Wrap>} />
 
       {/* Parcours */}
       <Route path="/patient"             element={<Wrap><Patient /></Wrap>} />
-      <Route path="/pro-sante"           element={<Wrap><ProSante /></Wrap>} />
+      <Route path="/professionnels-de-sante" element={<Wrap><ProSante /></Wrap>} />
 
       {/* Solutions — Services */}
       <Route path="/solutions/prevention-cardio" element={<Wrap><PreventionCardio /></Wrap>} />

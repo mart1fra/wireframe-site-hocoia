@@ -158,7 +158,7 @@ export const pourQui = {
       description:
         "Proposez un bilan cutané à vos collaborateurs sur site, ou à vos adhérents dans le cadre d'un programme de prévention santé.",
       casType: "Cas type : 150 salariés dépistés en 3 jours sur un site industriel.",
-      href: "/entreprises",
+      href: "/entreprises-et-mutuelles",
       cta: "Solutions entreprise →",
     },
     {
@@ -167,7 +167,7 @@ export const pourQui = {
       description:
         "Organisez une campagne de dépistage pour vos administrés. Hocoia gère communication, logistique, médical et bilan.",
       casType: "Cas type : 72 patients dépistés en 3 jours au CCAS de Pertuis.",
-      href: "/collectivites",
+      href: "/collectivites-et-institutions",
       cta: "Solutions collectivités →",
     },
     {
@@ -176,7 +176,7 @@ export const pourQui = {
       description:
         "Externalisez le dépistage hors les murs. Augmentez votre couverture populationnelle sans saturer votre plateau technique.",
       casType: "Cas type : partenariat CHU pour couvrir les zones périphériques.",
-      href: "/etablissements-sante",
+      href: "/etablissements-de-sante-et-essms",
       cta: "Partenariats hospitaliers →",
     },
   ],

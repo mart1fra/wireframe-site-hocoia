@@ -14,11 +14,11 @@ const sections = [
     id: "vous-etes",
     label: "Vous êtes",
     pages: [
-      { label: "Entreprises & mutuelles", href: "/entreprises" },
-      { label: "Collectivités & institutions", href: "/collectivites" },
-      { label: "Établissements de santé & médico-social", href: "/etablissements-sante" },
+      { label: "Entreprises & mutuelles", href: "/entreprises-et-mutuelles" },
+      { label: "Collectivités & institutions", href: "/collectivites-et-institutions" },
+      { label: "Établissements de santé & ESSMS", href: "/etablissements-de-sante-et-essms" },
       { label: "Patient", href: "/patient" },
-      { label: "Professionnel de santé", href: "/pro-sante" },
+      { label: "Professionnels de santé", href: "/professionnels-de-sante" },
     ],
   },
   {
@@ -65,9 +65,9 @@ const sections = [
     id: "a-propos",
     label: "À propos",
     pages: [
-      { label: "Notre vision", href: "/a-propos/vision" },
+      { label: "Vision & Mission", href: "/a-propos/vision" },
       { label: "Technologie", href: "/a-propos/technologie" },
-      { label: "L'équipe", href: "/a-propos/equipe" },
+      { label: "Équipe", href: "/a-propos/equipe" },
       { label: "Recrutement", href: "/a-propos/recrutement" },
     ],
   },
@@ -76,10 +76,10 @@ const sections = [
     label: "Presse & contact",
     pages: [
       { label: "Espace presse", href: "/presse" },
-      { label: "Nous contacter", href: "/contact" },
+      { label: "Contact", href: "/contact" },
       { label: "Se connecter", href: "/se-connecter" },
       { label: "FAQ", href: "/faq" },
-      { label: "Avis", href: "/avis", seoOnly: true },
+      { label: "Avis patients", href: "/avis", seoOnly: true },
     ],
   },
 ];

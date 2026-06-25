@@ -1,51 +1,60 @@
 // Mappe chaque route à son fil d'ariane.
 // Format : tableau d'objets { label, href }
-// Le dernier élément est la page actuelle (pas de href)
+// Le dernier élément est la page actuelle (pas de href nécessaire, rendu en texte)
 
 export const breadcrumbsMap = {
-  // Profils
-  "/entreprises":          [{ label: "Vous êtes", href: null }, { label: "Entreprises & mutuelles" }],
-  "/collectivites":        [{ label: "Vous êtes", href: null }, { label: "Collectivités & institutions" }],
-  "/etablissements-sante": [{ label: "Vous êtes", href: null }, { label: "Établissements de santé & médico-social" }],
-  "/patient":              [{ label: "Vous êtes", href: null }, { label: "Patient" }],
-  "/pro-sante":            [{ label: "Vous êtes", href: null }, { label: "Professionnel de santé" }],
+  // ─── Profils ───────────────────────────────────────────────────────────────
+  "/entreprises-et-mutuelles":      [{ label: "Vous êtes" }, { label: "Entreprises & mutuelles" }],
+  "/collectivites-et-institutions": [{ label: "Vous êtes" }, { label: "Collectivités & institutions" }],
+  "/etablissements-de-sante-et-essms": [{ label: "Vous êtes" }, { label: "Établissements de santé & ESSMS" }],
+  "/patient":                       [{ label: "Vous êtes" }, { label: "Patient" }],
+  "/professionnels-de-sante":       [{ label: "Vous êtes" }, { label: "Professionnels de santé" }],
 
-  // Solutions — services
-  "/solutions/prevention-cardio": [{ label: "Nos solutions", href: null }, { label: "Prévention cardio" }],
-  "/solutions/cancer-peau":       [{ label: "Nos solutions", href: null }, { label: "Cancer de la peau" }],
-  "/solutions/checkup":           [{ label: "Nos solutions", href: null }, { label: "Check-up santé" }],
-  "/solutions/cancer-sein":       [{ label: "Nos solutions", href: null }, { label: "Cancer du sein" }],
-  "/solutions/sante-femme":       [{ label: "Nos solutions", href: null }, { label: "Santé de la femme" }],
+  // ─── Solutions — services ──────────────────────────────────────────────────
+  "/nos-solutions":                [{ label: "Nos solutions" }],
+  "/solutions/prevention-cardio":  [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Prévention cardiovasculaire" }],
+  "/solutions/cancer-peau":        [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Cancer de la peau" }],
+  "/solutions/checkup":            [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Check-up santé" }],
+  "/solutions/cancer-sein":        [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Cancer du sein" }],
+  "/solutions/sante-femme":        [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Santé de la femme" }],
 
-  // Solutions — produits
-  "/produits/medicobus":    [{ label: "Nos solutions", href: null }, { label: "MédicoBus" }],
-  "/mammobus":              [{ label: "Nos solutions", href: null }, { label: "MammoBus" }],
-  "/produits/mammobus":     [{ label: "Nos solutions", href: null }, { label: "MammoBus" }],
-  "/dermatobus":            [{ label: "Nos solutions", href: null }, { label: "DermatoBus" }],
-  "/produits/dermatobus":   [{ label: "Nos solutions", href: null }, { label: "DermatoBus" }],
-  "/produits/centre-sante": [{ label: "Nos solutions", href: null }, { label: "Centre de santé mobile" }],
+  // ─── Solutions — produits ──────────────────────────────────────────────────
+  "/acquerir-un-bus":       [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Acquérir un bus" }],
+  "/produits/medicobus":    [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "MédicoBus" }],
+  "/mammobus":              [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "MammoBus" }],
+  "/produits/mammobus":     [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "MammoBus" }],
+  "/dermatobus":            [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "DermatoBus" }],
+  "/produits/dermatobus":   [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "DermatoBus" }],
+  "/produits/centre-sante": [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Centre de santé mobile" }],
 
-  // Ressources
-  "/ressources/articles":      [{ label: "Ressources", href: null }, { label: "Articles" }],
-  "/ressources/cas-clients":   [{ label: "Ressources", href: null }, { label: "Cas clients" }],
-  "/ressources/cas-clients/pertuis-mutuelle-avignon": [{ label: "Ressources", href: null }, { label: "Cas clients", href: "/ressources/cas-clients" }, { label: "Mutuelle Générale d'Avignon — Pertuis" }],
-  "/ressources/livres-blancs": [{ label: "Ressources", href: null }, { label: "Livres blancs" }],
-  "/ressources/videos":        [{ label: "Ressources", href: null }, { label: "Vidéos" }],
-  "/ressources/podcast":       [{ label: "Ressources", href: null }, { label: "Podcast" }],
+  // ─── Ressources ────────────────────────────────────────────────────────────
+  "/ressources/articles":      [{ label: "Ressources" }, { label: "Articles" }],
+  "/ressources/cas-clients":   [{ label: "Ressources" }, { label: "Cas clients" }],
+  "/ressources/cas-clients/pertuis-mutuelle-avignon": [
+    { label: "Ressources" },
+    { label: "Cas clients", href: "/ressources/cas-clients" },
+    { label: "Mutuelle Générale d'Avignon" },
+  ],
+  "/ressources/livres-blancs": [{ label: "Ressources" }, { label: "Livres blancs" }],
+  "/ressources/videos":        [{ label: "Ressources" }, { label: "Vidéos" }],
+  "/ressources/podcast":       [{ label: "Ressources" }, { label: "Podcast" }],
 
-  // Calendrier
+  // ─── Calendrier ────────────────────────────────────────────────────────────
   "/calendrier": [{ label: "Calendrier des passages" }],
 
-  // Hub solutions
-  "/nos-solutions": [{ label: "Nos solutions" }],
-
-  // Connexion & FAQ
+  // ─── Connexion & FAQ ───────────────────────────────────────────────────────
   "/se-connecter": [{ label: "Se connecter" }],
   "/faq":          [{ label: "FAQ" }],
 
-  // À propos
-  "/a-propos/vision":      [{ label: "À propos", href: null }, { label: "Notre vision" }],
-  "/a-propos/technologie": [{ label: "À propos", href: null }, { label: "Technologie" }],
-  "/a-propos/equipe":      [{ label: "À propos", href: null }, { label: "Équipe" }],
-  "/a-propos/recrutement": [{ label: "À propos", href: null }, { label: "Recrutement" }],
+  // ─── À propos ──────────────────────────────────────────────────────────────
+  "/a-propos/vision":      [{ label: "À propos" }, { label: "Vision & Mission" }],
+  "/a-propos/technologie": [{ label: "À propos" }, { label: "Technologie" }],
+  "/a-propos/equipe":      [{ label: "À propos" }, { label: "Équipe" }],
+  "/a-propos/recrutement": [{ label: "À propos" }, { label: "Recrutement" }],
+
+  // ─── Autres ────────────────────────────────────────────────────────────────
+  "/presse":      [{ label: "Espace presse" }],
+  "/contact":     [{ label: "Contact" }],
+  "/plan-du-site":[{ label: "Plan du site" }],
+  "/avis":        [{ label: "Avis patients" }],
 };

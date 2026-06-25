@@ -9,7 +9,7 @@ export const hero = {
   b2bLink: {
     prefix: "Vous êtes une entreprise ou une collectivité ? →",
     linkText: "Découvrir nos solutions",
-    href: "/entreprises",
+    href: "/entreprises-et-mutuelles",
   },
 };
 
