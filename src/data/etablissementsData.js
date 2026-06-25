@@ -81,7 +81,7 @@ export const useCases = {
   ],
   content: {
     hopitaux: {
-      eyebrow: "Pour les hôpitaux & CHU",
+      eyebrow: "",
       h2: "Étendez votre activité de soin et de prévention hors les murs",
       paragraphs: [
         "Les hôpitaux publics et CHU ont une mission de prévention et de santé publique qui dépasse les murs de l'établissement. Hocoia leur permet de rayonner sur leur territoire et contribuer à désaturer leurs services de consultations internes.",
@@ -132,7 +132,7 @@ export const useCases = {
       },
     },
     cliniques: {
-      eyebrow: "Pour les cliniques privées",
+      eyebrow: "",
       h2: "Différenciez votre offre avec la prévention embarquée",
       paragraphs: [
         "Les cliniques privées cherchent à se différencier par la qualité de leur offre de prévention. Proposer un programme de dépistage embarqué constitue un atout concurrentiel fort, sans mobiliser vos plateaux techniques.",
@@ -183,7 +183,7 @@ export const useCases = {
       },
     },
     ehpad: {
-      eyebrow: "Pour les ESSMS",
+      eyebrow: "",
       h2: "La prévention vient à vos bénéficiaires, sans les déplacer",
       paragraphs: [
         "EHPAD, IME, FAM, MAS, SSIAD, résidences autonomie : vos bénéficiaires comptent parmi les publics les plus éloignés des soins de prévention. Le transport médicalisé est coûteux, souvent complexe à organiser, parfois refusé par les personnes elles-mêmes.",
@@ -355,7 +355,7 @@ export const processus = {
 // ─── Témoignages ───────────────────────────────────────────────────────────
 
 export const temoignages = {
-  eyebrow: "Ils en parlent",
+  eyebrow: "",
   h2: "Ce que disent les professionnels qui nous font confiance",
   cards: [
     {
@@ -404,7 +404,7 @@ export const videoTestimonial = {
 // ─── FAQ ───────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Ce que se demandent les directeurs & médecins avant de se lancer",
   items: [
     {
@@ -443,7 +443,7 @@ export const faq = {
 // ─── Modèles d'engagement ─────────────────────────────────────────────────
 
 export const modeles = {
-  eyebrow: "Nos modèles d'engagement",
+  eyebrow: "",
   h2: "Un bus médical configuré pour vos spécialités médicales",
   subtitle:
     "Acquérez un bus Hocoia équipé pour les spécialités de votre établissement et étendez votre activité hors les murs de façon pérenne. Ou testez le dispositif avec une prestation ponctuelle.",
@@ -516,45 +516,33 @@ export const parcoursPatient = {
 // ─── Achat sur mesure ─────────────────────────────────────────────────────
 
 export const achatSurMesure = {
-  eyebrow: "Acquisition · Sur mesure",
+  eyebrow: "",
   h2: "Dotez votre établissement d'un bus médical",
   subtitle:
-    "Acquérez votre propre bus médical pour intégrer la prévention à votre offre de soins. Conçu sur mesure pour vos spécialités ou disponible en catalogue — à l'achat ou en leasing.",
-  surmesure: {
-    tag: "Sur mesure",
-    title: "Un bus conçu pour votre établissement",
-    points: [
-      {
-        title: "Conception sur mesure",
-        description: "Équipements médicaux, aménagement intérieur et protocoles définis avec vos équipes selon vos spécialités.",
-      },
-      {
-        title: "Formation de vos soignants",
-        description: "Vos équipes sont formées à la prise en main du bus et à l'utilisation de HocoApp avant la mise en service.",
-      },
-      {
-        title: "Intégration à votre SIH",
-        description: "Interface possible avec votre dossier patient informatisé pour une continuité du parcours de soins.",
-      },
-      {
-        title: "Maintenance & support",
-        description: "Hocoia assure la maintenance technique, les mises à jour logicielles et le support opérationnel dans la durée.",
-      },
-    ],
-    modes: {
-      label: "Modes de financement",
-      items: ["Achat direct", "Partenariat hospitalier long terme", "Location longue durée"],
-    },
-    ctaPrimary: "Étudier mon projet d'acquisition →",
-    ctaOutline: "Télécharger la brochure",
-  },
-  catalogue: {
-    tag: "Catalogue · Achat ou leasing",
-    title: "Ou choisissez un bus Hocoia existant",
+    "Hocoia intervient avec son propre bus médical, ou conçoit et livre le vôtre. À vous de choisir le modèle qui correspond à votre projet.",
+  prestation: {
+    tag: "Prestation",
+    title: "Location / prestation ponctuelle",
     description:
-      "Nos bus catalogue sont déjà équipés de nos spécialités phares, disponibles à l'achat ou en leasing. Opérationnel rapidement, sans délai de conception.",
-    specialites: ["MédicoBus", "MammoBus", "DermatoBus"],
-    cta: "Voir les bus disponibles →",
+      "Hocoia intervient avec son propre bus médical et ses soignants pour une journée ou une campagne dans votre établissement. Aucun investissement, organisation entièrement prise en charge.",
+    points: [
+      "Équipe médicale mise à disposition",
+      "Idéal pour tester ou pour des campagnes ponctuelles",
+      "Pas d'investissement initial",
+    ],
+    cta: "Organiser une journée →",
+  },
+  acquisition: {
+    tag: "Acquisition · Recommandé",
+    title: "Acquérir votre propre bus médical",
+    description:
+      "Hocoia conçoit, équipe et vous livre votre propre bus médical, ajusté à vos spécialités et vos protocoles. Votre établissement dispose d'un dispositif pérenne, intégré à votre parcours patient, à vos couleurs.",
+    points: [
+      "Bus sur mesure pour vos spécialités et vos protocoles",
+      "Formation de vos équipes + maintenance Hocoia",
+      "Achat direct, partenariat hospitalier ou leasing",
+    ],
+    cta: "Étudier mon projet d'acquisition →",
     ctaHref: "/acquerir-un-bus",
   },
 };

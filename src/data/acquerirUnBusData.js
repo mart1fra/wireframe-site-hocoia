@@ -1,7 +1,7 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Acquisition · Sur mesure",
+  eyebrow: "",
   h1: [
     "Équipez-vous de votre propre bus médical, ",
     { italic: "adapté à votre activité." },
@@ -262,7 +262,7 @@ export const financement = {
 // ─── FAQ ─────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Vos questions sur l'acquisition d'un bus médical",
   items: [
     {

@@ -1,7 +1,7 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Collectivités et institutions",
+  eyebrow: "",
   h1: [
     "Renforcez la prévention santé dans ",
     { italic: "votre territoire" },
@@ -84,7 +84,7 @@ export const useCases = {
   ],
   content: {
     collectivites: {
-      eyebrow: "Pour les collectivités",
+      eyebrow: "",
       h2: "Désenclavez votre territoire sans construire",
       paragraphs: [
         "Les déserts médicaux touchent de plein fouet les communes rurales et les communautés de communes. Hocoia apporte physiquement les soins là où les cabinets médicaux manquent, sans qu'aucune infrastructure permanente ne soit nécessaire.",
@@ -135,7 +135,7 @@ export const useCases = {
       },
     },
     cpts: {
-      eyebrow: "Pour les CPTS & MSP",
+      eyebrow: "",
       h2: "Renforcez votre offre sans surcharger vos équipes",
       paragraphs: [
         "Les CPTS et MSP font face à une demande croissante que leurs équipes ne peuvent pas toujours absorber. Hocoia vient en complément de votre exercice, avec des spécialités et des programmes de prévention que vous ne proposez pas encore en interne.",
@@ -191,7 +191,7 @@ export const useCases = {
 // ─── Zéro charge ───────────────────────────────────────────────────────────
 
 export const zeroCharge = {
-  eyebrow: "Notre engagement",
+  eyebrow: "",
   h2: "Vous n'avez rien à gérer. C'est notre rôle.",
   intro:
     "La principale objection des collectivités et institutions face à la santé de proximité, c'est la complexité opérationnelle. Hocoia l'a conçu pour que vous n'ayez aucun de ces problèmes.",
@@ -281,7 +281,7 @@ export const processus = {
 // ─── Financements ──────────────────────────────────────────────────────────
 
 export const financements = {
-  eyebrow: "Financez votre projet",
+  eyebrow: "",
   h2: "Des dispositifs de financement adaptés au secteur public",
   subtitle:
     "Hocoia vous accompagne dans l'identification et le montage des financements existants : CLS, ARS, fonds régionaux, DETR.",
@@ -313,7 +313,7 @@ export const financements = {
 // ─── Témoignages ───────────────────────────────────────────────────────────
 
 export const temoignages = {
-  eyebrow: "Ils témoignent",
+  eyebrow: "",
   h2: "Ce que disent les élus et directeurs qui ont choisi Hocoia",
   row1: [
     {
@@ -341,30 +341,12 @@ export const temoignages = {
       role: "Chargé de la santé, Val de Fensch",
     },
   ],
-  row2: [
-    {
-      id: "tm4",
-      context: "Élu · Angerville",
-      quote:
-        "Hocoia permet de renforcer localement l'accès aux soins tout en désengorgeant les cabinets médicaux et les hôpitaux pour les pathologies bénignes.",
-      name: "Johann Mittelhausser",
-      role: "Maire d'Angerville",
-    },
-    {
-      id: "tm5",
-      context: "Institutionnel · Ministère des AE",
-      quote:
-        "L'organisation est remarquable : prise de RDV, déroulement, tous les créneaux remplis rapidement. Ce concept permet un examen complet.",
-      name: "Claire Doucerain",
-      role: "Responsable DSE, Ministère des AE",
-    },
-  ],
 };
 
 // ─── Ressources ────────────────────────────────────────────────────────────
 
 export const ressources = {
-  eyebrow: "Ressources",
+  eyebrow: "",
   h2: "Préparez votre dossier & convainquez en interne",
   subtitle:
     "Contenus pensés pour les décideurs publics : DGS, conseils municipaux, commissions santé.",
@@ -427,7 +409,7 @@ export const videoTestimonial = {
 // ─── FAQ ───────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Ce que se demandent les élus & directeurs avant de se lancer",
   items: [
     {
@@ -472,7 +454,7 @@ export const faq = {
 // ─── Modèles d'engagement ─────────────────────────────────────────────────
 
 export const modeles = {
-  eyebrow: "Nos modèles d'engagement",
+  eyebrow: "",
   h2: "Un bus médical configuré pour votre territoire",
   subtitle:
     "Dotez votre territoire d'un bus médical en propre pour un service de santé mobile pérenne. Ou lancez-vous avec une prestation ponctuelle clé en main.",
@@ -573,49 +555,33 @@ export const seoContent = {
 // ─── Achat sur mesure ─────────────────────────────────────────────────────
 
 export const achatSurMesure = {
-  eyebrow: "Acquisition · Sur mesure",
+  eyebrow: "",
   h2: "Dotez votre territoire d'un bus médical",
   subtitle:
-    "Acquérez votre propre bus de prévention santé pour répondre durablement aux besoins de santé de vos habitants. Configuré sur mesure ou livré clé en main — à l'achat ou en location.",
-  surmesure: {
-    tag: "Sur mesure",
-    title: "Un bus conçu pour votre territoire",
-    points: [
-      {
-        title: "Spécialités configurées pour votre territoire",
-        description:
-          "Dermatologie, Cardiologie, mammographie, médecine générale : le bus est équipé selon les déserts médicaux identifiés et les priorités de santé publique locales.",
-      },
-      {
-        title: "Propriété de la collectivité",
-        description:
-          "Le bus devient un équipement communal ou intercommunal, déployable commune par commune selon votre programme de santé.",
-      },
-      {
-        title: "Opérable en autonomie ou via Hocoia",
-        description:
-          "Votre bus peut être opéré avec vos propres soignants, via une CPTS partenaire, ou via le réseau Hocoia selon votre organisation.",
-      },
-      {
-        title: "Éligible aux financements publics",
-        description:
-          "Subventions d'investissement, DETR, fonds régionaux, ARS : Hocoia vous accompagne dans le montage financier pour réduire le reste à charge.",
-      },
-    ],
-    modes: {
-      label: "Dispositifs de financement",
-      items: ["Subvention DETR", "Fonds régionaux", "ARS / PRAPS", "CLS", "Mécénat institutionnel"],
-    },
-    ctaPrimary: "Étudier mon projet d'acquisition →",
-    ctaOutline: "Télécharger la brochure",
-  },
-  catalogue: {
-    tag: "Catalogue · Achat ou location",
-    title: "Ou choisissez un bus Hocoia existant",
+    "Hocoia intervient avec son propre bus médical, ou conçoit et livre le vôtre. À vous de choisir le modèle qui correspond à votre projet territorial.",
+  prestation: {
+    tag: "Prestation",
+    title: "Location / prestation ponctuelle",
     description:
-      "Pas besoin de partir de zéro. Nos bus catalogue sont déjà équipés de nos spécialités phares, disponibles à l'achat ou en location.",
-    specialites: ["MédicoBus", "MammoBus", "DermatoBus", "CardioExpress"],
-    cta: "Voir les bus disponibles →",
+      "Hocoia intervient avec son propre bus médical et ses soignants pour une journée ou une campagne dans votre commune. Aucun investissement, organisation entièrement prise en charge.",
+    points: [
+      "Équipe médicale mise à disposition",
+      "Idéal pour tester ou pour des campagnes ponctuelles",
+      "Pas d'investissement initial",
+    ],
+    cta: "Organiser une journée →",
+  },
+  acquisition: {
+    tag: "Acquisition · Recommandé",
+    title: "Acquérir votre propre bus médical",
+    description:
+      "Hocoia conçoit, équipe et vous livre votre propre bus médical, configuré pour les besoins de santé de votre territoire. Votre collectivité dispose d'un dispositif pérenne, déployable commune par commune, à vos couleurs.",
+    points: [
+      "Bus sur mesure pour vos spécialités et votre territoire",
+      "Formation + maintenance Hocoia incluses",
+      "Éligible aux financements publics (DETR, ARS, fonds régionaux)",
+    ],
+    cta: "Étudier mon projet d'acquisition →",
     ctaHref: "/acquerir-un-bus",
   },
 };

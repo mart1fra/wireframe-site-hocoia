@@ -30,7 +30,7 @@ export default function CasClients() {
   return (
     <div className="min-h-screen bg-white">
       {/* En-tête */}
-      <header className="bg-gray-50 border-b border-gray-200 py-14 px-6">
+      <header className="bg-gray-50 py-14 px-6">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function CasClients() {
       </header>
 
       {/* Filtres */}
-      <div className="sticky top-0 z-10 bg-white border-b border-gray-100 py-3 px-6">
+      <div className="sticky top-0 z-10 bg-white py-3 px-6">
         <div className="max-w-5xl mx-auto flex items-center gap-2 flex-wrap">
           {ressourcesFiltres.map((filtre) => (
             <button

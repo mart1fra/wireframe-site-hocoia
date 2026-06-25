@@ -25,6 +25,7 @@ const itemV = {
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 function Eyebrow({ children, light = false }) {
+  if (!children) return null;
   return (
     <p
       className={`text-xs font-semibold uppercase tracking-widest mb-3 ${
@@ -544,7 +545,6 @@ function OffresSection() {
               <span className="bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
                 {offres.soignants.label}
               </span>
-              <div className="flex-1 border-t border-gray-200" />
             </div>
             <motion.div
               variants={listV}
@@ -589,7 +589,6 @@ function OffresSection() {
               <span className="bg-gray-100 text-gray-700 text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full">
                 {offres.internes.label}
               </span>
-              <div className="flex-1 border-t border-gray-200" />
             </div>
             <motion.div
               variants={listV}

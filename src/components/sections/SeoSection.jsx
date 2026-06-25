@@ -24,7 +24,7 @@ export default function SeoSection({ data }) {
       : [];
 
   return (
-    <section className="bg-gray-50 border-t border-gray-200">
+    <section className="bg-gray-50">
       <div className="max-w-4xl mx-auto px-6 py-10">
         <FadeIn>
           <div className="border border-gray-200 rounded-xl overflow-hidden bg-white">
@@ -51,7 +51,7 @@ export default function SeoSection({ data }) {
               transition={{ duration: 0.25, ease: "easeInOut" }}
               style={{ overflow: "hidden" }}
             >
-              <div className="px-6 pb-8 pt-2 border-t border-gray-100">
+              <div className="px-6 pb-8 pt-2">
                 {introParagraphs.length > 0 && (
                   <div className="space-y-3 mb-8 pt-4">
                     {introParagraphs.map((p, i) => (

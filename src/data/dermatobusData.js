@@ -79,7 +79,7 @@ export const stats = [
 // ─── Concept (composant ConceptSection) ──────────────────────────────────────
 
 export const concept = {
-  eyebrow: "Le concept",
+  eyebrow: "",
   title: "Qu'est-ce que le DermatoBus Hocoia ?",
   paragraphs: [
     {
@@ -130,7 +130,7 @@ export const concept = {
 // ─── Définition ───────────────────────────────────────────────────────────────
 
 export const definition = {
-  eyebrow: "Le concept",
+  eyebrow: "",
   h2: "Qu'est-ce que le DermatoBus Hocoia ?",
   paras: [
     {
@@ -348,7 +348,7 @@ export const solutions = {
 // ─── Témoignages ──────────────────────────────────────────────────────────────
 
 export const temoignages = {
-  eyebrow: "Ils témoignent",
+  eyebrow: "",
   h2: "Ce que disent nos partenaires et patients",
   top: [
     {
@@ -374,24 +374,6 @@ export const temoignages = {
         "Un bilan extrêmement positif, toutes les patientes ont exprimé leur satisfaction. Ce dispositif répond à un vrai besoin que nos structures ne peuvent pas couvrir seules.",
       author: "Anne Haller",
       role: "Coordinatrice Contrat Local de Santé",
-    },
-  ],
-  bottom: [
-    {
-      id: "t4",
-      contexte: "Mutuelle · Vendée",
-      quote:
-        "Ce type d'offre répond à un vrai besoin. La prévention est un élément important — Hocoia nous conforte dans cette conviction.",
-      author: "Didier Brouard",
-      role: "Élu MGEN Vendée",
-    },
-    {
-      id: "t5",
-      contexte: "Patiente · Val de Fensch",
-      quote:
-        "Une expérience à poursuivre et à pérenniser. On a beaucoup de mal à avoir des RDV dermato — merci à vous !",
-      author: "Mme Nuvolara",
-      role: "Patiente, Val de Fensch",
     },
   ],
 };
@@ -449,7 +431,7 @@ export const seo = {
 // ─── FAQ ──────────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Tout savoir sur le DermatoBus",
   items: [
     {

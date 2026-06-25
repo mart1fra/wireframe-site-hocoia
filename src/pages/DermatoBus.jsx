@@ -37,6 +37,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
 function Eyebrow({ children }) {
+  if (!children) return null;
   return (
     <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
       {children}
@@ -78,7 +79,7 @@ function renderSegments(segments) {
 
 function BannierePilote() {
   return (
-    <div className="w-full bg-gray-100 border-b border-gray-200 px-6 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+    <div className="w-full bg-gray-100 px-6 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
       <div className="flex items-center gap-3">
         <span className="bg-gray-900 text-white text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full shrink-0">
           {piloteBanner.badge}
@@ -181,7 +182,7 @@ function HeroSection() {
 
 function LogosSection() {
   return (
-    <section className="bg-white py-12 px-6 border-b border-gray-100">
+    <section className="bg-white py-12 px-6">
       <div className="max-w-5xl mx-auto">
         <p className="text-center text-xs text-gray-500 mb-6">{logos.label}</p>
         <div className="flex flex-wrap justify-center gap-3">
@@ -606,28 +607,9 @@ function TemoignagesSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5"
+          className="grid grid-cols-1 md:grid-cols-3 gap-5"
         >
           {temoignages.top.map((t) => (
-            <motion.div key={t.id} variants={itemV} className="border border-gray-200 rounded-xl p-6 flex flex-col">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-4">{t.contexte}</p>
-              <p className="text-gray-700 text-sm leading-relaxed italic flex-1 mb-5">"{t.quote}"</p>
-              <div>
-                <p className="text-sm font-semibold text-gray-900">{t.author}</p>
-                <p className="text-xs text-gray-500 mt-0.5">{t.role}</p>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        <motion.div
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-5 border-t border-gray-200 pt-5"
-        >
-          {temoignages.bottom.map((t) => (
             <motion.div key={t.id} variants={itemV} className="border border-gray-200 rounded-xl p-6 flex flex-col">
               <p className="text-[10px] font-semibold uppercase tracking-widest text-gray-400 mb-4">{t.contexte}</p>
               <p className="text-gray-700 text-sm leading-relaxed italic flex-1 mb-5">"{t.quote}"</p>

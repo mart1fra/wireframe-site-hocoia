@@ -79,7 +79,7 @@ export const stats = [
 // ─── Concept (composant ConceptSection) ──────────────────────────────────────
 
 export const concept = {
-  eyebrow: "Le concept",
+  eyebrow: "",
   title: "Qu'est-ce que le MammoBus Hocoia ?",
   paragraphs: [
     {
@@ -132,7 +132,7 @@ export const concept = {
 // ─── Définition ───────────────────────────────────────────────────────────────
 
 export const definition = {
-  eyebrow: "Le concept",
+  eyebrow: "",
   h2: "Qu'est-ce que le MammoBus Hocoia ?",
   paras: [
     {
@@ -282,7 +282,7 @@ export const pourQui = {
 // ─── Témoignages ──────────────────────────────────────────────────────────────
 
 export const temoignages = {
-  eyebrow: "Ils témoignent",
+  eyebrow: "",
   h2: "Ce que disent nos partenaires",
   cards: [
     {
@@ -450,7 +450,7 @@ export const seo = {
 // ─── FAQ ──────────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Tout savoir sur le MammoBus",
   subtitle:
     "Les questions spécifiques au MammoBus. Pour les questions générales, consultez notre FAQ principale.",

@@ -245,9 +245,6 @@ function HeroLeft() {
     <div className="flex flex-col gap-7">
       {/* Texte d'intro */}
       <div>
-        <motion.p {...fadeUp(0)} className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
-          Nous contacter
-        </motion.p>
         <motion.h1 {...fadeUp(0.06)} className="font-display font-bold text-4xl sm:text-5xl text-gray-900 leading-[1.1] mb-4">
           La santé vient à vous.
         </motion.h1>

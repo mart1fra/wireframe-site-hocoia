@@ -24,6 +24,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children }) {
+  if (!children) return null;
   return (
     <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
       {children}

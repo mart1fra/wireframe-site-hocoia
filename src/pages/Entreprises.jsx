@@ -34,6 +34,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children }) {
+  if (!children) return null;
   return (
     <p className="text-[11px] uppercase tracking-widest font-medium text-gray-400 mb-3">
       {children}
@@ -161,7 +162,7 @@ function HeroSection() {
 
 function LogosSection() {
   return (
-    <section className="bg-gray-50 border-b border-gray-200">
+    <section className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-10">
         <FadeIn className="text-center mb-6">
           <p className="text-xs text-gray-500 font-medium">{logos.label}</p>
@@ -467,7 +468,6 @@ function HowItWorksSection() {
       <div className="max-w-7xl mx-auto">
 
         <FadeIn className="mb-10">
-          <Eyebrow>Comment cela marche</Eyebrow>
           <SectionH2>De la signature au bilan, tout est pris en charge</SectionH2>
         </FadeIn>
 

@@ -193,7 +193,7 @@ export const useCases = {
 // ─── Zone B2B sombre ──────────────────────────────────────────────────────
 
 export const b2bZone = {
-  eyebrow: "Pour les organisations",
+  eyebrow: "",
   h2: "Un programme santé clé en main",
   description:
     "Bus déployé sur site, résultats anonymisés, reporting DRH. Hocoia gère l'intégralité de la logistique et vous livre des données actionnables.",

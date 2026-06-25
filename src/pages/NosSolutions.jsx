@@ -30,6 +30,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children, light = false }) {
+  if (!children) return null;
   return (
     <p className={`text-[11px] uppercase tracking-widest font-medium mb-3 ${light ? "text-gray-500" : "text-gray-400"}`}>
       {children}
@@ -119,7 +120,7 @@ function SolutionCard({ sol }) {
       className="bg-white border border-gray-200 rounded-xl overflow-hidden flex flex-col"
     >
       {/* Image placeholder */}
-      <div className="h-40 bg-gray-100 border-b border-gray-200 flex items-center justify-center px-6 shrink-0">
+      <div className="h-40 bg-gray-100 flex items-center justify-center px-6 shrink-0">
         <p className="text-gray-400 text-xs italic text-center">{sol.imagePlaceholder}</p>
       </div>
 
@@ -230,7 +231,7 @@ function ComparisonSection() {
         <FadeIn delay={0.1}>
           <div className="border border-gray-200 rounded-xl overflow-hidden">
             {/* En-tête */}
-            <div className="grid grid-cols-4 bg-gray-100 border-b border-gray-200">
+            <div className="grid grid-cols-4 bg-gray-100">
               {comparison.headers.map((h) => (
                 <div key={h} className="px-5 py-3.5">
                   <p className="text-xs font-semibold text-gray-700 uppercase tracking-wide">{h}</p>
@@ -242,7 +243,7 @@ function ComparisonSection() {
             {comparison.rows.map((row, i) => (
               <div
                 key={row.criterion}
-                className={`grid grid-cols-4 border-t border-gray-200 ${i % 2 === 1 ? "bg-gray-50/60" : "bg-white"}`}
+                className={`grid grid-cols-4 ${i % 2 === 1 ? "bg-gray-50/60" : "bg-white"}`}
               >
                 <div className="px-5 py-4">
                   <p className="text-sm font-semibold text-gray-900">{row.criterion}</p>

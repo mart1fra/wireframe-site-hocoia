@@ -18,7 +18,8 @@
       "WebFetch(domain:hocoia.com)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\\\\src\\\\data\" -Filter \"*.js\")",
       "Bash(Select-Object Name)",
-      "WebFetch(domain:www.hocoia.com)"
+      "WebFetch(domain:www.hocoia.com)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Martin Frassinelli\\\\Documents\\\\claude_projet\\\\site_web_hocoia\\\\src\" -Recurse -Filter \"*.js\" -o Name)"
     ]
   }
 }

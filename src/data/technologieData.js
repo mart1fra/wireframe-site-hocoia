@@ -1,7 +1,7 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Technologie",
+  eyebrow: "",
   h1: {
     before: "La technologie qui rend la santé ",
     italic: "accessible partout.",
@@ -41,7 +41,7 @@ export const chiffres = [
 
 export const promesse = {
   gauche: {
-    eyebrow: "Notre approche",
+    eyebrow: "",
     h2: "Technologie et humain, indissociables.",
     paragraphe:
       "Ce qui distingue Hocoia, c'est la combinaison unique d'une présence humaine qualifiée et d'outils numériques de pointe. Nos patients ne sont pas face à un écran : ils sont accompagnés, examinés, pris en charge.",
@@ -73,7 +73,7 @@ export const promesse = {
     ],
   },
   droite: {
-    eyebrow: "Ce que cela change concrètement",
+    eyebrow: "",
     cartes: [
       {
         id: "patients",
@@ -100,7 +100,7 @@ export const promesse = {
 // ─── Parcours en 4 temps ───────────────────────────────────────────────────
 
 export const parcours = {
-  eyebrow: "L'expérience Hocoia",
+  eyebrow: "",
   h2: "Un parcours coordonné, de la prise de rendez-vous jusqu'aux résultats.",
   etapes: [
     {
@@ -172,7 +172,7 @@ export const outils = [
 // ─── Dispositifs connectés ─────────────────────────────────────────────────
 
 export const dispositifs = {
-  eyebrow: "Dans le bus",
+  eyebrow: "",
   h2: "Des équipements médicaux de pointe, directement à bord",
   paragraphe:
     "Chaque MédicoBus embarque plus de 10 dispositifs médicaux connectés, sélectionnés et configurés selon la spécialité déployée. Ces équipements sont intégrés à HocoVisio pour permettre un diagnostic assisté en conditions réelles.",
@@ -248,7 +248,7 @@ export const temoignages = [
 // ─── Maillage interne ─────────────────────────────────────────────────────
 
 export const maillage = {
-  eyebrow: "La technologie embarquée dans nos solutions",
+  eyebrow: "",
   h3: "Découvrez nos bus équipés",
   cards: [
     {

@@ -1,7 +1,7 @@
 // ─── Données page Recrutement ────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Rejoignez Hocoia",
+  eyebrow: "",
   h1Before: "Contribuez à révolutionner ",
   h1Italic: "l'accès à la santé.",
   subtitle:
@@ -26,7 +26,7 @@ export const chiffres = [
 ];
 
 export const temoignages = {
-  eyebrow: "Ils témoignent",
+  eyebrow: "",
   h2: "Ce que disent ceux qui ont rejoint Hocoia",
   subtitle:
     "Des médecins, infirmières et sages-femmes qui ont fait le choix d'une pratique différente, en toute liberté.",
@@ -62,7 +62,7 @@ export const temoignages = {
 };
 
 export const journeeDepistage = {
-  eyebrow: "Vos journées avec Hocoia",
+  eyebrow: "",
   h2: "À quoi ressemble une journée de dépistage ?",
   subtitle:
     "Avant de vous engager, voyez concrètement comment se déroulent nos prestations sur le terrain et quels outils vous allez utiliser.",
@@ -128,7 +128,7 @@ export const journeeDepistage = {
 };
 
 export const pourquoiRejoindre = {
-  eyebrow: "Pourquoi rejoindre Hocoia",
+  eyebrow: "",
   h2: "Une pratique libérée, un impact réel.",
   subtitle:
     "Hocoia s'occupe de tout ce qui n'est pas le soin, vous vous concentrez sur vos patients.",
@@ -158,7 +158,7 @@ export const pourquoiRejoindre = {
 };
 
 export const equipeInterne = {
-  eyebrow: "L'équipe Hocoia",
+  eyebrow: "",
   h2: "Des profils variés, une même conviction.",
   paragraph:
     "Derrière les bus Hocoia, il y a une équipe pluridisciplinaire qui construit l'infrastructure, coordonne les déploiements, développe les outils et les partenariats. Médecins, ingénieurs, chefs de projet, communicants : tous engagés pour la même mission.",
@@ -230,7 +230,7 @@ export const equipeInterne = {
 };
 
 export const processusRecrutement = {
-  eyebrow: "Comment cela se passe",
+  eyebrow: "",
   h2: "Un processus simple. On lit tout, on répond à tous.",
   steps: [
     {
@@ -440,7 +440,7 @@ export const offres = {
 };
 
 export const candidatureSpontanee = {
-  eyebrow: "Candidature spontanée",
+  eyebrow: "",
   h3: "Votre profil n'est pas dans la liste ?",
   paragraph:
     "Si vous êtes convaincu que votre expertise peut contribuer à notre mission, parlez-nous de vous.",

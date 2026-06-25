@@ -1,7 +1,7 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Entreprises & mutuelles",
+  eyebrow: "",
   h1: "Rapprochez la prévention santé de vos équipes et adhérents.",
   subtitle:
     "Hocoia déploie des bus médicaux directement sur le lieu de travail ou de vie, en alliant humain et technologie de pointe.",
@@ -58,7 +58,7 @@ export const useCases = {
   ],
   content: {
     entreprises: {
-      eyebrow: "Pour les entreprises",
+      eyebrow: "",
       title: "Réduisez l'absentéisme, valorisez votre marque employeur",
       paragraphs: [
         "Vos collaborateurs font face à des délais de 3 à 6 mois pour consulter un spécialiste. Hocoia contourne ces délais en venant directement à eux, sur leur lieu de travail. Résultat : une participation bien plus élevée, des bilans complets réalisés, un impact mesurable.",
@@ -106,7 +106,7 @@ export const useCases = {
       },
     },
     assureurs: {
-      eyebrow: "Pour les mutuelles",
+      eyebrow: "",
       title: "Faites de la prévention un service concret pour vos adhérents",
       paragraphs: [
         "Vos adhérents rencontrent souvent des difficultés à consulter un spécialiste. Hocoia vous permet d'organiser des campagnes de dépistage directement dans leurs communes : la mutuelle invite ses adhérents, Hocoia déploie le bus, le dépistage est gratuit pour le patient.",
@@ -186,7 +186,7 @@ export const stats = [
 // ─── Avis clients entreprise ──────────────────────────────────────────────
 
 export const avisClients = {
-  eyebrow: "Témoignages",
+  eyebrow: "",
   h2: "Pourquoi entreprises et mutuelles font confiance à Hocoia",
   cards: [
     {
@@ -257,7 +257,7 @@ export const processus = {
 // ─── Ressources ───────────────────────────────────────────────────────────
 
 export const ressources = {
-  eyebrow: "Ressources",
+  eyebrow: "",
   h2: "Préparez votre décision",
   cards: [
     {
@@ -303,7 +303,7 @@ export const ressources = {
 // ─── FAQ ──────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Les questions que se posent les entreprises et mutuelles avant de démarrer",
   items: [
     {
@@ -344,7 +344,7 @@ export const faq = {
 // ─── Modèles d'engagement ─────────────────────────────────────────────────
 
 export const modeles = {
-  eyebrow: "Nos modèles d'engagement",
+  eyebrow: "",
   h2: "Un bus médical aux couleurs de votre structure",
   subtitle:
     "Configurez un bus médical selon les spécialités de votre secteur et déployez vos programmes de prévention quand vous le souhaitez. Ou commencez par une prestation clé en main.",

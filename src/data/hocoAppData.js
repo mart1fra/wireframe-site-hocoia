@@ -1,6 +1,6 @@
 export const hocoAppByAudience = {
   patient: {
-    eyebrow: "Plateforme digitale",
+    eyebrow: "",
     h2: "HocoApp — votre santé, accessible à tout moment.",
     subtitle:
       "Prenez rendez-vous, retrouvez vos comptes-rendus et suivez votre parcours de prévention depuis votre téléphone. HocoApp centralise tout ce dont vous avez besoin — en toute sécurité.",
@@ -14,7 +14,7 @@ export const hocoAppByAudience = {
     mockupLabel: "Interface patient — prise de RDV",
   },
   proSante: {
-    eyebrow: "Plateforme digitale",
+    eyebrow: "",
     h2: "HocoApp — votre outil pour exercer partout",
     subtitle:
       "Gérez vos missions, consultez les dossiers patients et lancez des téléconsultations depuis un seul outil. HocoApp a été conçu pour les professionnels de santé en mobilité — sur le terrain comme à distance.",
@@ -31,7 +31,7 @@ export const hocoAppByAudience = {
     mockupLabel: "Interface pro — agenda & dossiers",
   },
   entreprises: {
-    eyebrow: "Plateforme digitale",
+    eyebrow: "",
     h2: "HocoApp — orchestrez la santé de vos collaborateurs",
     subtitle:
       "Organisez vos bilans de santé collectifs, suivez la participation de vos collaborateurs ou adhérents et offrez à chaque patient un accès sécurisé à ses résultats. Tout est centralisé, anonymisé et accessible depuis votre tableau de bord.",
@@ -46,7 +46,7 @@ export const hocoAppByAudience = {
     mockupLabel: "Tableau de bord RH — bilans collectifs",
   },
   collectivites: {
-    eyebrow: "Plateforme digitale",
+    eyebrow: "",
     h2: "HocoApp — pilotez la prévention dans votre territoire",
     subtitle:
       "Planifiez les déploiements commune par commune, invitez vos habitants en quelques clics et suivez les indicateurs de fréquentation depuis votre tableau de bord territorial. HocoApp centralise tout le suivi de vos actions de santé publique.",
@@ -63,7 +63,7 @@ export const hocoAppByAudience = {
     mockupLabel: "Pilotage territoire — passages & fréquentation",
   },
   acteursPublics: {
-    eyebrow: "Plateforme digitale",
+    eyebrow: "",
     h2: "HocoApp — pilotez vos actions de santé publique",
     subtitle:
       "Suivez l'ensemble de vos programmes de prévention, partagez les indicateurs avec vos partenaires institutionnels et exportez les données pour vos rapports ARS. HocoApp s'adapte aux exigences du secteur public.",
@@ -80,7 +80,7 @@ export const hocoAppByAudience = {
     mockupLabel: "Pilotage santé publique — indicateurs consolidés",
   },
   etablissementsSante: {
-    eyebrow: "Plateforme digitale",
+    eyebrow: "",
     h2: "HocoApp — orchestrez la santé de vos collaborateurs",
     subtitle:
       "Un outil intuitif pour centralisez l'organisation des bilans de santé collectifs, simplifiez le suivi des collaborateurs et offrez à chaque salarié un accès sécurisé à ses informations médicales. Une solution fluide pour piloter la prévention, améliorer le suivi patient et optimiser la gestion santé en entreprise.",

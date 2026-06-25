@@ -1,7 +1,7 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Médias & Communication",
+  eyebrow: "",
   h1: "Espace presse",
   subtitle:
     "Retrouvez ici toutes les informations sur Hocoia : notre fiche d'identité, nos dernières actualités dans les médias, nos communiqués officiels et nos ressources pour les journalistes.",
@@ -12,7 +12,7 @@ export const hero = {
 // ─── Fiche d'identité ─────────────────────────────────────────────────────
 
 export const ficheIdentite = {
-  eyebrow: "En bref",
+  eyebrow: "",
   h2: "Hocoia en quelques mots",
   pitch:
     "Hocoia est une start-up française de santé mobile et connectée fondée en 2021 à Strasbourg. Notre mission : rendre la santé accessible à tous, en tout lieu, grâce à un modèle de santé préventif, mobile et connecté. Nos bus médicaux itinérants équipés de technologies de pointe vont au-devant des citoyens, là où l'offre de soins fait défaut.",
@@ -30,7 +30,7 @@ export const ficheIdentite = {
 // ─── Chiffres & Contexte ──────────────────────────────────────────────────
 
 export const chiffresContexte = {
-  eyebrow: "Le contexte",
+  eyebrow: "",
   h2: "Hocoia en chiffres",
   items: [
     { value: "1er",       label: "Réseau national",  sublabel: "bus médicaux"    },
@@ -42,7 +42,7 @@ export const chiffresContexte = {
 
 // À REMPLACER : placeholders à remplacer par les vraies retombées presse
 export const ilsParlentDeNous = {
-  eyebrow: "Dans les médias",
+  eyebrow: "",
   h2: "Ils parlent de nous",
   subtitle: "Retrouvez les articles et reportages consacrés à Hocoia.",
   items: [
@@ -105,7 +105,7 @@ export const ilsParlentDeNous = {
 
 // À REMPLACER : placeholders à remplacer par les vrais communiqués
 export const communiques = {
-  eyebrow: "Communiqués officiels",
+  eyebrow: "",
   h2: "Nos communiqués de presse",
   subtitle: "Téléchargez nos communiqués officiels en français.",
   items: [
@@ -119,7 +119,7 @@ export const communiques = {
 // ─── Kit média ────────────────────────────────────────────────────────────
 
 export const kitMedia = {
-  eyebrow: "Kit média",
+  eyebrow: "",
   h2: "Kits médias à télécharger",
   subtitle: "Un kit complet par événement — communiqué officiel, photos, logo HD et éléments de langage.",
   kits: [
@@ -170,7 +170,7 @@ export const kitMedia = {
 // ─── Contact presse ───────────────────────────────────────────────────────
 
 export const contactPresse = {
-  eyebrow: "Vous écrire",
+  eyebrow: "",
   h2: "Contact presse",
   subtitle:
     "Pour toute demande d'interview, d'information ou de rendez-vous, contactez notre équipe presse.",

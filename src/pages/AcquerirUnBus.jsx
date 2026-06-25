@@ -32,6 +32,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children }) {
+  if (!children) return null;
   return (
     <p className="text-[11px] uppercase tracking-widest font-medium text-gray-400 mb-3">
       {children}
@@ -160,7 +161,7 @@ function HeroSection() {
 
 function LogosSection() {
   return (
-    <section className="bg-white py-10 px-6 border-b border-gray-100">
+    <section className="bg-white py-10 px-6">
       <div className="max-w-5xl mx-auto">
         <p className="text-center text-xs text-gray-500 mb-6">{logos.label}</p>
         <div className="flex flex-wrap justify-center gap-3">

@@ -33,6 +33,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children }) {
+  if (!children) return null;
   return (
     <p className="text-[11px] uppercase tracking-widest font-medium text-gray-400 mb-3">
       {children}
@@ -226,7 +227,7 @@ function HeroSection() {
 
 function PartnersSection() {
   return (
-    <section className="bg-gray-50 border-b border-gray-200">
+    <section className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 py-10">
         <FadeIn className="text-center mb-6">
           <p className="text-xs text-gray-500 font-medium">{hero.partners.label}</p>
@@ -257,7 +258,7 @@ function PartnersSection() {
 
 function StatsSection() {
   return (
-    <section id="chiffres" className="bg-gray-50 border-b border-gray-200">
+    <section id="chiffres" className="bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           className="grid grid-cols-4 divide-x divide-gray-200"
@@ -398,92 +399,75 @@ function UseCasesSection() {
 // ─── 5b. ACHAT SUR MESURE ─────────────────────────────────────────────────
 
 function AchatSurMesureSection() {
-  const { surmesure, catalogue } = achatSurMesure;
+  const { prestation, acquisition } = achatSurMesure;
   return (
-    <section id="achat-sur-mesure" className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 py-24">
+    <section id="achat-sur-mesure" className="bg-gray-50 border-y border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 py-16">
 
-        <FadeIn className="mb-12 max-w-2xl">
+        <FadeIn className="mb-10">
           <Eyebrow>{achatSurMesure.eyebrow}</Eyebrow>
           <h2 className="font-display font-bold text-3xl leading-tight text-gray-900">
             {achatSurMesure.h2}
           </h2>
-          <p className="text-gray-600 mt-4 text-lg leading-relaxed">
+          <p className="text-gray-500 text-base leading-relaxed max-w-2xl mt-3">
             {achatSurMesure.subtitle}
           </p>
         </FadeIn>
 
-        <div className="grid grid-cols-[3fr_2fr] gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-          {/* Colonne gauche — sur mesure */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8">
-            <span className="inline-block text-[10px] font-medium uppercase tracking-wide text-gray-600 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full mb-6">
-              {surmesure.tag}
-            </span>
-            <h3 className="font-display font-bold text-xl text-gray-900 mb-8">{surmesure.title}</h3>
-
-            <motion.div
-              className="grid grid-cols-2 gap-x-8 gap-y-8 mb-10"
-              variants={listV}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, margin: "-60px" }}
-            >
-              {surmesure.points.map((point, i) => (
-                <motion.div key={i} variants={itemV} className="flex items-start gap-3">
-                  <span className="w-7 h-7 rounded-lg bg-gray-100 border border-gray-200 shrink-0 mt-0.5" />
-                  <div>
-                    <p className="text-sm font-semibold text-gray-900 leading-tight mb-1">{point.title}</p>
-                    <p className="text-sm text-gray-500 leading-relaxed">{point.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            <div className="border-t border-gray-200 pt-6">
-              <p className="text-[10px] uppercase tracking-widest font-medium text-gray-400 mb-3">
-                {surmesure.modes.label}
+          {/* Carte Prestation — blanche */}
+          <FadeIn>
+            <div className="bg-white border border-gray-200 rounded-2xl p-7 h-full flex flex-col">
+              <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 mb-5 self-start">
+                {prestation.tag}
+              </span>
+              <h3 className="font-display font-bold text-xl text-gray-900 leading-tight mb-3">
+                {prestation.title}
+              </h3>
+              <p className="text-sm text-gray-600 leading-relaxed mb-6 flex-1">
+                {prestation.description}
               </p>
-              <div className="flex flex-wrap gap-2 mb-6">
-                {surmesure.modes.items.map((mode) => (
-                  <span key={mode} className="text-xs font-medium text-gray-600 bg-gray-100 border border-gray-200 rounded-full px-3 py-1.5">
-                    {mode}
-                  </span>
+              <ul className="space-y-2 mb-6 text-sm text-gray-600">
+                {prestation.points.map((p) => (
+                  <li key={p} className="flex items-start gap-2">
+                    <span className="text-gray-400 shrink-0 mt-0.5">→</span> {p}
+                  </li>
                 ))}
-              </div>
-              <div className="flex items-center gap-3 flex-wrap">
-                <button className="px-5 py-2.5 text-sm font-semibold text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-150 cursor-pointer">
-                  {surmesure.ctaPrimary}
-                </button>
-                <button className="px-5 py-2.5 text-sm font-medium text-gray-900 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors duration-150 cursor-pointer">
-                  {surmesure.ctaOutline}
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Colonne droite — catalogue */}
-          <FadeIn delay={0.15} className="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col">
-            <span className="inline-block text-[10px] font-medium uppercase tracking-wide text-gray-600 bg-gray-100 border border-gray-200 px-3 py-1 rounded-full mb-6 self-start">
-              {catalogue.tag}
-            </span>
-            <h3 className="font-display font-bold text-xl text-gray-900 mb-3">{catalogue.title}</h3>
-            <p className="text-sm text-gray-500 leading-relaxed mb-8">{catalogue.description}</p>
-
-            <div className="flex flex-wrap gap-2 mb-8">
-              {catalogue.specialites.map((s) => (
-                <span key={s} className="text-sm font-medium text-gray-700 bg-gray-100 border border-gray-200 rounded-full px-4 py-2">
-                  {s}
-                </span>
-              ))}
-            </div>
-
-            <div className="mt-auto">
-              <Link
-                to={catalogue.ctaHref}
-                className="inline-block px-5 py-2.5 text-sm font-semibold text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-150"
+              </ul>
+              <button
+                type="button"
+                className="self-start border border-gray-300 text-gray-900 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-100 transition-colors duration-150 cursor-pointer"
               >
-                {catalogue.cta}
+                {prestation.cta}
+              </button>
+            </div>
+          </FadeIn>
+
+          {/* Carte Acquisition — noire */}
+          <FadeIn delay={0.1}>
+            <div className="bg-gray-900 rounded-2xl p-7 h-full flex flex-col">
+              <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-white/10 text-white mb-5 self-start">
+                {acquisition.tag}
+              </span>
+              <h3 className="font-display font-bold text-xl text-white leading-tight mb-3">
+                {acquisition.title}
+              </h3>
+              <p className="text-sm text-gray-300 leading-relaxed mb-6 flex-1">
+                {acquisition.description}
+              </p>
+              <ul className="space-y-2 mb-6 text-sm text-gray-300">
+                {acquisition.points.map((p) => (
+                  <li key={p} className="flex items-start gap-2">
+                    <span className="text-gray-500 shrink-0 mt-0.5">→</span> {p}
+                  </li>
+                ))}
+              </ul>
+              <Link
+                to={acquisition.ctaHref}
+                className="self-start bg-white text-gray-900 px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors duration-150"
+              >
+                {acquisition.cta}
               </Link>
             </div>
           </FadeIn>
@@ -504,7 +488,6 @@ function HowItWorksSection() {
       <div className="max-w-7xl mx-auto px-6 py-24">
 
         <FadeIn className="mb-10">
-          <Eyebrow>Comment cela marche</Eyebrow>
           <SectionH2>Du premier contact au dépistage de vos patients</SectionH2>
         </FadeIn>
 
@@ -544,7 +527,7 @@ function HowItWorksSection() {
         </AnimatePresence>
 
         {/* CTAs */}
-        <div className="flex items-center gap-3 flex-wrap mt-12 pt-8 border-t border-gray-100">
+        <div className="flex items-center gap-3 flex-wrap mt-12 pt-8">
           <a
             href="#contact"
             className="px-6 py-2.5 text-sm font-medium text-white bg-gray-900 rounded-full hover:bg-gray-800 transition-colors duration-150"

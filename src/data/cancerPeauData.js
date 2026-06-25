@@ -185,7 +185,7 @@ export const pourQui = {
 // ─── Témoignages ──────────────────────────────────────────────────────────────
 
 export const temoignages = {
-  eyebrow: "Ils témoignent",
+  eyebrow: "",
   h2: "Ce que disent nos patients et partenaires",
   cards: [
     {
@@ -232,7 +232,7 @@ export const maillage = {
 // ─── FAQ ──────────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Tout savoir sur le dépistage du cancer de la peau",
   items: [
     {

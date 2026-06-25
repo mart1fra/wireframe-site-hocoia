@@ -29,6 +29,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children, light = false }) {
+  if (!children) return null;
   return (
     <p className={`text-xs font-semibold uppercase tracking-widest mb-3 ${light ? "text-gray-400" : "text-gray-400"}`}>
       {children}

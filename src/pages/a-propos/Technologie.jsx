@@ -28,6 +28,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children, light = false }) {
+  if (!children) return null;
   return (
     <p className={`text-[11px] font-semibold uppercase tracking-widest mb-3 ${light ? "text-gray-400" : "text-gray-400"}`}>
       {children}
@@ -130,7 +131,7 @@ function ChiffresSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-200"
+          className="grid grid-cols-1 sm:grid-cols-3"
         >
           {chiffres.map((c) => (
             <motion.div
@@ -156,7 +157,7 @@ function ChiffresSection() {
 
 function PromesseSection() {
   return (
-    <section className="bg-white py-20 px-6 border-t border-gray-100">
+    <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
 
         {/* Colonne gauche */}
@@ -207,7 +208,7 @@ function PromesseSection() {
 
 function ParcoursSection() {
   return (
-    <section className="bg-white py-20 px-6 border-t border-gray-100">
+    <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <FadeIn className="mb-14">
           <Eyebrow>{parcours.eyebrow}</Eyebrow>
@@ -326,7 +327,7 @@ function DispositifsSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="bg-gray-50 border border-gray-200 rounded-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-gray-200"
+          className="bg-gray-50 border border-gray-200 rounded-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
         >
           {dispositifs.securite.map((s) => (
             <motion.div key={s.id} variants={itemV} className="p-6">
@@ -350,14 +351,14 @@ function DispositifsSection() {
 
 function TemoignagesSection() {
   return (
-    <section className="bg-white py-20 px-6 border-t border-gray-100">
+    <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           variants={listV}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-gray-200"
+          className="grid grid-cols-1 lg:grid-cols-3"
         >
           {temoignages.map((t) => (
             <motion.div

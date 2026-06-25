@@ -173,7 +173,7 @@ export const temoignages = {
 // ─── FAQ ──────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Vos questions sur le dépistage en bus",
   items: [
     {

@@ -79,7 +79,7 @@ export const stats = [
 // ─── Concept (composant ConceptSection) ──────────────────────────────────
 
 export const concept = {
-  eyebrow: "Le concept",
+  eyebrow: "",
   title: "Qu'est-ce qu'un MédicoBus Hocoia ?",
   paragraphs: [
     {
@@ -130,7 +130,7 @@ export const concept = {
 // ─── Définition ───────────────────────────────────────────────────────────
 
 export const definition = {
-  eyebrow: "Le concept",
+  eyebrow: "",
   h2: "Qu'est-ce qu'un MédicoBus Hocoia ?",
   paragraphs: [
     "Le MédicoBus est un cabinet médical mobile et connecté de moins de 3,5 tonnes. Conçu pour apporter la prévention là où les déserts médicaux s'étendent, il combine équipements médicaux de pointe et technologies numériques.",
@@ -174,7 +174,7 @@ export const definition = {
 // ─── Équipements & Protocoles (onglets) ───────────────────────────────────
 
 export const thematiques = {
-  eyebrow: "Nos thématiques de dépistage",
+  eyebrow: "",
   h2: "MédicoBus : 4 thématiques, des équipements dédiés",
   subtitle: "Chaque MédicoBus est configuré selon la thématique choisie.",
   tabs: [
@@ -278,7 +278,7 @@ export const thematiques = {
 // ─── Parcours de consultation ─────────────────────────────────────────────
 
 export const parcours = {
-  eyebrow: "Le parcours",
+  eyebrow: "",
   h2: "Comment se déroule une consultation dans le MédicoBus ?",
   steps: [
     { id: "s1", number: "01", titre: "Prise de RDV",       description: "Réservation en ligne ou directement sur place selon disponibilité." },
@@ -331,7 +331,7 @@ export const couverture = {
 // ─── Témoignages ──────────────────────────────────────────────────────────
 
 export const temoignages = {
-  eyebrow: "Ils témoignent",
+  eyebrow: "",
   h2: "Ce que disent nos partenaires et patients",
   top: [
     {
@@ -359,30 +359,12 @@ export const temoignages = {
       role: "Maire d'Angerville",
     },
   ],
-  bottom: [
-    {
-      id: "t4",
-      contexte: "Mutuelle · Vendée",
-      quote:
-        "Ce type d'offre répond à un vrai besoin. La prévention est un élément important — Hocoia nous conforte dans cette conviction.",
-      author: "Didier Brouard",
-      role: "Élu MGEN Vendée",
-    },
-    {
-      id: "t5",
-      contexte: "Patiente · Val de Fensch",
-      quote:
-        "Une expérience à poursuivre et à pérenniser. On a beaucoup de mal à avoir des RDV dermato — merci à vous !",
-      author: "Mme Nuvolara",
-      role: "Patiente, Val de Fensch",
-    },
-  ],
 };
 
 // ─── Nos 3 solutions ──────────────────────────────────────────────────────
 
 export const solutions = {
-  eyebrow: "Nos solutions MédicoBus",
+  eyebrow: "",
   h2: "Découvrez nos 3 solutions spécialisées",
   subtitle:
     "Le MédicoBus généraliste, le DermatoBus et le MammoBus — trois produits complémentaires.",
@@ -503,7 +485,7 @@ export const seo = {
 // ─── FAQ ──────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "Questions fréquentes",
+  eyebrow: "",
   h2: "Tout savoir sur le MédicoBus",
   subtitle:
     "Les questions spécifiques au MédicoBus. Pour les questions générales, consultez notre FAQ principale.",

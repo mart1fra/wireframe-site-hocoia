@@ -2,7 +2,7 @@ const PARTNERS = ["French Tech", "French Care", "Biovalley", "Nextmed", "Futur4C
 
 export default function Partners() {
   return (
-    <section className="bg-gray-50 border-t border-gray-200 py-10 px-6">
+    <section className="bg-gray-50 py-10 px-6">
       <div className="max-w-5xl mx-auto text-center">
         <p className="text-[10px] uppercase tracking-widest font-medium text-gray-500 mb-6">
           Nos partenaires

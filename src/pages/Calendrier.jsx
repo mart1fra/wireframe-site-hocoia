@@ -334,7 +334,7 @@ export default function Calendrier() {
   return (
     <>
       {/* ─── Hero compact ─────────────────────────────────────────────── */}
-      <section className="bg-gray-50 py-14 px-6 border-b border-gray-200">
+      <section className="bg-gray-50 py-14 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -427,7 +427,7 @@ export default function Calendrier() {
                   <div className="space-y-8">
                     {grouped.map(({ label, items }) => (
                       <div key={`${label}-${page}`}>
-                        <h2 className="font-display font-bold text-base text-gray-900 mb-3 pb-2.5 border-b border-gray-200">
+                        <h2 className="font-display font-bold text-base text-gray-900 mb-3 pb-2.5">
                           {label}
                         </h2>
                         <motion.div

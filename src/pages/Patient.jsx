@@ -21,6 +21,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children }) {
+  if (!children) return null;
   return (
     <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
       {children}
@@ -238,7 +239,7 @@ function SpecialitesSection() {
               <div className="w-10 h-10 bg-gray-100 border border-gray-200 rounded-lg shrink-0" />
               <p className="font-semibold text-gray-900 text-sm">{sp.titre}</p>
               <p className="text-gray-500 text-xs leading-relaxed flex-1">{sp.description}</p>
-              <div className="flex items-center justify-between pt-2 border-t border-gray-100">
+              <div className="flex items-center justify-between pt-2">
                 <span className="text-xs text-gray-400">{sp.duree}</span>
                 <Link to={sp.href} className="text-xs text-gray-600 hover:text-gray-900 transition-colors">
                   En savoir plus →

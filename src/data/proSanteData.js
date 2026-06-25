@@ -52,7 +52,7 @@ export const hero = {
 // ─── Rôle & missions ──────────────────────────────────────────────────────
 
 export const roleMission = {
-  eyebrow: "Votre rôle",
+  eyebrow: "",
   h2: "Soigner là où les soins manquent.",
   subtitle:
     "En rejoignant Hocoia, vous mettez votre expertise au service des territoires les plus fragiles. Voici concrètement ce que vous faites à nos côtés.",
@@ -187,7 +187,7 @@ export const missionsData = {
 // ─── Profils recherchés ───────────────────────────────────────────────────
 
 export const profils = {
-  eyebrow: "Recrutement",
+  eyebrow: "",
   h2: "Quels professionnels cherchons-nous ?",
   subtitle: "Nous recrutons en prestation ou en CDD selon les postes, partout en France.",
   ctaLabel: "Postuler",
@@ -206,7 +206,7 @@ export const profils = {
 // ─── Avantages ────────────────────────────────────────────────────────────
 
 export const avantages = {
-  eyebrow: "Avantages prestataires",
+  eyebrow: "",
   h2: "Une pratique libérée, un impact réel",
   subtitle: "Hocoia s'occupe de tout le reste — vous vous concentrez sur le soin.",
   items: [
@@ -252,7 +252,7 @@ export const avantages = {
 // ─── Processus ────────────────────────────────────────────────────────────
 
 export const processus = {
-  eyebrow: "Comment cela marche",
+  eyebrow: "",
   h2: "De la candidature au terrain — notre processus en 4 étapes",
   subtitle: "Les délais varient selon le poste recherché et les missions disponibles dans votre zone. On vous tient au courant à chaque étape.",
   steps: [
@@ -274,8 +274,8 @@ export const processus = {
       id: "s3",
       number: "03",
       day: "Étape 3",
-      title: "Validation & onboarding",
-      description: "1h de prise en main des outils et protocoles.",
+      title: "Formation",
+      description: "Formation théorique par visio avec le pôle médical + accompagnement pratique le jour J par un agent d'accueil Hocoia.",
     },
     {
       id: "s4",
@@ -325,7 +325,7 @@ export const temoignages = {
 // ─── FAQ ──────────────────────────────────────────────────────────────────
 
 export const faq = {
-  eyebrow: "FAQ",
+  eyebrow: "",
   h2: "Ce que se demandent les candidats",
   items: [
     {
@@ -338,22 +338,52 @@ export const faq = {
       id: "q2",
       question: "Quel statut puis-je avoir avec Hocoia ?",
       answer:
-        "Selon le poste, vous pouvez intervenir en tant que prestataire (micro-entreprise, SASU, etc.) ou en CDD. Précisez vos préférences dans le formulaire — on en discute pendant l'entretien.",
+        "Deux options selon le poste : en prestation, vous intervenez avec votre Carte de Professionnel de Santé (CPS) et signez une lettre de mission, quel que soit votre mode d'exercice libéral. Ou en CDD, avec contrat de travail. Précisez vos préférences dans le formulaire, on en discute pendant l'entretien.",
     },
     {
       id: "q3",
       question: "Comment est fixée la rémunération ?",
       answer:
-        "En prestation, rémunération à l'acte, définie à l'avance pour chaque mission, paiement garanti sous 30 jours. En CDD, salaire selon la grille interne et la spécialité.",
+        "En prestation, rémunération définie à l'avance pour chaque mission, paiement garanti sous 30 jours. En CDD, salaire selon la grille interne et la spécialité.",
     },
     {
       id: "q4",
-      question: "Que se passe-t-il si j'annule une mission ?",
+      question: "Quelle est la durée d'une mission ?",
       answer:
-        "Prévenance de 7 jours minimum. En cas d'urgence, nous trouvons un remplaçant. Pas de pénalité financière.",
+        "Les missions durent 1 à plusieurs jours selon les besoins du client. Vous pouvez vous positionner sur une seule journée ou enchaîner plusieurs. Les missions multi-jours permettent une meilleure continuité et une organisation plus fluide pour tout le monde.",
     },
     {
       id: "q5",
+      question: "Les frais de déplacement et de repas sont-ils pris en charge ?",
+      answer:
+        "Les frais de déplacement sont remboursés sous certaines conditions, définies en amont et précisées dans votre lettre de mission. Les frais de repas sont pris en charge à hauteur de 20 € par journée effectuée.",
+    },
+    {
+      id: "q6",
+      question: "Dois-je apporter du matériel médical ?",
+      answer:
+        "Non. Hocoia met à disposition tout le matériel nécessaire à bord du bus. Exception : les sages-femmes peuvent apporter leur propre matériel si leur pratique le requiert.",
+    },
+    {
+      id: "q7",
+      question: "Faut-il des compétences techniques particulières ?",
+      answer:
+        "Aucune compétence technique spécifique n'est requise. Une bonne aisance relationnelle et de l'autonomie sont essentielles. Pour l'informatique, une aisance générale suffit. Nos outils sont simples et une prise en main est assurée avant votre première mission.",
+    },
+    {
+      id: "q8",
+      question: "Y a-t-il une formation avant la première mission ?",
+      answer:
+        "Oui. Une formation théorique est dispensée par visioconférence par notre pôle médical. Le jour J, un agent d'accueil Hocoia est présent sur le terrain pour vous accompagner dans la prise en main pratique.",
+    },
+    {
+      id: "q9",
+      question: "Que se passe-t-il en cas d'annulation de mission ?",
+      answer:
+        "De votre côté : une prévenance de 7 jours minimum est demandée. En cas d'urgence, nous gérons le remplacement sans pénalité financière. Du côté Hocoia, les modalités d'annulation sont précisées dans votre lettre de mission ou contrat. N'hésitez pas à en discuter lors de l'entretien.",
+    },
+    {
+      id: "q10",
       question: "Dois-je systématiquement me déplacer dans un bus ?",
       answer:
         "Non. Hocoia propose deux modes d'intervention : les missions terrain (dans nos bus médicaux équipés) et les missions en téléconsultation, entièrement à distance depuis votre cabinet ou votre domicile. Vous choisissez les missions qui correspondent à vos contraintes et votre planning.",

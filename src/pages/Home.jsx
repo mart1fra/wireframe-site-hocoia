@@ -28,6 +28,7 @@ const itemV = {
 // ─── Helpers ──────────────────────────────────────────────────────────────
 
 function Eyebrow({ children, light = false }) {
+  if (!children) return null;
   return (
     <p
       className={`text-xs font-semibold uppercase tracking-widest mb-3 ${
@@ -310,7 +311,7 @@ function StatsSection() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-60px" }}
-            className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-gray-200"
+            className="grid grid-cols-1 sm:grid-cols-3"
           >
             {stats.items.map((stat) => (
               <motion.div
