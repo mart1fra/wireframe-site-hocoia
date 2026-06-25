@@ -56,55 +56,30 @@ function SectionH2({ children, light = false }) {
 const HOW_TABS = [
   { id: "methode",  label: "Notre méthode",    sublabel: "De la prise de contact au déploiement" },
   { id: "parcours", label: "Parcours habitant", sublabel: "Ce que vivent vos habitants" },
-  { id: "hocoapp",  label: "HocoApp",           sublabel: "Votre tableau de bord territorial" },
+  { id: "hocoapp",  label: "Tableau de bord",    sublabel: "Votre tableau de bord territorial" },
 ];
 
 function StepsGrid({ type }) {
   const steps = type === "methode" ? processus.steps : parcoursPatient.steps;
 
-  if (type === "methode") {
-    return (
-      <div className="flex items-start">
-        {steps.map((step, index) => (
-          <Fragment key={step.id}>
-            <div className="flex-1 min-w-0 flex flex-col">
-              <p className="font-display font-bold text-4xl text-gray-200 leading-none mb-3 select-none">
-                {step.number}
-              </p>
-              <span className="inline-block self-start px-3 py-1 text-xs font-medium text-gray-700 bg-gray-100 rounded-full mb-3">
-                {step.delay}
-              </span>
-              <p className="text-sm font-semibold text-gray-900 mb-2 pr-3">{step.title}</p>
-              <p className="text-sm text-gray-500 leading-relaxed pr-3">{step.description}</p>
-            </div>
-            {index < steps.length - 1 && (
-              <div className="shrink-0 px-1 pt-12 text-gray-300 text-xl font-light select-none">›</div>
-            )}
-          </Fragment>
-        ))}
-      </div>
-    );
-  }
-
   return (
-    <div className="grid grid-cols-2 gap-6">
-      {steps.map((step) => (
-        <div key={step.id} className="flex items-start gap-4">
-          <div className="w-8 h-8 rounded-full bg-gray-900 flex items-center justify-center shrink-0 mt-0.5">
-            <span className="text-white text-xs font-bold">{step.number}</span>
+    <div className="flex items-start">
+      {steps.map((step, index) => (
+        <Fragment key={step.id}>
+          <div className="flex-1 min-w-0 flex flex-col">
+            <p className="font-display font-bold text-4xl text-gray-200 leading-none mb-3 select-none">
+              {step.number}
+            </p>
+            <span className="inline-block self-start px-3 py-1 text-xs font-medium text-gray-700 bg-gray-100 rounded-full mb-3">
+              {step.delay}
+            </span>
+            <p className="text-sm font-semibold text-gray-900 mb-2 pr-3">{step.title}</p>
+            <p className="text-sm text-gray-500 leading-relaxed pr-3">{step.description}</p>
           </div>
-          <div>
-            <div className="flex items-center gap-2 mb-1 flex-wrap">
-              <p className="text-sm font-semibold text-gray-900">{step.title}</p>
-              {step.badge && (
-                <span className="text-[10px] font-medium text-gray-600 bg-gray-100 px-2 py-0.5 rounded-full">
-                  {step.badge}
-                </span>
-              )}
-            </div>
-            <p className="text-sm text-gray-500 leading-relaxed">{step.description}</p>
-          </div>
-        </div>
+          {index < steps.length - 1 && (
+            <div className="shrink-0 px-1 pt-12 text-gray-300 text-xl font-light select-none">›</div>
+          )}
+        </Fragment>
       ))}
     </div>
   );
@@ -472,7 +447,7 @@ function HowItWorksSection() {
       <div className="max-w-7xl mx-auto px-6 py-24">
 
         <FadeIn className="mb-10">
-          <Eyebrow>Comment ça marche</Eyebrow>
+          <Eyebrow>Comment cela marche</Eyebrow>
           <SectionH2>De la prise de contact au suivi de vos habitants</SectionH2>
         </FadeIn>
 
@@ -816,7 +791,6 @@ export default function ActeursPublics() {
       {/* 1. Ce que c'est + ce que ça permet */}
       <HeroSection />
       <TrustSection />
-      <StatsSection />
       <UseCasesSection />
 
       {/* 2. Comment ça marche — méthode + parcours + HocoApp */}
@@ -830,6 +804,7 @@ export default function ActeursPublics() {
 
       {/* 5. Réassurance — témoignages élus */}
       <TemoignagesSection />
+      <StatsSection />
 
       {/* 6. Financements publics */}
       <FinancementsSection />

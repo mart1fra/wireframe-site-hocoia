@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
 import ConceptSection from "../components/sections/ConceptSection";
-import CustomBusBlock from "../components/sections/CustomBusBlock";
 import ModelesEngagementSection from "../components/sections/ModelesEngagementSection";
 import AchatOuLocationBlock from "../components/sections/AchatOuLocationBlock";
 import {
@@ -19,7 +18,6 @@ import {
   solutions,
   temoignages,
   modeles,
-  customBus,
   seo,
   faq,
   ctaFinal,
@@ -278,14 +276,6 @@ function ProtocoleSection() {
           ))}
         </motion.div>
 
-        {/* Note médico-légale */}
-        <FadeIn>
-          <div className="bg-gray-100 border border-gray-200 rounded-lg px-5 py-4">
-            <p className="text-sm leading-relaxed text-gray-600">
-              {renderSegments(protocole.note.segments)}
-            </p>
-          </div>
-        </FadeIn>
       </div>
     </section>
   );
@@ -294,7 +284,7 @@ function ProtocoleSection() {
 // ─── Section 6 — Pilote Normandie ────────────────────────────────────────────
 
 function PiloteNormandieSection() {
-  const { chuCard } = piloteNormandie;
+  const { encadre } = piloteNormandie;
   return (
     <section className="bg-white py-24 px-6">
       <div className="max-w-7xl mx-auto">
@@ -331,42 +321,17 @@ function PiloteNormandieSection() {
             </div>
           </FadeIn>
 
-          {/* Colonne droite — Carte CHU */}
+          {/* Colonne droite — Encadré pilote */}
           <FadeIn delay={0.1}>
-            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 flex flex-col gap-5">
-              {/* Header */}
-              <div className="flex items-center gap-3">
-                <div className="w-9 h-9 bg-gray-100 border border-gray-200 rounded-lg shrink-0" />
-                <div>
-                  <p className="font-semibold text-gray-900 text-sm">{chuCard.titre}</p>
-                  <p className="text-gray-500 text-xs mt-0.5">{chuCard.sousTitre}</p>
-                </div>
-              </div>
-
-              {/* Paragraphe */}
-              <p className="text-gray-600 text-sm leading-relaxed">{chuCard.paragraphe}</p>
-
-              {/* Items */}
-              <div className="space-y-2">
-                {chuCard.items.map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <span className="text-gray-400 text-xs shrink-0 mt-0.5">→</span>
-                    <span className="text-gray-700 text-xs leading-relaxed">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              {/* Encadré + CTA */}
-              <div className="bg-white border border-gray-200 rounded-lg p-4">
-                <p className="font-semibold text-gray-900 text-sm mb-1">{chuCard.encadre.titre}</p>
-                <p className="text-gray-600 text-xs leading-relaxed mb-4">{chuCard.encadre.texte}</p>
-                <button
-                  type="button"
-                  className="w-full bg-gray-900 text-white py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors cursor-pointer"
-                >
-                  {chuCard.cta}
-                </button>
-              </div>
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+              <p className="font-semibold text-gray-900 text-sm mb-2">{encadre.titre}</p>
+              <p className="text-gray-600 text-sm leading-relaxed mb-5">{encadre.texte}</p>
+              <button
+                type="button"
+                className="w-full bg-gray-900 text-white py-2.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors cursor-pointer"
+              >
+                {encadre.cta}
+              </button>
             </div>
           </FadeIn>
         </div>
@@ -485,7 +450,6 @@ function SolutionsSection() {
           ))}
         </motion.div>
 
-        <CustomBusBlock {...customBus} />
       </div>
     </section>
   );

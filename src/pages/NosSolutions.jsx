@@ -142,20 +142,6 @@ function SolutionCard({ sol }) {
           ))}
         </div>
 
-        {/* Pour qui */}
-        <div className="mb-5 flex-1">
-          <p className="text-[10px] uppercase tracking-widest text-gray-400 font-medium mb-2">
-            {solutionsSection.audiencesLabel}
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {sol.audiences.map((a) => (
-              <span key={a} className="text-xs text-gray-600 bg-gray-50 border border-gray-200 rounded-md px-2.5 py-1">
-                {a}
-              </span>
-            ))}
-          </div>
-        </div>
-
         {/* Note pilote */}
         {sol.note && (
           <p className="text-xs text-gray-400 italic mb-4">{sol.note}</p>

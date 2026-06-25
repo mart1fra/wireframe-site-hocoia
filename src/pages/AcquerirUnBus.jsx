@@ -6,6 +6,7 @@ import AccordionItem from "../components/ui/AccordionItem";
 import SeoSection from "../components/sections/SeoSection";
 import {
   hero,
+  logos,
   pourquoi,
   casClientVerdun,
   processus,
@@ -155,7 +156,29 @@ function HeroSection() {
   );
 }
 
-// ─── 2. POURQUOI ──────────────────────────────────────────────────────────
+// ─── 2. LOGOS ─────────────────────────────────────────────────────────────
+
+function LogosSection() {
+  return (
+    <section className="bg-white py-10 px-6 border-b border-gray-100">
+      <div className="max-w-5xl mx-auto">
+        <p className="text-center text-xs text-gray-500 mb-6">{logos.label}</p>
+        <div className="flex flex-wrap justify-center gap-3">
+          {logos.items.map((item) => (
+            <span
+              key={item}
+              className="bg-gray-100 border border-gray-200 text-gray-500 text-xs font-medium px-4 py-2 rounded-full"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ─── 3. POURQUOI ──────────────────────────────────────────────────────────
 
 function PourquoiSection() {
   return (
@@ -290,22 +313,6 @@ function ConfigurationsSection() {
                 ))}
               </div>
 
-              {/* Spécialités */}
-              <div>
-                <p className="text-[10px] uppercase tracking-widest font-medium text-gray-500 mb-3">
-                  {configurations.surMesure.specialitesLabel}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {configurations.surMesure.specialites.map((s) => (
-                    <span
-                      key={s}
-                      className="text-xs font-medium text-gray-300 bg-white/10 border border-white/20 rounded-full px-3 py-1.5"
-                    >
-                      {s}
-                    </span>
-                  ))}
-                </div>
-              </div>
 
             </div>
 
@@ -322,33 +329,6 @@ function ConfigurationsSection() {
           </div>
         </FadeIn>
 
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-5"
-          variants={listV}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
-        >
-          {configurations.modeles.map((m) => (
-            <motion.div
-              key={m.id}
-              variants={itemV}
-              className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col"
-            >
-              <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 mb-4 self-start">
-                {m.badge}
-              </span>
-              <p className="font-display font-bold text-lg text-gray-900 leading-tight mb-3">{m.title}</p>
-              <p className="text-sm text-gray-500 leading-relaxed flex-1 mb-5">{m.description}</p>
-              <Link
-                to={m.href}
-                className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                {m.cta}
-              </Link>
-            </motion.div>
-          ))}
-        </motion.div>
 
       </div>
     </section>
@@ -512,6 +492,7 @@ export default function AcquerirUnBus() {
   return (
     <>
       <HeroSection />
+      <LogosSection />
       <PourquoiSection />
       <ConfigurationsSection />
       <ProcessusSection />

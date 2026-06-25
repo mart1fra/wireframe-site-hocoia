@@ -3,13 +3,12 @@
 export const hero = {
   eyebrow: "Acquisition · Sur mesure",
   h1: [
-    "Acquérez votre propre bus médical, ",
-    { italic: "conçu pour votre activité." },
+    "Équipez-vous de votre propre bus médical, ",
+    { italic: "adapté à votre activité." },
   ],
   subtitle:
-    "Hocoia conçoit, équipe et livre des bus médicaux sur mesure pour les établissements de santé, collectivités, mutuelles et entreprises. De la définition du besoin à la mise en service, un accompagnement complet.",
+    "Hocoia conçoit, équipe et livre des bus médicaux sur mesure pour les collectivités, établissements de santé, mutuelles et entreprises. De la définition du besoin à la mise en service, un accompagnement complet.",
   checks: [
-    "Bus configuré selon vos spécialités et vos protocoles médicaux",
     "Équipements médicaux + aménagement intérieur sur mesure",
     "Intégration HocoApp + interface possible avec votre SIH",
     "Formation des équipes et accompagnement à la mise en service",
@@ -38,8 +37,21 @@ export const hero = {
       "À définir ensemble",
     ],
     cta: "Lancer l'étude de faisabilité →",
-    note: "Sans engagement · Réponse <24h · Confidentiel",
+    note: "Sans engagement · Confidentiel",
   },
+};
+
+// ─── Logos clients propriétaires ─────────────────────────────────────────
+
+export const logos = {
+  label: "Ils possèdent leur propre bus médical",
+  items: [
+    "CC du Grand Verdun",
+    "Ministère des AE",
+    "Mutuelle Générale d'Avignon",
+    "Val de Fensch",
+    "MGEN Vendée",
+  ],
 };
 
 // ─── Pourquoi acquérir ────────────────────────────────────────────────────
@@ -83,9 +95,9 @@ export const pourquoi = {
 
 export const casClientVerdun = {
   badge: "Cas client",
-  titre: "Pneumobus livré à Verdun",
+  titre: "Bus sur mesure — Pneumologie livré à Verdun",
   description:
-    "La Communauté de communes du Grand Verdun a acquis un PneumoBus Hocoia pour renforcer le dépistage des maladies respiratoires dans ses communes rurales. Un projet conçu sur 6 mois, livré clé en main.",
+    "La Communauté de communes du Grand Verdun a fait concevoir un bus médical sur mesure dédié au dépistage des maladies respiratoires dans ses communes rurales. Spécialité : pneumologie. Un projet conçu sur 6 mois, livré clé en main.",
   faits: [
     { label: "Territoire", value: "Grand Verdun — Meuse (55)" },
     { label: "Spécialité", value: "Pneumologie · Spirométrie" },
@@ -101,7 +113,7 @@ export const casClientVerdun = {
 // ─── Processus d'acquisition ──────────────────────────────────────────────
 
 export const processus = {
-  eyebrow: "Comment ça se passe",
+  eyebrow: "Comment cela se passe",
   h2: "De l'étude de faisabilité à la mise en service",
   subtitle:
     "Un processus structuré, jalonné, transparent. Chaque étape est validée avec vous avant de passer à la suivante.",
@@ -153,7 +165,7 @@ export const processus = {
 
 export const configurations = {
   eyebrow: "Configurations standards",
-  h2: "Concevez votre bus sur mesure ou partez d'un modèle existant",
+  h2: "Concevez votre bus sur mesure ou choisissez un modèle existant",
   subtitle:
     "Bénéficiez d'une configuration entièrement personnalisée selon vos spécialités. Ou partez de nos modèles MédicoBus, MammoBus et DermatoBus, livrés tels quels.",
   modeles: [
@@ -180,7 +192,7 @@ export const configurations = {
       badge: "DermatoBus",
       title: "Dépistage cancer de la peau",
       description:
-        "Cartographie corps entier + IA mélanome + télé-expertise CHU. Le bus dermato premium en partenariat scientifique.",
+        "Cartographie corps entier + IA mélanome + télé-expertise dermatologue. Le bus dédié au dépistage du cancer de la peau.",
       cta: "Voir le DermatoBus →",
       href: "/dermatobus",
     },
@@ -190,21 +202,6 @@ export const configurations = {
     title: "Une spécialité non couverte par nos modèles ?",
     description:
       "Hocoia conçoit des bus médicaux pour toute spécialité ou combinaison de spécialités. Chaque projet sur mesure suit le même processus rigoureux : étude de faisabilité, conception, équipement, conformité réglementaire, formation et livraison.",
-    specialitesLabel: "Exemples de spécialités réalisables",
-    specialites: [
-      "Ophtalmologie",
-      "Pneumologie",
-      "Bucco-dentaire",
-      "Santé mentale",
-      "Diabétologie",
-      "Gériatrie",
-      "Gynécologie",
-      "Pédiatrie",
-      "Addictologie",
-      "Nutrition & obésité",
-      "ORL",
-      "Hématologie",
-    ],
     points: [
       {
         title: "Toute spécialité médicale",
@@ -249,7 +246,7 @@ export const financement = {
     },
     {
       id: "f3",
-      title: "Leasing / location longue durée",
+      title: "Location longue durée",
       description:
         "Étalement de l'investissement sur plusieurs années. Adapté aux structures qui préfèrent préserver leur trésorerie.",
     },

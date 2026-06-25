@@ -1,17 +1,16 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Hôpitaux · Cliniques · EHPAD",
+  eyebrow: "Hôpitaux · Cliniques · ESSMS",
   h1: [
-    "Acquérez votre bus médical et faites de la prévention ",
-    { italic: "une activité pérenne." },
+    "Déployez votre action hors les murs grâce à votre propre bus médical.",
   ],
   subtitle:
     "Hocoia conçoit et vous livre un bus médical sur mesure, équipé pour les spécialités de votre établissement. Achat direct ou partenariat hospitalier long terme : la prévention devient une activité durable, intégrée à votre parcours patient.",
   pills: [
     { id: "p1", label: "Hôpitaux publics / CHU", active: true },
     { id: "p2", label: "Cliniques privées", active: false },
-    { id: "p3", label: "EHPAD", active: false },
+    { id: "p3", label: "ESSMS", active: false },
   ],
   checks: [
     "Bus médical sur mesure pour vos spécialités et vos protocoles",
@@ -29,7 +28,7 @@ export const hero = {
     typeOptions: [
       "Hôpital public / CHU",
       "Clinique privée",
-      "EHPAD / Résidence senior",
+      "ESSMS (EHPAD, IME, FAM, MAS…)",
       "Clinique SSR / Réadaptation",
       "Autre établissement de santé",
     ],
@@ -66,52 +65,52 @@ export const hero = {
 // ─── Chiffres ──────────────────────────────────────────────────────────────
 
 export const stats = [
-  { id: "s1", value: "1/8",    label: "femmes développera un cancer du sein, dont beaucoup de résidentes EHPAD non dépistées", source: "INCa" },
-  { id: "s2", value: "70%",    label: "des résidents EHPAD n'ont pas accès aux spécialistes sans transport médicalisé",          source: "DREES" },
-  { id: "s3", value: "95%",    label: "taux de survie cancer détecté au stade 1, la détection précoce sauve des vies",           source: "INCa" },
-  { id: "s5", value: "2 mois", label: "Délai de déploiement du premier bus dans votre établissement",                            source: "Hocoia" },
+  { id: "s1", value: "20M",     label: "passages annuels dans les services d'urgences en France",                                      source: "DREES 2023" },
+  { id: "s2", value: "280 000", label: "hospitalisations évitables par an grâce à une meilleure coordination en amont",               source: "ATIH / FHF-Ipsos" },
+  { id: "s3", value: "49%",     label: "des Français ont déjà consulté aux urgences pour des raisons non urgentes",                   source: "Baromètre FHF-Ipsos 2026" },
+  { id: "s4", value: "2 mois",  label: "délai de déploiement du premier bus dans votre établissement",                                source: "Hocoia" },
 ];
 
 // ─── Use cases par type d'établissement ───────────────────────────────────
 
 export const useCases = {
   tabs: [
-    { id: "hopitaux",  label: "Hôpitaux publics & CHU",    sublabel: "Extension hors les murs · Partenariat CHU" },
+    { id: "hopitaux",  label: "Hôpitaux publics & CHU",    sublabel: "Extension hors les murs" },
     { id: "cliniques", label: "Cliniques privées",          sublabel: "Offre de prévention différenciante" },
-    { id: "ehpad",     label: "EHPAD & résidences seniors", sublabel: "Dépistage pour résidents sans déplacement" },
+    { id: "ehpad",     label: "Etablissements médico-sociaux", sublabel: "Prévention sans déplacement pour un public fragilisé" },
   ],
   content: {
     hopitaux: {
       eyebrow: "Pour les hôpitaux & CHU",
-      h2: "Étendez votre activité de prévention hors les murs",
+      h2: "Étendez votre activité de soin et de prévention hors les murs",
       paragraphs: [
-        "Les hôpitaux publics et CHU ont une mission de prévention et de santé publique qui dépasse les murs de l'établissement. Hocoia leur permet de rayonner sur leur territoire sans saturer leurs services de consultations externes.",
+        "Les hôpitaux publics et CHU ont une mission de prévention et de santé publique qui dépasse les murs de l'établissement. Hocoia leur permet de rayonner sur leur territoire et contribuer à désaturer leurs services de consultations internes.",
         "Pour les services spécialisés (radiologie, cardiologie, dermatologie), le MammoBus ou MédicoBus constitue un outil d'extension d'activité, sans investissement en infrastructure.",
       ],
       features: [
         {
           id: "f1",
-          title: "Télé-expertise adossée à vos spécialistes",
+          title: "Rayonner sur votre territoire",
           description:
-            "Le protocole Hocoia peut intégrer vos médecins spécialistes en télé-expertise, renforçant votre partenariat CHU et valorisant votre expertise médicale.",
+            "Déployez des actions de dépistage dans les communes sous-dotées de votre bassin de vie, sans alourdir vos services internes ni mobiliser vos équipes hospitalières.",
         },
         {
           id: "f2",
-          title: "Résultats intégrés à votre système",
+          title: "Renforcer votre mission de santé publique",
           description:
-            "Les comptes-rendus sont transmis via HocoApp à vos équipes et au médecin traitant du patient. Aucune rupture dans le parcours patient.",
+            "Contribuez à réduire les inégalités d'accès aux soins sur votre territoire, en complémentarité de votre activité hospitalière et de vos spécialités de référence.",
         },
         {
           id: "f3",
-          title: "Données pour vos études et publications",
+          title: "Valoriser l'expertise de vos spécialistes",
           description:
-            "Le partenariat CHU de Caen sur le DermatoBus inclut des études de validation scientifique. Hocoia est ouvert à des partenariats de recherche similaires.",
+            "Vos médecins spécialistes interviennent en télé-expertise depuis le Médicobus, sans consultation physique supplémentaire. Leur expertise bénéficie aux populations les plus éloignées.",
         },
         {
           id: "f4",
-          title: "Mission santé publique renforcée",
+          title: "Des données pour piloter et publier",
           description:
-            "Dépistage organisé du cancer du sein, cancer de la peau, prévention cardiovasculaire, dans les communes de votre territoire sans spécialiste.",
+            "Chaque déploiement produit des données de santé populationnelle exploitables pour vos rapports d'activité, vos études épidémiologiques et vos publications scientifiques.",
         },
       ],
       ctaPrimary: "Demander une présentation",
@@ -142,27 +141,27 @@ export const useCases = {
       features: [
         {
           id: "f1",
-          title: "Valeur ajoutée sans charge opérationnelle",
+          title: "Enrichir votre offre sans mobiliser vos équipes",
           description:
-            "Vous proposez à vos patients un dépistage de qualité supplémentaire, sans occuper vos blocs, vos équipements ni vos soignants.",
+            "Proposez à vos patients un programme de dépistage complémentaire sans occuper vos blocs, vos équipements ni vos soignants. Hocoia gère tout.",
         },
         {
           id: "f2",
-          title: "Intégration dans votre programme de prévention",
+          title: "Renforcer la fidélisation de vos patients",
           description:
-            "Hocoia s'adapte à votre parcours patient existant : prescription interne, résultats transmis à votre équipe, communication aux patients de votre établissement.",
+            "Un service de prévention intégré à votre parcours patient renforce le lien de confiance et valorise l'engagement qualité de votre établissement.",
         },
         {
           id: "f3",
-          title: "Opportunité de partenariat mutuelles",
+          title: "Se différencier sur un marché concurrentiel",
           description:
-            "Vos patients sont souvent couverts par des mutuelles partenaires. Hocoia peut faciliter le financement via ces mutuelles pour réduire votre reste à charge.",
+            "La prévention embarquée est un atout concurrentiel fort pour les cliniques qui souhaitent aller au-delà du soin curatif et attirer de nouveaux profils de patients.",
         },
         {
           id: "f4",
-          title: "Rapport de déploiement pour votre direction",
+          title: "Des données pour valoriser votre activité",
           description:
-            "Données de participation et résultats agrégés pour vos rapports d'activité, commissions médicales et certifications qualité.",
+            "Résultats agrégés, taux de participation, indicateurs de suivi : des données concrètes pour vos rapports d'activité, commissions médicales et certifications qualité.",
         },
       ],
       ctaPrimary: "Demander une présentation",
@@ -184,53 +183,53 @@ export const useCases = {
       },
     },
     ehpad: {
-      eyebrow: "Pour les EHPAD & résidences seniors",
-      h2: "Le dépistage vient aux résidents, sans les déplacer",
+      eyebrow: "Pour les ESSMS",
+      h2: "La prévention vient à vos bénéficiaires, sans les déplacer",
       paragraphs: [
-        "Le transport médicalisé vers les spécialistes est un frein majeur pour les résidents EHPAD. Hocoia supprime ce frein en venant directement dans votre établissement, avec des équipements adaptés aux personnes à mobilité réduite.",
-        "Le MammoBus et le MédicoBus sont équipés de rampes d'accès, d'espaces adaptés et de soignants formés à l'accueil de personnes fragilisées.",
+        "EHPAD, IME, FAM, MAS, SSIAD, résidences autonomie : vos bénéficiaires comptent parmi les publics les plus éloignés des soins de prévention. Le transport médicalisé est coûteux, souvent complexe à organiser, parfois refusé par les personnes elles-mêmes.",
+        "Hocoia déploie une unité mobile directement dans votre établissement ou à proximité immédiate, avec des équipements adaptés aux personnes fragilisées, à mobilité réduite ou en situation de handicap.",
       ],
       features: [
         {
           id: "f1",
-          title: "Accessibilité totale, PMR inclus",
+          title: "Accessibilité totale, quel que soit le public",
           description:
-            "Rampe d'accès, espace de circulation adapté, assistance à bord : nos bus sont conçus pour accueillir des personnes à mobilité réduite sans transfert compliqué.",
+            "Rampe d'accès, espace de circulation adapté, accueil bienveillant : nos unités mobiles sont conçues pour recevoir des personnes à mobilité réduite, en situation de handicap ou fragiles, sans transfert complexe.",
         },
         {
           id: "f2",
           title: "Aucun transport médicalisé à organiser",
           description:
-            "Économies immédiates sur les frais de transport médicalisé, sans pénaliser la santé de vos résidents.",
+            "La prévention se déroule sur site, dans un cadre sécurisé et familier pour vos bénéficiaires. Économies immédiates sur les frais de transport, sans compromis sur la qualité du suivi.",
         },
         {
           id: "f3",
-          title: "Résultats transmis à votre équipe soignante",
+          title: "Résultats intégrés à votre suivi",
           description:
-            "Les comptes-rendus sont envoyés directement à votre médecin coordonnateur et au médecin traitant de chaque résident.",
+            "Les comptes-rendus sont transmis au médecin coordonnateur, au référent soignant et au médecin traitant. Aucune rupture dans le parcours de soin de vos bénéficiaires.",
         },
         {
           id: "f4",
-          title: "Programme annuel de suivi",
+          title: "Un programme adapté à votre projet d'établissement",
           description:
-            "Hocoia propose des programmes multi-journées sur l'année, idéal pour le suivi longitudinal des résidents, notamment pour le dépistage dermatologique.",
+            "Hocoia construit avec vous un calendrier de déploiements sur l'année, ajusté à la nature de votre structure (hébergement, domicile, accueil de jour) et aux besoins spécifiques de votre public.",
         },
       ],
       ctaPrimary: "Demander une présentation",
       ctaOutline: "Voir le MammoBus →",
       caseStudy: {
-        tag: "EHPAD · Cas terrain",
-        h4: "Dépistage cancer du sein pour des résidentes sans accès radiologue",
+        tag: "ESSMS · Cas terrain",
+        h4: "Dépistage organisé pour des bénéficiaires sans accès aux soins courants",
         description:
-          "Dans un EHPAD de 80 résidentes, le dernier dépistage remontait à plus de 5 ans pour 60% d'entre elles, faute de transport adapté. Le MammoBus a déployé en demi-journée : 24 résidentes dépistées.",
+          "Dans un établissement médico-social de 80 résidents, plus de 60 % n'avaient pas bénéficié d'un dépistage spécialisé depuis plusieurs années, faute de transport adapté. Le MammoBus a déployé sur site en demi-journée.",
         metrics: [
-          { value: "24",   label: "Résidentes dépistées en 1 journée" },
-          { value: "0",    label: "Transport médicalisé organisé" },
+          { value: "24",   label: "Bénéficiaires dépistés en une journée" },
+          { value: "0",    label: "Transport médicalisé à organiser" },
           { value: "100%", label: "Satisfaction exprimée" },
         ],
         quote: {
-          text: "La majorité de nos résidentes n'avaient pas été dépistées depuis des années. Le bus est venu à elles. Simple, efficace, et nos équipes n'ont rien eu à gérer.",
-          author: "Directrice, EHPAD partenaire",
+          text: "La majorité de nos résidents n'avaient pas été dépistés depuis des années. Le bus est venu à eux. Simple, efficace, et nos équipes n'ont rien eu à organiser.",
+          author: "Directrice, ESSMS partenaire",
         },
       },
     },
@@ -291,7 +290,7 @@ export const solutions = {
       title: "Notre engagement",
       promises: [
         { bold: "Étude de faisabilité offerte",    rest: " avec un expert Hocoia, sans engagement de votre part." },
-        { bold: "Devis ferme",                        rest: " après le cadrage initial, équipements et protocole inclus." },
+        { bold: "Devis détaillé",                        rest: " après le cadrage initial, équipements et protocole inclus." },
         { bold: "Conception complète du bus,",      rest: " équipements médicaux et intégration HocoApp." },
         { bold: "Accompagnement du déploiement",    rest: " jusqu'à la première journée patient sur site." },
       ],
@@ -305,7 +304,7 @@ export const solutions = {
 // ─── Processus ─────────────────────────────────────────────────────────────
 
 export const processus = {
-  eyebrow: "Comment ça se passe",
+  eyebrow: "Comment cela se passe",
   h2: "Du premier contact au dépistage de vos patients, en 2 mois",
   subtitle:
     "Un processus sans friction, adapté aux contraintes des établissements de santé.",
@@ -315,40 +314,40 @@ export const processus = {
       number: "01",
       title: "Échange de cadrage",
       description:
-        "30 min avec un expert Hocoia : type d'établissement, public cible, spécialité, contraintes logistiques.",
-      delay: "J+2",
+        "Un expert Hocoia analyse votre contexte : type d'établissement, public cible, spécialités prioritaires (Dermatologie, Cardiologie, mammographie…) et contraintes logistiques.",
+      delay: "Étape 1",
     },
     {
       id: "step2",
       number: "02",
       title: "Proposition adaptée",
       description:
-        "Programme sur mesure selon votre contexte, devis, protocole médical, modalités d'intégration à vos équipes.",
-      delay: "J+7",
+        "Programme sur mesure, devis, protocole médical et modalités d'intégration à vos équipes et à votre circuit patient existant.",
+      delay: "Étape 2",
     },
     {
       id: "step3",
       number: "03",
       title: "Convention & communication",
       description:
-        "Convention de partenariat. Hocoia prépare les supports de communication patient (affiche, flyer, convocation).",
-      delay: "J+14",
+        "Convention de partenariat signée. Hocoia prépare les supports de communication patient : affiche, flyer, convocation.",
+      delay: "Étape 3",
     },
     {
       id: "step4",
       number: "04",
       title: "Ouverture des inscriptions",
       description:
-        "Prise de RDV via HocoApp ou par votre équipe. Liste transmise à Hocoia, on gère le reste.",
-      delay: "J+30",
+        "Prise de RDV via le tableau de bord ou par votre équipe. Possibilité d'intégrer vos spécialistes en télé-expertise sur les cas identifiés. Hocoia gère la coordination.",
+      delay: "Étape 4",
     },
     {
       id: "step5",
       number: "05",
-      title: "Jour J + rapport",
+      title: "Déploiement & bilan",
       description:
-        "Le bus arrive. Les soignants prennent en charge. Rapport de participation transmis à votre équipe, comptes-rendus médicaux envoyés aux patients par mail ou courrier dans les semaines suivantes.",
-      delay: "J+60",
+        "Le Médicobus et l'équipe médicale s'installent sur site. Les comptes-rendus sont transmis à vos équipes et intégrés au DPI si souhaité. Rapport de participation livré sous 72h.",
+      delay: "Étape 5",
     },
   ],
 };
@@ -424,7 +423,7 @@ export const faq = {
       id: "q3",
       question: "Comment les résultats sont-ils intégrés au dossier patient ?",
       answer:
-        "Les comptes-rendus sont transmis via HocoApp au médecin traitant du patient et, si vous le souhaitez, à votre équipe médicale. Hocoia peut étudier une interface avec votre DPI pour les établissements qui souhaitent une intégration complète. Toutes les données sont hébergées en France (HDS certifié, RGPD).",
+        "Les comptes-rendus sont transmis via la plateforme au médecin traitant du patient et, si vous le souhaitez, à votre équipe médicale. Hocoia peut étudier une interface avec votre DPI pour les établissements qui souhaitent une intégration complète. Toutes les données sont hébergées en France (HDS certifié, RGPD).",
     },
     {
       id: "q4",
@@ -482,34 +481,34 @@ export const parcoursPatient = {
     {
       id: "s1",
       number: "01",
+      delay: "Étape 1",
       title: "Orientation & inscription",
       description:
-        "Le patient est orienté par l'établissement ou identifié dans la patientèle. La prise de RDV se fait via HocoApp, intégrée au circuit d'orientation de votre établissement.",
-      badge: "Orientation via HocoApp",
+        "Le patient est orienté par l'établissement ou identifié dans la patientèle. La prise de RDV se fait via le tableau de bord, intégré au circuit d'orientation de votre établissement.",
     },
     {
       id: "s2",
       number: "02",
+      delay: "Étape 2",
       title: "Dépistage mobile",
       description:
-        "Examen réalisé par les équipes Hocoia ou vos propres soignants dans le bus équipé. Protocoles médicaux validés par les comités scientifiques, premiers résultats immédiats pour certains examens.",
-      badge: null,
+        "Examen réalisé par les équipes Hocoia ou vos propres soignants dans le Médicobus équipé. Protocoles médicaux validés par les comités scientifiques, premiers résultats immédiats pour certains examens.",
     },
     {
       id: "s3",
       number: "03",
+      delay: "Étape 3",
       title: "Intégration au dossier patient",
       description:
         "Les résultats sont transmis à l'équipe médicale référente et intégrés dans le DPI de l'établissement si souhaité. Le dépistage devient une étape documentée du parcours de soins.",
-      badge: "Synchronisation DPI via HocoApp",
     },
     {
       id: "s4",
       number: "04",
+      delay: "Étape 4",
       title: "Coordination spécialisée",
       description:
         "En cas de dépistage positif, le patient est orienté directement vers les spécialistes de votre établissement dans le parcours de soins existant, sans rupture de continuité.",
-      badge: "Suivi coordonné dans HocoApp",
     },
   ],
 };
@@ -544,7 +543,7 @@ export const achatSurMesure = {
     ],
     modes: {
       label: "Modes de financement",
-      items: ["Achat direct", "Partenariat hospitalier long terme", "Leasing"],
+      items: ["Achat direct", "Partenariat hospitalier long terme", "Location longue durée"],
     },
     ctaPrimary: "Étudier mon projet d'acquisition →",
     ctaOutline: "Télécharger la brochure",

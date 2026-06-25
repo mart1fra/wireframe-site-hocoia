@@ -14,7 +14,7 @@ const SHARED_OPTIONS = [
 
 const SHARED_COMMITMENTS = [
   { bold: "Étude de faisabilité offerte",    rest: " avec un expert Hocoia, sans engagement de votre part." },
-  { bold: "Devis ferme",                      rest: " après le cadrage initial, équipements et protocole inclus." },
+  { bold: "Devis détaillé",                      rest: " après le cadrage initial, équipements et protocole inclus." },
   { bold: "Conception complète du bus,",     rest: " équipements médicaux et intégration HocoApp." },
   { bold: "Accompagnement du déploiement",   rest: " jusqu'à la première journée patient sur site." },
 ];

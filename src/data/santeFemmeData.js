@@ -91,7 +91,7 @@ export const depistageHocoia = {
 // ─── Protocole ────────────────────────────────────────────────────────────────
 
 export const protocole = {
-  eyebrow: "Comment ça se passe",
+  eyebrow: "Comment cela se passe",
   h2: "La consultation en 4 étapes",
   subtitle: "Un suivi gynécologique complet en 30 minutes, dans un espace médical privé à bord.",
   steps: [

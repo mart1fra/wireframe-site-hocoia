@@ -393,10 +393,10 @@ function StatsSection() {
 const HOW_TABS = [
   { id: "methode",  label: "Notre méthode",    sublabel: "De la signature au 1er bilan" },
   { id: "parcours", label: "Parcours patient",  sublabel: "Ce que vivent vos collaborateurs" },
-  { id: "hocoapp",  label: "HocoApp",           sublabel: "Votre tableau de bord" },
+  { id: "hocoapp",  label: "Tableau de bord",    sublabel: "Votre tableau de bord" },
 ];
 
-function StepsGrid({ steps, type }) {
+function StepsGrid({ steps }) {
   return (
     <motion.div
       className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
@@ -406,36 +406,22 @@ function StepsGrid({ steps, type }) {
     >
       {steps.map((step, index) => (
         <motion.div key={step.id} variants={itemV} className="relative">
-          {/* Connecteur desktop */}
           {index < steps.length - 1 && (
             <div className="hidden lg:block absolute top-5 left-10 right-0 h-px bg-gray-200 z-0" />
           )}
           <div className="relative z-10">
-            {type === "methode" ? (
-              <>
-                <p className="font-display font-bold text-6xl text-gray-100 leading-none mb-2 select-none">
-                  {step.number}
-                </p>
-                <p className="text-[10px] uppercase tracking-widest text-gray-400 font-medium mb-2">
-                  {step.day}
-                </p>
-              </>
-            ) : (
-              <div className="w-10 h-10 rounded-full bg-gray-900 flex items-center justify-center mb-4 shrink-0">
-                <span className="text-white text-[11px] font-bold">{step.number}</span>
-              </div>
-            )}
+            <p className="font-display font-bold text-6xl text-gray-100 leading-none mb-2 select-none">
+              {step.number}
+            </p>
+            <p className="text-[10px] uppercase tracking-widest text-gray-400 font-medium mb-2">
+              {step.day}
+            </p>
             <p className="text-sm font-semibold text-gray-900 mb-2 leading-snug pr-4">
               {step.title}
             </p>
             <p className="text-sm text-gray-500 leading-relaxed pr-4">
               {step.description}
             </p>
-            {step.badge && (
-              <span className="inline-block mt-3 text-[10px] font-medium uppercase tracking-wide text-gray-600 bg-gray-100 border border-gray-200 px-2.5 py-1 rounded-md">
-                {step.badge}
-              </span>
-            )}
           </div>
         </motion.div>
       ))}
@@ -481,7 +467,7 @@ function HowItWorksSection() {
       <div className="max-w-7xl mx-auto">
 
         <FadeIn className="mb-10">
-          <Eyebrow>Comment ça marche</Eyebrow>
+          <Eyebrow>Comment cela marche</Eyebrow>
           <SectionH2>De la signature au bilan, tout est pris en charge</SectionH2>
         </FadeIn>
 

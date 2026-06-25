@@ -2,8 +2,8 @@
 
 export const hero = {
   eyebrow: "Rejoignez Hocoia",
-  h1Before: "Soignez là où ",
-  h1Italic: "on a besoin de vous.",
+  h1Before: "Contribuez à révolutionner ",
+  h1Italic: "l'accès à la santé.",
   subtitle:
     "Hocoia recrute des professionnels de santé passionnés pour intervenir à bord de nos bus médicaux. Liberté d'organisation, impact concret, matériel fourni.",
   ctaPrimary: "Voir les postes ouverts",
@@ -14,7 +14,7 @@ export const hero = {
     duration: "2:14",
   },
   citation:
-    '"La santé mobile, ça change vraiment des vies." — Dr Arous, médecin prestataire',
+    '"La santé mobile, cela change vraiment des vies." — Dr Arous, médecin prestataire',
 };
 
 export const chiffres = [
@@ -74,7 +74,7 @@ export const journeeDepistage = {
   profils: {
     infirmier: {
       paragraphs: [
-        "Vous êtes le premier contact du patient. Accueil, anamnèse, prise des constantes, accompagnement tout au long de la consultation — vous structurez l'expérience patient.",
+        "Vous êtes le premier contact du patient. Accueil, antécédents médicaux, prise des constantes, accompagnement tout au long de la consultation — vous structurez l'expérience patient.",
         "Les outils HocoApp sont pensés pour fluidifier votre travail : dossier patient pré-rempli, protocoles intégrés, coordination automatique avec le médecin en téléexpertise.",
       ],
       timeline: [
@@ -91,14 +91,14 @@ export const journeeDepistage = {
       ],
       timeline: [
         { id: "m1", num: "1", titre: "Arrivée & briefing",         description: "Bus déjà installé, briefing de 10 minutes avec le soignant d'accueil." },
-        { id: "m2", num: "2", titre: "Consultations enchaînées",    description: "Vous enchaînez les RDV toutes les 20-30 min, dossier préparé." },
+        { id: "m2", num: "2", titre: "Fluidité des consultations",   description: "Succession fluide des RDV toutes les 20 à 30 minutes, dossiers préparés en amont." },
         { id: "m3", num: "3", titre: "Diagnostic & prescription",   description: "Accès direct aux dispositifs connectés, prescription numérique via HocoApp." },
-        { id: "m4", num: "4", titre: "Compte-rendu automatique",    description: "Génération auto du compte-rendu, transmission au médecin traitant du patient." },
+        { id: "m4", num: "4", titre: "Compte-rendu automatique",    description: "Génération automatique du compte-rendu, transmission au médecin traitant du patient." },
       ],
     },
     specialiste: {
       paragraphs: [
-        "Vous intervenez en téléexpertise depuis votre cabinet ou en présentiel sur le bus selon la spécialité. Cardio, dermato, gynéco : vos compétences apportent la prévention dans les territoires sous-dotés.",
+        "Vous intervenez en téléexpertise depuis votre cabinet ou en présentiel sur le bus selon la spécialité. Cardiologie, dermatologie, gynécologie : vos compétences apportent la prévention dans les territoires sous-dotés.",
         "HocoVisio vous donne accès en temps réel aux dispositifs embarqués (ECG, dermatoscope, échographe) avec la qualité d'un cabinet spécialisé. Vous décidez en direct ou en asynchrone.",
       ],
       timeline: [
@@ -145,7 +145,7 @@ export const pourquoiRejoindre = {
       titre: "Matériel et logistique fournis",
       description:
         "Bus équipé, installation, nettoyage, coordination des RDV : tout est géré par Hocoia. Vous arrivez, vous soignez, vous repartez.",
-      detail: "Zéro investissement de votre côté",
+      detail: "Pas d'investissement de votre côté",
     },
     {
       id: "avantage3",
@@ -161,7 +161,7 @@ export const equipeInterne = {
   eyebrow: "L'équipe Hocoia",
   h2: "Des profils variés, une même conviction.",
   paragraph:
-    "Derrière les bus Hocoia, il y a une équipe pluridisciplinaire qui construit l'infrastructure, coordonne les déploiements, développe les outils et les partenariats. Médecins, ingénieurs, chefs de projet, marketeurs : tous engagés pour la même mission.",
+    "Derrière les bus Hocoia, il y a une équipe pluridisciplinaire qui construit l'infrastructure, coordonne les déploiements, développe les outils et les partenariats. Médecins, ingénieurs, chefs de projet, communicants : tous engagés pour la même mission.",
   recrutementInterne: {
     titre: "On recrute aussi en interne",
     texte:
@@ -209,14 +209,14 @@ export const equipeInterne = {
       nom: "Romain T.",
       role: "Support helpdesk",
       citation:
-        "Les soignants sur le terrain ont besoin d'une réponse rapide. C'est mon rôle de faire que ça marche toujours.",
+        "Les soignants sur le terrain ont besoin d'une réponse rapide. C'est mon rôle de faire que cela marche toujours.",
     },
     {
       id: "m7",
       nom: "Inès D.",
       role: "Business development",
       citation:
-        "Convaincre une collectivité de déployer un bus, c'est chaque fois une vraie mission, et ça marche.",
+        "Convaincre une collectivité de déployer un bus, c'est chaque fois une vraie mission, et cela marche.",
     },
     {
       id: "m8",
@@ -230,7 +230,7 @@ export const equipeInterne = {
 };
 
 export const processusRecrutement = {
-  eyebrow: "Comment ça se passe",
+  eyebrow: "Comment cela se passe",
   h2: "Un processus simple. On lit tout, on répond à tous.",
   steps: [
     {
@@ -238,21 +238,18 @@ export const processusRecrutement = {
       num: "1",
       titre: "Candidature",
       description: "Formulaire ou email simple. Pas de CV sous Word imposé.",
-      badge: "Aujourd'hui",
     },
     {
       id: "ps2",
       num: "2",
       titre: "Retour garanti",
-      description: "On répond à chaque candidature sous 7 jours, même pour dire non.",
-      badge: "J+7",
+      description: "On répond à chaque candidature, même pour dire non.",
     },
     {
       id: "ps3",
       num: "3",
       titre: "Échange 30 min",
       description: "Appel informel : on veut comprendre votre parcours et vos attentes.",
-      badge: "J+10",
     },
     {
       id: "ps4",
@@ -260,7 +257,6 @@ export const processusRecrutement = {
       titre: "Présentation & outils",
       description:
         "Pour les soignants : démo HocoApp + protocole. Pour les internes : rencontre équipe.",
-      badge: "J+14",
     },
     {
       id: "ps5",
@@ -268,7 +264,6 @@ export const processusRecrutement = {
       titre: "Décision & onboarding",
       description:
         "Contrat, accès outils, première mission : tout est cadré avant le démarrage.",
-      badge: "J+21 à J+30",
     },
   ],
 };
@@ -448,7 +443,7 @@ export const candidatureSpontanee = {
   eyebrow: "Candidature spontanée",
   h3: "Votre profil n'est pas dans la liste ?",
   paragraph:
-    "Hocoia grandit dans plusieurs directions. Si vous êtes convaincu que votre expertise peut contribuer à notre mission, parlez-nous de vous, on lit tout.",
+    "Si vous êtes convaincu que votre expertise peut contribuer à notre mission, parlez-nous de vous.",
   domainesLabel: "Domaines toujours ouverts",
   domaines: [
     "Médecine & soins",
@@ -475,9 +470,10 @@ export const candidatureSpontanee = {
         "Autre",
       ],
       message: "En quelques mots",
+      pieceJointe: "CV ou portfolio (PDF, max 5 Mo)",
     },
     cta: "Envoyer ma candidature →",
-    note: "Réponse sous 7 jours · Confidentiel",
+    note: "Confidentiel",
   },
 };
 

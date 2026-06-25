@@ -3,7 +3,7 @@
 export const piloteBanner = {
   badge: "PROJET PILOTE",
   texte:
-    "DermatoBus Normandie — lancement automne 2026 · En partenariat avec le CHU de Caen (Dr Lorphelin, onco-dermatologue)",
+    "DermatoBus Normandie — lancement automne 2026",
   cta: "Rejoindre le pilote →",
 };
 
@@ -18,12 +18,12 @@ export const hero = {
     end: " en tout territoire.",
   },
   subtitle:
-    "Un protocole médical rigoureux, une technologie de dermoscopie robotique unique, et des dermatologues du CHU — pour détecter tôt, là où les spécialistes manquent.",
+    "Un protocole médical rigoureux, une technologie de dermoscopie robotique unique, et des dermatologues partenaires — pour détecter tôt, là où les spécialistes manquent.",
   checks: [
     "Cartographie du corps entier — aucune lésion oubliée",
     "Pré-analyse IA optionnelle (mélanome)",
     "Triage par médecin généraliste formé",
-    "Télé-expertise par onco-dermatologue CHU",
+    "Télé-expertise par onco-dermatologue partenaire",
     "Suivi des lésions d'une année sur l'autre",
   ],
   ctaPrimary: "Demander une présentation",
@@ -36,7 +36,7 @@ export const hero = {
       "Collectivité/Département",
       "CPTS/MSP",
       "Mutuelle/Assureur",
-      "Hôpital/CHU",
+      "Hôpital",
       "Laboratoire pharmaceutique",
       "Autre",
     ],
@@ -49,7 +49,7 @@ export const hero = {
   },
   partenairesCard: {
     label: "PARTENAIRES SCIENTIFIQUES",
-    items: ["CHU de Caen", "SquareMind", "Pixiance"],
+    items: ["SquareMind", "Pixiance"],
   },
 };
 
@@ -58,7 +58,6 @@ export const hero = {
 export const logos = {
   label: "Soutenu par",
   items: [
-    "CHU de Caen",
     "SquareMind",
     "Pixiance",
     "Région Normandie",
@@ -73,7 +72,7 @@ export const stats = [
   { value: "100 000", label: "nouveaux cas de cancer cutané / an en France",   source: "INCa 2024" },
   { value: "+25%",   label: "hausse des mélanomes en 10 ans",                  source: "INCa 2024" },
   { value: "<5",     label: "dermatologues dans l'Orne et l'Eure",              source: "DREES 2023" },
-  { value: "18 mois", label: "délai moyen RDV dermatologue en zone rurale",     source: "CNOM 2023" },
+  { value: "18 mois", label: "délai moyen RDV pour consulter un dermatologue en zone rurale", source: "CNOM 2023" },
   { value: "95%",    label: "taux de survie si détecté au stade 1",             source: "INCa 2024" },
 ];
 
@@ -88,7 +87,7 @@ export const concept = {
       segments: [
         { text: "Le DermatoBus est une unité mobile dédiée au " },
         { text: "dépistage complet du cancer de la peau", bold: true },
-        { text: ". Il se déploie dans les communes et territoires qui n'ont plus accès à un dermatologue, zones rurales, déserts médicaux, départements sous-dotés." },
+        { text: ". Il se déploie dans les communes et territoires qui n'ont plus accès à un dermatologue : zones rurales, déserts médicaux, départements sous-dotés." },
       ],
     },
     {
@@ -96,15 +95,15 @@ export const concept = {
       segments: [
         { text: "À la différence d'un simple examen, le DermatoBus réalise une " },
         { text: "cartographie du corps entier", bold: true },
-        { text: " avec dermoscopie de toutes les lésions, permettant un suivi comparatif d'une année sur l'autre, au cœur de la valeur médicale du dispositif." },
+        { text: " avec dermoscopie de tous les grains de beauté suspicieux et, permettant un suivi comparatif d'une année sur l'autre." },
       ],
     },
   ],
   features: [
     { id: "f1", titre: "Corps entier, aucune lésion oubliée", description: "Cartographie systématique, pas seulement les grains de beauté signalés par le patient." },
-    { id: "f2", titre: "IA de pré-analyse optionnelle", description: "Évaluation du risque mélanome en amont du médecin, réduit la charge des dermatologues, améliore la priorisation." },
-    { id: "f3", titre: "Triage par médecin généraliste", description: "Un MG formé filtre les cas, seuls ceux qui nécessitent un avis spécialisé remontent au dermatologue. Libère le temps médical rare." },
-    { id: "f4", titre: "Télé-expertise CHU", description: "Revue finale par un onco-dermatologue du CHU de Caen. Qualité universitaire, depuis n'importe quel territoire." },
+    { id: "f2", titre: "IA de pré-analyse optionnelle", description: "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation." },
+    { id: "f3", titre: "Triage par médecin généraliste", description: "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation." },
+    { id: "f4", titre: "Télé-expertise dermatologique", description: "Revue finale par un onco-dermatologue partenaire. Qualité de diagnostic spécialisé, depuis n'importe quel territoire." },
   ],
   videoLabel: "Vidéo — Le DermatoBus en action · 3:00",
   comparison: {
@@ -139,7 +138,7 @@ export const definition = {
       segments: [
         { text: "Le DermatoBus est une unité mobile dédiée au " },
         { text: "dépistage complet du cancer de la peau", bold: true },
-        { text: ". Il se déploie dans les communes et territoires qui n'ont plus accès à un dermatologue, zones rurales, déserts médicaux, départements sous-dotés." },
+        { text: ". Il se déploie dans les communes et territoires qui n'ont plus accès à un dermatologue : zones rurales, déserts médicaux, départements sous-dotés." },
       ],
     },
     {
@@ -147,7 +146,7 @@ export const definition = {
       segments: [
         { text: "À la différence d'un simple examen, le DermatoBus réalise une " },
         { text: "cartographie du corps entier", bold: true },
-        { text: " avec dermoscopie de toutes les lésions, permettant un suivi comparatif d'une année sur l'autre, au cœur de la valeur médicale du dispositif." },
+        { text: " avec dermoscopie de tous les grains de beauté suspicieux et, permettant un suivi comparatif d'une année sur l'autre." },
       ],
     },
   ],
@@ -162,19 +161,19 @@ export const definition = {
       id: "diff2",
       titre: "IA de pré-analyse optionnelle",
       description:
-        "Évaluation du risque mélanome en amont du médecin, réduit la charge des dermatologues, améliore la priorisation.",
+        "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation.",
     },
     {
       id: "diff3",
       titre: "Triage par médecin généraliste",
       description:
-        "Un MG formé filtre les cas, seuls ceux qui nécessitent un avis spécialisé remontent au dermatologue. Libère le temps médical rare.",
+        "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation.",
     },
     {
       id: "diff4",
-      titre: "Télé-expertise CHU",
+      titre: "Télé-expertise dermatologique",
       description:
-        "Revue finale par un onco-dermatologue du CHU de Caen. Qualité de diagnostic universitaire, depuis n'importe quel territoire.",
+        "Revue finale par un onco-dermatologue partenaire. Qualité de diagnostic spécialisé, depuis n'importe quel territoire.",
     },
   ],
   imagePlaceholder: "DermatoBus 3D — vue extérieure et intérieure interactive",
@@ -202,52 +201,44 @@ export const definition = {
 // ─── Protocole ────────────────────────────────────────────────────────────────
 
 export const protocole = {
-  eyebrow: "Notre protocole",
-  h2: "Un protocole médical en 4 étapes, rigoureux et sécurisé",
+  eyebrow: "Organisation des dépistages",
+  h2: "Un service clé en main en 4 étapes",
   subtitle:
-    "Conçu avec le CHU de Caen et validé par des onco-dermatologues, le protocole DermatoBus garantit une qualité de diagnostic équivalente à un cabinet spécialisé.",
+    "De l'organisation de la campagne au bilan des résultats — Hocoia gère l'intégralité du dispositif.",
   steps: [
     {
       id: "p1",
       num: "1",
-      titre: "Acquisition complète",
+      titre: "Organisation de la campagne",
       description:
-        "Cartographie du corps entier + dermoscopie de toutes les lésions. Aucune zone oubliée, aucun biais lié au signalement patient.",
-      badge: "Infirmier·e à bord",
+        "Coordination du projet : définition de la campagne, sélection du lieu et de la date. Prise de RDV via le tableau de bord ou par téléphone. Invitation par flyer numérique ou courrier.",
+      badge: "Équipe Hocoia",
     },
     {
       id: "p2",
       num: "2",
-      titre: "Pré-analyse IA",
+      titre: "Accueil & communication",
       description:
-        "Évaluation automatique du risque mélanome sur les images. Optionnelle mais recommandée, priorise les cas à soumettre au médecin.",
-      badge: "IA (mélanome uniquement)",
+        "Éléments de communication préparés par Hocoia. Accueil des patients sur le lieu de dépistage par un représentant Hocoia.",
+      badge: "Représentant Hocoia",
     },
     {
       id: "p3",
       num: "3",
-      titre: "Triage médecin généraliste",
+      titre: "Dépistage à bord",
       description:
-        "Un MG formé au protocole DermatoBus analyse les données. Il décide : surveillance simple ou télé-expertise dermatologique nécessaire.",
-      badge: "Médecin généraliste formé",
+        "Prise en charge par l'infirmier(e) à bord : cartographie complète du corps, dermoscopie des lésions, pré-analyse IA et triage médecin. Seuls les cas nécessitant un avis spécialisé remontent à l'onco-dermatologue partenaire.",
+      badge: "Infirmier(e) + Médecin + Dermatologue",
     },
     {
       id: "p4",
       num: "4",
-      titre: "Télé-expertise dermatologique",
+      titre: "Pilotage & bilan",
       description:
-        "L'onco-dermatologue du CHU réalise la revue finale des cas transmis. Diagnostic, préconisation, suivi, remis au patient et à son médecin traitant.",
-      badge: "Onco-dermatologue CHU Caen",
+        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées — RDV complémentaire organisé par l'équipe médicale.",
+      badge: "Équipe médicale Hocoia",
     },
   ],
-  note: {
-    segments: [
-      { text: "Sécurité médico-légale", bold: true },
-      {
-        text: " : la cartographie corps entier et le triage double (IA + MG) éliminent les deux principales lacunes des protocoles actuels, lésions non examinées et surcharge des dermatologues. Le protocole est supervisé par un comité scientifique présidé par le Dr Lorphelin (CHU de Caen).",
-      },
-    ],
-  },
 };
 
 // ─── Pilote Normandie ─────────────────────────────────────────────────────────
@@ -265,21 +256,9 @@ export const piloteNormandie = {
     { value: "<5", label: "Dermatologues dans l'Eure" },
     { value: "18 mois", label: "Délai RDV moyen" },
   ],
-  chuCard: {
-    titre: "CHU de Caen, partenaire scientifique",
-    sousTitre: "Comité scientifique présidé par le Dr Lorphelin",
-    paragraphe:
-      "Le Dr Lorphelin, onco-dermatologue au CHU de Caen, préside le comité scientifique du DermatoBus. Le CHU mène les études de validation du protocole et assure la revue dermatologique finale de toutes les télé-expertises.",
-    items: [
-      "Études de validation : pertinence du triage MG, taux de détection précoce, impact médico-économique",
-      "Télé-expertise finale : revue des cas par les onco-dermatologues du service",
-      "Publication scientifique : résultats du pilote publiés pour validation nationale",
-    ],
-    encadre: {
-      titre: "Vous êtes une collectivité de Normandie ?",
-      texte:
-        "Rejoignez le pilote dès maintenant, les places sont limitées pour la première phase de déploiement.",
-    },
+  encadre: {
+    titre: "Vous êtes une collectivité ou une structure de Normandie ?",
+    texte: "Rejoignez le pilote dès maintenant, les places sont limitées pour la première phase de déploiement.",
     cta: "Rejoindre le pilote →",
   },
 };
@@ -336,7 +315,7 @@ export const solutions = {
       badge: "Page actuelle",
       titre: "DermatoBus",
       description:
-        "Dépistage cancer de la peau, cartographie corps entier, IA mélanome, télé-expertise CHU. Pilote Normandie automne 2026.",
+        "Dépistage cancer de la peau, cartographie corps entier, IA mélanome, télé-expertise dermatologue. Pilote Normandie automne 2026.",
       ctaDisabled: true,
       cta: "Vous êtes ici",
       href: null,
@@ -432,7 +411,7 @@ export const seo = {
           { text: "3 720 dermatologues", bold: true },
           { text: " en France pour une population vieillissante, les délais de rendez-vous atteignent " },
           { text: "18 mois", bold: true },
-          { text: " en zone rurale. Le DermatoBus apporte le dépistage là où les spécialistes manquent, avec la qualité d'un cabinet universitaire." },
+          { text: " en zone rurale. Le DermatoBus apporte le dépistage là où les spécialistes manquent, avec la qualité d'un cabinet spécialisé." },
         ],
       },
       {
@@ -457,7 +436,7 @@ export const seo = {
       { id: "sr1", bold: "Collectivités & départements :", suite: " campagnes territoriales pour lutter contre la désertification dermatologique." },
       { id: "sr2", bold: "CPTS & MSP :", suite: " extension de votre offre de prévention en dermatologie." },
       { id: "sr3", bold: "Mutuelles & assureurs :", suite: " programmes de prévention cutanée pour vos adhérents." },
-      { id: "sr4", bold: "Hôpitaux & CHU :", suite: " externalisation du dépistage hors les murs." },
+      { id: "sr4", bold: "Hôpitaux :", suite: " externalisation du dépistage hors les murs." },
     ],
     liens: [
       "DermatoBus collectivités →",
@@ -477,7 +456,7 @@ export const faq = {
       id: "faq1",
       question: "C'est quoi le DermatoBus ?",
       answer:
-        "Le DermatoBus est une unité mobile dédiée au dépistage complet du cancer de la peau. Il se déploie dans les territoires sans accès à un dermatologue et réalise une cartographie du corps entier grâce à une technologie de dermoscopie robotique, suivie d'une analyse par IA et d'une revue par un onco-dermatologue du CHU.",
+        "Le DermatoBus est une unité mobile dédiée au dépistage complet du cancer de la peau. Il se déploie dans les territoires sans accès à un dermatologue et réalise une cartographie du corps entier grâce à une technologie de dermoscopie robotique, suivie d'une analyse par IA et d'une revue par un onco-dermatologue partenaire.",
     },
     {
       id: "faq2",
@@ -495,7 +474,7 @@ export const faq = {
       id: "faq4",
       question: "Quand et où le DermatoBus sera-t-il disponible ?",
       answer:
-        "Le projet pilote est prévu pour l'automne 2026 en Normandie, en partenariat avec le CHU de Caen, avec un focus sur l'Orne et l'Eure, deux départements comptant moins de 5 dermatologues. Le déploiement national suivra en fonction des résultats du pilote.",
+        "Le projet pilote est prévu pour l'automne 2026 en Normandie, avec un focus sur l'Orne et l'Eure, deux départements comptant moins de 5 dermatologues. Le déploiement national suivra en fonction des résultats du pilote.",
     },
     {
       id: "faq5",
@@ -517,10 +496,10 @@ export const modeles = {
     tag: "Acquisition / Location longue durée",
     title: "Votre DermatoBus, configuré pour vos patients",
     description:
-      "Hocoia conçoit et fabrique votre DermatoBus sur mesure — dermatoscope IA, cartographie corps entier, identité visuelle. Protocole validé scientifiquement par le CHU de Caen.",
+      "Hocoia conçoit et fabrique votre DermatoBus sur mesure — dermatoscope IA, cartographie corps entier, identité visuelle. Protocole validé scientifiquement par des onco-dermatologues partenaires.",
     points: [
       "Dermatoscope numérique + IA mélanome certifiée CE",
-      "Protocole Hocoia validé par le CHU de Caen",
+      "Protocole Hocoia validé par des onco-dermatologues partenaires",
       "Identité visuelle aux couleurs de votre organisation",
       "Télé-expertise par les onco-dermatologues partenaires incluse",
     ],
@@ -531,7 +510,7 @@ export const modeles = {
     title: "Participez au programme pilote Normandie",
     description:
       "Le DermatoBus est en phase pilote en Normandie à partir de l'automne 2026. Rejoignez le programme pour être parmi les premiers territoires déployés.",
-    specialites: ["Dépistage mélanome", "Cartographie corps entier", "IA dermatoscope", "Télé-expertise CHU"],
+    specialites: ["Dépistage mélanome", "Cartographie corps entier", "IA dermatoscope", "Télé-expertise dermatologue"],
     cta: "Rejoindre le programme pilote →",
   },
 };
@@ -541,7 +520,7 @@ export const modeles = {
 export const customBus = {
   title: "Un DermatoBus adapté à votre territoire",
   paragraph:
-    "Votre projet de dépistage cutané a des spécificités ? Hocoia conçoit le DermatoBus en lien avec votre service de dermatologie ou votre CHU référent — protocole, équipements, télé-expertise, intégration à votre dispositif de prévention existant.",
+    "Votre projet de dépistage cutané a des spécificités ? Hocoia conçoit le DermatoBus en lien avec votre service de dermatologie — protocole, équipements, télé-expertise, intégration à votre dispositif de prévention existant.",
 };
 
 // ─── CTA Final ────────────────────────────────────────────────────────────────

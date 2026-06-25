@@ -80,7 +80,7 @@ export const depistageHocoia = {
   ],
   bus: {
     badge: "MédicoBus · Thématique cardiovasculaire",
-    titre: "MédicoBus — Cardio",
+    titre: "MédicoBus — Cardiologie",
     description:
       "Cabinet médical mobile polyvalent configuré pour la prévention cardiovasculaire. ECG, tensiomètre, mini-labo, échographie des carotides, télé-expertise cardiologue.",
     href: "/produits/medicobus",
@@ -91,7 +91,7 @@ export const depistageHocoia = {
 // ─── Protocole ────────────────────────────────────────────────────────────────
 
 export const protocole = {
-  eyebrow: "Comment ça se passe",
+  eyebrow: "Comment cela se passe",
   h2: "Le bilan cardiovasculaire en 4 étapes",
   subtitle: "Un parcours complet en 25 minutes, de l'accueil à la restitution des résultats.",
   steps: [

@@ -1,14 +1,14 @@
 // ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  eyebrow: "Collectivités · CPTS · Institutions",
+  eyebrow: "Collectivités et institutions",
   h1: [
     "Renforcez la prévention santé dans ",
     { italic: "votre territoire" },
     " sans charge opérationnelle.",
   ],
   subtitle:
-    "Hocoia déploie des unités médicales mobiles dans les déserts médicaux, les communes rurales et les zones sous-dotées. Clé en main, financeable via les dispositifs existants, validé scientifiquement.",
+    "Hocoia déploie des unités médicales mobiles dans les déserts médicaux, les communes rurales et les zones sous-dotées. Clé en main, certifié et finançable.",
   pills: [
     { id: "p1", label: "Collectivités", active: true },
     { id: "p2", label: "CPTS / MSP", active: false },
@@ -16,7 +16,7 @@ export const hero = {
   ],
   checks: [
     "Aucune infrastructure à construire, le bus vient à vous",
-    "Zéro gestion RH, professionnels de santé fournis",
+    "Pas de gestion RH, professionnels de santé fournis",
     "Compatible CLS, ARS, fonds régionaux de santé",
     "Données anonymisées pour le pilotage territorial",
   ],
@@ -78,7 +78,7 @@ export const useCases = {
     },
     {
       id: "cpts",
-      label: "CPTS & professionnels de santé",
+      label: "CPTS",
       sublabel: "CPTS · MSP · Réseaux de santé",
     },
   ],
@@ -93,27 +93,27 @@ export const useCases = {
       features: [
         {
           id: "f1",
-          title: "Aucune infrastructure à financer",
+          title: "Renforcer l'accès aux soins de vos habitants",
           description:
-            "Le bus se déplace jusqu'à votre commune. Pas de local médical, pas de travaux, pas d'investissement immobilier.",
+            "Un service de santé concret et visible, directement dans votre commune. Une réponse immédiate à l'une des premières préoccupations de vos habitants.",
         },
         {
           id: "f2",
-          title: "Professionnels de santé fournis",
+          title: "Réduire les inégalités de santé sur votre territoire",
           description:
-            "Hocoia mobilise les soignants. Vous n'avez pas de RH médicale à gérer, ni recrutement, ni planning, ni remplacement.",
+            "Hocoia cible en priorité les zones sous-dotées. Chaque déploiement contribue à rééquilibrer l'offre de soins localement.",
         },
         {
           id: "f3",
-          title: "Rapport anonymisé pour votre territoire",
+          title: "Valoriser votre engagement en santé publique",
           description:
-            "Données de participation et résultats médicaux agrégés transmis à la collectivité pour le rapport annuel et les appels à projets.",
+            "Un programme de prévention co-porté avec Hocoia renforce votre image d'élu engagé sur les enjeux de santé de vos habitants.",
         },
         {
           id: "f4",
-          title: "Compatible avec vos financements existants",
+          title: "Un impact mesurable pour vos rapports",
           description:
-            "CLS, fonds régionaux, crédits ARS, DETR : Hocoia vous accompagne dans le montage financier.",
+            "Données de participation et résultats agrégés livrés après chaque déploiement, prêts pour vos appels à projets et rapports ARS.",
         },
       ],
       ctaPrimary: "Parler à un expert territorial",
@@ -144,27 +144,27 @@ export const useCases = {
       features: [
         {
           id: "f1",
-          title: "Spécialités en renfort",
+          title: "Étendre votre offre de soins sans recruter",
           description:
-            "Dermato, cardio, mammographie : Hocoia apporte les spécialités que votre territoire ne peut pas couvrir en permanence.",
+            "Dermatologie, Cardiologie, mammographie : Hocoia apporte les spécialités que votre territoire ne couvre pas encore, sans aucune charge RH pour vos équipes.",
         },
         {
           id: "f2",
-          title: "Coordination simplifiée",
+          title: "Répondre à la demande sans surcharger vos praticiens",
           description:
-            "HocoApp gère la prise de RDV et le suivi patient. Vos équipes sont informées en temps réel.",
+            "Hocoia absorbe le volume de dépistage spécialisé sans ajouter de charge à vos médecins et soignants libéraux.",
         },
         {
           id: "f3",
-          title: "Données partagées",
+          title: "Améliorer le suivi de santé populationnelle",
           description:
-            "Les résultats agrégés peuvent être intégrés à votre tableau de bord de santé populationnelle.",
+            "Les résultats agrégés s'intègrent à votre tableau de bord et alimentent votre stratégie de santé de territoire.",
         },
         {
           id: "f4",
-          title: "Déploiement sans contrainte logistique",
+          title: "Renforcer l'attractivité de votre territoire",
           description:
-            "Le bus vient à vous. Pas de locaux supplémentaires, pas d'organisation logistique de votre côté.",
+            "Un partenariat Hocoia signale un territoire organisé, structuré et capable d'innover dans l'accès aux soins.",
         },
       ],
       ctaPrimary: "Parler à un expert territorial",
@@ -207,7 +207,7 @@ export const zeroCharge = {
       id: "zc2",
       title: "Les soignants",
       description:
-        "Médecins, infirmières, sages-femmes, MERM : Hocoia recrute, planifie et remplace. Zéro gestion RH médicale.",
+        "Médecins, infirmières, sages-femmes, MERM : Hocoia recrute, planifie et remplace. Pas de gestion RH médicale.",
       detail: "Réseau de 120+ prestataires",
     },
     {
@@ -230,7 +230,7 @@ export const zeroCharge = {
 // ─── Processus ─────────────────────────────────────────────────────────────
 
 export const processus = {
-  eyebrow: "Comment ça se passe",
+  eyebrow: "Comment cela se passe",
   h2: "De votre premier contact au premier patient, en 2 mois",
   subtitle:
     "Un processus structuré, avec Hocoia en chef de projet. Vous validez, on exécute.",
@@ -240,40 +240,40 @@ export const processus = {
       number: "01",
       title: "Échange de cadrage",
       description:
-        "30 min avec un expert territorial Hocoia : zone, spécialité, public cible, contraintes logistiques.",
-      delay: "J+2",
+        "Un expert territorial Hocoia analyse votre contexte : zone géographique, spécialités prioritaires, public cible et contraintes logistiques.",
+      delay: "Étape 1",
     },
     {
       id: "step2",
       number: "02",
       title: "Proposition sur mesure",
       description:
-        "Programme personnalisé, planning, devis ferme, options de financement. Intégration dans votre CLS si besoin.",
-      delay: "J+7",
+        "Programme personnalisé, planning prévisionnel, devis ferme et options de financement. Intégration dans votre CLS si nécessaire.",
+      delay: "Étape 2",
     },
     {
       id: "step3",
       number: "03",
       title: "Signature & communication",
       description:
-        "Convention ou bon de commande. Hocoia prépare la communication patient (flyer, courrier, annonce locale).",
-      delay: "J+14",
+        "Convention ou bon de commande. Hocoia prépare la communication patient.",
+      delay: "Étape 3",
     },
     {
       id: "step4",
       number: "04",
       title: "Ouverture des inscriptions",
       description:
-        "Prise de RDV en ligne ou par téléphone. Les créneaux sont gérés par Hocoia, vous recevez les confirmations.",
-      delay: "J+30",
+        "Ouverture des créneaux en ligne ou par téléphone. La gestion des inscriptions est assurée intégralement par Hocoia, avec confirmation transmise à votre équipe.",
+      delay: "Étape 4",
     },
     {
       id: "step5",
       number: "05",
-      title: "Jour J + bilan",
+      title: "Déploiement & bilan",
       description:
-        "Le bus arrive, les professionnels de santé aussi. Rapport anonymisé transmis sous 72h après la journée.",
-      delay: "J+60",
+        "Le Médicobus et l'équipe médicale Hocoia s'installent sur site. Un rapport anonymisé est transmis sous 72h à l'issue de la journée.",
+      delay: "Étape 5",
     },
   ],
 };
@@ -510,34 +510,34 @@ export const parcoursPatient = {
     {
       id: "s1",
       number: "01",
+      delay: "Étape 1",
       title: "Découverte & inscription",
       description:
-        "L'habitant voit l'annonce (flyer, affiche mairie, réseaux locaux), prend RDV via HocoApp ou QR code sans création de compte complexe.",
-      badge: "RDV via HocoApp ou QR code",
+        "L'habitant voit l'annonce (flyer, affiche mairie, réseaux locaux) et prend rendez-vous via l'application ou QR code sans création de compte complexe.",
     },
     {
       id: "s2",
       number: "02",
-      title: "Dépistage au plus près",
+      delay: "Étape 2",
+      title: "Dépistage au plus près des habitants",
       description:
-        "Le bus se déplace dans la commune, sur la place du marché ou devant la mairie. Examen en 20 à 30 minutes, sans rendez-vous médical classique.",
-      badge: null,
+        "Le Médicobus se déplace dans la commune, sur la place du marché ou devant la mairie. Examen complet en 20 à 30 minutes.",
     },
     {
       id: "s3",
       number: "03",
+      delay: "Étape 3",
       title: "Résultats & compte rendu",
       description:
-        "L'habitant reçoit ses résultats sur HocoApp sous 48–72h. Un compte rendu est transmis à son médecin traitant pour assurer la continuité du suivi.",
-      badge: "Résultats dans HocoApp",
+        "L'habitant reçoit ses résultats sur son tableau de bord sous 48–72h. Un compte rendu est transmis à son médecin traitant pour assurer la continuité du suivi.",
     },
     {
       id: "s4",
       number: "04",
+      delay: "Étape 4",
       title: "Suivi & parcours de soins",
       description:
-        "En cas de dépistage positif, Hocoia coordonne l'orientation vers les acteurs de soins locaux. Le dépistage s'intègre au parcours de soins du patient. La collectivité reçoit des indicateurs agrégés pour piloter ses futures actions.",
-      badge: "Orientation via HocoApp",
+        "En cas de dépistage positif, Hocoia coordonne l'orientation vers les acteurs de soins locaux. Le dépistage s'intègre au parcours de soins du patient.",
     },
   ],
 };
@@ -584,7 +584,7 @@ export const achatSurMesure = {
       {
         title: "Spécialités configurées pour votre territoire",
         description:
-          "Dermato, cardio, mammographie, médecine générale : le bus est équipé selon les déserts médicaux identifiés et les priorités de santé publique locales.",
+          "Dermatologie, Cardiologie, mammographie, médecine générale : le bus est équipé selon les déserts médicaux identifiés et les priorités de santé publique locales.",
       },
       {
         title: "Propriété de la collectivité",

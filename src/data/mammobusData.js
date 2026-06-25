@@ -12,9 +12,10 @@ export const hero = {
   checks: [
     "Mammographie + échographie mammaire à bord",
     "PACS centralisé + hébergement HDS certifié",
-    "Dépistage organisé et individuel — 24 femmes/jour",
+    "Dépistage organisé et individuel — 24 patientes/jour",
     "Diagnostic sur place ou en télé-expertise radiologue",
-    "Déploiement clé en main — délai 2 mois",
+    "Déploiement clé en main",
+    "Référencé RESAH — achat facilité pour les établissements publics",
   ],
   ctaPrimary: "Demander une présentation",
   ctaOutline: "Voir le protocole ↓",
@@ -69,11 +70,10 @@ export const logos = {
 // ─── Stats ────────────────────────────────────────────────────────────────────
 
 export const stats = [
-  { value: "1/8",  label: "femmes développera un cancer du sein dans sa vie",                    source: "INCa" },
-  { value: "61 000", label: "nouveaux cas par an en France — 2× plus qu'il y a 40 ans",         source: "INCa 2024" },
-  { value: "90%",  label: "taux de guérison si détecté suffisamment tôt",                        source: "INCa" },
-  { value: "99%",  label: "taux de guérison en cas de détection très précoce",                   source: "INCa" },
-  { value: "50%",  label: "seulement des femmes +50 ans se font dépister",                       source: "INCa" },
+  { value: "1/8",    label: "femmes développera un cancer du sein dans sa vie",                    source: "INCa" },
+  { value: "61 000", label: "nouveaux cas par an en France — 2× plus qu'il y a 40 ans",          source: "INCa 2024" },
+  { value: "99%",    label: "taux de guérison en cas de détection très précoce",                  source: "INCa" },
+  { value: "50%",    label: "seulement des femmes +50 ans se font dépister",                      source: "INCa" },
 ];
 
 // ─── Concept (composant ConceptSection) ──────────────────────────────────────
@@ -87,7 +87,7 @@ export const concept = {
       segments: [
         { text: "Le MammoBus est une " },
         { text: "unité mobile compacte de mammographie", bold: true },
-        { text: " — unique en France à moins de 3,5 tonnes. Il permet de réaliser des dépistages du cancer du sein directement dans les communes, sans plateau technique lourd ni déplacement pour les patientes." },
+        { text: ", unique en France, à moins de 3,5 tonnes. Il permet de réaliser des dépistages du cancer du sein directement dans les communes, sans plateau technique lourd et au plus près des patientes." },
       ],
     },
     {
@@ -140,7 +140,7 @@ export const definition = {
       segments: [
         { text: "Le MammoBus est une " },
         { text: "unité mobile compacte de mammographie", bold: true },
-        { text: " — unique en France à moins de 3,5 tonnes. Il permet de réaliser des dépistages du cancer du sein directement dans les communes, sans plateau technique lourd ni déplacement pour les patientes." },
+        { text: ", unique en France, à moins de 3,5 tonnes. Il permet de réaliser des dépistages du cancer du sein directement dans les communes, sans plateau technique lourd et au plus près des patientes." },
       ],
     },
     {
@@ -207,7 +207,7 @@ export const protocole = {
       num: "1",
       titre: "Organisation de la campagne",
       description:
-        "Coordination avec la collectivité : définition du projet, sélection du lieu et de la date. Prise de RDV via HocoApp ou par téléphone. Invitation par flyer numérique ou courrier.",
+        "Coordination du projet : définition de la campagne, sélection du lieu et de la date. Prise de RDV via le tableau de bord ou par téléphone. Invitation par flyer numérique ou courrier.",
       badge: "Équipe Hocoia",
     },
     {
@@ -223,7 +223,7 @@ export const protocole = {
       num: "3",
       titre: "Prise en charge médicale",
       description:
-        "Accompagnement à bord par MERM + sage-femme. Palpation mammaire, mammographie, échographie si indiquée. Diagnostic sur place ou en télé-expertise radiologue.",
+        "Accompagnement à bord par un Manipulateur en Electroradiologie Médicale (MERM) et une sage-femme. Palpation mammaire, mammographie, échographie si indiquée. Diagnostic sur place ou en télé-expertise radiologue.",
       badge: "MERM + Sage-femme + Radiologue",
     },
     {
@@ -376,7 +376,7 @@ export const solutions = {
       badge: "Polyvalent — Médecine générale",
       titre: "MédicoBus",
       description:
-        "Cabinet médical mobile polyvalent — cardio, dermato, santé des femmes. 10+ dispositifs embarqués.",
+        "Cabinet médical mobile polyvalent — Cardiologie, Dermatologie, santé des femmes. 10+ dispositifs embarqués.",
       ctaDisabled: false,
       cta: "Découvrir le MédicoBus →",
       href: "/produits/medicobus",
@@ -477,7 +477,7 @@ export const faq = {
       id: "faq4",
       question: "Comment sont organisées les inscriptions ?",
       answer:
-        "Hocoia gère l'intégralité de la campagne : invitation par flyer numérique ou courrier, prise de RDV via HocoApp ou téléphone, accueil le jour J. La collectivité n'a rien à organiser.",
+        "Hocoia gère l'intégralité de la campagne : invitation par flyer numérique ou courrier, prise de RDV via le tableau de bord ou téléphone, accueil le jour J. La collectivité n'a rien à organiser.",
     },
     {
       id: "faq5",
@@ -489,7 +489,7 @@ export const faq = {
       id: "faq6",
       question: "Que se passe-t-il en cas d'anomalie détectée ?",
       answer:
-        "L'équipe médicale Hocoia organise un rendez-vous complémentaire avec un radiologue ou un gynécologue référent. Le suivi est tracé dans HocoApp et transmis au médecin traitant de la patiente.",
+        "L'équipe médicale Hocoia organise un rendez-vous complémentaire avec un radiologue ou un gynécologue référent. Le suivi est tracé dans le tableau de bord et transmis au médecin traitant de la patiente.",
     },
   ],
 };
@@ -530,6 +530,14 @@ export const customBus = {
   title: "Un MammoBus pensé pour votre organisation",
   paragraph:
     "Votre programme de dépistage du cancer du sein nécessite une configuration spécifique ? Hocoia adapte le MammoBus à votre cahier des charges — équipements complémentaires, protocole, intégration à votre PACS ou DPI, communication patient personnalisée.",
+  options: [
+    { id: "o1", title: "Dépistage organisé",          description: "Intégration au programme national de dépistage." },
+    { id: "o2", title: "Dépistage individuel",         description: "Sur prescription médicale, hors programme national." },
+    { id: "o3", title: "Intégration PACS / DPI",       description: "Connexion à votre système d'imagerie ou dossier patient." },
+    { id: "o4", title: "Communication patient",         description: "Flyers, invitations, rappels SMS personnalisés à votre marque." },
+    { id: "o5", title: "Protocole sur mesure",          description: "Adaptation du parcours patient à votre cahier des charges." },
+    { id: "o6", title: "Reporting & indicateurs",       description: "Tableau de bord anonymisé pour piloter votre campagne." },
+  ],
 };
 
 // ─── CTA Final ────────────────────────────────────────────────────────────────

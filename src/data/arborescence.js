@@ -39,7 +39,7 @@ export const megaMenus = {
       {
         id: "entreprise",
         label: "Entreprises & mutuelles",
-        subtext: "Solutions RH & assurance santé",
+        subtext: "Solutions RH & expérience adhérent",
         icon: "🏢",
         iconBg: "#ede9fe",
         href: "/entreprises",
@@ -56,8 +56,8 @@ export const megaMenus = {
       },
       {
         id: "etablissement",
-        label: "Établissements de santé & médico-social",
-        subtext: "Dépistage externalisé & partenariats",
+        label: "Établissements de santé & ESSMS",
+        subtext: "Actions hors les murs",
         icon: "🏥",
         iconBg: "#ffedd5",
         href: "/etablissements-sante",
@@ -170,7 +170,7 @@ export const megaMenus = {
       {
         id:      "medicobus",
         label:   "MédicoBus",
-        subtext: "Check-up, cardio, dermato & plus",
+        subtext: "Check-up, Cardiologie, Dermatologie & plus",
         href:    "/produits/medicobus",
         color:   "#007E94",
         image:   null,

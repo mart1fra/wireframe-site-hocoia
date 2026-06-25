@@ -91,14 +91,14 @@ export const depistageHocoia = {
 // ─── Protocole ────────────────────────────────────────────────────────────────
 
 export const protocole = {
-  eyebrow: "Comment ça se passe",
+  eyebrow: "Comment cela se passe",
   h2: "Un service clé en main, de A à Z",
   subtitle: "Hocoia gère l'intégralité de la campagne — de l'organisation à la restitution des résultats.",
   steps: [
     {
       id: "p1", num: "1",
       titre: "Organisation de la campagne",
-      description: "Coordination avec la collectivité ou l'entreprise : définition du lieu, de la date, communication aux bénéficiaires. Prise de RDV via HocoApp ou par téléphone.",
+      description: "Coordination avec la collectivité ou l'entreprise : définition du lieu, de la date, communication aux bénéficiaires. Prise de RDV via le tableau de bord ou par téléphone.",
       badge: "Équipe Hocoia",
     },
     {
@@ -269,7 +269,7 @@ export const faq = {
       id: "f6",
       question: "Comment s'inscrire pour une session MammoBus ?",
       answer:
-        "Via la page Patient sur ce site (calendrier des passages), ou directement sur HocoApp. Vous pouvez aussi activer une alerte pour être prévenue dès qu'une session est organisée dans votre commune.",
+        "Via la page Patient sur ce site (calendrier des passages), ou directement sur l'application. Vous pouvez aussi activer une alerte pour être prévenue dès qu'une session est organisée dans votre commune.",
     },
   ],
 };

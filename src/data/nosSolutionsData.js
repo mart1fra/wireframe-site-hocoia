@@ -9,12 +9,13 @@ export const hero = {
     { text: "partout.", italic: true },
   ],
   subtitle:
-    "Hocoia conçoit et déploie des cabinets médicaux mobiles connectés — du dépistage du cancer du sein à la médecine générale, en passant par la dermatologie. Chaque solution est pensée pour un usage précis, dans les territoires, les entreprises ou les établissements de santé.",
+    "Hocoia conçoit et déploie des cabinets médicaux mobiles et connectés — du dépistage du cancer du sein à la médecine générale, en passant par la dermatologie. Chaque solution est pensée pour un usage précis, dans les territoires, les entreprises ou les établissements de santé.",
   checks: [
     "Cabinets médicaux mobiles certifiés et connectés",
     "Téléconsultation assistée par professionnels de santé",
     "Données hébergées en France, certifiées HDS",
     "Déploiement clé en main partout en France",
+    "MédicoBus et MammoBus référencés RESAH",
   ],
   imagePlaceholder: "Visuel — La gamme Hocoia (MédicoBus, MammoBus, DermatoBus)",
 };
@@ -23,9 +24,9 @@ export const hero = {
 
 export const intro = {
   eyebrow: "Notre approche",
-  h2: "Une réponse concrète aux déserts médicaux et aux délais de RDV",
+  h2: "Une réponse concrète aux déserts médicaux et aux délais de consultations",
   paragraph:
-    "En France, 6 millions de personnes vivent dans un désert médical et les délais de rendez-vous spécialistes peuvent atteindre 18 mois en zone rurale. Nos cabinets médicaux mobiles apportent la prévention et le dépistage au plus près des patients — dans leur commune, leur entreprise ou leur établissement de santé.",
+    "En France, 6 millions de personnes vivent dans un désert médical et les délais de rendez-vous spécialistes peuvent atteindre 18 mois en zone rurale. Nos cabinets médicaux mobiles apportent la prévention et le dépistage au plus près des patients.",
 };
 
 // ─── Solutions (3 bus) ────────────────────────────────────────────────────
@@ -36,13 +37,13 @@ export const solutions = [
     badge: "Polyvalent — Médecine générale",
     h3: "MédicoBus",
     paragraph:
-      "Un cabinet médical mobile et connecté de moins de 3,5 tonnes. Pensé pour la médecine générale, le check-up santé et la prévention cardiovasculaire en tout territoire.",
+      "Un cabinet médical mobile et connecté de moins de 3,5 tonnes. Pensé pour la médecine générale, le check-up santé, la santé de la femme et la prévention cardiovasculaire en tout territoire.",
     characteristics: [
       "10+ dispositifs médicaux",
       "Soignant + médecin téléconsultant",
       "Toutes spécialités configurables",
     ],
-    audiences: ["Collectivités", "Entreprises", "Établissements"],
+    audiences: ["Collectivités", "Entreprises", "Mutuelles", "Établissements de santé", "CPTS / MSP"],
     ctaLabel: "Découvrir le MédicoBus →",
     ctaHref: "/produits/medicobus",
     imagePlaceholder: "MédicoBus — cabinet médical mobile polyvalent",
@@ -56,10 +57,10 @@ export const solutions = [
       "Une unité mobile de mammographie unique en France à moins de 3,5 tonnes. Dépistage organisé et individuel du cancer du sein, partout dans les territoires.",
     characteristics: [
       "Mammographie + échographie",
-      "24 femmes/jour",
+      "24 patientes/jour",
       "Hébergement HDS certifié",
     ],
-    audiences: ["Collectivités", "Mutuelles", "Hôpitaux"],
+    audiences: ["Collectivités", "Entreprises", "Mutuelles", "Établissements de santé"],
     ctaLabel: "Découvrir le MammoBus →",
     ctaHref: "/mammobus",
     imagePlaceholder: "MammoBus — mammographie mobile",
@@ -70,13 +71,13 @@ export const solutions = [
     badge: "Spécialisé — Cancer de la peau",
     h3: "DermatoBus",
     paragraph:
-      "Cabinet mobile dédié au dépistage du cancer de la peau. Cartographie corps entier, IA mélanome, télé-expertise par les onco-dermatologues du CHU de Caen.",
+      "Cabinet mobile dédié au dépistage du cancer de la peau. Cartographie corps entier, IA mélanome, télé-expertise par des onco-dermatologues partenaires.",
     characteristics: [
       "Cartographie corps entier",
-      "IA + dermatologue CHU",
+      "IA + dermatologue partenaire",
       "Suivi annuel comparatif",
     ],
-    audiences: ["Collectivités", "CPTS", "CHU", "Mutuelles"],
+    audiences: ["Collectivités", "CPTS / MSP", "Mutuelles", "Établissements de santé"],
     ctaLabel: "Découvrir le DermatoBus →",
     ctaHref: "/dermatobus",
     imagePlaceholder: "DermatoBus — dépistage cancer de la peau",
@@ -101,7 +102,7 @@ export const comparison = {
   rows: [
     {
       criterion: "Spécialité principale",
-      values: ["Médecine générale, cardio", "Cancer du sein", "Cancer de la peau"],
+      values: ["Cardiologie · Dermatologie · Santé femme · Check-up", "Cancer du sein", "Cancer de la peau"],
     },
     {
       criterion: "Mode d'intervention",
@@ -109,11 +110,11 @@ export const comparison = {
     },
     {
       criterion: "Dispositifs médicaux",
-      values: ["10+", "Mammo + écho", "Dermatoscope IA"],
+      values: ["10+", "Mammographe + échographe", "Dermatoscope IA"],
     },
     {
       criterion: "Capacité par jour",
-      values: ["16–24 patients selon la thématique", "24 femmes", "20–30 patients"],
+      values: ["16–24 patients selon la thématique", "24 patientes", "20–30 patients"],
     },
     {
       criterion: "Délai de déploiement",
@@ -121,7 +122,7 @@ export const comparison = {
     },
     {
       criterion: "Public principal",
-      values: ["Tous publics", "Femmes 40–75 ans", "Tous publics"],
+      values: ["Tous publics majeurs", "Femmes 40–75 ans", "Tous publics majeurs"],
     },
   ],
 };
@@ -137,7 +138,7 @@ export const useCasesSection = {
 export const useCases = [
   {
     id: "commune-rurale",
-    title: "Une commune rurale sans médecin",
+    title: "Une commune rurale qui pallie à l'absence de médecin",
     description:
       "Une commune isolée souhaite proposer un dépistage régulier à ses habitants. Le MédicoBus se déploie sur la place du marché ou au CCAS, plusieurs fois par an.",
     solutionLabel: "MédicoBus →",
@@ -147,7 +148,7 @@ export const useCases = [
     id: "journee-sante",
     title: "Une entreprise qui déploie une journée santé",
     description:
-      "Un groupe organise une journée prévention pour ses 500 collaborateurs. Bilans cardio, dépistage dermato, dans les locaux.",
+      "Un groupe organise une journée prévention pour ses 500 collaborateurs. Bilans Cardiologie, dépistage Dermatologie, dans les locaux.",
     solutionLabel: "MédicoBus →",
     solutionHref: "/produits/medicobus",
   },
@@ -169,11 +170,11 @@ export const useCases = [
   },
   {
     id: "ehpad",
-    title: "Un EHPAD pour ses résidents",
+    title: "Un EHPAD qui veut assurer un suivi régulier à ses résidents",
     description:
-      "Un EHPAD souhaite faire dépister ses résidentes du cancer du sein sans transport médicalisé.",
-    solutionLabel: "MammoBus →",
-    solutionHref: "/mammobus",
+      "Un EHPAD souhaite proposer des bilans de santé réguliers à ses résidents sans transport médicalisé. Le MédicoBus se déploie directement dans l'établissement.",
+    solutionLabel: "MédicoBus →",
+    solutionHref: "/produits/medicobus",
   },
 ];
 
@@ -201,13 +202,7 @@ export const whyItems = [
     id: "wh3",
     title: "Plateforme HocoApp intégrée",
     description:
-      "Tous nos déploiements utilisent HocoApp : prise de RDV, dossier patient, comptes-rendus, reporting. Tout intégré.",
-  },
-  {
-    id: "wh4",
-    title: "Partenariats scientifiques (CHU)",
-    description:
-      "Le DermatoBus est validé scientifiquement par le CHU de Caen. Nos protocoles sont supervisés par des comités médicaux.",
+      "Tous nos déploiements utilisent HocoApp : prise de RDV, dossier patient, comptes-rendus, reporting. Tout est centralisé.",
   },
 ];
 

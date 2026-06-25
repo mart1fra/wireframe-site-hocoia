@@ -91,7 +91,7 @@ export const depistageHocoia = {
 // ─── Protocole ────────────────────────────────────────────────────────────────
 
 export const protocole = {
-  eyebrow: "Comment ça se passe",
+  eyebrow: "Comment cela se passe",
   h2: "Le check-up en 4 étapes, en 30 minutes",
   subtitle: "De l'accueil à la restitution immédiate des résultats — tout est inclus.",
   steps: [

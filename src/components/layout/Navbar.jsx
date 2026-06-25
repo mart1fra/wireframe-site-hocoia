@@ -316,7 +316,7 @@ function BusCardsPanel({ data, onClose }) {
         <div className="w-9 h-9 bg-gray-200 border border-gray-300 rounded-lg shrink-0" />
         <div className="flex-1 min-w-0">
           <p className="font-semibold text-gray-900 text-sm leading-tight">{data.cta.label}</p>
-          <p className="text-xs text-gray-500 mt-0.5">Opérateurs, mutuelles, collectivités — unité clé en main</p>
+          <p className="text-xs text-gray-500 mt-0.5">Achat clé en main et sur mesure</p>
         </div>
         <span className="text-gray-400 group-hover:text-gray-600 text-sm transition-colors shrink-0">→</span>
       </Link>

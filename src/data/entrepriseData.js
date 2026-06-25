@@ -2,13 +2,13 @@
 
 export const hero = {
   eyebrow: "Entreprises & mutuelles",
-  h1: "Offrez à vos équipes une prévention santé sans friction.",
+  h1: "Rapprochez la prévention santé de vos équipes et adhérents.",
   subtitle:
-    "Hocoia déploie des bus médicaux équipés directement dans vos locaux ou près de vos sites. Programme clé en main, résultats mesurables, pilotage simple.",
+    "Hocoia déploie des bus médicaux directement sur le lieu de travail ou de vie, en alliant humain et technologie de pointe.",
   checks: [
-    "Zéro organisation côté RH, on gère tout",
-    "Reporting anonymisé",
-    "Conforme RGPD, données hébergées en France",
+    "Programme clé en main",
+    "Résultats mesurables et anonymisés",
+    "Impact direct sur la QVT et l'expérience adhérent",
   ],
   ctaOutline: "Voir un cas client →",
   ctaGhost: "Télécharger le dossier",
@@ -61,33 +61,33 @@ export const useCases = {
       eyebrow: "Pour les entreprises",
       title: "Réduisez l'absentéisme, valorisez votre marque employeur",
       paragraphs: [
-        "Vos collaborateurs font face à des délais de 3 à 6 mois chez les spécialistes. Hocoia contourne ces délais en venant directement à eux, sur leur lieu de travail. Résultat : une participation bien plus élevée, des bilans réalisés, un impact mesurable.",
+        "Vos collaborateurs font face à des délais de 3 à 6 mois pour consulter un spécialiste. Hocoia contourne ces délais en venant directement à eux, sur leur lieu de travail. Résultat : une participation bien plus élevée, des bilans complets réalisés, un impact mesurable.",
       ],
       features: [
         {
           id: "f1",
-          title: "Bus déployé sur site",
-          description: "Notre bus s'installe sur votre parking. Vos collaborateurs consultent sur leur temps de travail.",
+          title: "Améliorer la qualité de vie au travail",
+          description: "En apportant la santé directement sur le lieu de travail, Hocoia simplifie l'accès aux soins pour vos collaborateurs, sans déplacement ni attente.",
         },
         {
           id: "f2",
-          title: "Dashboard & reporting",
-          description: "Données anonymisées, tableaux de bord RH, résultats transmis par mail ou courrier dans les semaines suivantes.",
+          title: "Diminuer l'absentéisme",
+          description: "Des campagnes de dépistage régulières permettent de détecter les pathologies tôt et de réduire les arrêts de travail prolongés.",
         },
         {
           id: "f3",
-          title: "Conformité totale RGPD",
-          description: "Hébergement HDS, données anonymisées, aucun accès employeur aux résultats individuels.",
+          title: "Un gain d'efficacité dans vos équipes",
+          description: "Des collaborateurs bien suivis sont plus disponibles, plus sereins et moins exposés aux risques de santé non détectés.",
         },
         {
           id: "f4",
-          title: "1er déploiement en 2 mois",
-          description: "De la signature au premier bus sur site en moins de 40 jours.",
+          title: "Des collaborateurs satisfaits et en meilleure santé",
+          description: "Un service de santé accessible et concret renforce la confiance de vos équipes et valorise votre marque employeur.",
         },
       ],
       ctaButtons: [
         { label: "Parler à un expert",     primary: true },
-        { label: "Voir le cas Boardriders →", primary: false },
+        { label: "Cas clients", primary: false },
       ],
       caseCard: {
         tag: "Sport & outdoor · Industrie",
@@ -109,29 +109,29 @@ export const useCases = {
       eyebrow: "Pour les mutuelles",
       title: "Faites de la prévention un service concret pour vos adhérents",
       paragraphs: [
-        "Vos adhérents vivent souvent loin des spécialistes. Hocoia vous permet d'organiser des campagnes de dépistage directement dans leurs communes : la mutuelle invite ses adhérents, Hocoia déploie le bus, le dépistage est gratuit pour le patient.",
+        "Vos adhérents rencontrent souvent des difficultés à consulter un spécialiste. Hocoia vous permet d'organiser des campagnes de dépistage directement dans leurs communes : la mutuelle invite ses adhérents, Hocoia déploie le bus, le dépistage est gratuit pour le patient.",
         "C'est une démarche de prévention proactive qui renforce la relation avec vos adhérents et alimente votre stratégie de santé populationnelle, avec des données anonymisées exploitables.",
       ],
       features: [
         {
           id: "fa1",
-          title: "Tour des communes ou journée fixe",
-          description: "Hocoia adapte le format : campagne sur plusieurs communes d'une région, ou journée concentrée sur un site partenaire.",
+          title: "Renforcer le lien avec vos adhérents",
+          description: "Un service de prévention concret, visible et gratuit : vos adhérents voient la valeur de leur mutuelle au quotidien.",
         },
         {
           id: "fa2",
-          title: "Vos adhérents identifiés en priorité",
-          description: "La mutuelle invite ses adhérents éligibles. Les créneaux leur sont réservés en priorité, le bus reste ouvert au public si capacité.",
+          title: "Réduire les coûts de santé sur le long terme",
+          description: "Dépister tôt, c'est traiter moins cher. La prévention réduit les prises en charge lourdes et les remboursements futurs.",
         },
         {
           id: "fa3",
-          title: "Données anonymisées pour vos études",
-          description: "Taux de participation, résultats agrégés, satisfaction. Données utilisables pour vos rapports et votre politique santé.",
+          title: "Des adhérents mieux suivis et en meilleure santé",
+          description: "Chaque bilan génère des orientations vers des soins adaptés. Vos adhérents sont accompagnés, pas seulement remboursés.",
         },
         {
           id: "fa4",
-          title: "Modèle économique flexible",
-          description: "Forfait par journée, par adhérent dépisté, ou modèle mixte. Sponsoring possible avec d'autres partenaires institutionnels.",
+          title: "Valoriser concrètement votre offre de prévention",
+          description: "Transformez votre engagement santé en actions terrain mesurables, communicables et reconnaissables par vos adhérents.",
         },
       ],
       ctaButtons: [
@@ -163,7 +163,7 @@ export const videoTestimonial = {
   eyebrow: "Témoignage vidéo",
   title: "Comment Boardriders a déployé une journée santé pour ses collaborateurs",
   paragraphs: [
-    "Boardriders a organisé une journée de dépistage directement sur son site avec le MédicoBus Hocoia. Zéro mobilisation côté RH, et un reporting anonymisé qui alimente leur politique santé interne.",
+    "Boardriders a organisé une journée de dépistage directement sur son site avec le MédicoBus Hocoia. Pas de mobilisation côté RH, et un reporting anonymisé qui alimente leur politique santé interne.",
     "Découvrez comment s'est déroulé le déploiement, le format choisi et les retours des collaborateurs.",
   ],
   quote:
@@ -187,7 +187,7 @@ export const stats = [
 
 export const avisClients = {
   eyebrow: "Témoignages",
-  h2: "Entrepreneurs, DRH, Gestionnaires de paie : voici ce qu'ils préfèrent chez Hocoia",
+  h2: "Pourquoi entreprises et mutuelles font confiance à Hocoia",
   cards: [
     {
       id: "ac1",
@@ -222,34 +222,34 @@ export const processus = {
     {
       id: "s1",
       number: "01",
-      day: "Jour 1",
-      title: "Échange de cadrage",
+      day: "Étape 1",
+      title: "Cadrage",
       description:
-        "Un expert Hocoia analyse vos besoins, vos effectifs et vos contraintes logistiques.",
+        "Un expert Hocoia analyse vos besoins, vos effectifs et vos contraintes logistiques pour définir le format le plus adapté à votre structure.",
     },
     {
       id: "s2",
       number: "02",
-      day: "J+5",
+      day: "Étape 2",
       title: "Proposition sur-mesure",
       description:
-        "Programme adapté, devis détaillé, planning indicatif sur-mesure pour votre structure.",
+        "Programme personnalisé, devis détaillé et planning indicatif vous sont remis. Chaque proposition est ajustée à la taille et aux enjeux de votre organisation.",
     },
     {
       id: "s3",
       number: "03",
-      day: "J+10",
-      title: "Signature & logistique",
+      day: "Étape 3",
+      title: "Validation & organisation",
       description:
-        "Contrat signé, communication interne préparée, logistique bus planifiée avec votre équipe.",
+        "Contrat signé, communication interne préparée, logistique bus planifiée avec votre équipe. Hébergement HDS et données anonymisées — aucun accès employeur aux résultats individuels.",
     },
     {
       id: "s4",
       number: "04",
-      day: "J+28",
-      title: "Premier bus sur site",
+      day: "Étape 4",
+      title: "Déploiement du programme",
       description:
-        "Lancement du programme, prise en charge totale par Hocoia, premiers bilans réalisés.",
+        "Notre bus s'installe sur votre parking, vos collaborateurs consultent sur leur temps de travail. Les résultats sont transmis via tableau de bord RH anonymisé dans les semaines suivantes.",
     },
   ],
 };
@@ -304,7 +304,7 @@ export const ressources = {
 
 export const faq = {
   eyebrow: "Questions fréquentes",
-  h2: "Ce que se demandent les DRH avant de démarrer",
+  h2: "Les questions que se posent les entreprises et mutuelles avant de démarrer",
   items: [
     {
       id: "q1",
@@ -382,34 +382,34 @@ export const parcoursPatient = {
     {
       id: "s1",
       number: "01",
+      day: "Étape 1",
       title: "Inscription & prise de RDV",
       description:
-        "Le collaborateur reçoit un code d'invitation unique et prend son RDV sur HocoApp en quelques clics selon les créneaux disponibles sur site.",
-      badge: "Via QR code ou par téléphone",
+        "Le collaborateur reçoit un code d'invitation unique et prend son RDV sur son espace personnel en quelques clics selon les créneaux disponibles sur site.",
     },
     {
       id: "s2",
       number: "02",
+      day: "Étape 2",
       title: "Dépistage dans le bus",
       description:
         "Examen complet en 20 à 30 minutes par un professionnel de santé Hocoia directement sur site. Matériel médical certifié, premiers résultats immédiats pour certains examens.",
-      badge: null,
     },
     {
       id: "s3",
       number: "03",
+      day: "Étape 3",
       title: "Résultats confidentiels",
       description:
-        "Le collaborateur reçoit ses résultats sur HocoApp sous une semaine en moyenne. Ils sont également transmis à son médecin traitant. L'employeur ne reçoit que des données agrégées anonymisées. Résultats dans HocoApp et par mail.",
-      badge: "Résultats dans HocoApp",
+        "Le collaborateur reçoit ses résultats sur son tableau de bord sous une semaine en moyenne. Ils sont également transmis à son médecin traitant. L'employeur ne reçoit que des données agrégées anonymisées.",
     },
     {
       id: "s4",
       number: "04",
+      day: "Étape 4",
       title: "Orientation & suivi de soins",
       description:
         "En cas d'anomalie, Hocoia coordonne l'orientation vers le médecin traitant ou un spécialiste. Le dépistage s'intègre ainsi au parcours de soins du collaborateur, sans intervention de l'employeur.",
-      badge: "Suivi coordonné dans HocoApp",
     },
   ],
 };

@@ -67,7 +67,7 @@ export const specialites = {
     },
     {
       id: "cardio",
-      label: "Cardio",
+      label: "Cardiologie",
       title: "Bilan cœur",
       description: "Évaluation de votre santé cardiovasculaire avec ECG et mesures réalisées sur place. Un cardiologue analyse ensuite les résultats et oriente le suivi si nécessaire.",
       href: "/solutions/prevention-cardio",
@@ -75,7 +75,7 @@ export const specialites = {
     },
     {
       id: "dermato",
-      label: "Dermato",
+      label: "Dermatologie",
       title: "Bilan peau",
       description: "Contrôle de grains de beauté qui vous paraissent suspectes. Photos réalisées sur place puis analyse d'un dermatologue.",
       href: "/solutions/cancer-peau",
@@ -127,23 +127,67 @@ export const stats = {
 export const useCases = {
   label: "Vous êtes",
   tabs: [
-    { id: "entreprise",   label: "Entreprises & mutuelles",                 eyebrow: "Use case — Entreprises & mutuelles" },
-    { id: "collectivite", label: "Collectivités & Institutions",             eyebrow: "Use case — Collectivités & Institutions" },
-    { id: "hopital",      label: "Etablissement de santé & médico-social",   eyebrow: "Use case — Etablissement de santé & médico-social" },
-    { id: "pro-sante",    label: "Pro de santé",        eyebrow: "Use case — Pro de santé" },
+    {
+      id: "entreprise",
+      label: "Entreprises & mutuelles",
+      eyebrow: "Use case — Entreprises & mutuelles",
+      h3: "Réduisez l'absentéisme, valorisez votre politique santé",
+      description:
+        "Hocoia déploie un bus médical équipé directement dans vos locaux ou sur votre réseau d'adhérents. Vos collaborateurs et bénéficiaires accèdent à un bilan complet — sans déplacement, sans organisation de votre côté.",
+      metrics: [
+        { value: "+3 000", label: "Personnes dépistées" },
+        { value: "4,8/5",  label: "Satisfaction patients" },
+        { value: "5–10 %", label: "Cas urgents orientés" },
+      ],
+      ctaPrimary: "Voir le cas client →",
+      ctaOutline: "Demander une démo",
+    },
+    {
+      id: "collectivite",
+      label: "Collectivités & Institutions",
+      eyebrow: "Use case — Collectivités & Institutions",
+      h3: "Apportez la prévention santé au cœur de votre territoire",
+      description:
+        "Hocoia déploie un bus médical itinérant commune par commune. Vos habitants bénéficient d'un dépistage complet sans déplacement — idéal pour les zones sous-dotées et les publics éloignés des soins.",
+      metrics: [
+        { value: "80+",   label: "Communes desservies" },
+        { value: "4,8/5", label: "Satisfaction patients" },
+        { value: "12",    label: "Spécialités disponibles" },
+      ],
+      ctaPrimary: "Voir le cas client →",
+      ctaOutline: "Demander une démo",
+    },
+    {
+      id: "hopital",
+      label: "Etablissement de santé & médico-social",
+      eyebrow: "Use case — Etablissement de santé & médico-social",
+      h3: "Étendez votre activité de soin hors les murs",
+      description:
+        "Déployez votre propre bus médical ou louez le nôtre pour compléter votre offre de soins. Consultations avancées, dépistage organisé, suivi des résidents en EHPAD — sans infrastructure supplémentaire.",
+      metrics: [
+        { value: "10+",        label: "Dispositifs embarqués" },
+        { value: "HDS",        label: "Données certifiées" },
+        { value: "Clé en main", label: "Déploiement" },
+      ],
+      ctaPrimary: "Voir les configurations →",
+      ctaOutline: "Demander une démo",
+    },
+    {
+      id: "pro-sante",
+      label: "Pro de santé",
+      eyebrow: "Use case — Pro de santé",
+      h3: "Exercez là où les patients en ont le plus besoin",
+      description:
+        "Rejoignez le réseau Hocoia et réalisez des consultations avancées à bord de nos unités mobiles. CDI, vacations, téléconsultation assistée — vous choisissez votre mode d'exercice, nous gérons la logistique.",
+      metrics: [
+        { value: "12",   label: "Spécialités présentes" },
+        { value: "CDI",  label: "Statut proposé" },
+        { value: "100%", label: "Logistique Hocoia" },
+      ],
+      ctaPrimary: "Voir les postes ouverts →",
+      ctaOutline: "En savoir plus",
+    },
   ],
-  sharedContent: {
-    h3: "Réduisez l'absentéisme, valorisez votre politique RH santé",
-    description:
-      "Hocoia déploie un bus médical équipé directement dans vos locaux ou sur votre territoire. Vos collaborateurs bénéficient d'un bilan complet sans déplacement, sans organisation de votre côté.",
-    metrics: [
-      { value: "+3 000", label: "Personnes dépistées" },
-      { value: "4,8/5",  label: "Satisfaction patients" },
-      { value: "5–10 %", label: "Cas urgents orientés" },
-    ],
-    ctaPrimary: "Voir le cas client →",
-    ctaOutline: "Demander une démo",
-  },
 };
 
 // ─── Zone B2B sombre ──────────────────────────────────────────────────────
@@ -154,7 +198,7 @@ export const b2bZone = {
   description:
     "Bus déployé sur site, résultats anonymisés, reporting DRH. Hocoia gère l'intégralité de la logistique et vous livre des données actionnables.",
   checks: [
-    "Zéro friction pour vos salariés",
+    "Pas de friction pour vos salariés",
     "Reporting anonymisé & RGPD",
     "Impact mesuré sur l'absentéisme",
   ],
@@ -171,7 +215,7 @@ export const temoignages = {
       id: "t1",
       stars: "★★★★★",
       quote:
-        "En 30 minutes sur site, nos salariés ont pu faire un bilan cardio complet. Zéro organisation de notre côté.",
+        "En 30 minutes sur site, nos salariés ont pu faire un bilan cardiologique complet. Pas d'organisation de notre côté.",
       author: "Sophie M.",
       role: "DRH Veolia Alsace",
     },

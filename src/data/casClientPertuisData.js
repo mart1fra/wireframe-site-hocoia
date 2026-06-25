@@ -173,7 +173,7 @@ export const satisfaction = {
 // ─── Enseignements ────────────────────────────────────────────────────────────
 
 export const enseignements = {
-  eyebrow: "Ce que ça nous apprend",
+  eyebrow: "Ce que cela nous apprend",
   h2: "Ce qu'une action comme celle-ci permet d'ouvrir",
   intro:
     "L'opération de Pertuis illustre la manière dont Hocoia travaille : un véhicule conçu pour la santé, une infrastructure technologique pensée pour le terrain, et des équipes capables de rendre l'ensemble lisible pour les patients comme pour les partenaires.",
@@ -227,7 +227,7 @@ export const articlesLies = {
     {
       id: "al3",
       badge: "Article",
-      titre: "Télédermatologie : comment ça marche, qu'est-ce qu'on en attend",
+      titre: "Télédermatologie : comment cela marche, qu'est-ce qu'on en attend",
       meta: "Article · 6 min",
       cta: "Lire l'article →",
       href: null,

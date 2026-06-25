@@ -17,7 +17,7 @@ const JOURS = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "s
 const MOIS  = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
 
 const BUS_LABEL = { medicobus: "MédicoBus", mammobus: "MammoBus", dermatobus: "DermatoBus" };
-const SPE_LABEL = { checkup: "Check-up", cardio: "Cardio", dermato: "Dermato", sein: "Cancer sein", femme: "Santé femme" };
+const SPE_LABEL = { checkup: "Check-up", cardio: "Cardiologie", dermato: "Dermatologie", sein: "Cancer sein", femme: "Santé femme" };
 
 const listV = { hidden: {}, visible: { transition: { staggerChildren: 0.04, delayChildren: 0.02 } } };
 const itemV = { hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0, transition: { duration: 0.28, ease: "easeOut" } } };

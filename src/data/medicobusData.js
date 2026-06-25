@@ -4,16 +4,17 @@ export const hero = {
   h1Parts: {
     italicA: "MédicoBus Hocoia",
     mid: " — soins et prévention, ",
-    italicB: "au cœur de vos territoires.",
+    italicB: "au cœur des territoires.",
   },
   subtitle:
     "Un cabinet médical mobile connecté, équipé de plus de 10 dispositifs médicaux, qui se déploie partout — zones rurales, entreprises, hôpitaux, places publiques.",
   checks: [
-    "Cabinet < 3,5T — accès à tous les territoires, y compris ruraux",
+    "Cabinet < 3,5T — accès à tous les territoires.",
     "10+ dispositifs médicaux connectés embarqués",
     "Soignant présent + médecin téléconsultant disponible",
     "Logiciel de coordination logistique intégré",
-    "Adapté à vos besoins spécifiques — sur-mesure",
+    "Adapté à vos besoins spécifique  sur-mesure",
+    "Référencé RESAH — achat facilité pour les établissements publics",
   ],
   ctaPrimary: "Demander une présentation",
   ctaOutline: "Voir les spécialités ↓",
@@ -68,11 +69,11 @@ export const logos = {
 // ─── Stats ────────────────────────────────────────────────────────────────
 
 export const stats = [
-  { value: "20M",   label: "Français en désert médical",          source: "DREES 2023" },
-  { value: "11%",   label: "Sans accès spécialiste à 30 min",     source: "INSEE 2023" },
-  { value: "10+",   label: "Dispositifs médicaux à bord",         source: "Équipement Hocoia" },
-  { value: "<3,5T", label: "Accès partout, y compris rural",      source: "Spéc. technique" },
-  { value: "3",     label: "Thématiques de dépistage",            source: "Cardio · Dermato · Femme" },
+  { value: "20M",  label: "Français en désert médical",             source: "DREES 2023" },
+  { value: "11%",  label: "Sans accès spécialiste à 30 min",        source: "INSEE 2023" },
+  { value: "6M",   label: "Français sans médecin traitant",         source: "Assurance Maladie 2023" },
+  { value: "87j",  label: "Délai moyen chez le dermatologue",       source: "Que Choisir 2022" },
+  { value: "30%",  label: "Renoncent aux soins faute d'accès",      source: "DREES 2022" },
 ];
 
 // ─── Concept (composant ConceptSection) ──────────────────────────────────
@@ -174,12 +175,13 @@ export const definition = {
 
 export const thematiques = {
   eyebrow: "Nos thématiques de dépistage",
-  h2: "MédicoBus : 3 thématiques, des équipements dédiés",
+  h2: "MédicoBus : 4 thématiques, des équipements dédiés",
   subtitle: "Chaque MédicoBus est configuré selon la thématique choisie.",
   tabs: [
     { id: "cardio",  label: "Maladies cardiovasculaires" },
     { id: "dermato", label: "Cancer de la peau" },
     { id: "femme",   label: "Santé de la femme" },
+    { id: "checkup", label: "Check-up santé" },
   ],
   content: {
     cardio: {
@@ -247,6 +249,28 @@ export const thematiques = {
       badge: "→ Diagnostic synchrone — résultats immédiats",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Cancer col utérus · Cancer sein · IST · Troubles menstruels · Suivi contraception",
+    },
+    checkup: {
+      equipLabel: "Équipements embarqués — Check-up santé",
+      equip: [
+        { id: "e1", titre: "Tensiomètre connecté",      desc: "Mesure de la pression artérielle." },
+        { id: "e2", titre: "Mini-labo biologie",         desc: "Glycémie, cholestérol, bilan lipidique rapide." },
+        { id: "e3", titre: "Mesures anthropométriques",  desc: "IMC, périmètre abdominal, composition corporelle." },
+        { id: "e4", titre: "Saturomètre",                desc: "Mesure de la saturation en oxygène." },
+        { id: "e5", titre: "Test visuel",                desc: "Dépistage des troubles de la vision." },
+      ],
+      publicLabel: "PUBLIC CIBLÉ",
+      public: "Tous publics à partir de 18 ans, en particulier personnes sans médecin traitant ou sans bilan récent.",
+      protocoleLabel: "Protocole de consultation",
+      protocole: [
+        "Accueil et recueil des antécédents par l'infirmière",
+        "Prise des constantes et mesures biologiques",
+        "Bilan de vision et saturation",
+        "Résultats commentés en fin de consultation, orientation si besoin",
+      ],
+      badge: "→ Diagnostic synchrone — résultats remis à l'issue de la consultation",
+      affectionsLabel: "AFFECTIONS CIBLÉES",
+      affections: "Hypertension · Diabète · Dyslipidémies · Surpoids · Troubles visuels · Risque cardiovasculaire global",
     },
   },
 };

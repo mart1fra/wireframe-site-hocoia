@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../../components/ui/FadeIn";
 import AccordionItem from "../../components/ui/AccordionItem";
 import ConceptSection from "../../components/sections/ConceptSection";
-import CustomBusBlock from "../../components/sections/CustomBusBlock";
 import ModelesEngagementSection from "../../components/sections/ModelesEngagementSection";
 import AchatOuLocationBlock from "../../components/sections/AchatOuLocationBlock";
 import {
@@ -17,7 +16,6 @@ import {
   temoignages,
   solutions,
   modeles,
-  customBus,
   seo,
   faq,
   ctaFinal,

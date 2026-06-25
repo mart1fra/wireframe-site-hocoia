@@ -40,6 +40,7 @@ import Recrutement        from "./pages/a-propos/Recrutement";
 import Presse             from "./pages/Presse";
 import Contact            from "./pages/Contact";
 import PlanDuSite         from "./pages/PlanDuSite";
+import Avis               from "./pages/Avis";
 
 function Wrap({ children }) {
   return <Layout>{children}</Layout>;
@@ -106,6 +107,9 @@ export default function App() {
 
       {/* Plan du site */}
       <Route path="/plan-du-site" element={<Layout hidePartners><PlanDuSite /></Layout>} />
+
+      {/* Avis — page SEO uniquement */}
+      <Route path="/avis" element={<Wrap><Avis /></Wrap>} />
     </Routes>
   );
 }

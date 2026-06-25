@@ -19,7 +19,7 @@ export const hero = {
     {
       id: "hocovisio",
       titre: "HocoVisio",
-      subtext: "Téléconsultation augmentée en direct",
+      subtext: "Téléconsultation en direct",
     },
     {
       id: "dispositifs",
@@ -73,25 +73,25 @@ export const promesse = {
     ],
   },
   droite: {
-    eyebrow: "Ce que ça change concrètement",
+    eyebrow: "Ce que cela change concrètement",
     cartes: [
       {
         id: "patients",
         titre: "Pour les patients",
         texte:
-          "Un accès à la prévention et au dépistage sans se déplacer loin. Un suivi numérique simple, accessible depuis n'importe quel appareil. Résultats reçus rapidement, transmis à leur médecin traitant.",
+          "Un accès à la prévention et au dépistage sans se déplacer loin. Un suivi numérique simple, accessible depuis n'importe quel appareil. Des résultats reçus rapidement, transmis à leur médecin traitant.",
       },
       {
         id: "organisations",
         titre: "Pour les organisations",
         texte:
-          "Un déploiement clé en main, piloté numériquement. Des données agrégées et anonymisées pour mesurer l'impact. Zéro gestion informatique de votre côté.",
+          "Un déploiement clé en main, piloté numériquement. Des données agrégées et anonymisées pour mesurer l'impact. Aucune gestion informatique de votre côté.",
       },
       {
         id: "professionnels",
         titre: "Pour les professionnels de santé",
         texte:
-          "Des outils pensés par et pour les soignants. Prise en main rapide, interface claire, dispositifs médicaux intégrés sans manipulation complexe.",
+          "Des outils pensés par et pour les soignants. Une prise en main rapide, une interface claire, des dispositifs médicaux intégrés sans manipulation complexe.",
       },
     ],
   },
@@ -101,7 +101,7 @@ export const promesse = {
 
 export const parcours = {
   eyebrow: "L'expérience Hocoia",
-  h2: "De la prise de rendez-vous aux résultats, entièrement coordonné.",
+  h2: "Un parcours coordonné, de la prise de rendez-vous jusqu'aux résultats.",
   etapes: [
     {
       id: "e1",
@@ -142,7 +142,7 @@ export const outils = [
     nom: "HocoApp",
     tag: "Application web · Gestion centralisée",
     paragraphe:
-      "HocoApp est la plateforme qui connecte tous les acteurs du soin dans un espace commun, sécurisé et intuitif. Chaque utilisateur dispose d'une interface adaptée à son rôle, sans complexité, sans installation.",
+      "HocoApp est la plateforme qui connecte tous les acteurs du soin dans un espace commun, sécurisé et intuitif. Chaque utilisateur dispose d'une interface adaptée à son rôle, en toute simplicité et sans installation.",
     items: [
       "Prise de rendez-vous en ligne, 24h/24",
       "Dossier patient accessible et partageable",

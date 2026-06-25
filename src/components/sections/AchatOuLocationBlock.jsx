@@ -40,9 +40,9 @@ export default function AchatOuLocationBlock({ modele, acquerirHref = "/acquerir
                 Hocoia intervient avec son propre {modele} et ses soignants pour une journée ou une campagne dans votre structure. Aucun investissement, organisation entièrement prise en charge.
               </p>
               <ul className="space-y-2 mb-6 text-sm text-gray-600">
-                <li className="flex items-start gap-2"><span className="text-gray-400 shrink-0 mt-0.5">→</span> Soignants Hocoia inclus</li>
+                <li className="flex items-start gap-2"><span className="text-gray-400 shrink-0 mt-0.5">→</span> Équipe médicale mise à disposition</li>
                 <li className="flex items-start gap-2"><span className="text-gray-400 shrink-0 mt-0.5">→</span> Idéal pour tester ou pour des campagnes ponctuelles</li>
-                <li className="flex items-start gap-2"><span className="text-gray-400 shrink-0 mt-0.5">→</span> Zéro investissement initial</li>
+                <li className="flex items-start gap-2"><span className="text-gray-400 shrink-0 mt-0.5">→</span> Pas d'investissement initial</li>
               </ul>
               <button
                 type="button"

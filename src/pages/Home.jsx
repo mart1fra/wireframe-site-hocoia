@@ -244,7 +244,7 @@ function SpecialitesSection() {
 
             <Link
               to="/calendrier"
-              className="text-sm font-semibold text-gray-700 underline underline-offset-2 hover:text-gray-900 transition-colors"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-gray-700 border border-gray-300 rounded-full px-4 py-1.5 hover:bg-gray-100 transition-colors"
             >
               {specialites.cta}
             </Link>
@@ -379,14 +379,14 @@ function UseCasesSection() {
             <div>
               <Eyebrow>{activeTabData.eyebrow}</Eyebrow>
               <h3 className="font-display font-bold text-2xl text-gray-900 leading-snug mb-4">
-                {useCases.sharedContent.h3}
+                {activeTabData.h3}
               </h3>
               <p className="text-gray-500 text-base leading-relaxed mb-8">
-                {useCases.sharedContent.description}
+                {activeTabData.description}
               </p>
 
               <div className="flex gap-6 mb-8">
-                {useCases.sharedContent.metrics.map((m) => (
+                {activeTabData.metrics.map((m) => (
                   <div key={m.label} className="text-center">
                     <p className="font-display font-bold text-2xl text-gray-900">
                       {m.value}
@@ -402,13 +402,13 @@ function UseCasesSection() {
                   type="button"
                   className="w-full sm:w-auto bg-gray-900 text-white px-6 py-3.5 sm:py-3 rounded-full text-sm font-semibold hover:bg-gray-700 transition-colors cursor-pointer"
                 >
-                  {useCases.sharedContent.ctaPrimary}
+                  {activeTabData.ctaPrimary}
                 </button>
                 <button
                   type="button"
                   className="w-full sm:w-auto border border-gray-300 text-gray-700 px-6 py-3.5 sm:py-3 rounded-full text-sm font-semibold hover:bg-gray-100 transition-colors cursor-pointer"
                 >
-                  {useCases.sharedContent.ctaOutline}
+                  {activeTabData.ctaOutline}
                 </button>
               </div>
             </div>

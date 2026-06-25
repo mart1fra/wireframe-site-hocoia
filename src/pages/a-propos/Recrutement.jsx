@@ -719,6 +719,12 @@ function CandidatureSpontaneeSection() {
                 rows={3}
                 className="bg-gray-700 border border-gray-600 text-gray-400 placeholder-gray-500 rounded-lg px-4 py-2.5 text-sm w-full cursor-not-allowed resize-none"
               />
+              <div className="bg-gray-700 border border-gray-600 border-dashed rounded-lg px-4 py-3 flex items-center gap-3 cursor-not-allowed">
+                <svg className="w-4 h-4 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                </svg>
+                <span className="text-sm text-gray-500">{form.fields.pieceJointe}</span>
+              </div>
               <button
                 type="button"
                 disabled

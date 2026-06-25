@@ -79,6 +79,7 @@ const sections = [
       { label: "Nous contacter", href: "/contact" },
       { label: "Se connecter", href: "/se-connecter" },
       { label: "FAQ", href: "/faq" },
+      { label: "Avis", href: "/avis", seoOnly: true },
     ],
   },
 ];
@@ -307,12 +308,17 @@ export default function PlanDuSite() {
                     <Link
                       to={page.href}
                       className="flex items-center gap-2 text-sm rounded-lg px-2 py-1.5 transition-colors duration-150"
-                      style={{ color: "#1A1A1A" }}
+                      style={{ color: page.seoOnly ? "#AAAAAA" : "#1A1A1A" }}
                       onMouseEnter={(e) => { e.currentTarget.style.backgroundColor = "#F5F5F5"; e.currentTarget.style.color = "#4A4A4A"; }}
-                      onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "transparent"; e.currentTarget.style.color = "#1A1A1A"; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.backgroundColor = "transparent"; e.currentTarget.style.color = page.seoOnly ? "#AAAAAA" : "#1A1A1A"; }}
                     >
                       <span style={{ color: "#CCCCCC", fontSize: "10px" }}>→</span>
                       {page.label}
+                      {page.seoOnly && (
+                        <span className="ml-auto" style={{ fontSize: 9, color: "#CCCCCC", backgroundColor: "#F5F5F5", padding: "1px 5px", borderRadius: 4 }}>
+                          SEO
+                        </span>
+                      )}
                     </Link>
                     {page.children && page.children.map((child) => (
                       <Link

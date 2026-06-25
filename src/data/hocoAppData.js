@@ -15,9 +15,9 @@ export const hocoAppByAudience = {
   },
   proSante: {
     eyebrow: "Plateforme digitale",
-    h2: "HocoApp — orchestrez la santé de vos collaborateurs",
+    h2: "HocoApp — votre outil pour exercer partout",
     subtitle:
-      "Un outil intuitif pour centralisez l'organisation des bilans de santé collectifs, simplifiez le suivi des collaborateurs et offrez à chaque salarié un accès sécurisé à ses informations médicales. Une solution fluide pour piloter la prévention, améliorer le suivi patient et optimiser la gestion santé en entreprise.",
+      "Gérez vos missions, consultez les dossiers patients et lancez des téléconsultations depuis un seul outil. HocoApp a été conçu pour les professionnels de santé en mobilité — sur le terrain comme à distance.",
     features: [
       { id: "f1", title: "Agenda multi-praticiens", description: "Vue temps réel des disponibilités, planification fluide entre confrères." },
       { id: "f2", title: "Dossier patient intégré", description: "Affichage clinique et administratif, archivage sécurisé, partage maîtrisé." },
@@ -34,12 +34,10 @@ export const hocoAppByAudience = {
     eyebrow: "Plateforme digitale",
     h2: "HocoApp — orchestrez la santé de vos collaborateurs",
     subtitle:
-      "Un outil intuitif pour centralisez l'organisation des bilans de santé collectifs, simplifiez le suivi des collaborateurs et offrez à chaque salarié un accès sécurisé à ses informations médicales. Une solution fluide pour piloter la prévention, améliorer le suivi patient et optimiser la gestion santé en entreprise.",
+      "Organisez vos bilans de santé collectifs, suivez la participation de vos collaborateurs ou adhérents et offrez à chaque patient un accès sécurisé à ses résultats. Tout est centralisé, anonymisé et accessible depuis votre tableau de bord.",
     features: [
-      { id: "f1", title: "Inscription des collaborateurs", description: "Codes d'invitation personnalisés, inscription autonome en 2 minutes." },
+      { id: "f1", title: "Inscription des collaborateurs et adhérents", description: "Codes d'invitation personnalisés, inscription autonome en 2 minutes. Chaque patient accède à son espace sécurisé dès le premier rendez-vous." },
       { id: "f2", title: "Reporting collectif anonymisé", description: "Suivez les indicateurs de prévention sans accès aux données médicales individuelles." },
-      { id: "f3", title: "Intégration au parcours de soins", description: "En cas d'anomalie, HocoApp coordonne l'orientation du salarié vers son médecin traitant — le dépistage s'intègre à son parcours de soins personnel." },
-      { id: "f4", title: "Connecté aux bus Hocoia", description: "Tous les passages programmés sur votre site centralisés et synchronisés en temps réel." },
     ],
     ctaPrimary: "Se connecter",
     ctaPrimaryHref: "/se-connecter",

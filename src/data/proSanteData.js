@@ -8,12 +8,13 @@ export const hero = {
     after: " Votre expertise, là où elle manque.",
   },
   subtitle:
-    "Rejoignez le réseau Hocoia et intervenez à bord de nos bus médicaux équipés, partout en France. Liberté, impact, rémunération attractive.",
+    "Rejoignez le réseau Hocoia et intervenez à bord de nos bus médicaux équipés, partout en France. Liberté, impact.",
   checks: [
     "Prestataire ou CDD — selon le poste et vos disponibilités",
-    "Matériel et logistique 100% fournis par Hocoia",
+    "Matériel et logistique 100% fournis par Hocoia pour les missions terrain",
     "Rémunération à l'acte (prestation) ou salaire (CDD)",
     "Zones d'intervention adaptées à vos disponibilités",
+    "Téléconsultation disponible — consultez à distance, sans quitter votre cabinet",
   ],
   ctaPrimary: "Je candidate maintenant",
   ctaOutline: "Voir les missions disponibles",
@@ -77,8 +78,15 @@ export const roleMission = {
       description:
         "Sur certaines missions récurrentes, vous contribuez au suivi de patients chroniques ou en ALD, en lien direct avec leur médecin traitant via HocoApp.",
     },
+    {
+      id: "r4",
+      num: "04",
+      title: "Vous pouvez consulter en téléconsultation",
+      description:
+        "Certaines missions se font entièrement à distance, depuis votre cabinet ou votre domicile. Vous consultez via notre plateforme sécurisée — sans déplacement, sans contrainte logistique.",
+    },
   ],
-  note: "Chaque mission est définie en amont avec votre coordinateur Hocoia. Vous savez exactement à quoi vous attendre avant d'arriver.",
+  note: "Chaque mission est définie en amont avec votre coordinateur Hocoia. Vous savez exactement à quoi vous attendre — qu'il s'agisse d'une intervention terrain ou d'une session en téléconsultation.",
 };
 
 // ─── Stats ────────────────────────────────────────────────────────────────
@@ -234,9 +242,9 @@ export const avantages = {
     },
     {
       id: "a6",
-      title: "Communauté de pairs",
+      title: "Téléconsultation — sans se déplacer",
       description:
-        "Échangez avec 120+ professionnels du réseau. Événements, retours d'expérience.",
+        "Certaines missions sont 100% distancielles. Consultez depuis votre cabinet ou votre domicile, sans logistique de déplacement.",
     },
   ],
 };
@@ -244,7 +252,7 @@ export const avantages = {
 // ─── Processus ────────────────────────────────────────────────────────────
 
 export const processus = {
-  eyebrow: "Comment ça marche",
+  eyebrow: "Comment cela marche",
   h2: "De la candidature au terrain — notre processus en 4 étapes",
   subtitle: "Les délais varient selon le poste recherché et les missions disponibles dans votre zone. On vous tient au courant à chaque étape.",
   steps: [
@@ -306,7 +314,7 @@ export const temoignages = {
       id: "t3",
       stars: "★★★★☆",
       quote:
-        "Le concept est top et l'équipe réactive. J'aimerais juste plus de missions dans ma zone — ça viendra avec la croissance.",
+        "Le concept est top et l'équipe réactive. J'aimerais juste plus de missions dans ma zone — cela viendra avec la croissance.",
       initials: "AL",
       author: "Alexandre L.",
       role: "Médecin généraliste · Paris",
@@ -343,6 +351,12 @@ export const faq = {
       question: "Que se passe-t-il si j'annule une mission ?",
       answer:
         "Prévenance de 7 jours minimum. En cas d'urgence, nous trouvons un remplaçant. Pas de pénalité financière.",
+    },
+    {
+      id: "q5",
+      question: "Dois-je systématiquement me déplacer dans un bus ?",
+      answer:
+        "Non. Hocoia propose deux modes d'intervention : les missions terrain (dans nos bus médicaux équipés) et les missions en téléconsultation, entièrement à distance depuis votre cabinet ou votre domicile. Vous choisissez les missions qui correspondent à vos contraintes et votre planning.",
     },
   ],
 };

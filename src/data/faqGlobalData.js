@@ -124,7 +124,7 @@ export const categories = [
       {
         question: "Peut-on cibler certaines spécialités ?",
         answer:
-          "Oui, 12 spécialités disponibles : cardio, dermato, mammographie, bilan sanguin, etc.",
+          "Oui, 12 spécialités disponibles : Cardiologie, Dermatologie, mammographie, bilan sanguin, etc.",
       },
     ],
   },

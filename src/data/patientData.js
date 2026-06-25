@@ -12,7 +12,7 @@ export const hero = {
       date: "Mar. 15 avril",
       heure: "9h — 16h",
       lieu: "Place de la Mairie, Strasbourg",
-      specialites: "Check-up · Cardio · Dermato",
+      specialites: "Check-up · Cardiologie · Dermatologie",
       ctaPrimary: "Prendre RDV",
       ctaOutline: "Me prévenir",
     },
@@ -30,7 +30,7 @@ export const hero = {
       date: "Sam. 19 avril",
       heure: "9h — 13h",
       lieu: "Place du Marché, Saverne",
-      specialites: "Cardio · Dermato · Bilan sanguin",
+      specialites: "Cardiologie · Dermatologie · Bilan sanguin",
       ctaPrimary: "Prendre RDV",
       ctaOutline: "Me prévenir",
     },
@@ -42,7 +42,7 @@ export const hero = {
 
 export const etapes = {
   eyebrow: "Le dépistage en bus",
-  h2: "Comment ça se passe ?",
+  h2: "Comment cela se passe ?",
   subtitle:
     "De la prise de rendez-vous à la réception de vos résultats, tout est simple.",
   steps: [
