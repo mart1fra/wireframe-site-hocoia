@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Médecins · Infirmiers · Sages-femmes · Spécialistes",
@@ -10,11 +10,11 @@ export const hero = {
   subtitle:
     "Rejoignez le réseau Hocoia et intervenez à bord de nos bus médicaux équipés, partout en France. Liberté, impact.",
   checks: [
-    "Prestataire ou CDD — selon le poste et vos disponibilités",
+    "Prestataire ou CDD · selon le poste et vos disponibilités",
     "Matériel et logistique 100% fournis par Hocoia pour les missions terrain",
     "Rémunération à l'acte (prestation) ou salaire (CDD)",
     "Zones d'intervention adaptées à vos disponibilités",
-    "Téléconsultation disponible — consultez à distance, sans quitter votre cabinet",
+    "Téléconsultation disponible · consultez à distance, sans quitter votre cabinet",
   ],
   ctaPrimary: "Je candidate maintenant",
   ctaOutline: "Voir les missions disponibles",
@@ -62,7 +62,7 @@ export const roleMission = {
       num: "01",
       title: "Vous menez des journées de dépistage",
       description:
-        "Organisées par Hocoia dans des communes rurales, des entreprises ou des quartiers prioritaires. Bus équipé, patients attendus, protocoles préparés — vous arrivez, vous soignez.",
+        "Organisées par Hocoia dans des communes rurales, des entreprises ou des quartiers prioritaires. Bus équipé, patients attendus, protocoles préparés · vous arrivez, vous soignez.",
     },
     {
       id: "r2",
@@ -83,10 +83,10 @@ export const roleMission = {
       num: "04",
       title: "Vous pouvez consulter en téléconsultation",
       description:
-        "Certaines missions se font entièrement à distance, depuis votre cabinet ou votre domicile. Vous consultez via notre plateforme sécurisée — sans déplacement, sans contrainte logistique.",
+        "Certaines missions se font entièrement à distance, depuis votre cabinet ou votre domicile. Vous consultez via notre plateforme sécurisée · sans déplacement, sans contrainte logistique.",
     },
   ],
-  note: "Chaque mission est définie en amont avec votre coordinateur Hocoia. Vous savez exactement à quoi vous attendre — qu'il s'agisse d'une intervention terrain ou d'une session en téléconsultation.",
+  note: "Chaque mission est définie en amont avec votre coordinateur Hocoia. Vous savez exactement à quoi vous attendre · qu'il s'agisse d'une intervention terrain ou d'une session en téléconsultation.",
 };
 
 // ─── Stats ────────────────────────────────────────────────────────────────
@@ -120,7 +120,7 @@ export const missionsData = {
       specialiteId: "medecine-gen",
       badge: "Urgent",
       badgeStyle: "dark",
-      titre: "Médecin généraliste — Strasbourg",
+      titre: "Médecin généraliste · Strasbourg",
       details: "3 jours · 15–17 avril 2026 · Bus MédicoBus",
       lieu: "Strasbourg, Bas-Rhin",
       remuneration: "450€ / jour",
@@ -131,7 +131,7 @@ export const missionsData = {
       specialiteId: "cardiologie",
       badge: "Nouveau",
       badgeStyle: "light",
-      titre: "Cardiologue — Lyon",
+      titre: "Cardiologue · Lyon",
       details: "2 jours · 22–23 avril 2026 · Bus CardioExpress",
       lieu: "Lyon, Rhône",
       remuneration: "550€ / jour",
@@ -142,7 +142,7 @@ export const missionsData = {
       specialiteId: "dermatologie",
       badge: null,
       badgeStyle: null,
-      titre: "Dermatologue — Bordeaux",
+      titre: "Dermatologue · Bordeaux",
       details: "1 jour · 25 avril 2026 · Bus DermoBus",
       lieu: "Bordeaux, Gironde",
       remuneration: "500€ / jour",
@@ -153,7 +153,7 @@ export const missionsData = {
       specialiteId: "gynecologie",
       badge: "Nouveau",
       badgeStyle: "light",
-      titre: "Sage-femme — Metz",
+      titre: "Sage-femme · Metz",
       details: "4 jours · 28 avril–1 mai 2026 · Bus MaternitéBus",
       lieu: "Metz, Moselle",
       remuneration: "400€ / jour",
@@ -164,7 +164,7 @@ export const missionsData = {
       specialiteId: "mammographie",
       badge: null,
       badgeStyle: null,
-      titre: "Manipulateur radio — Lille",
+      titre: "Manipulateur radio · Lille",
       details: "2 jours · 5–6 mai 2026 · Bus RadioBus",
       lieu: "Lille, Nord",
       remuneration: "480€ / jour",
@@ -175,7 +175,7 @@ export const missionsData = {
       specialiteId: "gynecologie",
       badge: "Urgent",
       badgeStyle: "dark",
-      titre: "Gynécologue — Marseille",
+      titre: "Gynécologue · Marseille",
       details: "3 jours · 12–14 mai 2026 · Bus GynéBus",
       lieu: "Marseille, Bouches-du-Rhône",
       remuneration: "520€ / jour",
@@ -208,7 +208,7 @@ export const profils = {
 export const avantages = {
   eyebrow: "",
   h2: "Une pratique libérée, un impact réel",
-  subtitle: "Hocoia s'occupe de tout le reste — vous vous concentrez sur le soin.",
+  subtitle: "Hocoia s'occupe de tout le reste · vous vous concentrez sur le soin.",
   items: [
     {
       id: "a1",
@@ -232,7 +232,7 @@ export const avantages = {
       id: "a4",
       title: "Plateforme de gestion",
       description:
-        "Missions, planning, documents — tout est centralisé dans votre espace en ligne.",
+        "Missions, planning, documents · tout est centralisé dans votre espace en ligne.",
     },
     {
       id: "a5",
@@ -242,7 +242,7 @@ export const avantages = {
     },
     {
       id: "a6",
-      title: "Téléconsultation — sans se déplacer",
+      title: "Téléconsultation · sans se déplacer",
       description:
         "Certaines missions sont 100% distancielles. Consultez depuis votre cabinet ou votre domicile, sans logistique de déplacement.",
     },
@@ -253,7 +253,7 @@ export const avantages = {
 
 export const processus = {
   eyebrow: "",
-  h2: "De la candidature au terrain — notre processus en 4 étapes",
+  h2: "De la candidature au terrain · notre processus en 4 étapes",
   subtitle: "Les délais varient selon le poste recherché et les missions disponibles dans votre zone. On vous tient au courant à chaque étape.",
   steps: [
     {
@@ -314,7 +314,7 @@ export const temoignages = {
       id: "t3",
       stars: "★★★★☆",
       quote:
-        "Le concept est top et l'équipe réactive. J'aimerais juste plus de missions dans ma zone — cela viendra avec la croissance.",
+        "Le concept est top et l'équipe réactive. J'aimerais juste plus de missions dans ma zone · cela viendra avec la croissance.",
       initials: "AL",
       author: "Alexandre L.",
       role: "Médecin généraliste · Paris",

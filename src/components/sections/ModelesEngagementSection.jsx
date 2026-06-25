@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import FadeIn from "../ui/FadeIn";
 
 const listV = {
@@ -30,7 +30,7 @@ export default function ModelesEngagementSection({ data, id }) {
           </p>
         </FadeIn>
 
-        {/* Bloc acquisition — grand, sombre */}
+        {/* Bloc acquisition · grand, sombre */}
         <FadeIn className="mb-5">
           <div className="bg-gray-900 rounded-2xl p-8 lg:p-10">
             <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-white/10 text-white mb-7">
@@ -77,7 +77,7 @@ export default function ModelesEngagementSection({ data, id }) {
           </div>
         </FadeIn>
 
-        {/* Bande prestation — secondaire, compacte */}
+        {/* Bande prestation · secondaire, compacte */}
         <FadeIn>
           <div className="bg-white border border-gray-200 rounded-xl px-7 py-6">
             <div className="flex flex-col lg:flex-row lg:items-center gap-6">

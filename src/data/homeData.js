@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   h1: "Réinventons le futur de la santé, ensemble.",
@@ -99,12 +99,12 @@ export const specialites = {
     },
   ],
   cta: "Voir le calendrier des passages",
-  mapPlaceholder: "Carte interactive — prochains passages bus",
+  mapPlaceholder: "Carte interactive · prochains passages bus",
   miniCard: {
-    title: "Check-up — Strasbourg",
+    title: "Check-up · Strasbourg",
     creneaux: [
-      "Mar. 15 avril — 9h, 10h30, 14h",
-      "Jeu. 17 avril — 9h, 11h",
+      "Mar. 15 avril · 9h, 10h30, 14h",
+      "Jeu. 17 avril · 9h, 11h",
     ],
     ctaPrimary: "Prendre RDV",
     ctaOutline: "Me prévenir",
@@ -130,10 +130,10 @@ export const useCases = {
     {
       id: "entreprise",
       label: "Entreprises & mutuelles",
-      eyebrow: "Use case — Entreprises & mutuelles",
+      eyebrow: "Use case · Entreprises & mutuelles",
       h3: "Réduisez l'absentéisme, valorisez votre politique santé",
       description:
-        "Hocoia déploie un bus médical équipé directement dans vos locaux ou sur votre réseau d'adhérents. Vos collaborateurs et bénéficiaires accèdent à un bilan complet — sans déplacement, sans organisation de votre côté.",
+        "Hocoia déploie un bus médical équipé directement dans vos locaux ou sur votre réseau d'adhérents. Vos collaborateurs et bénéficiaires accèdent à un bilan complet · sans déplacement, sans organisation de votre côté.",
       metrics: [
         { value: "+3 000", label: "Personnes dépistées" },
         { value: "4,8/5",  label: "Satisfaction patients" },
@@ -145,10 +145,10 @@ export const useCases = {
     {
       id: "collectivite",
       label: "Collectivités & Institutions",
-      eyebrow: "Use case — Collectivités & Institutions",
+      eyebrow: "Use case · Collectivités & Institutions",
       h3: "Apportez la prévention santé au cœur de votre territoire",
       description:
-        "Hocoia déploie un bus médical itinérant commune par commune. Vos habitants bénéficient d'un dépistage complet sans déplacement — idéal pour les zones sous-dotées et les publics éloignés des soins.",
+        "Hocoia déploie un bus médical itinérant commune par commune. Vos habitants bénéficient d'un dépistage complet sans déplacement · idéal pour les zones sous-dotées et les publics éloignés des soins.",
       metrics: [
         { value: "80+",   label: "Communes desservies" },
         { value: "4,8/5", label: "Satisfaction patients" },
@@ -160,10 +160,10 @@ export const useCases = {
     {
       id: "hopital",
       label: "Etablissement de santé & médico-social",
-      eyebrow: "Use case — Etablissement de santé & médico-social",
+      eyebrow: "Use case · Etablissement de santé & médico-social",
       h3: "Étendez votre activité de soin hors les murs",
       description:
-        "Déployez votre propre bus médical ou louez le nôtre pour compléter votre offre de soins. Consultations avancées, dépistage organisé, suivi des résidents en EHPAD — sans infrastructure supplémentaire.",
+        "Déployez votre propre bus médical ou louez le nôtre pour compléter votre offre de soins. Consultations avancées, dépistage organisé, suivi des résidents en EHPAD · sans infrastructure supplémentaire.",
       metrics: [
         { value: "10+",        label: "Dispositifs embarqués" },
         { value: "HDS",        label: "Données certifiées" },
@@ -175,10 +175,10 @@ export const useCases = {
     {
       id: "pro-sante",
       label: "Pro de santé",
-      eyebrow: "Use case — Pro de santé",
+      eyebrow: "Use case · Pro de santé",
       h3: "Exercez là où les patients en ont le plus besoin",
       description:
-        "Rejoignez le réseau Hocoia et réalisez des consultations avancées à bord de nos unités mobiles. CDI, vacations, téléconsultation assistée — vous choisissez votre mode d'exercice, nous gérons la logistique.",
+        "Rejoignez le réseau Hocoia et réalisez des consultations avancées à bord de nos unités mobiles. CDI, vacations, téléconsultation assistée · vous choisissez votre mode d'exercice, nous gérons la logistique.",
       metrics: [
         { value: "12",   label: "Spécialités présentes" },
         { value: "CDI",  label: "Statut proposé" },
@@ -203,7 +203,7 @@ export const b2bZone = {
     "Impact mesuré sur l'absentéisme",
   ],
   cta: "Voir une démo",
-  dashboardPlaceholder: "Mockup dashboard RH — reporting",
+  dashboardPlaceholder: "Mockup dashboard RH · reporting",
 };
 
 // ─── Témoignages ──────────────────────────────────────────────────────────

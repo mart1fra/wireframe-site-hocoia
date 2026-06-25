@@ -1,27 +1,27 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Mammographie mobile · <3,5T · Dépistage organisé & individuel",
   h1Parts: {
     italicA: "MammoBus Hocoia",
-    mid: " — mammographie mobile, partout ",
+    mid: " · mammographie mobile, partout ",
     italicB: "pour les femmes.",
   },
   subtitle:
-    "Une unité compacte de moins de 3,5 tonnes alliant mobilité et technologie radiologique de pointe — pour apporter le dépistage du cancer du sein directement dans les communes, les entreprises et les territoires.",
+    "Une unité compacte de moins de 3,5 tonnes alliant mobilité et technologie radiologique de pointe · pour apporter le dépistage du cancer du sein directement dans les communes, les entreprises et les territoires.",
   checks: [
     "Mammographie + échographie mammaire à bord",
     "PACS centralisé + hébergement HDS certifié",
-    "Dépistage organisé et individuel — 24 patientes/jour",
+    "Dépistage organisé et individuel · 24 patientes/jour",
     "Diagnostic sur place ou en télé-expertise radiologue",
     "Déploiement clé en main",
-    "Référencé RESAH — achat facilité pour les établissements publics",
+    "Référencé RESAH · achat facilité pour les établissements publics",
   ],
   ctaPrimary: "Demander une présentation",
   ctaOutline: "Voir le protocole ↓",
   form: {
     title: "Organiser un dépistage MammoBus",
-    subtitle: "Collectivité, mutuelle, entreprise, hôpital — réponse <24h.",
+    subtitle: "Collectivité, mutuelle, entreprise, hôpital · réponse <24h.",
     vousEtesOptions: [
       "Vous êtes",
       "Collectivité/Département",
@@ -71,7 +71,7 @@ export const logos = {
 
 export const stats = [
   { value: "1/8",    label: "femmes développera un cancer du sein dans sa vie",                    source: "INCa" },
-  { value: "61 000", label: "nouveaux cas par an en France — 2× plus qu'il y a 40 ans",          source: "INCa 2024" },
+  { value: "61 000", label: "nouveaux cas par an en France · 2× plus qu'il y a 40 ans",          source: "INCa 2024" },
   { value: "99%",    label: "taux de guérison en cas de détection très précoce",                  source: "INCa" },
   { value: "50%",    label: "seulement des femmes +50 ans se font dépister",                      source: "INCa" },
 ];
@@ -103,11 +103,11 @@ export const concept = {
   ],
   features: [
     { id: "f1", titre: "Mammographie + échographie mammaire", description: "Palpation mammaire et mammographie à bord. Échographie en complément selon indication." },
-    { id: "f2", titre: "PACS centralisé + hébergement HDS", description: "Hébergement certifié HDS et ISO 27001, box de transfert, PACS centralisé — lecture sur tous les écrans." },
+    { id: "f2", titre: "PACS centralisé + hébergement HDS", description: "Hébergement certifié HDS et ISO 27001, box de transfert, PACS centralisé · lecture sur tous les écrans." },
     { id: "f3", titre: "Connectivité haut débit agréée", description: "SAT + LTE avec IP statique. Connexion avec tout cabinet de radiologie ou centre hospitalier." },
-    { id: "f4", titre: "HocoApp — coordination complète", description: "Prise de RDV, pré-questionnaire médical, coordination des professionnels de santé, bilan anonymisé." },
+    { id: "f4", titre: "HocoApp · coordination complète", description: "Prise de RDV, pré-questionnaire médical, coordination des professionnels de santé, bilan anonymisé." },
   ],
-  videoLabel: "Vidéo — Le MammoBus en action · 2:45",
+  videoLabel: "Vidéo · Le MammoBus en action · 2:45",
   comparison: {
     titre: "MAMMOBUS VS DÉPISTAGE EN CENTRE FIXE",
     classique: {
@@ -165,7 +165,7 @@ export const definition = {
       id: "f2",
       titre: "PACS centralisé + hébergement HDS",
       description:
-        "Système dématérialisé adapté : hébergement certifié HDS et ISO 27001, box de transfert, PACS centralisé — lecture sur tous les écrans.",
+        "Système dématérialisé adapté : hébergement certifié HDS et ISO 27001, box de transfert, PACS centralisé · lecture sur tous les écrans.",
     },
     {
       id: "f3",
@@ -175,12 +175,12 @@ export const definition = {
     },
     {
       id: "f4",
-      titre: "HocoApp — coordination complète",
+      titre: "HocoApp · coordination complète",
       description:
         "Prise de RDV, pré-questionnaire médical, coordination des professionnels de santé, bilan anonymisé.",
     },
   ],
-  imagePlaceholder: "MammoBus 3D — vue extérieure et intérieure interactive",
+  imagePlaceholder: "MammoBus 3D · vue extérieure et intérieure interactive",
   specs: {
     titre: "SPÉCIFICATIONS TECHNIQUES",
     items: [
@@ -200,7 +200,7 @@ export const protocole = {
   eyebrow: "Organisation des dépistages",
   h2: "Un service clé en main en 4 étapes",
   subtitle:
-    "De l'organisation de la campagne au bilan des résultats — Hocoia gère l'intégralité du dispositif.",
+    "De l'organisation de la campagne au bilan des résultats · Hocoia gère l'intégralité du dispositif.",
   steps: [
     {
       id: "p1",
@@ -231,7 +231,7 @@ export const protocole = {
       num: "4",
       titre: "Pilotage & bilan",
       description:
-        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées — RDV complémentaire organisé par l'équipe médicale.",
+        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées · RDV complémentaire organisé par l'équipe médicale.",
       badge: "Équipe médicale Hocoia",
     },
   ],
@@ -289,7 +289,7 @@ export const temoignages = {
       id: "t1",
       contexte: "CLS · Coordonnatrice santé",
       quote:
-        "Un bilan extrêmement positif : lors de la première journée, toutes les patientes ont exprimé leur satisfaction à l'égard de ce dispositif — une première dans la région.",
+        "Un bilan extrêmement positif : lors de la première journée, toutes les patientes ont exprimé leur satisfaction à l'égard de ce dispositif · une première dans la région.",
       author: "Anne Haller",
       role: "Coordonnatrice du contrat local de santé",
     },
@@ -297,7 +297,7 @@ export const temoignages = {
       id: "t2",
       contexte: "Mutuelle · Vendée",
       quote:
-        "Ce type d'offre répond à un vrai besoin. La prévention est un élément important — et ce partenariat avec Hocoia nous conforte dans cette conviction.",
+        "Ce type d'offre répond à un vrai besoin. La prévention est un élément important · et ce partenariat avec Hocoia nous conforte dans cette conviction.",
       author: "Didier Brouard",
       role: "Élu à la section MGEN Vendée",
     },
@@ -318,9 +318,9 @@ export const couverture = {
   eyebrow: "Notre couverture",
   h2: "Le MammoBus Hocoia intervient partout en France",
   subtitle:
-    "Du Grand Est aux Pays de la Loire — Hocoia déploie ses unités mobiles de mammographie dans tous les territoires déficitaires.",
+    "Du Grand Est aux Pays de la Loire · Hocoia déploie ses unités mobiles de mammographie dans tous les territoires déficitaires.",
   mapPlaceholder:
-    "Carte France — zones d'intervention + prochaines journées de dépistage",
+    "Carte France · zones d'intervention + prochaines journées de dépistage",
   regions: [
     {
       id: "r1",
@@ -365,7 +365,7 @@ export const solutions = {
       badge: "Page actuelle",
       titre: "MammoBus",
       description:
-        "Mammographie mobile <3,5T — dépistage organisé et individuel. 24 femmes/jour.",
+        "Mammographie mobile <3,5T · dépistage organisé et individuel. 24 femmes/jour.",
       ctaDisabled: true,
       cta: "Vous êtes ici",
       href: null,
@@ -373,10 +373,10 @@ export const solutions = {
     {
       id: "s2",
       highlight: false,
-      badge: "Polyvalent — Médecine générale",
+      badge: "Polyvalent · Médecine générale",
       titre: "MédicoBus",
       description:
-        "Cabinet médical mobile polyvalent — Cardiologie, Dermatologie, santé des femmes. 10+ dispositifs embarqués.",
+        "Cabinet médical mobile polyvalent · Cardiologie, Dermatologie, santé des femmes. 10+ dispositifs embarqués.",
       ctaDisabled: false,
       cta: "Découvrir le MédicoBus →",
       href: "/produits/medicobus",
@@ -384,10 +384,10 @@ export const solutions = {
     {
       id: "s3",
       highlight: false,
-      badge: "Spécialisé — Dermatologie",
+      badge: "Spécialisé · Dermatologie",
       titre: "DermatoBus",
       description:
-        "Dépistage cancer de la peau — cartographie corps entier, IA mélanome, partenariat CHU Caen. Automne 2026.",
+        "Dépistage cancer de la peau · cartographie corps entier, IA mélanome, partenariat CHU Caen. Automne 2026.",
       ctaDisabled: false,
       cta: "Découvrir le DermatoBus →",
       href: "/produits/dermatobus",
@@ -505,7 +505,7 @@ export const modeles = {
     tag: "Acquisition / Location longue durée",
     title: "Votre MammoBus, configuré pour vos patientes",
     description:
-      "Hocoia conçoit et fabrique votre unité mobile de dépistage sur mesure. Mammographe numérique, échographe, intégration PACS et identité visuelle — selon votre cahier des charges.",
+      "Hocoia conçoit et fabrique votre unité mobile de dépistage sur mesure. Mammographe numérique, échographe, intégration PACS et identité visuelle · selon votre cahier des charges.",
     points: [
       "Mammographe numérique et échographe certifiés CE",
       "Aux couleurs de votre organisation (mutuelle, hôpital, collectivité)",
@@ -529,7 +529,7 @@ export const modeles = {
 export const customBus = {
   title: "Un MammoBus pensé pour votre organisation",
   paragraph:
-    "Votre programme de dépistage du cancer du sein nécessite une configuration spécifique ? Hocoia adapte le MammoBus à votre cahier des charges — équipements complémentaires, protocole, intégration à votre PACS ou DPI, communication patient personnalisée.",
+    "Votre programme de dépistage du cancer du sein nécessite une configuration spécifique ? Hocoia adapte le MammoBus à votre cahier des charges · équipements complémentaires, protocole, intégration à votre PACS ou DPI, communication patient personnalisée.",
   options: [
     { id: "o1", title: "Dépistage organisé",          description: "Intégration au programme national de dépistage." },
     { id: "o2", title: "Dépistage individuel",         description: "Sur prescription médicale, hors programme national." },
@@ -544,7 +544,7 @@ export const customBus = {
 
 export const ctaFinal = {
   h2: "Organisez un dépistage ou acquérez votre MammoBus.",
-  subtitle: "Un expert Hocoia étudiera votre projet — sans engagement.",
+  subtitle: "Un expert Hocoia étudiera votre projet · sans engagement.",
   ctaPrimary: "Organiser un dépistage",
   ctaOutline: "Acquérir un bus →",
   ctaGhost: "Télécharger la brochure",

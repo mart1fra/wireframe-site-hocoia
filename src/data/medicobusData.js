@@ -1,26 +1,26 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   h1Parts: {
     italicA: "MédicoBus Hocoia",
-    mid: " — soins et prévention, ",
+    mid: " · soins et prévention, ",
     italicB: "au cœur des territoires.",
   },
   subtitle:
-    "Un cabinet médical mobile connecté, équipé de plus de 10 dispositifs médicaux, qui se déploie partout — zones rurales, entreprises, hôpitaux, places publiques.",
+    "Un cabinet médical mobile connecté, équipé de plus de 10 dispositifs médicaux, qui se déploie partout · zones rurales, entreprises, hôpitaux, places publiques.",
   checks: [
-    "Cabinet < 3,5T — accès à tous les territoires.",
+    "Cabinet < 3,5T · accès à tous les territoires.",
     "10+ dispositifs médicaux connectés embarqués",
     "Soignant présent + médecin téléconsultant disponible",
     "Logiciel de coordination logistique intégré",
     "Adapté à vos besoins spécifique  sur-mesure",
-    "Référencé RESAH — achat facilité pour les établissements publics",
+    "Référencé RESAH · achat facilité pour les établissements publics",
   ],
   ctaPrimary: "Demander une présentation",
   ctaOutline: "Voir les spécialités ↓",
   form: {
     title: "Demander une présentation",
-    subtitle: "Collectivité, entreprise, hôpital — sans engagement.",
+    subtitle: "Collectivité, entreprise, hôpital · sans engagement.",
     vousEtesOptions: [
       "Vous êtes",
       "Collectivité / Territoire",
@@ -95,17 +95,17 @@ export const concept = {
       segments: [
         { text: "Chaque déploiement repose sur la présence physique d'un soignant qualifié à bord, renforcée par la disponibilité d'un médecin en " },
         { text: "téléconsultation assistée", bold: true },
-        { text: ". Le MédicoBus n'est pas un simple bus — c'est un protocole de soin complet." },
+        { text: ". Le MédicoBus n'est pas un simple bus · c'est un protocole de soin complet." },
       ],
     },
   ],
   features: [
-    { id: "f1", titre: "Cabinet mobile < 3,5T", description: "Parking, place de marché, site entreprise — partout accessible." },
+    { id: "f1", titre: "Cabinet mobile < 3,5T", description: "Parking, place de marché, site entreprise · partout accessible." },
     { id: "f2", titre: "10+ dispositifs médicaux connectés", description: "ECG, dermatoscope, échographe, spiromètre, mini-labo biologie…" },
     { id: "f3", titre: "Soignant présent + médecin téléconsultant", description: "Accompagnement humain complet : accueil, anamnèse, constantes, suivi." },
-    { id: "f4", titre: "Logiciel de coordination unique", description: "Agenda, prise de RDV, dossier patient, reporting — tout intégré." },
+    { id: "f4", titre: "Logiciel de coordination unique", description: "Agenda, prise de RDV, dossier patient, reporting · tout intégré." },
   ],
-  videoLabel: "Vidéo — Le MédicoBus en action · 2:30",
+  videoLabel: "Vidéo · Le MédicoBus en action · 2:30",
   comparison: {
     titre: "MÉDICOBUS VS CABINET FIXE CLASSIQUE",
     classique: {
@@ -134,13 +134,13 @@ export const definition = {
   h2: "Qu'est-ce qu'un MédicoBus Hocoia ?",
   paragraphs: [
     "Le MédicoBus est un cabinet médical mobile et connecté de moins de 3,5 tonnes. Conçu pour apporter la prévention là où les déserts médicaux s'étendent, il combine équipements médicaux de pointe et technologies numériques.",
-    "Chaque déploiement repose sur la présence physique d'un soignant qualifié à bord, renforcée par la disponibilité d'un médecin en téléconsultation assistée. Le MédicoBus n'est pas un simple bus — c'est un protocole de soin complet.",
+    "Chaque déploiement repose sur la présence physique d'un soignant qualifié à bord, renforcée par la disponibilité d'un médecin en téléconsultation assistée. Le MédicoBus n'est pas un simple bus · c'est un protocole de soin complet.",
   ],
   features: [
     {
       id: "f1",
       titre: "Cabinet mobile < 3,5T",
-      description: "Parking, place de marché, site entreprise — partout accessible.",
+      description: "Parking, place de marché, site entreprise · partout accessible.",
     },
     {
       id: "f2",
@@ -155,11 +155,11 @@ export const definition = {
     {
       id: "f4",
       titre: "Logiciel de coordination unique",
-      description: "Agenda, prise de RDV, dossier patient, reporting — tout intégré.",
+      description: "Agenda, prise de RDV, dossier patient, reporting · tout intégré.",
     },
   ],
   photos: [
-    { placeholder: "MédicoBus 3D — vue extérieure et intérieure interactive", height: "h-[300px]" },
+    { placeholder: "MédicoBus 3D · vue extérieure et intérieure interactive", height: "h-[300px]" },
   ],
   contraintes: {
     titre: "Contraintes logistiques à prévoir",
@@ -185,7 +185,7 @@ export const thematiques = {
   ],
   content: {
     cardio: {
-      equipLabel: "Équipements embarqués — Cardiovasculaire",
+      equipLabel: "Équipements embarqués · Cardiovasculaire",
       equip: [
         { id: "e1", titre: "ECG (électrocardiogramme)",   desc: "Enregistrement de l'activité électrique cardiaque." },
         { id: "e2", titre: "Tensiomètre connecté",        desc: "Mesure précise de la pression artérielle." },
@@ -202,12 +202,12 @@ export const thematiques = {
         "Diagnostic en asynchrone par un cardiologue en téléexpertise",
         "Si besoin, prise de RDV complémentaire",
       ],
-      badge: "→ Diagnostic asynchrone — résultats dans les semaines suivantes par mail ou courrier",
+      badge: "→ Diagnostic asynchrone · résultats dans les semaines suivantes par mail ou courrier",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Hypertension · Diabète · Dyslipidémies · Arythmies · Risque AVC · Obésité cardiovasculaire",
     },
     dermato: {
-      equipLabel: "Équipements embarqués — Dermatologie",
+      equipLabel: "Équipements embarqués · Dermatologie",
       equip: [
         { id: "e1", titre: "Dermatoscope IA",       desc: "Analyse numérique augmentée des lésions cutanées." },
         { id: "e2", titre: "Appareil photo médical", desc: "Captures standardisées haute résolution." },
@@ -224,12 +224,12 @@ export const thematiques = {
         "Photographies des lésions suspectes",
         "Diagnostic asynchrone par dermatologue",
       ],
-      badge: "→ Diagnostic asynchrone — résultats dans les semaines suivantes par mail ou courrier",
+      badge: "→ Diagnostic asynchrone · résultats dans les semaines suivantes par mail ou courrier",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Mélanomes · Carcinomes · Kératoses · Lésions suspectes · Grains de beauté atypiques",
     },
     femme: {
-      equipLabel: "Équipements embarqués — Santé de la femme",
+      equipLabel: "Équipements embarqués · Santé de la femme",
       equip: [
         { id: "e1", titre: "Tensiomètre",          desc: "Mesure de la pression artérielle." },
         { id: "e2", titre: "Frottis cervico-vaginal", desc: "Dépistage du cancer du col de l'utérus." },
@@ -246,12 +246,12 @@ export const thematiques = {
         "Frottis et palpation",
         "Diagnostic synchrone par la sage-femme, ordonnance possible si besoin",
       ],
-      badge: "→ Diagnostic synchrone — résultats immédiats",
+      badge: "→ Diagnostic synchrone · résultats immédiats",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Cancer col utérus · Cancer sein · IST · Troubles menstruels · Suivi contraception",
     },
     checkup: {
-      equipLabel: "Équipements embarqués — Check-up santé",
+      equipLabel: "Équipements embarqués · Check-up santé",
       equip: [
         { id: "e1", titre: "Tensiomètre connecté",      desc: "Mesure de la pression artérielle." },
         { id: "e2", titre: "Mini-labo biologie",         desc: "Glycémie, cholestérol, bilan lipidique rapide." },
@@ -268,7 +268,7 @@ export const thematiques = {
         "Bilan de vision et saturation",
         "Résultats commentés en fin de consultation, orientation si besoin",
       ],
-      badge: "→ Diagnostic synchrone — résultats remis à l'issue de la consultation",
+      badge: "→ Diagnostic synchrone · résultats remis à l'issue de la consultation",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Hypertension · Diabète · Dyslipidémies · Surpoids · Troubles visuels · Risque cardiovasculaire global",
     },
@@ -294,8 +294,8 @@ export const couverture = {
   eyebrow: "Notre couverture",
   h2: "Le MédicoBus Hocoia intervient partout en France",
   subtitle:
-    "Des zones rurales de Moselle aux places publiques d'Île-de-France — Hocoia déploie ses cabinets mobiles dans tous les territoires déficitaires.",
-  cartePlaceholder: "Carte France — zones d'intervention + prochains passages",
+    "Des zones rurales de Moselle aux places publiques d'Île-de-France · Hocoia déploie ses cabinets mobiles dans tous les territoires déficitaires.",
+  cartePlaceholder: "Carte France · zones d'intervention + prochains passages",
   regions: [
     {
       id: "r1",
@@ -367,14 +367,14 @@ export const solutions = {
   eyebrow: "",
   h2: "Découvrez nos 3 solutions spécialisées",
   subtitle:
-    "Le MédicoBus généraliste, le DermatoBus et le MammoBus — trois produits complémentaires.",
+    "Le MédicoBus généraliste, le DermatoBus et le MammoBus · trois produits complémentaires.",
   cards: [
     {
       id: "s1",
       badge: "Page actuelle",
       titre: "MédicoBus",
       description:
-        "Cabinet médical mobile polyvalent — médecine générale, cardiologie, santé des femmes. 10+ dispositifs embarqués.",
+        "Cabinet médical mobile polyvalent · médecine générale, cardiologie, santé des femmes. 10+ dispositifs embarqués.",
       items: [
         "Médecine générale & check-up",
         "Prévention cardiovasculaire",
@@ -388,7 +388,7 @@ export const solutions = {
     },
     {
       id: "s2",
-      badge: "Spécialisé — Dermatologie",
+      badge: "Spécialisé · Dermatologie",
       titre: "DermatoBus",
       description:
         "Cabinet mobile dédié au dépistage du cancer de la peau. Dermatoscope IA, protocole dermatologues partenaires.",
@@ -405,7 +405,7 @@ export const solutions = {
     },
     {
       id: "s3",
-      badge: "Innovation — Cancer du sein",
+      badge: "Innovation · Cancer du sein",
       titre: "MammoBus",
       description:
         "Innovation unique en France : mammographie mobile dans une unité légère. Dépistage du cancer du sein partout.",
@@ -540,7 +540,7 @@ export const modeles = {
     tag: "Acquisition / Location longue durée",
     title: "Votre MédicoBus, configuré pour vos besoins",
     description:
-      "Hocoia conçoit et fabrique votre MédicoBus sur mesure — spécialités, équipements médicaux, identité visuelle. Opérable avec vos propres soignants ou via Hocoia.",
+      "Hocoia conçoit et fabrique votre MédicoBus sur mesure · spécialités, équipements médicaux, identité visuelle. Opérable avec vos propres soignants ou via Hocoia.",
     points: [
       "10+ dispositifs médicaux configurables selon vos spécialités",
       "Identité visuelle personnalisée (collectivité, mutuelle, groupe)",
@@ -564,7 +564,7 @@ export const modeles = {
 export const customBus = {
   title: "Un MédicoBus conçu pour vos besoins spécifiques",
   paragraph:
-    "Vos besoins ne rentrent pas dans nos configurations standards ? Hocoia conçoit le MédicoBus adapté à votre territoire, votre population, ou votre spécialité — équipements, aménagement intérieur, protocole et intégration HocoApp inclus.",
+    "Vos besoins ne rentrent pas dans nos configurations standards ? Hocoia conçoit le MédicoBus adapté à votre territoire, votre population, ou votre spécialité · équipements, aménagement intérieur, protocole et intégration HocoApp inclus.",
 };
 
 // ─── CTA Final ────────────────────────────────────────────────────────────

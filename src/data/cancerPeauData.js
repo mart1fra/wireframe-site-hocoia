@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Expertise · Dépistage cutané · Prévention du mélanome",
@@ -8,7 +8,7 @@ export const hero = {
     italicB: "sauver des vies.",
   },
   subtitle:
-    "Le mélanome est le cancer dont le pronostic varie le plus selon le stade de détection. 95% de taux de survie au stade I — contre moins de 20% au stade IV. Un examen de 30 minutes peut tout changer.",
+    "Le mélanome est le cancer dont le pronostic varie le plus selon le stade de détection. 95% de taux de survie au stade I · contre moins de 20% au stade IV. Un examen de 30 minutes peut tout changer.",
   checks: [
     "95% de taux de survie si détecté au stade I",
     "100 000 nouveaux cas de cancer cutané par an en France",
@@ -20,7 +20,7 @@ export const hero = {
   ctaPatientHref: "/patient",
   ctaOrga: "Organiser une campagne de dépistage",
   ctaOrgaHref: "/dermatobus",
-  imagePlaceholder: "Examen cutané à bord du DermatoBus — infirmière et patiente en consultation",
+  imagePlaceholder: "Examen cutané à bord du DermatoBus · infirmière et patiente en consultation",
 };
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
@@ -39,14 +39,14 @@ export const pourquoi = {
   h2: "Ce qu'il faut savoir sur le cancer de la peau",
   paragraphs: [
     "Le cancer de la peau est le cancer le plus fréquent en France. Il en existe trois formes principales : le mélanome (le plus grave), le carcinome basocellulaire et le carcinome épidermoïde. Ensemble, ils représentent plus de 100 000 nouveaux cas par an.",
-    "Le mélanome peut métastaser rapidement — mais détecté tôt, il se traite très bien. C'est pourquoi le dépistage régulier est essentiel, surtout pour les personnes à risque.",
+    "Le mélanome peut métastaser rapidement · mais détecté tôt, il se traite très bien. C'est pourquoi le dépistage régulier est essentiel, surtout pour les personnes à risque.",
   ],
   encadres: [
     {
       id: "e1",
       titre: "Qui est concerné ?",
       texte:
-        "Toute personne de plus de 18 ans — en particulier les peaux claires, les personnes ayant eu des coups de soleil importants dans l'enfance, les porteurs de nombreux grains de beauté (> 50), et ceux avec des antécédents familiaux de mélanome.",
+        "Toute personne de plus de 18 ans · en particulier les peaux claires, les personnes ayant eu des coups de soleil importants dans l'enfance, les porteurs de nombreux grains de beauté (> 50), et ceux avec des antécédents familiaux de mélanome.",
     },
     {
       id: "e2",
@@ -69,11 +69,11 @@ export const depistageHocoia = {
   eyebrow: "La solution Hocoia",
   h2: "Le DermatoBus : le spécialiste qui vient à vous",
   paragraphs: [
-    "Face à 18 mois d'attente pour un dermatologue en zone rurale, Hocoia a développé le DermatoBus — une unité mobile de dépistage cutané qui se déploie directement dans votre commune ou votre organisation.",
+    "Face à 18 mois d'attente pour un dermatologue en zone rurale, Hocoia a développé le DermatoBus · une unité mobile de dépistage cutané qui se déploie directement dans votre commune ou votre organisation.",
     "Le protocole est rigoureux : cartographie complète du corps, pré-analyse par IA, triage par médecin généraliste formé, télé-expertise par un onco-dermatologue du CHU de Caen. La qualité d'un cabinet universitaire, partout sur le territoire.",
   ],
   differenciateurs: [
-    { id: "d1", titre: "Cartographie corps entier", description: "Toutes les lésions documentées et photographiées — pas seulement celles signalées par le patient." },
+    { id: "d1", titre: "Cartographie corps entier", description: "Toutes les lésions documentées et photographiées · pas seulement celles signalées par le patient." },
     { id: "d2", titre: "IA de pré-analyse", description: "Évaluation automatique du risque mélanome sur les images, en amont du médecin. Améliore la priorisation." },
     { id: "d3", titre: "Télé-expertise CHU Caen", description: "Revue finale par un onco-dermatologue du CHU de Caen. Diagnostic de niveau universitaire, depuis n'importe quel territoire." },
     { id: "d4", titre: "Suivi comparatif", description: "Chaque lésion suivie d'une année sur l'autre. Unique en France en mode mobile." },
@@ -82,7 +82,7 @@ export const depistageHocoia = {
     badge: "Produit Hocoia · Pilote Normandie 2026",
     titre: "DermatoBus",
     description:
-      "Unité mobile dédiée au dépistage complet du cancer de la peau — cartographie corps entier, dermoscopie IA, télé-expertise onco-dermatologue CHU de Caen.",
+      "Unité mobile dédiée au dépistage complet du cancer de la peau · cartographie corps entier, dermoscopie IA, télé-expertise onco-dermatologue CHU de Caen.",
     href: "/dermatobus",
     cta: "Découvrir le DermatoBus →",
   },
@@ -93,7 +93,7 @@ export const depistageHocoia = {
 export const protocole = {
   eyebrow: "Comment cela se passe",
   h2: "Le dépistage en 4 étapes, simple et rigoureux",
-  subtitle: "De votre arrivée à bord à la réception de vos résultats — tout est pris en charge.",
+  subtitle: "De votre arrivée à bord à la réception de vos résultats · tout est pris en charge.",
   steps: [
     {
       id: "p1", num: "1",
@@ -141,7 +141,7 @@ export const pourQui = {
   eyebrow: "À qui s'adresse ce dépistage",
   h2: "Pour les patients comme pour les organisations",
   subtitle:
-    "Patients, entreprises, collectivités, établissements de santé — le dépistage cutané mobile s'adapte à tous les contextes.",
+    "Patients, entreprises, collectivités, établissements de santé · le dépistage cutané mobile s'adapte à tous les contextes.",
   cards: [
     {
       id: "pq1",
@@ -191,7 +191,7 @@ export const temoignages = {
     {
       id: "t1",
       contexte: "Patiente · Val de Fensch",
-      quote: "Une expérience à poursuivre et à pérenniser. On a beaucoup de mal à avoir des RDV dermato — merci à vous !",
+      quote: "Une expérience à poursuivre et à pérenniser. On a beaucoup de mal à avoir des RDV dermato · merci à vous !",
       author: "Mme Nuvolara",
       role: "Patiente, Val de Fensch",
     },
@@ -205,7 +205,7 @@ export const temoignages = {
     {
       id: "t3",
       contexte: "Patient · Sélestat",
-      quote: "J'avais un grain de beauté suspect depuis des mois. Le dermatologue du bus m'a orienté tout de suite. Aujourd'hui tout va bien — sans ce dépistage j'aurais attendu encore longtemps.",
+      quote: "J'avais un grain de beauté suspect depuis des mois. Le dermatologue du bus m'a orienté tout de suite. Aujourd'hui tout va bien · sans ce dépistage j'aurais attendu encore longtemps.",
       author: "Julien, 34 ans",
       role: "Sélestat",
     },
@@ -224,8 +224,8 @@ export const maillage = {
     { id: "e4", label: "Santé de la femme",           href: "/solutions/sante-femme" },
   ],
   busLies: [
-    { id: "b1", label: "DermatoBus — dépistage cutané mobile",  href: "/dermatobus" },
-    { id: "b2", label: "MédicoBus — cabinet médical mobile",    href: "/produits/medicobus" },
+    { id: "b1", label: "DermatoBus · dépistage cutané mobile",  href: "/dermatobus" },
+    { id: "b2", label: "MédicoBus · cabinet médical mobile",    href: "/produits/medicobus" },
   ],
 };
 
@@ -280,8 +280,8 @@ export const ctaFinal = {
   h2: "Prêt à prendre soin de votre peau ?",
   subtitle:
     "Que vous soyez patient ou organisation, Hocoia vous accompagne dans votre démarche de prévention cutanée.",
-  ctaPatient: "Je suis patient — Trouver une date",
+  ctaPatient: "Je suis patient · Trouver une date",
   ctaPatientHref: "/patient",
-  ctaOrga: "Je suis une organisation — Demander une présentation",
+  ctaOrga: "Je suis une organisation · Demander une présentation",
   ctaOrgaHref: "/dermatobus",
 };

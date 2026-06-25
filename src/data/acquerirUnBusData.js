@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "",
@@ -95,11 +95,11 @@ export const pourquoi = {
 
 export const casClientVerdun = {
   badge: "Cas client",
-  titre: "Bus sur mesure — Pneumologie livré à Verdun",
+  titre: "Bus sur mesure · Pneumologie livré à Verdun",
   description:
     "La Communauté de communes du Grand Verdun a fait concevoir un bus médical sur mesure dédié au dépistage des maladies respiratoires dans ses communes rurales. Spécialité : pneumologie. Un projet conçu sur 6 mois, livré clé en main.",
   faits: [
-    { label: "Territoire", value: "Grand Verdun — Meuse (55)" },
+    { label: "Territoire", value: "Grand Verdun · Meuse (55)" },
     { label: "Spécialité", value: "Pneumologie · Spirométrie" },
     { label: "Financement", value: "DETR + fonds régionaux" },
     { label: "Déploiement", value: "6 mois de la commande à la 1ʳᵉ mission" },

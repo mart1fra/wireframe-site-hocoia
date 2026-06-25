@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Expertise · Check-up santé · Bilan global de prévention",
@@ -8,7 +8,7 @@ export const hero = {
     italicB: "sans attendre.",
   },
   subtitle:
-    "Tension, glycémie, cholestérol, ECG, IMC — un bilan global de prévention en 30 minutes, directement dans votre commune. Sans ordonnance, sans rendez-vous médical préalable.",
+    "Tension, glycémie, cholestérol, ECG, IMC · un bilan global de prévention en 30 minutes, directement dans votre commune. Sans ordonnance, sans rendez-vous médical préalable.",
   checks: [
     "20 millions de Français en désert médical",
     "Bilan complet en 30 minutes : tension, ECG, biologie, IMC",
@@ -20,7 +20,7 @@ export const hero = {
   ctaPatientHref: "/patient",
   ctaOrga: "Déployer un programme check-up",
   ctaOrgaHref: "/produits/medicobus",
-  imagePlaceholder: "Check-up santé dans le MédicoBus — infirmière et patient, prise de tension",
+  imagePlaceholder: "Check-up santé dans le MédicoBus · infirmière et patient, prise de tension",
 };
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
@@ -38,7 +38,7 @@ export const pourquoi = {
   eyebrow: "Pourquoi faire un check-up",
   h2: "L'importance du bilan de santé préventif",
   paragraphs: [
-    "Beaucoup de maladies chroniques — hypertension, diabète de type 2, dyslipidémie — évoluent pendant des années sans aucun symptôme. Elles sont découvertes trop tard, souvent lors d'un événement grave (infarctus, AVC, complications rénales).",
+    "Beaucoup de maladies chroniques · hypertension, diabète de type 2, dyslipidémie · évoluent pendant des années sans aucun symptôme. Elles sont découvertes trop tard, souvent lors d'un événement grave (infarctus, AVC, complications rénales).",
     "Un check-up régulier permet de mesurer les principaux indicateurs de santé et d'identifier les risques avant qu'ils ne deviennent des pathologies déclarées. C'est la base de toute démarche de prévention.",
   ],
   encadres: [
@@ -73,16 +73,16 @@ export const depistageHocoia = {
     "Le check-up Hocoia associe une infirmière qualifiée à bord pour la réalisation des mesures, et un médecin en téléconsultation pour l'analyse des résultats et les préconisations. Une prise en charge médicale complète, en 30 minutes, sans déplacement.",
   ],
   differenciateurs: [
-    { id: "d1", titre: "Bilan global en une visite", description: "Tension, ECG, glycémie, cholestérol, IMC — tout en 30 minutes, sans multiplier les intervenants." },
+    { id: "d1", titre: "Bilan global en une visite", description: "Tension, ECG, glycémie, cholestérol, IMC · tout en 30 minutes, sans multiplier les intervenants." },
     { id: "d2", titre: "Médecin téléconsultant disponible", description: "Un médecin en téléconsultation assistée analyse les résultats et répond aux questions du patient en temps réel." },
-    { id: "d3", titre: "Logiciel de coordination intégré", description: "Dossier patient, résultats, préconisations — tout est tracé dans HocoApp et transmis au médecin traitant." },
+    { id: "d3", titre: "Logiciel de coordination intégré", description: "Dossier patient, résultats, préconisations · tout est tracé dans HocoApp et transmis au médecin traitant." },
     { id: "d4", titre: "Accessible partout", description: "Le MédicoBus de moins de 3,5T accède à tous les territoires, y compris les communes rurales sans plateau technique." },
   ],
   bus: {
     badge: "MédicoBus · Check-up santé",
     titre: "MédicoBus",
     description:
-      "Cabinet médical mobile polyvalent — plus de 10 dispositifs médicaux embarqués, soignant présent, médecin téléconsultant disponible. Le check-up complet partout en France.",
+      "Cabinet médical mobile polyvalent · plus de 10 dispositifs médicaux embarqués, soignant présent, médecin téléconsultant disponible. Le check-up complet partout en France.",
     href: "/produits/medicobus",
     cta: "Découvrir le MédicoBus →",
   },
@@ -93,7 +93,7 @@ export const depistageHocoia = {
 export const protocole = {
   eyebrow: "Comment cela se passe",
   h2: "Le check-up en 4 étapes, en 30 minutes",
-  subtitle: "De l'accueil à la restitution immédiate des résultats — tout est inclus.",
+  subtitle: "De l'accueil à la restitution immédiate des résultats · tout est inclus.",
   steps: [
     {
       id: "p1", num: "1",
@@ -128,7 +128,7 @@ export const benefices = {
   eyebrow: "Pourquoi Hocoia",
   h2: "Les atouts du check-up mobile",
   cards: [
-    { id: "b1", titre: "30 minutes, tout inclus", description: "Tensions, ECG, biologie, téléconsultation et résultats — dans une seule visite. Pas de course entre plusieurs intervenants." },
+    { id: "b1", titre: "30 minutes, tout inclus", description: "Tensions, ECG, biologie, téléconsultation et résultats · dans une seule visite. Pas de course entre plusieurs intervenants." },
     { id: "b2", titre: "Accessible sans médecin traitant", description: "Vous n'avez pas de médecin traitant ou habitez en désert médical ? Le MédicoBus vient à vous, sans prescription préalable." },
     { id: "b3", titre: "Résultats immédiats", description: "Contrairement à un bilan sanguin classique, les résultats du check-up Hocoia sont disponibles à la fin de la consultation." },
     { id: "b4", titre: "Suivi médical garanti", description: "En cas d'anomalie détectée, vous êtes orienté vers le bon spécialiste avec un compte-rendu complet. Rien n'est laissé sans suite." },
@@ -141,7 +141,7 @@ export const pourQui = {
   eyebrow: "À qui s'adresse le check-up",
   h2: "Pour les patients comme pour les organisations",
   subtitle:
-    "Grand public, entreprises, collectivités, établissements — le check-up santé mobile s'adapte à tous les contextes.",
+    "Grand public, entreprises, collectivités, établissements · le check-up santé mobile s'adapte à tous les contextes.",
   cards: [
     {
       id: "pq1",
@@ -224,7 +224,7 @@ export const maillage = {
     { id: "e4", label: "Santé de la femme",           href: "/solutions/sante-femme" },
   ],
   busLies: [
-    { id: "b1", label: "MédicoBus — cabinet médical mobile", href: "/produits/medicobus" },
+    { id: "b1", label: "MédicoBus · cabinet médical mobile", href: "/produits/medicobus" },
   ],
 };
 
@@ -278,9 +278,9 @@ export const faq = {
 export const ctaFinal = {
   h2: "Votre santé mérite plus qu'une attente.",
   subtitle:
-    "30 minutes pour faire le point sur votre santé — que vous soyez patient ou organisation.",
-  ctaPatient: "Je suis patient — Trouver une date",
+    "30 minutes pour faire le point sur votre santé · que vous soyez patient ou organisation.",
+  ctaPatient: "Je suis patient · Trouver une date",
   ctaPatientHref: "/patient",
-  ctaOrga: "Je suis une organisation — Demander une présentation",
+  ctaOrga: "Je suis une organisation · Demander une présentation",
   ctaOrgaHref: "/produits/medicobus",
 };

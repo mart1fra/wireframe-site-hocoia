@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ressourcesByType, ressourcesFiltres } from "../../data/arborescence";
@@ -44,7 +44,7 @@ export default function CasClients() {
               Cas clients
             </h1>
             <p className="font-body text-gray-500 max-w-xl">
-              Retours d'expérience concrets : mutuelles, collectivités, entreprises — ce que le MédicoBus change sur le terrain.
+              Retours d'expérience concrets : mutuelles, collectivités, entreprises · ce que le MédicoBus change sur le terrain.
             </p>
           </motion.div>
         </div>
@@ -79,7 +79,7 @@ export default function CasClients() {
           initial="hidden"
           animate="show"
         >
-          {/* Carte Pertuis — vraie page liée */}
+          {/* Carte Pertuis · vraie page liée */}
           {showPertuis && (
             <motion.div variants={itemV}>
               <Link
@@ -89,7 +89,7 @@ export default function CasClients() {
                 {/* Image placeholder */}
                 <div className="aspect-video bg-gray-100 flex items-center justify-center">
                   <span className="text-[10px] text-gray-400 text-center px-4">
-                    Photo — MédicoBus Hocoia installé au CCAS de Pertuis
+                    Photo · MédicoBus Hocoia installé au CCAS de Pertuis
                   </span>
                 </div>
 

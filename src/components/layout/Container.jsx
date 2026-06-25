@@ -1,5 +1,5 @@
-/**
- * Container — enveloppe de mise en page responsive
+﻿/**
+ * Container · enveloppe de mise en page responsive
  *
  * Gère les marges latérales et la largeur max selon CLAUDE.md :
  *   Mobile  (< 480px)  : px-5  → 20px latéraux

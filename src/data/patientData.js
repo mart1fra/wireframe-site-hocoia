@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   h1: "Votre prochaine consultation santé, près de chez vous.",
@@ -10,7 +10,7 @@ export const hero = {
     {
       id: "r1",
       date: "Mar. 15 avril",
-      heure: "9h — 16h",
+      heure: "9h · 16h",
       lieu: "Place de la Mairie, Strasbourg",
       specialites: "Check-up · Cardiologie · Dermatologie",
       ctaPrimary: "Prendre RDV",
@@ -19,7 +19,7 @@ export const hero = {
     {
       id: "r2",
       date: "Jeu. 17 avril",
-      heure: "8h30 — 17h",
+      heure: "8h30 · 17h",
       lieu: "Parking Leclerc, Haguenau",
       specialites: "Cancer sein · Gynécologie · Check-up",
       ctaPrimary: "Prendre RDV",
@@ -28,7 +28,7 @@ export const hero = {
     {
       id: "r3",
       date: "Sam. 19 avril",
-      heure: "9h — 13h",
+      heure: "9h · 13h",
       lieu: "Place du Marché, Saverne",
       specialites: "Cardiologie · Dermatologie · Bilan sanguin",
       ctaPrimary: "Prendre RDV",

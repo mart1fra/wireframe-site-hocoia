@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import FadeIn from "../ui/FadeIn";
 
 const listV = {
@@ -23,7 +23,7 @@ export default function VideoTestimonial({
     <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-14 items-start">
 
-        {/* Gauche — 40% */}
+        {/* Gauche · 40% */}
         <motion.div
           variants={listV}
           initial="hidden"
@@ -45,7 +45,7 @@ export default function VideoTestimonial({
 
           <motion.div variants={itemV} className="pl-4 border-l-[3px] border-gray-300 my-6">
             <p className="text-gray-700 text-sm italic leading-relaxed">"{quote}"</p>
-            <p className="text-gray-500 text-xs mt-2">— {quoteAuthor}</p>
+            <p className="text-gray-500 text-xs mt-2">{quoteAuthor}</p>
           </motion.div>
 
           <motion.div variants={itemV}>
@@ -58,7 +58,7 @@ export default function VideoTestimonial({
           </motion.div>
         </motion.div>
 
-        {/* Droite — 60% */}
+        {/* Droite · 60% */}
         <FadeIn delay={0.1}>
           {/* Placeholder vidéo 16:9 */}
           <div className="relative w-full aspect-video bg-gray-100 border border-dashed border-gray-200 rounded-xl overflow-hidden">

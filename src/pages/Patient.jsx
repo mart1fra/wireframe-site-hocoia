@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
@@ -37,7 +37,7 @@ function SectionH2({ children, light = false }) {
   );
 }
 
-// ─── Section 1 — Hero + Recherche ─────────────────────────────────────────
+// ─── Section 1 · Hero + Recherche ─────────────────────────────────────────
 
 function HeroSection() {
   return (
@@ -146,7 +146,7 @@ function HeroSection() {
   );
 }
 
-// ─── Section 2 — Comment ça marche ────────────────────────────────────────
+// ─── Section 2 · Comment ça marche ────────────────────────────────────────
 
 function EtapesSection() {
   return (
@@ -191,7 +191,7 @@ function EtapesSection() {
               <ul className="space-y-2 mb-5">
                 {step.points.map((point, i) => (
                   <li key={i} className="flex items-start gap-2.5 text-sm text-gray-600">
-                    <span className="text-gray-400 mt-0.5 shrink-0">—</span>
+                    <span className="text-gray-400 mt-0.5 shrink-0">·</span>
                     {point}
                   </li>
                 ))}
@@ -211,7 +211,7 @@ function EtapesSection() {
   );
 }
 
-// ─── Section 3 — Spécialités ──────────────────────────────────────────────
+// ─── Section 3 · Spécialités ──────────────────────────────────────────────
 
 function SpecialitesSection() {
   return (
@@ -259,7 +259,7 @@ function SpecialitesSection() {
   );
 }
 
-// ─── Section 4 — Témoignages ──────────────────────────────────────────────
+// ─── Section 4 · Témoignages ──────────────────────────────────────────────
 
 function TemoignagesSection() {
   return (
@@ -302,7 +302,7 @@ function TemoignagesSection() {
   );
 }
 
-// ─── Section 5 — FAQ ──────────────────────────────────────────────────────
+// ─── Section 5 · FAQ ──────────────────────────────────────────────────────
 
 function FaqSection() {
   return (
@@ -335,7 +335,7 @@ function FaqSection() {
   );
 }
 
-// ─── Section 6 — CTA Final ────────────────────────────────────────────────
+// ─── Section 6 · CTA Final ────────────────────────────────────────────────
 
 function CtaFinalSection() {
   return (

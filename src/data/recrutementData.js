@@ -1,4 +1,4 @@
-// ─── Données page Recrutement ────────────────────────────────────────────────
+﻿// ─── Données page Recrutement ────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "",
@@ -14,7 +14,7 @@ export const hero = {
     duration: "2:14",
   },
   citation:
-    '"La santé mobile, cela change vraiment des vies." — Dr Arous, médecin prestataire',
+    '"La santé mobile, cela change vraiment des vies." · Dr Arous, médecin prestataire',
 };
 
 export const chiffres = [
@@ -74,7 +74,7 @@ export const journeeDepistage = {
   profils: {
     infirmier: {
       paragraphs: [
-        "Vous êtes le premier contact du patient. Accueil, antécédents médicaux, prise des constantes, accompagnement tout au long de la consultation — vous structurez l'expérience patient.",
+        "Vous êtes le premier contact du patient. Accueil, antécédents médicaux, prise des constantes, accompagnement tout au long de la consultation · vous structurez l'expérience patient.",
         "Les outils HocoApp sont pensés pour fluidifier votre travail : dossier patient pré-rempli, protocoles intégrés, coordination automatique avec le médecin en téléexpertise.",
       ],
       timeline: [
@@ -87,7 +87,7 @@ export const journeeDepistage = {
     medecin: {
       paragraphs: [
         "Vous réalisez les consultations médicales avec le soutien de l'équipe terrain. Dossier patient déjà ouvert, constantes déjà prises : vous arrivez au bon moment pour l'acte médical.",
-        "HocoApp centralise tout — historique, résultats des dispositifs embarqués, génération automatique du compte-rendu. Vous vous concentrez sur le diagnostic et la relation patient.",
+        "HocoApp centralise tout · historique, résultats des dispositifs embarqués, génération automatique du compte-rendu. Vous vous concentrez sur le diagnostic et la relation patient.",
       ],
       timeline: [
         { id: "m1", num: "1", titre: "Arrivée & briefing",         description: "Bus déjà installé, briefing de 10 minutes avec le soignant d'accueil." },
@@ -307,7 +307,7 @@ export const offres = {
     { id: "remote",                  label: "Téléconsultation" },
   ],
   soignants: {
-    label: "Professionnels de santé — prestataires",
+    label: "Professionnels de santé · prestataires",
     items: [
       {
         id: "o1",
@@ -400,7 +400,7 @@ export const offres = {
     ],
   },
   internes: {
-    label: "Équipe interne — CDI",
+    label: "Équipe interne · CDI",
     items: [
       {
         id: "i1",

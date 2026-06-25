@@ -1,9 +1,9 @@
-export const hocoAppByAudience = {
+﻿export const hocoAppByAudience = {
   patient: {
     eyebrow: "",
-    h2: "HocoApp — votre santé, accessible à tout moment.",
+    h2: "HocoApp · votre santé, accessible à tout moment.",
     subtitle:
-      "Prenez rendez-vous, retrouvez vos comptes-rendus et suivez votre parcours de prévention depuis votre téléphone. HocoApp centralise tout ce dont vous avez besoin — en toute sécurité.",
+      "Prenez rendez-vous, retrouvez vos comptes-rendus et suivez votre parcours de prévention depuis votre téléphone. HocoApp centralise tout ce dont vous avez besoin · en toute sécurité.",
     features: [
       { id: "f1", title: "Prise de RDV simplifiée", description: "Choisissez votre créneau dans le bus le plus proche en 3 clics." },
       { id: "f2", title: "Vos documents centralisés", description: "Comptes-rendus, ordonnances et résultats accessibles à tout moment." },
@@ -11,13 +11,13 @@ export const hocoAppByAudience = {
     ],
     ctaPrimary: "Découvrir HocoApp",
     ctaOutline: "Se connecter",
-    mockupLabel: "Interface patient — prise de RDV",
+    mockupLabel: "Interface patient · prise de RDV",
   },
   proSante: {
     eyebrow: "",
-    h2: "HocoApp — votre outil pour exercer partout",
+    h2: "HocoApp · votre outil pour exercer partout",
     subtitle:
-      "Gérez vos missions, consultez les dossiers patients et lancez des téléconsultations depuis un seul outil. HocoApp a été conçu pour les professionnels de santé en mobilité — sur le terrain comme à distance.",
+      "Gérez vos missions, consultez les dossiers patients et lancez des téléconsultations depuis un seul outil. HocoApp a été conçu pour les professionnels de santé en mobilité · sur le terrain comme à distance.",
     features: [
       { id: "f1", title: "Agenda multi-praticiens", description: "Vue temps réel des disponibilités, planification fluide entre confrères." },
       { id: "f2", title: "Dossier patient intégré", description: "Affichage clinique et administratif, archivage sécurisé, partage maîtrisé." },
@@ -28,11 +28,11 @@ export const hocoAppByAudience = {
     ctaPrimaryHref: "/se-connecter",
     ctaOutline: "Notre technologie",
     ctaOutlineHref: "/a-propos/technologie",
-    mockupLabel: "Interface pro — agenda & dossiers",
+    mockupLabel: "Interface pro · agenda & dossiers",
   },
   entreprises: {
     eyebrow: "",
-    h2: "HocoApp — orchestrez la santé de vos collaborateurs",
+    h2: "HocoApp · orchestrez la santé de vos collaborateurs",
     subtitle:
       "Organisez vos bilans de santé collectifs, suivez la participation de vos collaborateurs ou adhérents et offrez à chaque patient un accès sécurisé à ses résultats. Tout est centralisé, anonymisé et accessible depuis votre tableau de bord.",
     features: [
@@ -43,11 +43,11 @@ export const hocoAppByAudience = {
     ctaPrimaryHref: "/se-connecter",
     ctaOutline: "Notre technologie",
     ctaOutlineHref: "/a-propos/technologie",
-    mockupLabel: "Tableau de bord RH — bilans collectifs",
+    mockupLabel: "Tableau de bord RH · bilans collectifs",
   },
   collectivites: {
     eyebrow: "",
-    h2: "HocoApp — pilotez la prévention dans votre territoire",
+    h2: "HocoApp · pilotez la prévention dans votre territoire",
     subtitle:
       "Planifiez les déploiements commune par commune, invitez vos habitants en quelques clics et suivez les indicateurs de fréquentation depuis votre tableau de bord territorial. HocoApp centralise tout le suivi de vos actions de santé publique.",
     features: [
@@ -60,11 +60,11 @@ export const hocoAppByAudience = {
     ctaPrimaryHref: "/se-connecter",
     ctaOutline: "Notre technologie",
     ctaOutlineHref: "/a-propos/technologie",
-    mockupLabel: "Pilotage territoire — passages & fréquentation",
+    mockupLabel: "Pilotage territoire · passages & fréquentation",
   },
   acteursPublics: {
     eyebrow: "",
-    h2: "HocoApp — pilotez vos actions de santé publique",
+    h2: "HocoApp · pilotez vos actions de santé publique",
     subtitle:
       "Suivez l'ensemble de vos programmes de prévention, partagez les indicateurs avec vos partenaires institutionnels et exportez les données pour vos rapports ARS. HocoApp s'adapte aux exigences du secteur public.",
     features: [
@@ -77,15 +77,15 @@ export const hocoAppByAudience = {
     ctaPrimaryHref: "/se-connecter",
     ctaOutline: "Notre technologie",
     ctaOutlineHref: "/a-propos/technologie",
-    mockupLabel: "Pilotage santé publique — indicateurs consolidés",
+    mockupLabel: "Pilotage santé publique · indicateurs consolidés",
   },
   etablissementsSante: {
     eyebrow: "",
-    h2: "HocoApp — orchestrez la santé de vos collaborateurs",
+    h2: "HocoApp · orchestrez la santé de vos collaborateurs",
     subtitle:
       "Un outil intuitif pour centralisez l'organisation des bilans de santé collectifs, simplifiez le suivi des collaborateurs et offrez à chaque salarié un accès sécurisé à ses informations médicales. Une solution fluide pour piloter la prévention, améliorer le suivi patient et optimiser la gestion santé en entreprise.",
     features: [
-      { id: "f1", title: "Dépistage dans le parcours de soins", description: "Les résultats du bus sont intégrés dans le DPI de l'établissement — le dépistage devient une étape documentée du parcours de soins patient." },
+      { id: "f1", title: "Dépistage dans le parcours de soins", description: "Les résultats du bus sont intégrés dans le DPI de l'établissement · le dépistage devient une étape documentée du parcours de soins patient." },
       { id: "f2", title: "Télé-expertise inter-équipes", description: "Sollicitez vos spécialistes en différé pour les cas dépistés, sans encombrer leurs agendas." },
       { id: "f3", title: "Gestion des passages bus", description: "Planifiez les déplacements des Médicobus en complément de vos services hospitaliers, commune par commune." },
       { id: "f4", title: "Connecté à HocoVisio", description: "Téléconsultations augmentées avec dispositifs médicaux connectés (ECG, stéthoscope, dermoscope, etc.)." },
@@ -94,6 +94,6 @@ export const hocoAppByAudience = {
     ctaPrimaryHref: "/se-connecter",
     ctaOutline: "Notre technologie",
     ctaOutlineHref: "/a-propos/technologie",
-    mockupLabel: "Coordination établissement — équipes & dossiers",
+    mockupLabel: "Coordination établissement · équipes & dossiers",
   },
 };

@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+﻿import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
@@ -74,12 +74,12 @@ function renderSegments(segments) {
   );
 }
 
-// ─── Section 1 — Hero + Formulaire ───────────────────────────────────────────
+// ─── Section 1 · Hero + Formulaire ───────────────────────────────────────────
 
 function HeroSection() {
   return (
     <section className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] min-h-[80vh]">
-      {/* Gauche — fond gray-900 */}
+      {/* Gauche · fond gray-900 */}
       <div className="bg-gray-900 px-8 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -130,7 +130,7 @@ function HeroSection() {
         </motion.div>
       </div>
 
-      {/* Droite — bloc média */}
+      {/* Droite · bloc média */}
       <motion.div
         initial={{ opacity: 0, x: 16 }}
         animate={{ opacity: 1, x: 0 }}
@@ -144,7 +144,7 @@ function HeroSection() {
             </svg>
           </div>
           <p className="text-gray-600 text-xs leading-relaxed max-w-[220px]">
-            [ Photo ou vidéo de présentation — MammoBus en déploiement ]
+            [ Photo ou vidéo de présentation · MammoBus en déploiement ]
           </p>
         </div>
         <div className="absolute bottom-4 right-4 bg-black/60 text-gray-500 text-[10px] px-2 py-1 rounded">
@@ -155,7 +155,7 @@ function HeroSection() {
   );
 }
 
-// ─── Section 2 — Logos ────────────────────────────────────────────────────────
+// ─── Section 2 · Logos ────────────────────────────────────────────────────────
 
 function LogosSection() {
   return (
@@ -177,7 +177,7 @@ function LogosSection() {
   );
 }
 
-// ─── Section 3 — Stats ────────────────────────────────────────────────────────
+// ─── Section 3 · Stats ────────────────────────────────────────────────────────
 
 function StatsSection() {
   return (
@@ -209,7 +209,7 @@ function StatsSection() {
   );
 }
 
-// ─── Section 5 — Protocole 4 étapes ──────────────────────────────────────────
+// ─── Section 5 · Protocole 4 étapes ──────────────────────────────────────────
 
 function ProtocoleSection() {
   return (
@@ -258,7 +258,7 @@ function ProtocoleSection() {
   );
 }
 
-// ─── Section 6 — Pour qui ─────────────────────────────────────────────────────
+// ─── Section 6 · Pour qui ─────────────────────────────────────────────────────
 
 function PourQuiSection() {
   return (
@@ -295,7 +295,7 @@ function PourQuiSection() {
   );
 }
 
-// ─── Section 7 — Témoignages ──────────────────────────────────────────────────
+// ─── Section 7 · Témoignages ──────────────────────────────────────────────────
 
 function TemoignagesSection() {
   return (
@@ -337,7 +337,7 @@ function TemoignagesSection() {
   );
 }
 
-// ─── Section 8 — Couverture géographique ─────────────────────────────────────
+// ─── Section 8 · Couverture géographique ─────────────────────────────────────
 
 function CouvertureSection() {
   return (
@@ -398,7 +398,7 @@ function CouvertureSection() {
   );
 }
 
-// ─── Section 9 — Nos 3 solutions ─────────────────────────────────────────────
+// ─── Section 9 · Nos 3 solutions ─────────────────────────────────────────────
 
 function SolutionsSection() {
   return (
@@ -457,7 +457,7 @@ function SolutionsSection() {
   );
 }
 
-// ─── Section 10 — Contenu SEO ─────────────────────────────────────────────────
+// ─── Section 10 · Contenu SEO ─────────────────────────────────────────────────
 
 function SeoSection() {
   return (
@@ -525,7 +525,7 @@ function SeoSection() {
   );
 }
 
-// ─── Section 11 — FAQ ─────────────────────────────────────────────────────────
+// ─── Section 11 · FAQ ─────────────────────────────────────────────────────────
 
 function FaqSection() {
   return (
@@ -555,7 +555,7 @@ function FaqSection() {
   );
 }
 
-// ─── Section 12 — CTA Final ───────────────────────────────────────────────────
+// ─── Section 12 · CTA Final ───────────────────────────────────────────────────
 
 function CtaFinalSection() {
   return (
@@ -595,7 +595,7 @@ function CtaFinalSection() {
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
-// ─── Section — Demander une présentation ──────────────────────────────────────
+// ─── Section · Demander une présentation ──────────────────────────────────────
 
 function DemandePresentationSection() {
   return (
@@ -612,7 +612,7 @@ function DemandePresentationSection() {
             Un expert Hocoia vous présente le MammoBus, répond à vos questions et vous aide à dimensionner votre projet sur votre territoire.
           </p>
           <ul className="space-y-3">
-            {["Sans engagement", "Confidentiel — RGPD"].map((b) => (
+            {["Sans engagement", "Confidentiel · RGPD"].map((b) => (
               <li key={b} className="flex items-center gap-3 text-gray-700 text-sm">
                 <span className="text-gray-400 shrink-0">✓</span>
                 {b}

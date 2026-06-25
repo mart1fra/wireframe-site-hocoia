@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import { header, espaces, aide } from "../data/seConnecterData";
 
@@ -80,7 +80,7 @@ export default function SeConnecter() {
           ))}
         </motion.div>
 
-        {/* Bouton HocoApp — largeur de la grille */}
+        {/* Bouton HocoApp · largeur de la grille */}
         <FadeIn>
           <button
             type="button"

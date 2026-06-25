@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+﻿import { Fragment, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import FadeIn      from "../components/ui/FadeIn";
@@ -98,7 +98,7 @@ function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Colonne droite — formulaire */}
+        {/* Colonne droite · formulaire */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -276,7 +276,7 @@ function UseCasesSection() {
               </div>
             </div>
 
-            {/* Droite — carte cas client */}
+            {/* Droite · carte cas client */}
             <div className="bg-white border border-gray-200 rounded-xl p-6">
               <span className="inline-block text-[10px] font-semibold uppercase tracking-widest text-gray-600 bg-gray-100 px-3 py-1 rounded-full mb-4">
                 {content.caseCard.tag}
@@ -494,7 +494,7 @@ function HowItWorksSection() {
           ))}
         </FadeIn>
 
-        {/* Contenu — même conteneur, contenu crossfade */}
+        {/* Contenu · même conteneur, contenu crossfade */}
         <AnimatePresence mode="wait">
           <motion.div
             key={active}
@@ -641,10 +641,10 @@ export default function Entreprises() {
       <LogosSection />
       <UseCasesSection />
 
-      {/* 2. Comment ça marche — méthode / parcours / HocoApp */}
+      {/* 2. Comment ça marche · méthode / parcours / HocoApp */}
       <HowItWorksSection />
 
-      {/* 5. Réassurance — avis */}
+      {/* 5. Réassurance · avis */}
       <AvisClientsSection />
       <StatsSection />
 

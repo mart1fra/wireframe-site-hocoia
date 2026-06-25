@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+﻿import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { navBar, megaMenus } from "../../data/arborescence";
@@ -167,10 +167,10 @@ function SimplePanel({ data, onClose }) {
   );
 }
 
-// ─── Panneau liste enrichie — Ressources & À propos (desktop) ────────────
+// ─── Panneau liste enrichie · Ressources & À propos (desktop) ────────────
 
 function RichListPanel({ data, onClose }) {
-  // Layout A — liste simple à gauche + bloc featured à droite
+  // Layout A · liste simple à gauche + bloc featured à droite
   if (data.items && data.featured) {
     return (
       <div className="p-5 flex gap-5" style={{ minWidth: 420 }}>
@@ -209,7 +209,7 @@ function RichListPanel({ data, onClose }) {
     );
   }
 
-  // Layout B — sections en 2 colonnes (À propos)
+  // Layout B · sections en 2 colonnes (À propos)
   const sections = data.sections ?? [{ label: null, items: data.items ?? [] }];
   return (
     <div className="p-5" style={{ minWidth: 440 }}>
@@ -407,7 +407,7 @@ function NavItem({ item }) {
 }
 
 // ═════════════════════════════════════════════════════════════════════════════
-// MOBILE — full-screen takeover (inspiré Alan.com)
+// MOBILE · full-screen takeover (inspiré Alan.com)
 // ═════════════════════════════════════════════════════════════════════════════
 
 // ─── Helper : liste plate de liens depuis un mega-menu ────────────────────
@@ -441,7 +441,7 @@ function getMobileLinks(menuData) {
   return [];
 }
 
-// ─── Item mobile — accordéon grand format ────────────────────────────────
+// ─── Item mobile · accordéon grand format ────────────────────────────────
 
 function MobileNavItem({ item, onClose }) {
   const [open, setOpen] = useState(false);
@@ -462,14 +462,14 @@ function MobileNavItem({ item, onClose }) {
 
   return (
     <div className="border-b border-gray-100">
-      {/* Bouton accordéon — même style grand que Alan */}
+      {/* Bouton accordéon · même style grand que Alan */}
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         className="flex items-center justify-between w-full px-5 py-5 text-xl font-semibold text-gray-900 hover:text-gray-600 transition-colors duration-150"
       >
         {item.label}
-        {/* Chevron — cercle gris clair comme Alan */}
+        {/* Chevron · cercle gris clair comme Alan */}
         <span className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center shrink-0 ml-3">
           <motion.svg
             animate={{ rotate: open ? 180 : 0 }}
@@ -482,7 +482,7 @@ function MobileNavItem({ item, onClose }) {
         </span>
       </button>
 
-      {/* Sous-liens — accordéon animé */}
+      {/* Sous-liens · accordéon animé */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -548,7 +548,7 @@ function MobileMenu({ isOpen, onClose }) {
               HOCOIA
             </Link>
 
-            {/* Bouton fermeture — cercle gris comme Alan */}
+            {/* Bouton fermeture · cercle gris comme Alan */}
             <button
               type="button"
               onClick={onClose}
@@ -561,7 +561,7 @@ function MobileMenu({ isOpen, onClose }) {
             </button>
           </div>
 
-          {/* ── Items de nav — accordéons grand format ── */}
+          {/* ── Items de nav · accordéons grand format ── */}
           <div className="flex-1 overflow-y-auto">
             <nav className="pt-2">
               {navBar.center.map((item) => (
@@ -570,7 +570,7 @@ function MobileMenu({ isOpen, onClose }) {
             </nav>
           </div>
 
-          {/* ── CTAs en bas — pleine largeur ── */}
+          {/* ── CTAs en bas · pleine largeur ── */}
           <div className="px-5 pt-5 pb-8 shrink-0 space-y-3">
             <Link
               to={navBar.cta.href}
@@ -629,14 +629,14 @@ export default function Navbar() {
             HOCOIA
           </Link>
 
-          {/* Nav centrale — desktop uniquement */}
+          {/* Nav centrale · desktop uniquement */}
           <ul className="hidden lg:flex items-center gap-0.5">
             {navBar.center.map((item) => (
               <NavItem key={item.id} item={item} />
             ))}
           </ul>
 
-          {/* Actions droite — desktop uniquement */}
+          {/* Actions droite · desktop uniquement */}
           <div className="hidden lg:flex items-center gap-4 shrink-0">
             <Link
               to={navBar.cta.href}
@@ -657,7 +657,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Burger — mobile uniquement, cercle gris comme Alan */}
+          {/* Burger · mobile uniquement, cercle gris comme Alan */}
           <button
             type="button"
             onClick={() => setMobileOpen(true)}

@@ -1,9 +1,9 @@
-// ─── Bannière pilote ──────────────────────────────────────────────────────────
+﻿// ─── Bannière pilote ──────────────────────────────────────────────────────────
 
 export const piloteBanner = {
   badge: "PROJET PILOTE",
   texte:
-    "DermatoBus Normandie — lancement automne 2026",
+    "DermatoBus Normandie · lancement automne 2026",
   cta: "Rejoindre le pilote →",
 };
 
@@ -13,14 +13,14 @@ export const hero = {
   eyebrow: "Dépistage cutané mobile · Protocole 4 étapes · IA + Dermatologue",
   h1Parts: {
     italicA: "DermatoBus Hocoia",
-    mid: " — dépistage complet du ",
+    mid: " · dépistage complet du ",
     italicB: "cancer de la peau,",
     end: " en tout territoire.",
   },
   subtitle:
-    "Un protocole médical rigoureux, une technologie de dermoscopie robotique unique, et des dermatologues partenaires — pour détecter tôt, là où les spécialistes manquent.",
+    "Un protocole médical rigoureux, une technologie de dermoscopie robotique unique, et des dermatologues partenaires · pour détecter tôt, là où les spécialistes manquent.",
   checks: [
-    "Cartographie du corps entier — aucune lésion oubliée",
+    "Cartographie du corps entier · aucune lésion oubliée",
     "Pré-analyse IA optionnelle (mélanome)",
     "Triage par médecin généraliste formé",
     "Télé-expertise par onco-dermatologue partenaire",
@@ -30,7 +30,7 @@ export const hero = {
   ctaOutline: "Voir le protocole ↓",
   form: {
     title: "Intéressé par le DermatoBus ?",
-    subtitle: "Collectivité, mutuelle, établissement — sans engagement.",
+    subtitle: "Collectivité, mutuelle, établissement · sans engagement.",
     vousEtesOptions: [
       "Vous êtes",
       "Collectivité/Département",
@@ -105,7 +105,7 @@ export const concept = {
     { id: "f3", titre: "Triage par médecin généraliste", description: "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation." },
     { id: "f4", titre: "Télé-expertise dermatologique", description: "Revue finale par un onco-dermatologue partenaire. Qualité de diagnostic spécialisé, depuis n'importe quel territoire." },
   ],
-  videoLabel: "Vidéo — Le DermatoBus en action · 3:00",
+  videoLabel: "Vidéo · Le DermatoBus en action · 3:00",
   comparison: {
     titre: "DERMATOBUS VS PROTOCOLE CLASSIQUE",
     classique: {
@@ -176,7 +176,7 @@ export const definition = {
         "Revue finale par un onco-dermatologue partenaire. Qualité de diagnostic spécialisé, depuis n'importe quel territoire.",
     },
   ],
-  imagePlaceholder: "DermatoBus 3D — vue extérieure et intérieure interactive",
+  imagePlaceholder: "DermatoBus 3D · vue extérieure et intérieure interactive",
   comparison: {
     titre: "DERMATOBUS VS PROTOCOLE CLASSIQUE",
     classique: {
@@ -204,7 +204,7 @@ export const protocole = {
   eyebrow: "Organisation des dépistages",
   h2: "Un service clé en main en 4 étapes",
   subtitle:
-    "De l'organisation de la campagne au bilan des résultats — Hocoia gère l'intégralité du dispositif.",
+    "De l'organisation de la campagne au bilan des résultats · Hocoia gère l'intégralité du dispositif.",
   steps: [
     {
       id: "p1",
@@ -235,7 +235,7 @@ export const protocole = {
       num: "4",
       titre: "Pilotage & bilan",
       description:
-        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées — RDV complémentaire organisé par l'équipe médicale.",
+        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées · RDV complémentaire organisé par l'équipe médicale.",
       badge: "Équipe médicale Hocoia",
     },
   ],
@@ -250,7 +250,7 @@ export const piloteNormandie = {
     "La Normandie a été choisie pour le pilote en raison de sa désertification médicale particulièrement marquée en dermatologie. L'Orne et l'Eure comptent chacun moins de 5 dermatologues, pour des populations de 280 000 à 600 000 habitants.",
     "Le pilote permettra de valider le protocole (taux de détection, pertinence du triage MG, satisfaction patients), de mesurer l'impact médico-économique, et de construire le modèle de déploiement national.",
   ],
-  mapPlaceholder: "Carte Normandie — Orne & Eure",
+  mapPlaceholder: "Carte Normandie · Orne & Eure",
   statsRow: [
     { value: "<5", label: "Dermatologues dans l'Orne" },
     { value: "<5", label: "Dermatologues dans l'Eure" },
@@ -270,7 +270,7 @@ export const couverture = {
   h2: "Le DermatoBus, un déploiement national progressif",
   subtitle:
     "Après le pilote normand, le DermatoBus sera déployé dans les territoires les plus déficitaires en dermatologues.",
-  mapPlaceholder: "Carte France — phases de déploiement DermatoBus",
+  mapPlaceholder: "Carte France · phases de déploiement DermatoBus",
   regions: [
     {
       id: "r1",
@@ -323,7 +323,7 @@ export const solutions = {
     {
       id: "s2",
       highlight: false,
-      badge: "Polyvalent — Médecine générale",
+      badge: "Polyvalent · Médecine générale",
       titre: "MédicoBus",
       description:
         "Cabinet médical mobile polyvalent, cardiologie, médecine générale, santé des femmes. 10+ dispositifs embarqués.",
@@ -334,7 +334,7 @@ export const solutions = {
     {
       id: "s3",
       highlight: false,
-      badge: "Spécialisé — Cancer du sein",
+      badge: "Spécialisé · Cancer du sein",
       titre: "MammoBus",
       description:
         "Mammographie mobile, dépistage cancer du sein en tout territoire. Innovation unique en France.",
@@ -478,7 +478,7 @@ export const modeles = {
     tag: "Acquisition / Location longue durée",
     title: "Votre DermatoBus, configuré pour vos patients",
     description:
-      "Hocoia conçoit et fabrique votre DermatoBus sur mesure — dermatoscope IA, cartographie corps entier, identité visuelle. Protocole validé scientifiquement par des onco-dermatologues partenaires.",
+      "Hocoia conçoit et fabrique votre DermatoBus sur mesure · dermatoscope IA, cartographie corps entier, identité visuelle. Protocole validé scientifiquement par des onco-dermatologues partenaires.",
     points: [
       "Dermatoscope numérique + IA mélanome certifiée CE",
       "Protocole Hocoia validé par des onco-dermatologues partenaires",
@@ -502,7 +502,7 @@ export const modeles = {
 export const customBus = {
   title: "Un DermatoBus adapté à votre territoire",
   paragraph:
-    "Votre projet de dépistage cutané a des spécificités ? Hocoia conçoit le DermatoBus en lien avec votre service de dermatologie — protocole, équipements, télé-expertise, intégration à votre dispositif de prévention existant.",
+    "Votre projet de dépistage cutané a des spécificités ? Hocoia conçoit le DermatoBus en lien avec votre service de dermatologie · protocole, équipements, télé-expertise, intégration à votre dispositif de prévention existant.",
 };
 
 // ─── CTA Final ────────────────────────────────────────────────────────────────

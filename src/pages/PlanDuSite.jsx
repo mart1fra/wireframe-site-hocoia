@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const sections = [
@@ -167,7 +167,7 @@ function SiteTree() {
           <div style={{ width: 1, height: "100%", backgroundColor: LINE_COLOR }} />
         </div>
 
-        {/* Horizontal bar — s'arrête avant la colonne secondaire */}
+        {/* Horizontal bar · s'arrête avant la colonne secondaire */}
         <div style={{ position: "relative", height: 1, margin: `0 ${COL_W / 2}px`, backgroundColor: LINE_COLOR }}>
           {/* Pointillés sur la partie secondaire */}
           <div style={{
@@ -281,7 +281,7 @@ export default function PlanDuSite() {
         </motion.div>
       </section>
 
-      {/* Grid — sections principales */}
+      {/* Grid · sections principales */}
       <section className="max-w-5xl mx-auto px-6 pb-6">
         <motion.div
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"

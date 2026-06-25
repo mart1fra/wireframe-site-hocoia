@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "",
@@ -32,9 +32,9 @@ export const hero = {
 // ─── Chiffres ─────────────────────────────────────────────────────────────
 
 export const chiffres = [
-  { value: "2",    label: "Outils propriétaires — HocoApp et HocoVisio" },
+  { value: "2",    label: "Outils propriétaires · HocoApp et HocoVisio" },
   { value: "10+",  label: "Dispositifs médicaux connectés à bord" },
-  { value: "100%", label: "Hébergement France — Certifié HDS et RGPD" },
+  { value: "100%", label: "Hébergement France · Certifié HDS et RGPD" },
 ];
 
 // ─── Promesse technologique ────────────────────────────────────────────────

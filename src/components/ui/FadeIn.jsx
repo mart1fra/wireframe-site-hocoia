@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 
 /**
  * Wrapper fade-in + slide-up au scroll (whileInView).
  * Props :
- *   delay    — délai en secondes (default 0)
- *   className — classes transmises au div
+ *   delay    · délai en secondes (default 0)
+ *   className · classes transmises au div
  */
 export default function FadeIn({ children, delay = 0, className = "" }) {
   return (

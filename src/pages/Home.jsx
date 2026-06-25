@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
@@ -52,7 +52,7 @@ function SectionH2({ children, light = false }) {
   );
 }
 
-// ─── Section 1 — Hero ─────────────────────────────────────────────────────
+// ─── Section 1 · Hero ─────────────────────────────────────────────────────
 // Mobile : padding réduit, H1 ≤ 32px, CTAs pleine largeur
 // Desktop : inchangé
 
@@ -106,7 +106,7 @@ function HeroSection() {
   );
 }
 
-// ─── Section 2 — Logos ────────────────────────────────────────────────────
+// ─── Section 2 · Logos ────────────────────────────────────────────────────
 // Mobile : padding réduit, flex-wrap inchangé (déjà responsive)
 
 function LogosSection() {
@@ -131,7 +131,7 @@ function LogosSection() {
   );
 }
 
-// ─── Section 2b — Identité ────────────────────────────────────────────────
+// ─── Section 2b · Identité ────────────────────────────────────────────────
 // Mobile : padding réduit, grid déjà responsive (cols-1 par défaut)
 
 function IdentiteSection() {
@@ -173,7 +173,7 @@ function IdentiteSection() {
   );
 }
 
-// ─── Section 3 — Spécialités B2C ──────────────────────────────────────────
+// ─── Section 3 · Spécialités B2C ──────────────────────────────────────────
 // Mobile : padding réduit, chips en scroll horizontal, map sous le texte
 
 function SpecialitesSection() {
@@ -194,7 +194,7 @@ function SpecialitesSection() {
         </FadeIn>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-          {/* Left — chips + contenu actif */}
+          {/* Left · chips + contenu actif */}
           <FadeIn delay={0.1}>
             {/* Chips : scroll horizontal sur mobile, wrap sur desktop */}
             <div className="flex gap-2 overflow-x-auto pb-2 -mx-5 px-5 sm:flex-wrap sm:overflow-x-visible sm:pb-0 sm:mx-0 sm:px-0 mb-8">
@@ -251,7 +251,7 @@ function SpecialitesSection() {
             </Link>
           </FadeIn>
 
-          {/* Right — map placeholder + mini card */}
+          {/* Right · map placeholder + mini card */}
           <FadeIn delay={0.2}>
             <div className="relative rounded-2xl overflow-hidden bg-gray-100 border border-gray-200 aspect-[4/3] flex items-center justify-center">
               <p className="text-gray-400 text-sm font-medium px-6 text-center">
@@ -293,7 +293,7 @@ function SpecialitesSection() {
   );
 }
 
-// ─── Section 4 — Stats ────────────────────────────────────────────────────
+// ─── Section 4 · Stats ────────────────────────────────────────────────────
 // Mobile : divide-y vertical (corrige le divide-x qui cassait sur 1 colonne)
 
 function StatsSection() {
@@ -334,7 +334,7 @@ function StatsSection() {
   );
 }
 
-// ─── Section 5 — Use Cases B2B ────────────────────────────────────────────
+// ─── Section 5 · Use Cases B2B ────────────────────────────────────────────
 // Mobile : tabs en scroll horizontal, layout déjà responsive (grid-cols-1 lg:2)
 
 function UseCasesSection() {
@@ -376,7 +376,7 @@ function UseCasesSection() {
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center"
           >
-            {/* Left — content */}
+            {/* Left · content */}
             <div>
               <Eyebrow>{activeTabData.eyebrow}</Eyebrow>
               <h3 className="font-display font-bold text-2xl text-gray-900 leading-snug mb-4">
@@ -414,10 +414,10 @@ function UseCasesSection() {
               </div>
             </div>
 
-            {/* Right — illustration placeholder */}
+            {/* Right · illustration placeholder */}
             <div className="bg-gray-100 rounded-2xl border border-gray-200 aspect-[4/3] flex items-center justify-center">
               <p className="text-gray-400 text-sm font-medium text-center px-6">
-                Illustration — {activeTabData.label}
+                Illustration · {activeTabData.label}
               </p>
             </div>
           </motion.div>
@@ -427,7 +427,7 @@ function UseCasesSection() {
   );
 }
 
-// ─── Section 6 — Zone B2B sombre ──────────────────────────────────────────
+// ─── Section 6 · Zone B2B sombre ──────────────────────────────────────────
 // Mobile : padding réduit, image dashboard cachée sur mobile (long = inutile)
 
 function B2bZoneSection() {
@@ -458,7 +458,7 @@ function B2bZoneSection() {
           </button>
         </FadeIn>
 
-        {/* Dashboard placeholder — caché sur mobile (déjà après le texte = suffisant) */}
+        {/* Dashboard placeholder · caché sur mobile (déjà après le texte = suffisant) */}
         <FadeIn delay={0.15} className="hidden lg:block">
           <div className="bg-gray-800 rounded-2xl border border-gray-700 aspect-[4/3] flex items-center justify-center">
             <p className="text-gray-500 text-sm font-medium text-center px-6">
@@ -471,7 +471,7 @@ function B2bZoneSection() {
   );
 }
 
-// ─── Section 7 — Témoignages ──────────────────────────────────────────────
+// ─── Section 7 · Témoignages ──────────────────────────────────────────────
 // Mobile : défilement horizontal avec snap, pleine hauteur des cartes
 
 function TemoignagesSection() {
@@ -516,7 +516,7 @@ function TemoignagesSection() {
   );
 }
 
-// ─── Section 8 — CTA Final ────────────────────────────────────────────────
+// ─── Section 8 · CTA Final ────────────────────────────────────────────────
 // Mobile : padding réduit, boutons pleine largeur
 
 function CtaFinalSection() {

@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+﻿import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
@@ -342,7 +342,7 @@ export default function Calendrier() {
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
-              Bus Hocoia — Calendrier
+              Bus Hocoia · Calendrier
             </p>
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-gray-900 leading-tight mb-3">
               Les prochains passages près de chez vous
@@ -370,7 +370,7 @@ export default function Calendrier() {
 
             {/* ── Zone résultats ────────────────────────────────────────── */}
             <div>
-              {/* Barre de recherche — AU-DESSUS des résultats */}
+              {/* Barre de recherche · AU-DESSUS des résultats */}
               <div className="bg-white border border-gray-200 rounded-xl p-3 mb-5 shadow-sm">
                 <div className="flex gap-3 items-center">
                   <div className="flex-1 flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5">
@@ -465,7 +465,7 @@ export default function Calendrier() {
               Déployez Hocoia dans votre territoire
             </h2>
             <p className="text-gray-400 text-sm leading-relaxed mb-8 max-w-md mx-auto">
-              Entreprises, mutuelles, collectivités — organisez des sessions de dépistage pour vos collaborateurs ou administrés.
+              Entreprises, mutuelles, collectivités · organisez des sessions de dépistage pour vos collaborateurs ou administrés.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link

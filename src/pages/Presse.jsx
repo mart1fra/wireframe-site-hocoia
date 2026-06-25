@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import FadeIn from "../components/ui/FadeIn";
@@ -40,7 +40,7 @@ function SectionH2({ children, light = false }) {
   );
 }
 
-// ─── Section A — Hero ─────────────────────────────────────────────────────
+// ─── Section A · Hero ─────────────────────────────────────────────────────
 
 function HeroSection() {
   return (
@@ -84,7 +84,7 @@ function HeroSection() {
   );
 }
 
-// ─── Section C — Chiffres & Contexte ──────────────────────────────────────
+// ─── Section C · Chiffres & Contexte ──────────────────────────────────────
 
 function ChiffresContexteSection() {
   return (
@@ -121,7 +121,7 @@ function ChiffresContexteSection() {
   );
 }
 
-// ─── Section D — Ils parlent de nous (slider) ─────────────────────────────
+// ─── Section D · Ils parlent de nous (slider) ─────────────────────────────
 
 const ARTICLES_VISIBLE = 3;
 
@@ -200,7 +200,7 @@ function IlsParlentDeNousSection() {
   );
 }
 
-// ─── Section F — Kit média ─────────────────────────────────────────────────
+// ─── Section F · Kit média ─────────────────────────────────────────────────
 
 function KitMediaSection() {
   return (
@@ -255,7 +255,7 @@ function KitMediaSection() {
   );
 }
 
-// ─── Section G — Contact presse ────────────────────────────────────────────
+// ─── Section G · Contact presse ────────────────────────────────────────────
 
 function PresseForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -298,7 +298,7 @@ function PresseForm() {
               Envoyer ma demande →
             </button>
             <p className="text-[11px] text-gray-400 text-center pt-1">
-              Données traitées conformément au RGPD — réponse sous 24h ouvrées.
+              Données traitées conformément au RGPD · réponse sous 24h ouvrées.
             </p>
           </motion.form>
         ) : (
@@ -348,7 +348,7 @@ function ContactPresseSection() {
           </div>
         </FadeIn>
 
-        {/* Colonne droite — formulaire */}
+        {/* Colonne droite · formulaire */}
         <FadeIn delay={0.1}>
           <PresseForm />
         </FadeIn>

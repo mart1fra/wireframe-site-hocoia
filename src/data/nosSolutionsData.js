@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Nos solutions de santé mobile",
@@ -9,7 +9,7 @@ export const hero = {
     { text: "partout.", italic: true },
   ],
   subtitle:
-    "Hocoia conçoit et déploie des cabinets médicaux mobiles et connectés — du dépistage du cancer du sein à la médecine générale, en passant par la dermatologie. Chaque solution est pensée pour un usage précis, dans les territoires, les entreprises ou les établissements de santé.",
+    "Hocoia conçoit et déploie des cabinets médicaux mobiles et connectés · du dépistage du cancer du sein à la médecine générale, en passant par la dermatologie. Chaque solution est pensée pour un usage précis, dans les territoires, les entreprises ou les établissements de santé.",
   checks: [
     "Cabinets médicaux mobiles certifiés et connectés",
     "Téléconsultation assistée par professionnels de santé",
@@ -17,7 +17,7 @@ export const hero = {
     "Déploiement clé en main partout en France",
     "MédicoBus et MammoBus référencés RESAH",
   ],
-  imagePlaceholder: "Visuel — La gamme Hocoia (MédicoBus, MammoBus, DermatoBus)",
+  imagePlaceholder: "Visuel · La gamme Hocoia (MédicoBus, MammoBus, DermatoBus)",
 };
 
 // ─── Introduction ──────────────────────────────────────────────────────────
@@ -34,7 +34,7 @@ export const intro = {
 export const solutions = [
   {
     id: "medicobus",
-    badge: "Polyvalent — Médecine générale",
+    badge: "Polyvalent · Médecine générale",
     h3: "MédicoBus",
     paragraph:
       "Un cabinet médical mobile et connecté de moins de 3,5 tonnes. Pensé pour la médecine générale, le check-up santé, la santé de la femme et la prévention cardiovasculaire en tout territoire.",
@@ -46,12 +46,12 @@ export const solutions = [
     audiences: ["Collectivités", "Entreprises", "Mutuelles", "Établissements de santé", "CPTS / MSP"],
     ctaLabel: "Découvrir le MédicoBus →",
     ctaHref: "/produits/medicobus",
-    imagePlaceholder: "MédicoBus — cabinet médical mobile polyvalent",
+    imagePlaceholder: "MédicoBus · cabinet médical mobile polyvalent",
     note: null,
   },
   {
     id: "mammobus",
-    badge: "Spécialisé — Cancer du sein",
+    badge: "Spécialisé · Cancer du sein",
     h3: "MammoBus",
     paragraph:
       "Une unité mobile de mammographie unique en France à moins de 3,5 tonnes. Dépistage organisé et individuel du cancer du sein, partout dans les territoires.",
@@ -63,12 +63,12 @@ export const solutions = [
     audiences: ["Collectivités", "Entreprises", "Mutuelles", "Établissements de santé"],
     ctaLabel: "Découvrir le MammoBus →",
     ctaHref: "/mammobus",
-    imagePlaceholder: "MammoBus — mammographie mobile",
+    imagePlaceholder: "MammoBus · mammographie mobile",
     note: null,
   },
   {
     id: "dermatobus",
-    badge: "Spécialisé — Cancer de la peau",
+    badge: "Spécialisé · Cancer de la peau",
     h3: "DermatoBus",
     paragraph:
       "Cabinet mobile dédié au dépistage du cancer de la peau. Cartographie corps entier, IA mélanome, télé-expertise par des onco-dermatologues partenaires.",
@@ -80,8 +80,8 @@ export const solutions = [
     audiences: ["Collectivités", "CPTS / MSP", "Mutuelles", "Établissements de santé"],
     ctaLabel: "Découvrir le DermatoBus →",
     ctaHref: "/dermatobus",
-    imagePlaceholder: "DermatoBus — dépistage cancer de la peau",
-    note: "Lancement pilote — automne 2026 en Normandie",
+    imagePlaceholder: "DermatoBus · dépistage cancer de la peau",
+    note: "Lancement pilote · automne 2026 en Normandie",
   },
 ];
 
@@ -217,7 +217,7 @@ export const modelesEngagement = {
     tag: "Acquisition / Location longue durée",
     title: "Un bus médical conçu selon vos spécifications",
     description:
-      "Hocoia conçoit et fabrique votre bus médical sur mesure — spécialités, équipements, identité visuelle. Vous en devenez propriétaire ou locataire longue durée, opérable en autonomie ou avec les équipes Hocoia.",
+      "Hocoia conçoit et fabrique votre bus médical sur mesure · spécialités, équipements, identité visuelle. Vous en devenez propriétaire ou locataire longue durée, opérable en autonomie ou avec les équipes Hocoia.",
     points: [
       "Spécialités et équipements configurés selon votre cahier des charges",
       "Acquisition en pleine propriété ou location longue durée (LLD)",
@@ -230,7 +230,7 @@ export const modelesEngagement = {
     tag: "Prestation de service",
     title: "Ou déléguez avec une prestation Hocoia",
     description:
-      "Hocoia déploie son bus sur votre territoire pour une campagne ponctuelle. Équipes médicales, organisation, données — tout est inclus, sans investissement initial.",
+      "Hocoia déploie son bus sur votre territoire pour une campagne ponctuelle. Équipes médicales, organisation, données · tout est inclus, sans investissement initial.",
     specialites: ["Cardiologie", "Dermatologie", "Mammographie", "Médecine générale", "Gynécologie", "Ophtalmologie"],
     cta: "Organiser une campagne →",
   },

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../../components/ui/FadeIn";
 
@@ -148,7 +148,7 @@ const timeline = [
   },
 ];
 
-// ─── Section 1 — Hero ─────────────────────────────────────────────────────
+// ─── Section 1 · Hero ─────────────────────────────────────────────────────
 
 function HeroSection() {
   return (
@@ -171,7 +171,7 @@ function HeroSection() {
   );
 }
 
-// ─── Section 2 — Stats ────────────────────────────────────────────────────
+// ─── Section 2 · Stats ────────────────────────────────────────────────────
 
 function StatsSection() {
   return (
@@ -201,14 +201,14 @@ function StatsSection() {
   );
 }
 
-// ─── Section 3 — Constat / Réponse ───────────────────────────────────────
+// ─── Section 3 · Constat / Réponse ───────────────────────────────────────
 
 function ConstantReponseSection() {
   return (
     <section className="bg-gray-50 py-24 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
 
-        {/* Gauche — Constat */}
+        {/* Gauche · Constat */}
         <FadeIn>
           <div className="bg-white rounded-2xl p-8 h-full flex flex-col">
             <h2 className="font-display font-bold text-2xl text-gray-900 leading-tight mb-4">
@@ -229,7 +229,7 @@ function ConstantReponseSection() {
           </div>
         </FadeIn>
 
-        {/* Droite — Réponse */}
+        {/* Droite · Réponse */}
         <FadeIn delay={0.1}>
           <div className="bg-gray-900 rounded-2xl p-8 h-full flex flex-col">
             <h2 className="font-display font-bold text-2xl text-white leading-tight mb-4">
@@ -257,7 +257,7 @@ function ConstantReponseSection() {
   );
 }
 
-// ─── Section 4 — Mission ─────────────────────────────────────────────────
+// ─── Section 4 · Mission ─────────────────────────────────────────────────
 
 function MissionSection() {
   return (
@@ -276,7 +276,7 @@ function MissionSection() {
   );
 }
 
-// ─── Section 5 — Vision ──────────────────────────────────────────────────
+// ─── Section 5 · Vision ──────────────────────────────────────────────────
 
 function VisionSection() {
   return (
@@ -317,7 +317,7 @@ function VisionSection() {
   );
 }
 
-// ─── Section 6 — Valeurs ─────────────────────────────────────────────────
+// ─── Section 6 · Valeurs ─────────────────────────────────────────────────
 
 function ValeursSection() {
   return (
@@ -346,14 +346,14 @@ function ValeursSection() {
   );
 }
 
-// ─── Section 7 — Fondateurs + Timeline ───────────────────────────────────
+// ─── Section 7 · Fondateurs + Timeline ───────────────────────────────────
 
 function FoundersSection() {
   return (
     <section className="bg-white py-24 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-14">
 
-        {/* Gauche — Fondateurs */}
+        {/* Gauche · Fondateurs */}
         <FadeIn>
           <h2 className="font-display font-bold text-3xl text-gray-900 leading-tight mb-4">
             Fondée par un médecin et deux ingénieurs.
@@ -372,7 +372,7 @@ function FoundersSection() {
           </div>
         </FadeIn>
 
-        {/* Droite — Timeline */}
+        {/* Droite · Timeline */}
         <FadeIn delay={0.1}>
           <h2 className="font-display font-bold text-3xl text-gray-900 leading-tight mb-10">
             D'Ubidoc à Hocoia.
@@ -410,7 +410,7 @@ function FoundersSection() {
   );
 }
 
-// ─── Section 8 — CTA Final ────────────────────────────────────────────────
+// ─── Section 8 · CTA Final ────────────────────────────────────────────────
 
 function CtaSection() {
   return (

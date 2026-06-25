@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 
@@ -165,7 +165,7 @@ function ContactForm() {
                 <option value="autre">Autre demande</option>
               </select>
 
-              {/* Ville — conditionnelle */}
+              {/* Ville · conditionnelle */}
               <AnimatePresence>
                 {showVille && (
                   <motion.div
@@ -262,7 +262,7 @@ function HeroLeft() {
         </div>
         <p className="text-xs text-gray-600 leading-snug">
           <span className="font-semibold text-gray-900">Couverture nationale</span>{" "}
-          — France métropolitaine & DOM · International en déploiement
+          · France métropolitaine & DOM · International en déploiement
         </p>
       </motion.div>
     </div>

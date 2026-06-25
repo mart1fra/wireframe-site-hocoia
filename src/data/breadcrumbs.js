@@ -1,4 +1,4 @@
-// Mappe chaque route à son fil d'ariane.
+﻿// Mappe chaque route à son fil d'ariane.
 // Format : tableau d'objets { label, href }
 // Le dernier élément est la page actuelle (pas de href nécessaire, rendu en texte)
 
@@ -10,7 +10,7 @@ export const breadcrumbsMap = {
   "/patient":                       [{ label: "Vous êtes" }, { label: "Patient" }],
   "/professionnels-de-sante":       [{ label: "Vous êtes" }, { label: "Professionnels de santé" }],
 
-  // ─── Solutions — services ──────────────────────────────────────────────────
+  // ─── Solutions · services ──────────────────────────────────────────────────
   "/nos-solutions":                [{ label: "Nos solutions" }],
   "/solutions/prevention-cardio":  [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Prévention cardiovasculaire" }],
   "/solutions/cancer-peau":        [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Cancer de la peau" }],
@@ -18,7 +18,7 @@ export const breadcrumbsMap = {
   "/solutions/cancer-sein":        [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Cancer du sein" }],
   "/solutions/sante-femme":        [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Santé de la femme" }],
 
-  // ─── Solutions — produits ──────────────────────────────────────────────────
+  // ─── Solutions · produits ──────────────────────────────────────────────────
   "/acquerir-un-bus":       [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "Acquérir un bus" }],
   "/produits/medicobus":    [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "MédicoBus" }],
   "/mammobus":              [{ label: "Nos solutions", href: "/nos-solutions" }, { label: "MammoBus" }],

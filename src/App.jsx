@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+﻿import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 
 import Home               from "./pages/Home";
@@ -59,14 +59,14 @@ export default function App() {
       <Route path="/patient"             element={<Wrap><Patient /></Wrap>} />
       <Route path="/professionnels-de-sante" element={<Wrap><ProSante /></Wrap>} />
 
-      {/* Solutions — Services */}
+      {/* Solutions · Services */}
       <Route path="/solutions/prevention-cardio" element={<Wrap><PreventionCardio /></Wrap>} />
       <Route path="/solutions/cancer-peau"        element={<Wrap><CancerPeau /></Wrap>} />
       <Route path="/solutions/checkup"            element={<Wrap><Checkup /></Wrap>} />
       <Route path="/solutions/cancer-sein"        element={<Wrap><CancerSein /></Wrap>} />
       <Route path="/solutions/sante-femme"        element={<Wrap><SanteFemme /></Wrap>} />
 
-      {/* Solutions — Produits */}
+      {/* Solutions · Produits */}
       <Route path="/acquerir-un-bus"       element={<Wrap><AcquerirUnBus /></Wrap>} />
       <Route path="/produits/medicobus"    element={<Wrap><MedicoBus /></Wrap>} />
       <Route path="/mammobus"              element={<Wrap><MammoBus /></Wrap>} />
@@ -108,7 +108,7 @@ export default function App() {
       {/* Plan du site */}
       <Route path="/plan-du-site" element={<Layout hidePartners><PlanDuSite /></Layout>} />
 
-      {/* Avis — page SEO uniquement */}
+      {/* Avis · page SEO uniquement */}
       <Route path="/avis" element={<Wrap><Avis /></Wrap>} />
     </Routes>
   );

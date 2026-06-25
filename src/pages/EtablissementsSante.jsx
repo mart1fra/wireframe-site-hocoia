@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+﻿import { Fragment, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import FadeIn from "../components/ui/FadeIn";
@@ -163,7 +163,7 @@ function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Colonne droite — formulaire */}
+        {/* Colonne droite · formulaire */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -416,7 +416,7 @@ function AchatSurMesureSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-          {/* Carte Prestation — blanche */}
+          {/* Carte Prestation · blanche */}
           <FadeIn>
             <div className="bg-white border border-gray-200 rounded-2xl p-7 h-full flex flex-col">
               <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-gray-100 text-gray-600 mb-5 self-start">
@@ -444,7 +444,7 @@ function AchatSurMesureSection() {
             </div>
           </FadeIn>
 
-          {/* Carte Acquisition — noire */}
+          {/* Carte Acquisition · noire */}
           <FadeIn delay={0.1}>
             <div className="bg-gray-900 rounded-2xl p-7 h-full flex flex-col">
               <span className="inline-block text-[10px] font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full bg-white/10 text-white mb-5 self-start">
@@ -654,13 +654,13 @@ export default function EtablissementsSante() {
       <PartnersSection />
       <UseCasesSection />
 
-      {/* 2. Comment ça marche — méthode + parcours + HocoApp */}
+      {/* 2. Comment ça marche · méthode + parcours + HocoApp */}
       <HowItWorksSection />
 
       {/* 3. Acquisition sur mesure */}
       <AchatSurMesureSection />
 
-      {/* 4. Réassurance — témoignages */}
+      {/* 4. Réassurance · témoignages */}
       <TemoignagesSection />
       <StatsSection />
 

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+﻿import { Link } from "react-router-dom";
 import { navigation, pagesSecondaires } from "../../data/arborescence";
 
 const solutions = navigation.find((n) => n.id === "solutions");
@@ -48,7 +48,7 @@ export default function Footer() {
         {/* Columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
 
-          {/* Col 1 — Brand */}
+          {/* Col 1 · Brand */}
           <div>
             <Link
               to="/"
@@ -59,14 +59,14 @@ export default function Footer() {
             <p className="text-sm text-gray-400 leading-relaxed mb-5">
               La santé en tout lieu.
               <br />
-              Santé mobile, connectée et préventive — accessible à tous.
+              Santé mobile, connectée et préventive · accessible à tous.
             </p>
             <p className="text-xs text-gray-600 leading-relaxed">
               L'acteur de référence français de la santé mobile et connectée.
             </p>
           </div>
 
-          {/* Col 2 — Solutions */}
+          {/* Col 2 · Solutions */}
           <FooterColumn title="Solutions">
             <FooterLinks
               items={solutions.children}
@@ -74,7 +74,7 @@ export default function Footer() {
             />
           </FooterColumn>
 
-          {/* Col 3 — Ressources */}
+          {/* Col 3 · Ressources */}
           <FooterColumn title="Ressources">
             <FooterLinks
               items={ressources.children}
@@ -82,7 +82,7 @@ export default function Footer() {
             />
           </FooterColumn>
 
-          {/* Col 4 — Hocoia */}
+          {/* Col 4 · Hocoia */}
           <div className="space-y-7">
             <FooterColumn title="Hocoia">
               <FooterLinks

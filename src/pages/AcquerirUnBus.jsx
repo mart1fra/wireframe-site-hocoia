@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+﻿import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
@@ -101,7 +101,7 @@ function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Colonne droite — formulaire */}
+        {/* Colonne droite · formulaire */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -188,7 +188,7 @@ function PourquoiSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-14 items-start">
 
-          {/* Gauche — contenu existant */}
+          {/* Gauche · contenu existant */}
           <div>
             <FadeIn className="mb-10">
               <Eyebrow>{pourquoi.eyebrow}</Eyebrow>
@@ -217,12 +217,12 @@ function PourquoiSection() {
             </motion.div>
           </div>
 
-          {/* Droite — cas client Verdun */}
+          {/* Droite · cas client Verdun */}
           <FadeIn delay={0.15}>
             <div className="bg-gray-50 border border-gray-200 rounded-2xl overflow-hidden sticky top-8">
               {/* Placeholder image bus */}
               <div className="w-full bg-gray-200 border-b border-gray-200 flex items-center justify-center" style={{ height: 180 }}>
-                <p className="text-gray-400 text-xs text-center px-4">Photo — PneumoBus Grand Verdun</p>
+                <p className="text-gray-400 text-xs text-center px-4">Photo · PneumoBus Grand Verdun</p>
               </div>
 
               <div className="p-6">

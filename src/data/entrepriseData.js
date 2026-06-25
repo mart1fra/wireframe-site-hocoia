@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "",
@@ -170,7 +170,7 @@ export const videoTestimonial = {
     "Ce type d'offre répond à un vrai besoin.",
   quoteAuthor: "Client Hocoia",
   videoLabel: "Cas Boardriders · Retour d'expérience",
-  videoMeta: "Tournage sur site — Entreprise Boardriders",
+  videoMeta: "Tournage sur site · Entreprise Boardriders",
 };
 
 // ─── Chiffres clés ────────────────────────────────────────────────────────
@@ -241,7 +241,7 @@ export const processus = {
       day: "Étape 3",
       title: "Validation & organisation",
       description:
-        "Contrat signé, communication interne préparée, logistique bus planifiée avec votre équipe. Hébergement HDS et données anonymisées — aucun accès employeur aux résultats individuels.",
+        "Contrat signé, communication interne préparée, logistique bus planifiée avec votre équipe. Hébergement HDS et données anonymisées · aucun accès employeur aux résultats individuels.",
     },
     {
       id: "s4",
@@ -352,10 +352,10 @@ export const modeles = {
     tag: "Sur mesure",
     title: "Un bus médical aux couleurs de votre structure",
     description:
-      "Acquérez un bus médical entièrement configuré selon les spécialités de votre secteur d'activité. Vos couleurs, votre logo, votre programme de prévention — déployé quand vous le décidez, là où vous en avez besoin.",
+      "Acquérez un bus médical entièrement configuré selon les spécialités de votre secteur d'activité. Vos couleurs, votre logo, votre programme de prévention · déployé quand vous le décidez, là où vous en avez besoin.",
     points: [
       "Spécialités choisies selon vos besoins RH et secteur",
-      "Branding complet — couleurs et logo de votre structure",
+      "Branding complet · couleurs et logo de votre structure",
       "Formation et accompagnement des équipes embarquées",
       "Maintenance et support opérationnel Hocoia inclus",
     ],

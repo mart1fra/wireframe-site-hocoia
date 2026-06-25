@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Expertise · Santé de la femme · Gynécologie & suivi mobile",
@@ -8,19 +8,19 @@ export const hero = {
     italicB: "accessible à toutes.",
   },
   subtitle:
-    "1 femme sur 3 ne bénéficie pas d'un suivi gynécologique régulier faute d'accès. Le MédicoBus Hocoia apporte la consultation sage-femme directement dans votre commune — frottis, suivi contraceptif, dépistage.",
+    "1 femme sur 3 ne bénéficie pas d'un suivi gynécologique régulier faute d'accès. Le MédicoBus Hocoia apporte la consultation sage-femme directement dans votre commune · frottis, suivi contraceptif, dépistage.",
   checks: [
     "3 000 cas de cancer du col de l'utérus évitables par an en France",
     "18 mois de délai moyen chez un gynécologue en zone rurale [À VÉRIFIER]",
     "Frottis, palpation mammaire, consultation sage-femme à bord",
-    "Résultats synchrones — résultats immédiats ou sous 48h",
+    "Résultats synchrones · résultats immédiats ou sous 48h",
     "Gratuit pour la patiente, organisé par votre collectivité ou employeur",
   ],
   ctaPatient: "Trouver une consultation femme près de chez moi",
   ctaPatientHref: "/patient",
   ctaOrga: "Déployer un programme santé femme",
   ctaOrgaHref: "/produits/medicobus",
-  imagePlaceholder: "Consultation gynécologique dans le MédicoBus — sage-femme et patiente",
+  imagePlaceholder: "Consultation gynécologique dans le MédicoBus · sage-femme et patiente",
 };
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
@@ -38,8 +38,8 @@ export const pourquoi = {
   eyebrow: "Pourquoi un suivi gynécologique régulier",
   h2: "La santé de la femme : ce qu'il faut savoir",
   paragraphs: [
-    "Le suivi gynécologique régulier est essentiel à tous les âges de la vie — de l'adolescence à la ménopause. Il permet de prévenir et dépister des pathologies graves (cancer du col, cancer du sein, IST), d'assurer le suivi contraceptif et de répondre aux questions de santé intime souvent difficiles à aborder.",
-    "Or, en France, l'accès à la gynécologie se détériore. Désertification médicale, délais d'attente, frein financier — des milliers de femmes renoncent à des soins pourtant indispensables.",
+    "Le suivi gynécologique régulier est essentiel à tous les âges de la vie · de l'adolescence à la ménopause. Il permet de prévenir et dépister des pathologies graves (cancer du col, cancer du sein, IST), d'assurer le suivi contraceptif et de répondre aux questions de santé intime souvent difficiles à aborder.",
+    "Or, en France, l'accès à la gynécologie se détériore. Désertification médicale, délais d'attente, frein financier · des milliers de femmes renoncent à des soins pourtant indispensables.",
   ],
   encadres: [
     {
@@ -80,7 +80,7 @@ export const depistageHocoia = {
   ],
   bus: {
     badge: "MédicoBus · Thématique santé de la femme",
-    titre: "MédicoBus — Santé Femme",
+    titre: "MédicoBus · Santé Femme",
     description:
       "Cabinet médical mobile configuré pour la santé gynécologique. Sage-femme à bord, frottis, palpation mammaire, suivi contraceptif, échographe pelvien.",
     href: "/produits/medicobus",
@@ -141,7 +141,7 @@ export const pourQui = {
   eyebrow: "À qui s'adresse ce programme",
   h2: "Pour les femmes comme pour les organisations",
   subtitle:
-    "Patientes, entreprises, collectivités, établissements — le suivi gynécologique mobile s'adapte à tous les contextes.",
+    "Patientes, entreprises, collectivités, établissements · le suivi gynécologique mobile s'adapte à tous les contextes.",
   cards: [
     {
       id: "pq1",
@@ -157,7 +157,7 @@ export const pourQui = {
       titre: "Entreprises & mutuelles",
       description:
         "La santé gynécologique est un angle mort de la prévention en entreprise. Proposez une journée santé femme à vos collaboratrices sur site.",
-      casType: "Cas type : journée santé femmes dans un site industriel — 60 consultations en 2 jours.",
+      casType: "Cas type : journée santé femmes dans un site industriel · 60 consultations en 2 jours.",
       href: "/entreprises-et-mutuelles",
       cta: "Solutions entreprise →",
     },
@@ -191,7 +191,7 @@ export const temoignages = {
     {
       id: "t1",
       contexte: "Coordonnatrice CLS",
-      quote: "Un bilan extrêmement positif. Toutes les patientes ont exprimé leur satisfaction — ce dispositif répond à un vrai besoin que nos structures ne peuvent pas couvrir seules.",
+      quote: "Un bilan extrêmement positif. Toutes les patientes ont exprimé leur satisfaction · ce dispositif répond à un vrai besoin que nos structures ne peuvent pas couvrir seules.",
       author: "Anne Haller",
       role: "Coordonnatrice du Contrat Local de Santé",
     },
@@ -205,7 +205,7 @@ export const temoignages = {
     {
       id: "t3",
       contexte: "DRH · Entreprise industrielle",
-      quote: "Nous avons organisé une journée santé femme sur notre site. Les retours ont été excellents — les collaboratrices ont apprécié la qualité de l'accueil et la confidentialité.",
+      quote: "Nous avons organisé une journée santé femme sur notre site. Les retours ont été excellents · les collaboratrices ont apprécié la qualité de l'accueil et la confidentialité.",
       author: "Responsable RH",
       role: "Site industriel, Grand Est",
     },
@@ -224,8 +224,8 @@ export const maillage = {
     { id: "e4", label: "Cancer de la peau",           href: "/solutions/cancer-peau" },
   ],
   busLies: [
-    { id: "b1", label: "MédicoBus — santé de la femme",      href: "/produits/medicobus" },
-    { id: "b2", label: "MammoBus — dépistage cancer du sein", href: "/mammobus" },
+    { id: "b1", label: "MédicoBus · santé de la femme",      href: "/produits/medicobus" },
+    { id: "b2", label: "MammoBus · dépistage cancer du sein", href: "/mammobus" },
   ],
 };
 
@@ -279,9 +279,9 @@ export const faq = {
 export const ctaFinal = {
   h2: "La santé de la femme mérite une attention particulière.",
   subtitle:
-    "Patiente ou organisation — Hocoia vous accompagne pour que le suivi gynécologique soit accessible à toutes.",
-  ctaPatient: "Je suis patiente — Trouver une date",
+    "Patiente ou organisation · Hocoia vous accompagne pour que le suivi gynécologique soit accessible à toutes.",
+  ctaPatient: "Je suis patiente · Trouver une date",
   ctaPatientHref: "/patient",
-  ctaOrga: "Je suis une organisation — Demander une présentation",
+  ctaOrga: "Je suis une organisation · Demander une présentation",
   ctaOrgaHref: "/produits/medicobus",
 };

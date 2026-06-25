@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "",
@@ -121,7 +121,7 @@ export const communiques = {
 export const kitMedia = {
   eyebrow: "",
   h2: "Kits médias à télécharger",
-  subtitle: "Un kit complet par événement — communiqué officiel, photos, logo HD et éléments de langage.",
+  subtitle: "Un kit complet par événement · communiqué officiel, photos, logo HD et éléments de langage.",
   kits: [
     {
       id: "k1",
@@ -175,7 +175,7 @@ export const contactPresse = {
   subtitle:
     "Pour toute demande d'interview, d'information ou de rendez-vous, contactez notre équipe presse.",
   contact: {
-    nom:       "Service Presse — Hocoia",
+    nom:       "Service Presse · Hocoia",
     email:     "presse@hocoia.com",
     telephone: "+33 (0)3 10 45 63 65",
     adresse:   "8 place de l'Hôpital, 67000 Strasbourg",

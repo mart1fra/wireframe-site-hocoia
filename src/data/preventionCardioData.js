@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Expertise · Prévention cardiovasculaire · ECG & bilan cardio mobile",
@@ -8,7 +8,7 @@ export const hero = {
     italicB: "cœur ne parle.",
   },
   subtitle:
-    "1ère cause de mortalité en France chez les femmes. Les maladies cardiovasculaires tuent 147 000 personnes par an — la plupart auraient pu être prévenues. Le MédicoBus Hocoia apporte le bilan cardio mobile directement dans votre commune.",
+    "1ère cause de mortalité en France chez les femmes. Les maladies cardiovasculaires tuent 147 000 personnes par an · la plupart auraient pu être prévenues. Le MédicoBus Hocoia apporte le bilan cardio mobile directement dans votre commune.",
   checks: [
     "1ère cause de mortalité en France chez les femmes",
     "12 millions de patients hypertendus dont 30% non diagnostiqués",
@@ -20,7 +20,7 @@ export const hero = {
   ctaPatientHref: "/patient",
   ctaOrga: "Déployer un programme cardio",
   ctaOrgaHref: "/produits/medicobus",
-  imagePlaceholder: "Bilan cardiovasculaire dans le MédicoBus — infirmière réalisant un ECG",
+  imagePlaceholder: "Bilan cardiovasculaire dans le MédicoBus · infirmière réalisant un ECG",
 };
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
@@ -39,7 +39,7 @@ export const pourquoi = {
   h2: "Ce qu'il faut savoir sur les maladies cardiovasculaires",
   paragraphs: [
     "Les maladies cardiovasculaires regroupent l'infarctus du myocarde, l'AVC, l'insuffisance cardiaque, l'hypertension et l'arythmie. Ensemble, elles représentent la 1ère cause de mortalité en France chez la femme et la 2ème cause chez l'homme.",
-    "La plupart des facteurs de risque — hypertension, diabète, cholestérol élevé — sont silencieux. Ils ne provoquent pas de symptômes avant qu'un événement grave survienne. C'est pourquoi le dépistage précoce est vital.",
+    "La plupart des facteurs de risque · hypertension, diabète, cholestérol élevé · sont silencieux. Ils ne provoquent pas de symptômes avant qu'un événement grave survienne. C'est pourquoi le dépistage précoce est vital.",
   ],
   encadres: [
     {
@@ -69,18 +69,18 @@ export const depistageHocoia = {
   eyebrow: "La solution Hocoia",
   h2: "Le MédicoBus cardio : le bilan qui vient à vous",
   paragraphs: [
-    "En zone rurale, obtenir un rendez-vous avec un cardiologue peut prendre plusieurs mois. Hocoia a configuré son MédicoBus pour la thématique cardiovasculaire : ECG, tensiomètre connecté, mini-labo biologie, mesures anthropométriques et échographie des carotides — tout à bord.",
+    "En zone rurale, obtenir un rendez-vous avec un cardiologue peut prendre plusieurs mois. Hocoia a configuré son MédicoBus pour la thématique cardiovasculaire : ECG, tensiomètre connecté, mini-labo biologie, mesures anthropométriques et échographie des carotides · tout à bord.",
     "Le protocole associe une infirmière à bord et un cardiologue en télé-expertise asynchrone. Les résultats sont analysés par le cardiologue et restitués par email sécurisé dans les semaines suivantes, avec les préconisations de suivi.",
   ],
   differenciateurs: [
-    { id: "d1", titre: "ECG + bilan lipidique à bord", description: "ECG de repos, glycémie, cholestérol, bilan lipidique complet — sans rendez-vous en laboratoire." },
+    { id: "d1", titre: "ECG + bilan lipidique à bord", description: "ECG de repos, glycémie, cholestérol, bilan lipidique complet · sans rendez-vous en laboratoire." },
     { id: "d2", titre: "Échographie des carotides", description: "Détection des plaques et sténoses, visualisation du risque AVC en temps réel." },
     { id: "d3", titre: "Télé-expertise cardiologue", description: "Analyse asynchrone des résultats par un cardiologue. Diagnostic de qualité spécialisée, depuis n'importe quel territoire." },
-    { id: "d4", titre: "Profil de risque complet", description: "IMC, périmètre abdominal, tension, constantes — pour établir un score de risque cardiovasculaire global." },
+    { id: "d4", titre: "Profil de risque complet", description: "IMC, périmètre abdominal, tension, constantes · pour établir un score de risque cardiovasculaire global." },
   ],
   bus: {
     badge: "MédicoBus · Thématique cardiovasculaire",
-    titre: "MédicoBus — Cardiologie",
+    titre: "MédicoBus · Cardiologie",
     description:
       "Cabinet médical mobile polyvalent configuré pour la prévention cardiovasculaire. ECG, tensiomètre, mini-labo, échographie des carotides, télé-expertise cardiologue.",
     href: "/produits/medicobus",
@@ -131,7 +131,7 @@ export const benefices = {
     { id: "b1", titre: "Détection précoce des risques silencieux", description: "HTA, diabète, dyslipidémie : des facteurs de risque qui ne font pas mal mais qui tuent. Le dépistage permet d'agir avant l'infarctus ou l'AVC." },
     { id: "b2", titre: "Accessible sans attente", description: "Créneaux disponibles en quelques jours, dans votre commune. Pas besoin d'un rendez-vous chez le cardiologue." },
     { id: "b3", titre: "Qualité médicale spécialisée", description: "Diagnostic par un cardiologue, pas seulement une mesure de tension. Résultats transmis à votre médecin traitant avec préconisations." },
-    { id: "b4", titre: "Bilan complet en 25 minutes", description: "ECG, biologie, constantes et score de risque — tout en une seule session, sans multiplier les déplacements." },
+    { id: "b4", titre: "Bilan complet en 25 minutes", description: "ECG, biologie, constantes et score de risque · tout en une seule session, sans multiplier les déplacements." },
   ],
 };
 
@@ -141,7 +141,7 @@ export const pourQui = {
   eyebrow: "À qui s'adresse ce dépistage",
   h2: "Pour les patients comme pour les organisations",
   subtitle:
-    "Patients à risque, entreprises, collectivités, établissements — la prévention cardiovasculaire mobile s'adapte à tous les contextes.",
+    "Patients à risque, entreprises, collectivités, établissements · la prévention cardiovasculaire mobile s'adapte à tous les contextes.",
   cards: [
     {
       id: "pq1",
@@ -156,7 +156,7 @@ export const pourQui = {
       id: "pq2",
       titre: "Entreprises & mutuelles",
       description:
-        "Le risque cardiovasculaire est la 1ère cause d'absentéisme de longue durée. Proposez un bilan cardio à vos collaborateurs — investissement santé mesurable.",
+        "Le risque cardiovasculaire est la 1ère cause d'absentéisme de longue durée. Proposez un bilan cardio à vos collaborateurs · investissement santé mesurable.",
       casType: "Cas type : bilan cardio pour 200 salariés en 3 jours sur site.",
       href: "/entreprises-et-mutuelles",
       cta: "Solutions entreprise →",
@@ -207,7 +207,7 @@ export const temoignages = {
       contexte: "DRH · Entreprise industrielle",
       quote: "Nous cherchions une solution concrète pour la santé de nos collaborateurs. Hocoia a su répondre à notre problématique avec sérieux et réactivité.",
       author: "Responsable RH",
-      role: "Site industriel Grand Est — 800 salariés",
+      role: "Site industriel Grand Est · 800 salariés",
     },
   ],
 };
@@ -224,7 +224,7 @@ export const maillage = {
     { id: "e4", label: "Santé de la femme", href: "/solutions/sante-femme" },
   ],
   busLies: [
-    { id: "b1", label: "MédicoBus — cabinet médical mobile (cardio)", href: "/produits/medicobus" },
+    { id: "b1", label: "MédicoBus · cabinet médical mobile (cardio)", href: "/produits/medicobus" },
   ],
 };
 
@@ -278,9 +278,9 @@ export const faq = {
 export const ctaFinal = {
   h2: "Votre cœur mérite un bilan.",
   subtitle:
-    "Patient ou organisation — Hocoia vous accompagne pour que la prévention cardiovasculaire soit accessible à tous.",
-  ctaPatient: "Je suis patient — Trouver une date",
+    "Patient ou organisation · Hocoia vous accompagne pour que la prévention cardiovasculaire soit accessible à tous.",
+  ctaPatient: "Je suis patient · Trouver une date",
   ctaPatientHref: "/patient",
-  ctaOrga: "Je suis une organisation — Demander une présentation",
+  ctaOrga: "Je suis une organisation · Demander une présentation",
   ctaOrgaHref: "/produits/medicobus",
 };

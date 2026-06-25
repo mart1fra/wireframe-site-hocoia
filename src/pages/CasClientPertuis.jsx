@@ -1,4 +1,4 @@
-/*
+﻿/*
   SEO JSON-LD (à injecter via react-helmet-async en production) :
 
   <script type="application/ld+json">
@@ -74,7 +74,7 @@ function EnteteSection() {
             <span>›</span>
             <Link to="/ressources/cas-clients" className="hover:text-gray-600 transition-colors">Cas clients</Link>
             <span>›</span>
-            <span className="text-gray-600">Mutuelle Générale d'Avignon — Pertuis</span>
+            <span className="text-gray-600">Mutuelle Générale d'Avignon · Pertuis</span>
           </nav>
 
           {/* Badge + tags */}

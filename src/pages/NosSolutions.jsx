@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+﻿import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
@@ -79,7 +79,7 @@ function HeroSection() {
           </motion.ul>
         </motion.div>
 
-        {/* Droite — placeholder image */}
+        {/* Droite · placeholder image */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -196,7 +196,7 @@ function SolutionsSection() {
                 Votre bus entièrement personnalisé
               </p>
               <p className="text-sm text-gray-500 leading-relaxed">
-                Spécialités, équipements, design extérieur et identité visuelle — Hocoia conçoit des unités mobiles clé en main adaptées à votre territoire, votre entreprise ou vos besoins spécifiques.
+                Spécialités, équipements, design extérieur et identité visuelle · Hocoia conçoit des unités mobiles clé en main adaptées à votre territoire, votre entreprise ou vos besoins spécifiques.
               </p>
             </div>
             <div className="shrink-0">

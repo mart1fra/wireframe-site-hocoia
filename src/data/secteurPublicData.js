@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "",
@@ -403,7 +403,7 @@ export const videoTestimonial = {
     "Les créneaux ont tous trouvé preneur, y compris en fin d'année. Toutes les conditions étaient réunies pour faire de cette journée un franc succès.",
   quoteAuthor: "Christian Untereiner, Président CC Pays de Phalsbourg",
   videoLabel: "Cas CC Pays de Phalsbourg · 4:10",
-  videoMeta: "Tournage mars 2025 — Pays de Phalsbourg, Moselle",
+  videoMeta: "Tournage mars 2025 · Pays de Phalsbourg, Moselle",
 };
 
 // ─── FAQ ───────────────────────────────────────────────────────────────────

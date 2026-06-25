@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Arborescence complète du site Hocoia
  * Structure de données consommable par les composants React
  */
@@ -346,16 +346,16 @@ export const ressourcesByType = {
   ],
 
   casClients: [
-    { id: "cc1", title: "Grand assureur — 3 000 collaborateurs dépistés en 6 mois",                audience: "B2B" },
-    { id: "cc2", title: "Territoire Haute-Saône — 12 communes couvertes, 800 bilans réalisés",     audience: "B2B" },
-    { id: "cc3", title: "Partenariat hospitalier à Bordeaux — externalisation mammographie",        audience: "B2B" },
-    { id: "cc4", title: "PME industrielle de 500 salariés — taux participation 74 %",              audience: "B2B" },
-    { id: "cc5", title: "Dépistage itinérant en zone rurale — témoignage d'une patiente",          audience: "Patients" },
-    { id: "cc6", title: "Dr. Leclerc, dermatologue — 3 ans de missions avec Hocoia",               audience: "Pro santé" },
+    { id: "cc1", title: "Grand assureur · 3 000 collaborateurs dépistés en 6 mois",                audience: "B2B" },
+    { id: "cc2", title: "Territoire Haute-Saône · 12 communes couvertes, 800 bilans réalisés",     audience: "B2B" },
+    { id: "cc3", title: "Partenariat hospitalier à Bordeaux · externalisation mammographie",        audience: "B2B" },
+    { id: "cc4", title: "PME industrielle de 500 salariés · taux participation 74 %",              audience: "B2B" },
+    { id: "cc5", title: "Dépistage itinérant en zone rurale · témoignage d'une patiente",          audience: "Patients" },
+    { id: "cc6", title: "Dr. Leclerc, dermatologue · 3 ans de missions avec Hocoia",               audience: "Pro santé" },
   ],
 
   livresBlancs: [
-    { id: "lb1", title: "Santé au travail & absentéisme — état des lieux 2024",                   audience: "B2B" },
+    { id: "lb1", title: "Santé au travail & absentéisme · état des lieux 2024",                   audience: "B2B" },
     { id: "lb2", title: "Dépistage territorial : guide pratique pour les collectivités",           audience: "B2B" },
     { id: "lb3", title: "ROI de la prévention santé en entreprise : méthodologie et résultats",   audience: "B2B" },
     { id: "lb4", title: "Médecine mobile : enjeux et perspectives 2025",                          audience: "Pro santé" },
@@ -365,20 +365,20 @@ export const ressourcesByType = {
 
   videos: [
     { id: "v1", title: "Comment fonctionne le MédicoBus en 3 minutes",                       audience: "Patients" },
-    { id: "v2", title: "Un bilan de santé complet en 30 minutes — comment ça marche ?",      audience: "Patients" },
-    { id: "v3", title: "Témoignages patients — dépistage en bus mobile",                     audience: "Patients" },
-    { id: "v4", title: "Déployer Hocoia dans votre entreprise — replay webinaire",           audience: "B2B" },
+    { id: "v2", title: "Un bilan de santé complet en 30 minutes · comment ça marche ?",      audience: "Patients" },
+    { id: "v3", title: "Témoignages patients · dépistage en bus mobile",                     audience: "Patients" },
+    { id: "v4", title: "Déployer Hocoia dans votre entreprise · replay webinaire",           audience: "B2B" },
     { id: "v5", title: "Présentation de la plateforme Hocoia pour les décideurs RH",         audience: "B2B" },
-    { id: "v6", title: "Formation protocole MammoBus — session certifiante",                 audience: "Pro santé" },
+    { id: "v6", title: "Formation protocole MammoBus · session certifiante",                 audience: "Pro santé" },
   ],
 
   podcasts: [
-    { id: "p1", title: "La médecine mobile avec la Dr. Sophie Martin — Épisode 4",           audience: "Pro santé" },
-    { id: "p2", title: "Recrutement en santé mobile : freins et opportunités — Épisode 7",   audience: "Pro santé" },
-    { id: "p3", title: "L'hôpital hors les murs — interview du Dr. Faure — Épisode 11",      audience: "Pro santé" },
-    { id: "p4", title: "Santé préventive en entreprise : retour d'un DRH — Épisode 2",       audience: "B2B" },
-    { id: "p5", title: "Mutuelle et dépistage : quelle couverture ? — Épisode 6",            audience: "B2B" },
-    { id: "p6", title: "Mon bilan de santé dans un bus — témoignage patient — Épisode 9",   audience: "Patients" },
+    { id: "p1", title: "La médecine mobile avec la Dr. Sophie Martin · Épisode 4",           audience: "Pro santé" },
+    { id: "p2", title: "Recrutement en santé mobile : freins et opportunités · Épisode 7",   audience: "Pro santé" },
+    { id: "p3", title: "L'hôpital hors les murs · interview du Dr. Faure · Épisode 11",      audience: "Pro santé" },
+    { id: "p4", title: "Santé préventive en entreprise : retour d'un DRH · Épisode 2",       audience: "B2B" },
+    { id: "p5", title: "Mutuelle et dépistage : quelle couverture ? · Épisode 6",            audience: "B2B" },
+    { id: "p6", title: "Mon bilan de santé dans un bus · témoignage patient · Épisode 9",   audience: "Patients" },
   ],
 
 };

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import FadeIn from "../ui/FadeIn";
 
@@ -66,7 +66,7 @@ export default function HocoAppSection({ data, variant = "gray", compact = false
     <section className={`${bg} py-24 px-6`}>
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        {/* Colonne gauche — texte + features + CTAs */}
+        {/* Colonne gauche · texte + features + CTAs */}
         <motion.div
           variants={listV}
           initial="hidden"
@@ -128,7 +128,7 @@ export default function HocoAppSection({ data, variant = "gray", compact = false
           </motion.div>
         </motion.div>
 
-        {/* Colonne droite — placeholder mockup */}
+        {/* Colonne droite · placeholder mockup */}
         <FadeIn className="flex justify-center lg:justify-end">
           <div className="w-full max-w-xs aspect-[3/4] bg-gray-100 border border-gray-200 rounded-3xl flex items-center justify-center p-6">
             <p className="text-gray-400 text-sm font-medium text-center leading-relaxed">

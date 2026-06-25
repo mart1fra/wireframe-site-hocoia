@@ -1,4 +1,4 @@
-// ─── Carte pour la page CasClients.jsx ───────────────────────────────────────
+﻿// ─── Carte pour la page CasClients.jsx ───────────────────────────────────────
 
 export const casClientCard = {
   id: "cc-pertuis",
@@ -42,7 +42,7 @@ export const entete = {
   publishedAt: "24 avril 2025",
   readTime: "4 min",
   imagePlaceholder:
-    "Photo — MédicoBus Hocoia installé au CCAS de Pertuis, avril 2025",
+    "Photo · MédicoBus Hocoia installé au CCAS de Pertuis, avril 2025",
 };
 
 // ─── Chiffres clés ────────────────────────────────────────────────────────────
@@ -102,7 +102,7 @@ export const contexteLocal = {
   citation: {
     quote:
       "On s'est aperçu qu'il y avait un souci pour les personnes à avoir des rendez-vous assez spécifiques sur la dermatologie.",
-    auteur: "— Christophe Antonelli",
+    auteur: "Christophe Antonelli",
   },
 };
 
@@ -122,7 +122,7 @@ export const deroulement = {
   citation: {
     quote:
       "On explique très clairement aux gens ce qu'on fait. On leur dit bien que nous ne sommes pas des médecins, mais que nous sommes en lien avec un médecin.",
-    auteur: "— Gaëlle Breton, infirmière à bord du MédicoBus",
+    auteur: "Gaëlle Breton, infirmière à bord du MédicoBus",
   },
 };
 
@@ -212,7 +212,7 @@ export const articlesLies = {
       meta: "Collectivité · Moselle · 2024",
       cta: "Lire le cas →",
       href: null,
-      imagePlaceholder: "Photo — MédicoBus Val de Fensch, 2024",
+      imagePlaceholder: "Photo · MédicoBus Val de Fensch, 2024",
     },
     {
       id: "al2",
@@ -222,7 +222,7 @@ export const articlesLies = {
       meta: "PDF · 16 pages",
       cta: "Télécharger →",
       href: null,
-      imagePlaceholder: "Couverture — Livre blanc mutuelles & prévention santé",
+      imagePlaceholder: "Couverture · Livre blanc mutuelles & prévention santé",
     },
     {
       id: "al3",
@@ -231,7 +231,7 @@ export const articlesLies = {
       meta: "Article · 6 min",
       cta: "Lire l'article →",
       href: null,
-      imagePlaceholder: "Illustration — Télédermatologie Hocoia",
+      imagePlaceholder: "Illustration · Télédermatologie Hocoia",
     },
   ],
   maillageLiens: [

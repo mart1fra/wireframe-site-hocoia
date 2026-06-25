@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+﻿import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../ui/FadeIn";
@@ -38,7 +38,7 @@ function IconBox({ size = "w-10 h-10" }) {
   return <div className={`${size} bg-gray-100 border border-gray-200 rounded-lg shrink-0`} />;
 }
 
-// ─── Section 1 — Hero ─────────────────────────────────────────────────────────
+// ─── Section 1 · Hero ─────────────────────────────────────────────────────────
 
 function HeroSection({ hero }) {
   return (
@@ -89,7 +89,7 @@ function HeroSection({ hero }) {
         </motion.div>
       </div>
 
-      {/* Droite — placeholder */}
+      {/* Droite · placeholder */}
       <motion.div
         initial={{ opacity: 0, x: 16 }}
         animate={{ opacity: 1, x: 0 }}
@@ -104,7 +104,7 @@ function HeroSection({ hero }) {
   );
 }
 
-// ─── Section 2 — Stats ────────────────────────────────────────────────────────
+// ─── Section 2 · Stats ────────────────────────────────────────────────────────
 
 function StatsSection({ stats }) {
   return (
@@ -134,7 +134,7 @@ function StatsSection({ stats }) {
   );
 }
 
-// ─── Section 3 — Pourquoi le dépistage ───────────────────────────────────────
+// ─── Section 3 · Pourquoi le dépistage ───────────────────────────────────────
 
 function PourquoiSection({ pourquoi }) {
   return (
@@ -173,7 +173,7 @@ function PourquoiSection({ pourquoi }) {
   );
 }
 
-// ─── Section 4 — Dépistage mobile Hocoia ─────────────────────────────────────
+// ─── Section 4 · Dépistage mobile Hocoia ─────────────────────────────────────
 
 function DepistageHocoiaSection({ depistageHocoia }) {
   const { bus } = depistageHocoia;
@@ -209,7 +209,7 @@ function DepistageHocoiaSection({ depistageHocoia }) {
           </motion.div>
         </FadeIn>
 
-        {/* Droite — carte bus */}
+        {/* Droite · carte bus */}
         <FadeIn delay={0.1}>
           <div className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-5 sticky top-8">
             <span className="self-start bg-gray-100 border border-gray-200 text-gray-600 text-[10px] font-semibold uppercase tracking-wider px-3 py-1 rounded-full">
@@ -233,7 +233,7 @@ function DepistageHocoiaSection({ depistageHocoia }) {
   );
 }
 
-// ─── Section 5 — Protocole ────────────────────────────────────────────────────
+// ─── Section 5 · Protocole ────────────────────────────────────────────────────
 
 function ProtocoleSection({ protocole }) {
   return (
@@ -282,7 +282,7 @@ function ProtocoleSection({ protocole }) {
   );
 }
 
-// ─── Section 6 — Bénéfices ────────────────────────────────────────────────────
+// ─── Section 6 · Bénéfices ────────────────────────────────────────────────────
 
 function BeneficesSection({ benefices }) {
   return (
@@ -317,7 +317,7 @@ function BeneficesSection({ benefices }) {
   );
 }
 
-// ─── Section 7 — Pour qui ─────────────────────────────────────────────────────
+// ─── Section 7 · Pour qui ─────────────────────────────────────────────────────
 
 function PourQuiSection({ pourQui }) {
   return (
@@ -361,7 +361,7 @@ function PourQuiSection({ pourQui }) {
   );
 }
 
-// ─── Section 8 — Témoignages ──────────────────────────────────────────────────
+// ─── Section 8 · Témoignages ──────────────────────────────────────────────────
 
 function TemoignagesSection({ temoignages }) {
   return (
@@ -403,7 +403,7 @@ function TemoignagesSection({ temoignages }) {
   );
 }
 
-// ─── Section 9 — Maillage interne ────────────────────────────────────────────
+// ─── Section 9 · Maillage interne ────────────────────────────────────────────
 
 function MaillageSection({ maillage }) {
   return (
@@ -456,7 +456,7 @@ function MaillageSection({ maillage }) {
   );
 }
 
-// ─── Section 10 — FAQ ─────────────────────────────────────────────────────────
+// ─── Section 10 · FAQ ─────────────────────────────────────────────────────────
 
 function FaqSection({ faq }) {
   return (
@@ -485,7 +485,7 @@ function FaqSection({ faq }) {
   );
 }
 
-// ─── Section 11 — CTA Final ───────────────────────────────────────────────────
+// ─── Section 11 · CTA Final ───────────────────────────────────────────────────
 
 function CtaFinalSection({ ctaFinal }) {
   return (

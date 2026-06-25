@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Hôpitaux · Cliniques · ESSMS",
@@ -398,7 +398,7 @@ export const videoTestimonial = {
     "Ce partenariat avec Hocoia nous permet d'étendre notre capacité d'expertise dermatologique à des territoires qui n'y ont jamais eu accès, sans mobiliser nos équipes sur le terrain.",
   quoteAuthor: "Dr Lorphelin, Onco-dermatologue CHU de Caen",
   videoLabel: "Présentation Dr Lorphelin · 5:20",
-  videoMeta: "Tournage février 2025 — CHU de Caen",
+  videoMeta: "Tournage février 2025 · CHU de Caen",
 };
 
 // ─── FAQ ───────────────────────────────────────────────────────────────────

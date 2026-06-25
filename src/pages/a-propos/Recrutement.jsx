@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+﻿import { Fragment, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../../components/ui/FadeIn";
 import {
@@ -85,7 +85,7 @@ function PlayButton({ dark = false }) {
   );
 }
 
-// ─── Section 1 — Hero ────────────────────────────────────────────────────────
+// ─── Section 1 · Hero ────────────────────────────────────────────────────────
 
 function HeroSection() {
   return (
@@ -123,7 +123,7 @@ function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Colonne droite — vidéo */}
+        {/* Colonne droite · vidéo */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -149,7 +149,7 @@ function HeroSection() {
   );
 }
 
-// ─── Section 4 — Journée de dépistage ────────────────────────────────────────
+// ─── Section 4 · Journée de dépistage ────────────────────────────────────────
 
 function JourneeDepistageSection() {
   const [activePilule, setActivePilule] = useState(journeeDepistage.pilules[0].id);
@@ -229,7 +229,7 @@ function JourneeDepistageSection() {
   );
 }
 
-// ─── Section 5 — Pourquoi rejoindre ──────────────────────────────────────────
+// ─── Section 5 · Pourquoi rejoindre ──────────────────────────────────────────
 
 function PourquoiRejoindreSection() {
   return (
@@ -267,7 +267,7 @@ function PourquoiRejoindreSection() {
   );
 }
 
-// ─── Section 6 — Équipe interne ───────────────────────────────────────────────
+// ─── Section 6 · Équipe interne ───────────────────────────────────────────────
 
 const MEMBRES_VISIBLE = 4;
 
@@ -362,7 +362,7 @@ function EquipeInterneSection() {
   );
 }
 
-// ─── Section 7 — Processus recrutement ──────────────────────────────────────
+// ─── Section 7 · Processus recrutement ──────────────────────────────────────
 
 function ProcessusSection() {
   return (
@@ -406,7 +406,7 @@ function ProcessusSection() {
   );
 }
 
-// ─── Section 8 — Offres actuelles ────────────────────────────────────────────
+// ─── Section 8 · Offres actuelles ────────────────────────────────────────────
 
 function OffresSection() {
   const [categorie, setCategorie] = useState("all");
@@ -526,7 +526,7 @@ function OffresSection() {
               Aucune offre ne correspond à vos critères pour le moment.
             </p>
             <p className="text-gray-500 text-sm leading-relaxed mb-6 max-w-lg mx-auto">
-              Envoyez-nous une candidature spontanée, on lit tout — vous serez prévenu·e dès qu'une offre s'ouvre dans votre zone.
+              Envoyez-nous une candidature spontanée, on lit tout · vous serez prévenu·e dès qu'une offre s'ouvre dans votre zone.
             </p>
             <button
               type="button"
@@ -644,7 +644,7 @@ function OffresSection() {
   );
 }
 
-// ─── Section 9 — Candidature spontanée ───────────────────────────────────────
+// ─── Section 9 · Candidature spontanée ───────────────────────────────────────
 
 function CandidatureSpontaneeSection() {
   const { form } = candidatureSpontanee;

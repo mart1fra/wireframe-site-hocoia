@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 
-// Page SEO — accessible uniquement via recherche Google, pas dans la navigation
+// Page SEO · accessible uniquement via recherche Google, pas dans la navigation
 
 const NOTE_GLOBALE = 4.8;
 const TOTAL_AVIS = 127;

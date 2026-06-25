@@ -1,4 +1,4 @@
-import { useState, Fragment } from "react";
+﻿import { useState, Fragment } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "../components/ui/FadeIn";
 import AccordionItem from "../components/ui/AccordionItem";
@@ -45,7 +45,7 @@ function SectionH2({ children, light = false }) {
   );
 }
 
-// ─── Section 1 — Hero ─────────────────────────────────────────────────────
+// ─── Section 1 · Hero ─────────────────────────────────────────────────────
 
 function HeroSection() {
   return (
@@ -94,7 +94,7 @@ function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Right — Formulaire */}
+        {/* Right · Formulaire */}
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -165,14 +165,14 @@ function HeroSection() {
   );
 }
 
-// ─── Section 2 — Rôle & missions ──────────────────────────────────────────
+// ─── Section 2 · Rôle & missions ──────────────────────────────────────────
 
 function RoleMissionSection() {
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-14 items-start">
 
-        {/* Gauche — titre */}
+        {/* Gauche · titre */}
         <FadeIn>
           <Eyebrow>{roleMission.eyebrow}</Eyebrow>
           <SectionH2>{roleMission.h2}</SectionH2>
@@ -184,7 +184,7 @@ function RoleMissionSection() {
           </p>
         </FadeIn>
 
-        {/* Droite — 3 activités */}
+        {/* Droite · 3 activités */}
         <motion.div
           variants={listV}
           initial="hidden"
@@ -214,7 +214,7 @@ function RoleMissionSection() {
   );
 }
 
-// ─── Section 4 — Profils recherchés ──────────────────────────────────────
+// ─── Section 4 · Profils recherchés ──────────────────────────────────────
 
 function ProfilsSection() {
   return (
@@ -268,7 +268,7 @@ function ProfilsSection() {
 }
 
 
-// ─── Section 5 — Avantages ────────────────────────────────────────────────
+// ─── Section 5 · Avantages ────────────────────────────────────────────────
 
 function AvantagesSection() {
   return (
@@ -304,7 +304,7 @@ function AvantagesSection() {
   );
 }
 
-// ─── Section 6 — Processus ────────────────────────────────────────────────
+// ─── Section 6 · Processus ────────────────────────────────────────────────
 
 function ProcessusSection() {
   return (
@@ -352,7 +352,7 @@ function ProcessusSection() {
   );
 }
 
-// ─── Section 7 — Témoignages ──────────────────────────────────────────────
+// ─── Section 7 · Témoignages ──────────────────────────────────────────────
 
 function TemoignagesSection() {
   return (
@@ -398,7 +398,7 @@ function TemoignagesSection() {
   );
 }
 
-// ─── Section 8 — FAQ ──────────────────────────────────────────────────────
+// ─── Section 8 · FAQ ──────────────────────────────────────────────────────
 
 function FaqSection() {
   return (
@@ -427,7 +427,7 @@ function FaqSection() {
   );
 }
 
-// ─── Section 9 — CTA Final ────────────────────────────────────────────────
+// ─── Section 9 · CTA Final ────────────────────────────────────────────────
 
 function CtaFinalSection() {
   return (

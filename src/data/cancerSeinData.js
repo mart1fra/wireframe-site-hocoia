@@ -1,4 +1,4 @@
-// ─── Hero ─────────────────────────────────────────────────────────────────────
+﻿// ─── Hero ─────────────────────────────────────────────────────────────────────
 
 export const hero = {
   eyebrow: "Expertise · Dépistage cancer du sein · Mammographie mobile",
@@ -13,21 +13,21 @@ export const hero = {
     "99% de taux de guérison en cas de détection très précoce",
     "61 000 nouveaux cas par an en France",
     "50% seulement des femmes éligibles se font dépister",
-    "Mammographie + échographie à bord — 24 femmes dépistées par jour",
+    "Mammographie + échographie à bord · 24 femmes dépistées par jour",
     "Dépistage organisé pris en charge à 100% par l'Assurance Maladie",
   ],
   ctaPatient: "Trouver une date de dépistage près de chez moi",
   ctaPatientHref: "/patient",
   ctaOrga: "Organiser une campagne MammoBus",
   ctaOrgaHref: "/mammobus",
-  imagePlaceholder: "MammoBus en déploiement — femmes attendant le dépistage devant le bus",
+  imagePlaceholder: "MammoBus en déploiement · femmes attendant le dépistage devant le bus",
 };
 
 // ─── Stats ────────────────────────────────────────────────────────────────────
 
 export const stats = [
   { value: "1/8",    label: "femmes développera un cancer du sein dans sa vie",         source: "INCa" },
-  { value: "61 000", label: "nouveaux cas par an en France — 2× plus qu'il y a 40 ans", source: "INCa 2024" },
+  { value: "61 000", label: "nouveaux cas par an en France · 2× plus qu'il y a 40 ans", source: "INCa 2024" },
   { value: "90%",    label: "taux de guérison si détecté suffisamment tôt",             source: "INCa" },
   { value: "50%",    label: "seulement des femmes éligibles se font dépister",          source: "INCa" },
 ];
@@ -39,7 +39,7 @@ export const pourquoi = {
   h2: "Ce qu'il faut savoir sur le cancer du sein",
   paragraphs: [
     "Le cancer du sein est le cancer le plus fréquent chez la femme en France et dans le monde. Chaque année, plus de 61 000 femmes en sont diagnostiquées. Il touche toutes les tranches d'âge, mais le risque augmente significativement après 50 ans.",
-    "La bonne nouvelle : quand il est détecté tôt, le cancer du sein se traite très bien. Le taux de guérison dépasse 90% en cas de détection précoce — et 99% pour les formes détectées à un stade très précoce. C'est pourquoi le dépistage régulier est essentiel.",
+    "La bonne nouvelle : quand il est détecté tôt, le cancer du sein se traite très bien. Le taux de guérison dépasse 90% en cas de détection précoce · et 99% pour les formes détectées à un stade très précoce. C'est pourquoi le dépistage régulier est essentiel.",
   ],
   encadres: [
     {
@@ -69,20 +69,20 @@ export const depistageHocoia = {
   eyebrow: "La solution Hocoia",
   h2: "Le MammoBus : la mammographie mobile qui vient à vous",
   paragraphs: [
-    "Seules 50% des femmes éligibles se font dépister — le principal frein est l'accès : distance, délais, organisation. Hocoia a développé le MammoBus, une unité compacte de moins de 3,5 tonnes qui apporte la mammographie directement dans les communes, les entreprises et les territoires ruraux.",
+    "Seules 50% des femmes éligibles se font dépister · le principal frein est l'accès : distance, délais, organisation. Hocoia a développé le MammoBus, une unité compacte de moins de 3,5 tonnes qui apporte la mammographie directement dans les communes, les entreprises et les territoires ruraux.",
     "Le dispositif est habilité pour le dépistage organisé national (prise en charge à 100% par l'Assurance Maladie) et propose également le dépistage individuel. 24 femmes peuvent être dépistées par jour, avec un écosystème numérique complet pour le diagnostic et le suivi.",
   ],
   differenciateurs: [
-    { id: "d1", titre: "Mammographie + échographie à bord", description: "Palpation mammaire, mammographie numérique et échographie selon indication — tout en un." },
+    { id: "d1", titre: "Mammographie + échographie à bord", description: "Palpation mammaire, mammographie numérique et échographie selon indication · tout en un." },
     { id: "d2", titre: "Dépistage organisé habilité", description: "Programme national pris en charge à 100% par l'Assurance Maladie pour les femmes de 50 à 74 ans." },
     { id: "d3", titre: "Clé en main", description: "Hocoia gère tout : communication, prise de RDV, logistique, équipe médicale, bilan de résultats." },
-    { id: "d4", titre: "PACS centralisé — HDS certifié", description: "Données médicales hébergées en sécurité, lisibles par tous les praticiens et centres de radiologie." },
+    { id: "d4", titre: "PACS centralisé · HDS certifié", description: "Données médicales hébergées en sécurité, lisibles par tous les praticiens et centres de radiologie." },
   ],
   bus: {
     badge: "Produit Hocoia · Actif en France",
     titre: "MammoBus",
     description:
-      "Unité mobile compacte de mammographie — unique en France à moins de 3,5 tonnes. Dépistage organisé (100% pris en charge) et individuel. 24 femmes par jour, partout en France.",
+      "Unité mobile compacte de mammographie · unique en France à moins de 3,5 tonnes. Dépistage organisé (100% pris en charge) et individuel. 24 femmes par jour, partout en France.",
     href: "/mammobus",
     cta: "Découvrir le MammoBus →",
   },
@@ -93,7 +93,7 @@ export const depistageHocoia = {
 export const protocole = {
   eyebrow: "Comment cela se passe",
   h2: "Un service clé en main, de A à Z",
-  subtitle: "Hocoia gère l'intégralité de la campagne — de l'organisation à la restitution des résultats.",
+  subtitle: "Hocoia gère l'intégralité de la campagne · de l'organisation à la restitution des résultats.",
   steps: [
     {
       id: "p1", num: "1",
@@ -129,7 +129,7 @@ export const benefices = {
   h2: "Les atouts du dépistage mammaire mobile",
   cards: [
     { id: "b1", titre: "Sans déplacement", description: "Le MammoBus vient dans votre commune, votre entreprise ou votre établissement. Fini les 40 km pour un centre de radiologie." },
-    { id: "b2", titre: "Pris en charge à 100%", description: "Pour les femmes de 50 à 74 ans dans le cadre du dépistage organisé national — aucun frais pour la patiente." },
+    { id: "b2", titre: "Pris en charge à 100%", description: "Pour les femmes de 50 à 74 ans dans le cadre du dépistage organisé national · aucun frais pour la patiente." },
     { id: "b3", titre: "24 femmes par jour", description: "Des créneaux disponibles en 2 à 7 jours, contre 4 à 8 semaines dans un centre fixe." },
     { id: "b4", titre: "Suivi assuré", description: "En cas d'anomalie, l'équipe Hocoia assure le suivi complet jusqu'à la prise en charge spécialisée." },
   ],
@@ -141,7 +141,7 @@ export const pourQui = {
   eyebrow: "À qui s'adresse ce dépistage",
   h2: "Pour les patientes comme pour les organisations",
   subtitle:
-    "Femmes, entreprises, collectivités, établissements de santé — le MammoBus s'adapte à tous les contextes.",
+    "Femmes, entreprises, collectivités, établissements de santé · le MammoBus s'adapte à tous les contextes.",
   cards: [
     {
       id: "pq1",
@@ -191,14 +191,14 @@ export const temoignages = {
     {
       id: "t1",
       contexte: "Coordonnatrice CLS",
-      quote: "Un bilan extrêmement positif : lors de la première journée, toutes les patientes ont exprimé leur satisfaction à l'égard de ce dispositif — une première dans la région.",
+      quote: "Un bilan extrêmement positif : lors de la première journée, toutes les patientes ont exprimé leur satisfaction à l'égard de ce dispositif · une première dans la région.",
       author: "Anne Haller",
       role: "Coordonnatrice du Contrat Local de Santé",
     },
     {
       id: "t2",
       contexte: "Mutuelle · Vendée",
-      quote: "Ce type d'offre répond à un vrai besoin. La prévention est un élément important — et ce partenariat avec Hocoia nous conforte dans cette conviction.",
+      quote: "Ce type d'offre répond à un vrai besoin. La prévention est un élément important · et ce partenariat avec Hocoia nous conforte dans cette conviction.",
       author: "Didier Brouard",
       role: "Élu à la section MGEN Vendée",
     },
@@ -224,8 +224,8 @@ export const maillage = {
     { id: "e4", label: "Santé de la femme",           href: "/solutions/sante-femme" },
   ],
   busLies: [
-    { id: "b1", label: "MammoBus — mammographie mobile",     href: "/mammobus" },
-    { id: "b2", label: "MédicoBus — cabinet médical mobile", href: "/produits/medicobus" },
+    { id: "b1", label: "MammoBus · mammographie mobile",     href: "/mammobus" },
+    { id: "b2", label: "MédicoBus · cabinet médical mobile", href: "/produits/medicobus" },
   ],
 };
 
@@ -279,9 +279,9 @@ export const faq = {
 export const ctaFinal = {
   h2: "Le dépistage du cancer du sein, enfin accessible à toutes.",
   subtitle:
-    "Patiente ou organisation — Hocoia vous accompagne pour que le dépistage ne soit plus une contrainte.",
-  ctaPatient: "Je suis patiente — Trouver une date",
+    "Patiente ou organisation · Hocoia vous accompagne pour que le dépistage ne soit plus une contrainte.",
+  ctaPatient: "Je suis patiente · Trouver une date",
   ctaPatientHref: "/patient",
-  ctaOrga: "Je suis une organisation — Organiser une campagne",
+  ctaOrga: "Je suis une organisation · Organiser une campagne",
   ctaOrgaHref: "/mammobus",
 };

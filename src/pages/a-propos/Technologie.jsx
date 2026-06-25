@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+﻿import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import FadeIn from "../../components/ui/FadeIn";
@@ -95,7 +95,7 @@ function HeroSection() {
           </motion.div>
         </motion.div>
 
-        {/* Droite — pills */}
+        {/* Droite · pills */}
         <motion.div
           initial={{ opacity: 0, x: 16 }}
           animate={{ opacity: 1, x: 0 }}
