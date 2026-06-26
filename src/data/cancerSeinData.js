@@ -271,6 +271,12 @@ export const faq = {
       answer:
         "Via la page Patient sur ce site (calendrier des passages), ou directement sur l'application. Vous pouvez aussi activer une alerte pour être prévenue dès qu'une session est organisée dans votre commune.",
     },
+    {
+      id: "f7",
+      question: "Comment se déroule la mammographie ?",
+      answer:
+        "L'examen est réalisé directement dans le bus afin de rapprocher le dépistage des patientes. Les examens sont réalisés par des sages-femmes ou des manipulatrices et manipulateurs en électroradiologie médicale.",
+    },
   ],
 };
 

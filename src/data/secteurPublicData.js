@@ -448,6 +448,24 @@ export const faq = {
       answer:
         "Oui. Hocoia propose la conception de bus de prévention santé sur mesure avec des aménagements adaptés aux objectifs de santé publique, aux équipements médicaux souhaités et aux contraintes du territoire.",
     },
+    {
+      id: "q7",
+      question: "Qui finance les campagnes ?",
+      answer:
+        "Le financement dépend du modèle retenu : collectivité, partenaire institutionnel, mutuelle ou montage hybride. Hocoia vous accompagne dans l'identification des financements disponibles (CLS, ARS, DETR).",
+    },
+    {
+      id: "q8",
+      question: "Faut-il recruter des professionnels de santé ?",
+      answer:
+        "Non. Hocoia fournit l'intégralité des professionnels de santé nécessaires à la campagne. Aucun recrutement de votre côté.",
+    },
+    {
+      id: "q9",
+      question: "Comment informer les habitants ?",
+      answer:
+        "Des outils de communication et d'inscription peuvent être mis en place selon vos canaux habituels. Hocoia vous fournit les éléments de langage, visuels et supports adaptés.",
+    },
   ],
 };
 

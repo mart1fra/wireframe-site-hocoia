@@ -270,6 +270,12 @@ export const faq = {
       answer:
         "En cas d'anomalie, le cardiologue adresse des préconisations précises dans le compte-rendu. Votre médecin traitant est informé et prend le relais pour le suivi. En cas d'urgence suspectée, vous êtes contacté directement.",
     },
+    {
+      id: "f7",
+      question: "Comment se déroule un bilan cardiovasculaire ?",
+      answer:
+        "Une infirmière réalise un questionnaire santé, des examens biologiques ciblés ainsi qu'une évaluation cardiovasculaire comprenant ECG et constantes vitales. Le parcours peut inclure glycémie, cholestérol, acide urique, tension artérielle, fréquence cardiaque, poids, taille et analyse cardiaque.",
+    },
   ],
 };
 

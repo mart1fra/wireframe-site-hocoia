@@ -336,6 +336,30 @@ export const faq = {
       answer:
         "Hocoia déploie ses solutions mobiles de prévention santé partout en France selon les besoins des entreprises, mutuelles et acteurs publics.",
     },
+    {
+      id: "q6",
+      question: "Pourquoi organiser une journée prévention ?",
+      answer:
+        "Pour faciliter l'accès à la prévention et améliorer l'expérience santé des collaborateurs, tout en réduisant l'absentéisme lié aux pathologies non détectées.",
+    },
+    {
+      id: "q7",
+      question: "Quelle charge pour les équipes RH ?",
+      answer:
+        "Minimale. Hocoia prend en charge l'organisation opérationnelle complète du dispositif : logistique, communication, inscriptions et bilan.",
+    },
+    {
+      id: "q8",
+      question: "Les employeurs voient-ils les résultats ?",
+      answer:
+        "Non. Les données médicales restent strictement confidentielles. Seules des données agrégées et anonymisées peuvent être partagées avec l'employeur.",
+    },
+    {
+      id: "q9",
+      question: "Peut-on personnaliser les dépistages ?",
+      answer:
+        "Oui. Les campagnes peuvent être adaptées selon les objectifs de prévention, le secteur d'activité et les populations ciblées.",
+    },
   ],
 };
 

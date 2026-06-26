@@ -491,6 +491,12 @@ export const faq = {
       answer:
         "L'équipe médicale Hocoia organise un rendez-vous complémentaire avec un radiologue ou un gynécologue référent. Le suivi est tracé dans le tableau de bord et transmis au médecin traitant de la patiente.",
     },
+    {
+      id: "faq7",
+      question: "Comment se déroule la mammographie ?",
+      answer:
+        "L'examen est réalisé directement dans le bus afin de rapprocher le dépistage des patientes. Les examens sont réalisés par des sages-femmes ou des manipulatrices et manipulateurs en électroradiologie médicale.",
+    },
   ],
 };
 

@@ -270,6 +270,12 @@ export const faq = {
       answer:
         "Le médecin en téléconsultation vous explique le résultat et vous oriente vers le bon spécialiste avec un compte-rendu complet. Une prise en charge rapide est organisée pour les cas urgents.",
     },
+    {
+      id: "f7",
+      question: "Qu'est-ce qu'un check-up santé Hocoia ?",
+      answer:
+        "Le check-up santé est un parcours complet de prévention permettant d'évaluer plusieurs indicateurs de santé au cours d'un même rendez-vous. Une infirmière réalise une prise de sang sur place ainsi que différents examens : ECG, tension artérielle, fréquence cardiaque, saturation en oxygène, poids, taille, spirométrie et, selon le programme, des examens complémentaires.",
+    },
   ],
 };
 

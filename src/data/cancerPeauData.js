@@ -271,6 +271,18 @@ export const faq = {
       answer:
         "Consultez le calendrier des passages sur notre page Patient. Vous pouvez aussi activer une alerte pour être prévenu par SMS ou email dès qu'une session est organisée dans votre secteur.",
     },
+    {
+      id: "f7",
+      question: "Comment fonctionne le dépistage du cancer de la peau ?",
+      answer:
+        "Une infirmière recueille les informations du patient puis photographie les lésions concernées avec un dispositif dédié. Les examens sont analysés par un dermatologue.",
+    },
+    {
+      id: "f8",
+      question: "Combien de lésions peuvent être examinées ?",
+      answer:
+        "Jusqu'à sept lésions peuvent être documentées pendant le parcours. Les examens sont analysés par un dermatologue.",
+    },
   ],
 };
 

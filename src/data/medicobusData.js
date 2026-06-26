@@ -526,6 +526,42 @@ export const faq = {
       answer:
         "Contactez-nous via le formulaire en haut de page. Le déploiement se fait en moins de 3 semaines après validation.",
     },
+    {
+      id: "q7",
+      question: "Qu'est-ce qu'un check-up santé Hocoia ?",
+      answer:
+        "Le check-up santé est un parcours complet de prévention permettant d'évaluer plusieurs indicateurs de santé au cours d'un même rendez-vous. Le patient est accueilli par une infirmière qui réalise une prise de sang sur place ainsi que différents examens : ECG, tension artérielle, fréquence cardiaque, saturation en oxygène, poids, taille, spirométrie et, selon le programme, des examens complémentaires.",
+    },
+    {
+      id: "q8",
+      question: "Comment se déroule un bilan cardiovasculaire ?",
+      answer:
+        "Une infirmière réalise un questionnaire santé, des examens biologiques ciblés ainsi qu'une évaluation cardiovasculaire comprenant ECG et constantes vitales. Le parcours peut inclure glycémie, cholestérol, acide urique, tension artérielle, fréquence cardiaque, poids, taille et analyse cardiaque.",
+    },
+    {
+      id: "q9",
+      question: "Comment fonctionne le dépistage du cancer de la peau ?",
+      answer:
+        "Une infirmière recueille les informations du patient puis photographie les lésions concernées avec un dispositif dédié. Les examens sont analysés par un dermatologue.",
+    },
+    {
+      id: "q10",
+      question: "Combien de lésions peuvent être examinées ?",
+      answer:
+        "Jusqu'à sept lésions peuvent être documentées pendant le parcours. Les examens sont analysés par un dermatologue.",
+    },
+    {
+      id: "q11",
+      question: "Que comprend le parcours santé de la femme ?",
+      answer:
+        "Le parcours comprend un entretien de prévention avec une sage-femme, un examen clinique, une sensibilisation à l'auto-surveillance et un frottis cervico-utérin. Il vise à favoriser le dépistage précoce et à accompagner les femmes dans leur suivi de santé.",
+    },
+    {
+      id: "q12",
+      question: "Que se passe-t-il après le dépistage ?",
+      answer:
+        "Si nécessaire, le patient est orienté vers le professionnel de santé ou le parcours de prise en charge le plus adapté.",
+    },
   ],
 };
 

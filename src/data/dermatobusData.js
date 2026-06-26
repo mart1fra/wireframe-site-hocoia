@@ -464,6 +464,24 @@ export const faq = {
       answer:
         "Oui. Hocoia sélectionne actuellement les territoires partenaires pour la phase pilote en Normandie. Si vous êtes une collectivité, une CPTS ou un département de la région, contactez-nous dès maintenant, les places sont limitées pour la première phase.",
     },
+    {
+      id: "faq6",
+      question: "Comment fonctionne le dépistage du cancer de la peau ?",
+      answer:
+        "Une infirmière recueille les informations du patient puis photographie les lésions concernées avec un dispositif dédié. Les examens sont ensuite analysés par un dermatologue partenaire.",
+    },
+    {
+      id: "faq7",
+      question: "Combien de lésions peuvent être examinées ?",
+      answer:
+        "Jusqu'à sept lésions peuvent être documentées pendant le parcours. Le DermatoBus va plus loin en réalisant une cartographie complète du corps entier.",
+    },
+    {
+      id: "faq8",
+      question: "Que se passe-t-il après le dépistage ?",
+      answer:
+        "Si nécessaire, le patient est orienté vers le professionnel de santé ou le parcours de prise en charge le plus adapté. En cas de lésion suspecte, une prise en charge rapide est organisée.",
+    },
   ],
 };
 

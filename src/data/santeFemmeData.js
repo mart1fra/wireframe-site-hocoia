@@ -271,6 +271,12 @@ export const faq = {
       answer:
         "Oui. La sage-femme peut renouveler une contraception en cours (pilule, patch, anneau vaginal) et prescrire une contraception d'urgence. Pour un changement de méthode ou la pose d'un stérilet, un rendez-vous dédié est organisé.",
     },
+    {
+      id: "f7",
+      question: "Que comprend le parcours santé de la femme ?",
+      answer:
+        "Le parcours comprend un entretien de prévention avec une sage-femme, un examen clinique, une sensibilisation à l'auto-surveillance et un frottis cervico-utérin. Il vise à favoriser le dépistage précoce et à accompagner les femmes dans leur suivi de santé.",
+    },
   ],
 };
 

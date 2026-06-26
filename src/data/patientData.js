@@ -211,6 +211,18 @@ export const faq = {
       question: "Combien coûte une consultation ?",
       answer: "[Réponse à venir]",
     },
+    {
+      id: "q7",
+      question: "Comment se déroule mon arrivée ?",
+      answer:
+        "Vous êtes accueilli par un professionnel de santé qui vérifie vos informations, présente le parcours et vous accompagne tout au long de votre venue.",
+    },
+    {
+      id: "q8",
+      question: "Comment fonctionne une téléconsultation Hocoia ?",
+      answer:
+        "Selon les campagnes, la consultation peut être réalisée avec un médecin en téléconsultation assistée et une infirmière dans le bus, ou avec un médecin présent directement à bord. Un professionnel de santé accompagne toujours le patient.",
+    },
   ],
 };
 
