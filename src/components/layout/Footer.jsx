@@ -108,16 +108,6 @@ export default function Footer() {
             © {new Date().getFullYear()} Hocoia. Tous droits réservés.
           </p>
           <ul className="flex items-center gap-5">
-            {faq.children.map((item) => (
-              <li key={item.id}>
-                <Link
-                  to={`/faq/${item.id}`}
-                  className="text-xs text-gray-600 hover:text-gray-400 transition-colors duration-150"
-                >
-                  FAQ {item.label}
-                </Link>
-              </li>
-            ))}
             <li>
               <Link
                 to="/mentions-legales"

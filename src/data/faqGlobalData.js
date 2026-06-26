@@ -45,6 +45,11 @@ export const categories = [
         answer:
           "Hocoia a été fondée par un médecin et des ingénieurs autour de la conviction que la technologie peut transformer concrètement la santé et la prévention, sans jamais déshumaniser la relation soignant-patient.",
       },
+      {
+        question: "Qui réalise les consultations et dépistages ?",
+        answer:
+          "Les parcours sont réalisés par des professionnels de santé de la spécialité concernée selon le programme déployé, inscrits à l'Ordre.",
+      },
     ],
   },
   {
@@ -65,9 +70,14 @@ export const categories = [
           "C'est recommandé pour garantir votre créneau, mais certaines journées acceptent les venues sans rendez-vous selon la disponibilité. La prise de RDV se fait en ligne ou par téléphone.",
       },
       {
+        question: "Comment se déroule mon arrivée ?",
+        answer:
+          "Vous êtes accueilli par un professionnel de santé qui vérifie vos informations, présente le parcours et vous accompagne tout au long de votre venue.",
+      },
+      {
         question: "Combien de temps dure la consultation ?",
         answer:
-          "Entre 15 et 30 minutes selon la spécialité (15 min pour la dermatologie, 30 min pour le check-up santé).",
+          "Entre 15 et 45 minutes selon la spécialité.",
       },
       {
         question: "Qui sont les professionnels à bord ?",
@@ -93,6 +103,16 @@ export const categories = [
         link: { label: "Accéder à mon espace patient →", href: "/se-connecter" },
       },
       {
+        question: "Comment fonctionne une téléconsultation Hocoia ?",
+        answer:
+          "Selon les campagnes, la consultation peut être réalisée avec un médecin en téléconsultation assistée et une infirmière dans le bus, ou avec un médecin présent directement à bord. Un professionnel de santé accompagne toujours le patient.",
+      },
+      {
+        question: "Est-ce remboursé ?",
+        answer:
+          "Les modalités de prise en charge dépendent du dispositif déployé. Dans la majorité des cas, le dépistage est gratuit pour le patient, financé par la collectivité, la mutuelle ou l'entreprise organisatrice.",
+      },
+      {
         question: "Le bus passe-t-il régulièrement dans ma ville ?",
         answer:
           "Les passages sont planifiés en fonction des demandes des collectivités et partenariats locaux. Activez l'alerte pour être prévenu du prochain passage.",
@@ -106,6 +126,11 @@ export const categories = [
     subtitle: "Déployer un programme santé salarié, sans alourdir vos équipes RH.",
     audiences: ["entreprises"],
     items: [
+      {
+        question: "Pourquoi organiser une journée prévention ?",
+        answer:
+          "Pour faciliter l'accès à la prévention et améliorer l'expérience santé des collaborateurs, tout en réduisant l'absentéisme lié aux pathologies non détectées.",
+      },
       {
         question: "Quelle charge de travail pour nos équipes RH ?",
         answer:
@@ -178,6 +203,11 @@ export const categories = [
         question: "Peut-on déployer le bus plusieurs fois par an sur le même territoire ?",
         answer:
           "Oui, c'est même recommandé. Hocoia propose des programmes annuels multi-journées.",
+      },
+      {
+        question: "Comment informer les habitants ?",
+        answer:
+          "Des outils de communication et d'inscription peuvent être mis en place selon vos canaux habituels. Hocoia vous fournit les éléments de langage, visuels et supports adaptés.",
       },
     ],
   },
@@ -260,6 +290,36 @@ export const categories = [
         question: "Combien de temps dure une consultation ?",
         answer: "Entre 20 et 45 minutes selon la thématique.",
       },
+      {
+        question: "Qu'est-ce qu'un check-up santé Hocoia ?",
+        answer:
+          "Le check-up santé est un parcours complet de prévention permettant d'évaluer plusieurs indicateurs de santé au cours d'un même rendez-vous. Le patient est accueilli par une infirmière qui réalise une prise de sang sur place ainsi que différents examens : ECG, tension artérielle, fréquence cardiaque, saturation en oxygène, poids, taille, spirométrie et, selon le programme, des examens complémentaires.",
+      },
+      {
+        question: "Comment se déroule un bilan cardiovasculaire ?",
+        answer:
+          "Une infirmière réalise un questionnaire santé, des examens biologiques ciblés ainsi qu'une évaluation cardiovasculaire comprenant ECG et constantes vitales. Le parcours peut inclure glycémie, cholestérol, acide urique, tension artérielle, fréquence cardiaque, poids, taille et analyse cardiaque.",
+      },
+      {
+        question: "Comment fonctionne le dépistage du cancer de la peau ?",
+        answer:
+          "Une infirmière recueille les informations du patient puis photographie les lésions concernées avec un dispositif dédié. Les examens sont analysés par un dermatologue.",
+      },
+      {
+        question: "Combien de lésions peuvent être examinées ?",
+        answer:
+          "Jusqu'à sept lésions peuvent être documentées pendant le parcours. Les examens sont analysés par un dermatologue.",
+      },
+      {
+        question: "Que comprend le parcours santé de la femme ?",
+        answer:
+          "Le parcours comprend un entretien de prévention avec une sage-femme, un examen clinique, une sensibilisation à l'auto-surveillance et un frottis cervico-utérin. Il vise à favoriser le dépistage précoce et à accompagner les femmes dans leur suivi de santé.",
+      },
+      {
+        question: "Que se passe-t-il après le dépistage ?",
+        answer:
+          "Si nécessaire, le patient est orienté vers le professionnel de santé ou le parcours de prise en charge le plus adapté.",
+      },
     ],
   },
   {
@@ -283,6 +343,11 @@ export const categories = [
         question: "Qui réalise les examens à bord ?",
         answer:
           "MERM + sage-femme. La lecture des clichés est faite par un radiologue, sur place ou en télé-expertise.",
+      },
+      {
+        question: "Comment se déroule la mammographie ?",
+        answer:
+          "L'examen de mammographie est réalisé directement dans le bus afin de rapprocher le dépistage des patientes. Les examens sont réalisés par des sages-femmes ou des manipulatrices et manipulateurs en électroradiologie médicale.",
       },
     ],
   },
