@@ -9,7 +9,6 @@ import {
   specialites,
   stats,
   useCases,
-  b2bZone,
   temoignages,
   ctaFinal,
 } from "../data/homeData";
@@ -78,7 +77,7 @@ function HeroSection() {
           {/* CTAs : pleine largeur mobile, auto desktop */}
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center mb-8">
             <Link
-              to="/calendrier"
+              to="/patient"
               className="w-full sm:w-auto bg-gray-900 text-white px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors duration-150 text-center"
             >
               {hero.ctaPrimary}
@@ -158,7 +157,7 @@ function IdentiteSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 sm:grid-cols-3 gap-8"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10 md:mb-14"
         >
           {identite.points.map((p) => (
             <motion.div key={p.id} variants={itemV} className="flex flex-col items-center text-center gap-3">
@@ -168,6 +167,15 @@ function IdentiteSection() {
             </motion.div>
           ))}
         </motion.div>
+
+        <FadeIn>
+          <Link
+            to={identite.ctaHref}
+            className="inline-block bg-gray-900 text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-gray-700 transition-colors duration-150"
+          >
+            {identite.cta}
+          </Link>
+        </FadeIn>
       </div>
     </section>
   );
@@ -427,50 +435,6 @@ function UseCasesSection() {
   );
 }
 
-// ─── Section 6 · Zone B2B sombre ──────────────────────────────────────────
-// Mobile : padding réduit, image dashboard cachée sur mobile (long = inutile)
-
-function B2bZoneSection() {
-  return (
-    <section className="bg-gray-900 py-16 px-5 md:py-24 md:px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[11fr_9fr] gap-12 lg:gap-16 items-center">
-        <FadeIn>
-          <Eyebrow light>{b2bZone.eyebrow}</Eyebrow>
-          <SectionH2 light>{b2bZone.h2}</SectionH2>
-          <p className="text-gray-400 text-base leading-relaxed mb-8">
-            {b2bZone.description}
-          </p>
-
-          <ul className="space-y-3 mb-10">
-            {b2bZone.checks.map((check) => (
-              <li key={check} className="flex items-start gap-3 text-gray-300 text-sm">
-                <span className="mt-0.5 text-gray-500 shrink-0">✓</span>
-                {check}
-              </li>
-            ))}
-          </ul>
-
-          <button
-            type="button"
-            className="w-full sm:w-auto bg-white text-gray-900 px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors cursor-pointer"
-          >
-            {b2bZone.cta}
-          </button>
-        </FadeIn>
-
-        {/* Dashboard placeholder · caché sur mobile (déjà après le texte = suffisant) */}
-        <FadeIn delay={0.15} className="hidden lg:block">
-          <div className="bg-gray-800 rounded-2xl border border-gray-700 aspect-[4/3] flex items-center justify-center">
-            <p className="text-gray-500 text-sm font-medium text-center px-6">
-              {b2bZone.dashboardPlaceholder}
-            </p>
-          </div>
-        </FadeIn>
-      </div>
-    </section>
-  );
-}
-
 // ─── Section 7 · Témoignages ──────────────────────────────────────────────
 // Mobile : défilement horizontal avec snap, pleine hauteur des cartes
 
@@ -532,17 +496,17 @@ function CtaFinalSection() {
           </p>
           <div className="flex flex-col gap-3 sm:flex-row sm:justify-center">
             <Link
-              to="/calendrier"
+              to={ctaFinal.ctaPrimaryHref}
               className="w-full sm:w-auto bg-white text-gray-900 px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-100 transition-colors text-center"
             >
               {ctaFinal.ctaPrimary}
             </Link>
-            <button
-              type="button"
-              className="w-full sm:w-auto border border-gray-600 text-gray-300 px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-800 transition-colors cursor-pointer"
+            <Link
+              to={ctaFinal.ctaOutlineHref}
+              className="w-full sm:w-auto border border-gray-600 text-gray-300 px-7 py-4 sm:py-3.5 rounded-full font-semibold text-sm hover:bg-gray-800 transition-colors text-center"
             >
               {ctaFinal.ctaOutline}
-            </button>
+            </Link>
           </div>
         </FadeIn>
       </div>
@@ -561,7 +525,6 @@ export default function Home() {
       <StatsSection />
       <SpecialitesSection />
       <UseCasesSection />
-      <B2bZoneSection />
       <TemoignagesSection />
       <CtaFinalSection />
     </>

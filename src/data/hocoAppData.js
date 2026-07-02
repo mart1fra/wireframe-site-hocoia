@@ -1,13 +1,14 @@
 ﻿export const hocoAppByAudience = {
   patient: {
     eyebrow: "",
-    h2: "HocoApp · votre santé, accessible à tout moment.",
+    h2: "Votre interface santé, accessible à tout moment",
     subtitle:
-      "Prenez rendez-vous, retrouvez vos comptes-rendus et suivez votre parcours de prévention depuis votre téléphone. HocoApp centralise tout ce dont vous avez besoin · en toute sécurité.",
+      "Prenez rendez-vous, retrouvez vos comptes-rendus et suivez votre parcours de prévention. L'interface centralise tout ce dont vous avez besoin · en toute sécurité.",
     features: [
       { id: "f1", title: "Prise de RDV simplifiée", description: "Choisissez votre créneau dans le bus le plus proche en 3 clics." },
       { id: "f2", title: "Vos documents centralisés", description: "Comptes-rendus, ordonnances et résultats accessibles à tout moment." },
       { id: "f4", title: "100% sécurisé", description: "Données cryptées, hébergement de santé certifié HDS." },
+      { id: "f5", title: "Résultats selon votre préférence", description: "Résultats transmis par courrier ou par mail selon votre préférence." },
     ],
     ctaPrimary: "Découvrir HocoApp",
     ctaOutline: "Se connecter",

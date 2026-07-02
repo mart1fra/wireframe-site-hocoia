@@ -1,14 +1,14 @@
 ﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  h1: "Réinventons le futur de la santé, ensemble.",
+  h1: "Prendre soin de votre santé devient plus simple.",
   subtitle:
-    "Hocoia rapproche la santé de chacun, où qu'il vive. Avec nos bus médicaux et nos soignants engagés, nous apportons prévention et dépistage directement dans votre territoire.",
-  ctaPrimary: "Voir le bus près de moi",
-  ctaOutline: "Prendre RDV",
+    "Hocoia vous accompagne au quotidien. Grâce à nos bus médicaux et à nos équipes de soignants, réalisez vos bilans de prévention et vos dépistages facilement, juste à côté de chez vous.",
+  ctaPrimary: "En savoir plus",
+  ctaOutline: "Prendre rendez-vous",
   b2bLink: {
-    prefix: "Vous êtes une entreprise ou une collectivité ? →",
-    linkText: "Découvrir nos solutions",
+    prefix: "Vous êtes une organisation ? →",
+    linkText: "Découvrez nos solutions",
     href: "/entreprises-et-mutuelles",
   },
 };
@@ -16,7 +16,7 @@ export const hero = {
 // ─── Logos ────────────────────────────────────────────────────────────────
 
 export const logos = {
-  label: "Ils nous font confiance",
+  label: "En partenariat avec les acteurs de votre santé et de votre quotidien",
   items: ["Renault", "MGEN", "Pfizer", "Groupama", "ASNR", "CPAM", "CH Verdun"],
 };
 
@@ -28,32 +28,34 @@ export const identite = {
   //description:
     //"Nous croyons en un avenir où chaque individu peut accéder à des soins médicaux de qualité, peu importe où il se trouve.",
     //"L'innovation, la technologie et l’humain sont nos outils pour rendre cette vision possible. Fondée par un médecin et des ingénieurs, Hocoia opère une flotte de bus médicaux équipés d'appareils de diagnostic de pointe. Nos professionnels de santé se rendent là où les patients se trouvent : en bas de chez eux, dans leur entreprise, sur leur lieu de travail.",
-  description2:  
-    "Hocoia opère une flotte de bus médicaux équipés d'appareils de diagnostic de pointe. Nos professionnels de santé vont à la rencontre des patients : dans les communes, sur les lieux de travail, au pied des immeubles. Du dépistage cardiovasculaire au cancer du sein, nos solutions couvrent les besoins de prévention essentiels.",
+  description2:
+    "Hocoia vous propose un parcours de santé simple, sans vous déplacer inutilement. Nos bus médicaux, aménagés comme de véritables cabinets de consultation, viennent directement à votre rencontre. Vous y réalisez vos bilans de prévention et vos dépistages essentiels, confortablement et en toute confidentialité.",
   points: [
     {
       id: "i1",
       titre: "Mobile",
-      soustitre: "Des bus équipés qui se déplacent dans vos communes et vos entreprises",
+      soustitre: "Des bus de santé qui se déplacent au cœur de votre ville ou sur votre lieu de travail",
     },
     {
       id: "i2",
       titre: "Connecté",
-      soustitre: "Prise de RDV en ligne, résultats digitaux, suivi à distance",
+      soustitre: "Une prise de rendez-vous rapide en ligne et des résultats partagés en toute sécurité avec votre médecin traitant.",
     },
     {
       id: "i3",
       titre: "Humain",
-      soustitre: "Des professionnels de santé qualifiés à chaque étape",
+      soustitre: "Des professionnels de santé (médecins, infirmiers, spécialistes) à votre écoute et bienveillants à chaque étape.",
     },
   ],
+  cta: "Nos solutions",
+  ctaHref: "/nos-solutions",
 };
 
 // ─── Spécialités B2C ──────────────────────────────────────────────────────
 
 export const specialites = {
   eyebrow: "Le bus de santé",
-  h2: "Choisissez votre spécialité",
+  h2: "Nos spécialités",
   description:
     "Nos bus médicaux se déplacent au cœur de votre commune pour vous proposer dépistage et prévention. Choisissez votre thématique et réservez un créneau près de chez vous, sans attente, sans déplacement lointain.",
   chips: [
@@ -118,7 +120,7 @@ export const stats = {
   items: [
     { value: "4 800", label: "Patients accompagnés" },
     { value: "80+",   label: "Communes desservies" },
-    { value: "12",    label: "Spécialités disponibles" },
+    { value: "5",     label: "Spécialités disponibles" },
   ],
 };
 
@@ -152,7 +154,7 @@ export const useCases = {
       metrics: [
         { value: "80+",   label: "Communes desservies" },
         { value: "4,8/5", label: "Satisfaction patients" },
-        { value: "12",    label: "Spécialités disponibles" },
+        { value: "5",     label: "Spécialités disponibles" },
       ],
       ctaPrimary: "Voir le cas client →",
       ctaOutline: "Demander une démo",
@@ -241,9 +243,11 @@ export const temoignages = {
 // ─── CTA final ────────────────────────────────────────────────────────────
 
 export const ctaFinal = {
-  h2: "Une santé accessible à tous, en tout lieu.",
+  h2: "Une santé accessible à tous",
   subtitle:
     "Nous croyons en un avenir où chaque individu accède à la prévention et à la santé, où qu'il vive. L'innovation, la technologie et l'humain sont nos outils pour rendre cette vision possible.",
-  ctaPrimary: "Voir le calendrier des passages",
+  ctaPrimary: "Découvrir la vision Hocoia",
+  ctaPrimaryHref: "/a-propos/vision",
   ctaOutline: "Parler à un expert BtoB",
+  ctaOutlineHref: "/contact",
 };

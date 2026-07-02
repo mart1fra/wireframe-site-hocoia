@@ -3,7 +3,7 @@
 export const hero = {
   h1: "Votre prochaine consultation santé, près de chez vous.",
   subtitle:
-    "Nos bus médicaux Hocoia se déplacent dans votre commune. Trouvez les prochains passages et prenez rendez-vous en 3 clics.",
+    "Parce qu'il n'est pas toujours facile de trouver du temps pour sa santé, Hocoia se déplace pour vous. Grâce à nos bus médicaux, nous vous proposons un accompagnement simple et rassurant pour vos dépistages et vos suivis de prévention.",
   searchPlaceholder: "Entrez votre ville ou code postal",
   searchCta: "Rechercher",
   resultats: [
@@ -35,7 +35,8 @@ export const hero = {
       ctaOutline: "Me prévenir",
     },
   ],
-  lienCalendrier: "Voir tous les passages à venir →",
+  lienCalendrier: "Demandez un bus près de chez vous",
+  lienResultats: "Voir mes résultats",
 };
 
 // ─── Comment ça marche ────────────────────────────────────────────────────
@@ -44,19 +45,18 @@ export const etapes = {
   eyebrow: "Le dépistage en bus",
   h2: "Comment cela se passe ?",
   subtitle:
-    "De la prise de rendez-vous à la réception de vos résultats, tout est simple.",
+    "De la prise de rendez-vous à la réception de vos résultats, découvrez un parcours simple et guidé pas à pas.",
   steps: [
     {
       id: "s1",
       number: "01",
       label: "Avant votre visite",
-      title: "Trouvez un passage et réservez",
+      title: "Prenez rendez-vous",
       points: [
-        "Recherchez votre ville sur cette page",
-        "Choisissez un créneau qui vous convient",
-        "Recevez une confirmation par email",
+        "Soit une intervention est organisée avec votre ville, entreprise ou mutuelle",
+        "Soit vous nous contactez directement afin d'étudier si un passage du bus est possible près de chez vous",
+        "Puis prise de rendez-vous en ligne ou par téléphone",
       ],
-      info: "Pas de créneau ? Activez l'alerte et on vous prévient par SMS ou email dès qu'un bus passe près de chez vous.",
     },
     {
       id: "s2",
@@ -64,11 +64,10 @@ export const etapes = {
       label: "Le jour J",
       title: "Venez au bus, on s'occupe de tout",
       points: [
-        "Rendez-vous à l'adresse indiquée avec votre carte vitale",
-        "Un professionnel de santé vous accueille à bord",
-        "Consultation complète en 20–30 minutes selon la spécialité",
+        "Rendez-vous à l'adresse indiquée muni de votre carte vitale. Un professionnel de santé vous accueille à bord.",
+        "Consultation complète entre 20 et 30 minutes selon les examens à réaliser.",
+        "Bus aménagé et équipé comme un cabinet, pour vous garantir confort et discrétion optimale.",
       ],
-      info: "Le bus est équipé comme un cabinet médical : échographe, mammographe, ECG, dermoscope.",
     },
     {
       id: "s3",
@@ -80,8 +79,6 @@ export const etapes = {
         "Compte-rendu médical transmis à votre médecin traitant si vous le souhaitez",
         "En cas d'anomalie détectée, orientation immédiate vers un spécialiste",
       ],
-      cta: { label: "Voir mes résultats", href: "/se-connecter" },
-      info: "Vos données sont protégées : hébergement certifié HDS, conformité RGPD.",
     },
   ],
 };
@@ -91,7 +88,6 @@ export const etapes = {
 export const specialites = {
   eyebrow: "Nos spécialités",
   h2: "Des bilans accessibles pour tous",
-  subtitle: "Choisissez le dépistage qui vous concerne.",
   items: [
     {
       id: "sp1",

@@ -138,7 +138,7 @@ function HeroSection() {
             to="/se-connecter"
             className="border border-gray-300 text-gray-700 text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-gray-100 transition-colors"
           >
-            Voir mes résultats →
+            {hero.lienResultats}
           </Link>
         </motion.div>
       </div>
@@ -197,12 +197,6 @@ function EtapesSection() {
                 ))}
               </ul>
 
-              {/* Bloc info */}
-              <div className="bg-gray-50 rounded-lg px-4 py-3">
-                <p className="text-xs text-gray-500 leading-relaxed">{step.info}</p>
-              </div>
-
-
             </motion.div>
           ))}
         </motion.div>
@@ -220,7 +214,6 @@ function SpecialitesSection() {
         <FadeIn className="text-center mb-12">
           <Eyebrow>{specialites.eyebrow}</Eyebrow>
           <SectionH2>{specialites.h2}</SectionH2>
-          <p className="text-gray-500 text-base">{specialites.subtitle}</p>
         </FadeIn>
 
         <motion.div
