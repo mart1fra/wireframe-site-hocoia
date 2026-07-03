@@ -30,7 +30,7 @@ export const megaMenus = {
       {
         id: "patient",
         label: "Patient",
-        subtext: "Prévention & RDV",
+        subtext: "Prévention & rendez-vous",
         icon: "❤️",
         iconBg: "#fce7f3",
         href: "/patient",

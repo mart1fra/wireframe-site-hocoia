@@ -63,7 +63,7 @@ export const hero = {
 export const stats = [
   { id: "s1", value: "20M",     label: "Français vivent en désert médical",                source: "DREES 2023" },
   { id: "s2", value: "<5",      label: "Dermatologues dans l'Orne ou l'Eure",              source: "DREES 2023" },
-  { id: "s3", value: "18 mois", label: "Délai moyen RDV spécialiste en zone rurale",       source: "CNOM 2023" },
+  { id: "s3", value: "18 mois", label: "Délai moyen de rendez-vous spécialiste en zone rurale",       source: "CNOM 2023" },
   { id: "s4", value: "2 mois",  label: "Délai MOYEN de déploiement Hocoia sur votre territoire", source: "Hocoia" },
 ];
 
@@ -214,7 +214,7 @@ export const zeroCharge = {
       id: "zc3",
       title: "La coordination",
       description:
-        "Prise de RDV, invitation des patients, communication locale, gestion des annulations : tout dans HocoApp.",
+        "Prise de rendez-vous, invitation des patients, communication locale, gestion des annulations : tout dans HocoApp.",
       detail: "Flyer, courrier, SMS, on gère",
     },
     {

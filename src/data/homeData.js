@@ -108,7 +108,7 @@ export const specialites = {
       "Mar. 15 avril · 9h, 10h30, 14h",
       "Jeu. 17 avril · 9h, 11h",
     ],
-    ctaPrimary: "Prendre RDV",
+    ctaPrimary: "Prendre rendez-vous",
     ctaOutline: "Me prévenir",
   },
 };
@@ -118,9 +118,9 @@ export const specialites = {
 export const stats = {
   eyebrow: "Notre impact en France",
   items: [
-    { value: "4 800", label: "Patients accompagnés" },
-    { value: "80+",   label: "Communes desservies" },
-    { value: "5",     label: "Spécialités disponibles" },
+    { value: "4 800", label: "Patients accompagnés en toute confiance" },
+    { value: "80+",   label: "Communes déjà visitées par nos bus" },
+    { value: "12",    label: "Spécialités disponibles pour couvrir vos besoins" },
   ],
 };
 

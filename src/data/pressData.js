@@ -87,7 +87,7 @@ export const ilsParlentDeNous = {
       media: "Le Quotidien du Médecin",
       titre: "HocoApp : l'outil tout-en-un qui simplifie la coordination des soins",
       date: "08/09/2024",
-      excerpt: "Focus sur la plateforme digitale développée par Hocoia, qui réunit prise de RDV, dossier patient et télé-expertise.",
+      excerpt: "Focus sur la plateforme digitale développée par Hocoia, qui réunit prise de rendez-vous, dossier patient et télé-expertise.",
       url: "#",
       type: "Article",
     },

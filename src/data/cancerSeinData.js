@@ -75,7 +75,7 @@ export const depistageHocoia = {
   differenciateurs: [
     { id: "d1", titre: "Mammographie + échographie à bord", description: "Palpation mammaire, mammographie numérique et échographie selon indication · tout en un." },
     { id: "d2", titre: "Dépistage organisé habilité", description: "Programme national pris en charge à 100% par l'Assurance Maladie pour les femmes de 50 à 74 ans." },
-    { id: "d3", titre: "Clé en main", description: "Hocoia gère tout : communication, prise de RDV, logistique, équipe médicale, bilan de résultats." },
+    { id: "d3", titre: "Clé en main", description: "Hocoia gère tout : communication, prise de rendez-vous, logistique, équipe médicale, bilan de résultats." },
     { id: "d4", titre: "PACS centralisé · HDS certifié", description: "Données médicales hébergées en sécurité, lisibles par tous les praticiens et centres de radiologie." },
   ],
   bus: {
@@ -98,7 +98,7 @@ export const protocole = {
     {
       id: "p1", num: "1",
       titre: "Organisation de la campagne",
-      description: "Coordination avec la collectivité ou l'entreprise : définition du lieu, de la date, communication aux bénéficiaires. Prise de RDV via le tableau de bord ou par téléphone.",
+      description: "Coordination avec la collectivité ou l'entreprise : définition du lieu, de la date, communication aux bénéficiaires. Prise de rendez-vous via le tableau de bord ou par téléphone.",
       badge: "Équipe Hocoia",
     },
     {
@@ -116,7 +116,7 @@ export const protocole = {
     {
       id: "p4", num: "4",
       titre: "Résultats & suivi",
-      description: "Résultats transmis sous 1 à 2 semaines. En cas d'anomalie, l'équipe médicale organise un RDV complémentaire et assure le suivi de la patiente.",
+      description: "Résultats transmis sous 1 à 2 semaines. En cas d'anomalie, l'équipe médicale organise un rendez-vous complémentaire et assure le suivi de la patiente.",
       badge: "Radiologue partenaire",
     },
   ],
@@ -257,7 +257,7 @@ export const faq = {
       id: "f4",
       question: "Que se passe-t-il si une anomalie est détectée ?",
       answer:
-        "En cas de résultat suspect, l'équipe médicale Hocoia organise un RDV complémentaire avec un radiologue ou gynécologue référent. Le suivi est tracé et transmis à votre médecin traitant.",
+        "En cas de résultat suspect, l'équipe médicale Hocoia organise un rendez-vous complémentaire avec un radiologue ou gynécologue référent. Le suivi est tracé et transmis à votre médecin traitant.",
     },
     {
       id: "f5",

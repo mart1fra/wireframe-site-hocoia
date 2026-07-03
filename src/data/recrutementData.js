@@ -91,7 +91,7 @@ export const journeeDepistage = {
       ],
       timeline: [
         { id: "m1", num: "1", titre: "Arrivée & briefing",         description: "Bus déjà installé, briefing de 10 minutes avec le soignant d'accueil." },
-        { id: "m2", num: "2", titre: "Fluidité des consultations",   description: "Succession fluide des RDV toutes les 20 à 30 minutes, dossiers préparés en amont." },
+        { id: "m2", num: "2", titre: "Fluidité des consultations",   description: "Succession fluide des rendez-vous toutes les 20 à 30 minutes, dossiers préparés en amont." },
         { id: "m3", num: "3", titre: "Diagnostic & prescription",   description: "Accès direct aux dispositifs connectés, prescription numérique via HocoApp." },
         { id: "m4", num: "4", titre: "Compte-rendu automatique",    description: "Génération automatique du compte-rendu, transmission au médecin traitant du patient." },
       ],
@@ -144,7 +144,7 @@ export const pourquoiRejoindre = {
       id: "avantage2",
       titre: "Matériel et logistique fournis",
       description:
-        "Bus équipé, installation, nettoyage, coordination des RDV : tout est géré par Hocoia. Vous arrivez, vous soignez, vous repartez.",
+        "Bus équipé, installation, nettoyage, coordination des rendez-vous : tout est géré par Hocoia. Vous arrivez, vous soignez, vous repartez.",
       detail: "Pas d'investissement de votre côté",
     },
     {

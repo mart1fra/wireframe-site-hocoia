@@ -92,7 +92,7 @@ export const useCases = {
       caseCard: {
         tag: "Sport & outdoor · Industrie",
         title: "Comment Boardriders a déployé un programme de prévention pour ses collaborateurs",
-        description: "Boardriders a organisé des journées de dépistage directement sur site avec le MédicoBus Hocoia. Organisation clé en main, zéro charge RH, résultats anonymisés.",
+        description: "Boardriders a organisé des journées de dépistage directement sur site avec le MédicoBus Hocoia. Organisation clé en main, pas de charge RH, résultats anonymisés.",
         metrics: [
           { value: "+3 000", label: "personnes dépistées (parc clients)" },
           { value: "4,8/5",  label: "satisfaction patients" },
@@ -199,7 +199,7 @@ export const avisClients = {
     {
       id: "ac2",
       stars: "★★★★★",
-      quote: "On a lancé le programme dans la foulée du COMEX. L'organisation a été prise en charge de A à Z par Hocoia, zéro charge côté RH. Je recommande à tout DAF qui veut un impact mesurable.",
+      quote: "On a lancé le programme dans la foulée du COMEX. L'organisation a été prise en charge de A à Z par Hocoia, pas de charge côté RH. Je recommande à tout DAF qui veut un impact mesurable.",
       author: "Julien R.",
       role: "Directeur financier, PME · 450 salariés",
     },
@@ -407,9 +407,9 @@ export const parcoursPatient = {
       id: "s1",
       number: "01",
       day: "Étape 1",
-      title: "Inscription & prise de RDV",
+      title: "Inscription & prise de rendez-vous",
       description:
-        "Le collaborateur reçoit un code d'invitation unique et prend son RDV sur son espace personnel en quelques clics selon les créneaux disponibles sur site.",
+        "Le collaborateur reçoit un code d'invitation unique et prend son rendez-vous sur son espace personnel en quelques clics selon les créneaux disponibles sur site.",
     },
     {
       id: "s2",

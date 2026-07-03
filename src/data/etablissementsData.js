@@ -338,7 +338,7 @@ export const processus = {
       number: "04",
       title: "Ouverture des inscriptions",
       description:
-        "Prise de RDV via le tableau de bord ou par votre équipe. Possibilité d'intégrer vos spécialistes en télé-expertise sur les cas identifiés. Hocoia gère la coordination.",
+        "Prise de rendez-vous via le tableau de bord ou par votre équipe. Possibilité d'intégrer vos spécialistes en télé-expertise sur les cas identifiés. Hocoia gère la coordination.",
       delay: "Étape 4",
     },
     {
@@ -378,7 +378,7 @@ export const temoignages = {
       id: "tm3",
       context: "Institutionnel · Santé",
       quote:
-        "L'organisation est remarquable, de la prise de RDV au déroulement. Ce concept permet un examen complet dans un cadre rassurant et professionnel.",
+        "L'organisation est remarquable, de la prise de rendez-vous au déroulement. Ce concept permet un examen complet dans un cadre rassurant et professionnel.",
       name: "Claire Doucerain",
       role: "Responsable DSE, Ministère des AE",
     },
@@ -484,7 +484,7 @@ export const parcoursPatient = {
       delay: "Étape 1",
       title: "Orientation & inscription",
       description:
-        "Le patient est orienté par l'établissement ou identifié dans la patientèle. La prise de RDV se fait via le tableau de bord, intégré au circuit d'orientation de votre établissement.",
+        "Le patient est orienté par l'établissement ou identifié dans la patientèle. La prise de rendez-vous se fait via le tableau de bord, intégré au circuit d'orientation de votre établissement.",
     },
     {
       id: "s2",

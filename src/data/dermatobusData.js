@@ -72,7 +72,7 @@ export const stats = [
   { value: "100 000", label: "nouveaux cas de cancer cutané / an en France",   source: "INCa 2024" },
   { value: "+25%",   label: "hausse des mélanomes en 10 ans",                  source: "INCa 2024" },
   { value: "<5",     label: "dermatologues dans l'Orne et l'Eure",              source: "DREES 2023" },
-  { value: "18 mois", label: "délai moyen RDV pour consulter un dermatologue en zone rurale", source: "CNOM 2023" },
+  { value: "18 mois", label: "délai moyen de rendez-vous pour consulter un dermatologue en zone rurale", source: "CNOM 2023" },
   { value: "95%",    label: "taux de survie si détecté au stade 1",             source: "INCa 2024" },
 ];
 
@@ -211,7 +211,7 @@ export const protocole = {
       num: "1",
       titre: "Organisation de la campagne",
       description:
-        "Coordination du projet : définition de la campagne, sélection du lieu et de la date. Prise de RDV via le tableau de bord ou par téléphone. Invitation par flyer numérique ou courrier.",
+        "Coordination du projet : définition de la campagne, sélection du lieu et de la date. Prise de rendez-vous via le tableau de bord ou par téléphone. Invitation par flyer numérique ou courrier.",
       badge: "Équipe Hocoia",
     },
     {
@@ -235,7 +235,7 @@ export const protocole = {
       num: "4",
       titre: "Pilotage & bilan",
       description:
-        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées · RDV complémentaire organisé par l'équipe médicale.",
+        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées · rendez-vous complémentaire organisé par l'équipe médicale.",
       badge: "Équipe médicale Hocoia",
     },
   ],
@@ -254,7 +254,7 @@ export const piloteNormandie = {
   statsRow: [
     { value: "<5", label: "Dermatologues dans l'Orne" },
     { value: "<5", label: "Dermatologues dans l'Eure" },
-    { value: "18 mois", label: "Délai RDV moyen" },
+    { value: "18 mois", label: "Délai moyen de rendez-vous" },
   ],
   encadre: {
     titre: "Vous êtes une collectivité ou une structure de Normandie ?",

@@ -14,7 +14,7 @@ export const hero = {
     "12 millions de patients hypertendus dont 30% non diagnostiqués",
     "ECG, bilan lipidique, tension, échographie des carotides à bord",
     "Résultats analysés par un cardiologue en télé-expertise",
-    "Examen complet en 25 minutes, sans RDV préalable",
+    "Examen complet en 25 minutes, sans rendez-vous préalable",
   ],
   ctaPatient: "Trouver un bilan cardio près de chez moi",
   ctaPatientHref: "/patient",
@@ -148,7 +148,7 @@ export const pourQui = {
       titre: "Patients & grand public",
       description:
         "Vous avez plus de 45 ans, des facteurs de risque (tabac, surpoids, antécédents familiaux) ou n'avez pas fait de bilan cardiovasculaire depuis longtemps ?",
-      casType: "Bilan complet en 25 minutes, sans RDV préalable, gratuit pour le patient.",
+      casType: "Bilan complet en 25 minutes, sans rendez-vous préalable, gratuit pour le patient.",
       href: "/patient",
       cta: "Trouver un passage →",
     },

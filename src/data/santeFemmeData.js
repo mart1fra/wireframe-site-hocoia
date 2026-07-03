@@ -148,7 +148,7 @@ export const pourQui = {
       titre: "Femmes & grand public",
       description:
         "Vous n'avez pas de gynécologue, vous habitez en zone rurale, ou vous n'avez pas fait de frottis depuis plus de 3 ans. La sage-femme Hocoia vient à vous.",
-      casType: "Consultation complète en 30 minutes, sans RDV gynécologue, sans déplacement.",
+      casType: "Consultation complète en 30 minutes, sans rendez-vous gynécologue, sans déplacement.",
       href: "/patient",
       cta: "Trouver une date →",
     },

@@ -67,7 +67,7 @@ export const categories = [
       {
         question: "Dois-je prendre rendez-vous ?",
         answer:
-          "C'est recommandé pour garantir votre créneau, mais certaines journées acceptent les venues sans rendez-vous selon la disponibilité. La prise de RDV se fait en ligne ou par téléphone.",
+          "C'est recommandé pour garantir votre créneau, mais certaines journées acceptent les venues sans rendez-vous selon la disponibilité. La prise de rendez-vous se fait en ligne ou par téléphone.",
       },
       {
         question: "Comment se déroule mon arrivée ?",
@@ -134,7 +134,7 @@ export const categories = [
       {
         question: "Quelle charge de travail pour nos équipes RH ?",
         answer:
-          "Quasi nulle. Hocoia gère l'intégralité de l'organisation : logistique, communication interne, prise de RDV, bilan.",
+          "Quasi nulle. Hocoia gère l'intégralité de l'organisation : logistique, communication interne, prise de rendez-vous, bilan.",
       },
       {
         question: "Comment sont protégées les données de santé de nos collaborateurs ?",

@@ -13,7 +13,7 @@ export const hero = {
       heure: "9h · 16h",
       lieu: "Place de la Mairie, Strasbourg",
       specialites: "Check-up · Cardiologie · Dermatologie",
-      ctaPrimary: "Prendre RDV",
+      ctaPrimary: "Prendre rendez-vous",
       ctaOutline: "Me prévenir",
     },
     {
@@ -22,7 +22,7 @@ export const hero = {
       heure: "8h30 · 17h",
       lieu: "Parking Leclerc, Haguenau",
       specialites: "Cancer sein · Gynécologie · Check-up",
-      ctaPrimary: "Prendre RDV",
+      ctaPrimary: "Prendre rendez-vous",
       ctaOutline: "Me prévenir",
     },
     {
@@ -31,7 +31,7 @@ export const hero = {
       heure: "9h · 13h",
       lieu: "Place du Marché, Saverne",
       specialites: "Cardiologie · Dermatologie · Bilan sanguin",
-      ctaPrimary: "Prendre RDV",
+      ctaPrimary: "Prendre rendez-vous",
       ctaOutline: "Me prévenir",
     },
   ],
@@ -123,9 +123,9 @@ export const specialites = {
     },
     {
       id: "sp5",
-      titre: "Santé de la femme",
+      titre: "Gynécologie",
       description:
-        "Suivi gynécologique, frottis, consultation sage-femme. Prévention et accompagnement.",
+        "Consultation par une sage-femme, suivi gynécologique, frottis. Prévention et accompagnement.",
       duree: "~30 min",
       href: "/solutions/sante-femme",
     },

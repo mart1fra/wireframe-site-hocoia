@@ -148,7 +148,7 @@ export const pourQui = {
       titre: "Patients & grand public",
       description:
         "Vous n'avez pas de médecin traitant, vous vivez en désert médical, ou vous n'avez pas fait de bilan de santé depuis longtemps. Le MédicoBus vient à vous.",
-      casType: "Sans RDV préalable, sans ordonnance, résultats immédiats.",
+      casType: "Sans rendez-vous préalable, sans ordonnance, résultats immédiats.",
       href: "/patient",
       cta: "Trouver un passage →",
     },

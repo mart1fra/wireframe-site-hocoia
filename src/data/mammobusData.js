@@ -105,7 +105,7 @@ export const concept = {
     { id: "f1", titre: "Mammographie + échographie mammaire", description: "Palpation mammaire et mammographie à bord. Échographie en complément selon indication." },
     { id: "f2", titre: "PACS centralisé + hébergement HDS", description: "Hébergement certifié HDS et ISO 27001, box de transfert, PACS centralisé · lecture sur tous les écrans." },
     { id: "f3", titre: "Connectivité haut débit agréée", description: "SAT + LTE avec IP statique. Connexion avec tout cabinet de radiologie ou centre hospitalier." },
-    { id: "f4", titre: "HocoApp · coordination complète", description: "Prise de RDV, pré-questionnaire médical, coordination des professionnels de santé, bilan anonymisé." },
+    { id: "f4", titre: "HocoApp · coordination complète", description: "Prise de rendez-vous, pré-questionnaire médical, coordination des professionnels de santé, bilan anonymisé." },
   ],
   videoLabel: "Vidéo · Le MammoBus en action · 2:45",
   comparison: {
@@ -177,7 +177,7 @@ export const definition = {
       id: "f4",
       titre: "HocoApp · coordination complète",
       description:
-        "Prise de RDV, pré-questionnaire médical, coordination des professionnels de santé, bilan anonymisé.",
+        "Prise de rendez-vous, pré-questionnaire médical, coordination des professionnels de santé, bilan anonymisé.",
     },
   ],
   imagePlaceholder: "MammoBus 3D · vue extérieure et intérieure interactive",
@@ -207,7 +207,7 @@ export const protocole = {
       num: "1",
       titre: "Organisation de la campagne",
       description:
-        "Coordination du projet : définition de la campagne, sélection du lieu et de la date. Prise de RDV via le tableau de bord ou par téléphone. Invitation par flyer numérique ou courrier.",
+        "Coordination du projet : définition de la campagne, sélection du lieu et de la date. Prise de rendez-vous via le tableau de bord ou par téléphone. Invitation par flyer numérique ou courrier.",
       badge: "Équipe Hocoia",
     },
     {
@@ -231,7 +231,7 @@ export const protocole = {
       num: "4",
       titre: "Pilotage & bilan",
       description:
-        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées · RDV complémentaire organisé par l'équipe médicale.",
+        "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées · rendez-vous complémentaire organisé par l'équipe médicale.",
       badge: "Équipe médicale Hocoia",
     },
   ],
@@ -477,7 +477,7 @@ export const faq = {
       id: "faq4",
       question: "Comment sont organisées les inscriptions ?",
       answer:
-        "Hocoia gère l'intégralité de la campagne : invitation par flyer numérique ou courrier, prise de RDV via le tableau de bord ou téléphone, accueil le jour J. La collectivité n'a rien à organiser.",
+        "Hocoia gère l'intégralité de la campagne : invitation par flyer numérique ou courrier, prise de rendez-vous via le tableau de bord ou téléphone, accueil le jour J. La collectivité n'a rien à organiser.",
     },
     {
       id: "faq5",

@@ -5,14 +5,14 @@
     subtitle:
       "Prenez rendez-vous, retrouvez vos comptes-rendus et suivez votre parcours de prévention. L'interface centralise tout ce dont vous avez besoin · en toute sécurité.",
     features: [
-      { id: "f1", title: "Prise de RDV simplifiée", description: "Choisissez votre créneau dans le bus le plus proche en 3 clics." },
+      { id: "f1", title: "Prise de rendez-vous simplifiée", description: "Choisissez votre créneau dans le bus le plus proche en 3 clics." },
       { id: "f2", title: "Vos documents centralisés", description: "Comptes-rendus, ordonnances et résultats accessibles à tout moment." },
       { id: "f4", title: "100% sécurisé", description: "Données cryptées, hébergement de santé certifié HDS." },
-      { id: "f5", title: "Résultats selon votre préférence", description: "Résultats transmis par courrier ou par mail selon votre préférence." },
+      { id: "f5", title: "Résultats selon votre préférence", description: "Résultats transmis par courrier ou par mail, et transmission des résultats à votre médecin traitant." },
     ],
     ctaPrimary: "Découvrir HocoApp",
     ctaOutline: "Se connecter",
-    mockupLabel: "Interface patient · prise de RDV",
+    mockupLabel: "Interface patient · prise de rendez-vous",
   },
   proSante: {
     eyebrow: "",
@@ -53,7 +53,7 @@
       "Planifiez les déploiements commune par commune, invitez vos habitants en quelques clics et suivez les indicateurs de fréquentation depuis votre tableau de bord territorial. HocoApp centralise tout le suivi de vos actions de santé publique.",
     features: [
       { id: "f1", title: "Planning des passages bus", description: "Visualisez et organisez les déploiements sur votre territoire commune par commune." },
-      { id: "f2", title: "Accès habitants simplifié", description: "Prise de RDV via flyer + code d'invitation, sans création de compte complexe." },
+      { id: "f2", title: "Accès habitants simplifié", description: "Prise de rendez-vous via flyer + code d'invitation, sans création de compte complexe." },
       { id: "f3", title: "Indicateurs de fréquentation", description: "Suivi anonymisé : participation, communes desservies, retours patients." },
       { id: "f4", title: "Communication intégrée", description: "Diffusion des créneaux disponibles auprès de vos habitants en quelques clics." },
     ],

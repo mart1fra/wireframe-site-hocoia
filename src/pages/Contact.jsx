@@ -17,13 +17,13 @@ const BTOB = [
     icon: "🏛️",
     title: "Secteur public",
     desc: "Communes, intercommunalités, régions : intégrez nos bus dans votre politique de santé publique.",
-    cta: "Prendre RDV →",
+    cta: "Prendre rendez-vous →",
   },
   {
     icon: "🏢",
     title: "Entreprises",
     desc: "Bilans de santé au travail, dépistages, médecine d'entreprise déployée directement sur site.",
-    cta: "Prendre RDV →",
+    cta: "Prendre rendez-vous →",
   },
   {
     icon: "🚌",

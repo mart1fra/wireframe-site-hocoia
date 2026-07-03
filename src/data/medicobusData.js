@@ -103,7 +103,7 @@ export const concept = {
     { id: "f1", titre: "Cabinet mobile < 3,5T", description: "Parking, place de marché, site entreprise · partout accessible." },
     { id: "f2", titre: "10+ dispositifs médicaux connectés", description: "ECG, dermatoscope, échographe, spiromètre, mini-labo biologie…" },
     { id: "f3", titre: "Soignant présent + médecin téléconsultant", description: "Accompagnement humain complet : accueil, anamnèse, constantes, suivi." },
-    { id: "f4", titre: "Logiciel de coordination unique", description: "Agenda, prise de RDV, dossier patient, reporting · tout intégré." },
+    { id: "f4", titre: "Logiciel de coordination unique", description: "Agenda, prise de rendez-vous, dossier patient, reporting · tout intégré." },
   ],
   videoLabel: "Vidéo · Le MédicoBus en action · 2:30",
   comparison: {
@@ -155,7 +155,7 @@ export const definition = {
     {
       id: "f4",
       titre: "Logiciel de coordination unique",
-      description: "Agenda, prise de RDV, dossier patient, reporting · tout intégré.",
+      description: "Agenda, prise de rendez-vous, dossier patient, reporting · tout intégré.",
     },
   ],
   photos: [
@@ -200,7 +200,7 @@ export const thematiques = {
         "Prise des constantes par l'infirmière",
         "Examen complémentaire (ECG, glycémie, cholestérol)",
         "Diagnostic en asynchrone par un cardiologue en téléexpertise",
-        "Si besoin, prise de RDV complémentaire",
+        "Si besoin, prise de rendez-vous complémentaire",
       ],
       badge: "→ Diagnostic asynchrone · résultats dans les semaines suivantes par mail ou courrier",
       affectionsLabel: "AFFECTIONS CIBLÉES",
@@ -281,7 +281,7 @@ export const parcours = {
   eyebrow: "",
   h2: "Comment se déroule une consultation dans le MédicoBus ?",
   steps: [
-    { id: "s1", number: "01", titre: "Prise de RDV",       description: "Réservation en ligne ou directement sur place selon disponibilité." },
+    { id: "s1", number: "01", titre: "Prise de rendez-vous",       description: "Réservation en ligne ou directement sur place selon disponibilité." },
     { id: "s2", number: "02", titre: "Accueil à bord",      description: "Accueil par un soignant qualifié, recueil des informations médicales." },
     { id: "s3", number: "03", titre: "Consultation",        description: "Examens réalisés sur place avec les équipements embarqués." },
     { id: "s4", number: "04", titre: "Résultats & suivi",   description: "Résultats envoyés par mail ou courrier dans les semaines suivantes. Pour le check-up santé, résultats remis directement à l'issue de la consultation." },
@@ -610,6 +610,6 @@ export const ctaFinal = {
   subtitle:
     "Un expert vous présente la solution adaptée. Ou prenez rendez-vous si vous êtes un patient.",
   ctaPrimary: "Demander une présentation",
-  ctaOutline: "Prendre RDV patient →",
+  ctaOutline: "Prendre rendez-vous patient →",
   ctaGhost: "Télécharger la brochure",
 };

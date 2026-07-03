@@ -28,7 +28,7 @@ export const hero = {
 export const stats = [
   { value: "100 000", label: "nouveaux cas de cancer cutané par an en France", source: "INCa 2024" },
   { value: "+25%",    label: "d'augmentation des mélanomes en 10 ans",          source: "INCa 2024" },
-  { value: "18 mois", label: "délai moyen de RDV chez un dermatologue en zone rurale", source: "CNOM 2023" },
+  { value: "18 mois", label: "délai moyen de rendez-vous chez un dermatologue en zone rurale", source: "CNOM 2023" },
   { value: "95%",     label: "taux de survie si détecté au stade I",            source: "INCa 2024" },
 ];
 
@@ -147,8 +147,8 @@ export const pourQui = {
       id: "pq1",
       titre: "Patients & grand public",
       description:
-        "Vous vivez en zone rurale, vous avez du mal à obtenir un RDV chez un dermatologue, ou vous souhaitez faire le point sur votre peau.",
-      casType: "Dépistage accessible, sans RDV préalable, sans déplacement lointain.",
+        "Vous vivez en zone rurale, vous avez du mal à obtenir un rendez-vous chez un dermatologue, ou vous souhaitez faire le point sur votre peau.",
+      casType: "Dépistage accessible, sans rendez-vous préalable, sans déplacement lointain.",
       href: "/patient",
       cta: "Trouver un passage →",
     },
@@ -191,7 +191,7 @@ export const temoignages = {
     {
       id: "t1",
       contexte: "Patiente · Val de Fensch",
-      quote: "Une expérience à poursuivre et à pérenniser. On a beaucoup de mal à avoir des RDV dermato · merci à vous !",
+      quote: "Une expérience à poursuivre et à pérenniser. On a beaucoup de mal à avoir des rendez-vous dermato · merci à vous !",
       author: "Mme Nuvolara",
       role: "Patiente, Val de Fensch",
     },

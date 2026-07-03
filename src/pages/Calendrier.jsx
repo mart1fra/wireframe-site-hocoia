@@ -176,7 +176,7 @@ function PassageCard({ p }) {
         </div>
       </div>
 
-      {/* Places + RDV */}
+      {/* Places + rendez-vous */}
       <div className="flex flex-col items-end gap-2 shrink-0">
         <p className={`text-xs font-semibold ${low ? "text-gray-900" : "text-gray-400"}`}>
           {low && "⚠ "}
@@ -188,7 +188,7 @@ function PassageCard({ p }) {
           rel="noopener noreferrer"
           className="bg-gray-900 text-white text-xs font-semibold px-4 py-2 rounded-full hover:bg-gray-700 transition-colors whitespace-nowrap"
         >
-          Prendre RDV ↗
+          Prendre rendez-vous ↗
         </a>
       </div>
     </div>

@@ -202,7 +202,7 @@ export const whyItems = [
     id: "wh3",
     title: "Plateforme HocoApp intégrée",
     description:
-      "Tous nos déploiements utilisent HocoApp : prise de RDV, dossier patient, comptes-rendus, reporting. Tout est centralisé.",
+      "Tous nos déploiements utilisent HocoApp : prise de rendez-vous, dossier patient, comptes-rendus, reporting. Tout est centralisé.",
   },
 ];
 
