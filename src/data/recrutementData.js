@@ -80,8 +80,8 @@ export const journeeDepistage = {
       timeline: [
         { id: "i1", num: "1", titre: "Accueil & installation",       description: "Vous accueillez les patients, vérifiez leur dossier et les installez à bord." },
         { id: "i2", num: "2", titre: "Constantes & anamnèse",         description: "Prise des constantes, remplissage du dossier HocoApp, recueil des antécédents." },
-        { id: "i3", num: "3", titre: "Assistance à la consultation",  description: "Vous assistez le médecin (en présentiel ou téléexpertise) pendant les examens." },
-        { id: "i4", num: "4", titre: "Suivi & orientation",           description: "Remise des documents au patient, orientation si besoin, transmission au médecin traitant." },
+        { id: "i3", num: "3", titre: "Assistance à la consultation",  description: "Vous assistez le médecin en téléconsultation (TLC) pendant les examens." },
+        { id: "i4", num: "4", titre: "Suivi & orientation",           description: "Impression et remise des ordonnances au patient, orientation si besoin." },
       ],
     },
     medecin: {
@@ -98,7 +98,7 @@ export const journeeDepistage = {
     },
     specialiste: {
       paragraphs: [
-        "Vous intervenez en téléexpertise depuis votre cabinet ou en présentiel sur le bus selon la spécialité. Cardiologie, dermatologie, gynécologie : vos compétences apportent la prévention dans les territoires sous-dotés.",
+        "Vous intervenez en téléexpertise depuis votre cabinet, selon la spécialité. Cardiologie, dermatologie, gynécologie : vos compétences apportent la prévention dans les territoires sous-dotés.",
         "HocoVisio vous donne accès en temps réel aux dispositifs embarqués (ECG, dermatoscope, échographe) avec la qualité d'un cabinet spécialisé. Vous décidez en direct ou en asynchrone.",
       ],
       timeline: [

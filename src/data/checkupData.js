@@ -99,25 +99,21 @@ export const protocole = {
       id: "p1", num: "1",
       titre: "Accueil & anamnèse",
       description: "Recueil de vos antécédents médicaux et habitudes de vie par l'infirmière. Préparation au bilan, vérification des contre-indications.",
-      badge: "Infirmier·e à bord",
     },
     {
       id: "p2", num: "2",
       titre: "Mesures & examens",
       description: "Tension artérielle, ECG de repos, glycémie, cholestérol, IMC, périmètre abdominal, saturation. Bilan complet en quelques minutes.",
-      badge: "10–15 min",
     },
     {
       id: "p3", num: "3",
       titre: "Téléconsultation médicale",
       description: "Un médecin en téléconsultation analyse vos résultats en temps réel, répond à vos questions et établit vos préconisations personnalisées.",
-      badge: "Médecin téléconsultant",
     },
     {
       id: "p4", num: "4",
       titre: "Restitution & suivi",
       description: "Résultats remis immédiatement à l'issue de la consultation. Compte-rendu transmis à votre médecin traitant. Orientation vers un spécialiste si nécessaire.",
-      badge: "Résultats immédiats",
     },
   ],
 };
@@ -274,7 +270,7 @@ export const faq = {
       id: "f7",
       question: "Qu'est-ce qu'un check-up santé Hocoia ?",
       answer:
-        "Le check-up santé est un parcours complet de prévention permettant d'évaluer plusieurs indicateurs de santé au cours d'un même rendez-vous. Une infirmière réalise une prise de sang sur place ainsi que différents examens : ECG, tension artérielle, fréquence cardiaque, saturation en oxygène, poids, taille, spirométrie et, selon le programme, des examens complémentaires.",
+        "Le check-up santé est un parcours complet de prévention permettant d'évaluer plusieurs indicateurs de santé au cours d'un même rendez-vous. Une infirmière réalise une prise de sang sur place ainsi que différents examens : ECG, tension artérielle, fréquence cardiaque, saturation en oxygène, poids, taille, spirométrie et, selon le programme, des examens complémentaires. Une téléconsultation avec un médecin permet ensuite d'analyser les résultats et d'échanger sur le suivi.",
     },
   ],
 };

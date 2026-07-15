@@ -294,7 +294,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-14">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-3">
-                  Partenaires & institutions
+                  Partenaires & Acteurs locaux
                 </p>
                 <h2 className="font-display font-bold text-3xl sm:text-4xl text-gray-900 leading-tight">
                   Vous représentez une organisation ?

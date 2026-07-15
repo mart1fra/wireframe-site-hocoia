@@ -13,8 +13,8 @@ export const audiences = [
   { id: "all",           label: "Toutes les questions" },
   { id: "patients",      label: "Patients" },
   { id: "entreprises",   label: "Entreprises & mutuelles" },
-  { id: "secteur-public",label: "Collectivités & institutions" },
-  { id: "etablissements",label: "Établissements de santé & médico-social" },
+  { id: "secteur-public",label: "Collectivités & Acteurs locaux" },
+  { id: "etablissements",label: "Établissements de santé & médico-sociaux" },
   { id: "pro-sante",     label: "Professionnels de santé" },
   { id: "bus",           label: "Sur les bus" },
 ];
@@ -105,7 +105,7 @@ export const categories = [
       {
         question: "Comment fonctionne une téléconsultation Hocoia ?",
         answer:
-          "Selon les campagnes, la consultation peut être réalisée avec un médecin en téléconsultation assistée et une infirmière dans le bus, ou avec un médecin présent directement à bord. Un professionnel de santé accompagne toujours le patient.",
+          "La consultation est réalisée avec un médecin en téléconsultation assistée et une infirmière présente dans le bus. Un professionnel de santé accompagne toujours le patient.",
       },
       {
         question: "Est-ce remboursé ?",
@@ -284,7 +284,7 @@ export const categories = [
       {
         question: "Quels équipements médicaux sont embarqués ?",
         answer:
-          "Selon la thématique : cardio (ECG, tensiomètre, mini-labo), dermatologie (dermatoscope IA), santé femme (frottis, palpation mammaire). Configuration sur-mesure.",
+          "Selon la thématique : cardio (ECG, tensiomètre, analyseur multiparamètres), dermatologie (dermatoscope IA), santé femme (frottis, palpation mammaire). Configuration sur-mesure.",
       },
       {
         question: "Combien de temps dure une consultation ?",

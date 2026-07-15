@@ -29,7 +29,7 @@ export const megaMenus = {
     profiles: [
       {
         id: "patient",
-        label: "Patient",
+        label: "Patients",
         subtext: "Prévention & rendez-vous",
         icon: "❤️",
         iconBg: "#fce7f3",
@@ -47,7 +47,7 @@ export const megaMenus = {
       },
       {
         id: "collectivite",
-        label: "Collectivités & institutions",
+        label: "Collectivités & Acteurs locaux",
         subtext: "Santé de proximité pour vos territoires",
         icon: "🏛️",
         iconBg: "#dbeafe",
@@ -56,7 +56,7 @@ export const megaMenus = {
       },
       {
         id: "etablissement",
-        label: "Établissements de santé & ESSMS",
+        label: "Établissements de santé & médico-sociaux",
         subtext: "Actions hors les murs",
         icon: "🏥",
         iconBg: "#ffedd5",
@@ -65,7 +65,7 @@ export const megaMenus = {
       },
       {
         id: "pro-sante",
-        label: "Professionnel santé",
+        label: "Professionnels de santé",
         subtext: "Rejoindre l'équipe",
         icon: "🩺",
         iconBg: "#dcfce7",
@@ -170,7 +170,7 @@ export const megaMenus = {
       {
         id:      "medicobus",
         label:   "MédicoBus",
-        subtext: "Check-up, Cardiologie, Dermatologie & plus",
+        subtext: "Check-up, Cardiologie, Dermatologie · Location",
         href:    "/produits/medicobus",
         color:   "#007E94",
         image:   null,
@@ -178,7 +178,7 @@ export const megaMenus = {
       {
         id:      "mammobus",
         label:   "MammoBus",
-        subtext: "Mammographie mobile",
+        subtext: "Mammographie mobile · Location",
         href:    "/mammobus",
         color:   "#F18500",
         image:   null,
@@ -186,7 +186,7 @@ export const megaMenus = {
       {
         id:      "dermatobus",
         label:   "DermatoBus",
-        subtext: "Dépistage cutané",
+        subtext: "Dépistage cutané · Location",
         href:    "/dermatobus",
         color:   "#1DADB5",
         image:   null,
@@ -302,14 +302,14 @@ export const profils = [
   },
   {
     id: "professionnels",
-    label: "Professionnel de santé",
+    label: "Professionnels de santé",
     description: "Rejoindre le réseau, missions disponibles",
     icon: "🩺",
     cta: "Rejoindre Hocoia",
   },
   {
     id: "patients",
-    label: "Patient",
+    label: "Patients",
     description: "Prendre rendez-vous, préparer ma venue",
     icon: "❤️",
     cta: "Trouver une date",

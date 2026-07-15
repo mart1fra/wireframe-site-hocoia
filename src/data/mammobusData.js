@@ -13,7 +13,7 @@ export const hero = {
     "Mammographie + échographie mammaire à bord",
     "PACS centralisé + hébergement HDS certifié",
     "Dépistage organisé et individuel · 24 patientes/jour",
-    "Diagnostic sur place ou en télé-expertise radiologue",
+    "Diagnostic sur place ou en télé-expertise en radiologie",
     "Déploiement clé en main",
     "Référencé RESAH · achat facilité pour les établissements publics",
   ],
@@ -208,7 +208,6 @@ export const protocole = {
       titre: "Organisation de la campagne",
       description:
         "Coordination du projet : définition de la campagne, sélection du lieu et de la date. Prise de rendez-vous via le tableau de bord ou par téléphone. Invitation par flyer numérique ou courrier.",
-      badge: "Équipe Hocoia",
     },
     {
       id: "p2",
@@ -216,15 +215,13 @@ export const protocole = {
       titre: "Accueil & communication",
       description:
         "Éléments de communication préparés par Hocoia. Accueil des patientes sur le lieu de dépistage par un représentant Hocoia.",
-      badge: "Représentant Hocoia",
     },
     {
       id: "p3",
       num: "3",
       titre: "Prise en charge médicale",
       description:
-        "Accompagnement à bord par un Manipulateur en Electroradiologie Médicale (MERM) et une sage-femme. Palpation mammaire, mammographie, échographie si indiquée. Diagnostic sur place ou en télé-expertise radiologue.",
-      badge: "MERM + Sage-femme + Radiologue",
+        "Dans le cadre du dépistage organisé : accompagnement à bord par un radiologue et un MERM (Manipulateur en Electroradiologie Médicale), avec palpation mammaire, mammographie et échographie si indiquée. Dans le cadre du DI (dépistage individuel) : accompagnement par une sage-femme et un MERM.",
     },
     {
       id: "p4",
@@ -232,7 +229,6 @@ export const protocole = {
       titre: "Pilotage & bilan",
       description:
         "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées · rendez-vous complémentaire organisé par l'équipe médicale.",
-      badge: "Équipe médicale Hocoia",
     },
   ],
 };

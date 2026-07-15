@@ -15,9 +15,9 @@ const sections = [
     label: "Vous êtes",
     pages: [
       { label: "Entreprises & mutuelles", href: "/entreprises-et-mutuelles" },
-      { label: "Collectivités & institutions", href: "/collectivites-et-institutions" },
-      { label: "Établissements de santé & ESSMS", href: "/etablissements-de-sante-et-essms" },
-      { label: "Patient", href: "/patient" },
+      { label: "Collectivités & Acteurs locaux", href: "/collectivites-et-institutions" },
+      { label: "Établissements de santé & médico-sociaux", href: "/etablissements-de-sante-et-essms" },
+      { label: "Patients", href: "/patient" },
       { label: "Professionnels de santé", href: "/professionnels-de-sante" },
     ],
   },

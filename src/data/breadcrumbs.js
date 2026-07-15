@@ -5,9 +5,9 @@
 export const breadcrumbsMap = {
   // ─── Profils ───────────────────────────────────────────────────────────────
   "/entreprises-et-mutuelles":      [{ label: "Vous êtes" }, { label: "Entreprises & mutuelles" }],
-  "/collectivites-et-institutions": [{ label: "Vous êtes" }, { label: "Collectivités & institutions" }],
-  "/etablissements-de-sante-et-essms": [{ label: "Vous êtes" }, { label: "Établissements de santé & ESSMS" }],
-  "/patient":                       [{ label: "Vous êtes" }, { label: "Patient" }],
+  "/collectivites-et-institutions": [{ label: "Vous êtes" }, { label: "Collectivités & Acteurs locaux" }],
+  "/etablissements-de-sante-et-essms": [{ label: "Vous êtes" }, { label: "Établissements de santé & médico-sociaux" }],
+  "/patient":                       [{ label: "Vous êtes" }, { label: "Patients" }],
   "/professionnels-de-sante":       [{ label: "Vous êtes" }, { label: "Professionnels de santé" }],
 
   // ─── Solutions · services ──────────────────────────────────────────────────

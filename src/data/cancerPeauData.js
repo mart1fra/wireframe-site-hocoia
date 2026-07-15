@@ -99,25 +99,21 @@ export const protocole = {
       id: "p1", num: "1",
       titre: "Accueil à bord",
       description: "Un infirmier vous accueille, recueille vos antécédents médicaux et prépare la session de cartographie.",
-      badge: "Infirmier·e à bord",
     },
     {
       id: "p2", num: "2",
       titre: "Cartographie complète",
       description: "Examen de l'intégralité du corps avec dermoscopie numérique. Toutes les lésions photographiées et documentées. Aucune zone oubliée.",
-      badge: "15–25 min",
     },
     {
       id: "p3", num: "3",
       titre: "Analyse & triage",
       description: "Pré-analyse IA, puis triage par un médecin généraliste formé. Seuls les cas nécessitant un avis spécialisé sont orientés vers le dermatologue.",
-      badge: "IA + Médecin généraliste formé",
     },
     {
       id: "p4", num: "4",
       titre: "Résultats & suivi",
       description: "Résultats envoyés par email sécurisé sous 2 à 4 semaines. En cas d'anomalie, prise en charge immédiate et orientation vers le spécialiste.",
-      badge: "Onco-dermatologue CHU",
     },
   ],
 };
@@ -275,7 +271,7 @@ export const faq = {
       id: "f7",
       question: "Comment fonctionne le dépistage du cancer de la peau ?",
       answer:
-        "Une infirmière recueille les informations du patient puis photographie les lésions concernées avec un dispositif dédié. Les examens sont analysés par un dermatologue.",
+        "Une infirmière recueille les informations du patient puis photographie les grains de beauté concernés avec un dispositif dédié, jusqu'à 7 grains de beauté. Les dossiers sont ensuite analysés par un dermatologue en télé-expertise.",
     },
     {
       id: "f8",

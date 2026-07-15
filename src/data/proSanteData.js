@@ -10,10 +10,9 @@ export const hero = {
   subtitle:
     "Rejoignez le réseau Hocoia et intervenez à bord de nos bus médicaux équipés, partout en France. Liberté, impact.",
   checks: [
-    "Prestataire ou CDD · selon le poste et vos disponibilités",
+    "Prestataire (rémunération à l'acte) ou CDD (salaire) · selon le poste et vos disponibilités",
     "Matériel et logistique 100% fournis par Hocoia pour les missions terrain",
-    "Rémunération à l'acte (prestation) ou salaire (CDD)",
-    "Zones d'intervention adaptées à vos disponibilités",
+    "Des interventions adaptées à votre secteur géographique et à vos disponibilités",
     "Téléconsultation disponible · consultez à distance, sans quitter votre cabinet",
   ],
   ctaPrimary: "Je candidate maintenant",
@@ -62,14 +61,14 @@ export const roleMission = {
       num: "01",
       title: "Vous menez des journées de dépistage",
       description:
-        "Organisées par Hocoia dans des communes rurales, des entreprises ou des quartiers prioritaires. Bus équipé, patients attendus, protocoles préparés · vous arrivez, vous soignez.",
+        "Organisées par Hocoia dans des communes rurales, des entreprises ou des quartiers prioritaires. Bus équipé, patients programmés, protocoles préparés : vous intervenez, nous nous occupons du reste.",
     },
     {
       id: "r2",
       num: "02",
       title: "Vous assurez des consultations spécialisées",
       description:
-        "Des patients sans accès à votre spécialité dans leur bassin de vie viennent vous consulter directement sur place. Votre expertise arrive chez eux, pas l'inverse.",
+        "Des patients qui n'ont pas accès à votre spécialité sur leur territoire bénéficient de votre expertise, au plus près de chez eux.",
     },
     {
       id: "r3",
@@ -189,18 +188,17 @@ export const missionsData = {
 export const profils = {
   eyebrow: "",
   h2: "Quels professionnels cherchons-nous ?",
-  subtitle: "Nous recrutons en prestation ou en CDD selon les postes, partout en France.",
+  subtitle: "Nous recrutons en CDD selon les postes, partout en France.",
   ctaLabel: "Postuler",
   roleLinkLabel: "Découvrir le poste →",
   items: [
-    { id: "p1", label: "Médecins généralistes",      roleHref: "/recrutement/medecin-generaliste" },
-    { id: "p2", label: "Cardiologues",                roleHref: "/recrutement/cardiologue" },
-    { id: "p3", label: "Dermatologues",               roleHref: "/recrutement/dermatologue" },
-    { id: "p4", label: "Gynécologues & Sages-femmes", roleHref: "/recrutement/gynecologue-sage-femme" },
-    { id: "p5", label: "Manipulateurs radio",         roleHref: "/recrutement/manipulateur-radio" },
+    { id: "p1", label: "Médecins généralistes", roleHref: "/recrutement/medecin-generaliste" },
+    { id: "p2", label: "Cardiologues",           roleHref: "/recrutement/cardiologue" },
+    { id: "p3", label: "Dermatologues",          roleHref: "/recrutement/dermatologue" },
+    { id: "p4", label: "Sages-femmes",           roleHref: "/recrutement/sage-femme" },
+    { id: "p5", label: "Infirmiers(ères)",       roleHref: "/recrutement/infirmier" },
+    { id: "p6", label: "Manipulateurs radio",    roleHref: "/recrutement/manipulateur-radio" },
   ],
-  autresLabel:
-    "Autres spécialités : Infirmiers(ères) · Pneumologues · Ophtalmologues · Dentistes · Nutritionnistes →",
 };
 
 // ─── Avantages ────────────────────────────────────────────────────────────
@@ -212,21 +210,21 @@ export const avantages = {
   items: [
     {
       id: "a1",
-      title: "Liberté totale d'agenda",
+      title: "Liberté de choisir vos jours",
       description:
-        "Choisissez vos jours, vos zones, votre rythme. Aucune obligation de volume.",
+        "Choisissez vos jours et vos zones d'intervention. Une fois la journée validée, un nombre de dossiers prédéfini vous est confié.",
     },
     {
       id: "a2",
       title: "Matériel fourni et installé",
       description:
-        "Bus équipé, consommables, logiciel métier. Vous arrivez, tout est prêt.",
+        "Bus équipé, patients programmés, protocoles préparés : vous intervenez, nous nous occupons du reste.",
     },
     {
       id: "a3",
       title: "Rémunération attractive",
       description:
-        "Paiement à l'acte, transparent, sous 30 jours. Pas de surprise.",
+        "Paiement à l'acte ou sous 30 jours en fonction de la typologie de contrat.",
     },
     {
       id: "a4",
@@ -253,7 +251,7 @@ export const avantages = {
 
 export const processus = {
   eyebrow: "",
-  h2: "De la candidature au terrain · notre processus en 4 étapes",
+  h2: "De la candidature à votre première mission · notre processus en 4 étapes",
   subtitle: "Les délais varient selon le poste recherché et les missions disponibles dans votre zone. On vous tient au courant à chaque étape.",
   steps: [
     {
@@ -356,13 +354,13 @@ export const faq = {
       id: "q5",
       question: "Les frais de déplacement et de repas sont-ils pris en charge ?",
       answer:
-        "Les frais de déplacement sont remboursés sous certaines conditions, définies en amont et précisées dans votre lettre de mission. Les frais de repas sont pris en charge à hauteur de 20 € par journée effectuée.",
+        "Les frais de déplacement sont remboursés sous certaines conditions, définies en amont et précisées dans votre lettre de mission. Un forfait repas de 20 € par journée effectuée est pris en charge, ajouté à votre rémunération journalière.",
     },
     {
       id: "q6",
       question: "Dois-je apporter du matériel médical ?",
       answer:
-        "Non. Hocoia met à disposition tout le matériel nécessaire à bord du bus. Exception : les sages-femmes peuvent apporter leur propre matériel si leur pratique le requiert.",
+        "Non. Hocoia met à disposition tout le matériel nécessaire à bord du bus. Exception : les sages-femmes peuvent apporter leur propre matériel si leur pratique le requiert. Vous devez en revanche vous munir de votre carte CPS et de votre lecteur de carte Vitale pour enregistrer les patients et pouvoir facturer.",
     },
     {
       id: "q7",
@@ -374,7 +372,7 @@ export const faq = {
       id: "q8",
       question: "Y a-t-il une formation avant la première mission ?",
       answer:
-        "Oui. Une formation théorique est dispensée par visioconférence par notre pôle médical. Le jour J, un agent d'accueil Hocoia est présent sur le terrain pour vous accompagner dans la prise en main pratique.",
+        "Oui. Une formation théorique est dispensée par visioconférence par notre pôle médical. Le jour de l'intervention, par une infirmière de télémédecine Hocoia ou un collaborateur Hocoia.",
     },
     {
       id: "q9",

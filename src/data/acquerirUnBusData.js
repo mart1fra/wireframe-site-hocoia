@@ -291,9 +291,9 @@ export const faq = {
     },
     {
       id: "q5",
-      question: "Quel financement est possible si nous sommes une collectivité ?",
+      question: "Quels financements sont possibles pour un projet de médicobus ou d'accès aux soins ?",
       answer:
-        "Plusieurs leviers existent : DETR, ARS, fonds régionaux, partenariats mutuelles. Hocoia vous accompagne dans l'identification et le montage du dossier de financement.",
+        "Les financements dépendent du porteur du projet. Collectivités territoriales : DETR, ARS (FIR), régions et partenariats locaux (mutuelles, acteurs privés). Établissements de santé (hôpitaux, GHT) : financements ARS, budgets d'investissement hospitaliers et dispositifs issus des projets d'établissement ou de coopération territoriale. Dans les deux cas, des appels à projets régionaux ou nationaux peuvent compléter ces financements, notamment pour renforcer l'accès aux soins sur les territoires fragiles. Hocoia accompagne collectivités et hôpitaux dans le choix des dispositifs et le montage des dossiers.",
     },
   ],
 };

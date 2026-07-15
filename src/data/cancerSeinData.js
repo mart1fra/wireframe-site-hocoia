@@ -99,25 +99,21 @@ export const protocole = {
       id: "p1", num: "1",
       titre: "Organisation de la campagne",
       description: "Coordination avec la collectivité ou l'entreprise : définition du lieu, de la date, communication aux bénéficiaires. Prise de rendez-vous via le tableau de bord ou par téléphone.",
-      badge: "Équipe Hocoia",
     },
     {
       id: "p2", num: "2",
       titre: "Accueil des patientes",
       description: "Accueil personnalisé sur le lieu de dépistage. Vérification de l'éligibilité, recueil du questionnaire médical, préparation à l'examen.",
-      badge: "Sage-femme + MERM",
     },
     {
       id: "p3", num: "3",
       titre: "Prise en charge médicale",
       description: "Palpation mammaire, mammographie numérique, échographie si indiquée. Diagnostic sur place ou en télé-expertise par un radiologue.",
-      badge: "MERM + Sage-femme + Radiologue",
     },
     {
       id: "p4", num: "4",
       titre: "Résultats & suivi",
       description: "Résultats transmis sous 1 à 2 semaines. En cas d'anomalie, l'équipe médicale organise un rendez-vous complémentaire et assure le suivi de la patiente.",
-      badge: "Radiologue partenaire",
     },
   ],
 };

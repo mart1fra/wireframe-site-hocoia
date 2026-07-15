@@ -101,7 +101,7 @@ export const concept = {
   ],
   features: [
     { id: "f1", titre: "Cabinet mobile < 3,5T", description: "Parking, place de marché, site entreprise · partout accessible." },
-    { id: "f2", titre: "10+ dispositifs médicaux connectés", description: "ECG, dermatoscope, échographe, spiromètre, mini-labo biologie…" },
+    { id: "f2", titre: "10+ dispositifs médicaux connectés", description: "ECG, dermatoscope, échographe, spiromètre, analyseur multiparamètres…" },
     { id: "f3", titre: "Soignant présent + médecin téléconsultant", description: "Accompagnement humain complet : accueil, anamnèse, constantes, suivi." },
     { id: "f4", titre: "Logiciel de coordination unique", description: "Agenda, prise de rendez-vous, dossier patient, reporting · tout intégré." },
   ],
@@ -145,7 +145,7 @@ export const definition = {
     {
       id: "f2",
       titre: "10+ dispositifs médicaux connectés",
-      description: "ECG, dermatoscope, échographe, spiromètre, mini-labo biologie…",
+      description: "ECG, dermatoscope, échographe, spiromètre, analyseur multiparamètres…",
     },
     {
       id: "f3",
@@ -189,8 +189,8 @@ export const thematiques = {
       equip: [
         { id: "e1", titre: "ECG (électrocardiogramme)",   desc: "Enregistrement de l'activité électrique cardiaque." },
         { id: "e2", titre: "Tensiomètre connecté",        desc: "Mesure précise de la pression artérielle." },
-        { id: "e3", titre: "Mini-labo biologie",          desc: "Glycémie, cholestérol, bilan lipidique rapide." },
-        { id: "e4", titre: "Mesures anthropométriques",   desc: "IMC, périmètre abdominal, composition corporelle." },
+        { id: "e3", titre: "Analyseur multiparamètres",   desc: "Glycémie, cholestérol, acide urique en quelques minutes." },
+        { id: "e4", titre: "Mesures anthropométriques",   desc: "IMC, périmètre abdominal." },
         { id: "e5", titre: "Échographie des carotides",   desc: "Détection des plaques et sténoses." },
       ],
       publicLabel: "PUBLIC CIBLÉ",
@@ -202,7 +202,6 @@ export const thematiques = {
         "Diagnostic en asynchrone par un cardiologue en téléexpertise",
         "Si besoin, prise de rendez-vous complémentaire",
       ],
-      badge: "→ Diagnostic asynchrone · résultats dans les semaines suivantes par mail ou courrier",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Hypertension · Diabète · Dyslipidémies · Arythmies · Risque AVC · Obésité cardiovasculaire",
     },
@@ -224,7 +223,6 @@ export const thematiques = {
         "Photographies des lésions suspectes",
         "Diagnostic asynchrone par dermatologue",
       ],
-      badge: "→ Diagnostic asynchrone · résultats dans les semaines suivantes par mail ou courrier",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Mélanomes · Carcinomes · Kératoses · Lésions suspectes · Grains de beauté atypiques",
     },
@@ -246,7 +244,6 @@ export const thematiques = {
         "Frottis et palpation",
         "Diagnostic synchrone par la sage-femme, ordonnance possible si besoin",
       ],
-      badge: "→ Diagnostic synchrone · résultats immédiats",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Cancer col utérus · Cancer sein · IST · Troubles menstruels · Suivi contraception",
     },
@@ -254,8 +251,8 @@ export const thematiques = {
       equipLabel: "Équipements embarqués · Check-up santé",
       equip: [
         { id: "e1", titre: "Tensiomètre connecté",      desc: "Mesure de la pression artérielle." },
-        { id: "e2", titre: "Mini-labo biologie",         desc: "Glycémie, cholestérol, bilan lipidique rapide." },
-        { id: "e3", titre: "Mesures anthropométriques",  desc: "IMC, périmètre abdominal, composition corporelle." },
+        { id: "e2", titre: "Analyseur multiparamètres",  desc: "Glycémie, cholestérol, acide urique en quelques minutes." },
+        { id: "e3", titre: "Mesures anthropométriques",  desc: "IMC, périmètre abdominal." },
         { id: "e4", titre: "Saturomètre",                desc: "Mesure de la saturation en oxygène." },
         { id: "e5", titre: "Test visuel",                desc: "Dépistage des troubles de la vision." },
       ],
@@ -268,7 +265,6 @@ export const thematiques = {
         "Bilan de vision et saturation",
         "Résultats commentés en fin de consultation, orientation si besoin",
       ],
-      badge: "→ Diagnostic synchrone · résultats remis à l'issue de la consultation",
       affectionsLabel: "AFFECTIONS CIBLÉES",
       affections: "Hypertension · Diabète · Dyslipidémies · Surpoids · Troubles visuels · Risque cardiovasculaire global",
     },
@@ -281,10 +277,10 @@ export const parcours = {
   eyebrow: "",
   h2: "Comment se déroule une consultation dans le MédicoBus ?",
   steps: [
-    { id: "s1", number: "01", titre: "Prise de rendez-vous",       description: "Réservation en ligne ou directement sur place selon disponibilité." },
+    { id: "s1", number: "01", titre: "Prise de rendez-vous",       description: "Réservation uniquement en ligne." },
     { id: "s2", number: "02", titre: "Accueil à bord",      description: "Accueil par un soignant qualifié, recueil des informations médicales." },
     { id: "s3", number: "03", titre: "Consultation",        description: "Examens réalisés sur place avec les équipements embarqués." },
-    { id: "s4", number: "04", titre: "Résultats & suivi",   description: "Résultats envoyés par mail ou courrier dans les semaines suivantes. Pour le check-up santé, résultats remis directement à l'issue de la consultation." },
+    { id: "s4", number: "04", titre: "Résultats & suivi",   description: "Résultats envoyés par mail ou courrier dans les semaines suivantes. Pour le check-up santé, le médecin donne ses indications à l'issue de la consultation ; le compte-rendu complet est transmis plus tard, le temps d'obtenir les résultats de la prise de sang." },
   ],
 };
 
@@ -500,7 +496,7 @@ export const faq = {
       id: "q2",
       question: "Quels équipements médicaux sont embarqués ?",
       answer:
-        "Selon la thématique : cardio (ECG, tensiomètre, mini-labo), dermatologie (dermatoscope IA), santé femme (frottis, palpation mammaire). Chaque bus est configuré sur-mesure.",
+        "Selon la thématique : cardio (ECG, tensiomètre, analyseur multiparamètres), dermatologie (dermatoscope IA), santé femme (frottis, palpation mammaire). Chaque bus est configuré sur-mesure.",
     },
     {
       id: "q3",

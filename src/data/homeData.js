@@ -1,7 +1,8 @@
 ﻿// ─── Hero ─────────────────────────────────────────────────────────────────
 
 export const hero = {
-  h1: "Prendre soin de votre santé devient plus simple.",
+  h1Start: "Prendre soin de votre santé devient",
+  h1Accent: "plus simple.",
   subtitle:
     "Hocoia vous accompagne au quotidien. Grâce à nos bus médicaux et à nos équipes de soignants, réalisez vos bilans de prévention et vos dépistages facilement, juste à côté de chez vous.",
   ctaPrimary: "En savoir plus",
@@ -146,8 +147,8 @@ export const useCases = {
     },
     {
       id: "collectivite",
-      label: "Collectivités & Institutions",
-      eyebrow: "Use case · Collectivités & Institutions",
+      label: "Collectivités & Acteurs locaux",
+      eyebrow: "Use case · Collectivités & Acteurs locaux",
       h3: "Apportez la prévention santé au cœur de votre territoire",
       description:
         "Hocoia déploie un bus médical itinérant commune par commune. Vos habitants bénéficient d'un dépistage complet sans déplacement · idéal pour les zones sous-dotées et les publics éloignés des soins.",
@@ -161,8 +162,8 @@ export const useCases = {
     },
     {
       id: "hopital",
-      label: "Etablissement de santé & médico-social",
-      eyebrow: "Use case · Etablissement de santé & médico-social",
+      label: "Établissements de santé & médico-sociaux",
+      eyebrow: "Use case · Établissements de santé & médico-sociaux",
       h3: "Étendez votre activité de soin hors les murs",
       description:
         "Déployez votre propre bus médical ou louez le nôtre pour compléter votre offre de soins. Consultations avancées, dépistage organisé, suivi des résidents en EHPAD · sans infrastructure supplémentaire.",

@@ -7,7 +7,7 @@ const TOTAL_AVIS = 127;
 
 const categories = [
   { label: "Entreprises & mutuelles", note: 4.9, nb: 48 },
-  { label: "Collectivités & institutions", note: 4.8, nb: 35 },
+  { label: "Collectivités & Acteurs locaux", note: 4.8, nb: 35 },
   { label: "Établissements de santé", note: 4.7, nb: 21 },
   { label: "Patients", note: 4.8, nb: 23 },
 ];

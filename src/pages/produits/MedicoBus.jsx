@@ -265,9 +265,6 @@ function ThematiquesSection() {
                     </div>
                   ))}
                 </div>
-                <span className="inline-block bg-gray-200 text-gray-700 text-xs rounded-full px-3 py-1">
-                  {content.badge}
-                </span>
               </div>
 
               <div className="bg-white border border-gray-200 rounded-lg p-5">

@@ -231,7 +231,7 @@ function ProfilsSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-8"
+          className="grid grid-cols-2 sm:grid-cols-3 gap-4"
         >
           {profils.items.map((p) => (
             <motion.div
@@ -258,10 +258,6 @@ function ProfilsSection() {
             </motion.div>
           ))}
         </motion.div>
-
-        <FadeIn>
-          <p className="text-gray-500 text-sm">{profils.autresLabel}</p>
-        </FadeIn>
       </div>
     </section>
   );

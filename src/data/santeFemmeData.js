@@ -99,25 +99,21 @@ export const protocole = {
       id: "p1", num: "1",
       titre: "Accueil & entretien",
       description: "La sage-femme vous accueille, recueille vos antécédents et votre situation gynécologique. Espace de consultation entièrement privé.",
-      badge: "Sage-femme à bord",
     },
     {
       id: "p2", num: "2",
       titre: "Examen clinique",
       description: "Palpation mammaire, examen gynécologique, frottis cervico-vaginal si indiqué, prise de tension. Prélèvements IST selon demande.",
-      badge: "15–20 min",
     },
     {
       id: "p3", num: "3",
       titre: "Bilan & prescriptions",
       description: "La sage-femme analyse les résultats cliniques immédiats. Elle peut renouveler une contraception, rédiger une ordonnance ou orienter vers un gynécologue.",
-      badge: "Diagnostic synchrone",
     },
     {
       id: "p4", num: "4",
       titre: "Résultats & suivi",
       description: "Résultats cliniques immédiats. Résultats de frottis et bilans IST sous 48 à 72h par email sécurisé. Transmis à votre médecin traitant si vous le souhaitez.",
-      badge: "Résultats < 72h",
     },
   ],
 };

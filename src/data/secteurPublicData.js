@@ -12,7 +12,7 @@ export const hero = {
   pills: [
     { id: "p1", label: "Collectivités", active: true },
     { id: "p2", label: "CPTS / MSP", active: false },
-    { id: "p3", label: "Institutions", active: false },
+    { id: "p3", label: "Acteurs locaux", active: false },
   ],
   checks: [
     "Aucune infrastructure à construire, le bus vient à vous",
@@ -194,7 +194,7 @@ export const zeroCharge = {
   eyebrow: "",
   h2: "Vous n'avez rien à gérer. C'est notre rôle.",
   intro:
-    "La principale objection des collectivités et institutions face à la santé de proximité, c'est la complexité opérationnelle. Hocoia l'a conçu pour que vous n'ayez aucun de ces problèmes.",
+    "La principale objection des collectivités et acteurs locaux face à la santé de proximité, c'est la complexité opérationnelle. Hocoia l'a conçu pour que vous n'ayez aucun de ces problèmes.",
   cards: [
     {
       id: "zc1",
@@ -422,7 +422,7 @@ export const faq = {
       id: "q2",
       question: "Les campagnes de prévention peuvent-elles être organisées dans des zones rurales ou éloignées ?",
       answer:
-        "Les dispositifs mobiles Hocoia sont conçus pour intervenir aussi bien en centre-ville que dans les territoires ruraux, les quartiers prioritaires ou les zones ayant un accès limité aux infrastructures de santé. Les collectivités et institutions peuvent choisir les secteurs, communes ou quartiers concernés afin d'adapter les actions de prévention aux besoins du territoire.",
+        "Les dispositifs mobiles Hocoia sont conçus pour intervenir aussi bien en centre-ville que dans les territoires ruraux, les quartiers prioritaires ou les zones ayant un accès limité aux infrastructures de santé. Les collectivités et acteurs locaux peuvent choisir les secteurs, communes ou quartiers concernés afin d'adapter les actions de prévention aux besoins du territoire.",
     },
     {
       id: "q3",
@@ -545,9 +545,9 @@ export const parcoursPatient = {
 // ─── SEO ───────────────────────────────────────────────────────────────────
 
 export const seoContent = {
-  h2: "Prévention santé mobile pour les collectivités et institutions",
+  h2: "Prévention santé mobile pour les collectivités et acteurs locaux",
   intro: [
-    "Hocoia accompagne les collectivités, institutions et acteurs publics dans la mise en place de solutions mobiles de prévention santé et de dépistage partout en France.",
+    "Hocoia accompagne les collectivités, acteurs locaux et acteurs publics dans la mise en place de solutions mobiles de prévention santé et de dépistage partout en France.",
     "Grâce à nos dispositifs clé en main, nous organisons des journées de prévention directement au plus près des citoyens, des agents et des publics ciblés afin de faciliter l'accès au dépistage et renforcer les actions de santé publique.",
   ],
   blocs: [
@@ -555,14 +555,14 @@ export const seoContent = {
       h3: "Des journées de prévention santé 100 % clé en main",
       paragraphs: [
         "Hocoia prend en charge l'ensemble de l'organisation des campagnes de prévention santé mobile : gestion logistique, installation du dispositif, coordination des professionnels de santé, gestion des inscriptions, accompagnement des participants, communication et sensibilisation.",
-        "Les collectivités et institutions gardent une maîtrise complète des inscriptions et du ciblage des publics selon les secteurs souhaités.",
+        "Les collectivités et acteurs locaux gardent une maîtrise complète des inscriptions et du ciblage des publics selon les secteurs souhaités.",
         "Nos dispositifs mobiles permettent d'organiser des journées de prévention régulières autour de plusieurs thématiques : prévention des maladies cardiovasculaires, dépistage du cancer de la peau, santé de la femme, dépistage du cancer du sein, check-up santé.",
       ],
     },
     {
       h3: "Des bus santé sur mesure",
       paragraphs: [
-        "Hocoia propose également la conception et l'aménagement de bus de prévention santé entièrement personnalisés afin de répondre aux besoins spécifiques des collectivités et institutions.",
+        "Hocoia propose également la conception et l'aménagement de bus de prévention santé entièrement personnalisés afin de répondre aux besoins spécifiques des collectivités et acteurs locaux.",
         "Chaque bus peut être conçu sur mesure selon les objectifs de santé publique, les parcours de dépistage, les équipements médicaux et les usages terrain souhaités.",
         "Cette solution permet de disposer d'un dispositif mobile de prévention totalement adapté aux besoins des territoires et des populations accompagnées.",
       ],

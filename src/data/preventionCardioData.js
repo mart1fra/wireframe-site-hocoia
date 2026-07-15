@@ -69,7 +69,7 @@ export const depistageHocoia = {
   eyebrow: "La solution Hocoia",
   h2: "Le MédicoBus cardio : le bilan qui vient à vous",
   paragraphs: [
-    "En zone rurale, obtenir un rendez-vous avec un cardiologue peut prendre plusieurs mois. Hocoia a configuré son MédicoBus pour la thématique cardiovasculaire : ECG, tensiomètre connecté, mini-labo biologie, mesures anthropométriques et échographie des carotides · tout à bord.",
+    "En zone rurale, obtenir un rendez-vous avec un cardiologue peut prendre plusieurs mois. Hocoia a configuré son MédicoBus pour la thématique cardiovasculaire : ECG, tensiomètre connecté, analyseur multiparamètres (glycémie, cholestérol, acide urique), mesures anthropométriques et échographie des carotides · tout à bord.",
     "Le protocole associe une infirmière à bord et un cardiologue en télé-expertise asynchrone. Les résultats sont analysés par le cardiologue et restitués par email sécurisé dans les semaines suivantes, avec les préconisations de suivi.",
   ],
   differenciateurs: [
@@ -82,7 +82,7 @@ export const depistageHocoia = {
     badge: "MédicoBus · Thématique cardiovasculaire",
     titre: "MédicoBus · Cardiologie",
     description:
-      "Cabinet médical mobile polyvalent configuré pour la prévention cardiovasculaire. ECG, tensiomètre, mini-labo, échographie des carotides, télé-expertise cardiologue.",
+      "Cabinet médical mobile polyvalent configuré pour la prévention cardiovasculaire. ECG, tensiomètre, analyseur multiparamètres, échographie des carotides, télé-expertise cardiologue.",
     href: "/produits/medicobus",
     cta: "Découvrir le MédicoBus →",
   },
@@ -99,25 +99,21 @@ export const protocole = {
       id: "p1", num: "1",
       titre: "Prise des constantes",
       description: "Tension artérielle, fréquence cardiaque, saturation en oxygène, poids, IMC, périmètre abdominal. Bilan anthropométrique complet.",
-      badge: "Infirmier·e à bord",
     },
     {
       id: "p2", num: "2",
       titre: "Examens complémentaires",
       description: "ECG de repos 12 dérivations, glycémie capillaire, cholestérol total, bilan lipidique rapide, échographie des carotides si indiquée.",
-      badge: "10–15 min",
     },
     {
       id: "p3", num: "3",
       titre: "Analyse du profil de risque",
       description: "Score de risque cardiovasculaire calculé selon les facteurs identifiés (HTA, diabète, tabac, antécédents). Entretien avec l'infirmière.",
-      badge: "Infirmier·e + Score SCORE2",
     },
     {
       id: "p4", num: "4",
       titre: "Résultats & préconisations",
       description: "Analyse asynchrone par un cardiologue. Résultats et préconisations envoyés par email sécurisé sous 2 à 4 semaines, transmis au médecin traitant.",
-      badge: "Cardiologue en télé-expertise",
     },
   ],
 };

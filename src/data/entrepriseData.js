@@ -328,7 +328,7 @@ export const faq = {
       id: "q4",
       question: "Peut-on acheter un bus de prévention sur mesure ?",
       answer:
-        "Oui. Hocoia propose également la conception et l'aménagement de bus de prévention santé personnalisés afin de répondre aux besoins spécifiques des entreprises, mutuelles, collectivités et institutions, et hôpitaux.",
+        "Oui. Hocoia propose également la conception et l'aménagement de bus de prévention santé personnalisés afin de répondre aux besoins spécifiques des entreprises, mutuelles, collectivités et acteurs locaux, et hôpitaux.",
     },
     {
       id: "q5",

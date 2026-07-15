@@ -23,8 +23,8 @@ export const hero = {
     "Cartographie du corps entier · aucune lésion oubliée",
     "Pré-analyse IA optionnelle (mélanome)",
     "Triage par médecin généraliste formé",
-    "Télé-expertise par onco-dermatologue partenaire",
-    "Suivi des lésions d'une année sur l'autre",
+    "Télé-expertise par dermatologue partenaire",
+    "Possibilité de suivi des lésions d'une année sur l'autre",
   ],
   ctaPrimary: "Demander une présentation",
   ctaOutline: "Voir le protocole ↓",
@@ -95,15 +95,15 @@ export const concept = {
       segments: [
         { text: "À la différence d'un simple examen, le DermatoBus réalise une " },
         { text: "cartographie du corps entier", bold: true },
-        { text: " avec dermoscopie de tous les grains de beauté suspicieux et, permettant un suivi comparatif d'une année sur l'autre." },
+        { text: " avec dermoscopie de tous les grains de beauté et permettant un suivi comparatif d'une année sur l'autre." },
       ],
     },
   ],
   features: [
     { id: "f1", titre: "Corps entier, aucune lésion oubliée", description: "Cartographie systématique, pas seulement les grains de beauté signalés par le patient." },
-    { id: "f2", titre: "IA de pré-analyse optionnelle", description: "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation." },
-    { id: "f3", titre: "Triage par médecin généraliste", description: "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation." },
-    { id: "f4", titre: "Télé-expertise dermatologique", description: "Revue finale par un onco-dermatologue partenaire. Qualité de diagnostic spécialisé, depuis n'importe quel territoire." },
+    { id: "f2", titre: "IA de pré-analyse optionnelle", description: "Évaluation du risque mélanome en amont par l'IA, réduit la charge des dermatologues, améliore la priorisation." },
+    { id: "f3", titre: "Triage par médecin généraliste", description: "Le médecin généraliste formé filtre les dossiers avant transmission au dermatologue, pour prioriser les cas à risque." },
+    { id: "f4", titre: "Télé-expertise dermatologique", description: "Revue finale par un dermatologue partenaire. Qualité de diagnostic spécialisé, depuis n'importe quel territoire." },
   ],
   videoLabel: "Vidéo · Le DermatoBus en action · 3:00",
   comparison: {
@@ -146,7 +146,7 @@ export const definition = {
       segments: [
         { text: "À la différence d'un simple examen, le DermatoBus réalise une " },
         { text: "cartographie du corps entier", bold: true },
-        { text: " avec dermoscopie de tous les grains de beauté suspicieux et, permettant un suivi comparatif d'une année sur l'autre." },
+        { text: " avec dermoscopie de tous les grains de beauté et permettant un suivi comparatif d'une année sur l'autre." },
       ],
     },
   ],
@@ -161,19 +161,19 @@ export const definition = {
       id: "diff2",
       titre: "IA de pré-analyse optionnelle",
       description:
-        "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation.",
+        "Évaluation du risque mélanome en amont par l'IA, réduit la charge des dermatologues, améliore la priorisation.",
     },
     {
       id: "diff3",
       titre: "Triage par médecin généraliste",
       description:
-        "Évaluation du risque mélanome en amont par le médecin, réduit la charge des dermatologues, améliore la priorisation.",
+        "Le médecin généraliste formé filtre les dossiers avant transmission au dermatologue, pour prioriser les cas à risque.",
     },
     {
       id: "diff4",
       titre: "Télé-expertise dermatologique",
       description:
-        "Revue finale par un onco-dermatologue partenaire. Qualité de diagnostic spécialisé, depuis n'importe quel territoire.",
+        "Revue finale par un dermatologue partenaire. Qualité de diagnostic spécialisé, depuis n'importe quel territoire.",
     },
   ],
   imagePlaceholder: "DermatoBus 3D · vue extérieure et intérieure interactive",
@@ -212,7 +212,6 @@ export const protocole = {
       titre: "Organisation de la campagne",
       description:
         "Coordination du projet : définition de la campagne, sélection du lieu et de la date. Prise de rendez-vous via le tableau de bord ou par téléphone. Invitation par flyer numérique ou courrier.",
-      badge: "Équipe Hocoia",
     },
     {
       id: "p2",
@@ -220,15 +219,13 @@ export const protocole = {
       titre: "Accueil & communication",
       description:
         "Éléments de communication préparés par Hocoia. Accueil des patients sur le lieu de dépistage par un représentant Hocoia.",
-      badge: "Représentant Hocoia",
     },
     {
       id: "p3",
       num: "3",
       titre: "Dépistage à bord",
       description:
-        "Prise en charge par l'infirmier(e) à bord : cartographie complète du corps, dermoscopie des lésions, pré-analyse IA et triage médecin. Seuls les cas nécessitant un avis spécialisé remontent à l'onco-dermatologue partenaire.",
-      badge: "Infirmier(e) + Médecin + Dermatologue",
+        "Prise en charge par l'infirmier(e) à bord : cartographie complète du corps, dermoscopie des lésions, pré-analyse IA et triage médecin. Seuls les cas nécessitant un avis spécialisé remontent au dermatologue partenaire.",
     },
     {
       id: "p4",
@@ -236,7 +233,6 @@ export const protocole = {
       titre: "Pilotage & bilan",
       description:
         "Données de participation, satisfaction et résultats médicaux anonymisés intégrés dans une synthèse. Suivi des anomalies détectées · rendez-vous complémentaire organisé par l'équipe médicale.",
-      badge: "Équipe médicale Hocoia",
     },
   ],
 };
@@ -438,7 +434,7 @@ export const faq = {
       id: "faq1",
       question: "C'est quoi le DermatoBus ?",
       answer:
-        "Le DermatoBus est une unité mobile dédiée au dépistage complet du cancer de la peau. Il se déploie dans les territoires sans accès à un dermatologue et réalise une cartographie du corps entier grâce à une technologie de dermoscopie robotique, suivie d'une analyse par IA et d'une revue par un onco-dermatologue partenaire.",
+        "Le DermatoBus est une unité mobile dédiée au dépistage complet du cancer de la peau. Il se déploie dans les territoires sans accès à un dermatologue et réalise une cartographie du corps entier grâce à une technologie de dermoscopie robotique, suivie d'une analyse par IA et d'une revue par un dermatologue partenaire.",
     },
     {
       id: "faq2",
@@ -496,12 +492,12 @@ export const modeles = {
     tag: "Acquisition / Location longue durée",
     title: "Votre DermatoBus, configuré pour vos patients",
     description:
-      "Hocoia conçoit et fabrique votre DermatoBus sur mesure · dermatoscope IA, cartographie corps entier, identité visuelle. Protocole validé scientifiquement par des onco-dermatologues partenaires.",
+      "Hocoia conçoit et fabrique votre DermatoBus sur mesure · dermatoscope IA, cartographie corps entier, identité visuelle. Protocole validé scientifiquement par des dermatologues partenaires.",
     points: [
       "Dermatoscope numérique + IA mélanome certifiée CE",
-      "Protocole Hocoia validé par des onco-dermatologues partenaires",
+      "Protocole Hocoia validé par des dermatologues partenaires",
       "Identité visuelle aux couleurs de votre organisation",
-      "Télé-expertise par les onco-dermatologues partenaires incluse",
+      "Télé-expertise par les dermatologues partenaires incluse",
     ],
     cta: "Nous contacter pour un devis →",
   },

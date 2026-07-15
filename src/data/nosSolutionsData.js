@@ -71,7 +71,7 @@ export const solutions = [
     badge: "Spécialisé · Cancer de la peau",
     h3: "DermatoBus",
     paragraph:
-      "Cabinet mobile dédié au dépistage du cancer de la peau. Cartographie corps entier, IA mélanome, télé-expertise par des onco-dermatologues partenaires.",
+      "Cabinet mobile dédié au dépistage du cancer de la peau. Cartographie corps entier, IA mélanome, télé-expertise par des dermatologues partenaires.",
     characteristics: [
       "Cartographie corps entier",
       "IA + dermatologue partenaire",
@@ -114,15 +114,15 @@ export const comparison = {
     },
     {
       criterion: "Capacité par jour",
-      values: ["16–24 patients selon la thématique", "24 patientes", "20–30 patients"],
+      values: ["16–24 patients selon la thématique", "24 patientes", "24 patients"],
     },
     {
       criterion: "Délai de déploiement",
-      values: ["2 mois", "2 mois", "2026 (pilote)"],
+      values: ["2 mois", "2 mois", "2027 (pilote Normandie)"],
     },
     {
       criterion: "Public principal",
-      values: ["Tous publics majeurs", "Femmes 40–75 ans", "Tous publics majeurs"],
+      values: ["+ 18 ans", "Femmes + 40 ans", "+ 18 ans"],
     },
   ],
 };

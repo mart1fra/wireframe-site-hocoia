@@ -478,7 +478,7 @@ export default function Calendrier() {
                 to="/collectivites-et-institutions"
                 className="border border-white/30 text-white px-7 py-3.5 rounded-full font-semibold text-sm hover:bg-white/10 transition-colors"
               >
-                Collectivités & institutions
+                Collectivités & Acteurs locaux
               </Link>
             </div>
           </FadeIn>

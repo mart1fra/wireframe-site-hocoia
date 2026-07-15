@@ -241,9 +241,6 @@ function ProtocoleSection() {
                 <p className="text-gray-500 text-sm leading-relaxed flex-1 mb-4">
                   {step.description}
                 </p>
-                <span className="self-start bg-gray-100 text-gray-700 text-[10px] font-semibold uppercase tracking-wider px-3 py-1.5 rounded-full">
-                  {step.badge}
-                </span>
               </motion.div>
               {i < protocole.steps.length - 1 && (
                 <div className="hidden lg:flex items-center justify-center px-2 text-gray-300 text-xl shrink-0">

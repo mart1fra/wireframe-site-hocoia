@@ -5,6 +5,24 @@
   --font-display: "Sora", sans-serif;
   --font-body: "DM Sans", sans-serif;
 
+  /* ── Charte Hocoia (Graphéine 25.06.2026) ── */
+  --font-flex: "Google Sans Flex", "Inter", system-ui, sans-serif;
+
+  /* Palette principale */
+  --color-violet: #8f44ff;
+  --color-bleu-roi: #5d7bfa;
+  --color-cyan: #33a8f7;
+  --color-bleu-ciel: #01def2;
+  --color-ivoire: #fffceb;
+  --color-gris-clair: #e6e6e6;
+
+  /* Couleurs techniques (statuts / interface) */
+  --color-anthracite: #586b72;
+  --color-rouge-statut: #ff0112;
+  --color-orange-statut: #ff7e34;
+  --color-jaune-soleil: #ffe864;
+  --color-vert-anis: #ccff9a;
+
   /* ── Palette wireframe (niveaux de gris) ── */
   --color-gray-900: #1a1a1a;
   --color-gray-700: #4a4a4a;
